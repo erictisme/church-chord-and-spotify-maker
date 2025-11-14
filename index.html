@@ -569,6 +569,13 @@
                     container.appendChild(tag);
                 }
             });
+
+            // Always add kids filter
+            const kidsTag = document.createElement('button');
+            kidsTag.className = 'filter-tag';
+            kidsTag.textContent = 'kids';
+            kidsTag.onclick = () => toggleFilter('kids');
+            container.appendChild(kidsTag);
         }
 
         // Toggle filter
@@ -603,9 +610,14 @@
 
                 // Theme filters
                 const matchesThemes = activeFilters.size === 0 ||
-                    Array.from(activeFilters).some(filter =>
-                        song.themes.some(t => t.toLowerCase() === filter)
-                    );
+                    Array.from(activeFilters).some(filter => {
+                        if (filter === 'kids') {
+                            // Kids filter matches songs with "Kids" in era or Awesome Cutlery artist
+                            return song.era.toLowerCase().includes('kids') ||
+                                   song.artist.toLowerCase().includes('awesome cutlery');
+                        }
+                        return song.themes.some(t => t.toLowerCase() === filter);
+                    });
 
                 return matchesSearch && matchesThemes;
             });

@@ -517,8 +517,9 @@
                 selectedSongs.forEach((song, index) => {
                     const item = document.createElement('li');
                     item.className = 'selected-item';
+                    const keyDisplay = song.key ? ` (${song.key})` : '';
                     item.innerHTML = `
-                        <span>${song.title} (${song.key})</span>
+                        <span>${song.title}${keyDisplay}</span>
                         <button onclick="removeSong('${song.id}')">Remove</button>
                     `;
                     list.appendChild(item);
@@ -595,9 +596,10 @@
 
                 // Song overview list
                 selectedSongs.forEach((song, i) => {
+                    const keyDisplay = song.key ? ` (${song.key})` : '';
                     children.push(
                         new Paragraph({
-                            text: `Song ${i + 1}: ${song.title} (${song.key})`,
+                            text: `Song ${i + 1}: ${song.title}${keyDisplay}`,
                             spacing: { after: 50 }
                         })
                     );
@@ -613,9 +615,10 @@
                 // Add each song
                 songContents.forEach(({ song, content }, index) => {
                     // Song title
+                    const keyDisplay = song.key ? ` (${song.key})` : '';
                     children.push(
                         new Paragraph({
-                            text: `${song.title} (${song.key})`,
+                            text: `${song.title}${keyDisplay}`,
                             heading: HeadingLevel.HEADING_2,
                             spacing: { before: 300, after: 200 }
                         })

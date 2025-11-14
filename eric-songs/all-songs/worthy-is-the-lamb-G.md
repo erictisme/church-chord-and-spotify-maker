@@ -1,0 +1,63 @@
+# Worthy Is The Lamb - G
+
+Intro:
+
+Em G Em
+
+
+Verse:
+
+G                 C           G
+Thank you for the cross Lord
+                  C     D   G
+Thank you for the price You paid
+               D       Em
+Bearing all my sin and shame
+   D        C
+In love You came
+    Am7  G       D
+And gave amazing grace
+
+
+Verse 2:
+
+G                  C          G
+Thank you for this love Lord
+                  C    D       G
+Thank you for the nail pierced hands
+                  D         Em
+Washed me in Your cleansing flow
+    D     C
+Now all I know
+        Am7      G   Dsus D
+Your forgiveness and embrace
+
+
+Chorus:
+
+G             D
+Worthy is the Lamb
+Am7    G      C
+Seated on the throne
+D                  G    C
+Crown You now with many crowns
+    Am7       G   D
+You reign victorious
+G               D
+High and lifted up
+Am7   G      C
+Jesus Son of God
+    D                 G    C     Dsus
+The Darling of Heaven crucified
+              Am7  G  C
+Worthy is the Lamb
+              Am7  G  D
+Worthy is the Lamb
+
+
+Bridge:
+
+              Am7  G  C
+Worthy is the Lamb
+              Am7  G  Dsus
+Worthy is the Lamb

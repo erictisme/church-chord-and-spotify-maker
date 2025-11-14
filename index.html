@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FMH Worship Song Generator</title>
-    <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -318,6 +316,133 @@
         .drag-handle:active {
             cursor: grabbing;
         }
+
+        /* Preview modal styles */
+        .preview-btn {
+            background: none;
+            border: none;
+            color: #C1121F;
+            font-size: 12px;
+            cursor: pointer;
+            text-decoration: underline;
+            padding: 0;
+            margin-left: 5px;
+        }
+
+        .preview-btn:hover {
+            color: #B91C1C;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+            overflow: auto;
+        }
+
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: #FFFFFF;
+            margin: 20px;
+            padding: 0;
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+            max-width: 700px;
+            width: 90%;
+            max-height: 80vh;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .modal-header {
+            background: #111111;
+            color: #FFFFFF;
+            padding: 20px;
+            border-bottom: 3px solid #C1121F;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .close {
+            color: #FFFFFF;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        .close:hover {
+            color: #C1121F;
+        }
+
+        .modal-body {
+            padding: 20px;
+            overflow-y: auto;
+            max-height: calc(80vh - 80px);
+        }
+
+        .modal-body pre {
+            white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #1A1A1A;
+        }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.9);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .loading-overlay.show {
+            display: flex;
+        }
+
+        .spinner {
+            border: 4px solid #E5E7EB;
+            border-top: 4px solid #C1121F;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
@@ -502,6 +627,7 @@
                             <div class="song-title">
                                 ${song.title}
                                 ${song.key ? `<span class="song-key">${song.key}</span>` : ''}
+                                <button class="preview-btn" data-song-id="${song.id}" data-song-title="${song.title}">Preview</button>
                             </div>
                             <div class="song-meta">
                                 ${song.artist}
@@ -511,11 +637,11 @@
                     </div>
                 `;
 
-                // Handle clicking the card (not the checkbox)
+                // Handle clicking the card (not the checkbox or preview button)
                 card.onclick = (e) => {
-                    // If clicking directly on the checkbox, let it handle itself
-                    if (e.target.tagName === 'INPUT') {
-                        return; // Checkbox will fire change event
+                    // If clicking directly on the checkbox or preview button, let them handle it
+                    if (e.target.tagName === 'INPUT' || e.target.tagName === 'BUTTON') {
+                        return;
                     }
                     // Otherwise, manually toggle
                     const checkbox = card.querySelector('input[type="checkbox"]');
@@ -528,6 +654,13 @@
                 checkbox.addEventListener('change', (e) => {
                     e.stopPropagation(); // Prevent card onclick from firing
                     toggleSongSelection(song);
+                });
+
+                // Handle preview button click
+                const previewBtn = card.querySelector('.preview-btn');
+                previewBtn.addEventListener('click', (e) => {
+                    e.stopPropagation(); // Prevent card onclick from firing
+                    openPreview(song.id, song.title);
                 });
 
                 container.appendChild(card);
@@ -854,8 +987,105 @@
             });
         }
 
+        // Preview functions
+        async function openPreview(songId, songTitle) {
+            const modal = document.getElementById('previewModal');
+            const titleEl = document.getElementById('modalSongTitle');
+            const contentEl = document.getElementById('modalSongContent');
+
+            titleEl.textContent = songTitle;
+            contentEl.textContent = 'Loading...';
+            modal.classList.add('show');
+
+            try {
+                const url = `https://raw.githubusercontent.com/erictisme/church-chord-and-spotify-maker/main/eric-songs/all-songs/${songId}.md`;
+                const response = await fetch(url);
+
+                if (!response.ok) {
+                    throw new Error('Song not found');
+                }
+
+                const content = await response.text();
+
+                // Remove YAML frontmatter
+                const lines = content.split('\n');
+                let inFrontmatter = false;
+                let cleanContent = [];
+
+                for (const line of lines) {
+                    if (line.trim() === '---') {
+                        inFrontmatter = !inFrontmatter;
+                        continue;
+                    }
+                    if (!inFrontmatter && line.trim()) {
+                        cleanContent.push(line);
+                    }
+                }
+
+                contentEl.textContent = cleanContent.join('\n');
+            } catch (error) {
+                contentEl.textContent = 'Error loading song content. Please try again.';
+                console.error('Preview error:', error);
+            }
+        }
+
+        function closePreview() {
+            const modal = document.getElementById('previewModal');
+            modal.classList.remove('show');
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('previewModal');
+            if (event.target === modal) {
+                closePreview();
+            }
+        }
+
         // Initialize
         loadSongs();
+    </script>
+
+    <!-- Preview Modal -->
+    <div id="previewModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalSongTitle">Song Preview</h2>
+                <button class="close" onclick="closePreview()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <pre id="modalSongContent">Loading...</pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+        <div style="color: #1A1A1A; font-weight: 600;">Loading libraries...</div>
+    </div>
+
+    <!-- Load external libraries -->
+    <script src="https://unpkg.com/docx@7.8.2/build/index.js"></script>
+    <script src="https://unpkg.com/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+
+    <script>
+        // Check if libraries loaded successfully
+        window.addEventListener('load', function() {
+            const overlay = document.getElementById('loadingOverlay');
+
+            if (typeof docx === 'undefined' || typeof saveAs === 'undefined') {
+                console.error('Failed to load required libraries');
+                alert('Warning: Document generation may not work. The required libraries failed to load. Please check your internet connection and refresh the page.');
+            } else {
+                console.log('Libraries loaded successfully');
+            }
+
+            overlay.classList.remove('show');
+        });
+
+        // Show loading overlay initially
+        document.getElementById('loadingOverlay').classList.add('show');
     </script>
 </body>
 </html>

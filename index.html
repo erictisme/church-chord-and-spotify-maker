@@ -15,7 +15,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #F7F7F5;
             min-height: 100vh;
             padding: 20px;
         }
@@ -23,17 +23,19 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background: white;
+            background: #FFFFFF;
             border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 16px rgba(17, 17, 17, 0.1);
             overflow: hidden;
+            border: 1px solid #E5E7EB;
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: #111111;
+            color: #FFFFFF;
             padding: 30px;
             text-align: center;
+            border-bottom: 3px solid #C1121F;
         }
 
         .header h1 {
@@ -80,8 +82,8 @@
 
         .form-group input:focus, .form-group textarea:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: #C1121F;
+            box-shadow: 0 0 0 3px rgba(193, 18, 31, 0.1);
         }
 
         .search-section {
@@ -118,22 +120,24 @@
 
         .filter-tag {
             padding: 6px 12px;
-            background: #e3e8ff;
-            border: none;
+            background: #FFFFFF;
+            border: 1px solid #E5E7EB;
             border-radius: 20px;
             font-size: 12px;
             cursor: pointer;
             transition: all 0.2s;
+            color: #1A1A1A;
         }
 
         .filter-tag:hover {
-            background: #667eea;
-            color: white;
+            background: #F7F7F5;
+            border-color: #C1121F;
         }
 
         .filter-tag.active {
-            background: #667eea;
-            color: white;
+            background: #C1121F;
+            color: #FFFFFF;
+            border-color: #C1121F;
         }
 
         .songs-grid {
@@ -147,22 +151,23 @@
         }
 
         .song-card {
-            border: 2px solid #e9ecef;
+            border: 2px solid #E5E7EB;
             border-radius: 8px;
             padding: 15px;
             cursor: pointer;
             transition: all 0.2s;
-            background: white;
+            background: #FFFFFF;
         }
 
         .song-card:hover {
-            border-color: #667eea;
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+            border-color: #C1121F;
+            box-shadow: 0 4px 12px rgba(193, 18, 31, 0.1);
         }
 
         .song-card.selected {
-            border-color: #667eea;
-            background: #f0f3ff;
+            border-color: #C1121F;
+            background: #FEE2E2;
+            border-width: 2px;
         }
 
         .song-card input[type="checkbox"] {
@@ -185,8 +190,8 @@
 
         .song-key {
             display: inline-block;
-            background: #667eea;
-            color: white;
+            background: #C1121F;
+            color: #FFFFFF;
             padding: 2px 8px;
             border-radius: 4px;
             font-size: 11px;
@@ -217,11 +222,12 @@
             background: white;
             border-radius: 6px;
             margin-bottom: 8px;
+            gap: 10px;
         }
 
         .selected-item button {
-            background: #dc3545;
-            color: white;
+            background: #DC2626;
+            color: #FFFFFF;
             border: none;
             padding: 5px 10px;
             border-radius: 4px;
@@ -230,14 +236,14 @@
         }
 
         .selected-item button:hover {
-            background: #c82333;
+            background: #B91C1C;
         }
 
         .generate-btn {
             width: 100%;
             padding: 15px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: #111111;
+            color: #FFFFFF;
             border: none;
             border-radius: 8px;
             font-size: 16px;
@@ -247,12 +253,14 @@
         }
 
         .generate-btn:hover {
+            background: #0D0D0D;
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 4px 12px rgba(17, 17, 17, 0.3);
         }
 
         .generate-btn:disabled {
-            background: #ccc;
+            background: #E5E7EB;
+            color: #4B5563;
             cursor: not-allowed;
             transform: none;
         }
@@ -279,6 +287,36 @@
             color: #666;
             border-bottom: 1px solid #e9ecef;
             margin-bottom: 15px;
+        }
+
+        /* Drag and drop styles */
+        .selected-item {
+            cursor: grab;
+            user-select: none;
+        }
+
+        .selected-item:active {
+            cursor: grabbing;
+        }
+
+        .selected-item.dragging {
+            opacity: 0.5;
+            background: #F7F7F5;
+        }
+
+        .selected-item.drag-over {
+            border-top: 3px solid #C1121F;
+        }
+
+        .drag-handle {
+            display: inline-block;
+            margin-right: 10px;
+            color: #4B5563;
+            cursor: grab;
+        }
+
+        .drag-handle:active {
+            cursor: grabbing;
         }
     </style>
 </head>
@@ -457,8 +495,9 @@
                 }
 
                 card.innerHTML = `
-                    <label style="display: flex; align-items: start; cursor: pointer;">
-                        <input type="checkbox" ${selectedSongs.some(s => s.id === song.id) ? 'checked' : ''}>
+                    <div style="display: flex; align-items: start;">
+                        <input type="checkbox" ${selectedSongs.some(s => s.id === song.id) ? 'checked' : ''}
+                               data-song-id="${song.id}" style="margin-right: 10px; width: 18px; height: 18px; cursor: pointer;">
                         <div style="flex: 1;">
                             <div class="song-title">
                                 ${song.title}
@@ -469,16 +508,27 @@
                                 ${song.themes.length > 0 ? ` • ${song.themes.slice(0, 2).join(', ')}` : ''}
                             </div>
                         </div>
-                    </label>
+                    </div>
                 `;
 
+                // Handle clicking the card (not the checkbox)
                 card.onclick = (e) => {
-                    if (e.target.tagName !== 'INPUT') {
-                        const checkbox = card.querySelector('input[type="checkbox"]');
-                        checkbox.checked = !checkbox.checked;
+                    // If clicking directly on the checkbox, let it handle itself
+                    if (e.target.tagName === 'INPUT') {
+                        return; // Checkbox will fire change event
                     }
+                    // Otherwise, manually toggle
+                    const checkbox = card.querySelector('input[type="checkbox"]');
+                    checkbox.checked = !checkbox.checked;
                     toggleSongSelection(song);
                 };
+
+                // Handle checkbox change events
+                const checkbox = card.querySelector('input[type="checkbox"]');
+                checkbox.addEventListener('change', (e) => {
+                    e.stopPropagation(); // Prevent card onclick from firing
+                    toggleSongSelection(song);
+                });
 
                 container.appendChild(card);
             });
@@ -517,16 +567,84 @@
                 selectedSongs.forEach((song, index) => {
                     const item = document.createElement('li');
                     item.className = 'selected-item';
+                    item.draggable = true;
+                    item.dataset.index = index;
+                    item.dataset.songId = song.id;
+
                     const keyDisplay = song.key ? ` (${song.key})` : '';
                     item.innerHTML = `
-                        <span>${song.title}${keyDisplay}</span>
-                        <button onclick="removeSong('${song.id}')">Remove</button>
+                        <span class="drag-handle">☰</span>
+                        <span style="flex: 1;">${index + 1}. ${song.title}${keyDisplay}</span>
+                        <button onclick="removeSong('${song.id}'); event.stopPropagation();">Remove</button>
                     `;
+
+                    // Drag and drop event listeners
+                    item.addEventListener('dragstart', handleDragStart);
+                    item.addEventListener('dragover', handleDragOver);
+                    item.addEventListener('drop', handleDrop);
+                    item.addEventListener('dragend', handleDragEnd);
+                    item.addEventListener('dragleave', handleDragLeave);
+
                     list.appendChild(item);
                 });
             } else {
                 container.style.display = 'none';
             }
+        }
+
+        // Drag and drop handlers
+        let draggedItem = null;
+
+        function handleDragStart(e) {
+            draggedItem = this;
+            this.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text/html', this.innerHTML);
+        }
+
+        function handleDragOver(e) {
+            if (e.preventDefault) {
+                e.preventDefault();
+            }
+            e.dataTransfer.dropEffect = 'move';
+
+            if (draggedItem !== this) {
+                this.classList.add('drag-over');
+            }
+            return false;
+        }
+
+        function handleDragLeave(e) {
+            this.classList.remove('drag-over');
+        }
+
+        function handleDrop(e) {
+            if (e.stopPropagation) {
+                e.stopPropagation();
+            }
+
+            if (draggedItem !== this) {
+                const fromIndex = parseInt(draggedItem.dataset.index);
+                const toIndex = parseInt(this.dataset.index);
+
+                // Reorder the array
+                const item = selectedSongs[fromIndex];
+                selectedSongs.splice(fromIndex, 1);
+                selectedSongs.splice(toIndex, 0, item);
+
+                // Update display
+                updateSelectedDisplay();
+            }
+
+            return false;
+        }
+
+        function handleDragEnd(e) {
+            this.classList.remove('dragging');
+            // Remove all drag-over classes
+            document.querySelectorAll('.selected-item').forEach(item => {
+                item.classList.remove('drag-over');
+            });
         }
 
         // Remove song
@@ -557,15 +675,26 @@
             btn.disabled = true;
 
             try {
+                // Check if docx library is loaded
+                if (typeof docx === 'undefined') {
+                    throw new Error('Document generation library not loaded. Please refresh the page.');
+                }
+
                 // Fetch full song contents from GitHub
+                btn.textContent = 'Loading songs...';
                 const songContents = await Promise.all(
                     selectedSongs.map(async (song) => {
                         const url = `https://raw.githubusercontent.com/erictisme/church-chord-and-spotify-maker/main/eric-songs/all-songs/${song.id}.md`;
                         const response = await fetch(url);
+                        if (!response.ok) {
+                            throw new Error(`Could not load song: ${song.title}. File may not exist.`);
+                        }
                         const content = await response.text();
                         return { song, content };
                     })
                 );
+
+                btn.textContent = 'Creating document...';
 
                 // Create Word document
                 const { Document, Paragraph, TextRun, HeadingLevel, AlignmentType } = docx;
@@ -687,17 +816,30 @@
                 });
 
                 // Generate and download
+                btn.textContent = 'Downloading...';
                 const blob = await docx.Packer.toBlob(doc);
                 const filename = `FMH-Worship-${date}.docx`;
                 saveAs(blob, filename);
 
                 btn.textContent = 'Generate Word Document';
                 btn.disabled = false;
-                alert(`✅ Document generated! Check your downloads folder for ${filename}`);
+                alert(`✅ Document generated! Check your downloads folder for:\n${filename}`);
 
             } catch (error) {
                 console.error('Error generating document:', error);
-                alert('Error generating document. Please try again.');
+
+                // Provide detailed error message
+                let errorMessage = 'Error generating document:\n\n';
+                if (error.message) {
+                    errorMessage += error.message;
+                } else {
+                    errorMessage += 'Unknown error. Please check:\n';
+                    errorMessage += '1. Internet connection\n';
+                    errorMessage += '2. All songs exist in the library\n';
+                    errorMessage += '3. Try refreshing the page';
+                }
+
+                alert(errorMessage);
                 btn.textContent = 'Generate Word Document';
                 btn.disabled = false;
             }

@@ -908,7 +908,8 @@
 
                     // Clean and format lyrics/chords
                     const lines = content.split('\n');
-                    let inMetadata = true;
+                    let inMetadata = false;  // Start FALSE - toggle to true when we see first ---
+                    let inCodeBlock = false; // Track code blocks (```)
 
                     for (const line of lines) {
                         // Skip metadata section (---...---)
@@ -918,42 +919,53 @@
                         }
                         if (inMetadata) continue;
 
-                        // Skip empty lines at start
+                        // Handle code blocks (```)
+                        if (line.trim() === '```') {
+                            inCodeBlock = !inCodeBlock;
+                            continue;  // Skip the ``` markers themselves
+                        }
+
+                        // Skip ## Intro, ## Verse headings (already have [Verse] tags)
+                        if (line.trim().match(/^##\s/)) {
+                            continue;
+                        }
+
+                        // Skip empty lines
                         if (!line.trim()) {
                             children.push(new Paragraph({ text: '' }));
                             continue;
                         }
 
-                        // Remove markdown symbols and clean formatting
+                        // Remove markdown symbols
                         let cleanLine = line
                             .replace(/^#+\s*/, '') // Remove # headers
                             .replace(/^\*\*([^*]+)\*\*/, '$1') // Remove ** bold **
+                            .replace(/\*\*CHORUS\*\*/, '') // Remove **CHORUS** markers
                             .replace(/^\*([^*]+)\*/, '$1') // Remove * italic *
-                            .replace(/^[-*]\s+/, ''); // Remove list bullets
+                            .trim();
 
-                        // Detect chord lines (lines with multiple uppercase chord patterns)
-                        const isChordLine = /^[\s\w#b/]+$/.test(cleanLine) &&
-                            /[A-G]/.test(cleanLine) &&
-                            cleanLine.trim().length > 0;
+                        // Skip if empty after cleaning
+                        if (!cleanLine) continue;
 
                         // Format sections like [Verse], [Chorus]
-                        const isSectionHeader = /^\[.+\]$/.test(cleanLine.trim());
+                        const isSectionHeader = /^\[.+\]$/.test(cleanLine);
 
                         if (isSectionHeader) {
                             children.push(
                                 new Paragraph({
-                                    text: cleanLine.replace(/[\[\]]/g, '').toUpperCase(),
+                                    text: cleanLine.replace(/[\[\]]/g, ''),
                                     bold: true,
                                     spacing: { before: 200, after: 100 }
                                 })
                             );
                         } else {
+                            // Everything else (chords and lyrics)
                             children.push(
                                 new Paragraph({
                                     text: cleanLine,
-                                    font: 'Arial',
-                                    size: isChordLine ? 20 : 22, // Slightly smaller for chords
-                                    spacing: { after: 50 }
+                                    font: 'Courier New',  // Monospace for chord alignment
+                                    size: 20,
+                                    spacing: { after: 0 }
                                 })
                             );
                         }

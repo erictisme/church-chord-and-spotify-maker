@@ -2218,5 +2218,19 @@
     "acoustic": true,
     "count": "0",
     "filename": "beautiful-saviour-A.md"
+  },
+  "the lord is my salvation": {
+    "title": "The Lord Is My Salvation",
+    "artist": "Keith & Kristyn Getty, Nathan Nockels, Jonas Myrin",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [
+      "Salvation",
+      "Assurance",
+      "Praise"
+    ],
+    "acoustic": true,
+    "count": "0",
+    "filename": "the-lord-is-my-salvation-C.md"
   }
 }

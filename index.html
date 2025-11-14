@@ -533,7 +533,8 @@
                     key: data.key || '',
                     themes: data.themes || [],
                     pace: data.pace || '',
-                    era: data.era || ''
+                    era: data.era || '',
+                    filename: data.filename || ''  // Add filename from catalog
                 }));
 
                 // Extract all unique themes
@@ -672,7 +673,7 @@
                 const previewBtn = card.querySelector('.preview-btn');
                 previewBtn.addEventListener('click', (e) => {
                     e.stopPropagation(); // Prevent card onclick from firing
-                    openPreview(song.id, song.title);
+                    openPreview(song.filename, song.title);
                 });
 
                 container.appendChild(card);
@@ -720,7 +721,7 @@
                     item.innerHTML = `
                         <span class="drag-handle">☰</span>
                         <span style="flex: 1;">${index + 1}. ${song.title}${keyDisplay}</span>
-                        <button onclick="removeSong('${song.id}'); event.stopPropagation();">Remove</button>
+                        <button class="remove-btn" data-song-id="${song.id}">Remove</button>
                     `;
 
                     // Drag and drop event listeners
@@ -729,6 +730,13 @@
                     item.addEventListener('drop', handleDrop);
                     item.addEventListener('dragend', handleDragEnd);
                     item.addEventListener('dragleave', handleDragLeave);
+
+                    // Remove button event listener
+                    const removeBtn = item.querySelector('.remove-btn');
+                    removeBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        removeSong(song.id);
+                    });
 
                     list.appendChild(item);
                 });
@@ -793,7 +801,7 @@
         }
 
         // Remove song
-        window.removeSong = function(songId) {
+        function removeSong(songId) {
             selectedSongs = selectedSongs.filter(s => s.id !== songId);
             updateSelectedDisplay();
             renderSongs();
@@ -829,7 +837,7 @@
                 btn.textContent = 'Loading songs...';
                 const songContents = await Promise.all(
                     selectedSongs.map(async (song) => {
-                        const url = `https://raw.githubusercontent.com/erictisme/church-chord-and-spotify-maker/main/eric-songs/all-songs/${song.id}.md`;
+                        const url = `https://raw.githubusercontent.com/erictisme/church-chord-and-spotify-maker/main/eric-songs/all-songs/${song.filename}`;
                         const response = await fetch(url);
                         if (!response.ok) {
                             throw new Error(`Could not load song: ${song.title}. File may not exist.`);
@@ -1000,7 +1008,7 @@
         }
 
         // Preview functions
-        async function openPreview(songId, songTitle) {
+        async function openPreview(filename, songTitle) {
             const modal = document.getElementById('previewModal');
             const titleEl = document.getElementById('modalSongTitle');
             const contentEl = document.getElementById('modalSongContent');
@@ -1010,7 +1018,7 @@
             modal.classList.add('show');
 
             try {
-                const url = `https://raw.githubusercontent.com/erictisme/church-chord-and-spotify-maker/main/eric-songs/all-songs/${songId}.md`;
+                const url = `https://raw.githubusercontent.com/erictisme/church-chord-and-spotify-maker/main/eric-songs/all-songs/${filename}`;
                 const response = await fetch(url);
 
                 if (!response.ok) {

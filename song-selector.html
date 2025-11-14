@@ -546,8 +546,167 @@
             const scripture = document.getElementById('scripture').value;
             const theme = document.getElementById('theme').value;
 
-            // Will implement docx generation next
-            alert('Document generation coming next! For now, this shows your selected songs work.');
+            if (!date || !scripture || !theme) {
+                alert('Please fill in all service details (date, scripture, theme)');
+                return;
+            }
+
+            const btn = document.getElementById('generateBtn');
+            btn.textContent = 'Generating...';
+            btn.disabled = true;
+
+            try {
+                // Fetch full song contents from GitHub
+                const songContents = await Promise.all(
+                    selectedSongs.map(async (song) => {
+                        const url = `https://raw.githubusercontent.com/erictisme/church-chord-and-spotify-maker/main/eric-songs/all-songs/${song.id}.md`;
+                        const response = await fetch(url);
+                        const content = await response.text();
+                        return { song, content };
+                    })
+                );
+
+                // Create Word document
+                const { Document, Paragraph, TextRun, HeadingLevel, AlignmentType } = docx;
+
+                const children = [];
+
+                // Header
+                children.push(
+                    new Paragraph({
+                        text: `Service Date: ${formatDate(date)}`,
+                        heading: HeadingLevel.HEADING_1,
+                        spacing: { after: 200 }
+                    }),
+                    new Paragraph({
+                        text: `Scripture: ${scripture}`,
+                        spacing: { after: 100 }
+                    }),
+                    new Paragraph({
+                        text: `Theme: ${theme}`,
+                        spacing: { after: 300 }
+                    }),
+                    new Paragraph({
+                        text: 'Song Overview:',
+                        heading: HeadingLevel.HEADING_2,
+                        spacing: { after: 100 }
+                    })
+                );
+
+                // Song overview list
+                selectedSongs.forEach((song, i) => {
+                    children.push(
+                        new Paragraph({
+                            text: `Song ${i + 1}: ${song.title} (${song.key})`,
+                            spacing: { after: 50 }
+                        })
+                    );
+                });
+
+                children.push(
+                    new Paragraph({
+                        text: '',
+                        spacing: { after: 400 }
+                    })
+                );
+
+                // Add each song
+                songContents.forEach(({ song, content }, index) => {
+                    // Song title
+                    children.push(
+                        new Paragraph({
+                            text: `${song.title} (${song.key})`,
+                            heading: HeadingLevel.HEADING_2,
+                            spacing: { before: 300, after: 200 }
+                        })
+                    );
+
+                    // Clean and format lyrics/chords
+                    const lines = content.split('\n');
+                    let inMetadata = true;
+
+                    for (const line of lines) {
+                        // Skip metadata section (---...---)
+                        if (line.trim() === '---') {
+                            inMetadata = !inMetadata;
+                            continue;
+                        }
+                        if (inMetadata) continue;
+
+                        // Skip empty lines at start
+                        if (!line.trim()) {
+                            children.push(new Paragraph({ text: '' }));
+                            continue;
+                        }
+
+                        // Remove markdown symbols and clean formatting
+                        let cleanLine = line
+                            .replace(/^#+\s*/, '') // Remove # headers
+                            .replace(/^\*\*([^*]+)\*\*/, '$1') // Remove ** bold **
+                            .replace(/^\*([^*]+)\*/, '$1') // Remove * italic *
+                            .replace(/^[-*]\s+/, ''); // Remove list bullets
+
+                        // Detect chord lines (lines with multiple uppercase chord patterns)
+                        const isChordLine = /^[\s\w#b/]+$/.test(cleanLine) &&
+                            /[A-G]/.test(cleanLine) &&
+                            cleanLine.trim().length > 0;
+
+                        // Format sections like [Verse], [Chorus]
+                        const isSectionHeader = /^\[.+\]$/.test(cleanLine.trim());
+
+                        if (isSectionHeader) {
+                            children.push(
+                                new Paragraph({
+                                    text: cleanLine.replace(/[\[\]]/g, '').toUpperCase(),
+                                    bold: true,
+                                    spacing: { before: 200, after: 100 }
+                                })
+                            );
+                        } else {
+                            children.push(
+                                new Paragraph({
+                                    text: cleanLine,
+                                    font: 'Arial',
+                                    size: isChordLine ? 20 : 22, // Slightly smaller for chords
+                                    spacing: { after: 50 }
+                                })
+                            );
+                        }
+                    }
+                });
+
+                // Create document
+                const doc = new Document({
+                    sections: [{
+                        properties: {},
+                        children: children
+                    }]
+                });
+
+                // Generate and download
+                const blob = await docx.Packer.toBlob(doc);
+                const filename = `FMH-Worship-${date}.docx`;
+                saveAs(blob, filename);
+
+                btn.textContent = 'Generate Word Document';
+                btn.disabled = false;
+                alert(`✅ Document generated! Check your downloads folder for ${filename}`);
+
+            } catch (error) {
+                console.error('Error generating document:', error);
+                alert('Error generating document. Please try again.');
+                btn.textContent = 'Generate Word Document';
+                btn.disabled = false;
+            }
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
         }
 
         // Initialize

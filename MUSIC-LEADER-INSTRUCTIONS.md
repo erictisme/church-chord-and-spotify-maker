@@ -5,9 +5,9 @@
 ### How to Use (3 Easy Steps):
 
 #### Step 1: Open the Song Selector
-- **Download the file:** [song-selector.html](./song-selector.html)
-- **Double-click** the downloaded file to open it in your browser
-- OR visit: `https://erictisme.github.io/church-chord-and-spotify-maker/song-selector.html` (once deployed)
+- **Visit the website:** https://erictisme.github.io/church-chord-and-spotify-maker/
+- **Bookmark it** for easy access!
+- OR **Download the file:** [index.html](./index.html) and double-click to open offline
 
 #### Step 2: Fill in Service Details
 1. Enter the **Service Date**

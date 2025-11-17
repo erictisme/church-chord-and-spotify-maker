@@ -946,17 +946,19 @@
                             continue;
                         }
 
+                        // Skip empty lines (before checking for title, so empty lines don't reset the flag)
+                        if (!line.trim()) {
+                            continue;
+                        }
+
                         // Skip the title line (# Song Title) that comes right after metadata
                         if (skipNextTitle && line.trim().match(/^#\s/)) {
                             skipNextTitle = false;
                             continue;
                         }
-                        skipNextTitle = false;
 
-                        // Skip empty lines
-                        if (!line.trim()) {
-                            continue;
-                        }
+                        // If we get here, we're past where the title would be
+                        skipNextTitle = false;
 
                         // Check if this is a section header [Verse], [Chorus]
                         const trimmedLine = line.trim();

@@ -922,11 +922,15 @@
                     const lines = content.split('\n');
                     let inMetadata = false;
                     let inCodeBlock = false;
+                    let skipNextTitle = true;  // Skip the first # Title line after metadata
 
                     for (let line of lines) {
                         // Skip metadata section (---...---)
                         if (line.trim() === '---') {
                             inMetadata = !inMetadata;
+                            if (!inMetadata) {
+                                skipNextTitle = true;  // Skip title right after metadata ends
+                            }
                             continue;
                         }
                         if (inMetadata) continue;
@@ -941,6 +945,13 @@
                         if (line.trim().match(/^##\s/)) {
                             continue;
                         }
+
+                        // Skip the title line (# Song Title) that comes right after metadata
+                        if (skipNextTitle && line.trim().match(/^#\s/)) {
+                            skipNextTitle = false;
+                            continue;
+                        }
+                        skipNextTitle = false;
 
                         // Skip empty lines
                         if (!line.trim()) {
@@ -967,19 +978,22 @@
                             // DON'T trim! Preserve all spacing for chord alignment
                             // Only remove specific markdown symbols
                             let cleanLine = line
-                                .replace(/^#\s+/, '')  // Remove single # header
                                 .replace(/^\*\*(.+)\*\*$/, '$1')  // Remove **text**
                                 .replace(/\*\*CHORUS\*\*/, '');   // Remove **CHORUS**
 
                             // Skip if empty after cleaning
                             if (!cleanLine.trim()) continue;
 
+                            // CRITICAL: Replace regular spaces with non-breaking spaces (\u00A0)
+                            // This prevents Word from collapsing multiple spaces and preserves chord alignment
+                            const preservedLine = cleanLine.replace(/ /g, '\u00A0');
+
                             // Use TextRun with space preservation
                             children.push(
                                 new Paragraph({
                                     children: [
                                         new TextRun({
-                                            text: cleanLine,
+                                            text: preservedLine,
                                             font: 'Courier New',
                                             size: 20
                                         })

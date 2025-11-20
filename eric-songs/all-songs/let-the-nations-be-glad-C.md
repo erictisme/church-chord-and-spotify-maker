@@ -30,19 +30,19 @@ To the corners of the earth that Christ
 has come
 
 [Chorus]
-              F               C                  F     G
+              F               C               F     G
 Let the nations be glad, let the people
     Am
 rejoice
-        F                  C                G
+           F            C                  G
 For salvation belongs to our God
-                        F           C
+              F                    C
 Let the whole earth be filled with the
-   F       G       Am
+F          G        Am
 praises of the Lord
-           F              C                 G
+            F              C                 G
 For salvation belongs to our God
-             F  G              C F C F
+             F  G                 C F C F
 Let the nations be glad
 
 [Verse 2]
@@ -58,7 +58,7 @@ they died
 Still we're holding out the cross
 
 Crossing oceans suffering loss
-        C                              G
+         C                             G
 Shall endure all things to win the crown
      F    G
 of life
@@ -69,9 +69,8 @@ of life
              C
 As your holy church goes forth, in the
 Holy Spirit's power
-                                                           G
+                                                           G   F
 With the glories of the Gospel to explain
- F
               Am
 Now we pray Your kingdom come
              G/B                     C
@@ -81,4 +80,5 @@ For the honor and the glory of Your
    Am
 name
 
-**CHORUS** x2 (first time till 2nd last line)
+**CHORUS x2**
+(To sing till 2nd last line for first time)

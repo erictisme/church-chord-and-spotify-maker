@@ -12,87 +12,87 @@ latest_version: 2023-06-14
 # Facing A Task Unfinished
 
 [Verse 1]
-    C              G
+    C                   G
 Facing a task unfinished
-       F        G       C
+         F           G         C
 That drives us to our knees
-   C             F
+   C                    F
 A need that, undiminished
-   Dm                 G
+   Dm                         G
 Rebukes our slothful ease
-     C               F   C
+       C                      F        C
 We, who rejoice to know Thee
-  Am              Dm
+  Am                         Dm
 Renew before Thy throne
-       C              F
+       C                             F
 The solemn pledge we owe Thee
-   Dm      G          C
+    Dm        G               C
 To go and make Thee known
 
 [Verse 2]
-        C            G
+             C                          G
 Where other lords beside Thee
-       F       G       C
+         F         G               C
 Hold their unhindered sway
-        C            F
+            C                   F
 Where forces that defied Thee
- Dm               G
+ Dm                     G
 Defy Thee still today
-       C                 F  C
+        C                           F  C
 With none to heed their crying
-     Am                   Dm
+     Am                         Dm
 For life, and love, and light
-   C                  F
+     C                               F
 Unnumbered souls are dying
-     Dm    G        C
+       Dm     G         C
 And pass into the night
 
 [Chorus]
-   G               C
+      G       F          C
 We go to all the world
-       G             C
+         G           F           C
 With kingdom hope unfurled
-    F     G         Em      Am
+       F      G             Em          Am
 No other name has power to save
-     Dm     G         C
+       Dm     G             C
 But Jesus Christ The Lord
 
 [Verse 3]
-    C                   G
+    C                               G
 We bear the torch that flaming
-      F        G         C
+       F           G              C
 Fell from the hands of those
-          C                      F
+          C                          F
 Who gave their lives proclaiming
-       Dm                    G
+         Dm                    G
 That Jesus died and rose
-      C            F  C
+        C                       F    C
 Ours is the same commission
-     Am                Dm
+       Am                            Dm
 The same glad message ours
-       C             F
+        C                         F
 Fired by the same ambition
-    Dm       G         C
+     Dm          G           C
 To Thee we yield our powers
 
 **CHORUS**
 
 [Verse 4 Soft]
-   C            G
+   C                    G
 O Father who sustained them
-    F     G     C
+    F      G         C
 O Spirit who inspired
-   C                     F
+   C                                    F
 Saviour, whose love constrained them
-   Dm                G
+   Dm                     G
 To toil with zeal untired
-      C          F     C
+         C                   F     C
 From cowardice defend us
-      Am        Dm
+         Am            Dm
 From lethargy awake!
-       C                F
+         C                          F
 Forth on Thine errands send us
-    Dm    G        C
+     Dm     G          C
 To labour for Thy sake
 
-**CHORUS** x2
+**CHORUS x2**

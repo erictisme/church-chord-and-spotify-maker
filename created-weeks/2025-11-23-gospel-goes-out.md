@@ -9,7 +9,113 @@
 
 ---
 
-## Kids Song: He's Coming Back Again (G)
+## Song 1: When I Survey the Wondrous Cross (D)
+
+[Verse 1]
+           D G              D
+When I survey the wondrous cross
+              Bm   Em         Asus  A
+On which the Prince of glory died
+           D/F#  G           Bm    G
+My richest gain I count but  loss
+             D   G    A       D              G  D/F# A
+And pour contempt on all my pride
+
+[Verse 2]
+G              D  G               D
+ See from His head His hands His feet
+             Bm Em             Asus
+Sorrow and love  flow mingled down
+A         A G  D/F#G            Bm
+ Did e'er such love and sorrow meet
+G              D  G    A       D   G  D/F# A
+ Or thorns compose so rich a crown
+
+[Verse 3]
+G              D  G               D
+ Were the whole realm of nature mine
+             Bm Em             Asus
+That were an offering far too small
+A         A G   D/F# G      Bm
+ Love so amazing so divine
+G            D  G    A       D   G  D/F# A
+ Demands my soul my life my all
+
+---
+
+## Song 2: All the World for Jesus (E)
+**Note: Transpose from G to E (capo on 9th fret or transpose down 3 semitones)**
+
+[Verse 1]
+E              A           E/G#                    B
+All the world for Jesus be this our earnest aim
+    C#m                           A           E
+To spread the blessed tidings of Him
+        B             E
+who once was slain
+
+[Chorus]
+       E                      Bsus      A
+Oh all the world for Jesus let every
+A            E/G#
+creature sing
+       E                      Bsus
+Oh all the world for Jesus
+         A            B      E
+Our great eternal King
+
+E
+
+[Verse 2]
+E                       A            E/G#
+All the world for Jesus let each one pray
+       B
+and give
+    C#m            A           E         B     E
+Until remotest nations look to Him live
+
+**CHORUS**
+
+[Verse 3]
+E                       A            E/G#
+All the world for Jesus — we'll give at His
+B
+command
+     C#m                        A           E    B
+To raise the poor and helpless all exalt
+      E
+the lamb
+
+**CHORUS**
+
+A /// E/G# A C#m B  x2
+
+[Bridge]
+E/G# A             C#m         B
+We will be Your witnesses
+            E/G#       A
+We will be Your witnesses
+             C#m         B
+We will be Your witnesses
+                                    E/G# A
+Like a light in the darkness x2
+(Second time end on E)
+
+[Verse 4]
+E                       A               E/G#
+All the world for Jesus and Jesus for the
+B
+world
+    C#m              A                 E/G#  B
+Forever be His banner His victory
+     E
+unfurled
+
+**CHORUS**
+
+---
+
+## Song 3 (Kids): He's Coming Back Again (G)
 
 [Intro] x2
 G C C G/B D/A G
@@ -64,19 +170,97 @@ Praising Christ who saved us for eternity
 
 ---
 
-## Pre-Sermon Song
+## Song 4 (Pre-Sermon): Facing a Task Unfinished (C)
 
-**[To be selected - recommendations below]**
+[Verse 1]
+    C              G
+Facing a task unfinished
+       F        G       C
+That drives us to our knees
+   C             F
+A need that, undiminished
+   Dm                 G
+Rebukes our slothful ease
+     C               F   C
+We, who rejoice to know Thee
+  Am              Dm
+Renew before Thy throne
+       C              F
+The solemn pledge we owe Thee
+   Dm      G          C
+To go and make Thee known
 
-*Recommended options for theme "The Gospel Goes Out":*
-- Facing a Task Unfinished (C) - Gospel mission
-- All the World for Jesus (G) - Reaching nations
-- Build My Life (G or E) - Worship/mission
-- How Great is Our God (G) - Proclamation
+[Verse 2]
+        C            G
+Where other lords beside Thee
+       F       G       C
+Hold their unhindered sway
+        C            F
+Where forces that defied Thee
+ Dm               G
+Defy Thee still today
+       C                 F  C
+With none to heed their crying
+     Am                   Dm
+For life, and love, and light
+   C                  F
+Unnumbered souls are dying
+     Dm    G        C
+And pass into the night
+
+[Chorus]
+   G               C
+We go to all the world
+       G             C
+With kingdom hope unfurled
+    F     G         Em      Am
+No other name has power to save
+     Dm     G         C
+But Jesus Christ The Lord
+
+[Verse 3]
+    C                   G
+We bear the torch that flaming
+      F        G         C
+Fell from the hands of those
+          C                      F
+Who gave their lives proclaiming
+       Dm                    G
+That Jesus died and rose
+      C            F  C
+Ours is the same commission
+     Am                Dm
+The same glad message ours
+       C             F
+Fired by the same ambition
+    Dm       G         C
+To Thee we yield our powers
+
+**CHORUS**
+
+[Verse 4 Soft]
+   C            G
+O Father who sustained them
+    F     G     C
+O Spirit who inspired
+   C                     F
+Saviour, whose love constrained them
+   Dm                G
+To toil with zeal untired
+      C          F     C
+From cowardice defend us
+      Am        Dm
+From lethargy awake!
+       C                F
+Forth on Thine errands send us
+    Dm    G        C
+To labour for Thy sake
+
+**CHORUS** x2
 
 ---
 
-## Closing Song: Let the Nations Be Glad (C)
+## Song 5 (Closing): Let the Nations Be Glad (C)
 
 [Intro]
 C   F   C   F
@@ -174,11 +358,32 @@ Now when they had testified and spoken the word of the Lord, they returned to Je
 
 ---
 
-**Roster Information:**
-- Preacher: Seb
-- Passage: Acts 8:1-25
-- OT Reading: Deuteronomy 18:9-14
-- Reader: Jan
-- Music Leader: Eric
-- CG Leader: Beh
-- Afternoon: Jasmine
+## Service Details
+
+**Date:** November 23, 2025
+**Preacher:** Seb
+**OT Reading:** Deuteronomy 18:9-14
+**Reader:** Jan
+**Music Leader:** Eric
+**CG Leader:** Beh
+**Afternoon:** Jasmine
+
+---
+
+## Song Flow & Key Transitions
+
+1. **When I Survey (D)** - "My richest gain I count but loss"
+2. **All the World for Jesus (E)** - Gospel mission declaration
+3. **He's Coming Back Again (G)** - Kids song
+4. **[SERMON BREAK]**
+5. **Facing a Task Unfinished (C)** - Mission commission
+6. **Let the Nations Be Glad (C)** - Closing sending song
+
+**Key progression:** D → E → G → [break] → C → C
+
+**Thematic Flow:**
+- Cross & Riches (Simon's error: can't buy salvation)
+- Mission Declaration (Gospel goes out)
+- Kids: Return of Christ
+- Mission Commission (Scattered believers preach)
+- Mission Sending (To all nations)

@@ -517,6 +517,64 @@
         let allThemes = new Set();
         let activeFilters = new Set();
 
+        // Chord transposer utility
+        const NOTES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+        const FLAT_TO_SHARP = { 'Db': 'C#', 'Eb': 'D#', 'Gb': 'F#', 'Ab': 'G#', 'Bb': 'A#' };
+        const KEYS = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'Db', 'Eb', 'Gb', 'Ab', 'Bb'];
+
+        function transposeChord(chord, semitones) {
+            if (!chord || semitones === 0) return chord;
+
+            // Match chord pattern: root note + optional modifiers
+            const match = chord.match(/^([A-G][#b]?)(.*)/);
+            if (!match) return chord;
+
+            let [, root, suffix] = match;
+
+            // Convert flats to sharps for consistency
+            if (FLAT_TO_SHARP[root]) {
+                root = FLAT_TO_SHARP[root];
+            }
+
+            const rootIndex = NOTES.indexOf(root);
+            if (rootIndex === -1) return chord;
+
+            // Transpose
+            const newIndex = (rootIndex + semitones + 12) % 12;
+            const newRoot = NOTES[newIndex];
+
+            return newRoot + suffix;
+        }
+
+        function transposeLine(line, semitones) {
+            if (semitones === 0) return line;
+
+            // Match chord patterns in the line (e.g., "C   F   G")
+            // Chords are typically uppercase letters followed by optional modifiers
+            return line.replace(/\b([A-G][#b]?(?:m|maj|min|aug|dim|sus|add|\d)*(?:\/[A-G][#b]?)?)\b/g, (match) => {
+                return transposeChord(match, semitones);
+            });
+        }
+
+        function calculateSemitones(fromKey, toKey) {
+            if (!fromKey || !toKey || fromKey === toKey) return 0;
+
+            // Normalize keys
+            let from = fromKey.replace(/\s/g, '');
+            let to = toKey.replace(/\s/g, '');
+
+            // Convert flats to sharps
+            if (FLAT_TO_SHARP[from]) from = FLAT_TO_SHARP[from];
+            if (FLAT_TO_SHARP[to]) to = FLAT_TO_SHARP[to];
+
+            const fromIndex = NOTES.indexOf(from);
+            const toIndex = NOTES.indexOf(to);
+
+            if (fromIndex === -1 || toIndex === -1) return 0;
+
+            return (toIndex - fromIndex + 12) % 12;
+        }
+
         // Load songs from GitHub
         async function loadSongs() {
             try {
@@ -690,7 +748,11 @@
             if (index >= 0) {
                 selectedSongs.splice(index, 1);
             } else {
-                selectedSongs.push(song);
+                // Add song with original key as default target
+                selectedSongs.push({
+                    ...song,
+                    targetKey: song.key || ''  // Track transpose target
+                });
             }
 
             updateSelectedDisplay();
@@ -718,10 +780,20 @@
                     item.dataset.index = index;
                     item.dataset.songId = song.id;
 
-                    const keyDisplay = song.key ? ` (${song.key})` : '';
+                    // Create key selector dropdown
+                    const keyOptions = KEYS.map(k =>
+                        `<option value="${k}" ${k === song.targetKey ? 'selected' : ''}>${k}</option>`
+                    ).join('');
+
+                    const originalKeyDisplay = song.key ? ` (${song.key})` : '';
+                    const transposeIndicator = song.targetKey !== song.key ? ' → ' : '';
+
                     item.innerHTML = `
                         <span class="drag-handle">☰</span>
-                        <span style="flex: 1;">${index + 1}. ${song.title}${keyDisplay}</span>
+                        <span style="flex: 1;">${index + 1}. ${song.title}${originalKeyDisplay}</span>
+                        <select class="key-selector" data-song-index="${index}" style="margin-right: 10px; padding: 3px 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 12px;">
+                            ${keyOptions}
+                        </select>
                         <button class="remove-btn" data-song-id="${song.id}">Remove</button>
                     `;
 
@@ -731,6 +803,14 @@
                     item.addEventListener('drop', handleDrop);
                     item.addEventListener('dragend', handleDragEnd);
                     item.addEventListener('dragleave', handleDragLeave);
+
+                    // Key selector change listener
+                    const keySelector = item.querySelector('.key-selector');
+                    keySelector.addEventListener('change', (e) => {
+                        e.stopPropagation();
+                        selectedSongs[index].targetKey = e.target.value;
+                        updateSelectedDisplay();
+                    });
 
                     // Remove button event listener
                     const removeBtn = item.querySelector('.remove-btn');
@@ -879,7 +959,8 @@
 
                 // Song overview list
                 selectedSongs.forEach((song, i) => {
-                    const keyDisplay = song.key ? ` (${song.key})` : '';
+                    const displayKey = song.targetKey || song.key;
+                    const keyDisplay = displayKey ? ` (${displayKey})` : '';
                     children.push(
                         new Paragraph({
                             text: `Song ${i + 1}: ${song.title}${keyDisplay}`,
@@ -907,8 +988,13 @@
                         );
                     }
 
-                    // Song title with key and artist
-                    const keyDisplay = song.key ? ` (${song.key})` : '';
+                    // Calculate transpose semitones
+                    const semitones = calculateSemitones(song.key, song.targetKey);
+                    const isTransposed = semitones !== 0;
+
+                    // Song title with target key (if transposed) and artist
+                    const displayKey = isTransposed ? song.targetKey : song.key;
+                    const keyDisplay = displayKey ? ` (${displayKey})` : '';
                     const artistDisplay = song.artist ? ` by ${song.artist}` : '';
                     children.push(
                         new Paragraph({
@@ -985,6 +1071,11 @@
 
                             // Skip if empty after cleaning
                             if (!cleanLine.trim()) continue;
+
+                            // Apply transpose if needed
+                            if (semitones !== 0) {
+                                cleanLine = transposeLine(cleanLine, semitones);
+                            }
 
                             // CRITICAL: Replace regular spaces with non-breaking spaces (\u00A0)
                             // This prevents Word from collapsing multiple spaces and preserves chord alignment

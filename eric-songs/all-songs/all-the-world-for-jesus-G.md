@@ -4,76 +4,71 @@ artist: Caleb Andrews
 themes: [declaration, edify]
 pace: medium
 era: contemporary
-key: G
+key: E
 first_seen: 2025-10-26
 latest_version: 2025-10-26
 ---
 
 # All the World for Jesus
 
+E
+
 [Verse 1]
-G              C           G/B                     D
+E                        A             E/G#                  B
 All the world for Jesus be this our earnest aim
-    Em                            C           G
+     C#m                        A             E
 To spread the blessed tidings of Him
-        D             G
+        B              E
 who once was slain
 
 [Chorus]
-       G                      Dsus      C
+       E                      Bsus       A
 Oh all the world for Jesus let every
-C            G/B
+A             E/G#
 creature sing
-       G                      Dsus
+       E                      Bsus
 Oh all the world for Jesus
-         C            D      G
+         A            B      E
 Our great eternal King
 
-G
+E
 
 [Verse 2]
-G                       C            G/B
+E                         A           E/G#
 All the world for Jesus let each one pray
-       D
+        B
 and give
-    Em             C           G         D     G
+    C#m            A          E         B     E
 Until remotest nations look to Him live
 
 **CHORUS**
 
 [Verse 3]
-G                       C            G/B
+E                        A                    E/G#
 All the world for Jesus — we'll give at His
-D
+       B
 command
-     Em                         C           G    D
+     C#m                       A           E    B
 To raise the poor and helpless all exalt
-      G
+      E
 the lamb
 
 **CHORUS**
 
-C /// G/B C Em D  x2
-
-[Bridge]
-G/B C             Em          D
-We will be Your witnesses
-            G/B        C
-We will be Your witnesses
-             Em          D
-We will be Your witnesses
-                                    G/B C
-Like a light in the darkness x2
-(Second time end on G)
+[Interlude]
+A C#m B E/G# A x2
 
 [Verse 4]
-G                       C               G/B
+E                         A               E/G#
 All the world for Jesus and Jesus for the
-D
+B
 world
-    Em               C                 G/B  D
+    C#m              A               E/G#  B
 Forever be His banner His victory
-     G
+     E
 unfurled
 
 **CHORUS**
+
+[Lead melody for E hold after choruses except interlude]
+E B A G#; E F# G# x2

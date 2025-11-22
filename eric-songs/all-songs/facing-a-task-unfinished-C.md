@@ -11,6 +11,7 @@ latest_version: 2023-06-14
 
 # Facing A Task Unfinished
 
+Intro: C C Am F
 [Verse 1]
     C                   G
 Facing a task unfinished
@@ -28,7 +29,7 @@ Renew before Thy throne
 The solemn pledge we owe Thee
     Dm        G               C
 To go and make Thee known
-
+**INTRO**
 [Verse 2]
              C                          G
 Where other lords beside Thee
@@ -56,7 +57,7 @@ With kingdom hope unfurled
 No other name has power to save
        Dm     G             C
 But Jesus Christ The Lord
-
+**INTRO**
 [Verse 3]
     C                               G
 We bear the torch that flaming
@@ -76,7 +77,7 @@ Fired by the same ambition
 To Thee we yield our powers
 
 **CHORUS**
-
+**INTRO**
 [Verse 4 Soft]
    C                    G
 O Father who sustained them
@@ -94,5 +95,4 @@ From lethargy awake!
 Forth on Thine errands send us
      Dm     G          C
 To labour for Thy sake
-
 **CHORUS x2**

@@ -89,3 +89,11 @@ Praising Christ who saved us for eternity
 
 G C C D
 G  C  C G/B D/A D  G
+
+[Intro melody]
+G G, G G, D E G B B A G B 
+G G, G G, C B A G 
+
+[Verse melody]
+G E B D E x2 
+

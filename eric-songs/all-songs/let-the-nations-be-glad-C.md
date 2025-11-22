@@ -12,7 +12,7 @@ latest_version: 2025-09-28
 # Let the Nations Be Glad
 
 [Intro]
-C   F   C   F
+C C F F x2
 
 [Verse 1]
             C
@@ -80,5 +80,9 @@ For the honor and the glory of Your
    Am
 name
 
-**CHORUS x2**
-(To sing till 2nd last line for first time)
+**CHORUS x2** 
+(Sing till 2nd last line for first repeat)
+
+[Intro melody]
+G G G G G G; F E D
+F F F F F F F; F E D

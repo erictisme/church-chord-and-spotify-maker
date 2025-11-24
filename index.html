@@ -947,7 +947,6 @@
             const count = selectedSongs.length;
             document.getElementById('selectedCount').textContent = `${count} selected`;
             document.getElementById('selectedCountTitle').textContent = count;
-            document.getElementById('generateBtn').disabled = count === 0;
 
             const container = document.getElementById('selectedSongs');
             const list = document.getElementById('selectedList');
@@ -1002,13 +1001,6 @@
                         selectedSongs[index].targetKey = newKey;
                         console.log(`🎹 Transpose set: "${song.title}" from ${song.key} → ${newKey}`);
                         updateSelectedDisplay();
-
-                        // Auto-regenerate if output is already visible
-                        const outputSection = document.getElementById('outputSection');
-                        if (outputSection.style.display === 'block') {
-                            console.log('🔄 Auto-regenerating with new key...');
-                            generateChordSheets();
-                        }
                     });
 
                     // Capo selector change listener
@@ -1103,9 +1095,7 @@
         // Search handler
         document.getElementById('searchInput').addEventListener('input', renderSongs);
 
-        // Generate chord sheets
-        document.getElementById('generateBtn').addEventListener('click', () => generateChordSheets(false));
-
+        // Generate chord sheets function
         async function generateChordSheets(isAutoGenerate = true) {
             const date = document.getElementById('serviceDate').value;
             const scripture = document.getElementById('scripture').value;
@@ -1115,12 +1105,6 @@
             if (!isAutoGenerate && (!date || !scripture || !theme)) {
                 alert('Please fill in all service details (date, scripture, theme)');
                 return;
-            }
-
-            const btn = document.getElementById('generateBtn');
-            if (!isAutoGenerate) {
-                btn.textContent = 'Generating...';
-                btn.disabled = true;
             }
 
             try {
@@ -1133,7 +1117,6 @@
                 console.log('='.repeat(60));
 
                 // Fetch full song contents from GitHub
-                btn.textContent = 'Loading songs...';
                 const songContents = await Promise.all(
                     selectedSongs.map(async (song) => {
                         const url = `https://raw.githubusercontent.com/erictisme/church-chord-and-spotify-maker/main/eric-songs/all-songs/${song.filename}`;
@@ -1145,10 +1128,6 @@
                         return { song, content };
                     })
                 );
-
-                if (!isAutoGenerate) {
-                    btn.textContent = 'Formatting...';
-                }
 
                 // Build text output
                 let output = '';
@@ -1333,11 +1312,6 @@
                     `;
                 }
 
-                if (!isAutoGenerate) {
-                    btn.textContent = 'Generate Chord Sheets';
-                    btn.disabled = false;
-                }
-
             } catch (error) {
                 console.error('Error generating chord sheets:', error);
 
@@ -1355,8 +1329,6 @@
                     }
 
                     alert(errorMessage);
-                    btn.textContent = 'Generate Chord Sheets';
-                    btn.disabled = false;
                 }
             }
         }

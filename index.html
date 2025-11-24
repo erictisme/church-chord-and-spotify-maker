@@ -1031,9 +1031,8 @@
                             continue;
                         }
 
-                        // Skip empty lines FIRST (before title check)
+                        // Skip empty lines completely (don't add them to output)
                         if (!line.trim()) {
-                            output += '\n';
                             continue;
                         }
 

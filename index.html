@@ -524,11 +524,11 @@
                     <ol style="line-height: 1.6; color: #555; margin: 0; padding-left: 20px; font-size: 14px;">
                         <li>Click "Copy to Clipboard" below</li>
                         <li>Paste into Google Docs or Word</li>
-                        <li>Change font to Courier New, Consolas, or Arial</li>
+                        <li>Use Arial or Times New Roman font (songs are formatted for these fonts)</li>
                         <li>Adjust as needed (spacing, page breaks, etc.)</li>
                     </ol>
                     <div style="margin-top: 10px; padding: 8px; background: white; border-radius: 4px; font-size: 12px; color: #666;">
-                        💡 <strong>Tip:</strong> For best chord alignment, use monospace fonts (Courier New or Consolas). Arial works too!
+                        💡 <strong>Tip:</strong> Songs are pre-formatted for Arial/Times New Roman in Google Docs!
                     </div>
                     <div style="margin-top: 10px; padding: 8px; background: white; border-radius: 4px; font-size: 12px; color: #666;">
                         📱 <strong>Feedback?</strong> WhatsApp Eric at <a href="https://wa.me/6581398062" target="_blank" style="color: #c41e3a; text-decoration: none; font-weight: bold;">+65 8139 8062</a>
@@ -731,9 +731,10 @@
                 const matchesThemes = activeFilters.size === 0 ||
                     Array.from(activeFilters).some(filter => {
                         if (filter === 'kids') {
-                            // Kids filter matches songs with "Kids" in era or Awesome Cutlery artist
+                            // Kids filter matches songs with "Kids" in era or kids artists
                             return song.era.toLowerCase().includes('kids') ||
-                                   song.artist.toLowerCase().includes('awesome cutlery');
+                                   song.artist.toLowerCase().includes('awesome cutlery') ||
+                                   song.artist.toLowerCase().includes('colin buchanan');
                         }
                         return song.themes.some(t => t.toLowerCase() === filter);
                     });
@@ -817,6 +818,20 @@
 
             updateSelectedDisplay();
             renderSongs(); // Re-render to update selected state
+        }
+
+        // Auto-generate chord sheets when selections change
+        let autoGenerateTimeout = null;
+        function triggerAutoGenerate() {
+            // Debounce: wait 500ms after last change before regenerating
+            if (autoGenerateTimeout) {
+                clearTimeout(autoGenerateTimeout);
+            }
+            autoGenerateTimeout = setTimeout(() => {
+                if (selectedSongs.length > 0) {
+                    generateChordSheets();
+                }
+            }, 500);
         }
 
         // Update selected songs display
@@ -910,6 +925,9 @@
             } else {
                 container.style.display = 'none';
             }
+
+            // Auto-generate chord sheets after any changes
+            triggerAutoGenerate();
         }
 
         // Drag and drop handlers
@@ -978,21 +996,24 @@
         document.getElementById('searchInput').addEventListener('input', renderSongs);
 
         // Generate chord sheets
-        document.getElementById('generateBtn').addEventListener('click', generateChordSheets);
+        document.getElementById('generateBtn').addEventListener('click', () => generateChordSheets(false));
 
-        async function generateChordSheets() {
+        async function generateChordSheets(isAutoGenerate = true) {
             const date = document.getElementById('serviceDate').value;
             const scripture = document.getElementById('scripture').value;
             const theme = document.getElementById('theme').value;
 
-            if (!date || !scripture || !theme) {
+            // Only require service details for manual generation
+            if (!isAutoGenerate && (!date || !scripture || !theme)) {
                 alert('Please fill in all service details (date, scripture, theme)');
                 return;
             }
 
             const btn = document.getElementById('generateBtn');
-            btn.textContent = 'Generating...';
-            btn.disabled = true;
+            if (!isAutoGenerate) {
+                btn.textContent = 'Generating...';
+                btn.disabled = true;
+            }
 
             try {
                 // Debug: Show what songs we're generating
@@ -1017,15 +1038,19 @@
                     })
                 );
 
-                btn.textContent = 'Formatting...';
+                if (!isAutoGenerate) {
+                    btn.textContent = 'Formatting...';
+                }
 
                 // Build text output
                 let output = '';
 
-                // Header
-                output += `Service Date: ${formatDate(date)}\n`;
-                output += `Scripture: ${scripture}\n`;
-                output += `Theme: ${theme}\n\n`;
+                // Header (only if service details are filled)
+                if (date || scripture || theme) {
+                    output += `Service Date: ${date ? formatDate(date) : '[Not set]'}\n`;
+                    output += `Scripture: ${scripture || '[Not set]'}\n`;
+                    output += `Theme: ${theme || '[Not set]'}\n\n`;
+                }
                 output += `Song Overview:\n`;
 
                 // Song overview list
@@ -1048,56 +1073,21 @@
                 output += '\n\n';
                 output += '='.repeat(80) + '\n\n';
 
-                // Add each song
-                songContents.forEach(({ song, content }, index) => {
-                    // Add separator before each song (except first)
-                    if (index > 0) {
-                        output += '\n\n' + '='.repeat(80) + '\n\n';
-                    }
-
-                    // Calculate transpose semitones
-                    const semitones = calculateSemitones(song.key, song.targetKey);
-
-                    // Debug logging
-                    console.log(`\n🎵 ${song.title}`);
-                    console.log(`   Original Key: "${song.key}" → Target Key: "${song.targetKey}"`);
-                    console.log(`   Semitones to transpose: ${semitones}`);
-                    console.log(`   Capo: +${song.capoSemitones} semitones`);
-                    if (semitones === 0) {
-                        console.log(`   ⚠️ No transposition (semitones = 0)`);
-                    } else {
-                        console.log(`   ✓ Will transpose ${semitones} semitones`);
-                    }
-
-                    // Song title with target key (if transposed), capo info, and artist
-                    const displayKey = song.targetKey || song.key;
-                    let keyDisplay = '';
-
-                    if (displayKey) {
-                        if (song.capoSemitones > 0) {
-                            const soundingKey = transposeKey(displayKey, song.capoSemitones);
-                            keyDisplay = ` (Written: ${displayKey}, Capo +${song.capoSemitones} → Sounds: ${soundingKey})`;
-                        } else {
-                            keyDisplay = ` (${displayKey})`;
-                        }
-                    }
-
-                    const artistDisplay = song.artist ? ` by ${song.artist}` : '';
-                    output += `${song.title}${keyDisplay}${artistDisplay}\n\n`;
-
-                    // Clean and format lyrics/chords
+                // Helper function to render a song's content with transposition
+                function renderSongContent(content, transposeSemitones) {
+                    let songOutput = '';
                     const lines = content.split('\n');
                     let inMetadata = false;
                     let inCodeBlock = false;
-                    let skipNextTitle = true;  // Skip the first # Title line after metadata
-                    let lastLineWasBlank = false;  // Track consecutive blank lines
+                    let skipNextTitle = true;
+                    let lastLineWasBlank = false;
 
                     for (let line of lines) {
                         // Skip metadata section (---...---)
                         if (line.trim() === '---') {
                             inMetadata = !inMetadata;
                             if (!inMetadata) {
-                                skipNextTitle = true;  // Skip title right after metadata ends
+                                skipNextTitle = true;
                             }
                             continue;
                         }
@@ -1117,7 +1107,7 @@
                         // Handle empty lines - collapse consecutive blanks into one
                         if (!line.trim()) {
                             if (!lastLineWasBlank) {
-                                output += '\n';
+                                songOutput += '\n';
                                 lastLineWasBlank = true;
                             }
                             continue;
@@ -1140,23 +1130,25 @@
                         const isSectionHeader = /^\[.+\]$/.test(trimmedLine);
 
                         if (isSectionHeader) {
-                            output += trimmedLine + '\n';
+                            songOutput += trimmedLine + '\n';
                         } else {
                             // Clean line - remove markdown symbols
                             let cleanLine = line
-                                .replace(/^\*\*(.+)\*\*$/, '$1')  // Remove **text**
-                                .replace(/\*\*CHORUS\*\*/, 'CHORUS');   // Convert **CHORUS** to CHORUS
+                                .replace(/^\*\*(.+)\*\*$/, '$1')
+                                .replace(/\*\*CHORUS\*\*/, 'CHORUS');
 
                             // Apply transpose if needed
-                            if (semitones !== 0) {
+                            if (transposeSemitones !== 0) {
                                 const originalLine = cleanLine;
-                                cleanLine = transposeLine(cleanLine, semitones);
+                                cleanLine = transposeLine(cleanLine, transposeSemitones);
                                 // Only log if line actually changed (was a chord line)
                                 if (originalLine !== cleanLine) {
                                     console.log(`Transposed: "${originalLine}" → "${cleanLine}"`);
                                 }
                             }
 
+                            // Add line preserving original spacing
+                            songOutput += cleanLine + '\n';
                             // Check if this is a standalone label like CHORUS, INTRO, CHORUS x2, etc.
                             const isLabel = /^(CHORUS|INTRO|VERSE|BRIDGE|INTERLUDE|OUTRO|TAG|INSTRUMENTAL)(\s*x?\d*)?$/i.test(cleanLine.trim());
 
@@ -1169,35 +1161,87 @@
                             }
                         }
                     }
+                    return songOutput;
+                }
+
+                // Add each song
+                songContents.forEach(({ song, content }, index) => {
+                    // Add separator before each song (except first)
+                    if (index > 0) {
+                        output += '\n\n' + '='.repeat(80) + '\n\n';
+                    }
+
+                    // Calculate transpose semitones
+                    const semitones = calculateSemitones(song.key, song.targetKey);
+                    const displayKey = song.targetKey || song.key;
+
+                    // Debug logging
+                    console.log(`\n🎵 ${song.title}`);
+                    console.log(`   Original Key: "${song.key}" → Target Key: "${displayKey}"`);
+                    console.log(`   Semitones to transpose: ${semitones}`);
+                    console.log(`   Capo: +${song.capoSemitones} semitones`);
+
+                    // If capo is used, render both versions
+                    if (song.capoSemitones > 0) {
+                        const soundingKey = transposeKey(displayKey, song.capoSemitones);
+
+                        // Version 1: Written chords (for capo players)
+                        output += `${song.title} (Written: ${displayKey}, Capo +${song.capoSemitones})`;
+                        const artistDisplay = song.artist ? ` by ${song.artist}` : '';
+                        output += `${artistDisplay}\n`;
+                        output += `[For instruments WITH capo capability]\n`;
+                        output += renderSongContent(content, semitones);
+
+                        // Version 2: Transposed chords (for non-capo instruments)
+                        output += '\n' + '-'.repeat(40) + '\n\n';
+                        output += `${song.title} (Sounds: ${soundingKey}, No Capo)`;
+                        output += `${artistDisplay}\n`;
+                        output += `[For instruments WITHOUT capo - violin, cello, etc.]\n`;
+                        const totalTranspose = semitones + song.capoSemitones;
+                        output += renderSongContent(content, totalTranspose);
+                    } else {
+                        // No capo: render single version
+                        let keyDisplay = displayKey ? ` (${displayKey})` : '';
+                        const artistDisplay = song.artist ? ` by ${song.artist}` : '';
+                        output += `${song.title}${keyDisplay}${artistDisplay}\n`;
+                        output += renderSongContent(content, semitones);
+                    }
                 });
 
                 // Display output
                 document.getElementById('outputContent').textContent = output;
                 document.getElementById('outputSection').style.display = 'block';
 
-                // Scroll to output
-                document.getElementById('outputSection').scrollIntoView({ behavior: 'smooth' });
+                // Scroll to output only for manual generation
+                if (!isAutoGenerate) {
+                    document.getElementById('outputSection').scrollIntoView({ behavior: 'smooth' });
+                }
 
-                btn.textContent = 'Generate Chord Sheets';
-                btn.disabled = false;
+                if (!isAutoGenerate) {
+                    btn.textContent = 'Generate Chord Sheets';
+                    btn.disabled = false;
+                }
 
             } catch (error) {
                 console.error('Error generating chord sheets:', error);
 
-                // Provide detailed error message
-                let errorMessage = 'Error generating chord sheets:\n\n';
-                if (error.message) {
-                    errorMessage += error.message;
-                } else {
-                    errorMessage += 'Unknown error. Please check:\n';
-                    errorMessage += '1. Internet connection\n';
-                    errorMessage += '2. All songs exist in the library\n';
-                    errorMessage += '3. Try refreshing the page';
-                }
+                // Only show alert for manual generation
+                if (!isAutoGenerate) {
+                    // Provide detailed error message
+                    let errorMessage = 'Error generating chord sheets:\n\n';
+                    if (error.message) {
+                        errorMessage += error.message;
+                    } else {
+                        errorMessage += 'Unknown error. Please check:\n';
+                        errorMessage += '1. Internet connection\n';
+                        errorMessage += '2. All songs exist in the library\n';
+                        errorMessage += '3. Try refreshing the page';
+                    }
 
-                alert(errorMessage);
-                btn.textContent = 'Generate Chord Sheets';
-                btn.disabled = false;
+                    alert(errorMessage);
+                    btn.textContent = 'Generate Chord Sheets';
+                    btn.disabled = false;
+                }
             }
         }
 

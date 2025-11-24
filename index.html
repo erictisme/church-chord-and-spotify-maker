@@ -1050,7 +1050,7 @@
                         const isSectionHeader = /^\[.+\]$/.test(trimmedLine);
 
                         if (isSectionHeader) {
-                            output += '\n' + trimmedLine + '\n';
+                            output += '\n' + trimmedLine + '\n\n';  // Blank before and after
                         } else {
                             // Clean line - remove markdown symbols
                             let cleanLine = line
@@ -1067,8 +1067,8 @@
                                 }
                             }
 
-                            // Add line (preserve spacing)
-                            output += cleanLine + '\n';
+                            // Add line with blank after (for spacing between blocks)
+                            output += cleanLine + '\n\n';
                         }
                     }
                 });

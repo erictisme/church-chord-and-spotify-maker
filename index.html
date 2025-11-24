@@ -505,8 +505,40 @@
 
             <!-- Generate Button -->
             <button class="generate-btn" id="generateBtn" disabled>
-                Generate Word Document
+                Generate Chord Sheets
             </button>
+
+            <!-- Output Section (hidden initially) -->
+            <div id="outputSection" style="display: none; margin-top: 30px; padding: 30px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <h2 style="color: #c41e3a; margin-bottom: 20px;">🎉 Congratulations! Your chord sheets are ready!</h2>
+
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #c41e3a;">
+                    <h3 style="margin-top: 0; color: #333;">How to use:</h3>
+                    <ol style="line-height: 1.8; color: #555;">
+                        <li><strong>Create a blank document</strong> in your preferred software (Google Docs or Microsoft Word Online)</li>
+                        <li><strong>Click "Copy to Clipboard"</strong> button below (or manually select all text and copy)</li>
+                        <li><strong>Paste</strong> into your blank document</li>
+                        <li><strong>Format to your preference:</strong>
+                            <ul>
+                                <li>Change font (recommended: Courier New or Consolas for chord alignment)</li>
+                                <li>Adjust spacing, add page breaks, etc.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div style="margin-bottom: 15px; display: flex; gap: 10px;">
+                    <button id="copyBtn" style="padding: 12px 24px; background: #c41e3a; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 16px;">
+                        📋 Copy to Clipboard
+                    </button>
+                    <button id="closeOutputBtn" style="padding: 12px 24px; background: #666; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 16px;">
+                        Close
+                    </button>
+                </div>
+
+                <div style="background: white; border: 2px solid #ddd; border-radius: 6px; padding: 20px; max-height: 600px; overflow-y: auto; font-family: 'Courier New', monospace; white-space: pre-wrap; line-height: 1.6; font-size: 14px;" id="outputContent">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -891,10 +923,10 @@
         // Search handler
         document.getElementById('searchInput').addEventListener('input', renderSongs);
 
-        // Generate document
-        document.getElementById('generateBtn').addEventListener('click', generateDocument);
+        // Generate chord sheets
+        document.getElementById('generateBtn').addEventListener('click', generateChordSheets);
 
-        async function generateDocument() {
+        async function generateChordSheets() {
             const date = document.getElementById('serviceDate').value;
             const scripture = document.getElementById('scripture').value;
             const theme = document.getElementById('theme').value;
@@ -909,11 +941,6 @@
             btn.disabled = true;
 
             try {
-                // Check if docx library is loaded
-                if (typeof docx === 'undefined') {
-                    throw new Error('Document generation library not loaded. Please refresh the page.');
-                }
-
                 // Fetch full song contents from GitHub
                 btn.textContent = 'Loading songs...';
                 const songContents = await Promise.all(
@@ -928,81 +955,42 @@
                     })
                 );
 
-                btn.textContent = 'Creating document...';
+                btn.textContent = 'Formatting...';
 
-                // Create Word document
-                const { Document, Paragraph, TextRun, HeadingLevel, AlignmentType } = docx;
-
-                const children = [];
+                // Build text output
+                let output = '';
 
                 // Header
-                children.push(
-                    new Paragraph({
-                        text: `Service Date: ${formatDate(date)}`,
-                        heading: HeadingLevel.HEADING_1,
-                        spacing: { after: 200 }
-                    }),
-                    new Paragraph({
-                        text: `Scripture: ${scripture}`,
-                        spacing: { after: 100 }
-                    }),
-                    new Paragraph({
-                        text: `Theme: ${theme}`,
-                        spacing: { after: 300 }
-                    }),
-                    new Paragraph({
-                        text: 'Song Overview:',
-                        heading: HeadingLevel.HEADING_2,
-                        spacing: { after: 100 }
-                    })
-                );
+                output += `Service Date: ${formatDate(date)}\n`;
+                output += `Scripture: ${scripture}\n`;
+                output += `Theme: ${theme}\n\n`;
+                output += `Song Overview:\n`;
 
                 // Song overview list
                 selectedSongs.forEach((song, i) => {
                     const displayKey = song.targetKey || song.key;
                     const keyDisplay = displayKey ? ` (${displayKey})` : '';
-                    children.push(
-                        new Paragraph({
-                            text: `Song ${i + 1}: ${song.title}${keyDisplay}`,
-                            spacing: { after: 50 }
-                        })
-                    );
+                    output += `Song ${i + 1}: ${song.title}${keyDisplay}\n`;
                 });
 
-                children.push(
-                    new Paragraph({
-                        text: '',
-                        spacing: { after: 400 }
-                    })
-                );
+                output += '\n\n';
+                output += '='.repeat(80) + '\n\n';
 
                 // Add each song
                 songContents.forEach(({ song, content }, index) => {
-                    // Add page break before each song (except first)
+                    // Add separator before each song (except first)
                     if (index > 0) {
-                        children.push(
-                            new Paragraph({
-                                text: '',
-                                pageBreakBefore: true
-                            })
-                        );
+                        output += '\n\n' + '='.repeat(80) + '\n\n';
                     }
 
                     // Calculate transpose semitones
                     const semitones = calculateSemitones(song.key, song.targetKey);
-                    const isTransposed = semitones !== 0;
 
                     // Song title with target key (if transposed) and artist
-                    const displayKey = isTransposed ? song.targetKey : song.key;
+                    const displayKey = song.targetKey || song.key;
                     const keyDisplay = displayKey ? ` (${displayKey})` : '';
                     const artistDisplay = song.artist ? ` by ${song.artist}` : '';
-                    children.push(
-                        new Paragraph({
-                            text: `${song.title}${keyDisplay}${artistDisplay}`,
-                            heading: HeadingLevel.HEADING_2,
-                            spacing: { before: 300, after: 200 }
-                        })
-                    );
+                    output += `${song.title}${keyDisplay}${artistDisplay}\n\n`;
 
                     // Clean and format lyrics/chords
                     const lines = content.split('\n');
@@ -1032,8 +1020,9 @@
                             continue;
                         }
 
-                        // Skip empty lines (before checking for title, so empty lines don't reset the flag)
+                        // Skip empty lines FIRST (before title check)
                         if (!line.trim()) {
+                            output += '\n';
                             continue;
                         }
 
@@ -1043,7 +1032,7 @@
                             continue;
                         }
 
-                        // If we get here, we're past where the title would be
+                        // If we reach here with content, we're past the title
                         skipNextTitle = false;
 
                         // Check if this is a section header [Verse], [Chorus]
@@ -1051,76 +1040,39 @@
                         const isSectionHeader = /^\[.+\]$/.test(trimmedLine);
 
                         if (isSectionHeader) {
-                            children.push(
-                                new Paragraph({
-                                    text: '',
-                                    spacing: { before: 100 }
-                                }),
-                                new Paragraph({
-                                    text: trimmedLine.replace(/[\[\]]/g, ''),
-                                    bold: true,
-                                    spacing: { after: 100 }
-                                })
-                            );
+                            output += '\n' + trimmedLine + '\n';
                         } else {
-                            // DON'T trim! Preserve all spacing for chord alignment
-                            // Only remove specific markdown symbols
+                            // Clean line - remove markdown symbols
                             let cleanLine = line
                                 .replace(/^\*\*(.+)\*\*$/, '$1')  // Remove **text**
-                                .replace(/\*\*CHORUS\*\*/, '');   // Remove **CHORUS**
-
-                            // Skip if empty after cleaning
-                            if (!cleanLine.trim()) continue;
+                                .replace(/\*\*CHORUS\*\*/, 'CHORUS');   // Convert **CHORUS** to CHORUS
 
                             // Apply transpose if needed
                             if (semitones !== 0) {
                                 cleanLine = transposeLine(cleanLine, semitones);
                             }
 
-                            // CRITICAL: Replace regular spaces with non-breaking spaces (\u00A0)
-                            // This prevents Word from collapsing multiple spaces and preserves chord alignment
-                            const preservedLine = cleanLine.replace(/ /g, '\u00A0');
-
-                            // Use TextRun with space preservation
-                            children.push(
-                                new Paragraph({
-                                    children: [
-                                        new TextRun({
-                                            text: preservedLine,
-                                            font: 'Courier New',
-                                            size: 20
-                                        })
-                                    ],
-                                    spacing: { after: 0, line: 240 }  // Consistent line spacing
-                                })
-                            );
+                            // Add line (preserve spacing)
+                            output += cleanLine + '\n';
                         }
                     }
                 });
 
-                // Create document
-                const doc = new Document({
-                    sections: [{
-                        properties: {},
-                        children: children
-                    }]
-                });
+                // Display output
+                document.getElementById('outputContent').textContent = output;
+                document.getElementById('outputSection').style.display = 'block';
 
-                // Generate and download
-                btn.textContent = 'Downloading...';
-                const blob = await docx.Packer.toBlob(doc);
-                const filename = `FMH-Worship-${date}.docx`;
-                saveAs(blob, filename);
+                // Scroll to output
+                document.getElementById('outputSection').scrollIntoView({ behavior: 'smooth' });
 
-                btn.textContent = 'Generate Word Document';
+                btn.textContent = 'Generate Chord Sheets';
                 btn.disabled = false;
-                alert(`✅ Document generated! Check your downloads folder for:\n${filename}`);
 
             } catch (error) {
-                console.error('Error generating document:', error);
+                console.error('Error generating chord sheets:', error);
 
                 // Provide detailed error message
-                let errorMessage = 'Error generating document:\n\n';
+                let errorMessage = 'Error generating chord sheets:\n\n';
                 if (error.message) {
                     errorMessage += error.message;
                 } else {
@@ -1131,10 +1083,29 @@
                 }
 
                 alert(errorMessage);
-                btn.textContent = 'Generate Word Document';
+                btn.textContent = 'Generate Chord Sheets';
                 btn.disabled = false;
             }
         }
+
+        // Copy to clipboard functionality
+        document.getElementById('copyBtn').addEventListener('click', async function() {
+            const outputContent = document.getElementById('outputContent').textContent;
+            try {
+                await navigator.clipboard.writeText(outputContent);
+                this.textContent = '✅ Copied!';
+                setTimeout(() => {
+                    this.textContent = '📋 Copy to Clipboard';
+                }, 2000);
+            } catch (err) {
+                alert('Failed to copy to clipboard. Please select the text manually and copy.');
+            }
+        });
+
+        // Close output section
+        document.getElementById('closeOutputBtn').addEventListener('click', function() {
+            document.getElementById('outputSection').style.display = 'none';
+        });
 
         function formatDate(dateString) {
             const date = new Date(dateString);
@@ -1223,23 +1194,10 @@
         <div style="color: #1A1A1A; font-weight: 600;">Loading libraries...</div>
     </div>
 
-    <!-- Load external libraries -->
-    <script src="https://unpkg.com/docx@7.8.2/build/index.js"></script>
-    <script src="https://unpkg.com/file-saver@2.0.5/dist/FileSaver.min.js"></script>
-
     <script>
-        // Check if libraries loaded successfully
+        // Hide loading overlay when page loads
         window.addEventListener('load', function() {
-            const overlay = document.getElementById('loadingOverlay');
-
-            if (typeof docx === 'undefined' || typeof saveAs === 'undefined') {
-                console.error('Failed to load required libraries');
-                alert('Warning: Document generation may not work. The required libraries failed to load. Please check your internet connection and refresh the page.');
-            } else {
-                console.log('Libraries loaded successfully');
-            }
-
-            overlay.classList.remove('show');
+            document.getElementById('loadingOverlay').classList.remove('show');
         });
 
         // Show loading overlay initially

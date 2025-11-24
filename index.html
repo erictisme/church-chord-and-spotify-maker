@@ -852,6 +852,13 @@
                         selectedSongs[index].targetKey = newKey;
                         console.log(`🎹 Transpose set: "${song.title}" from ${song.key} → ${newKey}`);
                         updateSelectedDisplay();
+
+                        // Auto-regenerate if output is already visible
+                        const outputSection = document.getElementById('outputSection');
+                        if (outputSection.style.display === 'block') {
+                            console.log('🔄 Auto-regenerating with new key...');
+                            generateChordSheets();
+                        }
                     });
 
                     // Remove button event listener

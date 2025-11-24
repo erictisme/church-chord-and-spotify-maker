@@ -1008,6 +1008,7 @@
                     let inMetadata = false;
                     let inCodeBlock = false;
                     let skipNextTitle = true;  // Skip the first # Title line after metadata
+                    let lastLineWasBlank = false;  // Track consecutive blank lines
 
                     for (let line of lines) {
                         // Skip metadata section (---...---)
@@ -1031,11 +1032,6 @@
                             continue;
                         }
 
-                        // Skip empty lines completely (don't add them to output)
-                        if (!line.trim()) {
-                            continue;
-                        }
-
                         // Skip the title line (# Song Title) that comes right after metadata
                         if (skipNextTitle && line.trim().match(/^#\s/)) {
                             skipNextTitle = false;
@@ -1045,12 +1041,23 @@
                         // If we reach here with content, we're past the title
                         skipNextTitle = false;
 
+                        // Handle empty lines - collapse consecutive blanks into one
+                        if (!line.trim()) {
+                            if (!lastLineWasBlank) {
+                                output += '\n';
+                                lastLineWasBlank = true;
+                            }
+                            continue;
+                        }
+
+                        lastLineWasBlank = false;
+
                         // Check if this is a section header [Verse], [Chorus]
                         const trimmedLine = line.trim();
                         const isSectionHeader = /^\[.+\]$/.test(trimmedLine);
 
                         if (isSectionHeader) {
-                            output += '\n' + trimmedLine + '\n\n';  // Blank before and after
+                            output += trimmedLine + '\n';
                         } else {
                             // Clean line - remove markdown symbols
                             let cleanLine = line
@@ -1067,8 +1074,8 @@
                                 }
                             }
 
-                            // Add line with blank after (for spacing between blocks)
-                            output += cleanLine + '\n\n';
+                            // Add line preserving original spacing
+                            output += cleanLine + '\n';
                         }
                     }
                 });

@@ -848,7 +848,9 @@
                     const keySelector = item.querySelector('.key-selector');
                     keySelector.addEventListener('change', (e) => {
                         e.stopPropagation();
-                        selectedSongs[index].targetKey = e.target.value;
+                        const newKey = e.target.value;
+                        selectedSongs[index].targetKey = newKey;
+                        console.log(`🎹 Transpose set: "${song.title}" from ${song.key} → ${newKey}`);
                         updateSelectedDisplay();
                     });
 
@@ -949,6 +951,14 @@
             btn.disabled = true;
 
             try {
+                // Debug: Show what songs we're generating
+                console.log('='.repeat(60));
+                console.log('📝 Generating chord sheets for:');
+                selectedSongs.forEach((s, i) => {
+                    console.log(`  ${i+1}. "${s.title}" - Key: ${s.key} → Target: ${s.targetKey}`);
+                });
+                console.log('='.repeat(60));
+
                 // Fetch full song contents from GitHub
                 btn.textContent = 'Loading songs...';
                 const songContents = await Promise.all(
@@ -995,7 +1005,14 @@
                     const semitones = calculateSemitones(song.key, song.targetKey);
 
                     // Debug logging
-                    console.log(`Song: ${song.title}, Original Key: ${song.key}, Target Key: ${song.targetKey}, Semitones: ${semitones}`);
+                    console.log(`\n🎵 ${song.title}`);
+                    console.log(`   Original Key: "${song.key}" → Target Key: "${song.targetKey}"`);
+                    console.log(`   Semitones to transpose: ${semitones}`);
+                    if (semitones === 0) {
+                        console.log(`   ⚠️ No transposition (semitones = 0)`);
+                    } else {
+                        console.log(`   ✓ Will transpose ${semitones} semitones`);
+                    }
 
                     // Song title with target key (if transposed) and artist
                     const displayKey = song.targetKey || song.key;

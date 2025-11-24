@@ -10,7 +10,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "10000-reasons-bless-the-lord-E.md"
+    "filename": "10000-reasons-bless-the-lord-E.md",
+    "key": "E"
   },
   "a pure heart": {
     "title": "A Pure Heart",
@@ -24,7 +25,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "a-pure-heart-D.md"
+    "filename": "a-pure-heart-D.md",
+    "key": "D"
   },
   "adopted": {
     "title": "Adopted",
@@ -37,7 +39,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "adopted-G.md"
+    "filename": "adopted-G.md",
+    "key": "G"
   },
   "alabaster jar": {
     "title": "Alabaster Jar",
@@ -49,7 +52,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "alabaster-jar-E.md"
+    "filename": "alabaster-jar-E.md",
+    "key": "E"
   },
   "all hail the power of jesus' name": {
     "title": "All Hail the Power of Jesus' Name",
@@ -61,7 +65,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "all-hail-the-power-of-jesus-name-E.md"
+    "filename": "all-hail-the-power-of-jesus-name-E.md",
+    "key": "E"
   },
   "all i have is christ": {
     "title": "All I Have Is Christ",
@@ -73,7 +78,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "all-i-have-is-christ-C.md"
+    "filename": "all-i-have-is-christ-C.md",
+    "key": "C"
   },
   "all my hope is in jesus": {
     "title": "All My Hope Is In Jesus",
@@ -87,7 +93,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "all-my-hope-is-in-jesus-G.md"
+    "filename": "all-my-hope-is-in-jesus-G.md",
+    "key": "G"
   },
   "all the poor and powerless": {
     "title": "All the poor and powerless",
@@ -99,7 +106,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "all-the-poor-and-powerless-C.md"
+    "filename": "all-the-poor-and-powerless-C.md",
+    "key": "C"
   },
   "all the world for jesus": {
     "title": "All the World for Jesus",
@@ -112,7 +120,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "all-the-world-for-jesus-G.md"
+    "filename": "all-the-world-for-jesus-G.md",
+    "key": "G"
   },
   "all to us": {
     "title": "All To Us",
@@ -125,7 +134,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "all-to-us-G.md"
+    "filename": "all-to-us-G.md",
+    "key": "G"
   },
   "amazing grace": {
     "title": "Amazing Grace",
@@ -138,7 +148,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "amazing-grace-D.md"
+    "filename": "amazing-grace-D.md",
+    "key": "D"
   },
   "anchor": {
     "title": "Anchor",
@@ -150,7 +161,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "anchor-G.md"
+    "filename": "anchor-G.md",
+    "key": "G"
   },
   "ancient word": {
     "title": "Ancient Word",
@@ -163,7 +175,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "ancient-word-G.md"
+    "filename": "ancient-word-G.md",
+    "key": "G"
   },
   "angels we have heard on high": {
     "title": "Angels We Have Heard On High",
@@ -177,7 +190,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "angels-we-have-heard-on-high-C.md"
+    "filename": "angels-we-have-heard-on-high-C.md",
+    "key": "C"
   },
   "as the deer": {
     "title": "As the Deer",
@@ -189,7 +203,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "as-the-deer-D.md"
+    "filename": "as-the-deer-D.md",
+    "key": "D"
   },
   "battle belongs": {
     "title": "Battle Belongs",
@@ -201,7 +216,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "battle-belongs-C.md"
+    "filename": "battle-belongs-C.md",
+    "key": "C"
   },
   "because he lives": {
     "title": "Because He Lives",
@@ -214,7 +230,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "because-he-lives-G.md"
+    "filename": "because-he-lives-G.md",
+    "key": "G"
   },
   "before the throne of god above": {
     "title": "Before the Throne of God Above",
@@ -226,7 +243,8 @@
     ],
     "acoustic": false,
     "count": "3",
-    "filename": "before-the-throne-of-god-above-A.md"
+    "filename": "before-the-throne-of-god-above-A.md",
+    "key": "A"
   },
   "behold him": {
     "title": "Behold Him",
@@ -239,7 +257,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "behold-him-D.md"
+    "filename": "behold-him-D.md",
+    "key": "D"
   },
   "blessed assurance": {
     "title": "Blessed Assurance",
@@ -251,7 +270,8 @@
     ],
     "acoustic": false,
     "count": "8",
-    "filename": "blessed-assurance-C.md"
+    "filename": "blessed-assurance-C.md",
+    "key": "C"
   },
   "blessed be your name": {
     "title": "Blessed be your name",
@@ -263,7 +283,8 @@
     ],
     "acoustic": false,
     "count": "9",
-    "filename": "blessed-be-your-name-B.md"
+    "filename": "blessed-be-your-name-B.md",
+    "key": "B"
   },
   "build my life": {
     "title": "Build my life",
@@ -275,7 +296,8 @@
     ],
     "acoustic": true,
     "count": "10",
-    "filename": "build-my-life-E.md"
+    "filename": "build-my-life-E.md",
+    "key": "E"
   },
   "christ be magnified": {
     "title": "Christ be Magnified",
@@ -287,7 +309,8 @@
     ],
     "acoustic": true,
     "count": "1",
-    "filename": "christ-be-magnified-D.md"
+    "filename": "christ-be-magnified-D.md",
+    "key": "D"
   },
   "christ our hope in life and death": {
     "title": "Christ Our Hope in Life and Death",
@@ -300,7 +323,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "christ-our-hope-in-life-and-death-E.md"
+    "filename": "christ-our-hope-in-life-and-death-E.md",
+    "key": "E"
   },
   "come as you are": {
     "title": "Come as you are",
@@ -312,7 +336,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "come-as-you-are-D.md"
+    "filename": "come-as-you-are-D.md",
+    "key": "D"
   },
   "come behold the wondrous mystery": {
     "title": "Come behold the Wondrous Mystery",
@@ -324,7 +349,8 @@
     ],
     "acoustic": false,
     "count": "4",
-    "filename": "come-behold-the-wondrous-mystery-D.md"
+    "filename": "come-behold-the-wondrous-mystery-D.md",
+    "key": "D"
   },
   "come thou fount": {
     "title": "Come thou fount",
@@ -336,7 +362,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "come-thou-fount-C.md"
+    "filename": "come-thou-fount-C.md",
+    "key": "C"
   },
   "crown him with many crowns": {
     "title": "Crown Him with Many Crowns",
@@ -348,7 +375,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "crown-him-with-many-crowns-C.md"
+    "filename": "crown-him-with-many-crowns-C.md",
+    "key": "C"
   },
   "day by day": {
     "title": "Day By Day",
@@ -360,7 +388,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "day-by-day-D.md"
+    "filename": "day-by-day-D.md",
+    "key": "D"
   },
   "death was arrested": {
     "title": "Death was arrested",
@@ -372,7 +401,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "death-was-arrested-G.md"
+    "filename": "death-was-arrested-G.md",
+    "key": "G"
   },
   "doxology": {
     "title": "Doxology",
@@ -384,7 +414,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "doxology-E.md"
+    "filename": "doxology-E.md",
+    "key": "E"
   },
   "even so come": {
     "title": "Even So Come",
@@ -396,7 +427,8 @@
     ],
     "acoustic": false,
     "count": "3",
-    "filename": "even-so-come-G.md"
+    "filename": "even-so-come-G.md",
+    "key": "G"
   },
   "everlasting god": {
     "title": "Everlasting God",
@@ -409,7 +441,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "everlasting-god-A.md"
+    "filename": "everlasting-god-A.md",
+    "key": "A"
   },
   "facing a task unfinished": {
     "title": "Facing a Task unfinished",
@@ -421,7 +454,8 @@
     ],
     "acoustic": false,
     "count": "7",
-    "filename": "facing-a-task-unfinished-C.md"
+    "filename": "facing-a-task-unfinished-C.md",
+    "key": "C"
   },
   "forgiven": {
     "title": "Forgiven",
@@ -433,7 +467,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "forgiven-A.md"
+    "filename": "forgiven-A.md",
+    "key": "A"
   },
   "give thanks": {
     "title": "Give thanks",
@@ -445,7 +480,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "give-thanks-E.md"
+    "filename": "give-thanks-E.md",
+    "key": "E"
   },
   "give them all to jesus": {
     "title": "Give them all to Jesus",
@@ -457,7 +493,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "give-them-all-to-jesus-D.md"
+    "filename": "give-them-all-to-jesus-D.md",
+    "key": "D"
   },
   "glorify thy name": {
     "title": "Glorify Thy Name",
@@ -470,7 +507,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "glorify-thy-name-C.md"
+    "filename": "glorify-thy-name-C.md",
+    "key": "C"
   },
   "god is for us": {
     "title": "God is For Us",
@@ -482,7 +520,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "god-is-for-us-D.md"
+    "filename": "god-is-for-us-D.md",
+    "key": "D"
   },
   "god made roses": {
     "title": "God Made Roses",
@@ -496,7 +535,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "god-made-roses-E.md"
+    "filename": "god-made-roses-E.md",
+    "key": "E"
   },
   "god of miracles": {
     "title": "God of Miracles",
@@ -508,7 +548,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "god-of-miracles-G.md"
+    "filename": "god-of-miracles-G.md",
+    "key": "G"
   },
   "good good father": {
     "title": "Good Good Father",
@@ -521,7 +562,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "good-good-father-E.md"
+    "filename": "good-good-father-E.md",
+    "key": "E"
   },
   "goodness of god": {
     "title": "Goodness of God",
@@ -533,7 +575,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "goodness-of-god-G.md"
+    "filename": "goodness-of-god-G.md",
+    "key": "G"
   },
   "grace and peace": {
     "title": "Grace and Peace",
@@ -546,7 +589,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "grace-and-peace-C.md"
+    "filename": "grace-and-peace-C.md",
+    "key": "C"
   },
   "grace awaiting me": {
     "title": "Grace Awaiting Me",
@@ -558,7 +602,8 @@
     ],
     "acoustic": false,
     "count": "2",
-    "filename": "grace-awaiting-me-A.md"
+    "filename": "grace-awaiting-me-A.md",
+    "key": "A"
   },
   "great are you lord": {
     "title": "Great are you Lord",
@@ -570,7 +615,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "great-are-you-lord-D.md"
+    "filename": "great-are-you-lord-D.md",
+    "key": "D"
   },
   "great is thy faithfulness": {
     "title": "Great is Thy faithfulness",
@@ -582,7 +628,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "great-is-thy-faithfulness-A.md"
+    "filename": "great-is-thy-faithfulness-A.md",
+    "key": "A"
   },
   "hark! the herald angels sing": {
     "title": "Hark! The Herald Angels Sing",
@@ -594,7 +641,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "hark-the-herald-angels-sing-C.md"
+    "filename": "hark-the-herald-angels-sing-C.md",
+    "key": "C"
   },
   "he is exalted": {
     "title": "He Is Exalted",
@@ -607,7 +655,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "he-is-exalted-G.md"
+    "filename": "he-is-exalted-G.md",
+    "key": "G"
   },
   "he lives": {
     "title": "He Lives",
@@ -619,7 +668,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "he-lives-G.md"
+    "filename": "he-lives-G.md",
+    "key": "G"
   },
   "he looked beyond my fault": {
     "title": "He Looked Beyond My Fault",
@@ -632,7 +682,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "he-looked-beyond-my-fault-D.md"
+    "filename": "he-looked-beyond-my-fault-D.md",
+    "key": "D"
   },
   "he will hold me fast": {
     "title": "He Will Hold Me Fast",
@@ -645,7 +696,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "he-will-hold-me-fast-G.md"
+    "filename": "he-will-hold-me-fast-G.md",
+    "key": "G"
   },
   "heavens home": {
     "title": "Heaven's Home",
@@ -658,7 +710,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "heavens-home-D.md"
+    "filename": "heavens-home-D.md",
+    "key": "D"
   },
   "here i am to worship": {
     "title": "Here I Am to Worship",
@@ -670,7 +723,8 @@
     ],
     "acoustic": false,
     "count": "7",
-    "filename": "here-i-am-to-worship-D.md"
+    "filename": "here-i-am-to-worship-D.md",
+    "key": "D"
   },
   "here is love": {
     "title": "Here is love",
@@ -682,13 +736,15 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "here-is-love-E.md"
+    "filename": "here-is-love-E.md",
+    "key": "E"
   },
   "hes coming back again": {
     "title": "He's Coming Back Again",
     "artist": "Colin Buchanan",
     "era": "Contemporary",
     "pace": "Medium",
+    "key": "G",
     "themes": [
       "Praise",
       "Declaration"
@@ -707,7 +763,8 @@
     ],
     "acoustic": false,
     "count": "6",
-    "filename": "his-glory-and-my-good-E.md"
+    "filename": "his-glory-and-my-good-E.md",
+    "key": "E"
   },
   "his glory appears": {
     "title": "His Glory Appears",
@@ -719,7 +776,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "his-glory-appears-D.md"
+    "filename": "his-glory-appears-D.md",
+    "key": "D"
   },
   "his mercy is more": {
     "title": "His Mercy Is More",
@@ -731,7 +789,8 @@
     ],
     "acoustic": false,
     "count": "9",
-    "filename": "his-mercy-is-more-E.md"
+    "filename": "his-mercy-is-more-E.md",
+    "key": "E"
   },
   "holy holy holy": {
     "title": "Holy holy holy",
@@ -743,7 +802,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "holy-holy-holy-C.md"
+    "filename": "holy-holy-holy-C.md",
+    "key": "C"
   },
   "holy, holy, holy": {
     "title": "Holy, Holy, Holy",
@@ -756,7 +816,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "holy-holy-holy-C.md"
+    "filename": "holy-holy-holy-C.md",
+    "key": "C"
   },
   "hosanna": {
     "title": "Hosanna",
@@ -770,7 +831,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "hosanna-G.md"
+    "filename": "hosanna-G.md",
+    "key": "G"
   },
   "how great is our god": {
     "title": "How Great is our God",
@@ -782,7 +844,8 @@
     ],
     "acoustic": false,
     "count": "10",
-    "filename": "how-great-is-our-god-G.md"
+    "filename": "how-great-is-our-god-G.md",
+    "key": "G"
   },
   "how great thou art": {
     "title": "How Great Thou Art",
@@ -794,7 +857,8 @@
     ],
     "acoustic": false,
     "count": "2",
-    "filename": "how-great-thou-art-A.md"
+    "filename": "how-great-thou-art-A.md",
+    "key": "A"
   },
   "how he loves": {
     "title": "How He Loves",
@@ -807,7 +871,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "how-he-loves-C.md"
+    "filename": "how-he-loves-C.md",
+    "key": "C"
   },
   "hymn of the saviour": {
     "title": "Hymn of the Saviour",
@@ -819,7 +884,8 @@
     ],
     "acoustic": false,
     "count": "2",
-    "filename": "hymn-of-the-saviour-F.md"
+    "filename": "hymn-of-the-saviour-F.md",
+    "key": "F"
   },
   "i am who you say i am": {
     "title": "I Am Who You Say I Am",
@@ -833,7 +899,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "i-am-who-you-say-i-am-G.md"
+    "filename": "i-am-who-you-say-i-am-G.md",
+    "key": "G"
   },
   "i exalt thee": {
     "title": "I Exalt Thee",
@@ -845,7 +912,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "i-exalt-thee-A.md"
+    "filename": "i-exalt-thee-A.md",
+    "key": "A"
   },
   "i have decided to follow jesus": {
     "title": "I have decided to follow Jesus",
@@ -857,7 +925,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "i-have-decided-to-follow-jesus-G.md"
+    "filename": "i-have-decided-to-follow-jesus-G.md",
+    "key": "G"
   },
   "i stand in awe": {
     "title": "I Stand in Awe",
@@ -869,7 +938,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "i-stand-in-awe-G.md"
+    "filename": "i-stand-in-awe-G.md",
+    "key": "G"
   },
   "i surrender": {
     "title": "I surrender",
@@ -893,7 +963,8 @@
     ],
     "acoustic": false,
     "count": "2",
-    "filename": "i-surrender-all-C.md"
+    "filename": "i-surrender-all-C.md",
+    "key": "C"
   },
   "i will follow": {
     "title": "I Will Follow",
@@ -905,7 +976,8 @@
     ],
     "acoustic": true,
     "count": "8",
-    "filename": "i-will-follow-E.md"
+    "filename": "i-will-follow-E.md",
+    "key": "E"
   },
   "i will trust my saviour jesus": {
     "title": "I will trust my Saviour Jesus",
@@ -917,7 +989,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "i-will-trust-my-saviour-jesus-C.md"
+    "filename": "i-will-trust-my-saviour-jesus-C.md",
+    "key": "C"
   },
   "i'm following the king": {
     "title": "I'm Following the King",
@@ -929,7 +1002,8 @@
     ],
     "acoustic": false,
     "count": "4",
-    "filename": "im-following-the-king-D.md"
+    "filename": "im-following-the-king-D.md",
+    "key": "D"
   },
   "into the deep": {
     "title": "Into the Deep",
@@ -955,7 +1029,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "it-is-well-with-my-soul-C.md"
+    "filename": "it-is-well-with-my-soul-C.md",
+    "key": "C"
   },
   "jerusalem": {
     "title": "Jerusalem",
@@ -969,7 +1044,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "jerusalem-B.md"
+    "filename": "jerusalem-B.md",
+    "key": "B"
   },
   "jesus came to earth": {
     "title": "Jesus Came To Earth",
@@ -981,7 +1057,8 @@
     ],
     "acoustic": false,
     "count": "4",
-    "filename": "jesus-came-to-earth-D.md"
+    "filename": "jesus-came-to-earth-D.md",
+    "key": "D"
   },
   "jesus messiah": {
     "title": "Jesus Messiah",
@@ -994,7 +1071,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "jesus-messiah-D.md"
+    "filename": "jesus-messiah-D.md",
+    "key": "D"
   },
   "jesus paid it all": {
     "title": "Jesus Paid It All",
@@ -1006,7 +1084,8 @@
     ],
     "acoustic": true,
     "count": "4",
-    "filename": "jesus-paid-it-all-C.md"
+    "filename": "jesus-paid-it-all-C.md",
+    "key": "C"
   },
   "jesus strong and kind": {
     "title": "Jesus strong and kind",
@@ -1018,7 +1097,8 @@
     ],
     "acoustic": false,
     "count": "5",
-    "filename": "jesus-strong-and-kind-C.md"
+    "filename": "jesus-strong-and-kind-C.md",
+    "key": "C"
   },
   "jireh": {
     "title": "Jireh",
@@ -1030,7 +1110,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "jireh-E.md"
+    "filename": "jireh-E.md",
+    "key": "E"
   },
   "joy to the world": {
     "title": "Joy to the World",
@@ -1042,7 +1123,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "joy-to-the-world-A.md"
+    "filename": "joy-to-the-world-A.md",
+    "key": "A"
   },
   "just a closer walk": {
     "title": "Just a closer walk",
@@ -1054,7 +1136,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "just-a-closer-walk-G.md"
+    "filename": "just-a-closer-walk-G.md",
+    "key": "G"
   },
   "king of kings": {
     "title": "King of Kings",
@@ -1066,7 +1149,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "king-of-kings-D.md"
+    "filename": "king-of-kings-D.md",
+    "key": "D"
   },
   "king of kings, majesty": {
     "title": "King of Kings, Majesty",
@@ -1078,7 +1162,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "king-of-kings-majesty-A.md"
+    "filename": "king-of-kings-majesty-A.md",
+    "key": "A"
   },
   "king of my heart": {
     "title": "King of my heart",
@@ -1090,7 +1175,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "king-of-my-heart-A.md"
+    "filename": "king-of-my-heart-A.md",
+    "key": "A"
   },
   "let the nations be glad": {
     "title": "Let the Nations Be Glad",
@@ -1103,7 +1189,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "let-the-nations-be-glad-C.md"
+    "filename": "let-the-nations-be-glad-C.md",
+    "key": "C"
   },
   "lion and the lamb": {
     "title": "Lion and the Lamb",
@@ -1116,7 +1203,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "lion-and-the-lamb-G.md"
+    "filename": "lion-and-the-lamb-G.md",
+    "key": "G"
   },
   "living hope": {
     "title": "Living Hope",
@@ -1128,7 +1216,8 @@
     ],
     "acoustic": false,
     "count": "7",
-    "filename": "living-hope-D.md"
+    "filename": "living-hope-D.md",
+    "key": "D"
   },
   "lord from sorrows deep i call": {
     "title": "Lord from Sorrows Deep I Call",
@@ -1140,7 +1229,8 @@
     ],
     "acoustic": true,
     "count": "1",
-    "filename": "lord-from-sorrows-deep-i-call-G.md"
+    "filename": "lord-from-sorrows-deep-i-call-G.md",
+    "key": "G"
   },
   "lord here we come": {
     "title": "Lord Here We Come",
@@ -1153,7 +1243,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "lord-here-we-come-G.md"
+    "filename": "lord-here-we-come-G.md",
+    "key": "G"
   },
   "lord i give you my heart": {
     "title": "Lord I Give You My Heart",
@@ -1165,7 +1256,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "lord-i-give-you-my-heart-G.md"
+    "filename": "lord-i-give-you-my-heart-G.md",
+    "key": "G"
   },
   "lord, i need you": {
     "title": "Lord, I need you",
@@ -1177,7 +1269,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "lord-i-need-you-A.md"
+    "filename": "lord-i-need-you-A.md",
+    "key": "A"
   },
   "love is here": {
     "title": "Love Is Here",
@@ -1204,7 +1297,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "love-reigns-G.md"
+    "filename": "love-reigns-G.md",
+    "key": "G"
   },
   "made to worship": {
     "title": "Made To Worship",
@@ -1217,7 +1311,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "made-to-worship-G.md"
+    "filename": "made-to-worship-G.md",
+    "key": "G"
   },
   "majesty": {
     "title": "Majesty",
@@ -1231,7 +1326,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "majesty-A.md"
+    "filename": "majesty-A.md",
+    "key": "A"
   },
   "man of sorrows": {
     "title": "Man of sorrows",
@@ -1243,7 +1339,8 @@
     ],
     "acoustic": false,
     "count": "3",
-    "filename": "man-of-sorrows-D.md"
+    "filename": "man-of-sorrows-D.md",
+    "key": "D"
   },
   "mercy": {
     "title": "Mercy",
@@ -1256,7 +1353,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "mercy-C.md"
+    "filename": "mercy-C.md",
+    "key": "C"
   },
   "more like jesus": {
     "title": "More like Jesus",
@@ -1268,7 +1366,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "more-like-jesus-G.md"
+    "filename": "more-like-jesus-G.md",
+    "key": "G"
   },
   "my god is a very very big god": {
     "title": "My God is a Very Very Big God",
@@ -1281,7 +1380,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "my-god-is-a-very-very-big-god-C.md"
+    "filename": "my-god-is-a-very-very-big-god-C.md",
+    "key": "C"
   },
   "my hope is built on nothing less": {
     "title": "My hope is built on nothing less",
@@ -1293,7 +1393,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "my-hope-is-built-on-nothing-less-G.md"
+    "filename": "my-hope-is-built-on-nothing-less-G.md",
+    "key": "G"
   },
   "name above all names": {
     "title": "Name Above All Names",
@@ -1306,7 +1407,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "name-above-all-names-E.md"
+    "filename": "name-above-all-names-E.md",
+    "key": "E"
   },
   "new wine": {
     "title": "New Wine",
@@ -1318,7 +1420,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "new-wine-A.md"
+    "filename": "new-wine-A.md",
+    "key": "A"
   },
   "no longer slaves": {
     "title": "No Longer Slaves",
@@ -1330,7 +1433,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "no-longer-slaves-E.md"
+    "filename": "no-longer-slaves-E.md",
+    "key": "E"
   },
   "o church arise": {
     "title": "O Church Arise",
@@ -1342,7 +1446,8 @@
     ],
     "acoustic": false,
     "count": "2",
-    "filename": "o-church-arise-C.md"
+    "filename": "o-church-arise-C.md",
+    "key": "C"
   },
   "o come to the altar": {
     "title": "O Come to the Altar",
@@ -1354,7 +1459,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "o-come-to-the-altar-G.md"
+    "filename": "o-come-to-the-altar-G.md",
+    "key": "G"
   },
   "o holy night": {
     "title": "O Holy Night",
@@ -1366,7 +1472,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "o-holy-night-A.md"
+    "filename": "o-holy-night-A.md",
+    "key": "A"
   },
   "o how good it is": {
     "title": "O How Good it Is",
@@ -1378,7 +1485,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "o-how-good-it-is-C.md"
+    "filename": "o-how-good-it-is-C.md",
+    "key": "C"
   },
   "o lord my rock and my redeemer": {
     "title": "O Lord My Rock And My Redeemer",
@@ -1391,7 +1499,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "o-lord-my-rock-and-my-redeemer-D.md"
+    "filename": "o-lord-my-rock-and-my-redeemer-D.md",
+    "key": "D"
   },
   "o praise the name": {
     "title": "O Praise the Name",
@@ -1403,7 +1512,8 @@
     ],
     "acoustic": false,
     "count": "8",
-    "filename": "o-praise-the-name-G.md"
+    "filename": "o-praise-the-name-G.md",
+    "key": "G"
   },
   "only a holy god": {
     "title": "Only a Holy God",
@@ -1415,7 +1525,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "only-a-holy-god-D.md"
+    "filename": "only-a-holy-god-D.md",
+    "key": "D"
   },
   "open the eyes of my heart": {
     "title": "Open the eyes of my heart",
@@ -1427,7 +1538,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "open-the-eyes-of-my-heart-C.md"
+    "filename": "open-the-eyes-of-my-heart-C.md",
+    "key": "C"
   },
   "our god saves": {
     "title": "Our God Saves",
@@ -1452,7 +1564,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "power-of-the-cross-C.md"
+    "filename": "power-of-the-cross-C.md",
+    "key": "C"
   },
   "praise to the lord the almighty": {
     "title": "Praise to the Lord the Almighty",
@@ -1464,7 +1577,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "praise-to-the-lord-the-almighty-D.md"
+    "filename": "praise-to-the-lord-the-almighty-D.md",
+    "key": "D"
   },
   "praise to the lord, the almighty": {
     "title": "Praise to the Lord, the Almighty",
@@ -1477,7 +1591,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "praise-to-the-lord-the-almighty-D.md"
+    "filename": "praise-to-the-lord-the-almighty-D.md",
+    "key": "D"
   },
   "psalm 34 (taste and see)": {
     "title": "Psalm 34 (Taste and See)",
@@ -1491,7 +1606,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "psalm-34-taste-and-see-C.md"
+    "filename": "psalm-34-taste-and-see-C.md",
+    "key": "C"
   },
   "psalm 34 taste and see": {
     "title": "Psalm 34 Taste and See",
@@ -1503,7 +1619,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "psalm-34-taste-and-see-C.md"
+    "filename": "psalm-34-taste-and-see-C.md",
+    "key": "C"
   },
   "psalm 92 it is good": {
     "title": "Psalm 92 It Is Good",
@@ -1516,7 +1633,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "psalm-92-it-is-good-C.md"
+    "filename": "psalm-92-it-is-good-C.md",
+    "key": "C"
   },
   "reckless love": {
     "title": "Reckless Love",
@@ -1528,7 +1646,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "reckless-love-G.md"
+    "filename": "reckless-love-G.md",
+    "key": "G"
   },
   "refiners fire": {
     "title": "Refiner's Fire",
@@ -1542,7 +1661,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "refiners-fire-D.md"
+    "filename": "refiners-fire-D.md",
+    "key": "D"
   },
   "rejoice": {
     "title": "Rejoice",
@@ -1554,7 +1674,8 @@
     ],
     "acoustic": false,
     "count": "3",
-    "filename": "rejoice-E.md"
+    "filename": "rejoice-E.md",
+    "key": "E"
   },
   "remembrance": {
     "title": "Remembrance",
@@ -1566,7 +1687,8 @@
     ],
     "acoustic": false,
     "count": "7",
-    "filename": "remembrance-A.md"
+    "filename": "remembrance-A.md",
+    "key": "A"
   },
   "resurrecting": {
     "title": "Resurrecting",
@@ -1578,7 +1700,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "resurrecting-F.md"
+    "filename": "resurrecting-F.md",
+    "key": "F"
   },
   "revelation song": {
     "title": "Revelation Song",
@@ -1592,7 +1715,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "revelation-song-D.md"
+    "filename": "revelation-song-D.md",
+    "key": "D"
   },
   "risen": {
     "title": "Risen",
@@ -1605,7 +1729,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "risen-D.md"
+    "filename": "risen-D.md",
+    "key": "D"
   },
   "run to the father": {
     "title": "Run to the Father",
@@ -1617,7 +1742,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "run-to-the-father-C.md"
+    "filename": "run-to-the-father-C.md",
+    "key": "C"
   },
   "scandal of grace": {
     "title": "Scandal of Grace",
@@ -1629,7 +1755,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "scandal-of-grace-G.md"
+    "filename": "scandal-of-grace-G.md",
+    "key": "G"
   },
   "sinking deep": {
     "title": "Sinking Deep",
@@ -1642,7 +1769,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "sinking-deep-G.md"
+    "filename": "sinking-deep-G.md",
+    "key": "G"
   },
   "so will i": {
     "title": "So Will I",
@@ -1654,7 +1782,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "so-will-i-D.md"
+    "filename": "so-will-i-D.md",
+    "key": "D"
   },
   "sovereign": {
     "title": "Sovereign",
@@ -1666,7 +1795,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "sovereign-G.md"
+    "filename": "sovereign-G.md",
+    "key": "G"
   },
   "speak o lord": {
     "title": "Speak O Lord",
@@ -1678,7 +1808,8 @@
     ],
     "acoustic": false,
     "count": "3",
-    "filename": "speak-o-lord-A.md"
+    "filename": "speak-o-lord-A.md",
+    "key": "A"
   },
   "surrender": {
     "title": "Surrender",
@@ -1702,7 +1833,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "take-my-life-and-let-it-be-D.md"
+    "filename": "take-my-life-and-let-it-be-D.md",
+    "key": "D"
   },
   "the heart of worship": {
     "title": "The Heart of Worship",
@@ -1714,7 +1846,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "the-heart-of-worship-D.md"
+    "filename": "the-heart-of-worship-D.md",
+    "key": "D"
   },
   "the joy of christmas": {
     "title": "The Joy of Christmas",
@@ -1726,7 +1859,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "the-joy-of-christmas-C.md"
+    "filename": "the-joy-of-christmas-C.md",
+    "key": "C"
   },
   "the love of god": {
     "title": "The Love of God",
@@ -1738,7 +1872,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "the-love-of-god-A.md"
+    "filename": "the-love-of-god-A.md",
+    "key": "A"
   },
   "the love of the father": {
     "title": "The Love of the Father",
@@ -1763,7 +1898,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "the-old-rugged-cross-G.md"
+    "filename": "the-old-rugged-cross-G.md",
+    "key": "G"
   },
   "the servant king": {
     "title": "The Servant King",
@@ -1777,7 +1913,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "the-servant-king-D.md"
+    "filename": "the-servant-king-D.md",
+    "key": "D"
   },
   "the stand": {
     "title": "The Stand",
@@ -1790,7 +1927,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "the-stand-C.md"
+    "filename": "the-stand-C.md",
+    "key": "C"
   },
   "the steadfast love of the lord": {
     "title": "The Steadfast Love Of The Lord",
@@ -1803,7 +1941,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "the-steadfast-love-of-the-lord-D.md"
+    "filename": "the-steadfast-love-of-the-lord-D.md",
+    "key": "D"
   },
   "the table": {
     "title": "The Table",
@@ -1816,7 +1955,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "the-table-G.md"
+    "filename": "the-table-G.md",
+    "key": "G"
   },
   "there is a fountain": {
     "title": "There is a Fountain",
@@ -1829,7 +1969,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "there-is-a-fountain-G.md"
+    "filename": "there-is-a-fountain-G.md",
+    "key": "G"
   },
   "this i believe (the creed)": {
     "title": "This I Believe (The Creed)",
@@ -1842,7 +1983,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "this-i-believe-the-creed-G.md"
+    "filename": "this-i-believe-the-creed-G.md",
+    "key": "G"
   },
   "this is our god": {
     "title": "This is Our God",
@@ -1854,7 +1996,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "this-is-our-god-E.md"
+    "filename": "this-is-our-god-E.md",
+    "key": "E"
   },
   "though you were rich": {
     "title": "Though You Were Rich",
@@ -1866,7 +2009,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "though-you-were-rich-D.md"
+    "filename": "though-you-were-rich-D.md",
+    "key": "D"
   },
   "thy kingdom come": {
     "title": "Thy Kingdom Come",
@@ -1880,7 +2024,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "thy-kingdom-come-C.md"
+    "filename": "thy-kingdom-come-C.md",
+    "key": "C"
   },
   "tis so sweet to trust in jesus": {
     "title": "Tis So Sweet to Trust in Jesus",
@@ -1893,7 +2038,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "tis-so-sweet-to-trust-in-jesus-D.md"
+    "filename": "tis-so-sweet-to-trust-in-jesus-D.md",
+    "key": "D"
   },
   "today is the day": {
     "title": "Today is the day",
@@ -1905,7 +2051,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "today-is-the-day-A.md"
+    "filename": "today-is-the-day-A.md",
+    "key": "A"
   },
   "touch of heaven": {
     "title": "Touch of heaven",
@@ -1929,7 +2076,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "transfiguration-C.md"
+    "filename": "transfiguration-C.md",
+    "key": "C"
   },
   "trust and obey": {
     "title": "Trust and Obey",
@@ -1942,7 +2090,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "trust-and-obey-D.md"
+    "filename": "trust-and-obey-D.md",
+    "key": "D"
   },
   "turn your eyes": {
     "title": "Turn Your Eyes",
@@ -1955,7 +2104,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "turn-your-eyes-C.md"
+    "filename": "turn-your-eyes-C.md",
+    "key": "C"
   },
   "turn your eyes upon jesus": {
     "title": "Turn your eyes upon Jesus",
@@ -1967,7 +2117,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "turn-your-eyes-upon-jesus-E.md"
+    "filename": "turn-your-eyes-upon-jesus-E.md",
+    "key": "E"
   },
   "undivided": {
     "title": "Undivided",
@@ -1979,7 +2130,8 @@
     ],
     "acoustic": false,
     "count": "4",
-    "filename": "undivided-C.md"
+    "filename": "undivided-C.md",
+    "key": "C"
   },
   "we are singing": {
     "title": "We Are Singing",
@@ -1992,7 +2144,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "we-are-singing-D.md"
+    "filename": "we-are-singing-D.md",
+    "key": "D"
   },
   "we are the church": {
     "title": "We Are The Church",
@@ -2004,7 +2157,8 @@
     ],
     "acoustic": false,
     "count": "4",
-    "filename": "we-are-the-church-B.md"
+    "filename": "we-are-the-church-B.md",
+    "key": "B"
   },
   "we give thanks": {
     "title": "We Give thanks",
@@ -2016,7 +2170,8 @@
     ],
     "acoustic": false,
     "count": "7",
-    "filename": "we-give-thanks-G.md"
+    "filename": "we-give-thanks-G.md",
+    "key": "G"
   },
   "we give thanks to god": {
     "title": "We Give Thanks To God",
@@ -2029,7 +2184,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "we-give-thanks-to-god-D.md"
+    "filename": "we-give-thanks-to-god-D.md",
+    "key": "D"
   },
   "what a beautiful name": {
     "title": "What A Beautiful Name",
@@ -2041,7 +2197,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "what-a-beautiful-name-D.md"
+    "filename": "what-a-beautiful-name-D.md",
+    "key": "D"
   },
   "what a friend we have in jesus": {
     "title": "What a Friend we have in Jesus",
@@ -2053,7 +2210,8 @@
     ],
     "acoustic": false,
     "count": "4",
-    "filename": "what-a-friend-we-have-in-jesus-C.md"
+    "filename": "what-a-friend-we-have-in-jesus-C.md",
+    "key": "C"
   },
   "what love, my god": {
     "title": "What Love, My God",
@@ -2066,7 +2224,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "what-love-my-god-C.md"
+    "filename": "what-love-my-god-C.md",
+    "key": "C"
   },
   "when i survey the wondrous cross": {
     "title": "When I Survey The Wondrous Cross",
@@ -2079,7 +2238,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "when-i-survey-the-wondrous-cross-D.md"
+    "filename": "when-i-survey-the-wondrous-cross-D.md",
+    "key": "D"
   },
   "whom shall i fear": {
     "title": "Whom shall I Fear",
@@ -2091,7 +2251,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "whom-shall-i-fear-D.md"
+    "filename": "whom-shall-i-fear-D.md",
+    "key": "D"
   },
   "worthy is the lamb": {
     "title": "Worthy is the Lamb",
@@ -2103,7 +2264,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "worthy-is-the-lamb-G.md"
+    "filename": "worthy-is-the-lamb-G.md",
+    "key": "G"
   },
   "yet not i but through christ in me": {
     "title": "Yet not I but through Christ in me",
@@ -2115,7 +2277,8 @@
     ],
     "acoustic": false,
     "count": "1",
-    "filename": "yet-not-i-but-through-christ-in-me-C.md"
+    "filename": "yet-not-i-but-through-christ-in-me-C.md",
+    "key": "C"
   },
   "you are god alone": {
     "title": "You Are God Alone",
@@ -2128,7 +2291,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "you-are-god-alone-A.md"
+    "filename": "you-are-god-alone-A.md",
+    "key": "A"
   },
   "you are good": {
     "title": "You are Good",
@@ -2140,7 +2304,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "you-are-good-A.md"
+    "filename": "you-are-good-A.md",
+    "key": "A"
   },
   "you are my all in all": {
     "title": "You Are My All In All",
@@ -2153,7 +2318,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "you-are-my-all-in-all-E.md"
+    "filename": "you-are-my-all-in-all-E.md",
+    "key": "E"
   },
   "you have redeemed my soul": {
     "title": "You Have Redeemed My Soul",
@@ -2166,7 +2332,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "you-have-redeemed-my-soul-G.md"
+    "filename": "you-have-redeemed-my-soul-G.md",
+    "key": "G"
   },
   "you hold me now": {
     "title": "You Hold me Now",
@@ -2178,7 +2345,8 @@
     ],
     "acoustic": false,
     "count": "",
-    "filename": "you-hold-me-now-G.md"
+    "filename": "you-hold-me-now-G.md",
+    "key": "G"
   },
   "your will be done": {
     "title": "Your Will Be Done",
@@ -2191,7 +2359,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "your-will-be-done-C.md"
+    "filename": "your-will-be-done-C.md",
+    "key": "C"
   },
   "your word": {
     "title": "Your Word",
@@ -2217,7 +2386,8 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "beautiful-saviour-A.md"
+    "filename": "beautiful-saviour-A.md",
+    "key": "A"
   },
   "the lord is my salvation": {
     "title": "The Lord Is My Salvation",
@@ -2231,6 +2401,7 @@
     ],
     "acoustic": true,
     "count": "0",
-    "filename": "the-lord-is-my-salvation-C.md"
+    "filename": "the-lord-is-my-salvation-C.md",
+    "key": "C"
   }
 }

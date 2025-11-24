@@ -615,6 +615,25 @@
             return (toIndex - fromIndex + 12) % 12;
         }
 
+        function transposeKey(key, semitones) {
+            if (!key || semitones === 0) return key;
+
+            // Normalize key
+            let normalizedKey = key.replace(/\s/g, '');
+
+            // Convert flats to sharps
+            if (FLAT_TO_SHARP[normalizedKey]) {
+                normalizedKey = FLAT_TO_SHARP[normalizedKey];
+            }
+
+            const keyIndex = NOTES.indexOf(normalizedKey);
+            if (keyIndex === -1) return key;
+
+            // Transpose
+            const newIndex = (keyIndex + semitones + 12) % 12;
+            return NOTES[newIndex];
+        }
+
         // Load songs from GitHub
         async function loadSongs() {
             try {
@@ -791,7 +810,8 @@
                 // Add song with original key as default target
                 selectedSongs.push({
                     ...song,
-                    targetKey: song.key || ''  // Track transpose target
+                    targetKey: song.key || '',  // Track transpose target
+                    capoSemitones: 0  // Track capo setting
                 });
             }
 
@@ -825,14 +845,21 @@
                         `<option value="${k}" ${k === song.targetKey ? 'selected' : ''}>${k}</option>`
                     ).join('');
 
+                    // Create capo semitones options
+                    const capoOptions = [0, 1, 2, 3, 4, 5].map(n =>
+                        `<option value="${n}" ${n === song.capoSemitones ? 'selected' : ''}>Capo +${n}</option>`
+                    ).join('');
+
                     const originalKeyDisplay = song.key ? ` (${song.key})` : '';
-                    const transposeIndicator = song.targetKey !== song.key ? ' → ' : '';
 
                     item.innerHTML = `
                         <span class="drag-handle">☰</span>
                         <span style="flex: 1;">${index + 1}. ${song.title}${originalKeyDisplay}</span>
                         <select class="key-selector" data-song-index="${index}" style="margin-right: 10px; padding: 3px 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 12px;">
                             ${keyOptions}
+                        </select>
+                        <select class="capo-selector" data-song-index="${index}" style="margin-right: 10px; padding: 3px 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 12px; background: #f0f9ff;">
+                            ${capoOptions}
                         </select>
                         <button class="remove-btn" data-song-id="${song.id}">Remove</button>
                     `;
@@ -851,6 +878,16 @@
                         const newKey = e.target.value;
                         selectedSongs[index].targetKey = newKey;
                         console.log(`🎹 Transpose set: "${song.title}" from ${song.key} → ${newKey}`);
+                        updateSelectedDisplay();
+                    });
+
+                    // Capo selector change listener
+                    const capoSelector = item.querySelector('.capo-selector');
+                    capoSelector.addEventListener('change', (e) => {
+                        e.stopPropagation();
+                        const capoValue = parseInt(e.target.value);
+                        selectedSongs[index].capoSemitones = capoValue;
+                        console.log(`🎸 Capo set: "${song.title}" Capo +${capoValue} semitones`);
                         updateSelectedDisplay();
                     });
 
@@ -987,7 +1024,17 @@
                 // Song overview list
                 selectedSongs.forEach((song, i) => {
                     const displayKey = song.targetKey || song.key;
-                    const keyDisplay = displayKey ? ` (${displayKey})` : '';
+                    let keyDisplay = '';
+
+                    if (displayKey) {
+                        if (song.capoSemitones > 0) {
+                            const soundingKey = transposeKey(displayKey, song.capoSemitones);
+                            keyDisplay = ` (Written: ${displayKey}, Capo +${song.capoSemitones} → Sounds: ${soundingKey})`;
+                        } else {
+                            keyDisplay = ` (${displayKey})`;
+                        }
+                    }
+
                     output += `Song ${i + 1}: ${song.title}${keyDisplay}\n`;
                 });
 
@@ -1008,15 +1055,26 @@
                     console.log(`\n🎵 ${song.title}`);
                     console.log(`   Original Key: "${song.key}" → Target Key: "${song.targetKey}"`);
                     console.log(`   Semitones to transpose: ${semitones}`);
+                    console.log(`   Capo: +${song.capoSemitones} semitones`);
                     if (semitones === 0) {
                         console.log(`   ⚠️ No transposition (semitones = 0)`);
                     } else {
                         console.log(`   ✓ Will transpose ${semitones} semitones`);
                     }
 
-                    // Song title with target key (if transposed) and artist
+                    // Song title with target key (if transposed), capo info, and artist
                     const displayKey = song.targetKey || song.key;
-                    const keyDisplay = displayKey ? ` (${displayKey})` : '';
+                    let keyDisplay = '';
+
+                    if (displayKey) {
+                        if (song.capoSemitones > 0) {
+                            const soundingKey = transposeKey(displayKey, song.capoSemitones);
+                            keyDisplay = ` (Written: ${displayKey}, Capo +${song.capoSemitones} → Sounds: ${soundingKey})`;
+                        } else {
+                            keyDisplay = ` (${displayKey})`;
+                        }
+                    }
+
                     const artistDisplay = song.artist ? ` by ${song.artist}` : '';
                     output += `${song.title}${keyDisplay}${artistDisplay}\n\n`;
 

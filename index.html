@@ -1049,15 +1049,6 @@
                             continue;
                         }
 
-                        // Skip the title line (# Song Title) that comes right after metadata
-                        if (skipNextTitle && line.trim().match(/^#\s/)) {
-                            skipNextTitle = false;
-                            continue;
-                        }
-
-                        // If we reach here with content, we're past the title
-                        skipNextTitle = false;
-
                         // Handle empty lines - collapse consecutive blanks into one
                         if (!line.trim()) {
                             if (!lastLineWasBlank) {
@@ -1068,6 +1059,16 @@
                         }
 
                         lastLineWasBlank = false;
+
+                        // Skip the title line (# Song Title) that comes right after metadata
+                        // Check AFTER empty line handling so blanks don't prevent skipping
+                        if (skipNextTitle && line.trim().match(/^#/)) {
+                            skipNextTitle = false;
+                            continue;
+                        }
+
+                        // If we reach here with content, we're past the title
+                        skipNextTitle = false;
 
                         // Check if this is a section header [Verse], [Chorus]
                         const trimmedLine = line.trim();
@@ -1091,8 +1092,16 @@
                                 }
                             }
 
-                            // Add line preserving original spacing
-                            output += cleanLine + '\n';
+                            // Check if this is a standalone label like CHORUS, INTRO, CHORUS x2, etc.
+                            const isLabel = /^(CHORUS|INTRO|VERSE|BRIDGE|INTERLUDE|OUTRO|TAG|INSTRUMENTAL)(\s*x?\d*)?$/i.test(cleanLine.trim());
+
+                            if (isLabel) {
+                                // Add blank before standalone labels to separate blocks
+                                output += '\n' + cleanLine + '\n';
+                            } else {
+                                // Add line preserving original spacing
+                                output += cleanLine + '\n';
+                            }
                         }
                     }
                 });

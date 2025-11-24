@@ -510,21 +510,29 @@
 
             <!-- Output Section (hidden initially) -->
             <div id="outputSection" style="display: none; margin-top: 30px; padding: 30px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                <h2 style="color: #c41e3a; margin-bottom: 20px;">🎉 Congratulations! Your chord sheets are ready!</h2>
+                <h2 style="color: #c41e3a; margin-bottom: 15px;">🎉 Your chord sheets are ready!</h2>
 
-                <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #c41e3a;">
-                    <h3 style="margin-top: 0; color: #333;">How to use:</h3>
-                    <ol style="line-height: 1.8; color: #555;">
-                        <li><strong>Create a blank document</strong> in your preferred software (Google Docs or Microsoft Word Online)</li>
-                        <li><strong>Click "Copy to Clipboard"</strong> button below (or manually select all text and copy)</li>
-                        <li><strong>Paste</strong> into your blank document</li>
-                        <li><strong>Format to your preference:</strong>
-                            <ul>
-                                <li>Change font (recommended: Courier New or Consolas for chord alignment)</li>
-                                <li>Adjust spacing, add page breaks, etc.</li>
-                            </ul>
-                        </li>
+                <!-- Instructions toggle -->
+                <div style="margin-bottom: 15px;">
+                    <button id="toggleInstructions" style="padding: 6px 12px; background: #f5f5f5; border: 1px solid #ddd; border-radius: 4px; cursor: pointer; font-size: 13px; color: #555;">
+                        ▼ Show Instructions
+                    </button>
+                </div>
+
+                <!-- Collapsible instructions -->
+                <div id="instructionsBox" style="display: none; background: #f5f5f5; padding: 15px; border-radius: 6px; margin-bottom: 15px; border-left: 4px solid #c41e3a;">
+                    <ol style="line-height: 1.6; color: #555; margin: 0; padding-left: 20px; font-size: 14px;">
+                        <li>Click "Copy to Clipboard" below</li>
+                        <li>Paste into Google Docs or Word</li>
+                        <li>Change font to Courier New, Consolas, or Arial</li>
+                        <li>Adjust as needed (spacing, page breaks, etc.)</li>
                     </ol>
+                    <div style="margin-top: 10px; padding: 8px; background: white; border-radius: 4px; font-size: 12px; color: #666;">
+                        💡 <strong>Tip:</strong> For best chord alignment, use monospace fonts (Courier New or Consolas). Arial works too!
+                    </div>
+                    <div style="margin-top: 10px; padding: 8px; background: white; border-radius: 4px; font-size: 12px; color: #666;">
+                        📱 <strong>Feedback?</strong> WhatsApp Eric at <a href="https://wa.me/6581398062" target="_blank" style="color: #c41e3a; text-decoration: none; font-weight: bold;">+65 8139 8062</a>
+                    </div>
                 </div>
 
                 <div style="margin-bottom: 15px; display: flex; gap: 10px;">
@@ -986,6 +994,9 @@
                     // Calculate transpose semitones
                     const semitones = calculateSemitones(song.key, song.targetKey);
 
+                    // Debug logging
+                    console.log(`Song: ${song.title}, Original Key: ${song.key}, Target Key: ${song.targetKey}, Semitones: ${semitones}`);
+
                     // Song title with target key (if transposed) and artist
                     const displayKey = song.targetKey || song.key;
                     const keyDisplay = displayKey ? ` (${displayKey})` : '';
@@ -1049,7 +1060,12 @@
 
                             // Apply transpose if needed
                             if (semitones !== 0) {
+                                const originalLine = cleanLine;
                                 cleanLine = transposeLine(cleanLine, semitones);
+                                // Only log if line actually changed (was a chord line)
+                                if (originalLine !== cleanLine) {
+                                    console.log(`Transposed: "${originalLine}" → "${cleanLine}"`);
+                                }
                             }
 
                             // Add line (preserve spacing)
@@ -1105,6 +1121,20 @@
         // Close output section
         document.getElementById('closeOutputBtn').addEventListener('click', function() {
             document.getElementById('outputSection').style.display = 'none';
+        });
+
+        // Toggle instructions
+        document.getElementById('toggleInstructions').addEventListener('click', function() {
+            const instructionsBox = document.getElementById('instructionsBox');
+            const isHidden = instructionsBox.style.display === 'none';
+
+            if (isHidden) {
+                instructionsBox.style.display = 'block';
+                this.textContent = '▲ Hide Instructions';
+            } else {
+                instructionsBox.style.display = 'none';
+                this.textContent = '▼ Show Instructions';
+            }
         });
 
         function formatDate(dateString) {

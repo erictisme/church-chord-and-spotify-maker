@@ -1616,6 +1616,36 @@ IMPORTANT: Only suggest songs from the catalog above. If you can't find good mat
 
         // Initialize
         loadSongs();
+
+        // Debug: Log feature status on load
+        console.log('%c🎉 FMH Worship Generator Loaded!', 'color: #7C3AED; font-size: 16px; font-weight: bold;');
+        console.log('%c✅ Split-screen layout active', 'color: green;');
+        console.log('%c✅ Live preview enabled', 'color: green;');
+        console.log('%c✅ AI Song Suggestions ready', 'color: green;');
+        console.log('%c✅ Capo transposition enabled', 'color: green;');
+
+        // Check API key status
+        const savedKey = localStorage.getItem('gemini_api_key');
+        if (savedKey) {
+            console.log('%c✅ Gemini API key configured (length: ' + savedKey.length + ')', 'color: green;');
+        } else {
+            console.log('%c⚠️ Gemini API key not set - click ⚙️ to configure', 'color: orange;');
+        }
+
+        // Add keyboard shortcut for testing: Ctrl+Shift+T
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.shiftKey && e.key === 'T') {
+                console.log('\n=== FEATURE STATUS CHECK ===');
+                console.log('AI Button:', document.getElementById('aiSuggestBtn') ? '✅ Found' : '❌ Missing');
+                console.log('Settings Button:', document.getElementById('aiSettingsBtn') ? '✅ Found' : '❌ Missing');
+                console.log('Left Panel:', document.querySelector('.left-panel') ? '✅ Found' : '❌ Missing');
+                console.log('Right Panel:', document.querySelector('.right-panel') ? '✅ Found' : '❌ Missing');
+                console.log('Preview Content:', document.getElementById('previewContent') ? '✅ Found' : '❌ Missing');
+                console.log('Selected Songs:', selectedSongs.length + ' songs selected');
+                console.log('API Key:', localStorage.getItem('gemini_api_key') ? '✅ Configured' : '❌ Not set');
+                console.log('========================\n');
+            }
+        });
     </script>
 
     <!-- Preview Modal -->

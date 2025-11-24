@@ -15,17 +15,45 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
             background: #F7F7F5;
             min-height: 100vh;
-            padding: 20px;
+            padding: 0;
+            margin: 0;
         }
 
         .container {
-            max-width: 900px;
-            margin: 0 auto;
+            display: flex;
+            height: 100vh;
+            max-width: 100%;
+            margin: 0;
+            background: #F7F7F5;
+        }
+
+        .left-panel {
+            flex: 0 0 50%;
+            overflow-y: auto;
             background: #FFFFFF;
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(17, 17, 17, 0.1);
-            overflow: hidden;
-            border: 1px solid #E5E7EB;
+            border-right: 2px solid #E5E7EB;
+        }
+
+        .right-panel {
+            flex: 1;
+            overflow-y: auto;
+            background: #FAFAFA;
+            position: relative;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+            .left-panel {
+                flex: 1;
+                border-right: none;
+                border-bottom: 2px solid #E5E7EB;
+            }
+            .right-panel {
+                flex: 1;
+                min-height: 50vh;
+            }
         }
 
         .header {
@@ -443,16 +471,93 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        /* Right panel preview styles */
+        .preview-header {
+            background: #111111;
+            color: #FFFFFF;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid #C1121F;
+        }
+
+        .preview-header h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .preview-header p {
+            font-size: 13px;
+            opacity: 0.8;
+        }
+
+        .preview-content {
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #1A1A1A;
+            min-height: calc(100vh - 80px);
+        }
+
+        .preview-empty {
+            text-align: center;
+            padding: 60px 20px;
+            color: #999;
+        }
+
+        .preview-empty svg {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 20px;
+            opacity: 0.3;
+        }
+
+        .preview-actions {
+            padding: 15px 20px;
+            background: #FFFFFF;
+            border-top: 1px solid #E5E7EB;
+            display: flex;
+            gap: 10px;
+            position: sticky;
+            bottom: 0;
+            z-index: 100;
+        }
+
+        .preview-actions button {
+            flex: 1;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .preview-actions .copy-btn {
+            background: #C1121F;
+            color: #FFFFFF;
+        }
+
+        .preview-actions .copy-btn:hover {
+            background: #B91C1C;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>🎵 FMH Worship Song Generator</h1>
-            <p>Search, select songs, and generate service scripts in Word format</p>
-        </div>
+        <!-- LEFT PANEL -->
+        <div class="left-panel">
+            <div class="header">
+                <h1>🎵 FMH Worship Song Generator</h1>
+                <p>Search, select songs, and generate service scripts</p>
+            </div>
 
-        <div class="content">
+            <div class="content">
             <!-- Service Details -->
             <div class="service-details">
                 <h3 style="margin-bottom: 15px;">Service Details</h3>
@@ -503,51 +608,34 @@
                 </ol>
             </div>
 
-            <!-- Generate Button -->
-            <button class="generate-btn" id="generateBtn" disabled>
-                Generate Chord Sheets
-            </button>
-
-            <!-- Output Section (hidden initially) -->
-            <div id="outputSection" style="display: none; margin-top: 30px; padding: 30px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                <h2 style="color: #c41e3a; margin-bottom: 15px;">🎉 Your chord sheets are ready!</h2>
-
-                <!-- Instructions toggle -->
-                <div style="margin-bottom: 15px;">
-                    <button id="toggleInstructions" style="padding: 6px 12px; background: #f5f5f5; border: 1px solid #ddd; border-radius: 4px; cursor: pointer; font-size: 13px; color: #555;">
-                        ▼ Show Instructions
-                    </button>
-                </div>
-
-                <!-- Collapsible instructions -->
-                <div id="instructionsBox" style="display: none; background: #f5f5f5; padding: 15px; border-radius: 6px; margin-bottom: 15px; border-left: 4px solid #c41e3a;">
-                    <ol style="line-height: 1.6; color: #555; margin: 0; padding-left: 20px; font-size: 14px;">
-                        <li>Click "Copy to Clipboard" below</li>
-                        <li>Paste into Google Docs or Word</li>
-                        <li>Use Arial or Times New Roman font (songs are formatted for these fonts)</li>
-                        <li>Adjust as needed (spacing, page breaks, etc.)</li>
-                    </ol>
-                    <div style="margin-top: 10px; padding: 8px; background: white; border-radius: 4px; font-size: 12px; color: #666;">
-                        💡 <strong>Tip:</strong> Songs are pre-formatted for Arial/Times New Roman in Google Docs!
-                    </div>
-                    <div style="margin-top: 10px; padding: 8px; background: white; border-radius: 4px; font-size: 12px; color: #666;">
-                        📱 <strong>Feedback?</strong> WhatsApp Eric at <a href="https://wa.me/6581398062" target="_blank" style="color: #c41e3a; text-decoration: none; font-weight: bold;">+65 8139 8062</a>
-                    </div>
-                </div>
-
-                <div style="margin-bottom: 15px; display: flex; gap: 10px;">
-                    <button id="copyBtn" style="padding: 12px 24px; background: #c41e3a; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 16px;">
-                        📋 Copy to Clipboard
-                    </button>
-                    <button id="closeOutputBtn" style="padding: 12px 24px; background: #666; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 16px;">
-                        Close
-                    </button>
-                </div>
-
-                <div style="background: white; border: 2px solid #ddd; border-radius: 6px; padding: 20px; max-height: 600px; overflow-y: auto; font-family: 'Courier New', monospace; white-space: pre-wrap; line-height: 1.6; font-size: 14px;" id="outputContent">
-                </div>
             </div>
         </div>
+        <!-- END LEFT PANEL -->
+
+        <!-- RIGHT PANEL - Live Preview -->
+        <div class="right-panel">
+            <div class="preview-header">
+                <h2>📄 Live Chord Sheet Preview</h2>
+                <p>Auto-updates as you select songs and adjust settings</p>
+            </div>
+
+            <div class="preview-content" id="previewContent">
+                <div class="preview-empty">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <h3>No songs selected yet</h3>
+                    <p style="margin-top: 10px;">Select songs from the left to see the chord sheet preview here</p>
+                </div>
+            </div>
+
+            <div class="preview-actions">
+                <button class="copy-btn" id="copyBtn">
+                    📋 Copy to Clipboard
+                </button>
+            </div>
+        </div>
+        <!-- END RIGHT PANEL -->
     </div>
 
     <script>
@@ -1208,13 +1296,21 @@
                     }
                 });
 
-                // Display output
-                document.getElementById('outputContent').textContent = output;
-                document.getElementById('outputSection').style.display = 'block';
-
-                // Scroll to output only for manual generation
-                if (!isAutoGenerate) {
-                    document.getElementById('outputSection').scrollIntoView({ behavior: 'smooth' });
+                // Display output in right panel
+                const previewContent = document.getElementById('previewContent');
+                if (selectedSongs.length > 0) {
+                    previewContent.textContent = output;
+                } else {
+                    // Show empty state
+                    previewContent.innerHTML = `
+                        <div class="preview-empty">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <h3>No songs selected yet</h3>
+                            <p style="margin-top: 10px;">Select songs from the left to see the chord sheet preview here</p>
+                        </div>
+                    `;
                 }
 
                 if (!isAutoGenerate) {
@@ -1247,7 +1343,7 @@
 
         // Copy to clipboard functionality
         document.getElementById('copyBtn').addEventListener('click', async function() {
-            const outputContent = document.getElementById('outputContent').textContent;
+            const outputContent = document.getElementById('previewContent').textContent;
             try {
                 await navigator.clipboard.writeText(outputContent);
                 this.textContent = '✅ Copied!';
@@ -1256,25 +1352,6 @@
                 }, 2000);
             } catch (err) {
                 alert('Failed to copy to clipboard. Please select the text manually and copy.');
-            }
-        });
-
-        // Close output section
-        document.getElementById('closeOutputBtn').addEventListener('click', function() {
-            document.getElementById('outputSection').style.display = 'none';
-        });
-
-        // Toggle instructions
-        document.getElementById('toggleInstructions').addEventListener('click', function() {
-            const instructionsBox = document.getElementById('instructionsBox');
-            const isHidden = instructionsBox.style.display === 'none';
-
-            if (isHidden) {
-                instructionsBox.style.display = 'block';
-                this.textContent = '▲ Hide Instructions';
-            } else {
-                instructionsBox.style.display = 'none';
-                this.textContent = '▼ Show Instructions';
             }
         });
 

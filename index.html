@@ -1509,6 +1509,58 @@
             modal.classList.remove('show');
         }
 
+        // Convert markdown to HTML for beautiful rendering
+        function convertMarkdownToHtml(markdown) {
+            let html = markdown;
+
+            // Headers
+            html = html.replace(/^## (.+)$/gm, '<h2 style="color: #7C3AED; margin-top: 20px; margin-bottom: 10px; font-size: 1.3em;">$1</h2>');
+            html = html.replace(/^### (.+)$/gm, '<h3 style="color: #6B21A8; margin-top: 15px; margin-bottom: 8px; font-size: 1.1em;">$1</h3>');
+
+            // Bold text (keep ** style intact for song positions)
+            html = html.replace(/\*\*([^*:]+):\*\*/g, '<strong style="color: #7C3AED; font-size: 1.05em;">$1:</strong>');
+            html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+
+            // Convert bullet lists
+            const lines = html.split('\n');
+            let inList = false;
+            let result = [];
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i];
+                const isBullet = line.trim().startsWith('-');
+
+                if (isBullet && !inList) {
+                    result.push('<ul style="margin: 10px 0; padding-left: 20px;">');
+                    inList = true;
+                }
+
+                if (!isBullet && inList) {
+                    result.push('</ul>');
+                    inList = false;
+                }
+
+                if (isBullet) {
+                    const content = line.trim().substring(1).trim();
+                    result.push(`<li style="margin: 8px 0; line-height: 1.5;">${content}</li>`);
+                } else {
+                    result.push(line);
+                }
+            }
+
+            if (inList) {
+                result.push('</ul>');
+            }
+
+            html = result.join('\n');
+
+            // Line breaks
+            html = html.replace(/\n\n/g, '<br><br>');
+            html = html.replace(/\n/g, '<br>');
+
+            return html;
+        }
+
         // AI Song Suggestions
         async function generateAISuggestions() {
             const scripture = document.getElementById('scripture').value;
@@ -1542,67 +1594,50 @@
                     return `- "${s.title}" by ${s.artist} (Key: ${s.key || 'Unknown'}) - Themes: ${s.themes.join(', ') || 'None'}`;
                 }).join('\n');
 
-                const prompt = `You are a senior worship music curator with deep theological knowledge and experience in selecting worship songs for church services.
+                const prompt = `You are a worship music curator. Suggest songs for a church service.
 
-## TASK: Suggest 4-5 worship songs for a church service
+**Scripture:** ${scripture}
+**Theme:** ${theme}
 
-## CONTEXT:
-**Scripture Passage(s):** ${scripture}
-**Service Theme:** ${theme}
-
-## YOUR MULTI-STEP PROCESS:
-
-### Step 1: Expository Analysis
-First, analyze the scripture passage(s):
-- What is the main theological point or purpose?
-- What is the emotional/spiritual tone? (e.g., celebration, lament, reflection, declaration)
-- What key themes emerge? (e.g., grace, redemption, God's faithfulness, suffering, hope)
-
-### Step 2: Song Selection Strategy
-Based on your analysis, suggest 4 songs following this structure:
-1. **Opening Song** - Sets the tone, could be praise/worship or dive into theme
-2. **Song 2** - Builds on opening, develops the theme
-3. **Pre-Sermon Song** - Prepares hearts for the message, more reflective
-4. **Closing/Response Song** - Responds to the sermon theme, application-focused
-
-### Step 3: Song Matching
-For EACH song position, suggest 2-3 options from the catalog below, with rationale:
-- How does this song's lyrics connect to the scripture?
-- What themes does it emphasize?
-- Why is it appropriate for this position in the service?
-- Avoid repetitive themes across songs - aim for complementary progression
-
-## AVAILABLE SONG CATALOG:
+**Available Songs:**
 ${songList}
 
-## OUTPUT FORMAT:
-Please provide your response in this structure:
+**Instructions:**
+1. Briefly analyze the scripture (2-3 sentences max)
+2. Suggest 3-4 song options for EACH of these 4 positions:
+   - **Song 1 (Opening)** - Sets the tone
+   - **Song 2** - Builds on opening
+   - **Pre-Sermon Song** - Prepares hearts
+   - **Closing Song** - Response/application
 
-### 📖 Scripture Analysis
-[Your expository analysis here]
+**Format your response EXACTLY like this:**
 
-### 🎵 Song Suggestions
+## Scripture Summary
+[2-3 sentences about the passage's main point and tone]
 
-**1. Opening Song**
-Option A: "[Song Title]" by [Artist] (Key: X)
-- Rationale: [Why this works for opening and theme connection]
+## Song Options
 
-Option B: "[Song Title]" by [Artist] (Key: X)
-- Rationale: [Why this works]
+**Song 1 (Opening):**
+- "Song Title" by Artist (Key: X) - Brief reason why it fits
+- "Song Title" by Artist (Key: X) - Brief reason why it fits
+- "Song Title" by Artist (Key: X) - Brief reason why it fits
 
-**2. Song 2**
-[Same format]
+**Song 2:**
+- "Song Title" by Artist (Key: X) - Brief reason why it fits
+- "Song Title" by Artist (Key: X) - Brief reason why it fits
+- "Song Title" by Artist (Key: X) - Brief reason why it fits
 
-**3. Pre-Sermon Song**
-[Same format]
+**Pre-Sermon Song:**
+- "Song Title" by Artist (Key: X) - Brief reason why it fits
+- "Song Title" by Artist (Key: X) - Brief reason why it fits
+- "Song Title" by Artist (Key: X) - Brief reason why it fits
 
-**4. Closing/Response Song**
-[Same format]
+**Closing Song:**
+- "Song Title" by Artist (Key: X) - Brief reason why it fits
+- "Song Title" by Artist (Key: X) - Brief reason why it fits
+- "Song Title" by Artist (Key: X) - Brief reason why it fits
 
-### 💡 Service Flow Rationale
-[Brief explanation of how these songs work together to tell a cohesive story and prepare hearts for the message]
-
-IMPORTANT: Only suggest songs from the catalog above. If you can't find good matches, explain what's missing and suggest the closest alternatives.`;
+Keep rationales to ONE sentence each. Only use songs from the catalog above.`;
 
                 // Call Gemini API with thinking mode enabled
                 console.log('Calling Gemini API: gemini-2.5-flash with thinking mode');
@@ -1646,8 +1681,9 @@ IMPORTANT: Only suggest songs from the catalog above. If you can't find good mat
                     suggestions = parts[0].text;
                 }
 
-                // Display suggestions with formatted markdown
-                content.innerHTML = `<div style="white-space: pre-wrap; font-family: system-ui;">${suggestions.replace(/\n/g, '<br>')}</div>`;
+                // Convert markdown to HTML for beautiful display
+                const htmlContent = convertMarkdownToHtml(suggestions);
+                content.innerHTML = `<div style="font-family: system-ui; line-height: 1.6;">${htmlContent}</div>`;
 
             } catch (error) {
                 console.error('AI Suggestion Error:', error);

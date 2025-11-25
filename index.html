@@ -1628,7 +1628,8 @@ IMPORTANT: Only suggest songs from the catalog above. If you can't find good mat
                     throw new Error(`API error: ${response.status} ${response.statusText}`);
                 }
 
-                const data = await response.json();
+                const errorData = await response.json();
+                console.log('API Response:', errorData);
 
                 // Handle thinking mode response - extract actual text (skip thinking parts)
                 let suggestions = '';

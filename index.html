@@ -1511,54 +1511,69 @@
 
         // Convert markdown to HTML for beautiful rendering
         function convertMarkdownToHtml(markdown) {
-            let html = markdown;
-
-            // Headers
-            html = html.replace(/^## (.+)$/gm, '<h2 style="color: #7C3AED; margin-top: 20px; margin-bottom: 10px; font-size: 1.3em;">$1</h2>');
-            html = html.replace(/^### (.+)$/gm, '<h3 style="color: #6B21A8; margin-top: 15px; margin-bottom: 8px; font-size: 1.1em;">$1</h3>');
-
-            // Bold text (keep ** style intact for song positions)
-            html = html.replace(/\*\*([^*:]+):\*\*/g, '<strong style="color: #7C3AED; font-size: 1.05em;">$1:</strong>');
-            html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-
-            // Convert bullet lists
-            const lines = html.split('\n');
-            let inList = false;
+            const lines = markdown.split('\n');
             let result = [];
+            let inList = false;
 
-            for (let i = 0; i < lines.length; i++) {
-                const line = lines[i];
-                const isBullet = line.trim().startsWith('-');
+            for (let line of lines) {
+                let processed = line;
 
-                if (isBullet && !inList) {
-                    result.push('<ul style="margin: 10px 0; padding-left: 20px;">');
-                    inList = true;
+                // Check for headers first
+                if (processed.trim().startsWith('## ')) {
+                    if (inList) {
+                        result.push('</ul>');
+                        inList = false;
+                    }
+                    const text = processed.trim().substring(3);
+                    result.push(`<h2 style="color: #7C3AED; margin-top: 24px; margin-bottom: 12px; font-size: 1.4em; font-weight: 600;">${text}</h2>`);
+                    continue;
                 }
 
-                if (!isBullet && inList) {
+                if (processed.trim().startsWith('### ')) {
+                    if (inList) {
+                        result.push('</ul>');
+                        inList = false;
+                    }
+                    const text = processed.trim().substring(4);
+                    result.push(`<h3 style="color: #6B21A8; margin-top: 18px; margin-bottom: 10px; font-size: 1.15em; font-weight: 600;">${text}</h3>`);
+                    continue;
+                }
+
+                // Check for bullet points
+                if (processed.trim().startsWith('- ')) {
+                    if (!inList) {
+                        result.push('<ul style="margin: 8px 0; padding-left: 24px; list-style-type: disc;">');
+                        inList = true;
+                    }
+                    let content = processed.trim().substring(2);
+                    // Convert bold within content
+                    content = content.replace(/\*\*([^*]+)\*\*/g, '<strong style="color: #1F2937;">$1</strong>');
+                    result.push(`<li style="margin: 6px 0; line-height: 1.6; color: #374151;">${content}</li>`);
+                    continue;
+                }
+
+                // Close list if we're in one and hit non-bullet line
+                if (inList && !processed.trim().startsWith('- ')) {
                     result.push('</ul>');
                     inList = false;
                 }
 
-                if (isBullet) {
-                    const content = line.trim().substring(1).trim();
-                    result.push(`<li style="margin: 8px 0; line-height: 1.5;">${content}</li>`);
-                } else {
-                    result.push(line);
+                // Handle regular text with bold
+                if (processed.trim()) {
+                    processed = processed.replace(/\*\*([^*:]+):\*\*/g, '<strong style="color: #7C3AED; font-size: 1.05em; font-weight: 600;">$1:</strong>');
+                    processed = processed.replace(/\*\*([^*]+)\*\*/g, '<strong style="color: #1F2937;">$1</strong>');
+                    result.push(`<p style="margin: 8px 0; line-height: 1.6; color: #374151;">${processed}</p>`);
+                } else if (!inList) {
+                    result.push('<div style="height: 8px;"></div>');
                 }
             }
 
+            // Close list if still open
             if (inList) {
                 result.push('</ul>');
             }
 
-            html = result.join('\n');
-
-            // Line breaks
-            html = html.replace(/\n\n/g, '<br><br>');
-            html = html.replace(/\n/g, '<br>');
-
-            return html;
+            return result.join('');
         }
 
         // AI Song Suggestions

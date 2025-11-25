@@ -1627,13 +1627,12 @@ IMPORTANT: Only suggest songs from the catalog above. If you can't find good mat
 
                 if (!response.ok) {
                     const errorData = await response.json();
-                    console.error('Gemini API Error Details:', errorData);
-                    const errorMessage = errorData.error?.message || errorData.error?.status || response.statusText;
-                    throw new Error(`API error (${response.status}): ${errorMessage}`);
+                    console.log('API Error Details:', errorData);
+                    throw new Error(`API error: ${response.status}`);
                 }
 
                 const data = await response.json();
-                console.log('Gemini API Response:', data);
+                console.log('API Response:', data);
 
                 // Handle thinking mode response - extract actual text (skip thinking parts)
                 let suggestions = '';

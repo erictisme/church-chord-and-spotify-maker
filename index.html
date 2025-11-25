@@ -1625,11 +1625,13 @@ IMPORTANT: Only suggest songs from the catalog above. If you can't find good mat
                 });
 
                 if (!response.ok) {
-                    throw new Error(`API error: ${response.status} ${response.statusText}`);
+                    const errorData = await response.json();
+                    console.log('API Error Details:', errorData);
+                    throw new Error(`API error: ${response.status}`);
                 }
 
-                const errorData = await response.json();
-                console.log('API Response:', errorData);
+                const data = await response.json();
+                console.log('API Response:', data);
 
                 // Handle thinking mode response - extract actual text (skip thinking parts)
                 let suggestions = '';

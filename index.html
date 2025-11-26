@@ -1073,15 +1073,7 @@ Then click 'Auto Select' to find matching songs automatically!"
                     container.appendChild(tag);
                 }
             });
-        
-            // Always add kids filter
-            const kidsTag = document.createElement('button');
-            kidsTag.className = 'filter-tag';
-            kidsTag.textContent = 'kids';
-            kidsTag.onclick = () => toggleFilter('kids');
-            container.appendChild(kidsTag);
-        }
-
+            
             // Always add kids filter
             const kidsTag = document.createElement('button');
             kidsTag.className = 'filter-tag';

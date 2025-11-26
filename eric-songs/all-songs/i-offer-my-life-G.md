@@ -9,7 +9,7 @@ first_seen: 2025-11-26
 latest_version: 2025-11-26
 ---
 
-# I offer my life (Roboto font works best)
+# I offer my life (Roboto font)
  
 [Verse 1]
  

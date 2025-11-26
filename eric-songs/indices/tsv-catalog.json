@@ -2404,4 +2404,14 @@
     "filename": "the-lord-is-my-salvation-C.md",
     "key": "C"
   }
+  "i-offer-my-life-G": {
+    "title": "I Offer My Life",
+    "artist": "Don Moen",
+    "key": "G",
+    "themes": ["worship", "surrender"],
+    "pace": "slow",
+    "era": "Contemporary",
+    "filename": "i-offer-my-life-G.md"
+  }
+
 }

@@ -132,6 +132,12 @@
             font-size: 16px;
         }
 
+        .search-box input:focus {
+            outline: none;
+            border-color: #C1121F;
+            box-shadow: 0 0 0 3px rgba(193, 18, 31, 0.1);
+        }
+
         .search-box::before {
             content: "🔍";
             position: absolute;
@@ -139,6 +145,98 @@
             top: 50%;
             transform: translateY(-50%);
             font-size: 18px;
+            z-index: 10;
+        }
+
+        .search-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 2px solid #C1121F;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+            display: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .search-dropdown.show {
+            display: block;
+        }
+
+        .search-result {
+            padding: 12px 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #E5E7EB;
+            transition: background-color 0.2s;
+        }
+
+        .search-result:hover,
+        .search-result.highlighted {
+            background-color: #FEE2E2;
+        }
+
+        .search-result:last-child {
+            border-bottom: none;
+        }
+
+        .search-result-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 2px;
+        }
+
+        .search-result-meta {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .search-result-key {
+            display: inline-block;
+            background: #C1121F;
+            color: #FFFFFF;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            margin-left: 5px;
+        }
+
+        .ai-song-block {
+            display: inline-block;
+            margin: 4px 6px 4px 0;
+            padding: 8px 12px;
+            background: #FFFFFF;
+            border: 2px solid #7C3AED;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
+            color: #7C3AED;
+            transition: all 0.2s;
+        }
+
+        .ai-song-block:hover {
+            background: #7C3AED;
+            color: #FFFFFF;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
+        }
+
+        .ai-song-block.selected {
+            background: #059669;
+            border-color: #059669;
+            color: #FFFFFF;
+        }
+
+        .ai-song-block.not-found {
+            background: #FEF2F2;
+            border-color: #DC2626;
+            color: #DC2626;
+            cursor: not-allowed;
         }
 
         .filter-tags {
@@ -622,7 +720,9 @@
                         <span id="aiToggleIcon">▼</span>
                     </button>
                     <div id="aiSection" style="display: none; padding: 0 15px 15px 15px; border-top: 1px solid #E5E7EB;">
-                        <div style="display: flex; gap: 8px; margin-top: 10px;">
+                        <textarea id="humanThoughts" placeholder="What are you thinking about for this service? Any specific mood, focus, or songs you're considering? (This helps AI give better suggestions)"
+                            style="width: 100%; height: 60px; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; margin-top: 10px; resize: vertical;"></textarea>
+                        <div style="display: flex; gap: 8px; margin-top: 8px;">
                             <button id="aiSuggestBtn" style="flex: 1; padding: 10px; background: #7C3AED; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500; font-size: 13px; display: flex; align-items: center; justify-content: center; gap: 6px;">
                                 <span>🤖</span>
                                 <span>Get Suggestions</span>
@@ -641,8 +741,11 @@
                     <h4 style="margin: 0; color: #7C3AED; font-size: 14px;">🤖 AI Suggestions</h4>
                     <button id="closeSuggestionsBtn" style="background: none; border: none; font-size: 16px; cursor: pointer; color: #666;">×</button>
                 </div>
-                <div id="aiSuggestionsContent" style="color: #333; line-height: 1.4; font-size: 12px; max-height: 200px; overflow-y: auto;">
+                <div id="aiSuggestionsContent" style="color: #333; line-height: 1.4; font-size: 12px; max-height: 250px; overflow-y: auto;">
                     <!-- AI suggestions will appear here -->
+                </div>
+                <div id="aiSongBlocks" style="margin-top: 10px;">
+                    <!-- Clickable song blocks will appear here -->
                 </div>
             </div>
 
@@ -667,41 +770,14 @@ Then click 'Auto Select' to find matching songs automatically!"
                 </div>
             </div>
 
-            <!-- Song Submission Section -->
-            <div style="margin-bottom: 20px; border: 1px solid #E5E7EB; border-radius: 6px; background: #FAFAFA;">
-                <button id="submitToggle" style="width: 100%; padding: 10px 15px; background: none; border: none; text-align: left; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #666; font-weight: 500;">
-                    <span>➕ Submit New Song to Database</span>
-                    <span id="submitIcon">▼</span>
-                </button>
-                <div id="submitSection" style="display: none; padding: 0 15px 15px 15px; border-top: 1px solid #E5E7EB;">
-                    <div style="margin-top: 10px; padding: 8px; background: #FEF3C7; border-radius: 4px; font-size: 12px; color: #92400E;">
-                        💡 <strong>How it works:</strong> Fill out the form and click submit. This will send Eric a WhatsApp message with your song details to add to the database.
-                    </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
-                        <input type="text" id="submitTitle" placeholder="Song Title" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px;">
-                        <input type="text" id="submitArtist" placeholder="Artist" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px;">
-                    </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px;">
-                        <input type="text" id="submitKey" placeholder="Key (e.g., G)" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px;">
-                        <input type="text" id="submitThemes" placeholder="Themes (comma separated)" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px;">
-                    </div>
-                    <textarea id="submitChords" placeholder="Paste song chords here (with structure like [Verse], [Chorus], etc.)" style="width: 100%; height: 80px; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; margin-top: 8px; resize: vertical;"></textarea>
-                    <div style="display: flex; gap: 8px; margin-top: 10px;">
-                        <button id="submitSongBtn" style="flex: 1; padding: 10px; background: #059669; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500; font-size: 13px;">
-                            📩 Submit Song
-                        </button>
-                        <button id="clearFormBtn" style="padding: 10px 15px; background: #F3F4F6; border: 1px solid #D1D5DB; border-radius: 4px; cursor: pointer; font-size: 13px;">
-                            🗑️ Clear
-                        </button>
-                    </div>
-                    <div id="submitResults" style="margin-top: 10px; font-size: 12px; color: #666;"></div>
-                </div>
-            </div>
 
             <!-- Search Section -->
             <div class="search-section">
                 <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Search songs by title, artist, or theme...">
+                    <input type="text" id="searchInput" placeholder="Type to search and select songs..." autocomplete="off">
+                    <div id="searchDropdown" class="search-dropdown">
+                        <!-- Search results will appear here -->
+                    </div>
                 </div>
                 <div class="filter-tags" id="filterTags">
                     <!-- Will be populated with theme tags -->
@@ -719,10 +795,7 @@ Then click 'Auto Select' to find matching songs automatically!"
             <div id="error" class="error" style="display: none;">
             </div>
 
-            <!-- Songs Grid -->
-            <div class="songs-grid" id="songsGrid" style="display: none;">
-                <!-- Will be populated with song cards -->
-            </div>
+            <!-- Song selection now handled by dropdown above -->
 
             <!-- Selected Songs -->
             <div class="selected-songs" id="selectedSongs" style="display: none;">
@@ -894,11 +967,9 @@ Then click 'Auto Select' to find matching songs automatically!"
                 });
 
                 document.getElementById('loading').style.display = 'none';
-                document.getElementById('songsGrid').style.display = 'grid';
                 document.getElementById('songCount').textContent = `${allSongs.length} songs available`;
 
                 renderFilterTags();
-                renderSongs();
             } catch (error) {
                 console.error('Error loading songs:', error);
                 document.getElementById('loading').style.display = 'none';
@@ -945,114 +1016,13 @@ Then click 'Auto Select' to find matching songs automatically!"
                 }
             });
 
-            renderSongs();
-        }
-
-        // Render songs
-        function renderSongs() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            const container = document.getElementById('songsGrid');
-
-            const filtered = allSongs.filter(song => {
-                // Search filter - also search era field
-                const matchesSearch = !searchTerm ||
-                    song.title.toLowerCase().includes(searchTerm) ||
-                    song.artist.toLowerCase().includes(searchTerm) ||
-                    song.era.toLowerCase().includes(searchTerm) ||
-                    song.themes.some(t => t.toLowerCase().includes(searchTerm));
-
-                // Theme filters
-                const matchesThemes = activeFilters.size === 0 ||
-                    Array.from(activeFilters).some(filter => {
-                        if (filter === 'kids') {
-                            // Kids filter matches songs with "Kids" in era or kids artists
-                            return song.era.toLowerCase().includes('kids') ||
-                                   song.artist.toLowerCase().includes('awesome cutlery') ||
-                                   song.artist.toLowerCase().includes('colin buchanan');
-                        }
-                        return song.themes.some(t => t.toLowerCase() === filter);
-                    });
-
-                return matchesSearch && matchesThemes;
-            });
-
-            container.innerHTML = '';
-
-            filtered.forEach(song => {
-                const card = document.createElement('div');
-                card.className = 'song-card';
-                if (selectedSongs.some(s => s.id === song.id)) {
-                    card.classList.add('selected');
-                }
-
-                card.innerHTML = `
-                    <div style="display: flex; align-items: start;">
-                        <input type="checkbox" ${selectedSongs.some(s => s.id === song.id) ? 'checked' : ''}
-                               data-song-id="${song.id}" style="margin-right: 10px; width: 18px; height: 18px; cursor: pointer;">
-                        <div style="flex: 1;">
-                            <div class="song-title">
-                                ${song.title}
-                                ${song.key ? `<span class="song-key">${song.key}</span>` : ''}
-                                <button class="preview-btn" data-song-id="${song.id}" data-song-title="${song.title}">Preview</button>
-                            </div>
-                            <div class="song-meta">
-                                ${song.artist}
-                                ${song.themes.length > 0 ? ` • ${song.themes.slice(0, 2).join(', ')}` : ''}
-                            </div>
-                        </div>
-                    </div>
-                `;
-
-                // Handle clicking the card (not the checkbox or preview button)
-                card.onclick = (e) => {
-                    // If clicking directly on the checkbox or preview button, let them handle it
-                    if (e.target.tagName === 'INPUT' || e.target.tagName === 'BUTTON') {
-                        return;
-                    }
-                    // Otherwise, manually toggle
-                    const checkbox = card.querySelector('input[type="checkbox"]');
-                    checkbox.checked = !checkbox.checked;
-                    toggleSongSelection(song);
-                };
-
-                // Handle checkbox change events
-                const checkbox = card.querySelector('input[type="checkbox"]');
-                checkbox.addEventListener('change', (e) => {
-                    e.stopPropagation(); // Prevent card onclick from firing
-                    toggleSongSelection(song);
-                });
-
-                // Handle preview button click
-                const previewBtn = card.querySelector('.preview-btn');
-                previewBtn.addEventListener('click', (e) => {
-                    e.stopPropagation(); // Prevent card onclick from firing
-                    openPreview(song.filename, song.title);
-                });
-
-                container.appendChild(card);
-            });
-
-            document.getElementById('songCount').textContent = `${filtered.length} songs found`;
-        }
-
-        // Toggle song selection
-        function toggleSongSelection(song) {
-            const index = selectedSongs.findIndex(s => s.id === song.id);
-
-            if (index >= 0) {
-                selectedSongs.splice(index, 1);
-            } else {
-                // Add song with original key as default target
-                selectedSongs.push({
-                    ...song,
-                    targetKey: song.key || '',  // Track transpose target
-                    capoSemitones: 0  // Track capo setting
-                });
+            // Clear current search to trigger re-search with new filters
+            if (document.getElementById('searchInput').value.trim().length >= 2) {
+                handleSearch();
             }
-
-            updateSelectedDisplay();
-            renderSongs(); // Re-render to update selected state
         }
+
+        // Note: Song selection now handled by search dropdown above
 
         // Auto-generate chord sheets when selections change
         let autoGenerateTimeout = null;
@@ -1215,11 +1185,176 @@ Then click 'Auto Select' to find matching songs automatically!"
         function removeSong(songId) {
             selectedSongs = selectedSongs.filter(s => s.id !== songId);
             updateSelectedDisplay();
-            renderSongs();
         }
 
-        // Search handler
-        document.getElementById('searchInput').addEventListener('input', renderSongs);
+        // Search dropdown state
+        let searchResults = [];
+        let highlightedIndex = -1;
+
+        // Search with dropdown functionality
+        function handleSearch() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            const dropdown = document.getElementById('searchDropdown');
+
+            if (searchTerm.length < 2) {
+                dropdown.classList.remove('show');
+                searchResults = [];
+                highlightedIndex = -1;
+                return;
+            }
+
+            // Filter songs
+            searchResults = allSongs.filter(song => {
+                // Search in title, artist, era, and themes
+                const matchesSearch =
+                    song.title.toLowerCase().includes(searchTerm) ||
+                    song.artist.toLowerCase().includes(searchTerm) ||
+                    song.era.toLowerCase().includes(searchTerm) ||
+                    song.themes.some(t => t.toLowerCase().includes(searchTerm));
+
+                // Apply active theme filters
+                const matchesThemes = activeFilters.size === 0 ||
+                    Array.from(activeFilters).some(filter => {
+                        if (filter === 'kids') {
+                            return song.era.toLowerCase().includes('kids') ||
+                                   song.artist.toLowerCase().includes('awesome cutlery') ||
+                                   song.artist.toLowerCase().includes('colin buchanan');
+                        }
+                        return song.themes.some(t => t.toLowerCase() === filter);
+                    });
+
+                return matchesSearch && matchesThemes;
+            }).slice(0, 10); // Limit to 10 results
+
+            renderSearchDropdown();
+            highlightedIndex = -1;
+
+            if (searchResults.length > 0) {
+                dropdown.classList.add('show');
+            } else {
+                dropdown.classList.remove('show');
+            }
+        }
+
+        // Render search dropdown
+        function renderSearchDropdown() {
+            const dropdown = document.getElementById('searchDropdown');
+            dropdown.innerHTML = '';
+
+            if (searchResults.length === 0) {
+                dropdown.innerHTML = '<div class="search-result" style="text-align: center; color: #999; cursor: default;">No songs found</div>';
+                return;
+            }
+
+            searchResults.forEach((song, index) => {
+                const isSelected = selectedSongs.some(s => s.id === song.id);
+                const resultEl = document.createElement('div');
+                resultEl.className = 'search-result';
+                resultEl.dataset.index = index;
+
+                if (isSelected) {
+                    resultEl.style.background = '#F0FDF4';
+                    resultEl.style.borderLeft = '4px solid #059669';
+                }
+
+                resultEl.innerHTML = `
+                    <div class="search-result-title">
+                        ${song.title}
+                        ${song.key ? `<span class="search-result-key">${song.key}</span>` : ''}
+                        ${isSelected ? '<span style="color: #059669; margin-left: 5px;">✓</span>' : ''}
+                    </div>
+                    <div class="search-result-meta">
+                        ${song.artist}
+                        ${song.themes.length > 0 ? ` • ${song.themes.slice(0, 2).join(', ')}` : ''}
+                    </div>
+                `;
+
+                resultEl.addEventListener('click', () => selectSongFromDropdown(song));
+                dropdown.appendChild(resultEl);
+            });
+        }
+
+        // Select song from dropdown
+        function selectSongFromDropdown(song) {
+            const isAlreadySelected = selectedSongs.some(s => s.id === song.id);
+
+            if (isAlreadySelected) {
+                // Remove from selection
+                const index = selectedSongs.findIndex(s => s.id === song.id);
+                selectedSongs.splice(index, 1);
+            } else {
+                // Add to selection
+                selectedSongs.push({
+                    ...song,
+                    targetKey: song.key || '',
+                    capoSemitones: 0
+                });
+            }
+
+            updateSelectedDisplay();
+            renderSearchDropdown(); // Update the dropdown to show selection state
+            document.getElementById('searchInput').value = ''; // Clear search
+            document.getElementById('searchDropdown').classList.remove('show');
+        }
+
+        // Keyboard navigation for dropdown
+        function handleSearchKeyDown(e) {
+            const dropdown = document.getElementById('searchDropdown');
+
+            if (!dropdown.classList.contains('show')) return;
+
+            switch(e.key) {
+                case 'ArrowDown':
+                    e.preventDefault();
+                    highlightedIndex = Math.min(highlightedIndex + 1, searchResults.length - 1);
+                    updateHighlight();
+                    break;
+                case 'ArrowUp':
+                    e.preventDefault();
+                    highlightedIndex = Math.max(highlightedIndex - 1, -1);
+                    updateHighlight();
+                    break;
+                case 'Enter':
+                    e.preventDefault();
+                    if (highlightedIndex >= 0 && highlightedIndex < searchResults.length) {
+                        selectSongFromDropdown(searchResults[highlightedIndex]);
+                    }
+                    break;
+                case 'Escape':
+                    dropdown.classList.remove('show');
+                    highlightedIndex = -1;
+                    break;
+            }
+        }
+
+        // Update visual highlight in dropdown
+        function updateHighlight() {
+            const dropdown = document.getElementById('searchDropdown');
+            const results = dropdown.querySelectorAll('.search-result');
+
+            results.forEach((result, index) => {
+                result.classList.toggle('highlighted', index === highlightedIndex);
+            });
+
+            // Scroll highlighted item into view
+            if (highlightedIndex >= 0) {
+                results[highlightedIndex].scrollIntoView({ block: 'nearest' });
+            }
+        }
+
+        // Hide dropdown when clicking outside
+        function hideSearchDropdown(e) {
+            const searchBox = document.querySelector('.search-box');
+            if (!searchBox.contains(e.target)) {
+                document.getElementById('searchDropdown').classList.remove('show');
+                highlightedIndex = -1;
+            }
+        }
+
+        // Search event listeners
+        document.getElementById('searchInput').addEventListener('input', handleSearch);
+        document.getElementById('searchInput').addEventListener('keydown', handleSearchKeyDown);
+        document.addEventListener('click', hideSearchDropdown);
 
         // Generate chord sheets function
         async function generateChordSheets(isAutoGenerate = true) {
@@ -1576,6 +1711,96 @@ Then click 'Auto Select' to find matching songs automatically!"
             modal.classList.remove('show');
         }
 
+        // Create clickable song blocks from AI suggestions
+        function createClickableSongBlocks(suggestions) {
+            const songBlocksContainer = document.getElementById('aiSongBlocks');
+            songBlocksContainer.innerHTML = '';
+
+            // Extract song titles from the suggestions text
+            const songTitles = [];
+            const lines = suggestions.split('\n');
+
+            lines.forEach(line => {
+                // Look for lines that start with "- " and contain song titles in quotes
+                const match = line.match(/^[\s-]*"([^"]+)"\s+by\s+([^(]+)/i);
+                if (match) {
+                    const title = match[1].trim();
+                    const artist = match[2].trim();
+                    songTitles.push({ title, artist, originalLine: line });
+                }
+            });
+
+            if (songTitles.length === 0) return;
+
+            // Add header
+            const header = document.createElement('div');
+            header.style.cssText = 'font-weight: 600; font-size: 13px; color: #7C3AED; margin-bottom: 8px;';
+            header.textContent = '💡 Click suggested songs to add them:';
+            songBlocksContainer.appendChild(header);
+
+            // Create clickable blocks for each unique song
+            const uniqueSongs = [];
+            songTitles.forEach(({ title, artist }) => {
+                if (!uniqueSongs.some(s => s.title === title && s.artist === artist)) {
+                    uniqueSongs.push({ title, artist });
+                }
+            });
+
+            uniqueSongs.forEach(({ title, artist }) => {
+                // Find matching song in database
+                const dbSong = allSongs.find(song =>
+                    song.title.toLowerCase().replace(/[^a-z0-9\s]/g, '') === title.toLowerCase().replace(/[^a-z0-9\s]/g, '') ||
+                    (song.title.toLowerCase().includes(title.toLowerCase()) && song.artist.toLowerCase().includes(artist.toLowerCase()))
+                );
+
+                const block = document.createElement('span');
+                block.className = 'ai-song-block';
+                block.textContent = title;
+
+                if (dbSong) {
+                    // Song found in database
+                    const updateBlockState = () => {
+                        const isSelected = selectedSongs.some(s => s.id === dbSong.id);
+                        if (isSelected) {
+                            block.classList.add('selected');
+                            block.title = `✓ "${title}" is already selected`;
+                        } else {
+                            block.classList.remove('selected');
+                            block.title = `Click to add "${title}" by ${dbSong.artist}`;
+                        }
+                    };
+
+                    updateBlockState(); // Set initial state
+
+                    block.addEventListener('click', () => {
+                        const isCurrentlySelected = selectedSongs.some(s => s.id === dbSong.id);
+
+                        if (isCurrentlySelected) {
+                            // Remove from selection
+                            const index = selectedSongs.findIndex(s => s.id === dbSong.id);
+                            selectedSongs.splice(index, 1);
+                        } else {
+                            // Add to selection
+                            selectedSongs.push({
+                                ...dbSong,
+                                targetKey: dbSong.key || '',
+                                capoSemitones: 0
+                            });
+                        }
+
+                        updateSelectedDisplay();
+                        updateBlockState(); // Update visual state
+                    });
+                } else {
+                    // Song not found in database
+                    block.classList.add('not-found');
+                    block.title = `"${title}" not found in database`;
+                }
+
+                songBlocksContainer.appendChild(block);
+            });
+        }
+
         // Convert markdown to HTML for beautiful rendering
         function convertMarkdownToHtml(markdown) {
             const lines = markdown.split('\n');
@@ -1647,6 +1872,7 @@ Then click 'Auto Select' to find matching songs automatically!"
         async function generateAISuggestions() {
             const scripture = document.getElementById('scripture').value;
             const theme = document.getElementById('theme').value;
+            const humanThoughts = document.getElementById('humanThoughts').value.trim();
 
             if (!scripture || !theme) {
                 alert('Please fill in both Scripture and Theme fields first');
@@ -1676,16 +1902,20 @@ Then click 'Auto Select' to find matching songs automatically!"
                     return `- "${s.title}" by ${s.artist} (Key: ${s.key || 'Unknown'}) - Themes: ${s.themes.join(', ') || 'None'}`;
                 }).join('\n');
 
+                let humanThoughtsSection = '';
+                if (humanThoughts) {
+                    humanThoughtsSection = `**Human Input:** ${humanThoughts}\n\n`;
+                }
+
                 const prompt = `You are a worship music curator. Suggest songs for a church service.
 
 **Scripture:** ${scripture}
 **Theme:** ${theme}
-
-**Available Songs:**
+${humanThoughtsSection}**Available Songs:**
 ${songList}
 
 **Instructions:**
-1. Briefly analyze the scripture (2-3 sentences max)
+1. Briefly analyze the scripture and theme (2-3 sentences max)
 2. Suggest 3-4 song options for EACH of these 4 positions:
    - **Song 1 (Opening)** - Sets the tone
    - **Song 2** - Builds on opening
@@ -1694,10 +1924,10 @@ ${songList}
 
 **Format your response EXACTLY like this:**
 
-## Scripture Summary
-[2-3 sentences about the passage's main point and tone]
+## Scripture & Theme Analysis
+[2-3 sentences about the passage and theme]
 
-## Song Options
+## Song Suggestions
 
 **Song 1 (Opening):**
 - "Song Title" by Artist (Key: X) - Brief reason why it fits
@@ -1767,6 +1997,9 @@ Keep rationales to ONE sentence each. Only use songs from the catalog above.`;
                 const htmlContent = convertMarkdownToHtml(suggestions);
                 content.innerHTML = `<div style="font-family: system-ui; line-height: 1.6;">${htmlContent}</div>`;
 
+                // Extract song suggestions and create clickable blocks
+                createClickableSongBlocks(suggestions);
+
             } catch (error) {
                 console.error('AI Suggestion Error:', error);
                 content.innerHTML = `<p style="color: #DC2626;"><strong>Error:</strong> ${error.message}</p><p>Please check your API key and try again.</p>`;
@@ -1802,64 +2035,7 @@ Keep rationales to ONE sentence each. Only use songs from the catalog above.`;
             icon.textContent = isVisible ? '▼' : '▲';
         }
 
-        // Submit Song Toggle functionality
-        function toggleSubmitSection() {
-            const section = document.getElementById('submitSection');
-            const icon = document.getElementById('submitIcon');
-            const isVisible = section.style.display !== 'none';
-
-            section.style.display = isVisible ? 'none' : 'block';
-            icon.textContent = isVisible ? '▼' : '▲';
-        }
-
-        // Submit Song functionality
-        function submitSong() {
-            const title = document.getElementById('submitTitle').value.trim();
-            const artist = document.getElementById('submitArtist').value.trim();
-            const key = document.getElementById('submitKey').value.trim();
-            const themes = document.getElementById('submitThemes').value.trim();
-            const chords = document.getElementById('submitChords').value.trim();
-            const resultsEl = document.getElementById('submitResults');
-
-            // Validation
-            if (!title || !artist) {
-                resultsEl.innerHTML = '<span style="color: #DC2626;">Please fill in at least the song title and artist.</span>';
-                return;
-            }
-
-            // Create WhatsApp message
-            const message = `🎵 NEW SONG SUBMISSION
-
-Title: ${title}
-Artist: ${artist}
-Key: ${key || 'Not specified'}
-Themes: ${themes || 'Not specified'}
-
-Chord Chart:
-${chords || 'Not provided'}
-
----
-Submitted via FMH Worship Generator`;
-
-            const encodedMessage = encodeURIComponent(message);
-            const whatsappUrl = `https://wa.me/6581398062?text=${encodedMessage}`;
-
-            // Open WhatsApp
-            window.open(whatsappUrl, '_blank');
-
-            // Show success message
-            resultsEl.innerHTML = '<span style="color: #059669;">✅ WhatsApp opened with your song submission! Send the message to Eric.</span>';
-        }
-
-        // Clear form
-        function clearSongForm() {
-            document.getElementById('submitTitle').value = '';
-            document.getElementById('submitArtist').value = '';
-            document.getElementById('submitKey').value = '';
-            document.getElementById('submitThemes').value = '';
-            document.getElementById('submitChords').value = '';
-            document.getElementById('submitResults').innerHTML = '';
-        }
+        // Song submission feature removed per user feedback
 
         // Auto-select songs from typed list
         function autoSelectSongs() {
@@ -1887,15 +2063,43 @@ Submitted via FMH Worship Generator`;
                     .replace(/\s*\(.*?\)\s*$/, '') // Remove artist in parentheses at end
                     .trim();
 
-                // Fuzzy search in song library
+                // More typo-tolerant fuzzy search
                 const matches = allSongs.filter(song => {
-                    const titleMatch = song.title.toLowerCase().includes(songTitle.toLowerCase()) ||
-                                     songTitle.toLowerCase().includes(song.title.toLowerCase());
+                    // Clean both strings for comparison
+                    const cleanSongTitle = songTitle.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+                    const cleanDbTitle = song.title.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+                    const cleanArtist = song.artist.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+                    const cleanLine = line.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
 
-                    // Also check if original line contains artist name
-                    const artistInLine = line.toLowerCase().includes(song.artist.toLowerCase());
+                    // Exact match (high priority)
+                    if (cleanSongTitle === cleanDbTitle) return true;
 
-                    return titleMatch || (songTitle.length > 5 && artistInLine);
+                    // Contains match in either direction
+                    const titleMatch = cleanDbTitle.includes(cleanSongTitle) || cleanSongTitle.includes(cleanDbTitle);
+
+                    // Artist mentioned in line
+                    const artistInLine = cleanLine.includes(cleanArtist) || cleanArtist.includes(cleanSongTitle);
+
+                    // Fuzzy word matching - check if most words match
+                    const titleWords = cleanSongTitle.split(' ').filter(w => w.length > 2);
+                    const dbWords = cleanDbTitle.split(' ').filter(w => w.length > 2);
+
+                    let wordMatches = 0;
+                    titleWords.forEach(word => {
+                        if (dbWords.some(dbWord =>
+                            dbWord.includes(word) || word.includes(dbWord) ||
+                            // Simple edit distance for typos
+                            Math.abs(dbWord.length - word.length) <= 1 &&
+                            (dbWord.substr(0, word.length-1) === word.substr(0, word.length-1) ||
+                             dbWord.substr(1) === word.substr(1))
+                        )) {
+                            wordMatches++;
+                        }
+                    });
+
+                    const fuzzyWordMatch = titleWords.length > 0 && wordMatches >= Math.min(2, titleWords.length);
+
+                    return titleMatch || (cleanSongTitle.length > 3 && artistInLine) || fuzzyWordMatch;
                 });
 
                 if (matches.length > 0) {
@@ -1929,7 +2133,6 @@ Submitted via FMH Worship Generator`;
 
             // Update display
             updateSelectedDisplay();
-            renderSongs();
 
             // Show results
             let resultText = `<strong>Results:</strong><br>`;
@@ -1961,9 +2164,6 @@ Submitted via FMH Worship Generator`;
         document.getElementById('aiSettingsBtn').addEventListener('click', openApiSettings);
         document.getElementById('quickInputToggle').addEventListener('click', toggleQuickInputSection);
         document.getElementById('autoSelectBtn').addEventListener('click', autoSelectSongs);
-        document.getElementById('submitToggle').addEventListener('click', toggleSubmitSection);
-        document.getElementById('submitSongBtn').addEventListener('click', submitSong);
-        document.getElementById('clearFormBtn').addEventListener('click', clearSongForm);
         document.getElementById('closeSuggestionsBtn').addEventListener('click', function() {
             document.getElementById('aiSuggestionsPanel').style.display = 'none';
         });

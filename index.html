@@ -698,25 +698,31 @@
             </div>
 
             <div class="content">
-            <!-- Service Details -->
-            <div class="service-details">
-                <h3 style="margin-bottom: 15px;">Service Details</h3>
-                <div class="form-group">
-                    <label>Service Date</label>
-                    <input type="date" id="serviceDate" value="2025-11-17">
+            <!-- Service Details Section - Collapsible -->
+            <div style="margin-bottom: 20px; border: 1px solid #E5E7EB; border-radius: 6px; background: #FAFAFA;">
+                <button id="serviceDetailsToggle" style="width: 100%; padding: 15px; background: none; border: none; text-align: left; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 14px; color: #333; font-weight: 500;">
+                    <span>📅 Service Details (Optional)</span>
+                    <span id="serviceDetailsIcon">▼</span>
+                </button>
+                <div id="serviceDetailsSection" style="display: none; padding: 0 20px 20px 20px; border-top: 1px solid #E5E7EB;">
+                    <div class="form-group" style="margin-top: 15px;">
+                        <label>Service Date</label>
+                        <input type="date" id="serviceDate" value="2025-11-17">
+                    </div>
+                    <div class="form-group">
+                        <label>Scripture Passage(s)</label>
+                        <input type="text" id="scripture" placeholder="e.g., Deuteronomy 18:15-19, Acts 7:35-60">
+                    </div>
+                    <div class="form-group">
+                        <label>Theme</label>
+                        <input type="text" id="theme" placeholder="e.g., Jesus fulfils God's law">
+                    </div>
+                    <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
+                        <input type="checkbox" id="includeServiceDetails" checked style="width: auto;">
+                        <label for="includeServiceDetails" style="margin: 0; cursor: pointer;">Include service details in chord sheet</label>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>Scripture Passage(s)</label>
-                    <input type="text" id="scripture" placeholder="e.g., Deuteronomy 18:15-19, Acts 7:35-60">
-                </div>
-                <div class="form-group">
-                    <label>Theme</label>
-                    <input type="text" id="theme" placeholder="e.g., Jesus fulfils God's law">
-                </div>
-                <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
-                    <input type="checkbox" id="includeServiceDetails" checked style="width: auto;">
-                    <label for="includeServiceDetails" style="margin: 0; cursor: pointer;">Include service details in chord sheet</label>
-                </div>
+            </div>
                 <!-- AI Section - Collapsible -->
                 <div style="margin-top: 15px; border: 1px solid #E5E7EB; border-radius: 6px; background: #FAFAFA;">
                     <button id="aiToggleBtn" style="width: 100%; padding: 10px 15px; background: none; border: none; text-align: left; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #666; font-weight: 500;">
@@ -2029,6 +2035,16 @@ Keep rationales to ONE sentence each. Only use songs from the catalog above.`;
             icon.textContent = isVisible ? '▼' : '▲';
         }
 
+        // Service Details Toggle functionality
+        function toggleServiceDetailsSection() {
+            const section = document.getElementById('serviceDetailsSection');
+            const icon = document.getElementById('serviceDetailsIcon');
+            const isVisible = section.style.display !== 'none';
+
+            section.style.display = isVisible ? 'none' : 'block';
+            icon.textContent = isVisible ? '▼' : '▲';
+        }
+
         // Quick Input Toggle functionality
         function toggleQuickInputSection() {
             const section = document.getElementById('quickInputSection');
@@ -2163,6 +2179,7 @@ Keep rationales to ONE sentence each. Only use songs from the catalog above.`;
         }
 
         // Event Listeners
+        document.getElementById('serviceDetailsToggle').addEventListener('click', toggleServiceDetailsSection);
         document.getElementById('aiToggleBtn').addEventListener('click', toggleAISection);
         document.getElementById('aiSuggestBtn').addEventListener('click', generateAISuggestions);
         document.getElementById('aiSettingsBtn').addEventListener('click', openApiSettings);

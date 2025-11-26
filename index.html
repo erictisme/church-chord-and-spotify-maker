@@ -796,12 +796,17 @@ Then click 'Auto Select' to find matching songs automatically!"
                     <span id="selectedCount">0 selected</span>
                 </div>
 
+                <!-- Selected Songs -->
+                <div class="selected-songs" id="selectedSongs" style="display: none;">
+                    <h3>Selected Songs (<span id="selectedCountTitle">0</span>)</h3>
+                    <ol class="selected-list" id="selectedList">
+                    </ol>
+                </div>
+
                 <!-- Songs Grid -->
                 <div class="songs-grid" id="songsGrid">
                     <!-- Songs will be rendered here by JavaScript -->
                 </div>
-
-                
             </div>
 
             <div id="loading" class="loading">
@@ -812,14 +817,6 @@ Then click 'Auto Select' to find matching songs automatically!"
             </div>
 
             <!-- Song selection now handled by dropdown above -->
-
-            <!-- Selected Songs -->
-            <div class="selected-songs" id="selectedSongs" style="display: none;">
-                <h3>Selected Songs (<span id="selectedCountTitle">0</span>)</h3>
-                <ol class="selected-list" id="selectedList">
-                </ol>
-            </div>
-
             </div> <!-- Close content -->
         </div> <!-- Close left-panel -->
         <!-- END LEFT PANEL -->

@@ -713,6 +713,10 @@
                     <label>Theme</label>
                     <input type="text" id="theme" placeholder="e.g., Jesus fulfils God's law">
                 </div>
+                <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" id="includeServiceDetails" checked style="width: auto;">
+                    <label for="includeServiceDetails" style="margin: 0; cursor: pointer;">Include service details in chord sheet</label>
+                </div>
                 <!-- AI Section - Collapsible -->
                 <div style="margin-top: 15px; border: 1px solid #E5E7EB; border-radius: 6px; background: #FAFAFA;">
                     <button id="aiToggleBtn" style="width: 100%; padding: 10px 15px; background: none; border: none; text-align: left; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #666; font-weight: 500;">
@@ -952,8 +956,8 @@ Then click 'Auto Select' to find matching songs automatically!"
                 // Convert catalog to array and load full songs
                 allSongs = Object.entries(catalog).map(([key, data]) => ({
                     id: key,
-                    title: data.title || key,
-                    artist: data.artist || 'Unknown',
+                    title: (data.title || key).replace(/\b[a-z]/g, l => l.toUpperCase()),
+                    artist: (data.artist || 'Unknown').replace(/\b[a-z]/g, l => l.toUpperCase()),
                     key: data.key || '',
                     themes: data.themes || [],
                     pace: data.pace || '',
@@ -1332,12 +1336,15 @@ Then click 'Auto Select' to find matching songs automatically!"
             const dropdown = document.getElementById('searchDropdown');
             const results = dropdown.querySelectorAll('.search-result');
 
-            results.forEach((result, index) => {
-                result.classList.toggle('highlighted', index === highlightedIndex);
+            // Remove all highlights first
+            results.forEach(result => {
+                result.classList.remove('highlighted');
             });
 
-            // Scroll highlighted item into view
-            if (highlightedIndex >= 0) {
+            // Add highlight to current index only
+            if (highlightedIndex >= 0 && highlightedIndex < results.length) {
+                results[highlightedIndex].classList.add('highlighted');
+                // Scroll highlighted item into view
                 results[highlightedIndex].scrollIntoView({ block: 'nearest' });
             }
         }
@@ -1393,8 +1400,9 @@ Then click 'Auto Select' to find matching songs automatically!"
                 // Build text output
                 let output = '';
 
-                // Header (only if service details are filled)
-                if (date || scripture || theme) {
+                // Header (only if checkbox is checked and service details are filled)
+                const includeServiceDetails = document.getElementById('includeServiceDetails').checked;
+                if (includeServiceDetails && (date || scripture || theme)) {
                     output += `Service Date: ${date ? formatDate(date) : '[Not set]'}\n`;
                     output += `Scripture: ${scripture || '[Not set]'}\n`;
                     output += `Theme: ${theme || '[Not set]'}\n\n`;
@@ -1497,16 +1505,6 @@ Then click 'Auto Select' to find matching songs automatically!"
 
                             // Add line preserving original spacing
                             songOutput += cleanLine + '\n';
-                            // Check if this is a standalone label like CHORUS, INTRO, CHORUS x2, etc.
-                            const isLabel = /^(CHORUS|INTRO|VERSE|BRIDGE|INTERLUDE|OUTRO|TAG|INSTRUMENTAL)(\s*x?\d*)?$/i.test(cleanLine.trim());
-
-                            if (isLabel) {
-                                // Add blank before standalone labels to separate blocks
-                                output += '\n' + cleanLine + '\n';
-                            } else {
-                                // Add line preserving original spacing
-                                output += cleanLine + '\n';
-                            }
                         }
                     }
                     return songOutput;
@@ -1551,7 +1549,7 @@ Then click 'Auto Select' to find matching songs automatically!"
                         // No capo: render single version
                         let keyDisplay = displayKey ? ` (${displayKey})` : '';
                         const artistDisplay = song.artist ? ` by ${song.artist}` : '';
-                        output += `${song.title}${keyDisplay}${artistDisplay}\n`;
+                        output += `${song.title}${keyDisplay}${artistDisplay}\n\n`;
                         output += renderSongContent(content, semitones);
                     }
                 });
@@ -1881,8 +1879,11 @@ Then click 'Auto Select' to find matching songs automatically!"
 
             const apiKey = getApiKey();
             if (!apiKey) {
-                alert('Please configure your Gemini API key first (click the ⚙️ button)');
-                openApiSettings();
+                // Show a more helpful message and auto-open settings
+                const userWantsToSetup = confirm('AI suggestions require a free Google API key.\n\nWould you like to set one up now? (Takes 30 seconds)');
+                if (userWantsToSetup) {
+                    openApiSettings();
+                }
                 return;
             }
 
@@ -2164,6 +2165,7 @@ Keep rationales to ONE sentence each. Only use songs from the catalog above.`;
         document.getElementById('aiSettingsBtn').addEventListener('click', openApiSettings);
         document.getElementById('quickInputToggle').addEventListener('click', toggleQuickInputSection);
         document.getElementById('autoSelectBtn').addEventListener('click', autoSelectSongs);
+        document.getElementById('includeServiceDetails').addEventListener('change', triggerAutoGenerate);
         document.getElementById('closeSuggestionsBtn').addEventListener('click', function() {
             document.getElementById('aiSuggestionsPanel').style.display = 'none';
         });

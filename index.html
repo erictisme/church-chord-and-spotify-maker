@@ -795,6 +795,13 @@ Then click 'Auto Select' to find matching songs automatically!"
                     <span id="songCount">Loading songs...</span>
                     <span id="selectedCount">0 selected</span>
                 </div>
+
+                <!-- Songs Grid -->
+                <div class="songs-grid" id="songsGrid">
+                    <!-- Songs will be rendered here by JavaScript -->
+                </div>
+
+                
             </div>
 
             <div id="loading" class="loading">
@@ -979,6 +986,7 @@ Then click 'Auto Select' to find matching songs automatically!"
                 document.getElementById('songCount').textContent = `${allSongs.length} songs available`;
 
                 renderFilterTags();
+                renderSongsGrid();
             } catch (error) {
                 console.error('Error loading songs:', error);
                 document.getElementById('loading').style.display = 'none';
@@ -1001,6 +1009,69 @@ Then click 'Auto Select' to find matching songs automatically!"
                     container.appendChild(tag);
                 }
             });
+            
+            // Render songs grid
+            function renderSongsGrid() {
+                const container = document.getElementById('songsGrid');
+                container.innerHTML = '';
+            
+                // Filter songs based on active filters
+                let filteredSongs = allSongs;
+                
+                if (activeFilters.size > 0) {
+                    filteredSongs = allSongs.filter(song => {
+                        return Array.from(activeFilters).some(filter => {
+                            if (filter === 'kids') {
+                                return song.era.toLowerCase().includes('kids') ||
+                                       song.artist.toLowerCase().includes('awesome cutlery') ||
+                                       song.artist.toLowerCase().includes('colin buchanan');
+                            }
+                            return song.themes.some(t => t.toLowerCase() === filter);
+                        });
+                    });
+                }
+            
+                filteredSongs.forEach(song => {
+                    const isSelected = selectedSongs.some(s => s.id === song.id);
+                    
+                    const card = document.createElement('div');
+                    card.className = 'song-card' + (isSelected ? ' selected' : '');
+                    card.onclick = () => toggleSongSelection(song);
+                    
+                    card.innerHTML = `
+                        <div class="song-title">
+                            ${song.title}
+                            ${song.key ? `<span class="song-key">${song.key}</span>` : ''}
+                        </div>
+                        <div class="song-meta">
+                            ${song.artist}
+                            ${song.themes.length > 0 ? ` • ${song.themes.slice(0, 2).join(', ')}` : ''}
+                        </div>
+                    `;
+                    
+                    container.appendChild(card);
+                });
+            }
+            
+            // Toggle song selection from grid
+            function toggleSongSelection(song) {
+                const isAlreadySelected = selectedSongs.some(s => s.id === song.id);
+                
+                if (isAlreadySelected) {
+                    const index = selectedSongs.findIndex(s => s.id === song.id);
+                    selectedSongs.splice(index, 1);
+                } else {
+                    selectedSongs.push({
+                        ...song,
+                        targetKey: song.key || '',
+                        capoSemitones: 0
+                    });
+                }
+                
+                updateSelectedDisplay();
+                renderSongsGrid(); // Update grid to show selection state
+            }
+
 
             // Always add kids filter
             const kidsTag = document.createElement('button');
@@ -1029,6 +1100,13 @@ Then click 'Auto Select' to find matching songs automatically!"
             if (document.getElementById('searchInput').value.trim().length >= 2) {
                 handleSearch();
             }
+
+            // Clear current search to trigger re-search with new filters
+            if (document.getElementById('searchInput').value.trim().length >= 2) {
+                handleSearch();
+            }
+            
+            renderSongsGrid(); // ADD THIS LINE
         }
 
         // Note: Song selection now handled by search dropdown above

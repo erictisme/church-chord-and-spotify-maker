@@ -23,7 +23,7 @@ You willingly died
      D                          C
 Your innocent life paid the cost
 
-[Verse 2] (MITCH)
+[Verse 2]
 G
 Counting Your status as nothing
     C
@@ -45,7 +45,7 @@ Take ev'rything
 
 [Instrumental]
 
-[Verse 3] (MITCH)
+[Verse 3]
 G
 You are my life and my treasure
     Cmaj7
@@ -88,12 +88,4 @@ More like Jesus I pray make me more like Jesus oh
 
 G Bm C Em Bm C
 
-[Chorus]
-   G                   G/B
-If more of You means less of me
-     C2
-Take ev'rything
-     Em               G/B
-Yes, all of You is all I need
-     C2
-Take ev'rything
+CHORUS

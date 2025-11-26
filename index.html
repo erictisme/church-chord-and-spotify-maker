@@ -1102,11 +1102,6 @@ Then click 'Auto Select' to find matching songs automatically!"
                 handleSearch();
             }
 
-            // Clear current search to trigger re-search with new filters
-            if (document.getElementById('searchInput').value.trim().length >= 2) {
-                handleSearch();
-            }
-            
             renderSongsGrid(); // ADD THIS LINE
         }
 

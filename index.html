@@ -1536,7 +1536,8 @@ Then click 'Auto Select' to find matching songs automatically!"
                         const artistDisplay = song.artist ? ` by ${song.artist}` : '';
                         output += `${artistDisplay}\n`;
                         output += `[For instruments WITH capo capability]\n`;
-                        output += renderSongContent(content, semitones);
+                        const capoContent = renderSongContent(content, semitones);
+                        output += capoContent.replace(/^\n+/, '');
 
                         // Version 2: Transposed chords (for non-capo instruments)
                         output += '\n' + '-'.repeat(40) + '\n\n';
@@ -1544,13 +1545,15 @@ Then click 'Auto Select' to find matching songs automatically!"
                         output += `${artistDisplay}\n`;
                         output += `[For instruments WITHOUT capo - violin, cello, etc.]\n`;
                         const totalTranspose = semitones + song.capoSemitones;
-                        output += renderSongContent(content, totalTranspose);
+                        const transposedContent = renderSongContent(content, totalTranspose);
+                        output += transposedContent.replace(/^\n+/, '');
                     } else {
                         // No capo: render single version
                         let keyDisplay = displayKey ? ` (${displayKey})` : '';
                         const artistDisplay = song.artist ? ` by ${song.artist}` : '';
-                        output += `${song.title}${keyDisplay}${artistDisplay}\n\n`;
-                        output += renderSongContent(content, semitones);
+                        output += `${song.title}${keyDisplay}${artistDisplay}\n`;
+                        const songContent = renderSongContent(content, semitones);
+                        output += songContent.replace(/^\n+/, '');
                     }
                 });
 

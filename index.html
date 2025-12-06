@@ -2432,8 +2432,12 @@ ${songList}`;
                     /^responsive\s+reading/i,
                 ];
 
-                // Clean the line first (remove bullets, numbering)
-                const cleanedLine = line.replace(/^[•⁠\-\*]\s*/, '').replace(/^\d+\.?\s*/, '').trim();
+                // Clean the line first (remove bullets, numbering, zero-width spaces)
+                const cleanedLine = line
+                    .replace(/[\u200B\u200C\u200D\u2060\uFEFF]/g, '') // Remove zero-width chars
+                    .replace(/^[•\-\*\s]+/, '') // Remove bullets and leading whitespace
+                    .replace(/^\d+\.?\s*/, '') // Remove numbering
+                    .trim();
 
                 // Check if this is a service order item to skip
                 if (skipPatterns.some(pattern => pattern.test(cleanedLine))) {

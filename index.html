@@ -5,6 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FMH Worship Song Generator</title>
     <style>
+        /* ============================================
+           DESIGN SYSTEM - UX STANDARDS
+           ============================================ */
+        :root {
+            /* Typography Scale (1.25 ratio) */
+            --font-xs: 11px;
+            --font-sm: 13px;
+            --font-base: 14px;
+            --font-md: 16px;
+            --font-lg: 20px;
+            --font-xl: 24px;
+            --font-2xl: 32px;
+
+            /* Font Families */
+            --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            --font-chord: Arial, sans-serif;
+            --font-mono: 'Courier New', monospace;
+
+            /* Colors - Primary */
+            --color-primary: #7C3AED;
+            --color-primary-dark: #5B21B6;
+            --color-primary-light: #A78BFA;
+
+            /* Colors - Accent */
+            --color-accent: #C1121F;
+            --color-success: #059669;
+            --color-spotify: #1DB954;
+
+            /* Colors - Neutral */
+            --color-bg: #F7F7F5;
+            --color-surface: #FFFFFF;
+            --color-border: #E5E7EB;
+            --color-border-dark: #D1D5DB;
+            --color-text: #1A1A1A;
+            --color-text-muted: #666666;
+            --color-text-light: #999999;
+
+            /* Spacing */
+            --space-xs: 4px;
+            --space-sm: 8px;
+            --space-md: 12px;
+            --space-lg: 16px;
+            --space-xl: 20px;
+            --space-2xl: 30px;
+
+            /* Border Radius */
+            --radius-sm: 4px;
+            --radius-md: 6px;
+            --radius-lg: 8px;
+            --radius-xl: 12px;
+
+            /* Transitions */
+            --transition-fast: 0.15s ease;
+            --transition-normal: 0.2s ease;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -12,8 +68,10 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background: #F7F7F5;
+            font-family: var(--font-system);
+            font-size: var(--font-base);
+            background: var(--color-bg);
+            color: var(--color-text);
             min-height: 100vh;
             padding: 0;
             margin: 0;

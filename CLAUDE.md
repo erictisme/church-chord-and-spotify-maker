@@ -111,3 +111,39 @@ When adding songs, both the markdown file AND catalog entry must be updated toge
 
 ### Development Setup
 No local development environment needed - edit files and test by opening `index.html` directly in browser.
+
+## Design System & UX Standards
+
+All UI work should use the CSS variables defined in `:root`. This ensures consistency across the app.
+
+### Typography Scale
+| Variable | Size | Usage |
+|----------|------|-------|
+| `--font-xs` | 11px | Tiny labels, metadata |
+| `--font-sm` | 13px | Secondary text, buttons |
+| `--font-base` | 14px | Body text (default) |
+| `--font-md` | 16px | Emphasized body, inputs |
+| `--font-lg` | 20px | Section headers |
+| `--font-xl` | 24px | Panel titles |
+| `--font-2xl` | 32px | Page titles |
+
+### Font Families
+| Variable | Stack | Usage |
+|----------|-------|-------|
+| `--font-system` | System UI fonts | General UI |
+| `--font-chord` | Arial, sans-serif | Chord sheets (existing songs) |
+| `--font-mono` | Courier New | Ultimate Guitar tabs (monospace songs) |
+
+### Colors
+| Variable | Hex | Usage |
+|----------|-----|-------|
+| `--color-primary` | #7C3AED | Buttons, links, accents |
+| `--color-accent` | #C1121F | Copy button, warnings |
+| `--color-success` | #059669 | Add/confirm actions |
+| `--color-spotify` | #1DB954 | Spotify button |
+
+### Spacing Scale
+Use `--space-xs` (4px) through `--space-2xl` (30px) for consistent spacing.
+
+### Border Radius
+Use `--radius-sm` (4px) through `--radius-xl` (12px) for consistent rounded corners.

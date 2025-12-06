@@ -2370,14 +2370,44 @@ Keep rationales to ONE sentence each. Only use songs from the catalog above.`;
             const notFoundSongs = [];
 
             lines.forEach(line => {
+                // Skip lines that are clearly not songs (service order items)
+                const skipPatterns = [
+                    /^welcome\b/i,
+                    /^declaration\b/i,
+                    /^confession\b/i,
+                    /^lord'?s?\s+supper/i,
+                    /^offering\b/i,
+                    /^bible\s+reading/i,
+                    /^prayer\b/i,
+                    /^announcements?\b/i,
+                    /^sermon\b/i,
+                    /^closing\s+prayer/i,
+                    /^check-?in/i,
+                    /^break\b/i,
+                    /^mutual\s+upbuilding/i,
+                    /^communion\b/i,
+                    /^benediction\b/i,
+                    /^call\s+to\s+worship/i,
+                    /^responsive\s+reading/i,
+                ];
+
+                const cleanedLine = line.replace(/^[•\-\*]\s*/, '').replace(/^\d+\.?\s*/, '').trim();
+                if (skipPatterns.some(pattern => pattern.test(cleanedLine))) {
+                    return; // Skip this line, it's not a song
+                }
+
                 // Extract song title from various formats
                 // Remove numbering, dashes, common prefixes
                 let songTitle = line
+                    .replace(/^[•\-\*]\s*/, '') // Remove bullet points
                     .replace(/^\d+\.?\s*/, '') // Remove "1. " or "1 "
                     .replace(/^-+\s*/, '') // Remove leading dashes
-                    .replace(/closing\s+song\s*-?\s*/i, '') // Remove "closing song"
-                    .replace(/opening\s+song\s*-?\s*/i, '') // Remove "opening song"
-                    .replace(/\s*\(.*?\)\s*$/, '') // Remove artist in parentheses at end
+                    .replace(/^song\s*\d*\s*[-–:]\s*/i, '') // Remove "Song 1 - " or "Song - "
+                    .replace(/^kids'?\s+song\s*[-–:]\s*/i, '') // Remove "Kids' Song - "
+                    .replace(/^closing\s+song\s*[-–:]\s*/i, '') // Remove "closing song:"
+                    .replace(/^opening\s+song\s*[-–:]\s*/i, '') // Remove "opening song:"
+                    .replace(/\s*\([^)]*team[^)]*\)\s*$/i, '') // Remove "(Riz team)" etc.
+                    .replace(/\s*\([^)]*\)\s*$/, '') // Remove artist/person in parentheses at end
                     .trim();
 
                 // More typo-tolerant fuzzy search

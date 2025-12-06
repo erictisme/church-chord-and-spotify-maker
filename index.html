@@ -670,7 +670,7 @@
 
         .preview-content {
             padding: 30px;
-            font-family: 'Courier New', monospace;
+            font-family: Arial, sans-serif;
             white-space: pre-wrap;
             font-size: 13px;
             line-height: 1.6;
@@ -678,62 +678,25 @@
             min-height: calc(100vh - 180px);
         }
 
-        .preview-content.two-column {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px 30px;
-        }
-
         .preview-content .song-block {
             margin-bottom: 20px;
             padding-bottom: 15px;
             border-bottom: 1px dashed #ccc;
-        }
-
-        .preview-content.two-column .song-block {
-            margin-bottom: 0;
-            padding: 15px;
-            border: 1px solid #E5E7EB;
-            border-radius: 8px;
-            background: #FAFAFA;
+            /* Newspaper-style 2-column layout within each song */
+            column-count: 2;
+            column-gap: 40px;
+            column-rule: 1px solid #E5E7EB;
         }
 
         .preview-content .song-block:last-child {
             border-bottom: none;
         }
 
-        .preview-content.two-column .song-block:last-child {
-            border-bottom: 1px solid #E5E7EB;
-        }
-
-        .preview-content.two-column .overview-block {
-            grid-column: 1 / -1; /* Span full width */
-            background: white;
-            border: none;
+        .preview-content .overview-block {
+            /* Song overview stays single column */
+            column-count: 1;
             border-bottom: 2px solid #7C3AED;
-            border-radius: 0;
-            padding: 0 0 15px 0;
-            margin-bottom: 10px;
-        }
-
-        .column-toggle {
-            padding: 8px 16px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            background: #fff;
-            cursor: pointer;
-            font-size: 13px;
-            transition: all 0.2s;
-        }
-
-        .column-toggle:hover {
-            background: #f5f5f5;
-        }
-
-        .column-toggle.active {
-            background: #111;
-            color: #fff;
-            border-color: #111;
+            margin-bottom: 20px;
         }
 
         .preview-empty {
@@ -781,44 +744,6 @@
             background: #B91C1C;
         }
 
-        .instructions-toggle {
-            background: #F3F4F6;
-            border: 1px solid #D1D5DB;
-            padding: 8px 12px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 13px;
-            color: #666;
-            transition: all 0.2s;
-        }
-
-        .instructions-toggle:hover {
-            background: #E5E7EB;
-        }
-
-        .instructions-box {
-            display: none;
-            background: #F0F9FF;
-            border: 2px solid #7C3AED;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 30px;
-            font-size: 13px;
-            line-height: 1.6;
-        }
-
-        .instructions-box.show {
-            display: block;
-        }
-
-        .instructions-box ol {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-
-        .instructions-box li {
-            margin: 5px 0;
-        }
     </style>
 </head>
 <body>
@@ -962,10 +887,7 @@ Then click 'Auto Select' to find matching songs automatically!"
             <div class="right-content">
             <div class="preview-header">
                 <h1>📄 Live Chord Sheet Preview</h1>
-                <p style="display: flex; align-items: center; justify-content: space-between;">
-                    <span>Auto-updates as you select songs and adjust settings</span>
-                    <button class="column-toggle" id="columnToggle" onclick="toggleColumnView()">2 Columns</button>
-                </p>
+                <p>Auto-updates as you select songs and adjust settings</p>
             </div>
 
             <div class="preview-content" id="previewContent">
@@ -978,35 +900,12 @@ Then click 'Auto Select' to find matching songs automatically!"
                 </div>
             </div>
 
-            <!-- Instructions Box -->
-            <div class="instructions-box" id="instructionsBox">
-                <h4 style="margin: 0 0 10px 0; color: #7C3AED;">📖 How to Use</h4>
-                <ol>
-                    <li>Click "📋 Copy to Clipboard" below</li>
-                    <li>Paste into Google Docs or Microsoft Word</li>
-                    <li>Use <strong>Arial</strong> or <strong>Times New Roman</strong> font (songs are pre-formatted)</li>
-                    <li>Adjust spacing, page breaks as needed</li>
-                </ol>
-                <div style="margin-top: 10px; padding: 8px; background: white; border-radius: 4px; font-size: 12px; color: #666;">
-                    💡 <strong>Tip:</strong> Songs are optimized for Arial/Times New Roman in Google Docs!
-                </div>
-                <div style="margin-top: 8px; padding: 8px; background: white; border-radius: 4px; font-size: 12px; color: #666;">
-                    🔑 <strong>Secure API:</strong> Your API key is stored locally and never shared.
-                </div>
-                <div style="margin-top: 8px; padding: 8px; background: white; border-radius: 4px; font-size: 12px; color: #666;">
-                    📱 <strong>Feedback?</strong> WhatsApp Eric at <a href="https://wa.me/6581398062" target="_blank" style="color: #7C3AED; text-decoration: none; font-weight: bold;">+65 8139 8062</a>
-                </div>
-            </div>
-
             <div class="preview-actions">
                 <button class="copy-btn" id="copyBtn">
                     📋 Copy to Clipboard
                 </button>
                 <button class="spotify-btn" id="spotifyBtn" onclick="handleSpotifyPlaylist()" style="background: #1DB954; border: none; color: white; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">
                     🎵 Create Spotify Playlist
-                </button>
-                <button class="instructions-toggle" id="instructionsToggle" onclick="toggleInstructions()">
-                    ℹ️ Instructions
                 </button>
             </div>
             </div> <!-- Close right-content -->
@@ -1029,24 +928,6 @@ Then click 'Auto Select' to find matching songs automatically!"
             // Also toggle class on left panel for browsers without :has() support
             if (leftPanel) {
                 leftPanel.classList.toggle('expanded');
-            }
-        }
-
-        // Toggle 2-column view
-        let isTwoColumn = false;
-        function toggleColumnView() {
-            const previewContent = document.getElementById('previewContent');
-            const toggleBtn = document.getElementById('columnToggle');
-            isTwoColumn = !isTwoColumn;
-
-            if (isTwoColumn) {
-                previewContent.classList.add('two-column');
-                toggleBtn.classList.add('active');
-                toggleBtn.textContent = '1 Column';
-            } else {
-                previewContent.classList.remove('two-column');
-                toggleBtn.classList.remove('active');
-                toggleBtn.textContent = '2 Columns';
             }
         }
 
@@ -1902,11 +1783,6 @@ Then click 'Auto Select' to find matching songs automatically!"
                         return `<div class="song-block">${escaped}</div>`;
                     }).join('');
                     previewContent.innerHTML = htmlOutput;
-
-                    // Preserve two-column state after regeneration
-                    if (isTwoColumn) {
-                        previewContent.classList.add('two-column');
-                    }
                 } else {
                     // Show empty state
                     previewContent.innerHTML = `
@@ -2394,12 +2270,6 @@ ${songList}`;
                 </div>
             `;
             document.getElementById('chatActions').style.display = 'none';
-        }
-
-        // Toggle instructions
-        function toggleInstructions() {
-            const box = document.getElementById('instructionsBox');
-            box.classList.toggle('show');
         }
 
         // AI Toggle functionality

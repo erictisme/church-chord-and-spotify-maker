@@ -679,21 +679,41 @@
         }
 
         .preview-content.two-column {
-            column-count: 2;
-            column-gap: 30px;
-            column-rule: 1px solid #E5E7EB;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 30px;
         }
 
         .preview-content .song-block {
-            break-inside: avoid;
-            page-break-inside: avoid;
             margin-bottom: 20px;
             padding-bottom: 15px;
             border-bottom: 1px dashed #ccc;
         }
 
+        .preview-content.two-column .song-block {
+            margin-bottom: 0;
+            padding: 15px;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            background: #FAFAFA;
+        }
+
         .preview-content .song-block:last-child {
             border-bottom: none;
+        }
+
+        .preview-content.two-column .song-block:last-child {
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .preview-content.two-column .overview-block {
+            grid-column: 1 / -1; /* Span full width */
+            background: white;
+            border: none;
+            border-bottom: 2px solid #7C3AED;
+            border-radius: 0;
+            padding: 0 0 15px 0;
+            margin-bottom: 10px;
         }
 
         .column-toggle {
@@ -1847,19 +1867,40 @@ Then click 'Auto Select' to find matching songs automatically!"
                 const previewContent = document.getElementById('previewContent');
                 if (selectedSongs.length > 0) {
                     // For 2-column support, wrap each song section in a div
-                    // Split output by the song separator (=== line) and wrap each
-                    const songSections = output.split(/(?=Song \d+:)/);
-                    const htmlOutput = songSections
-                        .filter(section => section.trim())
-                        .map(section => {
-                            // Escape HTML but preserve whitespace
-                            const escaped = section
-                                .replace(/&/g, '&amp;')
-                                .replace(/</g, '&lt;')
-                                .replace(/>/g, '&gt;');
-                            return `<div class="song-block">${escaped}</div>`;
-                        })
-                        .join('');
+                    // First split off the overview section (everything before the === separator)
+                    const separatorIndex = output.indexOf('='.repeat(80));
+                    let overviewSection = '';
+                    let songsSection = output;
+
+                    if (separatorIndex > 0) {
+                        overviewSection = output.substring(0, separatorIndex).trim();
+                        songsSection = output.substring(separatorIndex);
+                    }
+
+                    // Split individual songs by the === separator
+                    const songBlocks = songsSection.split('='.repeat(80))
+                        .map(s => s.trim())
+                        .filter(s => s);
+
+                    let htmlOutput = '';
+
+                    // Add overview as its own block (spans full width in 2-column mode)
+                    if (overviewSection) {
+                        const escapedOverview = overviewSection
+                            .replace(/&/g, '&amp;')
+                            .replace(/</g, '&lt;')
+                            .replace(/>/g, '&gt;');
+                        htmlOutput += `<div class="song-block overview-block">${escapedOverview}</div>`;
+                    }
+
+                    // Add each song as a block
+                    htmlOutput += songBlocks.map(section => {
+                        const escaped = section
+                            .replace(/&/g, '&amp;')
+                            .replace(/</g, '&lt;')
+                            .replace(/>/g, '&gt;');
+                        return `<div class="song-block">${escaped}</div>`;
+                    }).join('');
                     previewContent.innerHTML = htmlOutput;
 
                     // Preserve two-column state after regeneration

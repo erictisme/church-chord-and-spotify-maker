@@ -679,13 +679,9 @@
         }
 
         .preview-content .song-block {
-            margin-bottom: 20px;
-            padding-bottom: 15px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
             border-bottom: 1px dashed #ccc;
-            /* Newspaper-style 2-column layout within each song */
-            column-count: 2;
-            column-gap: 40px;
-            column-rule: 1px solid #E5E7EB;
         }
 
         .preview-content .song-block:last-child {
@@ -693,10 +689,48 @@
         }
 
         .preview-content .overview-block {
-            /* Song overview stays single column */
-            column-count: 1;
             border-bottom: 2px solid #7C3AED;
             margin-bottom: 20px;
+        }
+
+        /* Fullscreen button */
+        .fullscreen-btn {
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background: #fff;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+
+        .fullscreen-btn:hover {
+            background: #f5f5f5;
+        }
+
+        /* Fullscreen mode for right panel */
+        .right-panel.fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+            flex: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        .right-panel.fullscreen .preview-content {
+            min-height: calc(100vh - 180px);
+            max-height: calc(100vh - 180px);
+            overflow-y: auto;
+        }
+
+        .right-panel.fullscreen .fullscreen-btn {
+            background: #111;
+            color: #fff;
+            border-color: #111;
         }
 
         .preview-empty {
@@ -887,7 +921,10 @@ Then click 'Auto Select' to find matching songs automatically!"
             <div class="right-content">
             <div class="preview-header">
                 <h1>📄 Live Chord Sheet Preview</h1>
-                <p>Auto-updates as you select songs and adjust settings</p>
+                <p style="display: flex; align-items: center; justify-content: space-between;">
+                    <span>Auto-updates as you select songs and adjust settings</span>
+                    <button class="fullscreen-btn" id="fullscreenBtn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+                </p>
             </div>
 
             <div class="preview-content" id="previewContent">
@@ -930,6 +967,29 @@ Then click 'Auto Select' to find matching songs automatically!"
                 leftPanel.classList.toggle('expanded');
             }
         }
+
+        // Fullscreen toggle for preview panel
+        function toggleFullscreen() {
+            const rightPanel = document.getElementById('rightPanel');
+            const btn = document.getElementById('fullscreenBtn');
+            rightPanel.classList.toggle('fullscreen');
+
+            if (rightPanel.classList.contains('fullscreen')) {
+                btn.textContent = '✕ Exit Fullscreen';
+            } else {
+                btn.textContent = '⛶ Fullscreen';
+            }
+        }
+
+        // ESC key to exit fullscreen
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const rightPanel = document.getElementById('rightPanel');
+                if (rightPanel.classList.contains('fullscreen')) {
+                    toggleFullscreen();
+                }
+            }
+        });
 
         // Chord transposer utility
         const NOTES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];

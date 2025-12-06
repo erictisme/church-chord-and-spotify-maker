@@ -836,38 +836,40 @@
                     </div>
                 </div>
             </div>
-            <!-- AI Section - Collapsible -->
-            <div style="margin-bottom: 20px; border: 1px solid #E5E7EB; border-radius: 6px; background: #FAFAFA;">
-                <button id="aiToggleBtn" style="width: 100%; padding: 10px 15px; background: none; border: none; text-align: left; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #666; font-weight: 500;">
-                        <span>🤖 AI Song Suggestions (Optional)</span>
-                        <span id="aiToggleIcon">▼</span>
-                    </button>
-                    <div id="aiSection" style="display: none; padding: 0 15px 15px 15px; border-top: 1px solid #E5E7EB;">
-                        <textarea id="humanThoughts" placeholder="What are you thinking about for this service? Any specific mood, focus, or songs you're considering? (This helps AI give better suggestions)"
-                            style="width: 100%; height: 60px; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; margin-top: 10px; resize: vertical;"></textarea>
-                        <div style="display: flex; gap: 8px; margin-top: 8px;">
-                            <button id="aiSuggestBtn" style="flex: 1; padding: 10px; background: #7C3AED; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500; font-size: 13px; display: flex; align-items: center; justify-content: center; gap: 6px;">
-                                <span>🤖</span>
-                                <span>Get Suggestions</span>
-                            </button>
-                            <button id="aiSettingsBtn" style="padding: 10px 12px; background: #F3F4F6; border: 1px solid #D1D5DB; border-radius: 4px; cursor: pointer; font-size: 13px;" title="Configure Gemini API Key">
-                                ⚙️
-                            </button>
+            <!-- AI Chat Section - Collapsible -->
+            <div style="margin-bottom: 20px; border: 1px solid #7C3AED; border-radius: 8px; background: #FAFAFA; overflow: hidden;">
+                <button id="aiToggleBtn" style="width: 100%; padding: 12px 15px; background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%); border: none; text-align: left; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 14px; color: white; font-weight: 600;">
+                    <span>🤖 AI Song Planning Assistant</span>
+                    <span id="aiToggleIcon" style="transition: transform 0.2s;">▼</span>
+                </button>
+                <div id="aiSection" style="display: none;">
+                    <!-- Chat Messages Area -->
+                    <div id="chatMessages" style="height: 300px; overflow-y: auto; padding: 16px; background: #F9FAFB; border-bottom: 1px solid #E5E7EB;">
+                        <!-- Initial AI message -->
+                        <div class="chat-message ai" style="margin-bottom: 12px; max-width: 85%;">
+                            <div style="padding: 10px 14px; border-radius: 12px; font-size: 14px; line-height: 1.5; background: white; border: 1px solid #E5E7EB;">
+                                Hi! I'm here to help you plan your worship set. 🎵<br><br>
+                                What's the <strong>sermon passage</strong> and <strong>theme</strong> for this Sunday?
+                            </div>
                         </div>
                     </div>
-            </div>
-
-            <!-- AI Suggestions Panel (hidden by default) -->
-            <div id="aiSuggestionsPanel" style="display: none; background: #F0F9FF; border: 1px solid #7C3AED; border-radius: 6px; padding: 12px; margin-bottom: 15px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                    <h4 style="margin: 0; color: #7C3AED; font-size: 14px;">🤖 AI Suggestions</h4>
-                    <button id="closeSuggestionsBtn" style="background: none; border: none; font-size: 16px; cursor: pointer; color: #666;">×</button>
-                </div>
-                <div id="aiSuggestionsContent" style="color: #333; line-height: 1.4; font-size: 12px; max-height: 250px; overflow-y: auto;">
-                    <!-- AI suggestions will appear here -->
-                </div>
-                <div id="aiSongBlocks" style="margin-top: 10px;">
-                    <!-- Clickable song blocks will appear here -->
+                    <!-- Chat Input Area -->
+                    <div style="display: flex; gap: 8px; padding: 12px; background: white;">
+                        <textarea id="chatInput" placeholder="Type your thoughts... (e.g., 'Isaiah 53, identity in Christ')"
+                            style="flex: 1; padding: 10px; border: 1px solid #D1D5DB; border-radius: 6px; resize: none; font-size: 14px; height: 44px; font-family: inherit;"></textarea>
+                        <button id="sendChatBtn" style="padding: 10px 20px; background: #7C3AED; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 14px;">
+                            Send
+                        </button>
+                    </div>
+                    <!-- Action Buttons -->
+                    <div id="chatActions" style="display: none; padding: 0 12px 12px 12px; background: white;">
+                        <button id="addSongsBtn" style="width: 100%; padding: 10px; background: #059669; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 13px;">
+                            ✅ Add agreed songs to my list
+                        </button>
+                        <button id="clearChatBtn" style="width: 100%; padding: 8px; background: none; border: 1px solid #D1D5DB; border-radius: 6px; cursor: pointer; font-size: 12px; color: #666; margin-top: 8px;">
+                            🗑️ Clear chat & start over
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -1978,41 +1980,11 @@ Then click 'Auto Select' to find matching songs automatically!"
 
         // ===== AI SONG SUGGESTION SYSTEM =====
 
-        // API Key Management
-        function saveApiKey() {
-            const apiKey = document.getElementById('geminiApiKey').value.trim();
-            if (apiKey) {
-                localStorage.setItem('gemini_api_key', apiKey);
-                alert('API key saved successfully!');
-                closeApiSettings();
-            } else {
-                alert('Please enter an API key');
-            }
-        }
-
-        function clearApiKey() {
-            localStorage.removeItem('gemini_api_key');
-            document.getElementById('geminiApiKey').value = '';
-            alert('API key cleared');
-        }
+        // Hardcoded Gemini API Key (no user setup needed)
+        const GEMINI_API_KEY = 'AIzaSyBHBUrth9NDgxpXv7Zi5Ri9nkgP8MpHZ7A';
 
         function getApiKey() {
-            return localStorage.getItem('gemini_api_key');
-        }
-
-        // Modal management
-        function openApiSettings() {
-            const modal = document.getElementById('apiSettingsModal');
-            modal.classList.add('show');
-            const savedKey = getApiKey();
-            if (savedKey) {
-                document.getElementById('geminiApiKey').value = savedKey;
-            }
-        }
-
-        function closeApiSettings() {
-            const modal = document.getElementById('apiSettingsModal');
-            modal.classList.remove('show');
+            return GEMINI_API_KEY;
         }
 
         // Create clickable song blocks from AI suggestions
@@ -2172,148 +2144,217 @@ Then click 'Auto Select' to find matching songs automatically!"
             return result.join('');
         }
 
-        // AI Song Suggestions
-        async function generateAISuggestions() {
-            const scripture = document.getElementById('scripture').value;
-            const theme = document.getElementById('theme').value;
-            const humanThoughts = document.getElementById('humanThoughts').value.trim();
+        // ===== AI CHAT SYSTEM =====
+        let chatHistory = [];
+        let agreedSongs = []; // Track songs user has agreed to
 
-            if (!scripture || !theme) {
-                alert('Please fill in both Scripture and Theme fields first');
-                return;
-            }
+        // System prompt for Rizvan-style AI
+        function getSystemPrompt() {
+            const songList = allSongs.map(s => {
+                return `"${s.title}" by ${s.artist || 'Unknown'} - Themes: ${s.themes.join(', ') || 'General'}`;
+            }).join('\n');
 
-            const apiKey = getApiKey();
-            if (!apiKey) {
-                // Show a more helpful message and auto-open settings
-                const userWantsToSetup = confirm('AI suggestions require a free Google API key.\n\nWould you like to set one up now? (Takes 30 seconds)');
-                if (userWantsToSetup) {
-                    openApiSettings();
-                }
-                return;
-            }
+            return `You are a worship planning assistant helping choose songs for a church service. You think like an experienced worship leader named Riz who:
+- Considers theological flow between songs
+- Thinks about congregational singability
+- Balances familiar and newer songs
+- Considers the emotional/spiritual journey of the service
 
-            const btn = document.getElementById('aiSuggestBtn');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '<span>⏳</span><span>Generating...</span>';
-            btn.disabled = true;
+Style guidelines:
+- Be conversational and warm, not formal
+- Think out loud about trade-offs (e.g., "Both X and Y could work, but X might flow better because...")
+- Ask clarifying questions when helpful
+- Suggest 1-2 options at a time, not overwhelming lists
+- Reference the sermon passage/theme in your reasoning
+- When user agrees to a song, confirm it and move to the next decision
+- Keep track of what's been decided so far
 
-            const panel = document.getElementById('aiSuggestionsPanel');
-            const content = document.getElementById('aiSuggestionsContent');
-            panel.style.display = 'block';
-            content.innerHTML = '<p style="color: #7C3AED;"><em>🤖 AI is analyzing scripture and suggesting songs...</em></p>';
+When you and the user have agreed on songs, summarize the final list clearly with format:
+AGREED SONGS:
+1. Song Title
+2. Song Title
+etc.
+
+Keep responses concise (2-3 short paragraphs max).
+
+Available songs in the library:
+${songList}`;
+        }
+
+        // Add message to chat UI
+        function addChatMessage(content, isUser = false) {
+            const chatMessages = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `chat-message ${isUser ? 'user' : 'ai'}`;
+            messageDiv.style.cssText = `margin-bottom: 12px; max-width: 85%; ${isUser ? 'margin-left: auto;' : 'margin-right: auto;'}`;
+
+            const contentDiv = document.createElement('div');
+            contentDiv.style.cssText = `padding: 10px 14px; border-radius: 12px; font-size: 14px; line-height: 1.5; ${isUser ? 'background: #7C3AED; color: white;' : 'background: white; border: 1px solid #E5E7EB;'}`;
+            contentDiv.innerHTML = isUser ? content : convertMarkdownToHtml(content);
+
+            messageDiv.appendChild(contentDiv);
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Send chat message
+        async function sendChatMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+
+            if (!message) return;
+
+            // Add user message to UI
+            addChatMessage(message, true);
+            input.value = '';
+
+            // Add to history
+            chatHistory.push({ role: 'user', parts: [{ text: message }] });
+
+            // Show typing indicator
+            const typingDiv = document.createElement('div');
+            typingDiv.id = 'typingIndicator';
+            typingDiv.className = 'chat-message ai';
+            typingDiv.style.cssText = 'margin-bottom: 12px; max-width: 85%; margin-right: auto;';
+            typingDiv.innerHTML = '<div style="padding: 10px 14px; border-radius: 12px; font-size: 14px; background: white; border: 1px solid #E5E7EB; color: #7C3AED;"><em>Thinking...</em></div>';
+            document.getElementById('chatMessages').appendChild(typingDiv);
+            document.getElementById('chatMessages').scrollTop = document.getElementById('chatMessages').scrollHeight;
+
+            // Disable send button
+            const sendBtn = document.getElementById('sendChatBtn');
+            sendBtn.disabled = true;
+            sendBtn.textContent = '...';
 
             try {
-                // Create song catalog summary
-                const songList = allSongs.map(s => {
-                    return `- "${s.title}" by ${s.artist} (Key: ${s.key || 'Unknown'}) - Themes: ${s.themes.join(', ') || 'None'}`;
-                }).join('\n');
+                const apiKey = getApiKey();
 
-                let humanThoughtsSection = '';
-                if (humanThoughts) {
-                    humanThoughtsSection = `**Human Input:** ${humanThoughts}\n\n`;
-                }
+                // Build conversation for API
+                const contents = [
+                    { role: 'user', parts: [{ text: getSystemPrompt() }] },
+                    { role: 'model', parts: [{ text: "Hi! I'm here to help you plan your worship set. What's the sermon passage and theme for this Sunday?" }] },
+                    ...chatHistory
+                ];
 
-                const prompt = `You are a worship music curator. Suggest songs for a church service.
-
-**Scripture:** ${scripture}
-**Theme:** ${theme}
-${humanThoughtsSection}**Available Songs:**
-${songList}
-
-**Instructions:**
-1. Briefly analyze the scripture and theme (2-3 sentences max)
-2. Suggest 3-4 song options for EACH of these 4 positions:
-   - **Song 1 (Opening)** - Sets the tone
-   - **Song 2** - Builds on opening
-   - **Pre-Sermon Song** - Prepares hearts
-   - **Closing Song** - Response/application
-
-**Format your response EXACTLY like this:**
-
-## Scripture & Theme Analysis
-[2-3 sentences about the passage and theme]
-
-## Song Suggestions
-
-**Song 1 (Opening):**
-- "Song Title" by Artist (Key: X) - Brief reason why it fits
-- "Song Title" by Artist (Key: X) - Brief reason why it fits
-- "Song Title" by Artist (Key: X) - Brief reason why it fits
-
-**Song 2:**
-- "Song Title" by Artist (Key: X) - Brief reason why it fits
-- "Song Title" by Artist (Key: X) - Brief reason why it fits
-- "Song Title" by Artist (Key: X) - Brief reason why it fits
-
-**Pre-Sermon Song:**
-- "Song Title" by Artist (Key: X) - Brief reason why it fits
-- "Song Title" by Artist (Key: X) - Brief reason why it fits
-- "Song Title" by Artist (Key: X) - Brief reason why it fits
-
-**Closing Song:**
-- "Song Title" by Artist (Key: X) - Brief reason why it fits
-- "Song Title" by Artist (Key: X) - Brief reason why it fits
-- "Song Title" by Artist (Key: X) - Brief reason why it fits
-
-Keep rationales to ONE sentence each. Only use songs from the catalog above.`;
-
-                // Call Gemini API with thinking mode enabled
-                console.log('Calling Gemini API: gemini-2.5-flash with thinking mode');
-                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        contents: [{
-                            parts: [{
-                                text: prompt
-                            }]
-                        }],
-                    })
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ contents })
                 });
 
                 if (!response.ok) {
-                    const errorData = await response.json();
-                    console.log('API Error Details:', errorData);
                     throw new Error(`API error: ${response.status}`);
                 }
 
                 const data = await response.json();
-                console.log('API Response:', data);
+                let aiResponse = '';
 
-                // Handle thinking mode response - extract actual text (skip thinking parts)
-                let suggestions = '';
+                // Extract response text
                 const parts = data.candidates[0].content.parts;
-
-                // Find the text part (not the thought part)
                 for (const part of parts) {
-                    if (part.text && !part.thought) {
-                        suggestions = part.text;
+                    if (part.text) {
+                        aiResponse = part.text;
                         break;
                     }
                 }
 
-                // Fallback to first part if no non-thought text found
-                if (!suggestions && parts[0].text) {
-                    suggestions = parts[0].text;
+                // Remove typing indicator
+                document.getElementById('typingIndicator')?.remove();
+
+                // Add AI response to UI and history
+                addChatMessage(aiResponse);
+                chatHistory.push({ role: 'model', parts: [{ text: aiResponse }] });
+
+                // Check if there are agreed songs and show action button
+                if (aiResponse.includes('AGREED SONGS:') || aiResponse.toLowerCase().includes('so far we have') || aiResponse.toLowerCase().includes('our list')) {
+                    document.getElementById('chatActions').style.display = 'block';
+                    // Parse agreed songs
+                    parseAgreedSongs(aiResponse);
                 }
 
-                // Convert markdown to HTML for beautiful display
-                const htmlContent = convertMarkdownToHtml(suggestions);
-                content.innerHTML = `<div style="font-family: system-ui; line-height: 1.6;">${htmlContent}</div>`;
-
-                // Extract song suggestions and create clickable blocks
-                createClickableSongBlocks(suggestions);
-
             } catch (error) {
-                console.error('AI Suggestion Error:', error);
-                content.innerHTML = `<p style="color: #DC2626;"><strong>Error:</strong> ${error.message}</p><p>Please check your API key and try again.</p>`;
+                console.error('Chat error:', error);
+                document.getElementById('typingIndicator')?.remove();
+                addChatMessage(`Sorry, I encountered an error: ${error.message}. Please try again.`);
             } finally {
-                btn.innerHTML = originalText;
-                btn.disabled = false;
+                sendBtn.disabled = false;
+                sendBtn.textContent = 'Send';
             }
+        }
+
+        // Parse agreed songs from AI response
+        function parseAgreedSongs(text) {
+            agreedSongs = [];
+            const lines = text.split('\n');
+            let inAgreedSection = false;
+
+            for (const line of lines) {
+                if (line.includes('AGREED SONGS:') || line.toLowerCase().includes('so far')) {
+                    inAgreedSection = true;
+                    continue;
+                }
+                if (inAgreedSection) {
+                    // Look for numbered items or bullet points with song titles
+                    const match = line.match(/^\d+\.\s*(.+)$/) || line.match(/^[-•]\s*(.+)$/);
+                    if (match) {
+                        const songTitle = match[1].trim().replace(/["""]/g, '');
+                        // Find matching song in library
+                        const song = allSongs.find(s =>
+                            s.title.toLowerCase().includes(songTitle.toLowerCase()) ||
+                            songTitle.toLowerCase().includes(s.title.toLowerCase())
+                        );
+                        if (song) {
+                            agreedSongs.push(song);
+                        }
+                    }
+                }
+            }
+            console.log('Parsed agreed songs:', agreedSongs);
+        }
+
+        // Add agreed songs to the selected list
+        function addAgreedSongsToList() {
+            if (agreedSongs.length === 0) {
+                alert('No songs detected to add. Continue chatting to finalize your song selection.');
+                return;
+            }
+
+            let addedCount = 0;
+            agreedSongs.forEach(song => {
+                const isAlreadySelected = selectedSongs.some(s => s.id === song.id);
+                if (!isAlreadySelected) {
+                    selectedSongs.push({
+                        ...song,
+                        targetKey: song.key || '',
+                        capoSemitones: 0
+                    });
+                    addedCount++;
+                }
+            });
+
+            updateSelectedDisplay();
+            renderSongsGrid();
+
+            if (addedCount > 0) {
+                alert(`Added ${addedCount} song(s) to your list!`);
+            } else {
+                alert('All agreed songs were already in your list.');
+            }
+        }
+
+        // Clear chat and start over
+        function clearChat() {
+            chatHistory = [];
+            agreedSongs = [];
+            const chatMessages = document.getElementById('chatMessages');
+            chatMessages.innerHTML = `
+                <div class="chat-message ai" style="margin-bottom: 12px; max-width: 85%;">
+                    <div style="padding: 10px 14px; border-radius: 12px; font-size: 14px; line-height: 1.5; background: white; border: 1px solid #E5E7EB;">
+                        Hi! I'm here to help you plan your worship set. 🎵<br><br>
+                        What's the <strong>sermon passage</strong> and <strong>theme</strong> for this Sunday?
+                    </div>
+                </div>
+            `;
+            document.getElementById('chatActions').style.display = 'none';
         }
 
         // Toggle instructions
@@ -2508,14 +2549,18 @@ Keep rationales to ONE sentence each. Only use songs from the catalog above.`;
         // Event Listeners
         document.getElementById('serviceDetailsToggle').addEventListener('click', toggleServiceDetailsSection);
         document.getElementById('aiToggleBtn').addEventListener('click', toggleAISection);
-        document.getElementById('aiSuggestBtn').addEventListener('click', generateAISuggestions);
-        document.getElementById('aiSettingsBtn').addEventListener('click', openApiSettings);
+        document.getElementById('sendChatBtn').addEventListener('click', sendChatMessage);
+        document.getElementById('addSongsBtn').addEventListener('click', addAgreedSongsToList);
+        document.getElementById('clearChatBtn').addEventListener('click', clearChat);
+        document.getElementById('chatInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendChatMessage();
+            }
+        });
         document.getElementById('quickInputToggle').addEventListener('click', toggleQuickInputSection);
         document.getElementById('autoSelectBtn').addEventListener('click', autoSelectSongs);
         document.getElementById('includeServiceDetails').addEventListener('change', triggerAutoGenerate);
-        document.getElementById('closeSuggestionsBtn').addEventListener('click', function() {
-            document.getElementById('aiSuggestionsPanel').style.display = 'none';
-        });
 
         // Initialize
         loadSongs();
@@ -2525,16 +2570,8 @@ Keep rationales to ONE sentence each. Only use songs from the catalog above.`;
         console.log('%c🎉 FMH Worship Generator Loaded!', 'color: #7C3AED; font-size: 16px; font-weight: bold;');
         console.log('%c✅ Split-screen layout active', 'color: green;');
         console.log('%c✅ Live preview enabled', 'color: green;');
-        console.log('%c✅ AI Song Suggestions ready', 'color: green;');
-        console.log('%c✅ Capo transposition enabled', 'color: green;');
-
-        // Check API key status
-        const savedKey = localStorage.getItem('gemini_api_key');
-        if (savedKey) {
-            console.log('%c✅ Gemini API key configured (length: ' + savedKey.length + ')', 'color: green;');
-        } else {
-            console.log('%c⚠️ Gemini API key not set - click ⚙️ to configure', 'color: orange;');
-        }
+        console.log('%c✅ AI Chat Assistant ready', 'color: green;');
+        console.log('%c✅ Spotify integration enabled', 'color: green;');
 
         // Add keyboard shortcut for testing: Ctrl+Shift+T
         document.addEventListener('keydown', function(e) {
@@ -2782,39 +2819,6 @@ Keep rationales to ONE sentence each. Only use songs from the catalog above.`;
             </div>
             <div class="modal-body">
                 <pre id="modalSongContent">Loading...</pre>
-            </div>
-        </div>
-    </div>
-
-    <!-- API Settings Modal -->
-    <div id="apiSettingsModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>⚙️ AI Configuration</h2>
-                <button class="close" onclick="closeApiSettings()">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div style="margin-bottom: 20px;">
-                    <label style="display: block; font-weight: 600; margin-bottom: 8px; color: #333;">
-                        Google Gemini API Key
-                    </label>
-                    <input type="password" id="geminiApiKey" placeholder="Enter your Gemini API key"
-                           style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; font-family: monospace;">
-                    <div style="margin-top: 8px; font-size: 13px; color: #666; line-height: 1.4;">
-                        <div>Get your free API key at <a href="https://makersuite.google.com/app/apikey" target="_blank" style="color: #7C3AED;">Google AI Studio</a></div>
-                        <div style="margin-top: 6px; padding: 8px; background: #F0F9FF; border-radius: 4px; font-size: 12px;">
-                            🔒 <strong>Privacy:</strong> Your API key is stored securely in your browser's local storage and is never transmitted to our servers. Only you have access to it.
-                        </div>
-                    </div>
-                </div>
-                <div style="display: flex; gap: 10px;">
-                    <button onclick="saveApiKey()" style="flex: 1; padding: 10px; background: #7C3AED; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">
-                        Save API Key
-                    </button>
-                    <button onclick="clearApiKey()" style="padding: 10px 20px; background: #F3F4F6; border: 1px solid #D1D5DB; border-radius: 6px; cursor: pointer;">
-                        Clear
-                    </button>
-                </div>
             </div>
         </div>
     </div>

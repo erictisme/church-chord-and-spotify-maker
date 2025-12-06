@@ -2411,7 +2411,7 @@ ${songList}`;
             const notFoundSongs = [];
 
             lines.forEach(line => {
-                // Skip lines that are clearly not songs (service order items)
+                // Skip patterns - these are service order items, not songs
                 const skipPatterns = [
                     /^welcome\b/i,
                     /^declaration\b/i,
@@ -2432,16 +2432,16 @@ ${songList}`;
                     /^responsive\s+reading/i,
                 ];
 
-                const cleanedLine = line.replace(/^[•\-\*]\s*/, '').replace(/^\d+\.?\s*/, '').trim();
+                // Clean the line first (remove bullets, numbering)
+                const cleanedLine = line.replace(/^[•⁠\-\*]\s*/, '').replace(/^\d+\.?\s*/, '').trim();
+
+                // Check if this is a service order item to skip
                 if (skipPatterns.some(pattern => pattern.test(cleanedLine))) {
                     return; // Skip this line, it's not a song
                 }
 
                 // Extract song title from various formats
-                // Remove numbering, dashes, common prefixes
-                let songTitle = line
-                    .replace(/^[•\-\*]\s*/, '') // Remove bullet points
-                    .replace(/^\d+\.?\s*/, '') // Remove "1. " or "1 "
+                let songTitle = cleanedLine
                     .replace(/^-+\s*/, '') // Remove leading dashes
                     .replace(/^song\s*\d*\s*[-–:]\s*/i, '') // Remove "Song 1 - " or "Song - "
                     .replace(/^kids'?\s+song\s*[-–:]\s*/i, '') // Remove "Kids' Song - "
@@ -2451,43 +2451,44 @@ ${songList}`;
                     .replace(/\s*\([^)]*\)\s*$/, '') // Remove artist/person in parentheses at end
                     .trim();
 
-                // More typo-tolerant fuzzy search
+                // Skip if after cleaning we have nothing meaningful
+                if (songTitle.length < 3) {
+                    return;
+                }
+
+                // STRICT matching - only match if there's strong evidence
                 const matches = allSongs.filter(song => {
-                    // Clean both strings for comparison
                     const cleanSongTitle = songTitle.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
                     const cleanDbTitle = song.title.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
-                    const cleanArtist = song.artist.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
-                    const cleanLine = line.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
 
-                    // Exact match (high priority)
+                    // Exact match
                     if (cleanSongTitle === cleanDbTitle) return true;
 
-                    // Contains match in either direction
-                    const titleMatch = cleanDbTitle.includes(cleanSongTitle) || cleanSongTitle.includes(cleanDbTitle);
+                    // One contains the other (but require significant overlap)
+                    // The shorter string must be at least 60% of the longer
+                    const shorter = cleanSongTitle.length < cleanDbTitle.length ? cleanSongTitle : cleanDbTitle;
+                    const longer = cleanSongTitle.length < cleanDbTitle.length ? cleanDbTitle : cleanSongTitle;
 
-                    // Artist mentioned in line
-                    const artistInLine = cleanLine.includes(cleanArtist) || cleanArtist.includes(cleanSongTitle);
+                    if (longer.includes(shorter) && shorter.length >= longer.length * 0.5) {
+                        return true;
+                    }
 
-                    // Fuzzy word matching - check if most words match
+                    // Word-based matching - require MOST words to match exactly
                     const titleWords = cleanSongTitle.split(' ').filter(w => w.length > 2);
                     const dbWords = cleanDbTitle.split(' ').filter(w => w.length > 2);
 
-                    let wordMatches = 0;
+                    if (titleWords.length === 0) return false;
+
+                    let exactWordMatches = 0;
                     titleWords.forEach(word => {
-                        if (dbWords.some(dbWord =>
-                            dbWord.includes(word) || word.includes(dbWord) ||
-                            // Simple edit distance for typos
-                            Math.abs(dbWord.length - word.length) <= 1 &&
-                            (dbWord.substr(0, word.length-1) === word.substr(0, word.length-1) ||
-                             dbWord.substr(1) === word.substr(1))
-                        )) {
-                            wordMatches++;
+                        if (dbWords.includes(word)) {
+                            exactWordMatches++;
                         }
                     });
 
-                    const fuzzyWordMatch = titleWords.length > 0 && wordMatches >= Math.min(2, titleWords.length);
-
-                    return titleMatch || (cleanSongTitle.length > 3 && artistInLine) || fuzzyWordMatch;
+                    // Require at least 70% of words to match exactly (not substring)
+                    const matchRatio = exactWordMatches / titleWords.length;
+                    return matchRatio >= 0.7 && exactWordMatches >= 2;
                 });
 
                 if (matches.length > 0) {

@@ -2513,15 +2513,14 @@ ${songList}`;
                 }
             });
 
-            // Select the found songs
+            // Clear existing selection and add the found songs
+            selectedSongs = [];
             foundSongs.forEach(({ song }) => {
-                if (!selectedSongs.some(s => s.id === song.id)) {
-                    selectedSongs.push({
-                        ...song,
-                        targetKey: song.key || '',
-                        capoSemitones: 0
-                    });
-                }
+                selectedSongs.push({
+                    ...song,
+                    targetKey: song.key || '',
+                    capoSemitones: 0
+                });
             });
 
             // Update display

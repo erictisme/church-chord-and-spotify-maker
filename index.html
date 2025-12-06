@@ -880,6 +880,9 @@
                         <button id="sendChatBtn" style="padding: 10px 20px; background: #7C3AED; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 14px;">
                             Send
                         </button>
+                        <button id="aiSettingsBtn" onclick="promptForApiKey()" style="padding: 10px 12px; background: #F3F4F6; border: 1px solid #D1D5DB; border-radius: 6px; cursor: pointer; font-size: 14px;" title="Configure Gemini API Key">
+                            ⚙️
+                        </button>
                     </div>
                     <!-- Action Buttons -->
                     <div id="chatActions" style="display: none; padding: 0 12px 12px 12px; background: white;">
@@ -2021,11 +2024,31 @@ Then click 'Auto Select' to find matching songs automatically!"
 
         // ===== AI SONG SUGGESTION SYSTEM =====
 
-        // Hardcoded Gemini API Key (no user setup needed)
-        const GEMINI_API_KEY = 'AIzaSyBHBUrth9NDgxpXv7Zi5Ri9nkgP8MpHZ7A';
-
+        // API Key Management (user enters their own key)
         function getApiKey() {
-            return GEMINI_API_KEY;
+            return localStorage.getItem('gemini_api_key');
+        }
+
+        function saveApiKey(key) {
+            localStorage.setItem('gemini_api_key', key);
+        }
+
+        function clearApiKey() {
+            localStorage.removeItem('gemini_api_key');
+        }
+
+        function promptForApiKey() {
+            const currentKey = getApiKey();
+            const message = currentKey
+                ? 'Update your Gemini API key (or cancel to keep current):'
+                : 'Enter your Gemini API key to use AI features.\n\nGet a free key at: https://makersuite.google.com/app/apikey';
+
+            const key = prompt(message, currentKey || '');
+            if (key && key.trim()) {
+                saveApiKey(key.trim());
+                return true;
+            }
+            return !!currentKey; // Return true if there's still a key
         }
 
         // Create clickable song blocks from AI suggestions
@@ -2245,6 +2268,15 @@ ${songList}`;
 
             if (!message) return;
 
+            // Check for API key first
+            let apiKey = getApiKey();
+            if (!apiKey) {
+                if (!promptForApiKey()) {
+                    return; // User cancelled and no key exists
+                }
+                apiKey = getApiKey();
+            }
+
             // Add user message to UI
             addChatMessage(message, true);
             input.value = '';
@@ -2267,8 +2299,6 @@ ${songList}`;
             sendBtn.textContent = '...';
 
             try {
-                const apiKey = getApiKey();
-
                 // Build conversation for API
                 const contents = [
                     { role: 'user', parts: [{ text: getSystemPrompt() }] },

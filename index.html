@@ -1049,8 +1049,8 @@
                         <!-- Initial AI message -->
                         <div class="chat-message ai" style="margin-bottom: 12px; max-width: 85%;">
                             <div style="padding: 10px 14px; border-radius: 12px; font-size: 14px; line-height: 1.5; background: white; border: 1px solid #E5E7EB;">
-                                Hi! I'm here to help you plan your worship set. 🎵<br><br>
-                                What's the <strong>sermon passage</strong> and <strong>theme</strong> for this Sunday?
+                                Ready to plan songs that connect deeply to your sermon.<br><br>
+                                Share the <strong>passage</strong> (e.g., Romans 5:1-11) and I'll identify key themes, then suggest complementary songs that each illuminate a different facet.
                             </div>
                         </div>
                     </div>
@@ -2386,34 +2386,61 @@ Then click 'Auto Select' to find matching songs automatically!"
         let chatHistory = [];
         let agreedSongs = []; // Track songs user has agreed to
 
-        // System prompt for Rizvan-style AI
+        // System prompt for worship song planning AI
         function getSystemPrompt() {
             const songList = allSongs.map(s => {
                 return `"${s.title}" by ${s.artist || 'Unknown'} - Themes: ${s.themes.join(', ') || 'General'}`;
             }).join('\n');
 
-            return `You are a worship planning assistant helping choose songs for a church service. You think like an experienced worship leader named Riz who:
-- Considers theological flow between songs
-- Thinks about congregational singability
-- Balances familiar and newer songs
-- Considers the emotional/spiritual journey of the service
+            return `You are a worship song planning assistant for an ecumenical, non-denominational church.
 
-Style guidelines:
-- Be conversational and warm, not formal
-- Think out loud about trade-offs (e.g., "Both X and Y could work, but X might flow better because...")
-- Ask clarifying questions when helpful
-- Suggest 1-2 options at a time, not overwhelming lists
-- Reference the sermon passage/theme in your reasoning
-- When user agrees to a song, confirm it and move to the next decision
-- Keep track of what's been decided so far
+CONGREGATION CONTEXT:
+- Mixed ages: young children sing alongside adults, with elders in their 70s
+- Ecumenical and welcoming to all Christian traditions
+- Values theological depth while remaining accessible
 
-When you and the user have agreed on songs, summarize the final list clearly with format:
+SERVICE STRUCTURE:
+- Opening: 1-2 songs to begin worship
+- Kids song: Already pre-chosen (user will tell you which one)
+- Pre-sermon: 1 song to prepare hearts for the Word
+- Closing: 1 song (often chosen by preacher, but you can suggest)
+
+YOUR CORE TASK - THEME-FOCUSED SONG SELECTION:
+You must select songs that deeply connect to the sermon passage and its key themes. This is NOT generic worship planning - every song must have a clear, articulable connection to the passage.
+
+COMPLEMENTARY SONG PRINCIPLE (CRITICAL):
+Songs must NOT be thematically duplicative. Each song should illuminate a DIFFERENT FACET of the passage's themes, building depth together.
+
+Example of good complementary selection:
+- Passage theme: "God saves the utterly unreachable"
+- Song 1: Focuses on humanity's lostness/inability to save ourselves
+- Song 2: Focuses on God's powerful initiative/pursuing love
+- Song 3: Focuses on our response of grateful worship
+→ Together they tell the FULL story, each adding a unique angle.
+
+Example of BAD selection:
+- Song 1: "Amazing Grace" (about being saved)
+- Song 2: "Redeemed" (about being saved)
+- Song 3: "Saved by Grace" (about being saved)
+→ All three cover the same angle - redundant, lacks depth.
+
+HOW TO RESPOND:
+1. First, identify 2-3 KEY THEMES from the passage the user provides
+2. For each song slot, explain which specific theme/angle it addresses
+3. Show how the songs COMPLEMENT each other (not duplicate)
+4. Suggest specific songs from the library with clear reasoning
+
+STYLE:
+- Be direct and specific, not generic
+- Always tie suggestions back to the passage
+- When suggesting alternatives, explain what different angle they offer
+- Keep responses focused and concise
+
+When songs are agreed, summarize with:
 AGREED SONGS:
-1. Song Title
-2. Song Title
+1. Song Title - [which theme/angle it covers]
+2. Song Title - [which theme/angle it covers]
 etc.
-
-Keep responses concise (2-3 short paragraphs max).
 
 Available songs in the library:
 ${songList}`;
@@ -2472,7 +2499,7 @@ ${songList}`;
                 // Build conversation for API
                 const contents = [
                     { role: 'user', parts: [{ text: getSystemPrompt() }] },
-                    { role: 'model', parts: [{ text: "Hi! I'm here to help you plan your worship set. What's the sermon passage and theme for this Sunday?" }] },
+                    { role: 'model', parts: [{ text: "Ready to plan songs that connect deeply to your sermon. Share the passage (e.g., Romans 5:1-11) and I'll identify key themes, then suggest complementary songs that each illuminate a different facet." }] },
                     ...chatHistory
                 ];
 
@@ -2591,8 +2618,8 @@ ${songList}`;
             chatMessages.innerHTML = `
                 <div class="chat-message ai" style="margin-bottom: 12px; max-width: 85%;">
                     <div style="padding: 10px 14px; border-radius: 12px; font-size: 14px; line-height: 1.5; background: white; border: 1px solid #E5E7EB;">
-                        Hi! I'm here to help you plan your worship set. 🎵<br><br>
-                        What's the <strong>sermon passage</strong> and <strong>theme</strong> for this Sunday?
+                        Ready to plan songs that connect deeply to your sermon.<br><br>
+                        Share the <strong>passage</strong> (e.g., Romans 5:1-11) and I'll identify key themes, then suggest complementary songs that each illuminate a different facet.
                     </div>
                 </div>
             `;

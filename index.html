@@ -836,6 +836,170 @@
             background: #B91C1C;
         }
 
+        /* Monospace font for Ultimate Guitar imports */
+        .song-block.monospace {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            letter-spacing: 0;
+        }
+
+        /* 2-column layout option for preview */
+        .preview-content.two-column {
+            column-count: 2;
+            column-gap: 40px;
+            column-rule: 1px solid #E5E7EB;
+        }
+
+        .preview-content.two-column .overview-block {
+            column-span: all;
+        }
+
+        .preview-content.two-column .song-block {
+            break-inside: avoid-column;
+            page-break-inside: avoid;
+        }
+
+        /* UG Import Modal */
+        .ug-import-modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+            overflow: auto;
+        }
+
+        .ug-import-modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ug-import-content {
+            background-color: #FFFFFF;
+            margin: 20px;
+            padding: 0;
+            border-radius: 12px;
+            max-width: 800px;
+            width: 95%;
+            max-height: 90vh;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .ug-import-header {
+            background: linear-gradient(135deg, #FFA500 0%, #FF6600 100%);
+            color: #FFFFFF;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ug-import-header h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .ug-import-body {
+            padding: 20px;
+            overflow-y: auto;
+            max-height: calc(90vh - 140px);
+        }
+
+        .ug-textarea {
+            width: 100%;
+            height: 300px;
+            font-family: var(--font-mono);
+            font-size: 12px;
+            padding: 12px;
+            border: 2px solid #E5E7EB;
+            border-radius: 8px;
+            resize: vertical;
+        }
+
+        .ug-textarea:focus {
+            border-color: #FFA500;
+            outline: none;
+        }
+
+        .ug-form-group {
+            margin-bottom: 15px;
+        }
+
+        .ug-form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .ug-form-group input, .ug-form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .ug-form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .ug-import-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #FFA500 0%, #FF6600 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .ug-import-btn:hover {
+            opacity: 0.9;
+        }
+
+        .ug-copyright-notice {
+            background: #FFF3CD;
+            border: 1px solid #FFE69C;
+            border-radius: 6px;
+            padding: 12px;
+            margin-top: 15px;
+            font-size: 12px;
+            color: #664D03;
+        }
+
+        /* Layout toggle in preview header */
+        .layout-toggle {
+            display: flex;
+            gap: 8px;
+            margin-left: 15px;
+        }
+
+        .layout-btn {
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #fff;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .layout-btn.active {
+            background: #111;
+            color: #fff;
+            border-color: #111;
+        }
+
     </style>
 </head>
 <body>
@@ -931,6 +1095,29 @@ Then click 'Auto Select' to find matching songs automatically!"
                 </div>
             </div>
 
+            <!-- Import from Ultimate Guitar -->
+            <div style="margin-bottom: 20px; border: 1px solid #FFA500; border-radius: 6px; background: #FFFAF0;">
+                <button id="ugImportToggle" style="width: 100%; padding: 10px 15px; background: linear-gradient(135deg, #FFA500 0%, #FF6600 100%); border: none; text-align: left; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: white; font-weight: 600; border-radius: 5px 5px 0 0;">
+                    <span>🎸 Import from Ultimate Guitar</span>
+                    <span id="ugImportIcon">▼</span>
+                </button>
+                <div id="ugImportSection" style="display: none; padding: 15px; border-top: 1px solid #FFE0B2;">
+                    <p style="font-size: 12px; color: #666; margin-bottom: 12px;">
+                        Add new songs from Ultimate Guitar tabs. Songs import with <strong>monospace</strong> formatting to preserve chord alignment.
+                    </p>
+                    <button id="openUgImportBtn" style="width: 100%; padding: 10px; background: linear-gradient(135deg, #FFA500 0%, #FF6600 100%); color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500; font-size: 13px;">
+                        ➕ Import New Song from UG Tab
+                    </button>
+                    <div style="margin-top: 12px; padding: 10px; background: #FFF3CD; border-radius: 4px; font-size: 11px; color: #664D03;">
+                        <strong>How it works:</strong><br>
+                        1. Go to ultimate-guitar.com and find a song<br>
+                        2. Copy the chord sheet content<br>
+                        3. Paste it here and fill in the details<br>
+                        4. Song gets added to your session (display only)
+                    </div>
+                </div>
+            </div>
+
 
             <!-- Search Section -->
             <div class="search-section">
@@ -979,9 +1166,15 @@ Then click 'Auto Select' to find matching songs automatically!"
             <div class="right-content">
             <div class="preview-header">
                 <h1>📄 Live Chord Sheet Preview</h1>
-                <p style="display: flex; align-items: center; justify-content: space-between;">
+                <p style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
                     <span>Auto-updates as you select songs and adjust settings</span>
-                    <button class="fullscreen-btn" id="fullscreenBtn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+                    <span style="display: flex; align-items: center; gap: 8px;">
+                        <span class="layout-toggle">
+                            <button class="layout-btn active" id="layout1Col" onclick="setPreviewLayout(1)">1 Col</button>
+                            <button class="layout-btn" id="layout2Col" onclick="setPreviewLayout(2)">2 Col</button>
+                        </span>
+                        <button class="fullscreen-btn" id="fullscreenBtn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+                    </span>
                 </p>
             </div>
 
@@ -1247,6 +1440,10 @@ Then click 'Auto Select' to find matching songs automatically!"
                 });
 
                 document.getElementById('loading').style.display = 'none';
+
+                // Load imported songs from localStorage and merge
+                loadImportedSongs();
+
                 document.getElementById('songCount').textContent = `${allSongs.length} songs available`;
 
                 renderFilterTags();
@@ -1689,9 +1886,14 @@ Then click 'Auto Select' to find matching songs automatically!"
                 });
                 console.log('='.repeat(60));
 
-                // Fetch full song contents from GitHub
+                // Fetch full song contents from GitHub (or use rawContent for imports)
                 const songContents = await Promise.all(
                     selectedSongs.map(async (song) => {
+                        // Check if this is an imported song with raw content
+                        if (song.rawContent) {
+                            return { song, content: song.rawContent };
+                        }
+                        // Otherwise fetch from GitHub
                         const url = `https://raw.githubusercontent.com/erictisme/church-chord-and-spotify-maker/main/eric-songs/all-songs/${song.filename}`;
                         const response = await fetch(url);
                         if (!response.ok) {
@@ -1892,13 +2094,20 @@ Then click 'Auto Select' to find matching songs automatically!"
                         htmlOutput += `<div class="song-block overview-block">${escapedOverview}</div>`;
                     }
 
-                    // Add each song as a block
-                    htmlOutput += songBlocks.map(section => {
+                    // Add each song as a block with font class based on metadata
+                    htmlOutput += songBlocks.map((section, index) => {
                         const escaped = section
                             .replace(/&/g, '&amp;')
                             .replace(/</g, '&lt;')
                             .replace(/>/g, '&gt;');
-                        return `<div class="song-block">${escaped}</div>`;
+                        // Check if this song should use monospace (UG import)
+                        const song = selectedSongs[index];
+                        const fontClass = song && song.font === 'monospace' ? ' monospace' : '';
+                        // Add copyright notice for imported songs
+                        const copyrightNotice = song && song.copyright
+                            ? `\n\n<span style="font-size: 10px; color: #666; font-style: italic;">${song.copyright}</span>`
+                            : '';
+                        return `<div class="song-block${fontClass}">${escaped}${copyrightNotice}</div>`;
                     }).join('');
                     previewContent.innerHTML = htmlOutput;
                 } else {
@@ -2577,6 +2786,158 @@ ${songList}`;
             resultsEl.innerHTML = resultText;
         }
 
+        // ========== ULTIMATE GUITAR IMPORT SYSTEM ==========
+
+        // Track imported songs (persisted to localStorage)
+        let importedSongs = [];
+
+        // Load imported songs from localStorage
+        function loadImportedSongs() {
+            try {
+                const saved = localStorage.getItem('ug_imported_songs');
+                if (saved) {
+                    importedSongs = JSON.parse(saved);
+                    // Add imported songs to allSongs array
+                    importedSongs.forEach(song => {
+                        // Check if not already in allSongs
+                        if (!allSongs.some(s => s.id === song.id)) {
+                            allSongs.push(song);
+                        }
+                    });
+                    console.log(`🎸 Loaded ${importedSongs.length} imported songs from localStorage`);
+                }
+            } catch (e) {
+                console.error('Error loading imported songs:', e);
+            }
+        }
+
+        // Save imported songs to localStorage
+        function saveImportedSongs() {
+            try {
+                localStorage.setItem('ug_imported_songs', JSON.stringify(importedSongs));
+                console.log(`💾 Saved ${importedSongs.length} imported songs to localStorage`);
+            } catch (e) {
+                console.error('Error saving imported songs:', e);
+            }
+        }
+
+        // Toggle UG Import section
+        function toggleUgImportSection() {
+            const section = document.getElementById('ugImportSection');
+            const icon = document.getElementById('ugImportIcon');
+            const isVisible = section.style.display !== 'none';
+
+            section.style.display = isVisible ? 'none' : 'block';
+            icon.textContent = isVisible ? '▼' : '▲';
+        }
+
+        // Open UG Import Modal
+        function openUgImportModal() {
+            document.getElementById('ugImportModal').classList.add('show');
+        }
+
+        // Close UG Import Modal
+        function closeUgImportModal() {
+            document.getElementById('ugImportModal').classList.remove('show');
+            // Clear form
+            document.getElementById('ugChordContent').value = '';
+            document.getElementById('ugSongTitle').value = '';
+            document.getElementById('ugArtist').value = '';
+            document.getElementById('ugKey').value = '';
+            document.getElementById('ugSourceUrl').value = '';
+        }
+
+        // Import song from UG content
+        function importUgSong() {
+            const content = document.getElementById('ugChordContent').value.trim();
+            const title = document.getElementById('ugSongTitle').value.trim();
+            const artist = document.getElementById('ugArtist').value.trim();
+            const key = document.getElementById('ugKey').value;
+            const sourceUrl = document.getElementById('ugSourceUrl').value.trim();
+
+            // Validation
+            if (!content) {
+                alert('Please paste the chord sheet content from Ultimate Guitar.');
+                return;
+            }
+            if (!title) {
+                alert('Please enter the song title.');
+                return;
+            }
+            if (!artist) {
+                alert('Please enter the artist name.');
+                return;
+            }
+
+            // Generate a unique ID for this imported song
+            const songId = 'ug-import-' + Date.now();
+
+            // Create the song object with font metadata
+            const importedSong = {
+                id: songId,
+                title: title,
+                artist: artist,
+                key: key || '',
+                themes: ['imported'],
+                pace: 'medium',
+                era: 'UG Import',
+                filename: null, // No file, content stored in memory
+                font: 'monospace', // Key: Use monospace for UG imports
+                source: 'ultimate-guitar',
+                sourceUrl: sourceUrl,
+                rawContent: content, // Store the raw chord content
+                copyright: `Chords from Ultimate Guitar. Original song © ${artist}. For personal/church use only.`
+            };
+
+            // Add to imported songs array and save to localStorage
+            importedSongs.push(importedSong);
+            saveImportedSongs();
+
+            // Also add to allSongs so it appears in search
+            allSongs.push(importedSong);
+
+            // Add directly to selected songs
+            selectedSongs.push({
+                ...importedSong,
+                targetKey: key || '',
+                capoSemitones: 0
+            });
+
+            // Update displays
+            updateSelectedDisplay();
+            renderSongsGrid();
+
+            // Close modal
+            closeUgImportModal();
+
+            // Show success message
+            alert(`✅ "${title}" imported successfully!\n\nThe song has been added to your selection with monospace formatting for proper chord alignment.`);
+
+            console.log(`🎸 UG Import: "${title}" by ${artist} (Key: ${key || 'Unknown'})`);
+        }
+
+        // ========== PREVIEW LAYOUT TOGGLE ==========
+
+        let currentLayout = 1; // 1 = single column, 2 = two columns
+
+        function setPreviewLayout(columns) {
+            currentLayout = columns;
+            const previewContent = document.getElementById('previewContent');
+
+            // Update button states
+            document.getElementById('layout1Col').classList.toggle('active', columns === 1);
+            document.getElementById('layout2Col').classList.toggle('active', columns === 2);
+
+            // Update preview class
+            if (columns === 2) {
+                previewContent.classList.add('two-column');
+            } else {
+                previewContent.classList.remove('two-column');
+            }
+
+            console.log(`📄 Layout changed to ${columns}-column`);
+        }
+
         // Event Listeners
         document.getElementById('serviceDetailsToggle').addEventListener('click', toggleServiceDetailsSection);
         document.getElementById('aiToggleBtn').addEventListener('click', toggleAISection);
@@ -2592,6 +2953,15 @@ ${songList}`;
         document.getElementById('quickInputToggle').addEventListener('click', toggleQuickInputSection);
         document.getElementById('autoSelectBtn').addEventListener('click', autoSelectSongs);
         document.getElementById('includeServiceDetails').addEventListener('change', triggerAutoGenerate);
+        document.getElementById('ugImportToggle').addEventListener('click', toggleUgImportSection);
+        document.getElementById('openUgImportBtn').addEventListener('click', openUgImportModal);
+
+        // Close UG import modal when clicking outside
+        document.getElementById('ugImportModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeUgImportModal();
+            }
+        });
 
         // Initialize
         loadSongs();
@@ -2603,6 +2973,8 @@ ${songList}`;
         console.log('%c✅ Live preview enabled', 'color: green;');
         console.log('%c✅ AI Chat Assistant ready', 'color: green;');
         console.log('%c✅ Spotify integration enabled', 'color: green;');
+        console.log('%c✅ Ultimate Guitar import ready', 'color: #FFA500;');
+        console.log('%c✅ 2-column layout toggle available', 'color: green;');
 
         // Add keyboard shortcut for testing: Ctrl+Shift+T
         document.addEventListener('keydown', function(e) {
@@ -2848,6 +3220,83 @@ ${songList}`;
             </div>
             <div class="modal-body">
                 <pre id="modalSongContent">Loading...</pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- UG Import Modal -->
+    <div id="ugImportModal" class="ug-import-modal">
+        <div class="ug-import-content">
+            <div class="ug-import-header">
+                <h2>🎸 Import from Ultimate Guitar</h2>
+                <button class="close" onclick="closeUgImportModal()" style="background: none; border: none; color: white; font-size: 28px; cursor: pointer;">&times;</button>
+            </div>
+            <div class="ug-import-body">
+                <div class="ug-form-group">
+                    <label>Paste Chord Sheet from Ultimate Guitar:</label>
+                    <textarea id="ugChordContent" class="ug-textarea" placeholder="Go to ultimate-guitar.com, find a song, and copy the entire chord sheet content here...
+
+Example:
+[Intro]
+Em  C  G  D
+
+[Verse 1]
+Em                    C
+Amazing grace how sweet the sound
+G                    D
+That saved a wretch like me..."></textarea>
+                </div>
+
+                <div class="ug-form-row">
+                    <div class="ug-form-group">
+                        <label>Song Title *</label>
+                        <input type="text" id="ugSongTitle" placeholder="e.g., Amazing Grace">
+                    </div>
+                    <div class="ug-form-group">
+                        <label>Artist *</label>
+                        <input type="text" id="ugArtist" placeholder="e.g., Chris Tomlin">
+                    </div>
+                </div>
+
+                <div class="ug-form-row">
+                    <div class="ug-form-group">
+                        <label>Key</label>
+                        <select id="ugKey">
+                            <option value="">Unknown</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="G">G</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="Bb">Bb</option>
+                            <option value="Eb">Eb</option>
+                            <option value="Ab">Ab</option>
+                            <option value="Am">Am</option>
+                            <option value="Em">Em</option>
+                            <option value="Dm">Dm</option>
+                        </select>
+                    </div>
+                    <div class="ug-form-group">
+                        <label>Ultimate Guitar URL (optional)</label>
+                        <input type="text" id="ugSourceUrl" placeholder="https://tabs.ultimate-guitar.com/...">
+                    </div>
+                </div>
+
+                <div class="ug-copyright-notice">
+                    <strong>⚠️ Copyright Notice:</strong> By importing this tab, you acknowledge that:
+                    <ul style="margin: 8px 0 0 20px; padding: 0;">
+                        <li>This content is sourced from Ultimate Guitar</li>
+                        <li>The original song is copyrighted by its authors</li>
+                        <li>This import is for personal/church use only</li>
+                        <li>Attribution will be added to the chord sheet</li>
+                    </ul>
+                </div>
+
+                <button id="importUgSongBtn" class="ug-import-btn" onclick="importUgSong()">
+                    ✅ Import Song & Add to Selection
+                </button>
             </div>
         </div>
     </div>

@@ -1440,6 +1440,10 @@ Then click 'Auto Select' to find matching songs automatically!"
                 });
 
                 document.getElementById('loading').style.display = 'none';
+
+                // Load imported songs from localStorage and merge
+                loadImportedSongs();
+
                 document.getElementById('songCount').textContent = `${allSongs.length} songs available`;
 
                 renderFilterTags();
@@ -2784,8 +2788,38 @@ ${songList}`;
 
         // ========== ULTIMATE GUITAR IMPORT SYSTEM ==========
 
-        // Track imported songs (session-only, not persisted)
+        // Track imported songs (persisted to localStorage)
         let importedSongs = [];
+
+        // Load imported songs from localStorage
+        function loadImportedSongs() {
+            try {
+                const saved = localStorage.getItem('ug_imported_songs');
+                if (saved) {
+                    importedSongs = JSON.parse(saved);
+                    // Add imported songs to allSongs array
+                    importedSongs.forEach(song => {
+                        // Check if not already in allSongs
+                        if (!allSongs.some(s => s.id === song.id)) {
+                            allSongs.push(song);
+                        }
+                    });
+                    console.log(`🎸 Loaded ${importedSongs.length} imported songs from localStorage`);
+                }
+            } catch (e) {
+                console.error('Error loading imported songs:', e);
+            }
+        }
+
+        // Save imported songs to localStorage
+        function saveImportedSongs() {
+            try {
+                localStorage.setItem('ug_imported_songs', JSON.stringify(importedSongs));
+                console.log(`💾 Saved ${importedSongs.length} imported songs to localStorage`);
+            } catch (e) {
+                console.error('Error saving imported songs:', e);
+            }
+        }
 
         // Toggle UG Import section
         function toggleUgImportSection() {
@@ -2855,8 +2889,9 @@ ${songList}`;
                 copyright: `Chords from Ultimate Guitar. Original song © ${artist}. For personal/church use only.`
             };
 
-            // Add to imported songs array
+            // Add to imported songs array and save to localStorage
             importedSongs.push(importedSong);
+            saveImportedSongs();
 
             // Also add to allSongs so it appears in search
             allSongs.push(importedSong);

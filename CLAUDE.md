@@ -92,8 +92,24 @@ Automatic via GitHub Pages when pushing to main branch. No build step required.
 When adding songs, both the markdown file AND catalog entry must be updated together to maintain sync.
 
 ### Font Handling
-- **Current Songs**: Formatted for Arial font (manual spacing)
-- **Future Enhancement**: Planning to add `font` metadata field for monospace songs from Ultimate Guitar tabs
+- **Current Songs**: Formatted for Arial font (manual spacing) - `font: 'arial'` (default)
+- **UG Imports**: Songs imported from Ultimate Guitar use `font: 'monospace'` for proper chord alignment
+- **CSS Classes**: `.song-block.monospace` applies Courier New font for imported tabs
+
+### Ultimate Guitar Import System
+The app supports importing songs directly from Ultimate Guitar:
+- **Import Modal**: Opens via "Import from Ultimate Guitar" section
+- **Workflow**: User copies chord content from UG, pastes in modal, fills metadata
+- **Font**: Imported songs automatically use monospace font
+- **Copyright**: Attribution notice added automatically to imported songs
+- **Session Storage**: Imports are stored in `importedSongs[]` array (session only, not persisted)
+- **Raw Content**: Imported songs store chords in `rawContent` property instead of fetching from file
+
+### Preview Layout Options
+- **1-Column**: Default single column layout (Arial-optimized)
+- **2-Column**: CSS columns layout for newspaper-style display
+- **Toggle**: Buttons in preview header to switch between layouts
+- **CSS**: `.preview-content.two-column` applies column layout with `column-span: all` for overview
 
 ## External Dependencies
 

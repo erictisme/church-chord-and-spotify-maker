@@ -1418,7 +1418,9 @@ Then click 'Auto Select' to find matching songs automatically!"
         // Load songs from GitHub
         async function loadSongs() {
             try {
-                const response = await fetch('https://raw.githubusercontent.com/erictisme/church-chord-and-spotify-maker/main/eric-songs/indices/tsv-catalog.json');
+                // Add cache buster to prevent stale cached responses
+                const cacheBuster = `?t=${Date.now()}`;
+                const response = await fetch('https://raw.githubusercontent.com/erictisme/church-chord-and-spotify-maker/main/eric-songs/indices/tsv-catalog.json' + cacheBuster);
                 if (!response.ok) throw new Error('Failed to load catalog');
 
                 const catalog = await response.json();

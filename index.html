@@ -2880,6 +2880,7 @@ ${songList}`;
             document.getElementById('ugSongTitle').value = '';
             document.getElementById('ugArtist').value = '';
             document.getElementById('ugKey').value = '';
+            document.getElementById('ugFont').value = 'monospace';
             document.getElementById('ugSourceUrl').value = '';
         }
 
@@ -2889,6 +2890,7 @@ ${songList}`;
             const title = document.getElementById('ugSongTitle').value.trim();
             const artist = document.getElementById('ugArtist').value.trim();
             const key = document.getElementById('ugKey').value;
+            const font = document.getElementById('ugFont').value;
             const sourceUrl = document.getElementById('ugSourceUrl').value.trim();
 
             // Validation
@@ -2918,7 +2920,7 @@ ${songList}`;
                 pace: 'medium',
                 era: 'UG Import',
                 filename: null, // No file, content stored in memory
-                font: 'monospace', // Key: Use monospace for UG imports
+                font: font, // Use selected font (monospace or arial)
                 source: 'ultimate-guitar',
                 sourceUrl: sourceUrl,
                 rawContent: content, // Store the raw chord content
@@ -2947,9 +2949,10 @@ ${songList}`;
             closeUgImportModal();
 
             // Show success message
-            alert(`✅ "${title}" imported successfully!\n\nThe song has been added to your selection with monospace formatting for proper chord alignment.`);
+            const fontName = font === 'monospace' ? 'monospace (Courier New)' : 'Arial';
+            alert(`✅ "${title}" imported successfully!\n\nThe song has been added to your selection with ${fontName} formatting.`);
 
-            console.log(`🎸 UG Import: "${title}" by ${artist} (Key: ${key || 'Unknown'})`);
+            console.log(`🎸 UG Import: "${title}" by ${artist} (Key: ${key || 'Unknown'}, Font: ${font})`);
         }
 
         // ========== PREVIEW LAYOUT TOGGLE ==========
@@ -3178,12 +3181,18 @@ ${songList}`;
                 return;
             }
 
+            console.log('🎵 Spotify: Checking token...');
+            console.log('🎵 Redirect URI:', SPOTIFY_REDIRECT_URI);
+
             const token = getSpotifyToken();
             if (!token) {
                 // Need to login
+                console.log('🎵 Spotify: No token found, initiating login...');
+                alert('Connecting to Spotify...\n\nNote: Make sure this redirect URI is registered in your Spotify app:\n' + SPOTIFY_REDIRECT_URI);
                 await initiateSpotifyLogin();
                 return;
             }
+            console.log('🎵 Spotify: Token found, creating playlist...');
 
             // Create playlist
             const btn = document.getElementById('spotifyBtn');
@@ -3234,11 +3243,27 @@ ${songList}`;
         (function handleSpotifyCallback() {
             const urlParams = new URLSearchParams(window.location.search);
             const code = urlParams.get('code');
+            const error = urlParams.get('error');
+
+            if (error) {
+                console.error('🎵 Spotify OAuth error:', error);
+                alert('Spotify authorization failed: ' + error + '\n\nMake sure the redirect URI is registered in your Spotify Developer Dashboard.');
+                window.history.replaceState({}, document.title, window.location.pathname);
+                return;
+            }
+
             if (code) {
+                console.log('🎵 Spotify: Received auth code, exchanging for token...');
                 // Clear the URL
                 window.history.replaceState({}, document.title, window.location.pathname);
                 // Exchange code for token
-                exchangeCodeForToken(code).then(() => {
+                exchangeCodeForToken(code).then((data) => {
+                    if (data.error) {
+                        console.error('🎵 Spotify token error:', data);
+                        alert('Failed to get Spotify token: ' + (data.error_description || data.error));
+                        return;
+                    }
+                    console.log('🎵 Spotify: Token received successfully');
                     const returnAction = localStorage.getItem('spotify_return_action');
                     if (returnAction === 'create_playlist') {
                         localStorage.removeItem('spotify_return_action');
@@ -3320,6 +3345,16 @@ That saved a wretch like me..."></textarea>
                         </select>
                     </div>
                     <div class="ug-form-group">
+                        <label>Font Style</label>
+                        <select id="ugFont">
+                            <option value="monospace">Monospace (Courier New) - preserves chord spacing</option>
+                            <option value="arial">Arial - standard song formatting</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="ug-form-row">
+                    <div class="ug-form-group" style="flex: 1;">
                         <label>Ultimate Guitar URL (optional)</label>
                         <input type="text" id="ugSourceUrl" placeholder="https://tabs.ultimate-guitar.com/...">
                     </div>

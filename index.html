@@ -1207,6 +1207,7 @@ Then click 'Auto Select' to find matching songs automatically!"
         let selectedSongs = [];
         let allThemes = new Set();
         let activeFilters = new Set();
+        let importedSongs = [];
 
         // Panel toggle - collapses right panel and expands left
         function toggleRightPanel() {
@@ -2814,9 +2815,6 @@ ${songList}`;
         }
 
         // ========== ULTIMATE GUITAR IMPORT SYSTEM ==========
-
-        // Track imported songs (persisted to localStorage)
-        let importedSongs = [];
 
         // Load imported songs from localStorage
         function loadImportedSongs() {

@@ -195,7 +195,85 @@
             padding: 30px;
             text-align: center;
             border-bottom: 3px solid #C1121F;
+            position: relative;
         }
+
+        .settings-gear {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #FFFFFF;
+            font-size: 18px;
+            line-height: 1;
+            padding: 6px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .settings-gear:hover { background: rgba(255,255,255,0.1); }
+
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .modal-card {
+            background: #FFFFFF;
+            color: #1A1A1A;
+            width: min(560px, 92vw);
+            max-height: 88vh;
+            overflow-y: auto;
+            border-radius: 12px;
+            padding: 24px;
+            position: relative;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+        }
+        .modal-card h2 { font-size: 20px; margin-bottom: 6px; }
+        .modal-card h3 { font-size: 15px; margin: 18px 0 8px; color: #111; }
+        .modal-card .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 12px;
+            background: transparent;
+            border: none;
+            font-size: 22px;
+            cursor: pointer;
+            color: #666;
+        }
+        .modal-card input[type="text"],
+        .modal-card input[type="password"] {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #D1D5DB;
+            border-radius: 6px;
+            font-size: 13px;
+            margin-bottom: 8px;
+            box-sizing: border-box;
+        }
+        .modal-card .row-actions { display: flex; gap: 8px; margin-top: 4px; }
+        .modal-card .row-actions button {
+            padding: 8px 14px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        .btn-test { background: #E5E7EB; color: #111; }
+        .btn-save { background: #4285F4; color: #FFFFFF; }
+        .modal-status {
+            margin-top: 8px;
+            font-size: 13px;
+            min-height: 18px;
+        }
+        .modal-status.ok { color: #059669; }
+        .modal-status.err { color: #DC2626; }
+        .modal-help { font-size: 12px; color: #6B7280; margin-top: 6px; }
 
         .header h1 {
             font-size: 28px;
@@ -1007,6 +1085,7 @@
         <!-- LEFT PANEL -->
         <div class="left-panel">
             <div class="header">
+                <button type="button" class="settings-gear" id="settingsGearBtn" onclick="openSettingsModal()" title="Settings" aria-label="Settings">⚙️</button>
                 <h1>🎵 FMH Worship Song Generator</h1>
                 <p>Search, select songs, and generate service scripts</p>
             </div>
@@ -3261,11 +3340,96 @@ ${songList}`;
 
         // Open settings modal (Task 3) or show fallback alert if not yet wired
         function openSettingsForGdoc() {
-            const modal = document.getElementById('settingsModal');
-            if (modal) {
-                modal.style.display = 'flex';
-            } else {
+            if (!openSettingsModal()) {
                 alert('Set up your Google Doc integration first.\n\nClick the ⚙️ gear icon (top-right) to paste your Apps Script URL.\n\nIf the gear icon is not yet available, see apps-script/DEPLOY.md for setup instructions.');
+            }
+        }
+
+        // ===== Settings Modal (Task 3) =====
+        function openSettingsModal() {
+            const modal = document.getElementById('settingsModal');
+            if (!modal) return false;
+            const geminiInput = document.getElementById('settingsGeminiKey');
+            const urlInput = document.getElementById('settingsAppsScriptUrl');
+            if (geminiInput) geminiInput.value = localStorage.getItem('gemini_api_key') || '';
+            if (urlInput) urlInput.value = localStorage.getItem('apps_script_doc_url') || '';
+            setSettingsStatus('geminiStatus', '', '');
+            setSettingsStatus('appsScriptStatus', '', '');
+            modal.style.display = 'flex';
+            return true;
+        }
+
+        function closeSettingsModal() {
+            const modal = document.getElementById('settingsModal');
+            if (modal) modal.style.display = 'none';
+        }
+
+        function handleSettingsBackdropClick(event) {
+            if (event.target && event.target.id === 'settingsModal') closeSettingsModal();
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('settingsModal');
+                if (modal && modal.style.display === 'flex') closeSettingsModal();
+            }
+        });
+
+        function setSettingsStatus(elId, message, kind) {
+            const el = document.getElementById(elId);
+            if (!el) return;
+            el.textContent = message || '';
+            el.className = 'modal-status' + (kind ? ' ' + kind : '');
+        }
+
+        function saveGeminiKey() {
+            const v = (document.getElementById('settingsGeminiKey').value || '').trim();
+            if (!v) {
+                localStorage.removeItem('gemini_api_key');
+                setSettingsStatus('geminiStatus', 'Cleared.', 'ok');
+                return;
+            }
+            localStorage.setItem('gemini_api_key', v);
+            setSettingsStatus('geminiStatus', '✓ Saved.', 'ok');
+        }
+
+        function saveAppsScriptUrl() {
+            const v = (document.getElementById('settingsAppsScriptUrl').value || '').trim();
+            if (!v) {
+                setSettingsStatus('appsScriptStatus', 'URL required.', 'err');
+                return;
+            }
+            if (!/^https:\/\/script\.google\.com\/macros\/s\/.+\/exec/.test(v)) {
+                setSettingsStatus('appsScriptStatus', 'That doesn\'t look like an Apps Script /exec URL. Saved anyway.', 'err');
+            } else {
+                setSettingsStatus('appsScriptStatus', '✓ Saved.', 'ok');
+            }
+            localStorage.setItem('apps_script_doc_url', v);
+        }
+
+        async function testAppsScriptUrl() {
+            const v = (document.getElementById('settingsAppsScriptUrl').value || '').trim();
+            if (!v) {
+                setSettingsStatus('appsScriptStatus', 'Paste a URL first.', 'err');
+                return;
+            }
+            setSettingsStatus('appsScriptStatus', 'Testing…', '');
+            try {
+                const resp = await fetch(v, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                    body: JSON.stringify({ title: 'Test', content: 'Test from FMH Worship app' }),
+                    redirect: 'follow'
+                });
+                const text = await resp.text();
+                let data;
+                try { data = JSON.parse(text); }
+                catch (e) { throw new Error('Did not return JSON. Check the deployment URL.'); }
+                if (data.error) throw new Error(data.error);
+                if (!data.url) throw new Error('Response missing url field.');
+                setSettingsStatus('appsScriptStatus', '✓ Connected — test Doc created: ' + data.url, 'ok');
+            } catch (err) {
+                setSettingsStatus('appsScriptStatus', '❌ ' + (err.message || 'Test failed.'), 'err');
             }
         }
 
@@ -3486,6 +3650,34 @@ That saved a wretch like me..."></textarea>
                 <button id="importUgSongBtn" class="ug-import-btn" onclick="importUgSong()">
                     ✅ Import Song & Add to Selection
                 </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal (Task 3) -->
+    <div id="settingsModal" class="modal-backdrop" onclick="handleSettingsBackdropClick(event)">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="settingsModalTitle">
+            <button type="button" class="modal-close" onclick="closeSettingsModal()" aria-label="Close">×</button>
+            <h2 id="settingsModalTitle">⚙️ Settings</h2>
+            <p style="font-size:13px;color:#6B7280;margin-bottom:6px;">Settings are stored in your browser only.</p>
+
+            <h3>Gemini API Key</h3>
+            <input type="password" id="settingsGeminiKey" placeholder="AIza...">
+            <div class="row-actions">
+                <button type="button" class="btn-save" onclick="saveGeminiKey()">Save</button>
+            </div>
+            <div id="geminiStatus" class="modal-status"></div>
+
+            <h3>Google Doc Integration</h3>
+            <input type="text" id="settingsAppsScriptUrl" placeholder="https://script.google.com/macros/s/.../exec">
+            <div class="row-actions">
+                <button type="button" class="btn-test" onclick="testAppsScriptUrl()">Test</button>
+                <button type="button" class="btn-save" onclick="saveAppsScriptUrl()">Save</button>
+            </div>
+            <div id="appsScriptStatus" class="modal-status"></div>
+            <div class="modal-help">
+                Don't have a URL yet? See
+                <a href="https://github.com/erictisme/church-chord-and-spotify-maker/blob/main/apps-script/DEPLOY.md" target="_blank" rel="noopener">DEPLOY.md</a>.
             </div>
         </div>
     </div>

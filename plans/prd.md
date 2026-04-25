@@ -140,7 +140,7 @@ Add a settings panel for Eric to paste the Apps Script web app URL once. Mirror 
 - DevTools console clean
 - `pkill -f "http.server 8000"`
 
-- [ ] Task 3 done
+- [x] Task 3 done
 
 ---
 

@@ -3,3 +3,4 @@ Task 1: added apps-script/CreateDoc.gs (doPost creates shared Doc, Courier on ch
 Syntax-validated via Node Function constructor; build check passed.
 Task 2: added #gdocBtn next to spotifyBtn + handleGoogleDocCreate handler (POST to apps_script_doc_url, auto-copy, toast, error banner).
 Settings-modal fallback uses #settingsModal if present (Task 3) else alert.
+Task 3: added #settingsModal + ⚙️ gear in header; Gemini key + Apps Script URL inputs with Test/Save, ESC/backdrop close, openSettingsForGdoc now opens it.

@@ -1,3 +1,5 @@
 # Ralph PROD run Sat Apr 25 21:09:52 +08 2026
 Task 1: added apps-script/CreateDoc.gs (doPost creates shared Doc, Courier on chord lines) + DEPLOY.md.
 Syntax-validated via Node Function constructor; build check passed.
+Task 2: added #gdocBtn next to spotifyBtn + handleGoogleDocCreate handler (POST to apps_script_doc_url, auto-copy, toast, error banner).
+Settings-modal fallback uses #settingsModal if present (Task 3) else alert.

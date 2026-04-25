@@ -103,7 +103,7 @@ Add a Google Doc creation button next to the existing Spotify button, with the s
 - Open browser DevTools → Console, confirm no errors on page load or button click
 - `pkill -f "http.server 8000"`
 
-- [ ] Task 2 done
+- [x] Task 2 done
 
 ---
 

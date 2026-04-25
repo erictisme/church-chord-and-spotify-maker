@@ -67,7 +67,7 @@ Write a Google Apps Script web app that creates a formatted Google Doc and retur
 - `node --check apps-script/CreateDoc.gs` will fail (it's not Node) — instead, visually verify the file is syntactically valid JS by running `node -e "new Function(require('fs').readFileSync('apps-script/CreateDoc.gs', 'utf8'))"` to confirm it parses
 - Confirm `DEPLOY.md` has all 6 steps and ends with a "test it" curl command Eric can run from terminal to verify the deployment works before integrating with the frontend
 
-- [ ] Task 1 done
+- [x] Task 1 done
 
 ---
 

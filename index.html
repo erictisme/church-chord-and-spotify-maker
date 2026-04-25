@@ -1091,6 +1091,27 @@
             </div>
 
             <div class="content">
+            <!-- WhatsApp Message Parser -->
+            <div style="margin-bottom: 20px; border: 1px solid #25D366; border-radius: 8px; background: #F0FDF4; overflow: hidden;">
+                <button id="waToggleBtn" type="button" style="width: 100%; padding: 12px 15px; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); border: none; text-align: left; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 14px; color: white; font-weight: 600;">
+                    <span>💬 Start from your worship pastor's message</span>
+                    <span id="waToggleIcon" style="transition: transform 0.2s;">▼</span>
+                </button>
+                <div id="waSection" style="display: none; padding: 12px; background: white;">
+                    <textarea id="waMessageInput" placeholder="Paste Marcus's WhatsApp message here, e.g.:
+
+Hi Eric, this Sunday's theme is Christ is above all. Passage: Matthew 8:23-9:8. Songs I'm thinking: behold our God, The Lord is my Salvation, Above all, Crown Him."
+                        style="width: 100%; height: 110px; padding: 10px; border: 1px solid #D1D5DB; border-radius: 6px; resize: vertical; font-size: 13px; font-family: inherit;"></textarea>
+                    <button id="waExtractBtn" type="button" style="width: 100%; padding: 10px; background: #128C7E; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 13px; margin-top: 8px;">
+                        ✨ Extract theme, passage &amp; songs
+                    </button>
+                    <div id="waExtractStatus" style="margin-top: 8px; font-size: 12px; color: #666;"></div>
+                    <div id="waSuggestedChips" style="display: none; margin-top: 10px;">
+                        <div style="font-size: 11px; color: #666; margin-bottom: 6px; font-weight: 600;">Suggested from message — click to add:</div>
+                        <div id="waChipsList" style="display: flex; flex-wrap: wrap; gap: 6px;"></div>
+                    </div>
+                </div>
+            </div>
             <!-- Service Details Section - Collapsible -->
             <div style="margin-bottom: 20px; border: 1px solid #E5E7EB; border-radius: 6px; background: #FAFAFA;">
                 <button id="serviceDetailsToggle" style="width: 100%; padding: 10px 15px; background: none; border: none; text-align: left; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #666; font-weight: 500;">
@@ -3078,6 +3099,8 @@ ${songList}`;
         document.getElementById('includeServiceDetails').addEventListener('change', triggerAutoGenerate);
         document.getElementById('ugImportToggle').addEventListener('click', toggleUgImportSection);
         document.getElementById('openUgImportBtn').addEventListener('click', openUgImportModal);
+        document.getElementById('waToggleBtn').addEventListener('click', toggleWaSection);
+        document.getElementById('waExtractBtn').addEventListener('click', extractFromWhatsApp);
 
         // Initialize - load songs first
         loadSongs();
@@ -3342,6 +3365,151 @@ ${songList}`;
         function openSettingsForGdoc() {
             if (!openSettingsModal()) {
                 alert('Set up your Google Doc integration first.\n\nClick the ⚙️ gear icon (top-right) to paste your Apps Script URL.\n\nIf the gear icon is not yet available, see apps-script/DEPLOY.md for setup instructions.');
+            }
+        }
+
+        // ===== WhatsApp Message Parser (Task 5) =====
+        function toggleWaSection() {
+            const section = document.getElementById('waSection');
+            const icon = document.getElementById('waToggleIcon');
+            const open = section.style.display === 'none';
+            section.style.display = open ? 'block' : 'none';
+            icon.style.transform = open ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+
+        function setWaStatus(msg, kind) {
+            const el = document.getElementById('waExtractStatus');
+            if (!el) return;
+            el.textContent = msg || '';
+            el.style.color = kind === 'err' ? '#B91C1C' : (kind === 'ok' ? '#059669' : '#666');
+        }
+
+        function findSongByTitleFuzzy(query) {
+            if (!query) return null;
+            const q = query.trim().toLowerCase();
+            if (!q) return null;
+            // Exact title match first
+            let song = allSongs.find(s => s.title.toLowerCase() === q);
+            if (song) return song;
+            // Contains either way
+            song = allSongs.find(s => s.title.toLowerCase().includes(q) || q.includes(s.title.toLowerCase()));
+            return song || null;
+        }
+
+        function renderWaChips(songNames) {
+            const wrap = document.getElementById('waSuggestedChips');
+            const list = document.getElementById('waChipsList');
+            list.innerHTML = '';
+            if (!songNames || songNames.length === 0) {
+                wrap.style.display = 'none';
+                return;
+            }
+            songNames.forEach(name => {
+                const chip = document.createElement('button');
+                chip.type = 'button';
+                const matched = findSongByTitleFuzzy(name);
+                const label = matched ? `${matched.title}` : `${name} (not in library)`;
+                chip.textContent = `+ ${label}`;
+                chip.style.cssText = 'padding: 6px 10px; border-radius: 999px; border: 1px solid ' + (matched ? '#059669' : '#D1D5DB') + '; background: ' + (matched ? '#ECFDF5' : '#F3F4F6') + '; color: ' + (matched ? '#065F46' : '#6B7280') + '; font-size: 12px; cursor: ' + (matched ? 'pointer' : 'not-allowed') + ';';
+                if (matched) {
+                    chip.addEventListener('click', () => {
+                        const already = selectedSongs.some(s => s.id === matched.id);
+                        if (!already) {
+                            toggleSongSelection(matched);
+                            chip.disabled = true;
+                            chip.style.opacity = '0.5';
+                            chip.textContent = `✓ ${matched.title} added`;
+                        }
+                    });
+                } else {
+                    chip.disabled = true;
+                }
+                list.appendChild(chip);
+            });
+            wrap.style.display = 'block';
+        }
+
+        async function extractFromWhatsApp() {
+            const btn = document.getElementById('waExtractBtn');
+            const text = (document.getElementById('waMessageInput').value || '').trim();
+            if (!text) {
+                setWaStatus('Paste a message first.', 'err');
+                return;
+            }
+            btn.disabled = true;
+            const originalLabel = btn.textContent;
+            btn.textContent = 'Extracting…';
+            setWaStatus('Asking Gemini to parse the message…', '');
+
+            const prompt = `You will receive a casual WhatsApp message from a worship pastor. Extract structured data and return ONLY a single JSON object — no prose, no code fences. Schema:
+{"theme": string, "passage": string, "suggested_songs": string[], "notes": string}
+
+If a field is missing, use an empty string (or empty array for suggested_songs). Song titles should be normalized to title case but otherwise preserved as written. Do not invent songs.
+
+Message:
+"""
+${text}
+"""`;
+
+            try {
+                const contents = [{ role: 'user', parts: [{ text: prompt }] }];
+                const res = await fetch(`${API_BASE_URL}/api/chat`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ contents })
+                });
+                if (!res.ok) {
+                    if (res.status === 401 || res.status === 403) {
+                        setWaStatus('Gemini API not configured. Open ⚙️ Settings to add a key.', 'err');
+                        if (typeof openSettingsModal === 'function') openSettingsModal();
+                        return;
+                    }
+                    throw new Error(`API error ${res.status}`);
+                }
+                const data = await res.json();
+                let raw = '';
+                const parts = data?.candidates?.[0]?.content?.parts || [];
+                for (const p of parts) { if (p.text) { raw = p.text; break; } }
+                // Strip markdown fences if present
+                raw = raw.trim().replace(/^```(?:json)?/i, '').replace(/```$/, '').trim();
+                let parsed;
+                try { parsed = JSON.parse(raw); } catch (e) {
+                    // Try to find first {...} block
+                    const m = raw.match(/\{[\s\S]*\}/);
+                    if (m) { try { parsed = JSON.parse(m[0]); } catch (_) {} }
+                }
+                if (!parsed || typeof parsed !== 'object') {
+                    setWaStatus("Couldn't parse — paste manually.", 'err');
+                    return;
+                }
+                const theme = (parsed.theme || '').toString().trim();
+                const passage = (parsed.passage || '').toString().trim();
+                const songs = Array.isArray(parsed.suggested_songs) ? parsed.suggested_songs.filter(s => typeof s === 'string' && s.trim()) : [];
+
+                if (theme) {
+                    const themeEl = document.getElementById('theme');
+                    if (themeEl) themeEl.value = theme;
+                }
+                if (passage) {
+                    const passageEl = document.getElementById('scripture');
+                    if (passageEl) passageEl.value = passage;
+                }
+                // Auto-open service details if we filled anything
+                if ((theme || passage) && document.getElementById('serviceDetailsSection')?.style.display === 'none') {
+                    if (typeof toggleServiceDetailsSection === 'function') toggleServiceDetailsSection();
+                }
+                renderWaChips(songs);
+                const summary = [];
+                if (theme) summary.push('theme');
+                if (passage) summary.push('passage');
+                if (songs.length) summary.push(`${songs.length} song${songs.length === 1 ? '' : 's'}`);
+                setWaStatus(summary.length ? `✓ Extracted ${summary.join(', ')}.` : 'Nothing extracted — paste manually.', summary.length ? 'ok' : 'err');
+            } catch (err) {
+                console.error('WhatsApp extract error:', err);
+                setWaStatus("Couldn't parse — paste manually.", 'err');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = originalLabel;
             }
         }
 

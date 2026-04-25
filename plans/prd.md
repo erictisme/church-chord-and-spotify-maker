@@ -216,7 +216,7 @@ Add a paste-area at the top of the app that takes Marcus's WhatsApp message and 
 - Click a chip, confirm it adds to the selected songs list
 - DevTools console clean
 
-- [ ] Task 5 done
+- [x] Task 5 done
 
 ---
 

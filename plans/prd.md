@@ -258,4 +258,4 @@ After the Doc + Spotify playlist exist, generate a paste-ready WhatsApp message 
 - Click it, paste into a text editor, confirm the message format is correct
 - DevTools console clean
 
-- [ ] Task 6 done
+- [x] Task 6 done

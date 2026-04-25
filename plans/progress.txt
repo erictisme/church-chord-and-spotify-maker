@@ -8,3 +8,5 @@ Task 4: scripts/ingest-eric-weeks.mjs parses 178 .docx via mammoth, extracts (ti
 Wrote 37 new eric-archive songs to all-songs/ + 12 catalog entries (source:eric-archive); 18 dedup'd as siblings.
 Task 5: WhatsApp paste parser added above Service Details — toggle, textarea, Extract button, Gemini JSON prompt via /api/chat proxy.
 Pre-fills #theme + #scripture, opens service-details, renders click-to-add chips for matched library songs (fuzzy by title); graceful "Couldn't parse" fallback.
+Task 6: added #teamMsgBtn (revealed when both Doc + Spotify URLs exist) + handleTeamMessageCopy composing the WhatsApp draft (tags, prac time, set list with keys, doc/spotify URLs).
+Settings modal extended with team_names; pracTime input added to Service Details (default 330pm); state tracks lastSpotifyUrl + lastGdocUrl.

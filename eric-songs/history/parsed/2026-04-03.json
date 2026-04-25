@@ -1,0 +1,31 @@
+{
+  "date": "2026-04-03",
+  "passage": "Good Friday",
+  "theme": "A Death Worth Celebrating",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "How Great is Our God",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "Come Thou Fount of Every Blessing / Nothing But The Blood of Jesus",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "Near the Cross",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "How Deep the Father's Love For Us",
+      "link": null,
+      "note": "Presentation"
+    }
+  ]
+}

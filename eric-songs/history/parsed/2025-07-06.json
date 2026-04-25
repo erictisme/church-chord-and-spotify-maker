@@ -1,0 +1,37 @@
+{
+  "date": "2025-07-06",
+  "passage": "Friendship",
+  "theme": "Walking Together as Family",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "Welcome to the Family",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "We are One (Gathered Together)",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "We Declare",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "Adopted",
+      "link": "https://www.youtube.com/watch?v=fccuTkRW9hw&list=RDfccuTkRW9hw&start_radio=1",
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "Oh How Good It Is",
+      "link": null,
+      "note": null
+    }
+  ]
+}

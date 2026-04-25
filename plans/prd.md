@@ -185,7 +185,7 @@ Eric's `eric-all-weeks/` folder has 194 past worship `.docx` files containing ch
 - Open `tsv-catalog.json`, find a song with `"source": "eric-archive"`
 - Open the app, search for a known song from his archive (e.g. "Lord is my Salvation"), confirm it appears with correct key
 
-- [ ] Task 4 done
+- [x] Task 4 done
 
 ---
 

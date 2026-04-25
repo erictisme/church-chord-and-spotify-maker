@@ -1,0 +1,37 @@
+{
+  "date": "2025-09-07",
+  "passage": "Acts 2:1-21",
+  "theme": "The Gospel for the World",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "God is for Us",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "Risen",
+      "link": "https://thecrossingchurch.bandcamp.com/track/risen",
+      "note": "Please familiarise with melody well to lead congre well! Chordsheet and piano demo -->"
+    },
+    {
+      "slot": "kids",
+      "title": "God's Great Family",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "Ancient Words",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "Oh Church Arise",
+      "link": null,
+      "note": null
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2024-08-18",
+  "passage": "Eph 4:1-16",
+  "theme": "Building the Body Together",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "We Are One (Gathered Together) - Edgar",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "We Declare",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "God's Great Family",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "Speak O Lord",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "O Church Arise",
+      "link": "https://www.youtube.com/watch?v=MZmS81yLjMg",
+      "note": "Bridge (\"Arise, Shine...\") optional"
+    }
+  ]
+}

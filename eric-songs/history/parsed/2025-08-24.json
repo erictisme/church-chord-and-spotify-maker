@@ -1,0 +1,37 @@
+{
+  "date": "2025-08-24",
+  "passage": "Acts 1:1-11",
+  "theme": "God is sovereign",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "All Hail the Power of Jesus' Name",
+      "link": null,
+      "note": "Feel as per link. Let's start the service on a high note!"
+    },
+    {
+      "slot": "opening",
+      "title": "Sovereign (Tomlin)",
+      "link": null,
+      "note": "Suits theme well."
+    },
+    {
+      "slot": "kids",
+      "title": "Tell Them",
+      "link": "https://emumusic.com/products/tell-them",
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "Speak O Lord",
+      "link": null,
+      "note": "Prepares us for Bible reading and sermon."
+    },
+    {
+      "slot": "closing",
+      "title": "Risen",
+      "link": "https://thecrossingchurch.bandcamp.com/track/risen",
+      "note": "New, but written esp for Acts. Chordsheet and piano demo -->"
+    }
+  ]
+}

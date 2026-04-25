@@ -1,0 +1,37 @@
+{
+  "date": "2025-04-13",
+  "passage": "Mt 6:1-18",
+  "theme": "God, our dear heavenly Father",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "Be thou my vision",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "How great is our God/ how great thou art",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "Jesus loves me",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "How deep the father's love for us",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "God is For Us",
+      "link": "https://www.youtube.com/watch?v=xxl1EOhJiRA&list=RDEMJMPZbQlqfdfbfYUb16sWRQ&index=5",
+      "note": null
+    }
+  ]
+}

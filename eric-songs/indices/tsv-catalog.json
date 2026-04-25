@@ -2408,10 +2408,156 @@
     "title": "I Offer My Life",
     "artist": "Don Moen",
     "key": "G",
-    "themes": ["worship", "surrender"],
+    "themes": [
+      "worship",
+      "surrender"
+    ],
     "pace": "slow",
     "era": "Contemporary",
     "filename": "i-offer-my-life-G.md"
+  },
+  "hymn of the saviour: emu music": {
+    "title": "Hymn of the Saviour: Emu Music",
+    "artist": "",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [],
+    "acoustic": true,
+    "count": "0",
+    "filename": "hymn-of-the-saviour-emu-music-C.md",
+    "key": "C",
+    "source": "eric-archive"
+  },
+  "jn 11:25-26 the lord is my salvation": {
+    "title": "Jn 11:25-26 The Lord is My Salvation",
+    "artist": "",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [],
+    "acoustic": true,
+    "count": "0",
+    "filename": "jn-11-25-26-the-lord-is-my-salvation-A.md",
+    "key": "A",
+    "source": "eric-archive"
+  },
+  "this i believe": {
+    "title": "THIS I BELIEVE",
+    "artist": "",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [],
+    "acoustic": true,
+    "count": "0",
+    "filename": "this-i-believe-G.md",
+    "key": "G",
+    "source": "eric-archive"
+  },
+  "key": {
+    "title": "KEY",
+    "artist": "",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [],
+    "acoustic": true,
+    "count": "0",
+    "filename": "key-C.md",
+    "key": "C",
+    "source": "eric-archive"
+  },
+  "i need thee every hour": {
+    "title": "I NEED THEE EVERY HOUR",
+    "artist": "",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [],
+    "acoustic": true,
+    "count": "0",
+    "filename": "i-need-thee-every-hour-G.md",
+    "key": "G",
+    "source": "eric-archive"
+  },
+  "i want to know you": {
+    "title": "I WANT TO KNOW YOU",
+    "artist": "",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [],
+    "acoustic": true,
+    "count": "0",
+    "filename": "i-want-to-know-you-G.md",
+    "key": "G",
+    "source": "eric-archive"
+  },
+  "amazing grace (my chains are gone)": {
+    "title": "Amazing Grace (My Chains Are Gone)",
+    "artist": "",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [],
+    "acoustic": true,
+    "count": "0",
+    "filename": "amazing-grace-my-chains-are-gone-C.md",
+    "key": "C",
+    "source": "eric-archive"
+  },
+  "prepare him room": {
+    "title": "Prepare Him Room",
+    "artist": "",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [],
+    "acoustic": true,
+    "count": "0",
+    "filename": "prepare-him-room-G.md",
+    "key": "G",
+    "source": "eric-archive"
+  },
+  "old rugged cross": {
+    "title": "Old Rugged Cross",
+    "artist": "",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [],
+    "acoustic": true,
+    "count": "0",
+    "filename": "old-rugged-cross-A.md",
+    "key": "A",
+    "source": "eric-archive"
+  },
+  "undivided by emu music": {
+    "title": "Undivided by Emu Music",
+    "artist": "",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [],
+    "acoustic": true,
+    "count": "0",
+    "filename": "undivided-by-emu-music-C.md",
+    "key": "C",
+    "source": "eric-archive"
+  },
+  "open the eyes of my heart x holy holy holy": {
+    "title": "OPEN THE EYES OF MY HEART x HOLY HOLY HOLY",
+    "artist": "",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [],
+    "acoustic": true,
+    "count": "0",
+    "filename": "open-the-eyes-of-my-heart-x-holy-holy-holy-C.md",
+    "key": "C",
+    "source": "eric-archive"
+  },
+  "my god is a very very very big god": {
+    "title": "MY GOD IS A VERY VERY VERY BIG GOD",
+    "artist": "",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [],
+    "acoustic": true,
+    "count": "0",
+    "filename": "my-god-is-a-very-very-very-big-god-C.md",
+    "key": "C",
+    "source": "eric-archive"
   }
-
 }

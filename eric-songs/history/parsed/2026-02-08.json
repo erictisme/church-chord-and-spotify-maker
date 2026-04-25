@@ -1,0 +1,37 @@
+{
+  "date": "2026-02-08",
+  "passage": "Col 3:18-4:6",
+  "theme": "Christ Jesus our Lord",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "Beautiful Saviour",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "Hymn of Our Saviour",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "We Are The Church",
+      "link": "https://www.youtube.com/watch?v=HPEonEoZL5A&list=RDHPEonEoZL5A&start_radio=1",
+      "note": null
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "O Praise the Name (Anastasis)",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "Undivided",
+      "link": null,
+      "note": null
+    }
+  ]
+}

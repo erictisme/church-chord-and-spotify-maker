@@ -1,0 +1,37 @@
+{
+  "date": "2026-02-15",
+  "passage": "Col 4:7-18",
+  "theme": "Together for the Gospel",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "Oh How good it is",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "We are one",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "We Are The Church",
+      "link": "https://www.youtube.com/watch?v=HPEonEoZL5A&list=RDHPEonEoZL5A&start_radio=1",
+      "note": null
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "O Church Arise",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "Let the Nations Be Glad",
+      "link": null,
+      "note": null
+    }
+  ]
+}

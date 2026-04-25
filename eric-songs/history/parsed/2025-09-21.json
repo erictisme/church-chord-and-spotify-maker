@@ -1,0 +1,37 @@
+{
+  "date": "2025-09-21",
+  "passage": "Acts 3:1-4:4",
+  "theme": "Certain Hope in the Risen Jesus",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "He Lives",
+      "link": null,
+      "note": "Celebrate Jesus - Upbeat, faster than the link"
+    },
+    {
+      "slot": "opening",
+      "title": "Jesus Reigns (Edgar)",
+      "link": null,
+      "note": "Submit to Jesus"
+    },
+    {
+      "slot": "opening",
+      "title": "In Christ Alone",
+      "link": null,
+      "note": "Hope in Jesus!"
+    },
+    {
+      "slot": "kids",
+      "title": "God's Great Family",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "Christ Our Hope In Life And Death",
+      "link": null,
+      "note": null
+    }
+  ]
+}

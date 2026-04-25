@@ -1,0 +1,31 @@
+{
+  "date": "2025-12-21",
+  "passage": "Christmas",
+  "theme": null,
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "Hark! The Herald Angels Sing",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "It Came Upon A Midnight Clear",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "O Come, All You Unfaithful",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "Joy To The World- Chris Tomlin",
+      "link": null,
+      "note": null
+    }
+  ]
+}

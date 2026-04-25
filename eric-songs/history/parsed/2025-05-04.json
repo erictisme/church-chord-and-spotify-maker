@@ -1,0 +1,37 @@
+{
+  "date": "2025-05-04",
+  "passage": "Mt 6:25-34",
+  "theme": "God Cares for you",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "Praise to the Lord, the Almighty",
+      "link": null,
+      "note": "Hymn"
+    },
+    {
+      "slot": "opening",
+      "title": "Great is Thy Faithfulness",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "To Be Like Jesus",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "Christ Is Enough",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "Psalm 23 - Shane and Shane",
+      "link": null,
+      "note": null
+    }
+  ]
+}

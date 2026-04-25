@@ -1,0 +1,31 @@
+{
+  "date": "2024-12-22",
+  "passage": "Christmas",
+  "theme": "Joy to The World!",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "Joy to the World",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "Hark! The Herald Angels Sing",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "O Holy Night",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "The Joy of Christmas",
+      "link": null,
+      "note": null
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2025-06-01",
+  "passage": "Marriage",
+  "theme": "God's Beautiful Design",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "This Is My Father's World",
+      "link": null,
+      "note": "Upbeat pls!"
+    },
+    {
+      "slot": "opening",
+      "title": "We Declare",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "Jesus Came to Earth",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "I Will Trust My Saviour Jesus",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "Yet Not I But Through Christ in me",
+      "link": null,
+      "note": null
+    }
+  ]
+}

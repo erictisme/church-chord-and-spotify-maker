@@ -1,0 +1,37 @@
+{
+  "date": "2025-02-16",
+  "passage": "Mt 3:13-4:11",
+  "theme": "Jesus is worthy of our trust",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "The Servant King",
+      "link": null,
+      "note": "Opening song: slightly more upbeat, not too slow."
+    },
+    {
+      "slot": "opening",
+      "title": "The King in All His Beauty",
+      "link": null,
+      "note": "New"
+    },
+    {
+      "slot": "kids",
+      "title": "My God Is A Very, Very, Very Big God",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "My Hope Is Built on Nothing Less",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "I Will Trust My Saviour Jesus",
+      "link": null,
+      "note": null
+    }
+  ]
+}

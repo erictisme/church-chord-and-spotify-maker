@@ -1,0 +1,37 @@
+{
+  "date": "2025-10-12",
+  "passage": "Acts 4:32-5:11",
+  "theme": "God is Holy",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "Indescribable",
+      "link": null,
+      "note": "Let's not get carried away with repeated choruses!"
+    },
+    {
+      "slot": "opening",
+      "title": "In Christ Alone",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "Heaven's Home",
+      "link": "https://youtu.be/en4ThH6SW7Q?feature=shared",
+      "note": "https://www.awesomecutlery.com/tracks/heavens-home/"
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "Refiner's Fire",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "Undivided",
+      "link": "https://youtu.be/RntDPMzfn90?si=rpwm1C9VDyFgsWEF",
+      "note": null
+    }
+  ]
+}

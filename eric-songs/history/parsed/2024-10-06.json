@@ -1,0 +1,31 @@
+{
+  "date": "2024-10-06",
+  "passage": "Gen 39",
+  "theme": "Jesus - God with us",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "Christ Our Hope in Life and Death",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "We Are The Church",
+      "link": "https://www.awesomecutlery.com/tracks/we-are-the-church/",
+      "note": "Check link for how to play, chordsheet, etc"
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "Ancient Words",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "His Glory and My Good",
+      "link": null,
+      "note": null
+    }
+  ]
+}

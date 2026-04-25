@@ -4,3 +4,5 @@ Syntax-validated via Node Function constructor; build check passed.
 Task 2: added #gdocBtn next to spotifyBtn + handleGoogleDocCreate handler (POST to apps_script_doc_url, auto-copy, toast, error banner).
 Settings-modal fallback uses #settingsModal if present (Task 3) else alert.
 Task 3: added #settingsModal + ⚙️ gear in header; Gemini key + Apps Script URL inputs with Test/Save, ESC/backdrop close, openSettingsForGdoc now opens it.
+Task 4: scripts/ingest-eric-weeks.mjs parses 178 .docx via mammoth, extracts (title,key) headers with chord-line lookahead + real-word guard.
+Wrote 37 new eric-archive songs to all-songs/ + 12 catalog entries (source:eric-archive); 18 dedup'd as siblings.

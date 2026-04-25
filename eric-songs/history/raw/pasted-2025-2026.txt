@@ -1,0 +1,804 @@
+# Pasted by Eric on 2026-04-21 — covers early 2026 (Jan-Apr) and full 2025
+# Format: tab-separated rows. Each service block starts with a "Date" row, then Theme/Songs rows.
+
+# 2026
+
+Date	4 Jan	Col 1:1-14
+Theme	Songs		Link	Why this song?	Other Comments
+Our Salvation		The Lord is my Salvation
+		God is for us
+	Kids'	I'm Following the King
+	Pre-Sermon	Salvation belongs to our God
+	Closing	Saved My Soul	CityAlight - Saved My Soul - YouTube	Giving thanks for our salvation! (v12-14)	Pls include an intro! The interlude would be a good choice! Could go straight to V1 after intro if that's smoother.
+
+Date	11 Jan	Col 1:15-23
+Theme	Songs		Link	Why this song?	Other Comments
+Christ is Sufficient		All creatures of our God and king
+		Christ is enough
+	Kids'	Brick after Brick	https://sovereigngracemusic.com/music/songs/brick-after-brick/
+	Pre-Sermon	Yet not I but through Christ in me
+	Closing	In Christ Alone	Getty. especially stanza 2 - Fullness of God
+
+Date	18 Jan	Col 1:24-2:7
+Theme	Songs		Link	Why this song?	Other Comments
+Rooted in Christ		Come behold the wondrous mystery
+		Jesus strong and kind
+	Kids'	Brick after Brick	https://sovereigngracemusic.com/music/songs/brick-after-brick/
+	Pre-Sermon	My hope is built on nothing less
+	Closing	In Christ Alone		"Here in Christ I stand" (cf 2:6-7)
+
+Date	25 Jan	Col 2:8-19
+Theme	Songs		Link	Why this song?	Other Comments
+Fullness in Christ		O Praise the Name (Anastasis)
+		All I have is Christ
+	Kids'	Brick after Brick	https://sovereigngracemusic.com/music/songs/brick-after-brick/
+	Pre-Sermon	Christ our Hope In Life and Death
+	Closing	Yet Not I but Through Christ in Me
+
+Date	1 Feb	Col 2:20-3:17
+Theme	Songs		Link	Why this song?	Other Comments
+New Life in Christ
+
+	Kids' Spot
+	Kid's Song	We Are The Church	https://www.youtube.com/watch?v=HPEonEoZL5A&list=RDHPEonEoZL5A&start_radio=1
+	Pre-Sermon
+	Closing	All I Have Is Christ
+
+Date	8 Feb	Col 3:18-4:6
+Theme	Songs		Link	Why this song?	Other Comments
+Christ Jesus our Lord		Beautiful Saviour
+		Hymn of Our Saviour
+	Kids'	We Are The Church	https://www.youtube.com/watch?v=HPEonEoZL5A&list=RDHPEonEoZL5A&start_radio=1
+	Pre-Sermon	O Praise the Name (Anastasis)
+	Closing	Undivided
+
+Date	15 Feb	Col 4:7-18
+Theme	Songs		Link	Why this song?	Other Comments
+Together for the Gospel		Oh How good it is
+		We are one
+	Kids'	We Are The Church	https://www.youtube.com/watch?v=HPEonEoZL5A&list=RDHPEonEoZL5A&start_radio=1
+	Pre-Sermon	O Church Arise
+	Closing	Let the Nations Be Glad
+
+Date	22 Feb	Ps 1
+Theme	Songs		Link	Why this song?	Other Comments
+Blessedness of the Righteous in Christ
+
+	Kids'	We Are The Church	https://www.youtube.com/watch?v=HPEonEoZL5A&list=RDHPEonEoZL5A&start_radio=1
+	Pre-Sermon
+	Closing	All Sufficient Merit	https://youtu.be/VFwC9v9NYQM?si=ceW5h8RKWluXspcn	Blessed in Christ's all sufficient merit
+
+Date	1 Mar	Ps 2
+Theme	Songs		Link	Why this song?	Other Comments
+Jesus the King		Crown Him with Many Crowns by EMU	https://www.youtube.com/watch?v=t07lpvZP5rI&list=RDt07lpvZP5rI&start_radio=1
+		Above All by Lenny Leblanc	https://www.youtube.com/watch?v=zVoLz3gn1W8&list=RDEMz0NFjYIBU4rt4gYpK1OltQ&start_radio=1&rv=CgwX3bYgav8
+	Kids'	Father You Are King of Heaven	Father you are King of heaven SINGALONG - YouTube		If too hard to play, we can always play the Spotify!
+	Pre-Sermon	King of King, Majesty	https://www.youtube.com/watch?v=y5VutCGsVXE
+	Closing	Name Above All Names
+
+Date	8 Mar	Union with Christ: Receiving the Blessings He Won
+Theme	Songs		Link	Why this song?	Other Comments
+Blessed In Christ		Come Praise & Glorify
+		Yet not I but through Christ in me
+	Kids'	Father You Are King of Heaven	Father you are King of heaven SINGALONG - YouTube		If too hard to play, we can always play the Spotify!
+	Pre-Sermon	In Christ Alone
+	Closing	All Sufficient Merit
+
+Date	15 Mar	Union with Christ: Double Imputation
+Theme	Songs		Link	Why this song?	Other Comments
+Righteousness in Christ
+
+	Kids'	Father You Are King of Heaven	Father you are King of heaven SINGALONG - YouTube		If too hard to play, we can always play the Spotify!
+	Pre-Sermon
+	Closing	His Robes For Mine		Very much on topic
+
+Date	22 Mar	Union with Christ: We Are A New Creation
+Theme	Songs		Link	Why this song?	Other Comments
+A new creation in Christ
+
+	Kids'	Father You Are King of Heaven	Father you are King of heaven SINGALONG - YouTube		If too hard to play, we can always play the Spotify!
+	Pre-Sermon
+	Closing	All I Have is Christ
+
+Date	29 Mar	Union with Christ: Part of His Body
+Theme	Songs		Link	Why this song?	Other Comments
+We are the Body of Christ		We Declare Emu
+		This I Believe (The Creed) Hillsong
+	Kids'	Father You Are King of Heaven	Father you are King of heaven SINGALONG - YouTube		If too hard to play, we can always play the Spotify!
+	Pre-Sermon	O How Good It Is
+	Closing	We are One
+
+Date	3 Apr (Good Friday)	Good Friday
+Theme	Songs		Link	Why this song?	Other Comments
+A Death Worth Celebrating		How Great is Our God
+		Come Thou Fount of Every Blessing / Nothing But The Blood of Jesus
+	Kids'	-
+	Pre-Sermon	Near the Cross
+	Closing	How Deep the Father's Love For Us			Presentation
+
+Date	5 Apr (Easter Sunday)	Easter Sunday
+Theme	Songs		Link	Why this song?	Other Comments
+Jesus is the Resurrection and the Life
+
+	Kids'	-
+	Pre-Sermon
+	Closing	Christ Our Hope in Life and Death	Very much the theme of the day!
+
+Date	12 Apr	Mt 8:1-17
+Theme	Songs		Link	Why this song?	Other Comments
+Restored in Christ		Jesus paid it all
+		Resurrecting
+	Kids'	God Speaks	https://emumusic.com/products/god-speaks
+	Pre-Sermon	Jesus Strong and Kind
+	Closing	Come Behold the Wondrous Mystery
+
+Date	19 Apr	Mt 8:18-22
+Theme	Songs		Link	Why this song?	Other Comments
+Christ is Worthy		For you alone are worthy
+		Above all
+	Kids'	God Speaks	https://emumusic.com/products/god-speaks
+	Pre-Sermon	Amazing grace (My chains are gone)
+	Closing	Jesus, I my cross have taken	https://gracemusic.us/sheet_music/jesus-i-my-cross-have-taken/?utm_source=openai	Response to following Christ 	https://open.spotify.com/track/5G55Tuj3zeVbZRKxBA6ZnZ?si=erARmrRfQwqcX3BBjiEz7g
+
+Date	26 Apr	Mt 8:23-9:8
+Theme	Songs		Link	Why this song?	Other Comments
+Christ is above all		Behold our God
+		The Lord is my Salvation
+	Kids'	God Speaks	https://emumusic.com/products/god-speaks
+	Pre-Sermon	Crown him with many Crowns
+	Closing	Above All
+
+# 2025
+
+Date	7 Jul	Eph 1:1-14
+Theme	Songs (in order)		Link	Comments
+Praising God's Glorious Grace		Grace Awaiting Me		Emu
+		His Mercy is More		Shane and Shane
+	Kids'	Jesus Came To Earth	Jesus Came to Earth - YouTube
+	Pre-Sermon	Love of God		Hymn
+	Closing	All Creatures of Our God and King	All Creatures of Our God and King • Prayers of the Saints Live - YouTube	Hymn
+
+Date	14 Jul	Eph 1:15-23
+Theme	Songs (in order)		Link	Comments
+Praising God's Unsearchable Riches for us in Christ		All Creatures of Our God and King	All Creatures of Our God and King • Prayers of the Saints Live - YouTube	Hymn
+		Come Praise and Glorify	Come Praise and Glorify [Sovereign Grace Music] - YouTube	(New)
+	Kids'	Jesus Came To Earth	Jesus Came to Earth - YouTube
+	Pre-Sermon	Speak O Lord
+	Closing	Be Thou My Vision
+
+Date	21 Jul	Eph 2:1-10
+Theme	Songs (in order)		Link	Comments
+Salvation		Come Praise and Glorify	Come Praise and Glorify [Sovereign Grace Music] - YouTube
+		The Lord is my salvation	The Lord is my Salvation
+	Post-communion	His Mercy is More		Shane and Shane
+	Kids'	Jesus Came To Earth	Jesus Came to Earth - YouTube
+	Closing	Hymn of the Saviour	Hymn Of The Saviour (Live) // Emu Music - YouTube
+
+Date	28 Jul	Eph 2:11-22
+Theme	Songs (in order)		Link	Comments
+One in Christ		Come Behold the Wondrous Mystery-Matt Papa & Boswell	https://www.youtube.com/watch?v=IVlJEfjLhqU
+		We Are One (Gathered Together) - Edgar
+	Post-Communion	Man of Sorrow - Hillsong	https://www.youtube.com/watch?v=LZjBJuHgXPE
+	Kids'	Jesus Came To Earth	Jesus Came to Earth - YouTube
+	Closing	O How Good it Is
+
+Date	4 Aug	Eph 3:1-13
+Theme	Songs (in order)		Link	Comments
+God's Salvation for Everyone		Rejoice
+		Salvation Belongs to Our God
+	Post-Communion	Blessed Assurance
+	Kids'	God's Great Family	God's Great Family - YouTube
+	Closing	Come Praise and Glorify	Come Praise and Glorify [Sovereign Grace Music] - YouTube
+
+Date	11 Aug	Eph 3:14-21
+Theme	Songs (in order)		Link	Comments
+Glory to our powerful God		To God Be the Glory
+		Come Behold the Wondrous Mystery
+		Oh the Deep, Deep Love of Jesus	Oh The Deep, Deep Love - Sovereign Grace - YouTube	New
+	Kids'	God's Great Family	God's Great Family - YouTube
+	Closing	Come Praise and Glorify	Come Praise and Glorify [Sovereign Grace Music] - YouTube
+
+Date	18 Aug	Eph 4:1-16
+Theme	Songs (in order)		Link	Comments
+Building the Body Together		We Are One (Gathered Together) - Edgar
+		We Declare
+	Kids'	God's Great Family	God's Great Family - YouTube
+	Pre-Sermon	Speak O Lord
+	Closing	O Church Arise	https://www.youtube.com/watch?v=MZmS81yLjMg	Bridge ("Arise, Shine...") optional
+
+Date	25 Aug	Eph 4:17-5:2
+Theme	Songs (in order)		Link	Comments
+New Life in Christ		Praise to the Lord, the Almighty		Hymn
+		I Give You My Heart
+	Kids'	God's Great Family	God's Great Family - YouTube
+	Pre-Sermon	I Have Decided to Follow Jesus		Hymn
+	Closing	All I Have is Christ	All I Have is Christ (Live at WorshipGod) - YouTube
+
+Date	1 Sep	Eph 5:3-21
+Theme	Songs (in order)		Link	Comments
+Living Counterculturally		Lay Me Down
+		Take My Life and Let It Be
+		This Life I Live
+	Kids'	W-I-S-D-O-M	W-I-S-D-O-M - YouTube
+	Closing	Undivided
+
+Date	8 Sep	Eph 5:22-6:9
+Theme	Songs (in order)		Link	Comments
+Christ our Centre		All Hail the Power of Jesus' Name	All Hail the Power of Jesus' Name - Getty TGC - YouTube	This version preferred
+		Christ Be Magnified
+	Kids'	W-I-S-D-O-M	W-I-S-D-O-M - YouTube
+	Pre-Sermon	Speak O Lord
+	Closing	Turn Your Eyes	Turn Your Eyes • The Glorious Christ Live - YouTube	This version
+
+Date	15 Sep	Eph 6:10-24
+Theme	Songs (in order)		Link	Comments
+Standing Firm in God's Salvation Plan		Come Praise and Glorify	Come Praise and Glorify [Sovereign Grace Music] - YouTube
+		Hymn of the Saviour	Hymn Of The Saviour (Live) // Emu Music - YouTube
+	Kids'	W-I-S-D-O-M	W-I-S-D-O-M - YouTube
+	Post-Sermon	Undivided
+	Closing	O Church Arise	https://www.youtube.com/watch?v=MZmS81yLjMg
+
+Date	22 Sep	Gen 37:2-36
+Theme	Songs (in order)		Link	Comments
+Jesus - the hated promised king		Crown Him with Many Crowns
+		King of Kings, Majesty
+	Kids'	W-I-S-D-O-M	W-I-S-D-O-M - YouTube
+	Pre-Sermon	Your Word
+	Closing	Come Behold the Wondrous Mystery
+
+Date	29 Sep	Gen 38
+Theme	Songs (in order)		Link	Comments
+God's Grace in Jesus Christ		This is Amazing Grace
+		What Grace is Mine	What Grace is Mine - Keith & Kristyn Getty Cover - YouTube	This tempo preferred over original Getty version
+	Kids'	W-I-S-D-O-M	W-I-S-D-O-M - YouTube
+	Pre-Sermon	Yet Not I But Through Christ in Me
+	Closing	His Glory and My Good	CityAlight - His Glory and My Good (Live) - YouTube	New
+
+Date	6 Oct	Gen 39
+Theme	Songs (in order)		Link	Comments
+Jesus - God with us		Christ Our Hope in Life and Death
+
+	Kids'	We Are The Church	https://www.awesomecutlery.com/tracks/we-are-the-church/	Check link for how to play, chordsheet, etc
+	Pre-Sermon	Ancient Words
+	Closing	His Glory and My Good
+
+Date	13 Oct	Gen 40
+Theme	Songs (in order)		Link	Comments
+Trusting God		Rejoice
+		Tis so sweet
+	Kids'	We Are The Church	https://www.awesomecutlery.com/tracks/we-are-the-church/	Check link for how to play, chordsheet, etc
+	Pre-Sermon	-
+	Closing	Day By Day
+
+Date	20 Oct	Stewardship Sunday
+Theme	Songs (in order)		Link	Comments
+Grace of our Lord Jesus Christ		This is Amazing Grace
+		Amazing Grace		Hymn
+	Kids'	We Are The Church	https://www.awesomecutlery.com/tracks/we-are-the-church/	Check link for how to play, chordsheet, etc
+	Pre-Sermon	Oh the Deep, Deep Love of Jesus	Oh The Deep, Deep Love - Sovereign Grace - YouTube
+	Closing	His Glory and My Good
+
+Date	27 Oct	Gen 41
+Theme	Songs (in order)		Link	Comments
+God is sovereign		How Great Thou Art	Paul Baloche - How Great Thou Art - YouTube	Tempo and style as per link, perhaps without so many repeats
+		Sovereign		Chris Tomlin
+	Kids'	We Are The Church	https://www.awesomecutlery.com/tracks/we-are-the-church/	Check link for how to play, chordsheet, etc
+	Pre-Sermon	Immortal, Invisible, God Only Wise	Immortal, Invisible (Acoustic Song Leading Video) // Emu Music - YouTube	Hymn
+	Closing	His Glory and My Good
+
+Date	3 Nov	Gen 42
+Theme	Songs (in order)		Link	Comments
+A merciful God		Rejoice	https://youtu.be/t19ISSmBQ-Q?feature=shared
+		Oh the Deep, Deep Love of Jesus
+		Come Behold the Wondrous Mystery
+	Kids'	I'm Following the King	https://youtu.be/aG7FfFH0fnI?feature=shared
+	Pre-Sermon	--
+	Closing	His Mercy Is More	https://open.spotify.com/track/4N5DNWSCAitzzxhRQ5Cfxi?si=1BlkUEmtShKIt-LOeCNcxg
+
+Date	10 Nov	Gen 43:1-44:2
+Theme	Songs (in order)		Link	Comments
+The gracious God		How Deep the Father's Love for us
+		Grace awaiting me
+	Kids'	I'm Following the King	https://youtu.be/aG7FfFH0fnI?feature=shared
+
+	Closing	His Mercy is More
+
+Date	17 Nov	Gen 44:3-45:11
+Theme	Songs (in order)		Link	Comments
+How Great is our Sovereign  Gracious God!		His glory and my good
+		Before the throne of god above
+	Kids'	I'm Following the King	https://youtu.be/aG7FfFH0fnI?feature=shared
+	Pre-Sermon	God is for us
+	Closing	How Great Thou Art	https://www.youtube.com/watch?v=EueRjHaGbS4&list=RDEueRjHaGbS4&start_radio=1&rv=EueRjHaGbS4&t=80
+
+Date	24 Nov	Gen 45:12-46:27
+Theme	Songs (in order)		Link	Comments
+Rejoice for  King Jesus is good news of great joy to the broken!		10,000 Reasons
+		I stand amazed
+	Kids'	I'm Following the King	https://youtu.be/aG7FfFH0fnI?feature=shared
+	Pre-Sermon	Speak o Lord
+	Closing	Rejoice by Getty	https://www.youtube.com/watch?v=t19ISSmBQ-Q
+
+Date	1 Dec	CHURCH CAMP
+Theme	Songs (in order)		Link	Comments
+
+
+	Kids'
+	Pre-Sermon
+	Closing
+
+Date	8 Dec	Gen 46:28-47:12
+Theme	Songs (in order)		Link	Comments
+Jesus Our Hope		Christ Our Hope in Life and Death
+		My Hope is Built on Nothing Less
+	Kids'	-
+	Pre-Sermon	In This Book
+	Closing	Undivided
+
+Date	15 Dec	Gen 47:13-31
+Theme	Songs (in order)		Link	Comments
+God's Trustworthy Promises		Psalm 23 ( Shane and Shane)
+		I Will Trust My Saviour Jesus	CityAlight
+	Kids'	-----
+	Post-Communion	His Glory and My Good
+	Closing	Undivided		If new, replace with Undivided
+
+Date	22 Dec	Christmas
+Theme	Songs (in order)		Link	Comments
+Joy to The World!		Joy to the World
+		Hark! The Herald Angels Sing
+		O Holy Night
+
+	Closing	The Joy of Christmas	All Things New // The Joy of Christmas // (Official Acoustic Video) - YouTube
+
+Date	25 Dec	Christmas
+Theme	Songs (in order)		Link	Comments
+
+
+	Kids'
+	Pre-Sermon
+	Closing
+
+Date	29 Dec	Gen 48
+Theme	Songs (in order)		Link	Comments
+God's Blessing		Joy to the World (Shout For Joy)
+		Come Praise and Glorify
+	Kids'	-
+	Pre-Sermon	Blessed Assurance
+	Closing	Undivided
+
+↓2025↓	↓2025↓	↓2025↓	↓2025↓	↓2025↓
+Date	5 Jan	Gen 49:1-28
+Theme	Songs (in order)		Link	Comments
+Christ, Our Glorious Hope		Calling All Sinners
+		Christ Our Hope in Life and Death
+	Kids'	Just the Way God Wanted Us to Be	Just the Way God Wanted Us to Be [Official Video] - YouTube	"Note lyric edit: ""Now Adam he was incomplete"" --> ""Now Adam he was by himself"""
+	Pre-Sermon	My Hope is Built on Nothing Less		Hymn
+	Closing	Let the Nations Be Glad
+
+Date	12 Jan	Gen 49:29-50:26
+Theme	Songs (in order)		Link	Comments
+Trusting in God's Goodness
+
+	Kids'	Just the Way God Wanted Us to Be	Just the Way God Wanted Us to Be [Official Video] - YouTube
+	Pre-Sermon
+	Closing	Standing on the Promises of Christ my King
+
+Date	19 Jan	Mt 1:1-17
+Theme	Songs (in order)		Link	Comments
+Jesus, the King!		Crown Him With Many Crowns
+		Majesty
+	Kids'	Just the Way God Wanted Us to Be	Just the Way God Wanted Us to Be [Official Video] - YouTube
+	Pre-Sermon	Beautiful Saviour (Planetshakers)
+	Closing	King of Kings, Majesty	King of Kings, Majesty - YouTube
+
+Date	26 Jan	Mt 1:18-25
+Theme	Songs (in order)		Link	Comments
+Jesus, the Divine Saviour		Name Above All Names?	Name Above All Names [Official Lyric Video] - YouTube	New
+		Hymn of the Saviour
+	Kids'	Just the Way God Wanted Us to Be	Just the Way God Wanted Us to Be [Official Video] - YouTube
+	Pre-Sermon	Jesus Paid It All
+	Closing	There is a Fountain
+
+Date	2 Feb	Mt 2
+Theme	Songs (in order)		Link	Comments
+Jesus, God's Promised King		In Christ Alone
+		Thank you Jesus
+	Kids'	My God Is A Very, Very, Very Big God	A very, very, very big God
+	Pre-Sermon	Hymn of the Saviour
+	Closing	Name Above All Names
+
+Date	9 Feb	Mt 3:1-12
+Theme	Songs (in order)		Link	Comments
+Surrendering to God		Oh How Good It Is
+		Build My Life
+	Kids'	My God Is A Very, Very, Very Big God
+	Pre-Sermon	I Surrender All
+	Closing	Undivided
+
+Date	16 Feb	Mt 3:13-4:11
+Theme	Songs (in order)		Link	Comments
+Jesus is worthy of our trust		The Servant King		Opening song: slightly more upbeat, not too slow.
+		The King in All His Beauty	The King in All His Beauty • The Glorious Christ Live - YouTube	New
+	Kids'	My God Is A Very, Very, Very Big God
+	Pre-Sermon	My Hope Is Built on Nothing Less
+	Closing	I Will Trust My Saviour Jesus
+
+Date	23 Feb	Mt 4:12-17
+Theme	Songs (in order)		Link	Comments
+Jesus the Hope of the World		Come Behold the Wondrous Mystery
+		Beautiful Saviour
+	Song of Dedication	Be Thou My Vision
+
+	Closing	Christ Our Hope in Life and Death
+
+Date	2 Mar	Mt 4:18-25
+Theme	Songs (in order)		Link	Comments
+Follow King Jesus		Crown Him With Many Crowns
+		This Life I Live
+	Kids'	Mighty, Mighty Saviour	Mighty Mighty Savior - YouTube
+	Pre-Sermon	Shepherd of My Soul	Shepherd of My Soul - Marty Nystrom (Lyrics) - YouTube	Please repeat a sensible number of times.
+	Closing	The King in All His Beauty	The King in All His Beauty • The Glorious Christ Live - YouTube
+
+Date	9 Mar	Sermon on the Mount Overview
+Theme	Songs (in order)		Link	Comments
+God our Father		God is For Us
+		How Deep the Father's Love for Us
+	Post-Communion	His Glory and My Good
+	Kids'	Mighty, Mighty Saviour	Mighty Mighty Savior - YouTube
+	Closing	Grace Awaiting Me
+
+Date	16 Mar	Mt 5:1-16
+Theme	Songs (in order)		Link	Comments
+God of All Comfort		God is For Us
+		The Lord is My Salvation
+	Kids'	Mighty, Mighty Saviour	Mighty Mighty Savior - YouTube
+	Pre-Sermon	Speak O Lord
+	Closing	Grace and Peace (Sovereign Grace)	https://www.youtube.com/watch?v=wmR-5OlAGpA
+
+Date	23 Mar	Mt 5:17-26
+Theme	Songs (in order)		Link	Comments
+Jesus Fulfills the OT		We give thanks
+		Psalm 23
+		Before the throne of God above
+	Kids'	Mighty, Mighty Saviour	Mighty Mighty Savior - YouTube
+	Closing	Come Behold the Wondrous Mystery
+
+Date	30 Mar	Mt 5:27-32
+Theme	Songs (in order)		Link	Comments
+God is Holy		Only a Holy God
+		Holy Holy Holy
+	Kids'	Mighty, Mighty Saviour	Mighty Mighty Savior - YouTube
+	Pre-Sermon	In Christ Alone
+	Closing	All I Have is Christ	All I Have Is Christ [Sovereign Grace Music] - YouTube
+
+Date	6 Apr	Mt 5:33-48
+Theme	Songs (in order)		Link	Comments
+Being Like Our Perfect/Holy Father		The Lord is my Salvation
+		More like Jesus
+		Blessed Assurance
+	Kids'	Jesus loves me
+	Closing	Only a Holy God
+
+Date	13 Apr	Mt 6:1-18
+Theme	Songs (in order)		Link	Comments
+God, our dear heavenly Father		Be thou my vision
+		How great is our God/ how great thou art
+	Kids'	Jesus loves me
+	Pre-Sermon	How deep the father's love for us
+	Closing	God is For Us	https://www.youtube.com/watch?v=xxl1EOhJiRA&list=RDEMJMPZbQlqfdfbfYUb16sWRQ&index=5
+
+Date	18 Apr	Good Friday - 1 Peter 2:22-25
+Theme	Songs (in order)		Link	Comments
+Jesus bore our sins		Hymn of the Saviour
+		The Goodness of Jesus
+	Kids'	Power of the Cross
+	Pre-Sermon
+	Closing	Christ Our Hope In Life And Death
+
+Date	20 Apr	Easter - 1 Pet 1:3-5
+Theme	Songs (in order)		Link	Comments
+Resurrection		Because He Lives
+		Crown Him With Many Crowns
+	Kids'	Jesus Loves Me
+	Pre-Sermon	See What A Morning	See What a Morning - Keith and Kristyn Getty - YouTube
+	Closing	Come Thou Fount of Every Blessing
+
+Date	27 Apr	Mt 6:19-24
+Theme	Songs (in order)		Link	Comments
+Living Wholeheartedly for God		His Glory and my Good
+		Take my Life and Let it Be
+	Kids'	Jesus loves me
+	Pre-Sermon	Ancient Words
+	Closing	Undivided
+
+Date	4 May	Mt 6:25-34
+Theme	Songs (in order)		Link	Comments
+God Cares for you		Praise to the Lord, the Almighty		Hymn
+		Great is Thy Faithfulness
+	Kids'	To Be Like Jesus	To Be Like Jesus - Lyric Video - YouTube
+	Pre-Sermon	Christ Is Enough
+	Closing	Psalm 23 - Shane and Shane
+
+Date	11 May	Mt 7:1-14
+Theme	Songs (in order)		Link	Comments
+God The Good Giver		How deep the father's love for us
+		His Glory and My Good
+	Kids'	To Be Like Jesus	To Be Like Jesus - Lyric Video - YouTube
+	Pre-Sermon	Good Good Father
+	Closing	The Love of God (Hymn)		Not too slow please! (eg by doing 3/4 instead of 4/4)
+
+Date	18 May	Mt 7:15-23
+Theme	Songs (in order)		Link	Comments
+God is Worthy of Our Trust		All Creatures of Our God and King	All Creatures of Our God and King • Prayers of the Saints Live - YouTube	Link has a contemporary arrangement
+		I Will Trust My Saviour Jesus
+	Kids'	To Be Like Jesus	To Be Like Jesus - Lyric Video - YouTube
+	Pre-Sermon	Trust and Obey
+	Closing	Guide Me, O My Great Redeemer	Guide Me, O My Great Redeemer (Official Video)	New song
+
+Date	25 May	Mt 7:24-29
+Theme	Songs (in order)		Link	Comments
+Jesus' Authoritative Word		My hope is built
+		You are my all in all
+	Kids'	To Be Like Jesus	To Be Like Jesus - Lyric Video - YouTube
+	Pre-Sermon	In this book
+	Closing	Trust and Obey
+
+Date	1 Jun	Marriage
+Theme	Songs (in order)		Link	Comments
+God's Beautiful Design		This Is My Father's World		Upbeat pls!
+		We Declare	We Declare (Acoustic Song Leading Video) // Emu Music - YouTube
+	Kids'	Jesus Came to Earth
+	Pre-Sermon	I Will Trust My Saviour Jesus
+	Closing	Yet Not I But Through Christ in me
+
+Date	8 Jun	Singleness
+Theme	Songs (in order)		Link	Comments
+Single-Minded Devotion to the Lord		10,000 Reasons (Bless the Lord)
+		For you Alone
+		His Glory and my Good
+	Kids'	Jesus Came to Earth
+	Pre-Sermon	--
+	Closing	Oh How Good It Is
+
+Date	15 Jun	Parenting
+Theme	Songs (in order)		Link	Comments
+God Our Father		Rejoice
+		Good Good Father
+		His Mercy is More
+	Kids'	Jesus Came to Earth
+	Pre-Sermon	--
+	Closing	How Deep the Father's Love For Us
+
+Date	22 Jun	Homosexuality
+Theme	Songs (in order)		Link	Comments
+Jesus is our Lord		Crown Him with Many Crowns	https://www.youtube.com/watch?v=t07lpvZP5rI&list=PLSkYeXnWwUAuIF40OSUs-6UcAkh2mLSyj
+		Beautiful Saviour
+		The Lord is My Salvation	https://www.youtube.com/watch?v=AFkGH64pMMw&list=RDAFkGH64pMMw&start_radio=1
+	Kids'	Jesus Came to Earth
+	Pre-Sermon	--
+	Closing	All I Have is Christ	All I Have Is Christ [Sovereign Grace Music] - YouTube
+
+Date	29 Jun	Divorce
+Theme	Songs (in order)		Link	Comments
+God's holiness and grace is met in Jesus Christ		I Stand Amazed
+		Amazing Grace
+		Into the Deep
+	Kids'	Jesus Came to Earth
+	Closing	The Lord is my Salvation
+
+Date	6 Jul	Friendship
+Theme	Songs (in order)		Link	Comments
+Walking Together as Family		Welcome to the Family
+		We are One (Gathered Together)
+		We Declare
+	Kids'	Adopted	https://www.youtube.com/watch?v=fccuTkRW9hw&list=RDfccuTkRW9hw&start_radio=1
+	Closing	Oh How Good It Is
+
+Date	13 Jul	Mal 1:1-5
+Theme	Songs (in order)		Link	Comments
+God has loved us!		Only a Holy God
+		He will hold me fast
+		Here is Love
+	Kids'	Adopted
+	Closing	What Love My God	https://www.youtube.com/watch?v=CjXK9PdCpis&list=PL24SRIIx7GWKcamw-kTaSjM_FssNO6mkq&index=8
+
+Date	20 Jul	Mal 1:6-2:9
+Theme	Songs (in order)		Link	Comments
+God's Great Name
+
+	Kids'	Adopted
+	Closing	How Great Thou Art
+
+Date	27 Jul	Mal 2:10-16
+Theme	Songs (in order)		Link	Comments
+Only Holy God		How Great Thou Art	Paul Baloche - How Great Thou Art - YouTube	"Tempo and style as per link"
+		Holy Holy Holy
+	Kids'	Adopted
+		Only A Holy God
+	Closing	Undivided	https://youtu.be/RntDPMzfn90?si=rpwm1C9VDyFgsWEF
+
+Date	3 Aug	Mal 2:17-3:7a
+Theme	Songs (in order)		Link	Comments
+God Makes Us Holy / God Refines/Purifies Us		Come Behold the Wondrous Mystery
+		O Great God	https://www.youtube.com/watch?v=gOPbanJKWE8
+		10,000 Reasons ( Bless the Lord)
+	Kids'	Tell Them	https://emumusic.com/products/tell-them
+	Closing	Refiner's Fire
+
+Date	10 Aug	Mal 3:7-12
+Theme	Songs (in order)		Link	Comments
+Return to the God who rescued us!		Come Praise and Glorify	Come Praise and Glorify [Sovereign Grace Music] - YouTube
+		The Lord is my Salvation	The Lord is my Salvation
+	Kids'	Tell Them	https://emumusic.com/products/tell-them
+		Hymn of the Saviour	Hymn Of The Saviour (Live) // Emu Music - YouTube
+	Closing	His Glory and My Good
+
+Date	17 Aug	Mal 3:13-4:6
+Theme	Songs (in order)		Link	Comments
+The Day of Judgement		Psalm 34 (Taste and See)
+		Crown Him with Many Crowns
+		Only A Holy God
+	Kids'	Tell Them	https://emumusic.com/products/tell-them
+	Closing	The Lord is My Salvation
+
+Date	24 Aug	Acts 1:1-11
+Theme	Songs (in order)		Link	Comments
+God is sovereign		All Hail the Power of Jesus' Name	All Hail The Power Of Jesus' Name (Live) - YouTube	Feel as per link. Let's start the service on a high note!
+		Sovereign (Tomlin)		Suits theme well.
+	Kids'	Tell Them	https://emumusic.com/products/tell-them
+		Speak O Lord		Prepares us for Bible reading and sermon.
+	Closing	Risen	https://thecrossingchurch.bandcamp.com/track/risen	New, but written esp for Acts. Chordsheet and piano demo -->
+
+Date	31 Aug	Acts 1:12-26
+Theme	Songs (in order)		Link	Comments
+Jesus Reigns		Beautiful Saviour
+		King of Kings (Hillsong)
+		Yet not I but through Christ in me
+		Jesus Reigns (Edgar)
+	Kids'	Tell Them	https://emumusic.com/products/tell-them
+	Closing	Risen	https://thecrossingchurch.bandcamp.com/track/risen	Please familiarise with melody well to lead congre well! Chordsheet and piano demo -->
+
+Date	7 Sep	Acts 2:1-21
+Theme	Songs (in order)		Link	Comments
+The Gospel for the World		God is for Us
+		Risen	https://thecrossingchurch.bandcamp.com/track/risen	Please familiarise with melody well to lead congre well! Chordsheet and piano demo -->
+	Kids'	God's Great Family	God's Great Family - YouTube
+	Pre-Sermon	Ancient Words
+	Closing	Oh Church Arise
+
+Date	14 Sep	Acts 2:22-47
+Theme	Songs (in order)		Link	Comments
+Jesus saves those who repent		Christ Our Hope in Life and Death
+		I Will Trust My Saviour Jesus
+	Kids'	God's Great Family	God's Great Family - YouTube
+	Pre-Sermon	Beautiful Saviour
+	Closing	The Lord is My Salvation
+
+Date	21 Sep	Acts 3:1-4:4
+Theme	Songs (in order)		Link	Comments
+Certain Hope in the Risen Jesus		He Lives	He Lives - Alfred Ackley Cover (Daniel Choo)	Celebrate Jesus - Upbeat, faster than the link
+		Jesus Reigns (Edgar)		Submit to Jesus
+		In Christ Alone		Hope in Jesus!
+	Kids'	God's Great Family	God's Great Family - YouTube
+	Closing	Christ Our Hope In Life And Death
+
+Date	28 Sep	Acts 4:5-22
+Theme	Songs (in order)		Link	Comments
+Salvation in Jesus' Name		God is For Us
+		Come Praise and Glorify
+	Kids'	God's Great Family	God's Great Family - YouTube
+	Pre-Sermon	My Hope is Built
+	Closing	Let the Nations Be Glad	Let the Nations Be Glad (Official Lyric Video) - Matt Boswell, Matt Papa - YouTube	Sung at Camp
+
+Date	5 Oct	Acts 4:23-31
+Theme	Songs (in order)		Link	Comments
+Proclaiming Jesus Boldly		We Declare	We Declare (Acoustic Song Leading Video) // Emu Music - YouTube
+		Jesus Reigns (Edgar)
+	Kids'	Heaven's Home	https://youtu.be/en4ThH6SW7Q?feature=shared	https://www.awesomecutlery.com/tracks/heavens-home/
+	Pre-Sermon	Oh Church Arise
+	Closing	Let the Nations Be Glad	Let the Nations Be Glad (Official Lyric Video) - Matt Boswell, Matt Papa - YouTube	Sung at Camp
+
+Date	12 Oct	Acts 4:32-5:11
+Theme	Songs (in order)		Link	Comments
+God is Holy		Indescribable		Let's not get carried away with repeated choruses!
+		In Christ Alone	Getty
+	Kids'	Heaven's Home	https://youtu.be/en4ThH6SW7Q?feature=shared	https://www.awesomecutlery.com/tracks/heavens-home/
+	Pre-Sermon	Refiner's Fire
+	Closing	Undivided	https://youtu.be/RntDPMzfn90?si=rpwm1C9VDyFgsWEF
+
+Date	19 Oct	Stewardship Sunday
+Theme	Songs (in order)		Link	Comments
+The Love of God		God Omniscient, God All Knowing
+		Here is Love		Centerpiece of God's love on the cross - pre communion as well
+	Kids'	Heaven's Home
+		Goodness of God
+	Closing	When I Survey the Wondrous Cross - Getty version
+
+Date	26 Oct	Acts 5:12-42
+Theme	Songs (in order)		Link	Comments
+God's Unstoppable Gospel (of Life)		O Church Arise
+		Power of the Cross
+	Kids'	Heaven's Home
+	Pre-Sermon	Come Behold The Wondrous Mystery
+	Closing	All the World For Jesus		Without bridge
+
+Date	2 Nov	Acts 6:1-7
+Theme	Songs (in order)		Link	Comments
+God's Life-Giving Word		More Precious Than Gold (Psalm 19)	https://www.youtube.com/watch?v=RusDfH5Tjbw
+		My Hope Is Built / The Solid Rock
+	Kids'	He's Coming Back Again	https://www.awesomecutlery.com/tracks/hes-coming-back-again/
+	Pre-Sermon	Jesus Reigns (Edgar)
+	Closing	Your Word
+
+Date	9 Nov	Acts 6:8-7:60 Part 1
+Theme	Songs (in order)		Link	Comments
+God's Greatness		Crown Him with many Crowns
+		How great is our God
+	Kids'	He's Coming Back Again	https://www.awesomecutlery.com/tracks/hes-coming-back-again/
+	Pre-Sermon	Ancient word
+	Closing	You are God alone
+
+Date	16 Nov	Acts 6:8-7:60 Part 2
+Theme	Songs (in order)		Link	Comments
+Jesus fulfills God's Law		Indescribable
+		Come Behold the wondrous mystery
+	Kids'	He's Coming Back Again	https://www.awesomecutlery.com/tracks/hes-coming-back-again/
+	Pre-Sermon	Living Hope
+	Closing	Let the Nations be Glad
+
+Date	23 Nov	Acts 8:1-25
+Theme	Songs (in order)		Link	Comments
+The Gospel Goes Out		When I Survey the Wondrous Cross
+		All the World for Jesus
+	Kids'	He's Coming Back Again	https://www.awesomecutlery.com/tracks/hes-coming-back-again/
+	Pre-Sermon	Facing a Task Unfinished
+	Closing	Let the Nations Be Glad
+
+Date	30 Nov	CAMP
+Theme	Songs (in order)		Link	Comments
+CAMP
+
+	Kids'	He's Coming Back Again	https://www.awesomecutlery.com/tracks/hes-coming-back-again/
+	Pre-Sermon
+	Closing
+
+Date	7 Dec	Acts 8:26-40
+Theme	Songs (in order)		Link	Comments
+Gospel reaches the utterly unreachable
+
+	Kids'
+	Pre-Sermon
+	Closing	Amazing Grace
+
+Date	14 Dec	Acts 9:1-19
+Theme	Songs (in order)		Link	Comments
+Jesus' Power to Transform		This is Amazing Grace
+		Grace Awaiting Me
+	Kids'	I am Following the King
+	Pre-Sermon	Hymn of the Saviour
+	Closing	Facing a Task Unfinished
+
+Date	21 Dec	Christmas
+Theme	Songs (in order)		Link	Comments
+		Hark! The Herald Angels Sing
+		It Came Upon A Midnight Clear
+	Kids'
+	Pre-Sermon	O Come, All You Unfaithful
+	Closing	Joy To The World- Chris Tomlin
+
+Date	25 Dec	Christmas
+Theme	Songs (in order)		Link	Comments
+
+
+	Kid's	nil
+	Pre-Sermon
+	Closing	Silent Night, Lonely Night		Presentation
+
+Date	28 Dec	Acts 9:20-31
+Theme	Songs (in order)		Link	Comments
+Jesus Extending His Rule on Earth
+
+	Kids'
+	Pre-Sermon
+	Closing	Jesus Reigns- Edgar song

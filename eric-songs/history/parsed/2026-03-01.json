@@ -1,0 +1,37 @@
+{
+  "date": "2026-03-01",
+  "passage": "Ps 2",
+  "theme": "Jesus the King",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "Crown Him with Many Crowns by EMU",
+      "link": "https://www.youtube.com/watch?v=t07lpvZP5rI&list=RDt07lpvZP5rI&start_radio=1",
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "Above All by Lenny Leblanc",
+      "link": "https://www.youtube.com/watch?v=zVoLz3gn1W8&list=RDEMz0NFjYIBU4rt4gYpK1OltQ&start_radio=1&rv=CgwX3bYgav8",
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "Father You Are King of Heaven",
+      "link": null,
+      "note": "If too hard to play, we can always play the Spotify!"
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "King of King, Majesty",
+      "link": "https://www.youtube.com/watch?v=y5VutCGsVXE",
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "Name Above All Names",
+      "link": null,
+      "note": null
+    }
+  ]
+}

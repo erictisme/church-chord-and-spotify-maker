@@ -1,0 +1,37 @@
+{
+  "date": "2024-10-27",
+  "passage": "Gen 41",
+  "theme": "God is sovereign",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "How Great Thou Art",
+      "link": null,
+      "note": "Tempo and style as per link, perhaps without so many repeats"
+    },
+    {
+      "slot": "opening",
+      "title": "Sovereign",
+      "link": null,
+      "note": "Chris Tomlin"
+    },
+    {
+      "slot": "kids",
+      "title": "We Are The Church",
+      "link": "https://www.awesomecutlery.com/tracks/we-are-the-church/",
+      "note": "Check link for how to play, chordsheet, etc"
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "Immortal, Invisible, God Only Wise",
+      "link": null,
+      "note": "Hymn"
+    },
+    {
+      "slot": "closing",
+      "title": "His Glory and My Good",
+      "link": null,
+      "note": null
+    }
+  ]
+}

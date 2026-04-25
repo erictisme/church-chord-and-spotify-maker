@@ -1,0 +1,2509 @@
+{
+  "The Lord is My Salvation": {
+    "canonical_title": "The Lord is My Salvation",
+    "variants": [
+      "The Lord is my Salvation",
+      "The Lord is my salvation",
+      "The Lord is My Salvation"
+    ],
+    "count": 10,
+    "dates": [
+      "2024-07-21",
+      "2025-03-16",
+      "2025-04-06",
+      "2025-06-22",
+      "2025-06-29",
+      "2025-08-10",
+      "2025-08-17",
+      "2025-09-14",
+      "2026-01-04",
+      "2026-04-26"
+    ],
+    "slots": {
+      "opening": 7,
+      "closing": 3
+    },
+    "last_sung": "2026-04-26"
+  },
+  "God is For Us": {
+    "canonical_title": "God is For Us",
+    "variants": [
+      "God is for us",
+      "God is For Us",
+      "God is for Us"
+    ],
+    "count": 7,
+    "dates": [
+      "2024-11-17",
+      "2025-03-09",
+      "2025-03-16",
+      "2025-04-13",
+      "2025-09-07",
+      "2025-09-28",
+      "2026-01-04"
+    ],
+    "slots": {
+      "opening": 5,
+      "pre-sermon": 1,
+      "closing": 1
+    },
+    "last_sung": "2026-01-04"
+  },
+  "I'm Following the King": {
+    "canonical_title": "I'm Following the King",
+    "variants": [
+      "I'm Following the King",
+      "I am Following the King"
+    ],
+    "count": 6,
+    "dates": [
+      "2024-11-03",
+      "2024-11-10",
+      "2024-11-17",
+      "2024-11-24",
+      "2025-12-14",
+      "2026-01-04"
+    ],
+    "slots": {
+      "kids": 6
+    },
+    "last_sung": "2026-01-04"
+  },
+  "Salvation Belongs to Our God": {
+    "canonical_title": "Salvation Belongs to Our God",
+    "variants": [
+      "Salvation belongs to our God",
+      "Salvation Belongs to Our God"
+    ],
+    "count": 2,
+    "dates": [
+      "2024-08-04",
+      "2026-01-04"
+    ],
+    "slots": {
+      "pre-sermon": 1,
+      "opening": 1
+    },
+    "last_sung": "2026-01-04"
+  },
+  "Saved My Soul": {
+    "canonical_title": "Saved My Soul",
+    "variants": [
+      "Saved My Soul"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-01-04"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2026-01-04"
+  },
+  "All Creatures of Our God and King": {
+    "canonical_title": "All Creatures of Our God and King",
+    "variants": [
+      "All creatures of our God and king",
+      "All Creatures of Our God and King"
+    ],
+    "count": 4,
+    "dates": [
+      "2024-07-07",
+      "2024-07-14",
+      "2025-05-18",
+      "2026-01-11"
+    ],
+    "slots": {
+      "opening": 3,
+      "closing": 1
+    },
+    "last_sung": "2026-01-11"
+  },
+  "Christ is Enough": {
+    "canonical_title": "Christ is Enough",
+    "variants": [
+      "Christ is enough",
+      "Christ Is Enough"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-05-04",
+      "2026-01-11"
+    ],
+    "slots": {
+      "opening": 1,
+      "pre-sermon": 1
+    },
+    "last_sung": "2026-01-11"
+  },
+  "Brick after Brick": {
+    "canonical_title": "Brick after Brick",
+    "variants": [
+      "Brick after Brick"
+    ],
+    "count": 3,
+    "dates": [
+      "2026-01-11",
+      "2026-01-18",
+      "2026-01-25"
+    ],
+    "slots": {
+      "kids": 3
+    },
+    "last_sung": "2026-01-25"
+  },
+  "Yet Not I But Through Christ in Me": {
+    "canonical_title": "Yet Not I But Through Christ in Me",
+    "variants": [
+      "Yet not I but through Christ in me",
+      "Yet Not I but Through Christ in Me",
+      "Yet Not I But Through Christ in Me",
+      "Yet Not I But Through Christ in me"
+    ],
+    "count": 6,
+    "dates": [
+      "2024-09-29",
+      "2025-06-01",
+      "2025-08-31",
+      "2026-01-11",
+      "2026-01-25",
+      "2026-03-08"
+    ],
+    "slots": {
+      "pre-sermon": 2,
+      "closing": 2,
+      "opening": 2
+    },
+    "last_sung": "2026-03-08"
+  },
+  "In Christ Alone": {
+    "canonical_title": "In Christ Alone",
+    "variants": [
+      "In Christ Alone"
+    ],
+    "count": 7,
+    "dates": [
+      "2025-02-02",
+      "2025-03-30",
+      "2025-09-21",
+      "2025-10-12",
+      "2026-01-11",
+      "2026-01-18",
+      "2026-03-08"
+    ],
+    "slots": {
+      "closing": 2,
+      "pre-sermon": 2,
+      "opening": 3
+    },
+    "last_sung": "2026-03-08"
+  },
+  "Come Behold the Wondrous Mystery": {
+    "canonical_title": "Come Behold the Wondrous Mystery",
+    "variants": [
+      "Come behold the wondrous mystery",
+      "Come Behold the Wondrous Mystery",
+      "Come Behold the Wondrous Mystery-Matt Papa & Boswell",
+      "Come Behold The Wondrous Mystery",
+      "Come Behold the wondrous mystery"
+    ],
+    "count": 11,
+    "dates": [
+      "2024-07-28",
+      "2024-08-11",
+      "2024-09-22",
+      "2024-11-03",
+      "2025-02-23",
+      "2025-03-23",
+      "2025-08-03",
+      "2025-10-26",
+      "2025-11-16",
+      "2026-01-18",
+      "2026-04-12"
+    ],
+    "slots": {
+      "opening": 7,
+      "closing": 3,
+      "pre-sermon": 1
+    },
+    "last_sung": "2026-04-12"
+  },
+  "Jesus Strong and Kind": {
+    "canonical_title": "Jesus Strong and Kind",
+    "variants": [
+      "Jesus strong and kind",
+      "Jesus Strong and Kind"
+    ],
+    "count": 2,
+    "dates": [
+      "2026-01-18",
+      "2026-04-12"
+    ],
+    "slots": {
+      "opening": 1,
+      "pre-sermon": 1
+    },
+    "last_sung": "2026-04-12"
+  },
+  "My Hope is Built on Nothing Less": {
+    "canonical_title": "My Hope is Built on Nothing Less",
+    "variants": [
+      "My hope is built on nothing less",
+      "My Hope is Built on Nothing Less",
+      "My Hope Is Built on Nothing Less",
+      "My hope is built",
+      "My Hope is Built",
+      "My Hope Is Built / The Solid Rock"
+    ],
+    "count": 7,
+    "dates": [
+      "2024-12-08",
+      "2025-01-05",
+      "2025-02-16",
+      "2025-05-25",
+      "2025-09-28",
+      "2025-11-02",
+      "2026-01-18"
+    ],
+    "slots": {
+      "pre-sermon": 4,
+      "opening": 3
+    },
+    "last_sung": "2026-01-18"
+  },
+  "O Praise the Name (Anastasis)": {
+    "canonical_title": "O Praise the Name (Anastasis)",
+    "variants": [
+      "O Praise the Name (Anastasis)"
+    ],
+    "count": 2,
+    "dates": [
+      "2026-01-25",
+      "2026-02-08"
+    ],
+    "slots": {
+      "opening": 1,
+      "pre-sermon": 1
+    },
+    "last_sung": "2026-02-08"
+  },
+  "All I Have is Christ": {
+    "canonical_title": "All I Have is Christ",
+    "variants": [
+      "All I have is Christ",
+      "All I Have Is Christ",
+      "All I Have is Christ"
+    ],
+    "count": 6,
+    "dates": [
+      "2024-08-25",
+      "2025-03-30",
+      "2025-06-22",
+      "2026-01-25",
+      "2026-02-01",
+      "2026-03-22"
+    ],
+    "slots": {
+      "opening": 1,
+      "closing": 5
+    },
+    "last_sung": "2026-03-22"
+  },
+  "Christ Our Hope in Life and Death": {
+    "canonical_title": "Christ Our Hope in Life and Death",
+    "variants": [
+      "Christ our Hope In Life and Death",
+      "Christ Our Hope in Life and Death",
+      "Christ Our Hope In Life And Death"
+    ],
+    "count": 9,
+    "dates": [
+      "2024-10-06",
+      "2024-12-08",
+      "2025-01-05",
+      "2025-02-23",
+      "2025-04-18",
+      "2025-09-14",
+      "2025-09-21",
+      "2026-01-25",
+      "2026-04-05"
+    ],
+    "slots": {
+      "pre-sermon": 1,
+      "closing": 4,
+      "opening": 4
+    },
+    "last_sung": "2026-04-05"
+  },
+  "We Are The Church": {
+    "canonical_title": "We Are The Church",
+    "variants": [
+      "We Are The Church"
+    ],
+    "count": 8,
+    "dates": [
+      "2024-10-06",
+      "2024-10-13",
+      "2024-10-20",
+      "2024-10-27",
+      "2026-02-01",
+      "2026-02-08",
+      "2026-02-15",
+      "2026-02-22"
+    ],
+    "slots": {
+      "kids": 8
+    },
+    "last_sung": "2026-02-22"
+  },
+  "Beautiful Saviour": {
+    "canonical_title": "Beautiful Saviour",
+    "variants": [
+      "Beautiful Saviour",
+      "Beautiful Saviour (Planetshakers)"
+    ],
+    "count": 6,
+    "dates": [
+      "2025-01-19",
+      "2025-02-23",
+      "2025-06-22",
+      "2025-08-31",
+      "2025-09-14",
+      "2026-02-08"
+    ],
+    "slots": {
+      "opening": 4,
+      "pre-sermon": 2
+    },
+    "last_sung": "2026-02-08"
+  },
+  "Hymn of the Saviour": {
+    "canonical_title": "Hymn of the Saviour",
+    "variants": [
+      "Hymn of Our Saviour",
+      "Hymn of the Saviour"
+    ],
+    "count": 8,
+    "dates": [
+      "2024-07-21",
+      "2024-09-15",
+      "2025-01-26",
+      "2025-02-02",
+      "2025-04-18",
+      "2025-08-10",
+      "2025-12-14",
+      "2026-02-08"
+    ],
+    "slots": {
+      "opening": 5,
+      "closing": 1,
+      "pre-sermon": 2
+    },
+    "last_sung": "2026-02-08"
+  },
+  "Undivided": {
+    "canonical_title": "Undivided",
+    "variants": [
+      "Undivided"
+    ],
+    "count": 10,
+    "dates": [
+      "2024-09-01",
+      "2024-09-15",
+      "2024-12-08",
+      "2024-12-15",
+      "2024-12-29",
+      "2025-02-09",
+      "2025-04-27",
+      "2025-07-27",
+      "2025-10-12",
+      "2026-02-08"
+    ],
+    "slots": {
+      "closing": 9,
+      "post-sermon": 1
+    },
+    "last_sung": "2026-02-08"
+  },
+  "Oh How Good It Is": {
+    "canonical_title": "Oh How Good It Is",
+    "variants": [
+      "Oh How good it is",
+      "O How Good It Is",
+      "O How Good it Is",
+      "Oh How Good It Is"
+    ],
+    "count": 6,
+    "dates": [
+      "2024-07-28",
+      "2025-02-09",
+      "2025-06-08",
+      "2025-07-06",
+      "2026-02-15",
+      "2026-03-29"
+    ],
+    "slots": {
+      "opening": 2,
+      "pre-sermon": 1,
+      "closing": 3
+    },
+    "last_sung": "2026-03-29"
+  },
+  "We Are One (Gathered Together)": {
+    "canonical_title": "We Are One (Gathered Together)",
+    "variants": [
+      "We are one",
+      "We are One",
+      "We Are One (Gathered Together) - Edgar",
+      "We are One (Gathered Together)"
+    ],
+    "count": 5,
+    "dates": [
+      "2024-07-28",
+      "2024-08-18",
+      "2025-07-06",
+      "2026-02-15",
+      "2026-03-29"
+    ],
+    "slots": {
+      "opening": 4,
+      "closing": 1
+    },
+    "last_sung": "2026-03-29"
+  },
+  "O Church Arise": {
+    "canonical_title": "O Church Arise",
+    "variants": [
+      "O Church Arise",
+      "Oh Church Arise"
+    ],
+    "count": 6,
+    "dates": [
+      "2024-08-18",
+      "2024-09-15",
+      "2025-09-07",
+      "2025-10-05",
+      "2025-10-26",
+      "2026-02-15"
+    ],
+    "slots": {
+      "pre-sermon": 2,
+      "closing": 3,
+      "opening": 1
+    },
+    "last_sung": "2026-02-15"
+  },
+  "Let the Nations Be Glad": {
+    "canonical_title": "Let the Nations Be Glad",
+    "variants": [
+      "Let the Nations Be Glad",
+      "Let the Nations be Glad"
+    ],
+    "count": 6,
+    "dates": [
+      "2025-01-05",
+      "2025-09-28",
+      "2025-10-05",
+      "2025-11-16",
+      "2025-11-23",
+      "2026-02-15"
+    ],
+    "slots": {
+      "closing": 6
+    },
+    "last_sung": "2026-02-15"
+  },
+  "All Sufficient Merit": {
+    "canonical_title": "All Sufficient Merit",
+    "variants": [
+      "All Sufficient Merit"
+    ],
+    "count": 2,
+    "dates": [
+      "2026-02-22",
+      "2026-03-08"
+    ],
+    "slots": {
+      "closing": 2
+    },
+    "last_sung": "2026-03-08"
+  },
+  "Crown Him with Many Crowns": {
+    "canonical_title": "Crown Him with Many Crowns",
+    "variants": [
+      "Crown Him with Many Crowns by EMU",
+      "Crown him with many Crowns",
+      "Crown Him with Many Crowns",
+      "Crown Him With Many Crowns",
+      "Crown Him with many Crowns"
+    ],
+    "count": 9,
+    "dates": [
+      "2024-09-22",
+      "2025-01-19",
+      "2025-03-02",
+      "2025-04-20",
+      "2025-06-22",
+      "2025-08-17",
+      "2025-11-09",
+      "2026-03-01",
+      "2026-04-26"
+    ],
+    "slots": {
+      "opening": 8,
+      "pre-sermon": 1
+    },
+    "last_sung": "2026-04-26"
+  },
+  "Above All": {
+    "canonical_title": "Above All",
+    "variants": [
+      "Above All by Lenny Leblanc",
+      "Above all",
+      "Above All"
+    ],
+    "count": 3,
+    "dates": [
+      "2026-03-01",
+      "2026-04-19",
+      "2026-04-26"
+    ],
+    "slots": {
+      "opening": 2,
+      "closing": 1
+    },
+    "last_sung": "2026-04-26"
+  },
+  "Father You Are King of Heaven": {
+    "canonical_title": "Father You Are King of Heaven",
+    "variants": [
+      "Father You Are King of Heaven"
+    ],
+    "count": 5,
+    "dates": [
+      "2026-03-01",
+      "2026-03-08",
+      "2026-03-15",
+      "2026-03-22",
+      "2026-03-29"
+    ],
+    "slots": {
+      "kids": 5
+    },
+    "last_sung": "2026-03-29"
+  },
+  "King of Kings, Majesty": {
+    "canonical_title": "King of Kings, Majesty",
+    "variants": [
+      "King of King, Majesty",
+      "King of Kings, Majesty"
+    ],
+    "count": 3,
+    "dates": [
+      "2024-09-22",
+      "2025-01-19",
+      "2026-03-01"
+    ],
+    "slots": {
+      "pre-sermon": 1,
+      "opening": 1,
+      "closing": 1
+    },
+    "last_sung": "2026-03-01"
+  },
+  "Name Above All Names": {
+    "canonical_title": "Name Above All Names",
+    "variants": [
+      "Name Above All Names",
+      "Name Above All Names?"
+    ],
+    "count": 3,
+    "dates": [
+      "2025-01-26",
+      "2025-02-02",
+      "2026-03-01"
+    ],
+    "slots": {
+      "closing": 2,
+      "opening": 1
+    },
+    "last_sung": "2026-03-01"
+  },
+  "Come Praise and Glorify": {
+    "canonical_title": "Come Praise and Glorify",
+    "variants": [
+      "Come Praise & Glorify",
+      "Come Praise and Glorify"
+    ],
+    "count": 9,
+    "dates": [
+      "2024-07-14",
+      "2024-07-21",
+      "2024-08-04",
+      "2024-08-11",
+      "2024-09-15",
+      "2024-12-29",
+      "2025-08-10",
+      "2025-09-28",
+      "2026-03-08"
+    ],
+    "slots": {
+      "opening": 7,
+      "closing": 2
+    },
+    "last_sung": "2026-03-08"
+  },
+  "His Robes For Mine": {
+    "canonical_title": "His Robes For Mine",
+    "variants": [
+      "His Robes For Mine"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-03-15"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2026-03-15"
+  },
+  "We Declare Emu": {
+    "canonical_title": "We Declare Emu",
+    "variants": [
+      "We Declare Emu"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-03-29"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2026-03-29"
+  },
+  "This I Believe (The Creed)": {
+    "canonical_title": "This I Believe (The Creed)",
+    "variants": [
+      "This I Believe (The Creed) Hillsong"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-03-29"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2026-03-29"
+  },
+  "How Great is Our God": {
+    "canonical_title": "How Great is Our God",
+    "variants": [
+      "How Great is Our God",
+      "How great is our God"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-11-09",
+      "2026-04-03"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2026-04-03"
+  },
+  "Come Thou Fount / Nothing But The Blood": {
+    "canonical_title": "Come Thou Fount / Nothing But The Blood",
+    "variants": [
+      "Come Thou Fount of Every Blessing / Nothing But The Blood of Jesus"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-04-03"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2026-04-03"
+  },
+  "Near the Cross": {
+    "canonical_title": "Near the Cross",
+    "variants": [
+      "Near the Cross"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-04-03"
+    ],
+    "slots": {
+      "pre-sermon": 1
+    },
+    "last_sung": "2026-04-03"
+  },
+  "How Deep the Father's Love For Us": {
+    "canonical_title": "How Deep the Father's Love For Us",
+    "variants": [
+      "How Deep the Father's Love For Us",
+      "How Deep the Father's Love for us",
+      "How Deep the Father's Love for Us",
+      "How deep the father's love for us"
+    ],
+    "count": 6,
+    "dates": [
+      "2024-11-10",
+      "2025-03-09",
+      "2025-04-13",
+      "2025-05-11",
+      "2025-06-15",
+      "2026-04-03"
+    ],
+    "slots": {
+      "closing": 2,
+      "opening": 3,
+      "pre-sermon": 1
+    },
+    "last_sung": "2026-04-03"
+  },
+  "Jesus Paid It All": {
+    "canonical_title": "Jesus Paid It All",
+    "variants": [
+      "Jesus paid it all",
+      "Jesus Paid It All"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-01-26",
+      "2026-04-12"
+    ],
+    "slots": {
+      "opening": 1,
+      "pre-sermon": 1
+    },
+    "last_sung": "2026-04-12"
+  },
+  "Resurrecting": {
+    "canonical_title": "Resurrecting",
+    "variants": [
+      "Resurrecting"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-04-12"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2026-04-12"
+  },
+  "God Speaks": {
+    "canonical_title": "God Speaks",
+    "variants": [
+      "God Speaks"
+    ],
+    "count": 3,
+    "dates": [
+      "2026-04-12",
+      "2026-04-19",
+      "2026-04-26"
+    ],
+    "slots": {
+      "kids": 3
+    },
+    "last_sung": "2026-04-26"
+  },
+  "For You Alone Are Worthy": {
+    "canonical_title": "For You Alone Are Worthy",
+    "variants": [
+      "For you alone are worthy",
+      "For you Alone"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-06-08",
+      "2026-04-19"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2026-04-19"
+  },
+  "Amazing Grace": {
+    "canonical_title": "Amazing Grace",
+    "variants": [
+      "Amazing grace (My chains are gone)",
+      "Amazing Grace"
+    ],
+    "count": 4,
+    "dates": [
+      "2024-10-20",
+      "2025-06-29",
+      "2025-12-07",
+      "2026-04-19"
+    ],
+    "slots": {
+      "pre-sermon": 1,
+      "opening": 2,
+      "closing": 1
+    },
+    "last_sung": "2026-04-19"
+  },
+  "Jesus, I My Cross Have Taken": {
+    "canonical_title": "Jesus, I My Cross Have Taken",
+    "variants": [
+      "Jesus, I my cross have taken"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-04-19"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2026-04-19"
+  },
+  "Behold Our God": {
+    "canonical_title": "Behold Our God",
+    "variants": [
+      "Behold our God"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-04-26"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2026-04-26"
+  },
+  "Grace Awaiting Me": {
+    "canonical_title": "Grace Awaiting Me",
+    "variants": [
+      "Grace Awaiting Me",
+      "Grace awaiting me"
+    ],
+    "count": 4,
+    "dates": [
+      "2024-07-07",
+      "2024-11-10",
+      "2025-03-09",
+      "2025-12-14"
+    ],
+    "slots": {
+      "opening": 3,
+      "closing": 1
+    },
+    "last_sung": "2025-12-14"
+  },
+  "His Mercy is More": {
+    "canonical_title": "His Mercy is More",
+    "variants": [
+      "His Mercy is More",
+      "His Mercy Is More"
+    ],
+    "count": 5,
+    "dates": [
+      "2024-07-07",
+      "2024-07-21",
+      "2024-11-03",
+      "2024-11-10",
+      "2025-06-15"
+    ],
+    "slots": {
+      "opening": 2,
+      "post-communion": 1,
+      "closing": 2
+    },
+    "last_sung": "2025-06-15"
+  },
+  "Jesus Came To Earth": {
+    "canonical_title": "Jesus Came To Earth",
+    "variants": [
+      "Jesus Came To Earth",
+      "Jesus Came to Earth"
+    ],
+    "count": 9,
+    "dates": [
+      "2024-07-07",
+      "2024-07-14",
+      "2024-07-21",
+      "2024-07-28",
+      "2025-06-01",
+      "2025-06-08",
+      "2025-06-15",
+      "2025-06-22",
+      "2025-06-29"
+    ],
+    "slots": {
+      "kids": 9
+    },
+    "last_sung": "2025-06-29"
+  },
+  "The Love of God": {
+    "canonical_title": "The Love of God",
+    "variants": [
+      "Love of God",
+      "The Love of God (Hymn)"
+    ],
+    "count": 2,
+    "dates": [
+      "2024-07-07",
+      "2025-05-11"
+    ],
+    "slots": {
+      "pre-sermon": 1,
+      "closing": 1
+    },
+    "last_sung": "2025-05-11"
+  },
+  "Speak O Lord": {
+    "canonical_title": "Speak O Lord",
+    "variants": [
+      "Speak O Lord",
+      "Speak o Lord"
+    ],
+    "count": 6,
+    "dates": [
+      "2024-07-14",
+      "2024-08-18",
+      "2024-09-08",
+      "2024-11-24",
+      "2025-03-16",
+      "2025-08-24"
+    ],
+    "slots": {
+      "pre-sermon": 5,
+      "opening": 1
+    },
+    "last_sung": "2025-08-24"
+  },
+  "Be Thou My Vision": {
+    "canonical_title": "Be Thou My Vision",
+    "variants": [
+      "Be Thou My Vision",
+      "Be thou my vision"
+    ],
+    "count": 3,
+    "dates": [
+      "2024-07-14",
+      "2025-02-23",
+      "2025-04-13"
+    ],
+    "slots": {
+      "closing": 1,
+      "dedication": 1,
+      "opening": 1
+    },
+    "last_sung": "2025-04-13"
+  },
+  "Man of Sorrow (Hillsong)": {
+    "canonical_title": "Man of Sorrow (Hillsong)",
+    "variants": [
+      "Man of Sorrow - Hillsong"
+    ],
+    "count": 1,
+    "dates": [
+      "2024-07-28"
+    ],
+    "slots": {
+      "post-communion": 1
+    },
+    "last_sung": "2024-07-28"
+  },
+  "Rejoice": {
+    "canonical_title": "Rejoice",
+    "variants": [
+      "Rejoice",
+      "Rejoice by Getty"
+    ],
+    "count": 5,
+    "dates": [
+      "2024-08-04",
+      "2024-10-13",
+      "2024-11-03",
+      "2024-11-24",
+      "2025-06-15"
+    ],
+    "slots": {
+      "opening": 4,
+      "closing": 1
+    },
+    "last_sung": "2025-06-15"
+  },
+  "Blessed Assurance": {
+    "canonical_title": "Blessed Assurance",
+    "variants": [
+      "Blessed Assurance"
+    ],
+    "count": 3,
+    "dates": [
+      "2024-08-04",
+      "2024-12-29",
+      "2025-04-06"
+    ],
+    "slots": {
+      "post-communion": 1,
+      "pre-sermon": 1,
+      "opening": 1
+    },
+    "last_sung": "2025-04-06"
+  },
+  "God's Great Family": {
+    "canonical_title": "God's Great Family",
+    "variants": [
+      "God's Great Family"
+    ],
+    "count": 8,
+    "dates": [
+      "2024-08-04",
+      "2024-08-11",
+      "2024-08-18",
+      "2024-08-25",
+      "2025-09-07",
+      "2025-09-14",
+      "2025-09-21",
+      "2025-09-28"
+    ],
+    "slots": {
+      "kids": 8
+    },
+    "last_sung": "2025-09-28"
+  },
+  "To God Be the Glory": {
+    "canonical_title": "To God Be the Glory",
+    "variants": [
+      "To God Be the Glory"
+    ],
+    "count": 1,
+    "dates": [
+      "2024-08-11"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2024-08-11"
+  },
+  "Oh the Deep, Deep Love of Jesus": {
+    "canonical_title": "Oh the Deep, Deep Love of Jesus",
+    "variants": [
+      "Oh the Deep, Deep Love of Jesus"
+    ],
+    "count": 3,
+    "dates": [
+      "2024-08-11",
+      "2024-10-20",
+      "2024-11-03"
+    ],
+    "slots": {
+      "opening": 2,
+      "pre-sermon": 1
+    },
+    "last_sung": "2024-11-03"
+  },
+  "We Declare": {
+    "canonical_title": "We Declare",
+    "variants": [
+      "We Declare"
+    ],
+    "count": 4,
+    "dates": [
+      "2024-08-18",
+      "2025-06-01",
+      "2025-07-06",
+      "2025-10-05"
+    ],
+    "slots": {
+      "opening": 4
+    },
+    "last_sung": "2025-10-05"
+  },
+  "Praise to the Lord, the Almighty": {
+    "canonical_title": "Praise to the Lord, the Almighty",
+    "variants": [
+      "Praise to the Lord, the Almighty"
+    ],
+    "count": 2,
+    "dates": [
+      "2024-08-25",
+      "2025-05-04"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2025-05-04"
+  },
+  "I Give You My Heart": {
+    "canonical_title": "I Give You My Heart",
+    "variants": [
+      "I Give You My Heart"
+    ],
+    "count": 1,
+    "dates": [
+      "2024-08-25"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2024-08-25"
+  },
+  "I Have Decided to Follow Jesus": {
+    "canonical_title": "I Have Decided to Follow Jesus",
+    "variants": [
+      "I Have Decided to Follow Jesus"
+    ],
+    "count": 1,
+    "dates": [
+      "2024-08-25"
+    ],
+    "slots": {
+      "pre-sermon": 1
+    },
+    "last_sung": "2024-08-25"
+  },
+  "Lay Me Down": {
+    "canonical_title": "Lay Me Down",
+    "variants": [
+      "Lay Me Down"
+    ],
+    "count": 1,
+    "dates": [
+      "2024-09-01"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2024-09-01"
+  },
+  "Take My Life and Let It Be": {
+    "canonical_title": "Take My Life and Let It Be",
+    "variants": [
+      "Take My Life and Let It Be",
+      "Take my Life and Let it Be"
+    ],
+    "count": 2,
+    "dates": [
+      "2024-09-01",
+      "2025-04-27"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2025-04-27"
+  },
+  "This Life I Live": {
+    "canonical_title": "This Life I Live",
+    "variants": [
+      "This Life I Live"
+    ],
+    "count": 2,
+    "dates": [
+      "2024-09-01",
+      "2025-03-02"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2025-03-02"
+  },
+  "W-I-S-D-O-M": {
+    "canonical_title": "W-I-S-D-O-M",
+    "variants": [
+      "W-I-S-D-O-M"
+    ],
+    "count": 5,
+    "dates": [
+      "2024-09-01",
+      "2024-09-08",
+      "2024-09-15",
+      "2024-09-22",
+      "2024-09-29"
+    ],
+    "slots": {
+      "kids": 5
+    },
+    "last_sung": "2024-09-29"
+  },
+  "All Hail the Power of Jesus' Name": {
+    "canonical_title": "All Hail the Power of Jesus' Name",
+    "variants": [
+      "All Hail the Power of Jesus' Name"
+    ],
+    "count": 2,
+    "dates": [
+      "2024-09-08",
+      "2025-08-24"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2025-08-24"
+  },
+  "Christ Be Magnified": {
+    "canonical_title": "Christ Be Magnified",
+    "variants": [
+      "Christ Be Magnified"
+    ],
+    "count": 1,
+    "dates": [
+      "2024-09-08"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2024-09-08"
+  },
+  "Turn Your Eyes": {
+    "canonical_title": "Turn Your Eyes",
+    "variants": [
+      "Turn Your Eyes"
+    ],
+    "count": 1,
+    "dates": [
+      "2024-09-08"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2024-09-08"
+  },
+  "Your Word": {
+    "canonical_title": "Your Word",
+    "variants": [
+      "Your Word"
+    ],
+    "count": 2,
+    "dates": [
+      "2024-09-22",
+      "2025-11-02"
+    ],
+    "slots": {
+      "pre-sermon": 1,
+      "closing": 1
+    },
+    "last_sung": "2025-11-02"
+  },
+  "This Is Amazing Grace": {
+    "canonical_title": "This Is Amazing Grace",
+    "variants": [
+      "This is Amazing Grace"
+    ],
+    "count": 3,
+    "dates": [
+      "2024-09-29",
+      "2024-10-20",
+      "2025-12-14"
+    ],
+    "slots": {
+      "opening": 3
+    },
+    "last_sung": "2025-12-14"
+  },
+  "What Grace is Mine": {
+    "canonical_title": "What Grace is Mine",
+    "variants": [
+      "What Grace is Mine"
+    ],
+    "count": 1,
+    "dates": [
+      "2024-09-29"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2024-09-29"
+  },
+  "His Glory and My Good": {
+    "canonical_title": "His Glory and My Good",
+    "variants": [
+      "His Glory and My Good",
+      "His glory and my good",
+      "His Glory and my Good"
+    ],
+    "count": 11,
+    "dates": [
+      "2024-09-29",
+      "2024-10-06",
+      "2024-10-20",
+      "2024-10-27",
+      "2024-11-17",
+      "2024-12-15",
+      "2025-03-09",
+      "2025-04-27",
+      "2025-05-11",
+      "2025-06-08",
+      "2025-08-10"
+    ],
+    "slots": {
+      "closing": 5,
+      "opening": 4,
+      "post-communion": 2
+    },
+    "last_sung": "2025-08-10"
+  },
+  "Ancient Words": {
+    "canonical_title": "Ancient Words",
+    "variants": [
+      "Ancient Words",
+      "Ancient word"
+    ],
+    "count": 4,
+    "dates": [
+      "2024-10-06",
+      "2025-04-27",
+      "2025-09-07",
+      "2025-11-09"
+    ],
+    "slots": {
+      "pre-sermon": 4
+    },
+    "last_sung": "2025-11-09"
+  },
+  "'Tis So Sweet": {
+    "canonical_title": "'Tis So Sweet",
+    "variants": [
+      "Tis so sweet"
+    ],
+    "count": 1,
+    "dates": [
+      "2024-10-13"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2024-10-13"
+  },
+  "Day By Day": {
+    "canonical_title": "Day By Day",
+    "variants": [
+      "Day By Day"
+    ],
+    "count": 1,
+    "dates": [
+      "2024-10-13"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2024-10-13"
+  },
+  "How Great Thou Art": {
+    "canonical_title": "How Great Thou Art",
+    "variants": [
+      "How Great Thou Art"
+    ],
+    "count": 4,
+    "dates": [
+      "2024-10-27",
+      "2024-11-17",
+      "2025-07-20",
+      "2025-07-27"
+    ],
+    "slots": {
+      "opening": 2,
+      "closing": 2
+    },
+    "last_sung": "2025-07-27"
+  },
+  "Sovereign (Tomlin)": {
+    "canonical_title": "Sovereign (Tomlin)",
+    "variants": [
+      "Sovereign",
+      "Sovereign (Tomlin)"
+    ],
+    "count": 2,
+    "dates": [
+      "2024-10-27",
+      "2025-08-24"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2025-08-24"
+  },
+  "Immortal, Invisible, God Only Wise": {
+    "canonical_title": "Immortal, Invisible, God Only Wise",
+    "variants": [
+      "Immortal, Invisible, God Only Wise"
+    ],
+    "count": 1,
+    "dates": [
+      "2024-10-27"
+    ],
+    "slots": {
+      "pre-sermon": 1
+    },
+    "last_sung": "2024-10-27"
+  },
+  "Before the Throne of God Above": {
+    "canonical_title": "Before the Throne of God Above",
+    "variants": [
+      "Before the throne of god above",
+      "Before the throne of God above"
+    ],
+    "count": 2,
+    "dates": [
+      "2024-11-17",
+      "2025-03-23"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2025-03-23"
+  },
+  "10,000 Reasons": {
+    "canonical_title": "10,000 Reasons",
+    "variants": [
+      "10,000 Reasons",
+      "10,000 Reasons (Bless the Lord)",
+      "10,000 Reasons ( Bless the Lord)"
+    ],
+    "count": 3,
+    "dates": [
+      "2024-11-24",
+      "2025-06-08",
+      "2025-08-03"
+    ],
+    "slots": {
+      "opening": 3
+    },
+    "last_sung": "2025-08-03"
+  },
+  "I Stand Amazed": {
+    "canonical_title": "I Stand Amazed",
+    "variants": [
+      "I stand amazed",
+      "I Stand Amazed"
+    ],
+    "count": 2,
+    "dates": [
+      "2024-11-24",
+      "2025-06-29"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2025-06-29"
+  },
+  "In This Book": {
+    "canonical_title": "In This Book",
+    "variants": [
+      "In This Book",
+      "In this book"
+    ],
+    "count": 2,
+    "dates": [
+      "2024-12-08",
+      "2025-05-25"
+    ],
+    "slots": {
+      "pre-sermon": 2
+    },
+    "last_sung": "2025-05-25"
+  },
+  "Psalm 23": {
+    "canonical_title": "Psalm 23",
+    "variants": [
+      "Psalm 23 ( Shane and Shane)",
+      "Psalm 23",
+      "Psalm 23 - Shane and Shane"
+    ],
+    "count": 3,
+    "dates": [
+      "2024-12-15",
+      "2025-03-23",
+      "2025-05-04"
+    ],
+    "slots": {
+      "opening": 2,
+      "closing": 1
+    },
+    "last_sung": "2025-05-04"
+  },
+  "I Will Trust My Saviour Jesus": {
+    "canonical_title": "I Will Trust My Saviour Jesus",
+    "variants": [
+      "I Will Trust My Saviour Jesus"
+    ],
+    "count": 5,
+    "dates": [
+      "2024-12-15",
+      "2025-02-16",
+      "2025-05-18",
+      "2025-06-01",
+      "2025-09-14"
+    ],
+    "slots": {
+      "opening": 3,
+      "closing": 1,
+      "pre-sermon": 1
+    },
+    "last_sung": "2025-09-14"
+  },
+  "Joy to the World": {
+    "canonical_title": "Joy to the World",
+    "variants": [
+      "Joy to the World",
+      "Joy to the World (Shout For Joy)",
+      "Joy To The World- Chris Tomlin"
+    ],
+    "count": 3,
+    "dates": [
+      "2024-12-22",
+      "2024-12-29",
+      "2025-12-21"
+    ],
+    "slots": {
+      "opening": 2,
+      "closing": 1
+    },
+    "last_sung": "2025-12-21"
+  },
+  "Hark! The Herald Angels Sing": {
+    "canonical_title": "Hark! The Herald Angels Sing",
+    "variants": [
+      "Hark! The Herald Angels Sing"
+    ],
+    "count": 2,
+    "dates": [
+      "2024-12-22",
+      "2025-12-21"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2025-12-21"
+  },
+  "O Holy Night": {
+    "canonical_title": "O Holy Night",
+    "variants": [
+      "O Holy Night"
+    ],
+    "count": 1,
+    "dates": [
+      "2024-12-22"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2024-12-22"
+  },
+  "The Joy of Christmas": {
+    "canonical_title": "The Joy of Christmas",
+    "variants": [
+      "The Joy of Christmas"
+    ],
+    "count": 1,
+    "dates": [
+      "2024-12-22"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2024-12-22"
+  },
+  "Calling All Sinners": {
+    "canonical_title": "Calling All Sinners",
+    "variants": [
+      "Calling All Sinners"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-01-05"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-01-05"
+  },
+  "Just the Way God Wanted Us to Be": {
+    "canonical_title": "Just the Way God Wanted Us to Be",
+    "variants": [
+      "Just the Way God Wanted Us to Be"
+    ],
+    "count": 4,
+    "dates": [
+      "2025-01-05",
+      "2025-01-12",
+      "2025-01-19",
+      "2025-01-26"
+    ],
+    "slots": {
+      "kids": 4
+    },
+    "last_sung": "2025-01-26"
+  },
+  "Standing on the Promises": {
+    "canonical_title": "Standing on the Promises",
+    "variants": [
+      "Standing on the Promises of Christ my King"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-01-12"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2025-01-12"
+  },
+  "Majesty": {
+    "canonical_title": "Majesty",
+    "variants": [
+      "Majesty"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-01-19"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-01-19"
+  },
+  "There is a Fountain": {
+    "canonical_title": "There is a Fountain",
+    "variants": [
+      "There is a Fountain"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-01-26"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2025-01-26"
+  },
+  "Thank You Jesus": {
+    "canonical_title": "Thank You Jesus",
+    "variants": [
+      "Thank you Jesus"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-02-02"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-02-02"
+  },
+  "My God Is A Very, Very, Very Big God": {
+    "canonical_title": "My God Is A Very, Very, Very Big God",
+    "variants": [
+      "My God Is A Very, Very, Very Big God"
+    ],
+    "count": 3,
+    "dates": [
+      "2025-02-02",
+      "2025-02-09",
+      "2025-02-16"
+    ],
+    "slots": {
+      "kids": 3
+    },
+    "last_sung": "2025-02-16"
+  },
+  "Build My Life": {
+    "canonical_title": "Build My Life",
+    "variants": [
+      "Build My Life"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-02-09"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-02-09"
+  },
+  "I Surrender All": {
+    "canonical_title": "I Surrender All",
+    "variants": [
+      "I Surrender All"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-02-09"
+    ],
+    "slots": {
+      "pre-sermon": 1
+    },
+    "last_sung": "2025-02-09"
+  },
+  "The Servant King": {
+    "canonical_title": "The Servant King",
+    "variants": [
+      "The Servant King"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-02-16"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-02-16"
+  },
+  "The King in All His Beauty": {
+    "canonical_title": "The King in All His Beauty",
+    "variants": [
+      "The King in All His Beauty"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-02-16",
+      "2025-03-02"
+    ],
+    "slots": {
+      "opening": 1,
+      "closing": 1
+    },
+    "last_sung": "2025-03-02"
+  },
+  "Mighty, Mighty Saviour": {
+    "canonical_title": "Mighty, Mighty Saviour",
+    "variants": [
+      "Mighty, Mighty Saviour"
+    ],
+    "count": 5,
+    "dates": [
+      "2025-03-02",
+      "2025-03-09",
+      "2025-03-16",
+      "2025-03-23",
+      "2025-03-30"
+    ],
+    "slots": {
+      "kids": 5
+    },
+    "last_sung": "2025-03-30"
+  },
+  "Shepherd of My Soul": {
+    "canonical_title": "Shepherd of My Soul",
+    "variants": [
+      "Shepherd of My Soul"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-03-02"
+    ],
+    "slots": {
+      "pre-sermon": 1
+    },
+    "last_sung": "2025-03-02"
+  },
+  "Grace and Peace (Sovereign Grace)": {
+    "canonical_title": "Grace and Peace (Sovereign Grace)",
+    "variants": [
+      "Grace and Peace (Sovereign Grace)"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-03-16"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2025-03-16"
+  },
+  "We Give Thanks": {
+    "canonical_title": "We Give Thanks",
+    "variants": [
+      "We give thanks"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-03-23"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-03-23"
+  },
+  "Only a Holy God": {
+    "canonical_title": "Only a Holy God",
+    "variants": [
+      "Only a Holy God",
+      "Only A Holy God"
+    ],
+    "count": 5,
+    "dates": [
+      "2025-03-30",
+      "2025-04-06",
+      "2025-07-13",
+      "2025-07-27",
+      "2025-08-17"
+    ],
+    "slots": {
+      "opening": 4,
+      "closing": 1
+    },
+    "last_sung": "2025-08-17"
+  },
+  "Holy Holy Holy": {
+    "canonical_title": "Holy Holy Holy",
+    "variants": [
+      "Holy Holy Holy"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-03-30",
+      "2025-07-27"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2025-07-27"
+  },
+  "More Like Jesus": {
+    "canonical_title": "More Like Jesus",
+    "variants": [
+      "More like Jesus"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-04-06"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-04-06"
+  },
+  "Jesus Loves Me": {
+    "canonical_title": "Jesus Loves Me",
+    "variants": [
+      "Jesus loves me",
+      "Jesus Loves Me"
+    ],
+    "count": 4,
+    "dates": [
+      "2025-04-06",
+      "2025-04-13",
+      "2025-04-20",
+      "2025-04-27"
+    ],
+    "slots": {
+      "kids": 4
+    },
+    "last_sung": "2025-04-27"
+  },
+  "How Great is Our God / How Great Thou Art": {
+    "canonical_title": "How Great is Our God / How Great Thou Art",
+    "variants": [
+      "How great is our God/ how great thou art"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-04-13"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-04-13"
+  },
+  "The Goodness of Jesus": {
+    "canonical_title": "The Goodness of Jesus",
+    "variants": [
+      "The Goodness of Jesus"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-04-18"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-04-18"
+  },
+  "Power of the Cross": {
+    "canonical_title": "Power of the Cross",
+    "variants": [
+      "Power of the Cross"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-04-18",
+      "2025-10-26"
+    ],
+    "slots": {
+      "kids": 1,
+      "opening": 1
+    },
+    "last_sung": "2025-10-26"
+  },
+  "Because He Lives": {
+    "canonical_title": "Because He Lives",
+    "variants": [
+      "Because He Lives"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-04-20"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-04-20"
+  },
+  "See What A Morning": {
+    "canonical_title": "See What A Morning",
+    "variants": [
+      "See What A Morning"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-04-20"
+    ],
+    "slots": {
+      "pre-sermon": 1
+    },
+    "last_sung": "2025-04-20"
+  },
+  "Come Thou Fount of Every Blessing": {
+    "canonical_title": "Come Thou Fount of Every Blessing",
+    "variants": [
+      "Come Thou Fount of Every Blessing"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-04-20"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2025-04-20"
+  },
+  "Great is Thy Faithfulness": {
+    "canonical_title": "Great is Thy Faithfulness",
+    "variants": [
+      "Great is Thy Faithfulness"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-05-04"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-05-04"
+  },
+  "To Be Like Jesus": {
+    "canonical_title": "To Be Like Jesus",
+    "variants": [
+      "To Be Like Jesus"
+    ],
+    "count": 4,
+    "dates": [
+      "2025-05-04",
+      "2025-05-11",
+      "2025-05-18",
+      "2025-05-25"
+    ],
+    "slots": {
+      "kids": 4
+    },
+    "last_sung": "2025-05-25"
+  },
+  "Good Good Father": {
+    "canonical_title": "Good Good Father",
+    "variants": [
+      "Good Good Father"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-05-11",
+      "2025-06-15"
+    ],
+    "slots": {
+      "pre-sermon": 1,
+      "opening": 1
+    },
+    "last_sung": "2025-06-15"
+  },
+  "Trust and Obey": {
+    "canonical_title": "Trust and Obey",
+    "variants": [
+      "Trust and Obey"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-05-18",
+      "2025-05-25"
+    ],
+    "slots": {
+      "pre-sermon": 1,
+      "closing": 1
+    },
+    "last_sung": "2025-05-25"
+  },
+  "Guide Me, O My Great Redeemer": {
+    "canonical_title": "Guide Me, O My Great Redeemer",
+    "variants": [
+      "Guide Me, O My Great Redeemer"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-05-18"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2025-05-18"
+  },
+  "You Are My All in All": {
+    "canonical_title": "You Are My All in All",
+    "variants": [
+      "You are my all in all"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-05-25"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-05-25"
+  },
+  "This Is My Father's World": {
+    "canonical_title": "This Is My Father's World",
+    "variants": [
+      "This Is My Father's World"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-06-01"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-06-01"
+  },
+  "Into the Deep": {
+    "canonical_title": "Into the Deep",
+    "variants": [
+      "Into the Deep"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-06-29"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-06-29"
+  },
+  "Welcome to the Family": {
+    "canonical_title": "Welcome to the Family",
+    "variants": [
+      "Welcome to the Family"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-07-06"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-07-06"
+  },
+  "Adopted": {
+    "canonical_title": "Adopted",
+    "variants": [
+      "Adopted"
+    ],
+    "count": 4,
+    "dates": [
+      "2025-07-06",
+      "2025-07-13",
+      "2025-07-20",
+      "2025-07-27"
+    ],
+    "slots": {
+      "kids": 4
+    },
+    "last_sung": "2025-07-27"
+  },
+  "He Will Hold Me Fast": {
+    "canonical_title": "He Will Hold Me Fast",
+    "variants": [
+      "He will hold me fast"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-07-13"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-07-13"
+  },
+  "Here is Love": {
+    "canonical_title": "Here is Love",
+    "variants": [
+      "Here is Love"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-07-13",
+      "2025-10-19"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2025-10-19"
+  },
+  "What Love My God": {
+    "canonical_title": "What Love My God",
+    "variants": [
+      "What Love My God"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-07-13"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2025-07-13"
+  },
+  "O Great God": {
+    "canonical_title": "O Great God",
+    "variants": [
+      "O Great God"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-08-03"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-08-03"
+  },
+  "Tell Them": {
+    "canonical_title": "Tell Them",
+    "variants": [
+      "Tell Them"
+    ],
+    "count": 5,
+    "dates": [
+      "2025-08-03",
+      "2025-08-10",
+      "2025-08-17",
+      "2025-08-24",
+      "2025-08-31"
+    ],
+    "slots": {
+      "kids": 5
+    },
+    "last_sung": "2025-08-31"
+  },
+  "Refiner's Fire": {
+    "canonical_title": "Refiner's Fire",
+    "variants": [
+      "Refiner's Fire"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-08-03",
+      "2025-10-12"
+    ],
+    "slots": {
+      "closing": 1,
+      "pre-sermon": 1
+    },
+    "last_sung": "2025-10-12"
+  },
+  "Psalm 34 (Taste and See)": {
+    "canonical_title": "Psalm 34 (Taste and See)",
+    "variants": [
+      "Psalm 34 (Taste and See)"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-08-17"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-08-17"
+  },
+  "Risen (The Crossing)": {
+    "canonical_title": "Risen (The Crossing)",
+    "variants": [
+      "Risen"
+    ],
+    "count": 3,
+    "dates": [
+      "2025-08-24",
+      "2025-08-31",
+      "2025-09-07"
+    ],
+    "slots": {
+      "closing": 2,
+      "opening": 1
+    },
+    "last_sung": "2025-09-07"
+  },
+  "King of Kings (Hillsong)": {
+    "canonical_title": "King of Kings (Hillsong)",
+    "variants": [
+      "King of Kings (Hillsong)"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-08-31"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-08-31"
+  },
+  "Jesus Reigns (Edgar)": {
+    "canonical_title": "Jesus Reigns (Edgar)",
+    "variants": [
+      "Jesus Reigns (Edgar)",
+      "Jesus Reigns- Edgar song"
+    ],
+    "count": 5,
+    "dates": [
+      "2025-08-31",
+      "2025-09-21",
+      "2025-10-05",
+      "2025-11-02",
+      "2025-12-28"
+    ],
+    "slots": {
+      "opening": 3,
+      "pre-sermon": 1,
+      "closing": 1
+    },
+    "last_sung": "2025-12-28"
+  },
+  "He Lives": {
+    "canonical_title": "He Lives",
+    "variants": [
+      "He Lives"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-09-21"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-09-21"
+  },
+  "Heaven's Home": {
+    "canonical_title": "Heaven's Home",
+    "variants": [
+      "Heaven's Home"
+    ],
+    "count": 4,
+    "dates": [
+      "2025-10-05",
+      "2025-10-12",
+      "2025-10-19",
+      "2025-10-26"
+    ],
+    "slots": {
+      "kids": 4
+    },
+    "last_sung": "2025-10-26"
+  },
+  "Indescribable": {
+    "canonical_title": "Indescribable",
+    "variants": [
+      "Indescribable"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-10-12",
+      "2025-11-16"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2025-11-16"
+  },
+  "God Omniscient, God All Knowing": {
+    "canonical_title": "God Omniscient, God All Knowing",
+    "variants": [
+      "God Omniscient, God All Knowing"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-10-19"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-10-19"
+  },
+  "Goodness of God": {
+    "canonical_title": "Goodness of God",
+    "variants": [
+      "Goodness of God"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-10-19"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-10-19"
+  },
+  "When I Survey the Wondrous Cross": {
+    "canonical_title": "When I Survey the Wondrous Cross",
+    "variants": [
+      "When I Survey the Wondrous Cross - Getty version",
+      "When I Survey the Wondrous Cross"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-10-19",
+      "2025-11-23"
+    ],
+    "slots": {
+      "closing": 1,
+      "opening": 1
+    },
+    "last_sung": "2025-11-23"
+  },
+  "All the World for Jesus": {
+    "canonical_title": "All the World for Jesus",
+    "variants": [
+      "All the World For Jesus",
+      "All the World for Jesus"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-10-26",
+      "2025-11-23"
+    ],
+    "slots": {
+      "closing": 1,
+      "opening": 1
+    },
+    "last_sung": "2025-11-23"
+  },
+  "More Precious Than Gold (Psalm 19)": {
+    "canonical_title": "More Precious Than Gold (Psalm 19)",
+    "variants": [
+      "More Precious Than Gold (Psalm 19)"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-11-02"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-11-02"
+  },
+  "He's Coming Back Again": {
+    "canonical_title": "He's Coming Back Again",
+    "variants": [
+      "He's Coming Back Again"
+    ],
+    "count": 5,
+    "dates": [
+      "2025-11-02",
+      "2025-11-09",
+      "2025-11-16",
+      "2025-11-23",
+      "2025-11-30"
+    ],
+    "slots": {
+      "kids": 5
+    },
+    "last_sung": "2025-11-30"
+  },
+  "You Are God Alone": {
+    "canonical_title": "You Are God Alone",
+    "variants": [
+      "You are God alone"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-11-09"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2025-11-09"
+  },
+  "Living Hope": {
+    "canonical_title": "Living Hope",
+    "variants": [
+      "Living Hope"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-11-16"
+    ],
+    "slots": {
+      "pre-sermon": 1
+    },
+    "last_sung": "2025-11-16"
+  },
+  "Facing a Task Unfinished": {
+    "canonical_title": "Facing a Task Unfinished",
+    "variants": [
+      "Facing a Task Unfinished"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-11-23",
+      "2025-12-14"
+    ],
+    "slots": {
+      "pre-sermon": 1,
+      "closing": 1
+    },
+    "last_sung": "2025-12-14"
+  },
+  "It Came Upon A Midnight Clear": {
+    "canonical_title": "It Came Upon A Midnight Clear",
+    "variants": [
+      "It Came Upon A Midnight Clear"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-12-21"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2025-12-21"
+  },
+  "O Come, All You Unfaithful": {
+    "canonical_title": "O Come, All You Unfaithful",
+    "variants": [
+      "O Come, All You Unfaithful"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-12-21"
+    ],
+    "slots": {
+      "pre-sermon": 1
+    },
+    "last_sung": "2025-12-21"
+  },
+  "Silent Night": {
+    "canonical_title": "Silent Night",
+    "variants": [
+      "Silent Night, Lonely Night"
+    ],
+    "count": 1,
+    "dates": [
+      "2025-12-25"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2025-12-25"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2025-11-23",
+  "passage": "Acts 8:1-25",
+  "theme": "The Gospel Goes Out",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "When I Survey the Wondrous Cross",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "All the World for Jesus",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "He's Coming Back Again",
+      "link": "https://www.awesomecutlery.com/tracks/hes-coming-back-again/",
+      "note": null
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "Facing a Task Unfinished",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "Let the Nations Be Glad",
+      "link": null,
+      "note": null
+    }
+  ]
+}

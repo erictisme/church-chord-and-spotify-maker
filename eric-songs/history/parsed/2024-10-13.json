@@ -1,0 +1,31 @@
+{
+  "date": "2024-10-13",
+  "passage": "Gen 40",
+  "theme": "Trusting God",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "Rejoice",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "Tis so sweet",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "We Are The Church",
+      "link": "https://www.awesomecutlery.com/tracks/we-are-the-church/",
+      "note": "Check link for how to play, chordsheet, etc"
+    },
+    {
+      "slot": "closing",
+      "title": "Day By Day",
+      "link": null,
+      "note": null
+    }
+  ]
+}

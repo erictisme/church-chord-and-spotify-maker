@@ -1,3 +1,12 @@
+---
+title: Still
+artist: Hillsong (Reuben Morgan)
+themes: [trust, surrender, peace]
+pace: slow
+era: contemporary
+key: C
+---
+
 # Still - C
 
 F  Am  c  G x2

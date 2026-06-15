@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-21",
+  "display_date": "21 June 2026",
+  "theme": "Patiently Trust in the Lord",
+  "scripture": "Hab 2:2-5",
+  "slots": [
+    {"section": "Songs", "file": "still-C.md", "key": "C", "note": "be still & know He is God"},
+    {"section": "Songs", "file": null, "key": null, "note": "Our God is for us — confirm exact song & add to library (likely Chris Tomlin, “Our God”)"},
+    {"section": "Kids", "file": "my-god-is-a-very-very-very-big-god-C.md", "key": "C", "note": ""},
+    {"section": "Pre-sermon", "file": "sovereign-D.md", "key": "D", "note": "Chris Tomlin — with me in the storm"},
+    {"section": "Closing", "file": "i-will-trust-my-saviour-jesus-C.md", "key": "C", "note": "CityAlight"}
+  ]
+}

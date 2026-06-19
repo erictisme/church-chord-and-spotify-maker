@@ -1,0 +1,2 @@
+service-builder/spotify_config.json filter=git-crypt diff=git-crypt
+service-builder/.spotify_token_cache filter=git-crypt diff=git-crypt

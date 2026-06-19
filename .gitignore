@@ -1,3 +1,4 @@
 node_modules/
 .DS_Store
 logs/
+# spotify_config.json and .spotify_token_cache are tracked but encrypted via git-crypt

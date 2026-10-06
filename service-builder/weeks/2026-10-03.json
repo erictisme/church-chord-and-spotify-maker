@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-03",
+  "display_date": "3 Oct 2026",
+  "theme": "TBC",
+  "scripture": "TBC",
+  "slots": [
+    {
+      "section": "Songs",
+      "file": "all-my-boast-is-in-jesus-G.md",
+      "key": "G",
+      "note": ""
+    },
+    {
+      "section": "Songs",
+      "file": "resurrecting-F.md",
+      "key": "F",
+      "note": ""
+    },
+    {
+      "section": "Songs",
+      "file": "be-thou-my-vision-norton-hall-C.md",
+      "key": "C",
+      "note": ""
+    },
+    {
+      "section": "Pre-sermon",
+      "file": "this-is-my-fathers-world-G.md",
+      "key": "C",
+      "note": ""
+    },
+    {
+      "section": "Kids",
+      "file": "because-you-first-loved-me-C.md",
+      "key": "C",
+      "note": ""
+    },
+    {
+      "section": "Closing",
+      "file": "all-i-have-is-christ-C.md",
+      "key": "C",
+      "note": ""
+    }
+  ]
+}

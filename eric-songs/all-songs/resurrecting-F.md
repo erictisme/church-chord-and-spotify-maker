@@ -1,3 +1,12 @@
+---
+title: Resurrecting
+artist: Elevation Worship
+themes: [praise, easter]
+pace: medium
+era: contemporary
+key: F
+---
+
 # Resurrecting
 **Key: F**
 **Artist: Elevation Worship**

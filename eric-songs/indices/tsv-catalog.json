@@ -2559,5 +2559,72 @@
     "filename": "my-god-is-a-very-very-very-big-god-C.md",
     "key": "C",
     "source": "eric-archive"
+  },
+  "holy, holy, holy (d)": {
+    "title": "Holy, Holy, Holy",
+    "artist": "Reginald Heber",
+    "era": "Hymn",
+    "pace": "Slow",
+    "themes": [
+      "Awe",
+      "Praise"
+    ],
+    "acoustic": true,
+    "count": "0",
+    "filename": "holy-holy-holy-D.md",
+    "key": "D"
+  },
+  "all my boast is in jesus": {
+    "title": "All My Boast Is In Jesus",
+    "artist": "Keith & Kristyn Getty, Matt Boswell, Matt Papa",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [
+      "Praise",
+      "Edify"
+    ],
+    "acoustic": true,
+    "count": "0",
+    "filename": "all-my-boast-is-in-jesus-G.md",
+    "key": "G"
+  },
+  "be thou my vision": {
+    "title": "Be Thou My Vision",
+    "artist": "Norton Hall Band",
+    "era": "Contemporary",
+    "pace": "Slow",
+    "themes": [
+      "Edify"
+    ],
+    "acoustic": true,
+    "count": "0",
+    "filename": "be-thou-my-vision-norton-hall-C.md",
+    "key": "C"
+  },
+  "this is my father's world": {
+    "title": "This Is My Father's World",
+    "artist": "Mission House",
+    "era": "Contemporary",
+    "pace": "Medium",
+    "themes": [
+      "Praise"
+    ],
+    "acoustic": true,
+    "count": "0",
+    "filename": "this-is-my-fathers-world-G.md",
+    "key": "G"
+  },
+  "because you first loved me": {
+    "title": "Because You First Loved Me",
+    "artist": "Sovereign Grace Music",
+    "era": "Contemporary",
+    "pace": "Fast",
+    "themes": [
+      "Kids"
+    ],
+    "acoustic": true,
+    "count": "0",
+    "filename": "because-you-first-loved-me-C.md",
+    "key": "C"
   }
 }

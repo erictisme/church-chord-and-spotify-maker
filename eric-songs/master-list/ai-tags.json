@@ -1,0 +1,2288 @@
+{
+ "My God Is A Very, Very, Very Big God": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Psalm 23": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Jesus Reigns": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Father You Are King of Heaven": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Tell Them": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Lift up your voices": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Mighty, Mighty Saviour": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": true
+ },
+ "To Be Like Jesus": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Tell It To Jesus": {
+  "theme": "Edify",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Just the Way God Wanted Us to Be": {
+  "theme": "Edify",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "God Speaks": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Above All": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Brick after Brick": {
+  "theme": "Edify",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "For You Alone Are Worthy": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Refiner'S Fire": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "All Sufficient Merit": {
+  "theme": "Cross",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "The King In All His Beauty": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Saved My Soul": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "More Than I Can Bear": {
+  "theme": "Lament",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "God Omniscient, God All Knowing": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Guide Me, O My Great Redeemer": {
+  "theme": "Surrender",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "More Precious Than Gold (Psalm 19)": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "O Great God": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "See What A Morning": {
+  "theme": "Cross",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Silent Night": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "The Church's One Foundation": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Calling All Sinners": {
+  "theme": "Invitation",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "I Give You My Heart": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Jesus, I My Cross Have Taken": {
+  "theme": "Surrender",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Near the Cross": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Standing on the Promises": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Thank You Jesus": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Come Thou Fount / Nothing But The Blood": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Come Thou Fount of Every Blessing": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "For the Cause": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "How Great is Our God / How Great Thou Art": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "It Came Upon A Midnight Clear": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Man of Sorrow (Hillsong)": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "O Come, All You Unfaithful": {
+  "theme": "Invitation",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Savior like a Shepherd lead us": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Welcome to the Family": {
+  "theme": "Edify",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Forever": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Your Glory": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Everlasting God": {
+  "theme": "Edify",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "A Broken Spirit": {
+  "theme": "Confess",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "God Of All My Days": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Mercy": {
+  "theme": "Confess",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "All The Way My Saviour Leads Me": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Like Incense": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Remember Me": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Diamond)": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Glorious Ruins": {
+  "theme": "Edify",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Agnus Dei": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Ressurecting": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "The Table": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "All We Like Sheep": {
+  "theme": "Confess",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "At The Cross": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "In Whom I Can Trust": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Waiting Here For You": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "How Deep The Father'S Love": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "O Lord, You'Re Beautiful": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Rock Of Ages Cleft For Me": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Yes I Will": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I Need Thee Every Hour": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "All Heaven Declares": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Hear Our Praises": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Love On The Line": {
+  "theme": "Edify",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Mighty To Save": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "My Hope Is In You": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Our God Is An Awesome God": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "For Us": {
+  "theme": "Cross",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Worship Script": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "God You Are My God": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "I Could Sing Of Your Love": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Oh Our Lord": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Overcome": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Same Love": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "We Fall Down": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Beautiful Savior": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Brenton Brown - Jesus Take All Of Me (Just As I Am)": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I Have Decided": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I Sing The Mighty Power Of God": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Lead Us Lord": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Worthy": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "You Are The Everlasting God": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "You Hold Me Now-G": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Breathe": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "He Is Exalted": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "He Leadeth Me": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Lord I Lift Your Name On High": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "No Greater Love": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "One Thing Remains": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Only You": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Pursue": {
+  "theme": "Surrender",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Redeemed": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Aa,Ddfed": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "All Hail The Power": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Awesome God": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Better Than Life (Psalm 63)": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Deeper In Love": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Father": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Goodness of God - Bethel": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Oh, But God": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Sheperd": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Worthy Of It All": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Your Steadfast Love": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "It Is Well With My Soul": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Angels we have heard on high": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Come, Now Is The Time To Worship": {
+  "theme": "Invitation",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Glorious Day (Living He Loved Me)": {
+  "theme": "Cross",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Hallelujah (130 Bpm)": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": false
+ },
+ "He Will Carry You": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Holy is the Lord": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I Want To Be Where You Are": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I will trust you in the darkness": {
+  "theme": "Lament",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "One Voice": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "The Wonderful Cross": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Though You Slay Me": {
+  "theme": "Lament",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Way Maker": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "All hail the power of Jesus's name": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "All to Jesus I surrender": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Ancient Of Days": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Arnold": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Be Exalted, O God (A1": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "D F, Defedb": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "G || C | G || C | G || C |": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Holy (Song Of The Ages)": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Holy Holy Holy God": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "I Love To Be In Your Presence (Don Moen)": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Leave More Room": {
+  "theme": "Edify",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Mighty Fortress": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Mighty, Mighty Savior": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Oceans Will Part": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Open Heaven (River Wild)": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Praise God In The Waiting": {
+  "theme": "Edify",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Praise To The Lord": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Psalm 63": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Stay Amazed": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Strongly the first two lines then quiet on the third)": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Sure Foundation": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "The resurrected King is resurrecting me": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "The Time Has Come": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Till I See You – Hillsongs": {
+  "theme": "Edify",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Where, O Grave, Is Your Victory": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "|D . A . |Bm . . A |": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Lord Here We Come": {
+  "theme": "Invitation",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Prepare Him Room": {
+  "theme": "Praise",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "A Pure Heart": {
+  "theme": "Confess",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "All I Need is You": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Ascribe Greatness to our God": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Because You First Loved Me": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Cleanse me": {
+  "theme": "Confess",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "God is able": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "God leads us along": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "He died upon the cross": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Lead Me to the Cross": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Let it be Jesus": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Love Came Down": {
+  "theme": "Cross",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Magnificent": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "On Christ the solid rock i stand": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Rock of ages you will stand": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Shout for joy": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": true
+ },
+ "You are my King": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Your name": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "10,000 Reason": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "A Mighty Fortress Is Our God": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "A.Guitar Lead": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Above All Else": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Agnes Dei": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "All About Jesus": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "All My": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "And we can taste his grace": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Be Exalted, O God": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Behold the glory of the King": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Burn for You by Rivers": {
+  "theme": "Surrender",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "C2 Loud": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "C3 Loud": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Cajon Enter": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Cajon joins in": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Change My Heart, O God": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Change My Heart, O God One Voice": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Come And See": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Comfort, Gain strength, Relate, Renewal of Covenant": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Could Try Rock Too, But Rock Did V1 And V4 Only": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Diamond for first two lines)": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "even when I doubt)": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "even when I fall)": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "even when I'm hurt)": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Facing A Task Finished": {
+  "theme": "Edify",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "God Hath Not Promised": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "God of Miracles Come": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "God Rest Ye Merry Gentlemen": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "God Will Make A Way": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Great Is Thy Faithfulness (C27": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Hallelujah To The King Of Kings": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Hallelujah, What A Saviour! (Clar)": {
+  "theme": "Cross",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "He Knows My Name": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Heaven Is In My Heart": {
+  "theme": "Edify",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "How Long": {
+  "theme": "Lament",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "I Can Only Imagine": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I Don'T Know About Tomorrow": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I Sing Praises To Your Name": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I Sing The Mighty Pow'R Of God": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I Stay Amazed": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I will not fear to meet Him there": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Jehovah Jireh": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Jerusalem B (A capo 2)": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Jesus What A Saviour": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Joyful Joyful": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Let Your Kingdom Come": {
+  "theme": "Invitation",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Lift Your Voices": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Living Water": {
+  "theme": "Invitation",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Look At Each Other": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Lord I Lift Your Name": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Lord, We'Ve Come To Worship": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Love Divine": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Mary'S Boy Child": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Mercy Matt Redman": {
+  "theme": "Confess",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Mood Roughly Same Till Bridge'S “More Than I Need”": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "More Precious Than Silver": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "My heart is filled with thankfulness": {
+  "theme": "Thanks",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "My Hope Is In You - Aaron Shust": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "My Saviour My God": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Nothing in the world I see": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "On Bended Knee": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "On Christ The Solid Rock": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "One Thing": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Only By Grace": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Play Bm at last line)": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Power Of Your Love": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Praise Adonai": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Praise the Lord!": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Precious Lord, Take My Hand": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Psalm 100": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Psalm 125": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Remember Mercy": {
+  "theme": "Confess",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Risen In Christ": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "See A Victory": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "See He Comes": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Softer but fast still Palming Guitar": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Sovereign Chris Tomlin": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Strength Will Rise": {
+  "theme": "Edify",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Thank You For The Cross": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "The God Of Abraham Praise": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "The Lord Almighty Reigns": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Thou has cleansed and sanctified me": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Thou Thyself hast set me free": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Though You Slay Me E": {
+  "theme": "Lament",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Trust and Obey Don Moen": {
+  "theme": "Surrender",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "We are His people D Capo 2": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "We Belong To The Day": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "We Will Not Be Shaken": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Were You There": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "whole band)": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Wonderful Merciful Saviour": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Worhty Is The Lamb": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "x 2)": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "You Alone": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "You'Re Beautiful": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Your Presence is Heaven to me": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "“We” Version Of Bridge": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Our God": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "A quiet time is all I need": {
+  "theme": "Edify",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "All My Hope Is In Jesus": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "All of me": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "All To Us": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "And can it be": {
+  "theme": "Cross",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "As we worship you": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Be Enthroned": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Be Thou My Vision Alt": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Because he lives Crowder": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Behold our God": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Broken Vessels": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "By Faith": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Chris Tomlin": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Christ is Enough for me": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Come behold the wonderous mystery": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Come thou almighty king": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Commune with me": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Crown Him (Majesty)": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "crown him majesty": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Desert Song": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Freely, Freely": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "From the inside out": {
+  "theme": "Surrender",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Gethsemane": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Glory to his name": {
+  "theme": "Cross",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Go-And-Make-Disciples-lead": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "God is Good": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "God Made Roses": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "God you are so good": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Great are you lord - Don Moen": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Guide me O thou Great Jehovah": {
+  "theme": "Surrender",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Have I done my best for Jesus": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Have it all & Heres my heart medley": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "He Hideth my soul": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Hear Me, Lord": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Heaven came down": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Here I am to Worship + call": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Here with You": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "How many kings": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Hymn of the Saviour: Emu Music": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "I am strong": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "I am thine o lord": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I Am Who You Say I Am": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I just want to be where you are": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I lift My Hands": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "I WANT TO KNOW YOU": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "I will rise": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "I worship you Almighty God": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Immortal Invisible": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "In Christ alone - Kristian Stanfill (Default D)": {
+  "theme": "Cross",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "It Is Well With My Soul x 10,000 Reasons": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Jesus loves me - Christ Tomlin": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Jesus Loves Me Traditional": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Jesus Messiah": {
+  "theme": "Cross",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Jesus Name Above All Names": {
+  "theme": "Praise",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Jesus Shall Take the Highest Honour": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Jn 11:25-26 The Lord is My Salvation": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": true,
+  "confident": true
+ },
+ "Joyful Joyful, We Adore Thee (Rend Collective)": {
+  "theme": "Praise",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": true
+ },
+ "KEY": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "King of heaven come": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Lamb of God": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Lead me to calvary": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Leaning on the everlasting arms": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Let them see you in me": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Light of the world": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Love Divine, All Loves Excelling": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Love Lifted Me": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Love song": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Medley - Open the eyes of my heart & All hail the power": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Medley - Peace like a river": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "My God is Real": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "My Tribute": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Nearer my god to thee": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "No other name": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "O come all ye faithful (Chris Tomlin)": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "O Come O Come Emmanuel": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "O Lord My Rock And My Redeemer": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Oceans where feet may fail": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Oh the deep deep love": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Oh what love": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Open the Eyes of My Heart Lord": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Praise the Father Praise the Son by Chris Tomlin": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Psalm 63 Better than life": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Remind Me": {
+  "theme": "Edify",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Seek Ye First": {
+  "theme": "Edify",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Shoulders": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Sovereigh Over Us": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Soverign": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Spirit lead me G)": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Step Up Step Out G)": {
+  "theme": "Declaration",
+  "pace": "Fast",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Sweet Hour of Prayer": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Thank you lord (Gratefully yours)": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Thanks to God": {
+  "theme": "Thanks",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "The Greatest Thing": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "There is a cloud": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "There is none like You": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "There's more": {
+  "theme": "Awe",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "This world is not my home": {
+  "theme": "Edify",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Through it all": {
+  "theme": "Assurance",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Touch Of Heaven Chords": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Trust": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Turn your eyes upon Jesus.doc": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Unless the Lord": {
+  "theme": "Edify",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Walk": {
+  "theme": "Surrender",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": false
+ },
+ "We are an offering": {
+  "theme": "Surrender",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "We are the reason": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "we believe": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "We Need A Silent Night In Here": {
+  "theme": "Praise",
+  "pace": "Medium",
+  "not_a_song": true,
+  "confident": true
+ },
+ "What a friend": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "What Child is This (Chris Tomlin)": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "What Faith Can Do": {
+  "theme": "Declaration",
+  "pace": "Medium",
+  "not_a_song": false,
+  "confident": true
+ },
+ "When God Ran": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "When love crossed over": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "You are my God": {
+  "theme": "Awe",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "You Carry Me": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "You Have Redeemed My Soul": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "You Laid Aside Your Majesty": {
+  "theme": "Cross",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Your grace is sufficient": {
+  "theme": "Assurance",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": true
+ },
+ "Your Kindness": {
+  "theme": "Thanks",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ },
+ "Your Words": {
+  "theme": "Pre-sermon",
+  "pace": "Slow",
+  "not_a_song": false,
+  "confident": false
+ }
+}

@@ -1,0 +1,1577 @@
+{
+ "God's Great Family": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Father You Are King of Heaven": {
+  "artist": "Awesome Cutlery",
+  "hymn": false,
+  "confident": false
+ },
+ "W-I-S-D-O-M": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Lift up your voices": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "All Creatures of Our God and King": {
+  "artist": "Hymns of Grace",
+  "hymn": true,
+  "confident": true
+ },
+ "Jesus Loves Me": {
+  "artist": "Chris Tomlin",
+  "hymn": true,
+  "confident": true
+ },
+ "To Be Like Jesus": {
+  "artist": "Sovereign Grace Music",
+  "hymn": false,
+  "confident": false
+ },
+ "Tell It To Jesus": {
+  "artist": "Indelible Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "Oh the Deep, Deep Love of Jesus": {
+  "artist": "Sovereign Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "For You Alone Are Worthy": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Jesus Strong and Kind": {
+  "artist": "CityAlight",
+  "hymn": false,
+  "confident": true
+ },
+ "All Sufficient Merit": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "His Robes For Mine": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Immortal, Invisible, God Only Wise": {
+  "artist": "Keith & Kristyn Getty",
+  "hymn": true,
+  "confident": true
+ },
+ "God Omniscient, God All Knowing": {
+  "artist": "Matt Boswell",
+  "hymn": false,
+  "confident": false
+ },
+ "Guide Me, O My Great Redeemer": {
+  "artist": "Hymns of Grace",
+  "hymn": true,
+  "confident": true
+ },
+ "More Precious Than Gold (Psalm 19)": {
+  "artist": "Shane & Shane",
+  "hymn": false,
+  "confident": false
+ },
+ "O Great God": {
+  "artist": "Sovereign Grace Music",
+  "hymn": false,
+  "confident": true
+ },
+ "See What A Morning": {
+  "artist": "Keith & Kristyn Getty",
+  "hymn": false,
+  "confident": true
+ },
+ "Silent Night": {
+  "artist": "Chris Tomlin",
+  "hymn": true,
+  "confident": true
+ },
+ "The Church's One Foundation": {
+  "artist": "Indelible Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "Calling All Sinners": {
+  "artist": "Emu Music",
+  "hymn": false,
+  "confident": false
+ },
+ "I Give You My Heart": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Jesus, I My Cross Have Taken": {
+  "artist": "Indelible Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "Near the Cross": {
+  "artist": "Indelible Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "Standing on the Promises": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Thank You Jesus": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": false
+ },
+ "Come Thou Fount / Nothing But The Blood": {
+  "artist": "Chris Tomlin",
+  "hymn": true,
+  "confident": false
+ },
+ "Come Thou Fount of Every Blessing": {
+  "artist": "Chris Tomlin",
+  "hymn": true,
+  "confident": true
+ },
+ "For the Cause": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "How Great is Our God / How Great Thou Art": {
+  "artist": "Chris Tomlin",
+  "hymn": false,
+  "confident": true
+ },
+ "It Came Upon A Midnight Clear": {
+  "artist": "Shane & Shane",
+  "hymn": true,
+  "confident": true
+ },
+ "O Come, All You Unfaithful": {
+  "artist": "Sovereign Grace Music",
+  "hymn": false,
+  "confident": true
+ },
+ "Savior like a Shepherd lead us": {
+  "artist": "Indelible Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "Welcome to the Family": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Forever": {
+  "artist": "Chris Tomlin",
+  "hymn": false,
+  "confident": false
+ },
+ "Jesus We Love You": {
+  "artist": "Bethel Music",
+  "hymn": false,
+  "confident": true
+ },
+ "Nothing But The Blood": {
+  "artist": "Matt Redman",
+  "hymn": true,
+  "confident": true
+ },
+ "A Broken Spirit": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "God Of All My Days": {
+  "artist": "Casting Crowns",
+  "hymn": false,
+  "confident": true
+ },
+ "All The Way My Saviour Leads Me": {
+  "artist": "Indelible Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "Remember Me": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Alabaster Jar": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Jesus Loves Me This I Know": {
+  "artist": "Chris Tomlin",
+  "hymn": true,
+  "confident": true
+ },
+ "Agnus Dei": {
+  "artist": "Michael W. Smith",
+  "hymn": false,
+  "confident": true
+ },
+ "I Surrender": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "My Jesus I Love Thee": {
+  "artist": "Indelible Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "Rock Of Ages": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "All We Like Sheep": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "At The Cross": {
+  "artist": "Chris Tomlin",
+  "hymn": false,
+  "confident": false
+ },
+ "In Whom I Can Trust": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Waiting Here For You": {
+  "artist": "Passion",
+  "hymn": false,
+  "confident": true
+ },
+ "How Deep The Father'S Love": {
+  "artist": "Stuart Townend",
+  "hymn": false,
+  "confident": true
+ },
+ "O Lord, You'Re Beautiful": {
+  "artist": "Keith Green",
+  "hymn": false,
+  "confident": true
+ },
+ "Rock Of Ages Cleft For Me": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Yes I Will": {
+  "artist": "Vertical Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "I Need Thee Every Hour": {
+  "artist": "Indelible Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "All Heaven Declares": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Hear Our Praises": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Love On The Line": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": false
+ },
+ "Mighty To Save": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "My Hope Is In You": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Our God Is An Awesome God": {
+  "artist": "Rich Mullins",
+  "hymn": false,
+  "confident": true
+ },
+ "For Us": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Love Reigns": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Battle Belongs": {
+  "artist": "Phil Wickham",
+  "hymn": false,
+  "confident": true
+ },
+ "God You Are My God": {
+  "artist": "Delirious?",
+  "hymn": false,
+  "confident": false
+ },
+ "I Could Sing Of Your Love": {
+  "artist": "Delirious?",
+  "hymn": false,
+  "confident": true
+ },
+ "Oh Our Lord": {
+  "artist": "Paul Baloche",
+  "hymn": false,
+  "confident": false
+ },
+ "Overcome": {
+  "artist": "Jeremy Camp",
+  "hymn": false,
+  "confident": true
+ },
+ "Same Love": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "So Will I": {
+  "artist": "Hillsong UNITED",
+  "hymn": false,
+  "confident": true
+ },
+ "We Fall Down": {
+  "artist": "Chris Tomlin",
+  "hymn": false,
+  "confident": false
+ },
+ "Beautiful Savior": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "I Have Decided": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": false
+ },
+ "I Sing The Mighty Power Of God": {
+  "artist": "Indelible Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "Worthy": {
+  "artist": "Elevation Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "You Are The Everlasting God": {
+  "artist": "Don Moen",
+  "hymn": false,
+  "confident": false
+ },
+ "It is well": {
+  "artist": "Bethel Music",
+  "hymn": false,
+  "confident": true
+ },
+ "Breathe": {
+  "artist": "Michael W. Smith",
+  "hymn": false,
+  "confident": true
+ },
+ "He Leadeth Me": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Lord I Lift Your Name On High": {
+  "artist": "Maranatha! Music",
+  "hymn": false,
+  "confident": true
+ },
+ "No Greater Love": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "One Thing Remains": {
+  "artist": "Passion",
+  "hymn": false,
+  "confident": true
+ },
+ "Only You": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Pursue": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Redeemed": {
+  "artist": "Big Daddy Weave",
+  "hymn": false,
+  "confident": true
+ },
+ "Wonderful Merciful Savior": {
+  "artist": "Selah",
+  "hymn": false,
+  "confident": true
+ },
+ "All Hail The Power": {
+  "artist": "Chris Tomlin",
+  "hymn": true,
+  "confident": true
+ },
+ "Awesome God": {
+  "artist": "Rich Mullins",
+  "hymn": false,
+  "confident": true
+ },
+ "Better Than Life (Psalm 63)": {
+  "artist": "Caroline Cobb",
+  "hymn": false,
+  "confident": false
+ },
+ "Deeper In Love": {
+  "artist": "Don Moen",
+  "hymn": false,
+  "confident": false
+ },
+ "Oh, But God": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Worthy Of It All": {
+  "artist": "CeCe Winans",
+  "hymn": false,
+  "confident": true
+ },
+ "Your Steadfast Love": {
+  "artist": "Don Moen",
+  "hymn": false,
+  "confident": true
+ },
+ "His Glory Appears": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Come, Now Is The Time To Worship": {
+  "artist": "Vineyard Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Hallelujah (130 Bpm)": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "He Will Carry You": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Holy is the Lord": {
+  "artist": "Chris Tomlin",
+  "hymn": false,
+  "confident": false
+ },
+ "I Want To Be Where You Are": {
+  "artist": "Don Moen",
+  "hymn": false,
+  "confident": true
+ },
+ "I will trust you in the darkness": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "One Voice": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Though You Slay Me": {
+  "artist": "Shane & Shane",
+  "hymn": false,
+  "confident": true
+ },
+ "Turn Your Eyes Upon Jesus": {
+  "artist": "Shane & Shane",
+  "hymn": true,
+  "confident": true
+ },
+ "Way Maker": {
+  "artist": "Sinach",
+  "hymn": false,
+  "confident": true
+ },
+ "When I Survey": {
+  "artist": "Chris Tomlin",
+  "hymn": true,
+  "confident": true
+ },
+ "All hail the power of Jesus's name": {
+  "artist": "Chris Tomlin",
+  "hymn": true,
+  "confident": true
+ },
+ "All to Jesus I surrender": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Ancient Of Days": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Holy (Song Of The Ages)": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "I Love To Be In Your Presence (Don Moen)": {
+  "artist": "Don Moen",
+  "hymn": false,
+  "confident": true
+ },
+ "Leave More Room": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Mighty Fortress": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Mighty, Mighty Savior": {
+  "artist": "Sovereign Grace Music",
+  "hymn": false,
+  "confident": false
+ },
+ "Open Heaven (River Wild)": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Praise To The Lord": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Psalm 63": {
+  "artist": "Shane & Shane",
+  "hymn": false,
+  "confident": false
+ },
+ "Stay Amazed": {
+  "artist": "Jeremy Camp",
+  "hymn": false,
+  "confident": true
+ },
+ "Sure Foundation": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "The resurrected King is resurrecting me": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "The Time Has Come": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "I Love You Lord": {
+  "artist": "Maranatha! Music",
+  "hymn": false,
+  "confident": true
+ },
+ "Prepare Him Room": {
+  "artist": "Integrity's Hosanna! Music",
+  "hymn": false,
+  "confident": false
+ },
+ "All I Need is You": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": false
+ },
+ "Ascribe Greatness to our God": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Cleanse me": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "God leads us along": {
+  "artist": "Gaither Vocal Band",
+  "hymn": true,
+  "confident": true
+ },
+ "He died upon the cross": {
+  "artist": "Colin Buchanan",
+  "hymn": false,
+  "confident": false
+ },
+ "Lead Me to the Cross": {
+  "artist": "Hillsong UNITED",
+  "hymn": false,
+  "confident": true
+ },
+ "Let it be Jesus": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Love Came Down": {
+  "artist": "Kari Jobe",
+  "hymn": false,
+  "confident": true
+ },
+ "Magnificent": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "On Christ the solid rock i stand": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Roses": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Shout for joy": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "This little light of mine": {
+  "artist": "",
+  "hymn": true,
+  "confident": false
+ },
+ "Thy Kingdom Come": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "You are my King": {
+  "artist": "Newsboys",
+  "hymn": false,
+  "confident": true
+ },
+ "A Mighty Fortress Is Our God": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Above All Else": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Agnes Dei": {
+  "artist": "Michael W. Smith",
+  "hymn": false,
+  "confident": true
+ },
+ "All About Jesus": {
+  "artist": "Sovereign Grace Music",
+  "hymn": false,
+  "confident": false
+ },
+ "Be Exalted, O God": {
+  "artist": "Brent Chambers",
+  "hymn": false,
+  "confident": false
+ },
+ "Change My Heart, O God": {
+  "artist": "Vineyard Worship",
+  "hymn": false,
+  "confident": false
+ },
+ "Come And See": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "God Hath Not Promised": {
+  "artist": "",
+  "hymn": true,
+  "confident": false
+ },
+ "God Rest Ye Merry Gentlemen": {
+  "artist": "Chris Tomlin",
+  "hymn": true,
+  "confident": false
+ },
+ "God Will Make A Way": {
+  "artist": "Don Moen",
+  "hymn": false,
+  "confident": true
+ },
+ "Hallelujah To The King Of Kings": {
+  "artist": "Don Moen",
+  "hymn": false,
+  "confident": false
+ },
+ "Hallelujah, What A Saviour! (Clar)": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "He Knows My Name": {
+  "artist": "Tommy Walker",
+  "hymn": false,
+  "confident": true
+ },
+ "Heaven Is In My Heart": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "How Long": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "I Can Only Imagine": {
+  "artist": "MercyMe",
+  "hymn": false,
+  "confident": true
+ },
+ "I Don'T Know About Tomorrow": {
+  "artist": "",
+  "hymn": true,
+  "confident": false
+ },
+ "I Sing Praises To Your Name": {
+  "artist": "Terry MacAlmon",
+  "hymn": false,
+  "confident": true
+ },
+ "Jehovah Jireh": {
+  "artist": "Don Moen",
+  "hymn": false,
+  "confident": false
+ },
+ "Jesus What A Saviour": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Joyful Joyful": {
+  "artist": "Rend Collective",
+  "hymn": true,
+  "confident": false
+ },
+ "Let Your Kingdom Come": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Lift Your Voices": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Living Water": {
+  "artist": "Shane & Shane",
+  "hymn": false,
+  "confident": false
+ },
+ "Lord I Lift Your Name": {
+  "artist": "Maranatha! Music",
+  "hymn": false,
+  "confident": true
+ },
+ "Lord, We'Ve Come To Worship": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Love Divine": {
+  "artist": "Indelible Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "Mary'S Boy Child": {
+  "artist": "Harry Belafonte",
+  "hymn": false,
+  "confident": true
+ },
+ "More Precious Than Silver": {
+  "artist": "Integrity's Hosanna! Music",
+  "hymn": false,
+  "confident": true
+ },
+ "My heart is filled with thankfulness": {
+  "artist": "Keith & Kristyn Getty",
+  "hymn": false,
+  "confident": true
+ },
+ "My Saviour My God": {
+  "artist": "Aaron Shust",
+  "hymn": false,
+  "confident": true
+ },
+ "On Bended Knee": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "On Christ The Solid Rock": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "One Thing": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Only By Grace": {
+  "artist": "Don Moen",
+  "hymn": false,
+  "confident": false
+ },
+ "Power Of Your Love": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Praise Adonai": {
+  "artist": "Paul Wilbur",
+  "hymn": false,
+  "confident": true
+ },
+ "Praise the Lord!": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Precious Lord, Take My Hand": {
+  "artist": "Selah",
+  "hymn": true,
+  "confident": false
+ },
+ "Psalm 100": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Psalm 125": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "See A Victory": {
+  "artist": "Elevation Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "See He Comes": {
+  "artist": "Sovereign Grace Music",
+  "hymn": false,
+  "confident": false
+ },
+ "Strength Will Rise": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Thank You For The Cross": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "The God Of Abraham Praise": {
+  "artist": "Hymns of Grace",
+  "hymn": true,
+  "confident": true
+ },
+ "The Lord Almighty Reigns": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Thou has cleansed and sanctified me": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Thou Thyself hast set me free": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "We Belong To The Day": {
+  "artist": "Emu Music",
+  "hymn": false,
+  "confident": false
+ },
+ "We Will Not Be Shaken": {
+  "artist": "Bethel Music",
+  "hymn": false,
+  "confident": false
+ },
+ "Were You There": {
+  "artist": "Indelible Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "Wonderful Merciful Saviour": {
+  "artist": "Selah",
+  "hymn": false,
+  "confident": true
+ },
+ "Worhty Is The Lamb": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": false
+ },
+ "You Alone": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "You'Re Beautiful": {
+  "artist": "Phil Wickham",
+  "hymn": false,
+  "confident": true
+ },
+ "Your Presence is Heaven to me": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "I Exalt Thee": {
+  "artist": "Pete Sanchez Jr.",
+  "hymn": false,
+  "confident": false
+ },
+ "All of me": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "And can it be": {
+  "artist": "Keith & Kristyn Getty",
+  "hymn": true,
+  "confident": true
+ },
+ "And Can It Be That I should gain": {
+  "artist": "Keith & Kristyn Getty",
+  "hymn": true,
+  "confident": true
+ },
+ "Apostle's creed": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "As we worship you": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Be Enthroned": {
+  "artist": "Bethel Music",
+  "hymn": false,
+  "confident": false
+ },
+ "Be Thou My Vision Alt": {
+  "artist": "Fernando Ortega",
+  "hymn": true,
+  "confident": true
+ },
+ "Because he lives Crowder": {
+  "artist": "Matt Maher",
+  "hymn": false,
+  "confident": false
+ },
+ "Behold our God": {
+  "artist": "Sovereign Grace Music",
+  "hymn": false,
+  "confident": true
+ },
+ "Broken Vessels": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Came to my Rescue": {
+  "artist": "Hillsong UNITED",
+  "hymn": false,
+  "confident": true
+ },
+ "Christ is Enough for me": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Come thou almighty king": {
+  "artist": "Keith & Kristyn Getty",
+  "hymn": true,
+  "confident": true
+ },
+ "Commune with me": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Crown Him (Majesty)": {
+  "artist": "Chris Tomlin",
+  "hymn": false,
+  "confident": true
+ },
+ "crown him majesty": {
+  "artist": "Chris Tomlin",
+  "hymn": false,
+  "confident": true
+ },
+ "Desert Song": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Freely, Freely": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "From the inside out": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Gethsemane": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Glory to his name": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Go-And-Make-Disciples-lead": {
+  "artist": "Awesome Cutlery",
+  "hymn": false,
+  "confident": false
+ },
+ "God is Good": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "God you are so good": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Great are you lord - Don Moen": {
+  "artist": "All Sons & Daughters",
+  "hymn": false,
+  "confident": true
+ },
+ "Guide me O thou Great Jehovah": {
+  "artist": "Indelible Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "Hallelujah, What a savior": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Have I done my best for Jesus": {
+  "artist": "",
+  "hymn": true,
+  "confident": false
+ },
+ "Have it all & Heres my heart medley": {
+  "artist": "Bethel Music",
+  "hymn": false,
+  "confident": false
+ },
+ "He Hideth my soul": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Hear Me, Lord": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Heaven came down": {
+  "artist": "Lynda Randle",
+  "hymn": true,
+  "confident": true
+ },
+ "Here I am to Worship + call": {
+  "artist": "Tim Hughes",
+  "hymn": false,
+  "confident": true
+ },
+ "Here with You": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "How many kings": {
+  "artist": "Downhere",
+  "hymn": false,
+  "confident": true
+ },
+ "Hymn of the Saviour: Emu Music": {
+  "artist": "Emu Music",
+  "hymn": false,
+  "confident": true
+ },
+ "I am strong": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "I am thine o lord": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "I just want to be where you are": {
+  "artist": "Don Moen",
+  "hymn": false,
+  "confident": true
+ },
+ "I lift My Hands": {
+  "artist": "Chris Tomlin",
+  "hymn": false,
+  "confident": true
+ },
+ "I stand amazed in the presence": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "I WANT TO KNOW YOU": {
+  "artist": "Andy Park",
+  "hymn": false,
+  "confident": false
+ },
+ "I will rise": {
+  "artist": "Chris Tomlin",
+  "hymn": false,
+  "confident": true
+ },
+ "I worship you Almighty God": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Immortal Invisible": {
+  "artist": "Keith & Kristyn Getty",
+  "hymn": true,
+  "confident": true
+ },
+ "In Christ alone - Kristian Stanfill (Default D)": {
+  "artist": "Kristian Stanfill",
+  "hymn": false,
+  "confident": true
+ },
+ "Jesus loves me - Christ Tomlin": {
+  "artist": "Chris Tomlin",
+  "hymn": true,
+  "confident": true
+ },
+ "Jesus Loves Me Traditional": {
+  "artist": "Chris Tomlin",
+  "hymn": true,
+  "confident": true
+ },
+ "Jesus Name Above All Names": {
+  "artist": "Maranatha! Music",
+  "hymn": false,
+  "confident": false
+ },
+ "Jesus Shall Take the Highest Honour": {
+  "artist": "Chris Bowater",
+  "hymn": false,
+  "confident": false
+ },
+ "Joyful Joyful, We Adore Thee (Rend Collective)": {
+  "artist": "Rend Collective",
+  "hymn": true,
+  "confident": true
+ },
+ "Just As I Am": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "King of heaven come": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Lamb of God": {
+  "artist": "Twila Paris",
+  "hymn": false,
+  "confident": true
+ },
+ "Lead me to calvary": {
+  "artist": "Don Moen",
+  "hymn": true,
+  "confident": true
+ },
+ "Leaning on the everlasting arms": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Light of the world": {
+  "artist": "Robin Mark",
+  "hymn": false,
+  "confident": false
+ },
+ "Love Divine, All Loves Excelling": {
+  "artist": "Indelible Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "Love Lifted Me": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Love song": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Medley - Open the eyes of my heart & All hail the power": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "My God is Real": {
+  "artist": "Johnny Cash",
+  "hymn": true,
+  "confident": false
+ },
+ "My Tribute": {
+  "artist": "Andrae Crouch",
+  "hymn": false,
+  "confident": true
+ },
+ "Nearer my god to thee": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "No longer slaves x Came to my rescue": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "No other name": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Nothing is impossible": {
+  "artist": "Planetshakers",
+  "hymn": false,
+  "confident": true
+ },
+ "O come all ye faithful (Chris Tomlin)": {
+  "artist": "Chris Tomlin",
+  "hymn": true,
+  "confident": true
+ },
+ "O Come O Come Emmanuel": {
+  "artist": "Page CXVI",
+  "hymn": true,
+  "confident": true
+ },
+ "Oceans where feet may fail": {
+  "artist": "Hillsong UNITED",
+  "hymn": false,
+  "confident": true
+ },
+ "Oh the deep deep love": {
+  "artist": "Sovereign Grace Music",
+  "hymn": true,
+  "confident": true
+ },
+ "Oh what love": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Open the Eyes of My Heart Lord": {
+  "artist": "Paul Baloche",
+  "hymn": false,
+  "confident": true
+ },
+ "Our God will go before us": {
+  "artist": "Keith & Kristyn Getty",
+  "hymn": false,
+  "confident": false
+ },
+ "Praise the Father Praise the Son by Chris Tomlin": {
+  "artist": "Chris Tomlin",
+  "hymn": false,
+  "confident": true
+ },
+ "Remind Me": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Restoration Song": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Seek Ye First": {
+  "artist": "Karen Lafferty",
+  "hymn": false,
+  "confident": false
+ },
+ "Shoulders": {
+  "artist": "for KING & COUNTRY",
+  "hymn": false,
+  "confident": true
+ },
+ "Softly and Tenderly": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Sovereigh Over Us": {
+  "artist": "Michael W. Smith",
+  "hymn": false,
+  "confident": false
+ },
+ "Soverign": {
+  "artist": "Chris Tomlin",
+  "hymn": false,
+  "confident": false
+ },
+ "Spirit lead me G)": {
+  "artist": "Influence Music",
+  "hymn": false,
+  "confident": false
+ },
+ "Step Up Step Out G)": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Sweet Hour of Prayer": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "Thank you lord (Gratefully yours)": {
+  "artist": "Don Moen",
+  "hymn": false,
+  "confident": false
+ },
+ "Thanks to God": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "The Greatest Thing": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "The old rugged cross x All my hope": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "There is a cloud": {
+  "artist": "Elevation Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "There is a fountain filled with blood": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "There is none like You": {
+  "artist": "Lenny LeBlanc",
+  "hymn": false,
+  "confident": true
+ },
+ "There's more": {
+  "artist": "Bethel Music",
+  "hymn": false,
+  "confident": false
+ },
+ "This world is not my home": {
+  "artist": "",
+  "hymn": true,
+  "confident": false
+ },
+ "Through it all": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Touch Of Heaven Chords": {
+  "artist": "Hillsong Worship",
+  "hymn": false,
+  "confident": true
+ },
+ "Trust": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Turn your eyes upon Jesus.doc": {
+  "artist": "Shane & Shane",
+  "hymn": true,
+  "confident": true
+ },
+ "Unless the Lord": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Walk": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "We are an offering": {
+  "artist": "Integrity's Hosanna! Music",
+  "hymn": false,
+  "confident": false
+ },
+ "We Are Singing": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "We are the reason": {
+  "artist": "David Meece",
+  "hymn": false,
+  "confident": true
+ },
+ "we believe": {
+  "artist": "Keith & Kristyn Getty",
+  "hymn": false,
+  "confident": false
+ },
+ "We Give Thanks To God": {
+  "artist": "Don Moen",
+  "hymn": false,
+  "confident": false
+ },
+ "What a friend": {
+  "artist": "Norton Hall Band",
+  "hymn": true,
+  "confident": true
+ },
+ "What Child is This (Chris Tomlin)": {
+  "artist": "Chris Tomlin",
+  "hymn": true,
+  "confident": true
+ },
+ "What Faith Can Do": {
+  "artist": "Kutless",
+  "hymn": false,
+  "confident": true
+ },
+ "When God Ran": {
+  "artist": "Benny Hester",
+  "hymn": false,
+  "confident": true
+ },
+ "When love crossed over": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "You are Good": {
+  "artist": "Israel & New Breed",
+  "hymn": false,
+  "confident": true
+ },
+ "You are my God": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "You Carry Me": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "You Have Redeemed My Soul": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "You Laid Aside Your Majesty": {
+  "artist": "Noel Richards",
+  "hymn": false,
+  "confident": true
+ },
+ "Your grace is sufficient": {
+  "artist": "Shane & Shane",
+  "hymn": false,
+  "confident": false
+ },
+ "Your Kindness": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ },
+ "Your Words": {
+  "artist": "",
+  "hymn": false,
+  "confident": false
+ }
+}

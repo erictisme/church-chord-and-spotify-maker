@@ -1,0 +1,43 @@
+{
+  "date": "2026-05-24",
+  "passage": "Mt 10:1-23",
+  "theme": "Thank God for Jesus the Shephard King who seeks and saves the lost",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "Savior like a Shepherd lead us",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "Psalm 23",
+      "link": null,
+      "note": "The Lord is my Shepherd I shall not want, personal"
+    },
+    {
+      "slot": "opening",
+      "title": "Lord I give you my heart",
+      "link": null,
+      "note": "Response song to thank God to live for Jesus"
+    },
+    {
+      "slot": "kids",
+      "title": "Lift up your voices",
+      "link": "https://youtu.be/5nukSWi-NoA",
+      "note": null
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "Come Thou Fount",
+      "link": null,
+      "note": "\"Jesus sought me when a stranger, wandering from the fold of God\""
+    },
+    {
+      "slot": "closing",
+      "title": "Saved my Soul - Cityalight",
+      "link": "https://youtu.be/jft7eecMedY?si=kzdQkVgR0jB1MNXm",
+      "note": null
+    }
+  ]
+}

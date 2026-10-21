@@ -1,0 +1,37 @@
+{
+  "date": "2026-06-28",
+  "passage": "2 Tim 4:1-8",
+  "theme": "Thanksgiving",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "10,000 Reasons",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "Goodness of God",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "My God is a very very very big God",
+      "link": null,
+      "note": "Complements who God is in Habakkuk"
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "Great is Thy Faithfulness",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "Your Word",
+      "link": null,
+      "note": "Reminding us what God's word is/does! | This version might be good for our setup!"
+    }
+  ]
+}

@@ -3,10 +3,11 @@
     "canonical_title": "The Lord is My Salvation",
     "variants": [
       "The Lord is my Salvation",
+      "The Lord is Our Salvation",
       "The Lord is my salvation",
       "The Lord is My Salvation"
     ],
-    "count": 10,
+    "count": 11,
     "dates": [
       "2024-07-21",
       "2025-03-16",
@@ -17,22 +18,24 @@
       "2025-08-17",
       "2025-09-14",
       "2026-01-04",
-      "2026-04-26"
+      "2026-04-26",
+      "2026-05-31"
     ],
     "slots": {
       "opening": 7,
+      "pre-sermon": 1,
       "closing": 3
     },
-    "last_sung": "2026-04-26"
+    "last_sung": "2026-05-31"
   },
   "God is For Us": {
     "canonical_title": "God is For Us",
     "variants": [
       "God is for us",
-      "God is For Us",
-      "God is for Us"
+      "God is for Us",
+      "God is For Us"
     ],
-    "count": 7,
+    "count": 8,
     "dates": [
       "2024-11-17",
       "2025-03-09",
@@ -40,14 +43,15 @@
       "2025-04-13",
       "2025-09-07",
       "2025-09-28",
-      "2026-01-04"
+      "2026-01-04",
+      "2026-05-31"
     ],
     "slots": {
-      "opening": 5,
+      "opening": 6,
       "pre-sermon": 1,
       "closing": 1
     },
-    "last_sung": "2026-01-04"
+    "last_sung": "2026-05-31"
   },
   "I'm Following the King": {
     "canonical_title": "I'm Following the King",
@@ -89,16 +93,18 @@
   "Saved My Soul": {
     "canonical_title": "Saved My Soul",
     "variants": [
-      "Saved My Soul"
+      "Saved My Soul",
+      "Saved my Soul - Cityalight"
     ],
-    "count": 1,
+    "count": 2,
     "dates": [
-      "2026-01-04"
+      "2026-01-04",
+      "2026-05-24"
     ],
     "slots": {
-      "closing": 1
+      "closing": 2
     },
-    "last_sung": "2026-01-04"
+    "last_sung": "2026-05-24"
   },
   "All Creatures of Our God and King": {
     "canonical_title": "All Creatures of Our God and King",
@@ -157,24 +163,26 @@
     "variants": [
       "Yet not I but through Christ in me",
       "Yet Not I but Through Christ in Me",
+      "Yet Not I But Through Christ In Me",
       "Yet Not I But Through Christ in Me",
       "Yet Not I But Through Christ in me"
     ],
-    "count": 6,
+    "count": 7,
     "dates": [
       "2024-09-29",
       "2025-06-01",
       "2025-08-31",
       "2026-01-11",
       "2026-01-25",
-      "2026-03-08"
+      "2026-03-08",
+      "2026-08-16"
     ],
     "slots": {
       "pre-sermon": 2,
-      "closing": 2,
+      "closing": 3,
       "opening": 2
     },
-    "last_sung": "2026-03-08"
+    "last_sung": "2026-08-16"
   },
   "In Christ Alone": {
     "canonical_title": "In Christ Alone",
@@ -294,20 +302,21 @@
       "All I Have Is Christ",
       "All I Have is Christ"
     ],
-    "count": 6,
+    "count": 7,
     "dates": [
       "2024-08-25",
       "2025-03-30",
       "2025-06-22",
       "2026-01-25",
       "2026-02-01",
-      "2026-03-22"
+      "2026-03-22",
+      "2026-10-04"
     ],
     "slots": {
       "opening": 1,
-      "closing": 5
+      "closing": 6
     },
-    "last_sung": "2026-03-22"
+    "last_sung": "2026-10-04"
   },
   "Christ Our Hope in Life and Death": {
     "canonical_title": "Christ Our Hope in Life and Death",
@@ -406,7 +415,7 @@
     "variants": [
       "Undivided"
     ],
-    "count": 10,
+    "count": 12,
     "dates": [
       "2024-09-01",
       "2024-09-15",
@@ -417,13 +426,16 @@
       "2025-04-27",
       "2025-07-27",
       "2025-10-12",
-      "2026-02-08"
+      "2026-02-08",
+      "2026-05-03",
+      "2026-09-06"
     ],
     "slots": {
-      "closing": 9,
+      "closing": 10,
+      "opening": 1,
       "post-sermon": 1
     },
-    "last_sung": "2026-02-08"
+    "last_sung": "2026-09-06"
   },
   "Oh How Good It Is": {
     "canonical_title": "Oh How Good It Is",
@@ -499,34 +511,39 @@
       "Let the Nations Be Glad",
       "Let the Nations be Glad"
     ],
-    "count": 6,
+    "count": 8,
     "dates": [
       "2025-01-05",
       "2025-09-28",
       "2025-10-05",
       "2025-11-16",
       "2025-11-23",
-      "2026-02-15"
+      "2026-02-15",
+      "2026-05-17",
+      "2026-05-31"
     ],
     "slots": {
-      "closing": 6
+      "closing": 7,
+      "pre-sermon": 1
     },
-    "last_sung": "2026-02-15"
+    "last_sung": "2026-05-31"
   },
   "All Sufficient Merit": {
     "canonical_title": "All Sufficient Merit",
     "variants": [
       "All Sufficient Merit"
     ],
-    "count": 2,
+    "count": 3,
     "dates": [
       "2026-02-22",
-      "2026-03-08"
+      "2026-03-08",
+      "2026-09-20"
     ],
     "slots": {
-      "closing": 2
+      "closing": 2,
+      "pre-sermon": 1
     },
-    "last_sung": "2026-03-08"
+    "last_sung": "2026-09-20"
   },
   "Crown Him with Many Crowns": {
     "canonical_title": "Crown Him with Many Crowns",
@@ -550,8 +567,7 @@
       "2026-04-26"
     ],
     "slots": {
-      "opening": 8,
-      "pre-sermon": 1
+      "opening": 9
     },
     "last_sung": "2026-04-26"
   },
@@ -658,26 +674,32 @@
     "variants": [
       "His Robes For Mine"
     ],
-    "count": 1,
+    "count": 2,
     "dates": [
-      "2026-03-15"
+      "2026-03-15",
+      "2026-09-20"
     ],
     "slots": {
-      "closing": 1
+      "closing": 2
     },
-    "last_sung": "2026-03-15"
+    "last_sung": "2026-09-20"
   },
-  "We Declare Emu": {
-    "canonical_title": "We Declare Emu",
+  "We Declare": {
+    "canonical_title": "We Declare",
     "variants": [
-      "We Declare Emu"
+      "We Declare Emu",
+      "We Declare"
     ],
-    "count": 1,
+    "count": 5,
     "dates": [
+      "2024-08-18",
+      "2025-06-01",
+      "2025-07-06",
+      "2025-10-05",
       "2026-03-29"
     ],
     "slots": {
-      "opening": 1
+      "opening": 5
     },
     "last_sung": "2026-03-29"
   },
@@ -860,10 +882,10 @@
     },
     "last_sung": "2026-04-19"
   },
-  "Behold Our God": {
-    "canonical_title": "Behold Our God",
+  "Cornerstone": {
+    "canonical_title": "Cornerstone",
     "variants": [
-      "Behold our God"
+      "Cornerstone"
     ],
     "count": 1,
     "dates": [
@@ -873,6 +895,555 @@
       "opening": 1
     },
     "last_sung": "2026-04-26"
+  },
+  "Psalm 23": {
+    "canonical_title": "Psalm 23",
+    "variants": [
+      "Psalm 23",
+      "Psalm 23 ( Shane and Shane)",
+      "Psalm 23 - Shane and Shane"
+    ],
+    "count": 5,
+    "dates": [
+      "2024-12-15",
+      "2025-03-23",
+      "2025-05-04",
+      "2026-05-03",
+      "2026-05-24"
+    ],
+    "slots": {
+      "opening": 4,
+      "closing": 1
+    },
+    "last_sung": "2026-05-24"
+  },
+  "Lift up your voices": {
+    "canonical_title": "Lift up your voices",
+    "variants": [
+      "Lift up your voices"
+    ],
+    "count": 5,
+    "dates": [
+      "2026-05-03",
+      "2026-05-10",
+      "2026-05-17",
+      "2026-05-24",
+      "2026-05-31"
+    ],
+    "slots": {
+      "kids": 5
+    },
+    "last_sung": "2026-05-31"
+  },
+  "I Have Decided to Follow Jesus": {
+    "canonical_title": "I Have Decided to Follow Jesus",
+    "variants": [
+      "I have decided to follow Jesus",
+      "I Have Decided to Follow Jesus"
+    ],
+    "count": 2,
+    "dates": [
+      "2024-08-25",
+      "2026-05-03"
+    ],
+    "slots": {
+      "pre-sermon": 2
+    },
+    "last_sung": "2026-05-03"
+  },
+  "The Church's One Foundation": {
+    "canonical_title": "The Church's One Foundation",
+    "variants": [
+      "The Church's One Foundation"
+    ],
+    "count": 2,
+    "dates": [
+      "2026-05-03",
+      "2026-10-11"
+    ],
+    "slots": {
+      "closing": 2
+    },
+    "last_sung": "2026-10-11"
+  },
+  "I Will Trust My Saviour Jesus": {
+    "canonical_title": "I Will Trust My Saviour Jesus",
+    "variants": [
+      "I will trust my Saviour Jesus",
+      "I Will Trust My Saviour Jesus"
+    ],
+    "count": 7,
+    "dates": [
+      "2024-12-15",
+      "2025-02-16",
+      "2025-05-18",
+      "2025-06-01",
+      "2025-09-14",
+      "2026-05-10",
+      "2026-06-21"
+    ],
+    "slots": {
+      "closing": 3,
+      "opening": 3,
+      "pre-sermon": 1
+    },
+    "last_sung": "2026-06-21"
+  },
+  "Savior like a Shepherd lead us": {
+    "canonical_title": "Savior like a Shepherd lead us",
+    "variants": [
+      "Savior like a Shepherd lead us"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-05-24"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2026-05-24"
+  },
+  "Lord I give you my heart": {
+    "canonical_title": "Lord I give you my heart",
+    "variants": [
+      "Lord I give you my heart"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-05-24"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2026-05-24"
+  },
+  "Come Thou Fount": {
+    "canonical_title": "Come Thou Fount",
+    "variants": [
+      "Come Thou Fount"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-05-24"
+    ],
+    "slots": {
+      "pre-sermon": 1
+    },
+    "last_sung": "2026-05-24"
+  },
+  "Facing a Task Unfinished": {
+    "canonical_title": "Facing a Task Unfinished",
+    "variants": [
+      "Facing A Task Unfinished",
+      "Facing a Task Unfinished"
+    ],
+    "count": 3,
+    "dates": [
+      "2025-11-23",
+      "2025-12-14",
+      "2026-05-31"
+    ],
+    "slots": {
+      "closing": 2,
+      "pre-sermon": 1
+    },
+    "last_sung": "2026-05-31"
+  },
+  "My God Is A Very, Very, Very Big God": {
+    "canonical_title": "My God Is A Very, Very, Very Big God",
+    "variants": [
+      "My God is a very very very big God",
+      "My God Is A Very, Very, Very Big God"
+    ],
+    "count": 7,
+    "dates": [
+      "2025-02-02",
+      "2025-02-09",
+      "2025-02-16",
+      "2026-06-07",
+      "2026-06-14",
+      "2026-06-21",
+      "2026-06-28"
+    ],
+    "slots": {
+      "kids": 7
+    },
+    "last_sung": "2026-06-28"
+  },
+  "Sovereign (Tomlin)": {
+    "canonical_title": "Sovereign (Tomlin)",
+    "variants": [
+      "Sovereign",
+      "Sovereign (Tomlin)"
+    ],
+    "count": 3,
+    "dates": [
+      "2024-10-27",
+      "2025-08-24",
+      "2026-06-07"
+    ],
+    "slots": {
+      "closing": 1,
+      "opening": 2
+    },
+    "last_sung": "2026-06-07"
+  },
+  "Only a Holy God": {
+    "canonical_title": "Only a Holy God",
+    "variants": [
+      "Only a Holy God",
+      "Only A Holy God"
+    ],
+    "count": 6,
+    "dates": [
+      "2025-03-30",
+      "2025-04-06",
+      "2025-07-13",
+      "2025-07-27",
+      "2025-08-17",
+      "2026-06-14"
+    ],
+    "slots": {
+      "opening": 5,
+      "closing": 1
+    },
+    "last_sung": "2026-06-14"
+  },
+  "10,000 Reasons": {
+    "canonical_title": "10,000 Reasons",
+    "variants": [
+      "10,000 Reasons",
+      "10,000 Reasons (Bless the Lord)",
+      "10,000 Reasons ( Bless the Lord)"
+    ],
+    "count": 5,
+    "dates": [
+      "2024-11-24",
+      "2025-06-08",
+      "2025-08-03",
+      "2026-06-14",
+      "2026-06-28"
+    ],
+    "slots": {
+      "opening": 5
+    },
+    "last_sung": "2026-06-28"
+  },
+  "Build My Life": {
+    "canonical_title": "Build My Life",
+    "variants": [
+      "Build my life",
+      "Build My Life"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-02-09",
+      "2026-06-14"
+    ],
+    "slots": {
+      "pre-sermon": 1,
+      "opening": 1
+    },
+    "last_sung": "2026-06-14"
+  },
+  "Holy Holy Holy": {
+    "canonical_title": "Holy Holy Holy",
+    "variants": [
+      "Holy, Holy, Holy",
+      "Holy Holy Holy"
+    ],
+    "count": 3,
+    "dates": [
+      "2025-03-30",
+      "2025-07-27",
+      "2026-06-14"
+    ],
+    "slots": {
+      "closing": 1,
+      "opening": 2
+    },
+    "last_sung": "2026-06-14"
+  },
+  "Goodness of God": {
+    "canonical_title": "Goodness of God",
+    "variants": [
+      "Goodness of God"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-10-19",
+      "2026-06-28"
+    ],
+    "slots": {
+      "opening": 2
+    },
+    "last_sung": "2026-06-28"
+  },
+  "Great is Thy Faithfulness": {
+    "canonical_title": "Great is Thy Faithfulness",
+    "variants": [
+      "Great is Thy Faithfulness"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-05-04",
+      "2026-06-28"
+    ],
+    "slots": {
+      "pre-sermon": 1,
+      "opening": 1
+    },
+    "last_sung": "2026-06-28"
+  },
+  "Your Word": {
+    "canonical_title": "Your Word",
+    "variants": [
+      "Your Word"
+    ],
+    "count": 3,
+    "dates": [
+      "2024-09-22",
+      "2025-11-02",
+      "2026-06-28"
+    ],
+    "slots": {
+      "closing": 2,
+      "pre-sermon": 1
+    },
+    "last_sung": "2026-06-28"
+  },
+  "Tell It To Jesus": {
+    "canonical_title": "Tell It To Jesus",
+    "variants": [
+      "Tell It To Jesus"
+    ],
+    "count": 4,
+    "dates": [
+      "2026-07-05",
+      "2026-07-12",
+      "2026-07-19",
+      "2026-07-26"
+    ],
+    "slots": {
+      "kids": 4
+    },
+    "last_sung": "2026-07-26"
+  },
+  "You Are God Alone": {
+    "canonical_title": "You Are God Alone",
+    "variants": [
+      "You are God Alone",
+      "You are God alone"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-11-09",
+      "2026-07-05"
+    ],
+    "slots": {
+      "closing": 2
+    },
+    "last_sung": "2026-07-05"
+  },
+  "More Than I Can Bear": {
+    "canonical_title": "More Than I Can Bear",
+    "variants": [
+      "More Than I Can Bear"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-07-19"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2026-07-19"
+  },
+  "For the Cause": {
+    "canonical_title": "For the Cause",
+    "variants": [
+      "For the Cause"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-08-02"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2026-08-02"
+  },
+  "Where, O Grave, Is Your Victory": {
+    "canonical_title": "Where, O Grave, Is Your Victory",
+    "variants": [
+      "Where, O Grave, Is Your Victory"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-08-23"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2026-08-23"
+  },
+  "Go And Make Disciples": {
+    "canonical_title": "Go And Make Disciples",
+    "variants": [
+      "Go And Make Disciples"
+    ],
+    "count": 4,
+    "dates": [
+      "2026-09-06",
+      "2026-09-13",
+      "2026-09-20",
+      "2026-09-27"
+    ],
+    "slots": {
+      "kids": 4
+    },
+    "last_sung": "2026-09-27"
+  },
+  "Create in me a clean heart": {
+    "canonical_title": "Create in me a clean heart",
+    "variants": [
+      "Create in me a clean heart"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-09-13"
+    ],
+    "slots": {
+      "closing": 1
+    },
+    "last_sung": "2026-09-13"
+  },
+  "All We Like Sheep": {
+    "canonical_title": "All We Like Sheep",
+    "variants": [
+      "All We Like Sheep"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-09-20"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2026-09-20"
+  },
+  "Man of Sorrows / Mercy": {
+    "canonical_title": "Man of Sorrows / Mercy",
+    "variants": [
+      "Man of Sorrows / Mercy"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-09-20"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2026-09-20"
+  },
+  "His Robes for Mine / Mercy": {
+    "canonical_title": "His Robes for Mine / Mercy",
+    "variants": [
+      "His Robes for Mine / Mercy"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-09-20"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2026-09-20"
+  },
+  "I Surrender All": {
+    "canonical_title": "I Surrender All",
+    "variants": [
+      "I Surrender All"
+    ],
+    "count": 2,
+    "dates": [
+      "2025-02-09",
+      "2026-09-27"
+    ],
+    "slots": {
+      "closing": 1,
+      "pre-sermon": 1
+    },
+    "last_sung": "2026-09-27"
+  },
+  "Because You First Loved Me": {
+    "canonical_title": "Because You First Loved Me",
+    "variants": [
+      "Because You First Loved Me"
+    ],
+    "count": 3,
+    "dates": [
+      "2026-10-04",
+      "2026-10-11",
+      "2026-10-18"
+    ],
+    "slots": {
+      "kids": 3
+    },
+    "last_sung": "2026-10-18"
+  },
+  "All My Boast Is In Jesus": {
+    "canonical_title": "All My Boast Is In Jesus",
+    "variants": [
+      "All My Boast in Jesus",
+      "All My Boast Is In Jesus"
+    ],
+    "count": 2,
+    "dates": [
+      "2026-10-11",
+      "2026-10-18"
+    ],
+    "slots": {
+      "opening": 1,
+      "closing": 1
+    },
+    "last_sung": "2026-10-18"
+  },
+  "Give Thanks": {
+    "canonical_title": "Give Thanks",
+    "variants": [
+      "Give Thanks"
+    ],
+    "count": 1,
+    "dates": [
+      "2026-10-11"
+    ],
+    "slots": {
+      "opening": 1
+    },
+    "last_sung": "2026-10-11"
+  },
+  "Speak O Lord": {
+    "canonical_title": "Speak O Lord",
+    "variants": [
+      "Speak O Lord",
+      "Speak o Lord"
+    ],
+    "count": 7,
+    "dates": [
+      "2024-07-14",
+      "2024-08-18",
+      "2024-09-08",
+      "2024-11-24",
+      "2025-03-16",
+      "2025-08-24",
+      "2026-10-11"
+    ],
+    "slots": {
+      "pre-sermon": 6,
+      "opening": 1
+    },
+    "last_sung": "2026-10-11"
   },
   "Grace Awaiting Me": {
     "canonical_title": "Grace Awaiting Me",
@@ -953,27 +1524,6 @@
       "closing": 1
     },
     "last_sung": "2025-05-11"
-  },
-  "Speak O Lord": {
-    "canonical_title": "Speak O Lord",
-    "variants": [
-      "Speak O Lord",
-      "Speak o Lord"
-    ],
-    "count": 6,
-    "dates": [
-      "2024-07-14",
-      "2024-08-18",
-      "2024-09-08",
-      "2024-11-24",
-      "2025-03-16",
-      "2025-08-24"
-    ],
-    "slots": {
-      "pre-sermon": 5,
-      "opening": 1
-    },
-    "last_sung": "2025-08-24"
   },
   "Be Thou My Vision": {
     "canonical_title": "Be Thou My Vision",
@@ -1098,23 +1648,6 @@
     },
     "last_sung": "2024-11-03"
   },
-  "We Declare": {
-    "canonical_title": "We Declare",
-    "variants": [
-      "We Declare"
-    ],
-    "count": 4,
-    "dates": [
-      "2024-08-18",
-      "2025-06-01",
-      "2025-07-06",
-      "2025-10-05"
-    ],
-    "slots": {
-      "opening": 4
-    },
-    "last_sung": "2025-10-05"
-  },
   "Praise to the Lord, the Almighty": {
     "canonical_title": "Praise to the Lord, the Almighty",
     "variants": [
@@ -1141,20 +1674,6 @@
     ],
     "slots": {
       "opening": 1
-    },
-    "last_sung": "2024-08-25"
-  },
-  "I Have Decided to Follow Jesus": {
-    "canonical_title": "I Have Decided to Follow Jesus",
-    "variants": [
-      "I Have Decided to Follow Jesus"
-    ],
-    "count": 1,
-    "dates": [
-      "2024-08-25"
-    ],
-    "slots": {
-      "pre-sermon": 1
     },
     "last_sung": "2024-08-25"
   },
@@ -1263,22 +1782,6 @@
       "closing": 1
     },
     "last_sung": "2024-09-08"
-  },
-  "Your Word": {
-    "canonical_title": "Your Word",
-    "variants": [
-      "Your Word"
-    ],
-    "count": 2,
-    "dates": [
-      "2024-09-22",
-      "2025-11-02"
-    ],
-    "slots": {
-      "pre-sermon": 1,
-      "closing": 1
-    },
-    "last_sung": "2025-11-02"
   },
   "This Is Amazing Grace": {
     "canonical_title": "This Is Amazing Grace",
@@ -1402,22 +1905,6 @@
     },
     "last_sung": "2025-07-27"
   },
-  "Sovereign (Tomlin)": {
-    "canonical_title": "Sovereign (Tomlin)",
-    "variants": [
-      "Sovereign",
-      "Sovereign (Tomlin)"
-    ],
-    "count": 2,
-    "dates": [
-      "2024-10-27",
-      "2025-08-24"
-    ],
-    "slots": {
-      "opening": 2
-    },
-    "last_sung": "2025-08-24"
-  },
   "Immortal, Invisible, God Only Wise": {
     "canonical_title": "Immortal, Invisible, God Only Wise",
     "variants": [
@@ -1447,24 +1934,6 @@
       "opening": 2
     },
     "last_sung": "2025-03-23"
-  },
-  "10,000 Reasons": {
-    "canonical_title": "10,000 Reasons",
-    "variants": [
-      "10,000 Reasons",
-      "10,000 Reasons (Bless the Lord)",
-      "10,000 Reasons ( Bless the Lord)"
-    ],
-    "count": 3,
-    "dates": [
-      "2024-11-24",
-      "2025-06-08",
-      "2025-08-03"
-    ],
-    "slots": {
-      "opening": 3
-    },
-    "last_sung": "2025-08-03"
   },
   "I Stand Amazed": {
     "canonical_title": "I Stand Amazed",
@@ -1497,45 +1966,6 @@
       "pre-sermon": 2
     },
     "last_sung": "2025-05-25"
-  },
-  "Psalm 23": {
-    "canonical_title": "Psalm 23",
-    "variants": [
-      "Psalm 23 ( Shane and Shane)",
-      "Psalm 23",
-      "Psalm 23 - Shane and Shane"
-    ],
-    "count": 3,
-    "dates": [
-      "2024-12-15",
-      "2025-03-23",
-      "2025-05-04"
-    ],
-    "slots": {
-      "opening": 2,
-      "closing": 1
-    },
-    "last_sung": "2025-05-04"
-  },
-  "I Will Trust My Saviour Jesus": {
-    "canonical_title": "I Will Trust My Saviour Jesus",
-    "variants": [
-      "I Will Trust My Saviour Jesus"
-    ],
-    "count": 5,
-    "dates": [
-      "2024-12-15",
-      "2025-02-16",
-      "2025-05-18",
-      "2025-06-01",
-      "2025-09-14"
-    ],
-    "slots": {
-      "opening": 3,
-      "closing": 1,
-      "pre-sermon": 1
-    },
-    "last_sung": "2025-09-14"
   },
   "Joy to the World": {
     "canonical_title": "Joy to the World",
@@ -1686,50 +2116,6 @@
     },
     "last_sung": "2025-02-02"
   },
-  "My God Is A Very, Very, Very Big God": {
-    "canonical_title": "My God Is A Very, Very, Very Big God",
-    "variants": [
-      "My God Is A Very, Very, Very Big God"
-    ],
-    "count": 3,
-    "dates": [
-      "2025-02-02",
-      "2025-02-09",
-      "2025-02-16"
-    ],
-    "slots": {
-      "kids": 3
-    },
-    "last_sung": "2025-02-16"
-  },
-  "Build My Life": {
-    "canonical_title": "Build My Life",
-    "variants": [
-      "Build My Life"
-    ],
-    "count": 1,
-    "dates": [
-      "2025-02-09"
-    ],
-    "slots": {
-      "opening": 1
-    },
-    "last_sung": "2025-02-09"
-  },
-  "I Surrender All": {
-    "canonical_title": "I Surrender All",
-    "variants": [
-      "I Surrender All"
-    ],
-    "count": 1,
-    "dates": [
-      "2025-02-09"
-    ],
-    "slots": {
-      "pre-sermon": 1
-    },
-    "last_sung": "2025-02-09"
-  },
   "The Servant King": {
     "canonical_title": "The Servant King",
     "variants": [
@@ -1819,41 +2205,6 @@
       "opening": 1
     },
     "last_sung": "2025-03-23"
-  },
-  "Only a Holy God": {
-    "canonical_title": "Only a Holy God",
-    "variants": [
-      "Only a Holy God",
-      "Only A Holy God"
-    ],
-    "count": 5,
-    "dates": [
-      "2025-03-30",
-      "2025-04-06",
-      "2025-07-13",
-      "2025-07-27",
-      "2025-08-17"
-    ],
-    "slots": {
-      "opening": 4,
-      "closing": 1
-    },
-    "last_sung": "2025-08-17"
-  },
-  "Holy Holy Holy": {
-    "canonical_title": "Holy Holy Holy",
-    "variants": [
-      "Holy Holy Holy"
-    ],
-    "count": 2,
-    "dates": [
-      "2025-03-30",
-      "2025-07-27"
-    ],
-    "slots": {
-      "opening": 2
-    },
-    "last_sung": "2025-07-27"
   },
   "More Like Jesus": {
     "canonical_title": "More Like Jesus",
@@ -1972,20 +2323,6 @@
       "closing": 1
     },
     "last_sung": "2025-04-20"
-  },
-  "Great is Thy Faithfulness": {
-    "canonical_title": "Great is Thy Faithfulness",
-    "variants": [
-      "Great is Thy Faithfulness"
-    ],
-    "count": 1,
-    "dates": [
-      "2025-05-04"
-    ],
-    "slots": {
-      "opening": 1
-    },
-    "last_sung": "2025-05-04"
   },
   "To Be Like Jesus": {
     "canonical_title": "To Be Like Jesus",
@@ -2340,20 +2677,6 @@
     },
     "last_sung": "2025-10-19"
   },
-  "Goodness of God": {
-    "canonical_title": "Goodness of God",
-    "variants": [
-      "Goodness of God"
-    ],
-    "count": 1,
-    "dates": [
-      "2025-10-19"
-    ],
-    "slots": {
-      "opening": 1
-    },
-    "last_sung": "2025-10-19"
-  },
   "When I Survey the Wondrous Cross": {
     "canonical_title": "When I Survey the Wondrous Cross",
     "variants": [
@@ -2420,20 +2743,6 @@
     },
     "last_sung": "2025-11-30"
   },
-  "You Are God Alone": {
-    "canonical_title": "You Are God Alone",
-    "variants": [
-      "You are God alone"
-    ],
-    "count": 1,
-    "dates": [
-      "2025-11-09"
-    ],
-    "slots": {
-      "closing": 1
-    },
-    "last_sung": "2025-11-09"
-  },
   "Living Hope": {
     "canonical_title": "Living Hope",
     "variants": [
@@ -2447,22 +2756,6 @@
       "pre-sermon": 1
     },
     "last_sung": "2025-11-16"
-  },
-  "Facing a Task Unfinished": {
-    "canonical_title": "Facing a Task Unfinished",
-    "variants": [
-      "Facing a Task Unfinished"
-    ],
-    "count": 2,
-    "dates": [
-      "2025-11-23",
-      "2025-12-14"
-    ],
-    "slots": {
-      "pre-sermon": 1,
-      "closing": 1
-    },
-    "last_sung": "2025-12-14"
   },
   "It Came Upon A Midnight Clear": {
     "canonical_title": "It Came Upon A Midnight Clear",

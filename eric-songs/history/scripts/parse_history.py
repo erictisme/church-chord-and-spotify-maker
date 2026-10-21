@@ -52,7 +52,9 @@ def clean_title(raw: str) -> str | None:
     """Clean a song title cell. Return None if it's a placeholder."""
     if not raw:
         return None
-    t = raw.strip()
+    # Sheets cells sometimes carry invisible joiners/zero-width spaces pasted in
+    # from WhatsApp. Left in, they fork a song into a phantom second entry.
+    t = re.sub(r"[​-‏⁠﻿]", "", raw).strip()
     if not t or t in {"-", "--", "---", "----", "-----", "nil", "—", "–"}:
         return None
     # Strip leading question mark artifacts, trailing whitespace
@@ -108,6 +110,9 @@ def canon_key(title: str) -> str:
         (r"\bsilent night lonely night\b", "silent night"),
         (r"\bstanding on promises christ king\b", "standing on promises"),
         (r"^for you alone$", "for you alone are worthy"),
+        # Roster sometimes glues the artist onto the title with no separator
+        (r"^we declare emu$", "we declare"),
+        (r"^crown him with many crowns emu$", "crown him with many crowns"),
         # "Oh how good it" vs "oh how good it is" (is is stripped as filler — already same)
     ]
     for pat, rep in aliases:
@@ -493,6 +498,7 @@ def parse() -> tuple[list[dict], list[str]]:
 # ---------- Source tagging ----------
 
 REFORMED_MODERN = {
+    "undivided",  # Emu Music, album "Undivided" (2010) — not an FMH original
     "christ alone", "yet not i but through christ me",
     "his glory and good", "come behold wondrous mystery",
     "only holy god", "come praise and glorify", "all i have christ",
@@ -585,7 +591,8 @@ LOCAL_ORIGINAL = {
     "we are one",
     "jesus reigns",
     "risen",  # thecrossingchurch — FMH-local/related
-    "undivided",
+    "more than i can bear",  # roster marks it "FMH Original"
+    # NOT "undivided": verified 2026-08-16 as Emu Music, album "Undivided" (2010).
 }
 
 
@@ -683,7 +690,7 @@ def build_summary(services, freq, sources, warnings) -> str:
 
     # Rested: sung once, >6 months ago from today (2026-04-21)
     from datetime import date as _date
-    today = _date(2026, 4, 21)
+    today = _date(2026, 8, 15)
     rested = []
     for t, d in sorted_songs:
         if d["count"] == 1:
@@ -739,7 +746,7 @@ def build_summary(services, freq, sources, warnings) -> str:
 
     lines.append("## Rested Songs (sung once, >6 months ago)")
     lines.append("")
-    lines.append("Candidates to bring back. Reference date = 2026-04-21.")
+    lines.append("Candidates to bring back. Reference date = 2026-08-15.")
     lines.append("")
     if not rested:
         lines.append("_None._")

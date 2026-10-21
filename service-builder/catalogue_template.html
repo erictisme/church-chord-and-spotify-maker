@@ -1,0 +1,209 @@
+<title>FMH Song Catalogue</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a hymnal index. Split bar on top, pivot grid in the middle, the song index below. */
+:root {
+  --bg: #f4f6f4; --surface: #ffffff; --ink: #1b2629; --muted: #5d6b6e; --rule: #d6ddda;
+  --accent: #0e6a66; --accent-soft: #d7ebe8; --heat: 14 106 102; --warn: #9a5b12;
+  --display: "Literata", Georgia, serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121a1b; --surface: #1a2426; --ink: #e3ebe9; --muted: #98a8a6; --rule: #2d3a3c;
+  --accent: #5cc3ba; --accent-soft: #1f3a39; --heat: 92 195 186; --warn: #e0a85a; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121a1b; --surface: #1a2426; --ink: #e3ebe9; --muted: #98a8a6; --rule: #2d3a3c;
+  --accent: #5cc3ba; --accent-soft: #1f3a39; --heat: 92 195 186; --warn: #e0a85a; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--body); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-block: 28px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 28px; }
+h1 { font: 700 clamp(28px, 4vw, 40px)/1.1 var(--display); margin: 0; text-wrap: balance }
+h2 { font: 500 20px/1.2 var(--display); margin: 0 }
+.lede { color: var(--muted); max-width: 68ch; margin: 6px 0 0 }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 28px; margin-top: 14px; font-family: var(--mono); font-size: 13px; color: var(--muted) }
+.stats b { color: var(--ink); font-weight: 500; font-size: 18px; display: block; font-variant-numeric: tabular-nums }
+a { color: var(--accent) }
+.label { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600 }
+.panel { display: grid; gap: 14px }
+.controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px }
+.controls label { display: grid; gap: 4px }
+select { font: 500 14px var(--body); padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); color: var(--ink); width: 100% }
+select:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.lenses { display: flex; flex-wrap: wrap; gap: 6px }
+button.chip { font: 500 13px var(--body); border: 1px solid var(--rule); background: var(--surface); color: var(--ink);
+  padding: 5px 11px; border-radius: 999px; cursor: pointer }
+button.chip:hover { border-color: var(--accent) }
+button.chip.on { background: var(--accent); border-color: var(--accent); color: var(--bg) }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; min-height: 30px }
+.filters .chip::after { content: " ×"; color: inherit; opacity: .7 }
+.scroll { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface) }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums }
+th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: middle }
+thead th { font-size: 12px; font-weight: 600; color: var(--muted); position: sticky; top: 0; background: var(--surface); white-space: nowrap }
+.pivot td.cell { text-align: right; font-family: var(--mono); font-size: 13px; cursor: pointer; min-width: 54px }
+.pivot td.cell:hover { outline: 2px solid var(--accent); outline-offset: -2px }
+.pivot td.zero { color: var(--muted); opacity: .45; cursor: default }
+.pivot th.row { font-weight: 500; white-space: nowrap; cursor: pointer }
+.pivot td.total, .pivot th.total { font-weight: 600; color: var(--ink) }
+.bar { display: inline-block; height: 8px; background: rgb(var(--heat)); border-radius: 2px; vertical-align: middle; margin-left: 8px }
+.songs td:first-child { font-weight: 500 }
+.songs .num { font-family: var(--mono); font-size: 13px; text-align: right; white-space: nowrap }
+.songs .meta { color: var(--muted); font-size: 13px }
+.tag { display: inline-block; font-size: 11.5px; padding: 1px 7px; border-radius: 4px; background: var(--accent-soft); color: var(--ink); margin: 1px 3px 1px 0; white-space: nowrap }
+.headrow { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 16px }
+input[type=search] { font: 14px var(--body); padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); color: var(--ink); width: min(320px, 100%) }
+.note { font-size: 13px; color: var(--muted); max-width: 75ch }
+.more { margin-top: 8px }
+@media (max-width: 560px) { .songs .hide-sm { display: none } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="label">Faith Mission Home · worship repertoire</div>
+    <h1>FMH Song Catalogue</h1>
+    <p class="lede">Every song FMH has sung or kept a chart for since 2014, from the 2024–26 roster, Eric's main list, the chord library, worship scripts back to 2014 and Edgar's master folder. Each split puts every song in exactly one bucket, so the numbers always add up to the whole.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <section class="panel" aria-labelledby="split-h">
+    <h2 id="split-h">Split the repertoire</h2>
+    <div class="controls">
+      <label for="rowDim"><span class="label">Split by</span><select id="rowDim"></select></label>
+      <label for="colDim"><span class="label">Cross with</span><select id="colDim"></select></label>
+    </div>
+    <div><div class="label" style="margin-bottom:6px">Diversity lenses</div><div class="lenses" id="lenses"></div></div>
+    <div class="filters" id="filters"></div>
+    <div class="scroll"><table class="pivot" id="pivot"></table></div>
+    <p class="note">Click any number to filter to those songs. Click a row name to filter by that bucket alone. Filters stack, so you can keep narrowing.</p>
+  </section>
+
+  <section class="panel" aria-labelledby="list-h">
+    <div class="headrow">
+      <h2 id="list-h">Songs <span id="count" class="meta"></span></h2>
+      <input type="search" id="q" placeholder="Search title or artist" aria-label="Search title or artist">
+    </div>
+    <div class="scroll"><table class="songs" id="songs"></table></div>
+    <button class="chip more" id="more" hidden>Show all</button>
+    <p class="note">Theme and pace come from Eric's list or the chord library where tagged; the rest were tagged by AI judgment and are worth a glance. "Check version" means Spotify found a worship recording, but not by the artist FMH has on file.</p>
+  </section>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const F = DATA.facets, S = DATA.songs;
+const byId = Object.fromEntries(F.map(f => [f.id, f]));
+const state = { row: "tradition", col: "era", filters: [], q: "", all: false };
+try { Object.assign(state, JSON.parse(localStorage.getItem("fmh-cat") || "{}"), { all: false }); } catch (e) {}
+const save = () => { try { localStorage.setItem("fmh-cat", JSON.stringify({ row: state.row, col: state.col, filters: state.filters })); } catch (e) {} };
+
+const LENSES = [
+  ["Tradition × Era", "tradition", "era"],
+  ["Theme × Tradition", "theme", "tradition"],
+  ["Rested favourites", "eric_rating", "recency"],
+  ["Where songs come from", "region", "tradition"],
+  ["Old songs we dropped", "first_seen", "recency"],
+  ["Pace × Theme", "pace", "theme"],
+  ["Staples by artist", "artist_family", "frequency"],
+  ["New vs well known", "release_decade", "popularity"],
+  ["Keys we sing in", "key", "tradition"],
+  ["Not introduced yet", "introduced", "tradition"],
+];
+
+const el = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function fillSelects() {
+  const groups = [...new Set(F.map(f => f.group))];
+  const opts = (none) => (none ? '<option value="">Nothing (one-way split)</option>' : "") +
+    groups.map(g => `<optgroup label="${esc(g)}">` + F.filter(f => f.group === g).map(f => `<option value="${f.id}">${esc(f.label)}</option>`).join("") + "</optgroup>").join("");
+  el("rowDim").innerHTML = opts(false); el("colDim").innerHTML = opts(true);
+  el("rowDim").value = state.row; el("colDim").value = state.col;
+  el("rowDim").onchange = e => { state.row = e.target.value; render(); };
+  el("colDim").onchange = e => { state.col = e.target.value; render(); };
+  el("lenses").innerHTML = LENSES.map(([n, r, c], i) => `<button class="chip" data-i="${i}">${esc(n)}</button>`).join("");
+  el("lenses").onclick = e => { const b = e.target.closest("button"); if (!b) return;
+    const [, r, c] = LENSES[b.dataset.i]; state.row = r; state.col = c; el("rowDim").value = r; el("colDim").value = c; render(); };
+  el("q").oninput = e => { state.q = e.target.value.toLowerCase(); renderSongs(); };
+  el("more").onclick = () => { state.all = true; renderSongs(); };
+}
+
+function filtered() {
+  return S.filter(s => state.filters.every(([d, v]) => s.f[d] === v));
+}
+
+function addFilter(d, v) {
+  state.filters = state.filters.filter(([x]) => x !== d).concat([[d, v]]);
+  state.all = false; render();
+}
+
+function renderFilters() {
+  el("filters").innerHTML = state.filters.length
+    ? '<span class="label">Filtered to</span>' + state.filters.map(([d, v], i) => `<button class="chip on" data-i="${i}" aria-label="Remove filter">${esc(byId[d].label)}: ${esc(v)}</button>`).join("") +
+      (state.filters.length > 1 ? '<button class="chip" data-clear="1">Clear all</button>' : "")
+    : '<span class="note">No filters. Showing all songs.</span>';
+  el("filters").onclick = e => { const b = e.target.closest("button"); if (!b) return;
+    state.filters = b.dataset.clear ? [] : state.filters.filter((_, i) => i != b.dataset.i); render(); };
+}
+
+function renderPivot(rows) {
+  const R = byId[state.row], C = state.col ? byId[state.col] : null;
+  const counts = {}; rows.forEach(s => { const k = s.f[R.id] + "\u0001" + (C ? s.f[C.id] : ""); counts[k] = (counts[k] || 0) + 1; });
+  const rowTot = b => rows.filter(s => s.f[R.id] === b).length;
+  const rBuckets = R.buckets.filter(b => rowTot(b) > 0);
+  const cBuckets = C ? C.buckets.filter(b => rows.some(s => s.f[C.id] === b)) : [];
+  const max = Math.max(1, ...Object.values(counts));
+  const shade = n => n ? `background: rgb(var(--heat) / ${(0.08 + 0.62 * n / max).toFixed(2)}); color: ${n / max > 0.55 ? "var(--bg)" : "var(--ink)"}` : "";
+  let h = `<thead><tr><th>${esc(R.label)}</th>` + (C ? cBuckets.map(c => `<th>${esc(c)}</th>`).join("") : "") + `<th class="total">Songs</th><th>Share</th></tr></thead><tbody>`;
+  rBuckets.forEach(r => {
+    const t = rowTot(r);
+    h += `<tr><th class="row" data-r="${esc(r)}" scope="row">${esc(r)}</th>`;
+    if (C) cBuckets.forEach(c => { const n = counts[r + "\u0001" + c] || 0;
+      h += `<td class="cell${n ? "" : " zero"}" style="${shade(n)}" data-r="${esc(r)}" data-c="${esc(c)}">${n || "·"}</td>`; });
+    const pct = rows.length ? Math.round(100 * t / rows.length) : 0;
+    h += `<td class="cell total" data-r="${esc(r)}">${t}</td><td class="num">${pct}%<span class="bar" style="width:${Math.max(2, pct * 1.2)}px"></span></td></tr>`;
+  });
+  if (C) h += `<tr><th class="total">All</th>` + cBuckets.map(c => `<td class="cell total" data-c="${esc(c)}">${rows.filter(s => s.f[C.id] === c).length}</td>`).join("") + `<td class="cell total">${rows.length}</td><td></td></tr>`;
+  el("pivot").innerHTML = h + "</tbody>";
+  el("pivot").onclick = e => {
+    const t = e.target.closest("[data-r],[data-c]"); if (!t || t.classList.contains("zero")) return;
+    if (t.dataset.r !== undefined) addFilter(R.id, t.dataset.r);
+    if (t.dataset.c !== undefined && C) addFilter(C.id, t.dataset.c);
+  };
+}
+
+function renderSongs() {
+  const rows = filtered().filter(s => !state.q || (s.t + " " + s.a).toLowerCase().includes(state.q));
+  const shown = state.all ? rows : rows.slice(0, 150);
+  el("count").textContent = `· ${rows.length}`;
+  const tagDims = ["tradition", "era", "theme", "pace"];
+  el("songs").innerHTML = `<thead><tr><th>Song</th><th class="hide-sm">Artist</th><th class="num">Sung 24–26</th><th class="hide-sm">Last sung</th><th class="hide-sm">Tags</th><th>Listen</th></tr></thead><tbody>` +
+    shown.map(s => `<tr><td>${esc(s.t)}</td><td class="meta hide-sm">${esc(s.a || "—")}</td><td class="num">${s.n || "·"}</td><td class="meta hide-sm">${esc(s.l || "—")}</td>` +
+      `<td class="hide-sm">${tagDims.map(d => s.f[d]).filter(v => !/^(Unknown|Untagged|Other)/.test(v)).map(v => `<span class="tag">${esc(v)}</span>`).join("")}</td>` +
+      `<td>${s.u ? `<a href="${esc(s.u)}" target="_blank" rel="noopener">Spotify</a>` : '<span class="meta">—</span>'}</td></tr>`).join("") + "</tbody>";
+  el("more").hidden = state.all || rows.length <= 150;
+  el("more").textContent = `Show all ${rows.length}`;
+}
+
+function renderStats() {
+  const on = S.filter(s => s.f.spotify !== "Not on playlist").length;
+  const trad = new Set(S.map(s => s.f.artist_family)).size;
+  const pairs = F.length * (F.length - 1) / 2;
+  el("stats").innerHTML = [
+    [S.length, "songs in the catalogue"], [on, "on the Spotify playlist"],
+    [S.filter(s => s.n > 0).length, "sung 2024–26"], [F.length, "ways to split"], [pairs, "two-way crosses"],
+  ].map(([n, t]) => `<div><b>${n}</b>${t}</div>`).join("") +
+    (DATA.playlist ? `<div><b><a href="${esc(DATA.playlist)}" target="_blank" rel="noopener">Open playlist</a></b>FMH — Every Song</div>` : "");
+}
+
+function render() {
+  save(); renderFilters(); renderPivot(filtered()); renderSongs();
+  document.querySelectorAll("#lenses .chip").forEach(b => { const [, r, c] = LENSES[b.dataset.i]; b.classList.toggle("on", r === state.row && c === state.col); });
+}
+fillSelects(); renderStats(); render();
+</script>

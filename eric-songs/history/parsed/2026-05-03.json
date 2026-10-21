@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-03",
+  "passage": "Mt 9:9-17",
+  "theme": "Following Jesus",
+  "songs": [
+    {
+      "slot": "opening",
+      "title": "Psalm 23",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "opening",
+      "title": "Undivided",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "kids",
+      "title": "Lift up your voices",
+      "link": "https://youtu.be/5nukSWi-NoA",
+      "note": "without verse 3!"
+    },
+    {
+      "slot": "pre-sermon",
+      "title": "I have decided to follow Jesus",
+      "link": null,
+      "note": null
+    },
+    {
+      "slot": "closing",
+      "title": "The Church's One Foundation",
+      "link": "https://www.hymnal.net/en/hymn/h/833",
+      "note": "The bridegroom coming for the bride, also we await his return | Hymn. Please use lyrics from this link!"
+    }
+  ]
+}

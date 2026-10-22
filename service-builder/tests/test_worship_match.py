@@ -66,3 +66,39 @@ def test_composer_credit_does_not_pull_in_classical_piano():
 def test_roster_original_artists_count_as_worship():
     sp = FakeSpotify([track("Where O Grave Is Your Victory?", "Ben Slee", "Where O Grave Is Your Victory?", pop=5)])
     assert wm.find(sp, "Where, O Grave, Is Your Victory")["confidence"] in ("high", "medium")
+
+
+# A Spotify title that is only a fragment of ours is a different song.
+import pytest  # noqa: E402
+
+
+@pytest.mark.parametrize("ours, theirs", [
+    ("In Whom I Can Trust", "trust"),
+    ("Trust", "Trust In God (feat. Chris Brown)"),
+    ("Great Is Thy Faithfulness", "Faithfulness"),
+    ("Jesus Paid It All", "Jesus"),
+])
+def test_fragment_titles_do_not_match(ours, theirs):
+    assert not wm._title_matches(theirs, wm._title_key(ours))
+
+
+@pytest.mark.parametrize("ours, theirs", [
+    ("Oceans Where Feet May Fail", "Oceans (Where Feet May Fail)"),
+    ("Come Thou Fount", "Come Thou Fount of Every Blessing"),
+    ("Hosanna", "Hosanna (Praise Is Rising)"),
+    ("Mighty to Save", "Mighty to Save - Live"),
+    ("10,000 Reasons", "10,000 Reasons (Bless the Lord)"),
+    ("Tis So Sweet To Trust In Jesus", "'Tis So Sweet to Trust in Jesus"),
+    ("Psalm 63", "Psalm 63 (Better Than Life)"),
+    ("Man of Sorrow", "Man of Sorrows"),
+])
+def test_real_variants_still_match(ours, theirs):
+    assert wm._title_matches(theirs, wm._title_key(ours))
+
+
+def test_hymn_tunes_albums_are_instrumental():
+    assert wm.INSTRUMENTAL_ALBUM.search("Hymn Tunes, Vol. 2")
+
+
+def test_string_albums_are_instrumental():
+    assert wm.INSTRUMENTAL_ALBUM.search("String Heaven")

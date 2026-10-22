@@ -12,10 +12,16 @@
     mkdir -p /tmp/fmh-scripts && unzip -oq ../eric-songs/master-list/sources/onedrive-scripts-2014-2026.zip -d /tmp/fmh-scripts
     python3 build_master_list.py --main ../eric-songs/master-list/sources/song-main-list.xlsx \
       --edgar-zip ../eric-songs/master-list/sources/edgar-master-list.zip \
-      --scripts /tmp/fmh-scripts --scripts ../eric-all-weeks [--scripts <song-and-praise-folder>] \
+      --scripts Rizvan=/tmp/fmh-scripts --scripts Eric=../eric-all-weeks [--scripts <Owner>=<folder>] \
+      [--leaders <roster-export.csv>] \
       --spotify --publish
     python3 catalogue.py
     python3 -m pytest tests -q
+
+- `originals.json` — FMH / partner originals (never searched on Spotify). Add titles here.
+- `mashups.json` — every mashup found (generated).
+- `overrides.json` — hand-pinned recordings (title → Spotify track) when the search picks the wrong version. Always wins.
+- `--scripts Owner=folder` credits a folder's scripts to a person (files under an `Edgar/` subfolder go to Edgar). `--leaders` takes a roster CSV export with who led each date; it adds 2024–26 picks per person (planned sets; swaps aren't tracked).
 
 New titles get searched; everything else comes from `spotify-match-cache.json`.
 New songs with no theme/artist show as Untagged until an AI tagging pass is rerun.

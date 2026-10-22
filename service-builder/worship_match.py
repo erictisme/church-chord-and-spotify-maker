@@ -58,7 +58,7 @@ EXTRA_JUNK = ("cover version", "originally performed", "backing track",
 
 # Album names that mean an instrumental record, whoever is credited (hymn
 # composers like Fanny Crosby get credited on classical piano albums).
-INSTRUMENTAL_ALBUM = re.compile(r"piano|orchestra|on guitar|guitar hymns|instrumental|"
+INSTRUMENTAL_ALBUM = re.compile(r"piano|orchestra|on guitar|guitar hymns|instrumental|hymn tunes|\bstrings?\b|"
                                 r"classical settings|strings|music box|harp", re.I)
 
 # Markers above that say "worship-shaped" but name no real artist; a track that
@@ -101,28 +101,45 @@ _SPELLING = [
 ]
 
 
-def _title_key(text: str) -> str:
+def _title_key(text: str, keep_brackets: bool = False) -> str:
     """Loose title comparison: drop punctuation, bracketed suffixes, leading 'the'."""
-    t = re.sub(r"\([^)]*\)|\[[^\]]*\]", " ", text.lower())
+    t = text.lower() if keep_brackets else re.sub(r"\([^)]*\)|\[[^\]]*\]", " ", text.lower())
     t = re.sub(r"[^a-z0-9 ]", " ", t)
     t = re.sub(r"\s+", " ", t).strip()
     t = re.sub(r"^the ", "", t)
     for pattern, replacement in _SPELLING:
         t = re.sub(pattern, replacement, t)
+    t = re.sub(r"(?<=[a-z]{3})s\b", "", t)   # sorrows/sorrow, praises/praise
     return re.sub(r"\s+", " ", t).strip()
 
 
+def _has_phrase(big: str, small: str) -> bool:
+    return f" {small} " in f" {big} "
+
+
 def _title_matches(track_title: str, wanted_key: str) -> bool:
-    """Is this track actually the song we asked for?"""
+    """Is this track actually the song we asked for?
+
+    Whole-word phrases only, and a one-word fragment never counts: "trust" is
+    not "In Whom I Can Trust", and "Trust" is not "Trust In God (feat. ...)".
+    """
     tkey = _title_key(track_title)
-    if not tkey:
+    if not tkey or not wanted_key:
         return False
-    if tkey == wanted_key or wanted_key in tkey or tkey in wanted_key:
+    full = _title_key(track_title, keep_brackets=True)      # "Oceans (Where Feet May Fail)"
+    head = re.split(r" live\b| acoustic\b| radio\b| feat\b| remaster", tkey)[0].strip()
+    if wanted_key in (tkey, full, head):
         return True
-    # "Come Thou Fount / Nothing But The Blood" style medleys, and Spotify's
-    # "Song Title - Live at X" suffixes: compare the leading segment.
-    head = re.split(r" live| acoustic| radio| feat ", tkey)[0].strip()
-    return bool(head) and (head in wanted_key or wanted_key in head)
+    wanted_n = len(wanted_key.split())
+    # Our title inside a longer Spotify title: "Come Thou Fount" in "... of Every Blessing".
+    if wanted_n >= 2 and any(_has_phrase(t, wanted_key) for t in (tkey, full, head)):
+        return True
+    # Spotify title inside ours: only when it is nearly all of ours.
+    for t in (tkey, head):
+        n = len(t.split())
+        if n >= 2 and n >= wanted_n - 1 and _has_phrase(wanted_key, t):
+            return True
+    return False
 
 
 def find(sp, title: str, artist: str = "") -> dict | None:

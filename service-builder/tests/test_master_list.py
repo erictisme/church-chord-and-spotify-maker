@@ -1,5 +1,6 @@
 """Tests for the FMH master list + catalogue. Run: python3 -m pytest service-builder/tests"""
 
+import json
 import os
 import sys
 
@@ -24,6 +25,10 @@ import catalogue as c  # noqa: E402
     ("Lamb of God (C) (Case Conflict)", "Lamb of God", ""),
     ("Turn your eyes upon Jesus.doc", "Turn your eyes upon Jesus", ""),
     ("Spirit lead me G)", "Spirit lead me", ""),
+    ("All the way my saviour leads me - Chris Tomlin", "All the way my saviour leads me", "Chris Tomlin"),
+    ("Mercy Matt Redman", "Mercy", "Matt Redman"),
+    ("Brenton Brown - Jesus Take All Of Me (Just As I Am)", "Jesus Take All Of Me", "Brenton Brown"),
+    ("Trust and Obey Don Moen", "Trust and Obey", "Don Moen"),
 ])
 def test_clean_title_keeps_songs(raw, title, artist):
     assert b.clean_title(raw) == (title, artist)
@@ -238,3 +243,241 @@ def test_region_for_unmapped_hymn_writer_and_new_artists():
     assert f["fn"]({**SAMPLE[0], "artist": "Maranatha! Music"}, TODAY) == "USA"
     assert f["fn"]({**SAMPLE[0], "artist": "City Harvest Church"}, TODAY) == "Singapore & local"
     assert f["fn"]({**SAMPLE[0], "artist": "Jonny Robinson, Rich Thompson"}, TODAY) == "Australia"
+
+
+# ---------- who picked it + per-year analytics ----------
+
+def test_scripts_spec_parses_owner_and_edgar_subfolder_override():
+    assert b.parse_scripts_spec("Rizvan=/x/Scripts") == ("Rizvan", "/x/Scripts")
+    assert b.parse_scripts_spec("/x/eric-all-weeks") == ("", "/x/eric-all-weeks")
+    assert b.owner_for("Rizvan", "/x/Scripts/Edgar/Worship 8.11.2020.docx") == "Edgar"
+    assert b.owner_for("Rizvan", "/x/Scripts/2014-01-04 Worship.docx") == "Rizvan"
+
+
+def test_merge_counts_owners_and_years():
+    songs = b.merge([
+        _row("Cornerstone", "scripts", owner="Rizvan", year=2015),
+        _row("Cornerstone", "scripts", owner="Rizvan", year=2016),
+        _row("Cornerstone", "scripts", owner="Eric", year=2016),
+        _row("Cornerstone", "history", count=2, last_sung="2025-03-01", local=False, kids=False,
+             dates=["2024-08-01", "2025-03-01"]),
+    ])
+    s = songs[0]
+    assert s["owners"] == {"Rizvan": 2, "Eric": 1}
+    assert s["year_counts"] == {"2015": 1, "2016": 2, "2024": 1, "2025": 1}
+
+
+def test_parse_leader_csv_finds_date_and_known_name(tmp_path):
+    p = tmp_path / "roster.csv"
+    p.write_text("Date,Service leader,Music\n4 Jan 2026,Eric Tan,Riz\n11/01/2026,Rizvan,Edgar\n,,\nfoo,bar,baz\n")
+    assert b.parse_leader_csv(str(p)) == {"2026-01-04": "Eric", "2026-01-11": "Rizvan"}
+
+
+def test_chart_data_top_hits_per_person_and_tradition_by_year():
+    songs = [
+        {**SAMPLE[0], "key": "a", "sources": ["main"], "owners": {"Eric": 5, "Rizvan": 1},
+         "year_counts": {"2016": 2, "2025": 3}, "roster_leaders": {"Eric": 2}},
+        {**SAMPLE[2], "key": "b", "sources": ["main"], "owners": {"Rizvan": 4},
+         "year_counts": {"2016": 1}},
+    ]
+    data = c.chart_data(songs, TODAY)
+    assert data["people"]["Eric"][0] == {"t": "His Glory and My Good", "n": 7}
+    assert data["people"]["Rizvan"][0]["t"] == "W-I-S-D-O-M"
+    assert data["by_year"]["2016"] == {"Reformed modern": 1, "Kids": 1}
+    assert data["top_sung"][0]["t"] == "His Glory and My Good"
+
+
+def test_dupe_fold_sums_owners_and_years():
+    kept = {"title": "A", "key": "k1", "sources": ["main"], "status": "on", "match": {"uri": "u"},
+            "owners": {"Eric": 2}, "year_counts": {"2016": 1}}
+    dupe = {"title": "A Two", "key": "k2", "sources": ["scripts"], "status": "dupe", "match": {"uri": "u"},
+            "owners": {"Eric": 1, "Rizvan": 3}, "year_counts": {"2016": 2, "2017": 1}}
+    s = c.catalogue_songs([kept, dupe])[0]
+    assert s["owners"] == {"Eric": 3, "Rizvan": 3}
+    assert s["year_counts"] == {"2016": 3, "2017": 1}
+
+
+def test_song_counts_once_per_script(tmp_path, monkeypatch):
+    (tmp_path / "2016-01-10 Worship.docx").write_bytes(b"")
+    monkeypatch.setattr(b, "script_headings", lambda path: ["Still", "Still", "Forever"])
+    rows = list(b.from_scripts([f"Rizvan={tmp_path}"]))
+    assert sorted(r["title"] for r in rows) == ["Forever", "Still"]
+    assert all(r["owner"] == "Rizvan" and r["year"] == 2016 for r in rows)
+
+
+def test_same_service_in_script_and_roster_is_not_double_counted():
+    songs = b.merge([
+        _row("Undivided", "scripts", owner="Eric", year=2025),
+        _row("Undivided", "history", count=2, last_sung="2025-09-06", local=False, kids=False,
+             dates=["2025-04-27", "2025-09-06"]),
+    ])
+    assert songs[0]["year_counts"]["2025"] == 2      # max(script 1, roster 2), not 3
+
+
+def _song(title, years, trad_stream="reformed-modern", count=0):
+    return {**SAMPLE[0], "title": title, "key": title, "sources": ["main"], "stream": trad_stream,
+            "count": count, "year_counts": years, "owners": {}}
+
+
+def test_year_top_evergreens_and_gone_quiet():
+    songs = [
+        _song("Old Favourite", {"2016": 5, "2017": 4, "2018": 3}),
+        _song("Evergreen", {str(y): 1 for y in range(2014, 2027)}),
+        _song("New Hit", {"2025": 6, "2026": 4}, count=10),
+        _song("Once", {"2016": 1}),
+    ]
+    d = c.chart_data(songs, TODAY)
+    assert d["year_top"]["2016"][0] == {"t": "Old Favourite", "n": 5, "trad": "Reformed modern"}
+    assert d["year_top"]["2025"][0]["t"] == "New Hit"
+    assert d["evergreens"][0] == {"t": "Evergreen", "years": 13, "first": "2014", "last": "2026"}
+    quiet = [r["t"] for r in d["gone_quiet"]]
+    assert "Old Favourite" in quiet and "Once" not in quiet and "Evergreen" not in quiet
+
+
+def test_songbook_numbers_each_book_alphabetically_and_rows_carry_history():
+    songs = [
+        _song("Be Thou My Vision", {"2016": 2}, trad_stream="hymn-traditional"),
+        _song("Amazing Grace", {"2015": 1}, trad_stream="hymn-traditional"),
+        _song("Undivided", {"2025": 3}),
+    ]
+    songs[2].update(dates=["2025-04-27"], owners={"Eric": 2}, sources=["history", "main"],
+                    first_year=2025, last_year=2025)
+    rows = {r["t"]: r for r in c.rows_for_page(songs, TODAY)}
+    assert (rows["Amazing Grace"]["book"], rows["Amazing Grace"]["no"]) == ("Hymn & traditional", 1)
+    assert rows["Be Thou My Vision"]["no"] == 2
+    assert rows["Undivided"]["no"] == 1
+    h = rows["Undivided"]["h"]
+    assert h["years"] == {"2025": 3} and h["dates"] == ["2025-04-27"] and h["who"] == {"Eric": 2}
+    assert h["src"] == ["history", "main"]
+
+
+def test_hymn_writer_is_not_used_as_search_artist():
+    hymn = {"title": "Here Is Love", "artist": "William Rees", "stream": "hymn-traditional", "era": ""}
+    modern = {"title": "Undivided", "artist": "Emu Music", "stream": "reformed-modern", "era": ""}
+    named_hymn = {"title": "Be Thou My Vision", "artist": "Indelible Grace", "stream": "hymn-traditional", "era": ""}
+    assert b.search_artist(hymn) == ""
+    assert b.search_artist(modern) == "Emu Music"
+    assert b.search_artist(named_hymn) == "Indelible Grace"
+
+
+def test_overrides_pin_a_recording():
+    songs = b.merge([_row("Our God Is An Awesome God", "edgar")])
+    songs[0]["match"] = {"uri": "wrong", "name": "x", "artist": "Opwekking", "album": "y", "confidence": "medium"}
+    b.apply_overrides(songs, {"Our God Is An Awesome God": {"uri": "spotify:track:abc",
+                                                            "artist": "Rich Mullins", "name": "Awesome God"}})
+    m = songs[0]["match"]
+    assert (m["uri"], m["confidence"]) == ("spotify:track:abc", "high")
+
+
+def test_cached_match_failing_current_rules_is_searched_again(tmp_path, monkeypatch):
+    cache = tmp_path / "cache.json"
+    cache.write_text(json.dumps({"How Deep the Father's Love|Stuart Townend": {
+        "uri": "old", "name": "How Deep the Father's Love", "artist": "Stuart Townend",
+        "album": "String Heaven", "confidence": "high"}}))
+    monkeypatch.setattr(b, "CACHE", str(cache))
+    calls = []
+    def fake_find(sp, title, artist=""):
+        calls.append(title)
+        return {"uri": "new", "name": title, "artist": "Stuart Townend", "album": "Monument", "confidence": "high"}
+    monkeypatch.setattr(b.cmp.worship_match, "find", fake_find)
+    song = {"title": "How Deep the Father's Love", "artist": "Stuart Townend", "stream": "", "era": ""}
+    b.match_all(None, [song])
+    assert calls == ["How Deep the Father's Love"] and song["match"]["uri"] == "new"
+
+
+# ---------- mashups, keys, originals, vitality ----------
+
+@pytest.mark.parametrize("heading, parts", [
+    ("WHO AM I / LOVE CAME DOWN", ["Who Am I", "Love Came Down"]),
+    ("OPEN THE EYES OF MY HEART x HOLY HOLY HOLY (C)", ["Open The Eyes Of My Heart", "Holy Holy Holy"]),
+    ("A BROKEN SPIRIT (E1) & ISN'T HE? (A22)", ["A Broken Spirit", "Isn't He?"]),
+    ("MEDLEY - THERE IS A FOUNTAIN / NOTHING BUT THE BLOOD", ["There Is A Fountain", "Nothing But The Blood"]),
+    ("Bridge x 2", None),
+    ("Mighty to Save (G)", None),
+])
+def test_split_mashup(heading, parts):
+    assert b.split_mashup(heading) == parts
+
+
+def test_mashups_need_known_songs_and_skip_alt_titles():
+    rows = [
+        _row("Who Am I", "main"), _row("Love Came Down", "main"), _row("Burn for You", "main"),
+        _row("My Hope Is Built", "main"), _row("The Solid Rock", "main"),
+    ]
+    songs = b.merge(rows)
+    raw = [(["Who Am I", "Love Came Down"], 2016, "Rizvan"), (["Who Am I", "Love Came Down"], 2018, "Eric"),
+           (["Burn for You", "Robots"], 2019, "Eric"), (["My Hope Is Built", "The Solid Rock"], 2025, "")]
+    out = b.build_mashups(raw, songs)
+    assert out == [{"songs": ["Who Am I", "Love Came Down"], "n": 2, "years": [2016, 2018], "who": {"Rizvan": 1, "Eric": 1}}]
+
+
+@pytest.mark.parametrize("heading, after, key", [
+    ("Mighty to Save (G)", ["Verse 1", "G  D  Em  C"], "G"),
+    ("Same Love [Capo 2]", ["Intro", "G  C  G  D"], "A"),
+    ("Father (CAPO -1)", ["E   B   C#m  A"], "Eb"),
+    ("Still", ["Verse", "Bb  Eb  F"], "Bb"),
+    ("Your Grace Is Enough", ["Intro: E    E/G#     A2"], "E"),
+    ("Welcome", ["Good morning church"], ""),
+])
+def test_detect_key_from_heading_capo_and_first_chord(heading, after, key):
+    assert b.detect_key(heading, after) == key
+
+
+def test_originals_mark_songs_local():
+    songs = b.merge([_row("For You Alone", "history", count=1, last_sung="2025-06-08", local=False,
+                          kids=False, dates=["2025-06-08"]), _row("Undivided", "main")])
+    b.apply_originals(songs, ["For You Alone", "More Than I Can Bear"])
+    by = {s["title"]: s for s in songs}
+    assert by["For You Alone"]["local"] and not by["Undivided"]["local"]
+
+
+def test_people_by_year_and_vitality():
+    songs = [
+        {**_song("Cornerstone", {"2016": 2, "2025": 1}, trad_stream="charismatic-ccm"),
+         "owner_years": {"Rizvan": {"2016": 2}, "Eric": {"2025": 1}}, "first_year": 2016},
+        {**_song("Undivided", {"2025": 3}), "owner_years": {"Eric": {"2025": 3}}, "first_year": 2025},
+        {**_song("Father", {"2018": 1}, trad_stream="local-original"), "local": True,
+         "owner_years": {"Eric": {"2018": 1}}, "first_year": 2018},
+    ]
+    mashups = [{"songs": ["Cornerstone", "Undivided"], "n": 1, "years": [2025], "who": {"Eric": 1}}]
+    d = c.chart_data(songs, TODAY, mashups=mashups)
+    assert d["people_by_year"]["Eric"]["2025"][0] == {"t": "Undivided", "n": 3}
+    assert d["people_by_year"]["Rizvan"]["2016"][0]["t"] == "Cornerstone"
+    v = d["vitality"]
+    assert v["2025"]["songs"] == 2 and v["2025"]["new"] == 1 and v["2025"]["mashups"] == 1
+    assert v["2018"]["originals"] == 1
+    assert 0 <= v["2025"]["balance"] <= 100
+
+
+def test_keys_flow_to_songbook_and_key_facet():
+    s = {**_song("Still", {"2016": 2}), "keys_played": {"Bb": 3, "A": 1}, "latest_key": "A", "chart_key": ""}
+    row = c.rows_for_page([s], TODAY)[0]
+    assert row["h"]["keys"] == {"Bb": 3, "A": 1} and row["h"]["latest_key"] == "A"
+    assert c.f_key(s, TODAY) == "A"            # latest key played wins over no chart
+    assert c.f_key({**s, "latest_key": "", "chart_key": "G"}, TODAY) == "G"
+
+
+def test_edgar_medley_files_split_into_songs(tmp_path):
+    import zipfile as zf
+    z = tmp_path / "e.zip"
+    with zf.ZipFile(z, "w") as f:
+        f.writestr("Master List - Edgar/Medley - Open the eyes of my heart & All hail the power.doc", "x")
+        f.writestr("Master List - Edgar/Mighty to save (G).doc", "x")
+    titles = sorted(r["title"] for r in b.from_edgar(str(z)))
+    assert titles == ["All hail the power", "Mighty to save", "Open the eyes of my heart"]
+
+
+def test_story_facts():
+    songs = [
+        _song("CCM A", {"2016": 3, "2017": 2}, trad_stream="charismatic-ccm"),
+        _song("CCM B", {"2016": 1, "2021": 2, "2022": 1}, trad_stream="charismatic-ccm"),
+        _song("Ref A", {"2021": 1, "2022": 4, "2023": 2}),
+        _song("Ref B", {"2022": 1, "2023": 1}),
+    ]
+    for s, k in zip(songs, ["G", "G", "C", "G"]):
+        s["latest_key"] = k
+    st = c.chart_data(songs, TODAY)["story"]
+    assert st["crossover_year"] == "2022"          # Reformed ahead from here on, every year
+    assert st["quietest_year"] == "2017"
+    assert st["top_key"] == ("G", 3)
+    assert st["most_balanced_year"] in ("2016", "2017", "2021", "2022", "2023")

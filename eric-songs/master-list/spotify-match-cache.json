@@ -132,13 +132,6 @@
   "confidence": "high",
   "name": "Oh, How Good It Is"
  },
- "How Deep the Father's Love For Us|Stuart Townend": {
-  "uri": "spotify:track:16yy2EprnqMxIxricLBzU1",
-  "artist": "Stuart Townend",
-  "album": "String Heaven",
-  "confidence": "high",
-  "name": "How Deep the Father's Love for Us"
- },
  "His Mercy Is More|Matt Boswell, Matt Papa": {
   "uri": "spotify:track:4N5DNWSCAitzzxhRQ5Cfxi",
   "artist": "Matt Boswell",
@@ -286,13 +279,6 @@
   "confidence": "high",
   "name": "Brick After Brick"
  },
- "Here Is Love|William Rees": {
-  "uri": "spotify:track:7kRf6XBciIrTQDSwj3HDYh",
-  "artist": "William Rees",
-  "album": "Hymn Tunes, Vol. 2",
-  "confidence": "high",
-  "name": "Here Is Love"
- },
  "How Great Is Our God|Chris Tomlin": {
   "uri": "spotify:track:0jOSpB2zK2O0SNxj8ZT5lp",
   "artist": "Chris Tomlin",
@@ -418,13 +404,6 @@
   "album": "Only a Holy God",
   "confidence": "high",
   "name": "Saved My Soul"
- },
- "All Hail the Power of Jesus' Name|Edward Perronet": {
-  "uri": "spotify:track:3jtwL7gDPA1zIeW5aRpl0p",
-  "artist": "Edward Perronet",
-  "album": "Hymn Tunes, Vol. 2",
-  "confidence": "high",
-  "name": "All Hail the Power of Jesus\u2019 Name"
  },
  "Build my life|Housefires": {
   "uri": "spotify:track:0VJTZ7IWMImw3yjUG49DQF",
@@ -643,13 +622,6 @@
   "confidence": "high",
   "name": "What Grace Is Mine"
  },
- "Man of Sorrow (Hillsong)|Hillsong Worship": {
-  "uri": "spotify:track:4IEsMBjh6M0kYH1Jx30ek6",
-  "artist": "Hillsong Worship",
-  "album": "Glorious Ruins",
-  "confidence": "high",
-  "name": "Man of Sorrows"
- },
  "Still|Hillsong (Reuben Morgan)": {
   "uri": "spotify:track:524KQvc46Y1X6HRomMKoBJ",
   "artist": "Hillsong Worship",
@@ -817,13 +789,6 @@
   "album": "Love Ran Red",
   "confidence": "high",
   "name": "The Table"
- },
- "Tis So Sweet To Trust In Jesus|Louisa M. R. Stead": {
-  "uri": "spotify:track:0Cd02Vp7iDgx49JB0PULeA",
-  "artist": "Louisa M. R. Stead",
-  "album": "Hymn Tunes, Vol. 2",
-  "confidence": "high",
-  "name": "Tis so Sweet to Trust in Jesus"
  },
  "Worthy Is The Lamb|Hillsong": {
   "uri": "spotify:track:4vQW0xTLnsTYT1jLT2cH5P",
@@ -1007,13 +972,6 @@
   "confidence": "high",
   "name": "The Wonderful Cross"
  },
- "Oceans Will Part|HILLSONG": {
-  "uri": "spotify:track:0Bn1DSXfisvfKjGUwI6rzW",
-  "artist": "Hillsong UNITED",
-  "album": "Zion (Deluxe Edition)",
-  "confidence": "high",
-  "name": "Oceans (Where Feet May Fail)"
- },
  "All the poor and powerless|All Sons & Daughters": {
   "uri": "spotify:track:3aL5l08GtGXwFtcLRGRy4I",
   "artist": "All Sons & Daughters",
@@ -1189,13 +1147,6 @@
   "confidence": "high",
   "name": "Today Is the Day"
  },
- "All My Hope Is In Jesus|Crowder": {
-  "uri": "spotify:track:6FPLwwpWitg3Tvuy8FGHKT",
-  "artist": "Crowder",
-  "album": "All My Hope",
-  "confidence": "high",
-  "name": "All My Hope"
- },
  "All To Us|Chris Tomlin": {
   "uri": "spotify:track:3vAOKV1lg5je6RnuGGI0Mp",
   "artist": "Chris Tomlin",
@@ -1252,13 +1203,6 @@
   "confidence": "high",
   "name": "I Am Not Alone - Radio Version"
  },
- "I Am Who You Say I Am|Hillsong Worship": {
-  "uri": "spotify:track:50lW1fKoDtyKaiR2bR7ksl",
-  "artist": "Hillsong Worship",
-  "album": "There Is More",
-  "confidence": "high",
-  "name": "Who You Say I Am - Live"
- },
  "I Could Sing of Your Love Forever|Hillsong": {
   "uri": "spotify:track:0ypipC0JkFZVZZXpzCzw05",
   "artist": "Hillsong Worship",
@@ -1279,20 +1223,6 @@
   "album": "Holy Roar",
   "confidence": "high",
   "name": "Is He Worthy?"
- },
- "It Is Well With My Soul x 10,000 Reasons|Horatio Spafford / Matt Redman": {
-  "uri": "spotify:track:0fxpHpK3aw2nFWII6yveDD",
-  "artist": "Matt Redman",
-  "album": "10,000 Reasons (Live)",
-  "confidence": "high",
-  "name": "10,000 Reasons (Bless The Lord) - Live"
- },
- "Jesus Loves Me / Jesus We Love You|Traditional / Bethel Music": {
-  "uri": "spotify:track:1OMwaR5rsyfT2wB48Dm5aK",
-  "artist": "Bethel Music",
-  "album": "We Will Not Be Shaken",
-  "confidence": "high",
-  "name": "Jesus We Love You"
  },
  "Jesus Messiah|Chris Tomlin": {
   "uri": "spotify:track:1MpJ8XHlbOsUdrCWIjmweZ",
@@ -1342,13 +1272,6 @@
   "album": "We Say Yes",
   "confidence": "high",
   "name": "Open Space"
- },
- "Open the Eyes of My Heart x Holy Holy Holy|Paul Baloche / Reginald Heber": {
-  "uri": "spotify:track:4LSacIqXrVARWFxPBA77Nd",
-  "artist": "Paul Baloche",
-  "album": "Open the Eyes of My Heart",
-  "confidence": "high",
-  "name": "Open the Eyes of My Heart"
  },
  "Pieces|Bethel": {
   "uri": "spotify:track:00p3FEGzWCIrBfRPYAYyAz",
@@ -4249,6 +4172,234 @@
   "6n3MLlLf8wrV7vyYs7zEvJ": {
    "date": "2023-11-03",
    "popularity": 33
+  },
+  "071KVMgFOPkNg3MKSoS8ti": {
+   "date": "2022-03-15",
+   "popularity": 20
+  },
+  "0FfCuNZuSrzYdlVoJcwC7n": {
+   "date": "2020-03-07",
+   "popularity": 0
+  },
+  "0IIRQLWP8BAgVIr1EfQ7WW": {
+   "date": "2011-11-01",
+   "popularity": 35
+  },
+  "1LrvGPFZco85hTt0tlxhpa": {
+   "date": "1997-07-06",
+   "popularity": 36
+  },
+  "1Pa9yf2eTdWBYOu0Fkq6t6": {
+   "date": "2017-03-03",
+   "popularity": 41
+  },
+  "1PuHpl3o097lgJ38zzN0cz": {
+   "date": "1986",
+   "popularity": 45
+  },
+  "1TJ6b91E9EzMFYOVNyRIgp": {
+   "date": "2010-05-01",
+   "popularity": 0
+  },
+  "2iDR00nRnza9a0yGg6bTvh": {
+   "date": "2023-03-10",
+   "popularity": 36
+  },
+  "3bGSapzv2av3J9xpxnAjrT": {
+   "date": "1998-05-21",
+   "popularity": 27
+  },
+  "3fS3CEsHJBbeZRQNxXLEuy": {
+   "date": "2014-05-20",
+   "popularity": 4
+  },
+  "44BzJ10kyKUaWrFtHBWPUJ": {
+   "date": "2020-12-25",
+   "popularity": 0
+  },
+  "4J03i6lnmXbWsdvIFqheoE": {
+   "date": "2007-02-09",
+   "popularity": 6
+  },
+  "4lMMMFqN2msrVHAybGK2G9": {
+   "date": "2020-04-27",
+   "popularity": 13
+  },
+  "4mjO44A3RlwmKkwSfvFZ4N": {
+   "date": "2026-10-16",
+   "popularity": 2
+  },
+  "5MoKzZzkbcd6GrVvZUGdhe": {
+   "date": "2006-07-01",
+   "popularity": 44
+  },
+  "5fzsWrPuHXPEED7PnLfdz9": {
+   "date": "2016-02-26",
+   "popularity": 38
+  },
+  "5hmNHzhUqV8LIVUW3EBTu8": {
+   "date": "1962-01-01",
+   "popularity": 0
+  },
+  "5jEqVKl4XKhQcsBTYxCTJI": {
+   "date": "2019-10-14",
+   "popularity": 0
+  },
+  "6E5TAc6jMZtu5WSLSnJ4Mv": {
+   "date": "2017-11-21",
+   "popularity": 14
+  },
+  "6RbphbE0NEh1PPrQgNpRan": {
+   "date": "2015-07-17",
+   "popularity": 0
+  },
+  "6Sx0lAcWToNxtlQUbVbesx": {
+   "date": "2003-01-01",
+   "popularity": 20
+  },
+  "6XFFdDO6cZHtTAFVzJyrsS": {
+   "date": "2014-09-01",
+   "popularity": 32
+  },
+  "6xir7EGY9TGR9mhByAjUcq": {
+   "date": "1986",
+   "popularity": 43
+  },
+  "7LyXSJdv23ZgnaVrHyk1Ia": {
+   "date": "2021-09-10",
+   "popularity": 46
+  },
+  "7tJ2RaT2VhrvIgu5NfPtqu": {
+   "date": "1999-01-01",
+   "popularity": 38
+  },
+  "02mlAPyfZjqiazg5XDiYZC": {
+   "date": "1990-01-01",
+   "popularity": 34
+  },
+  "0ICv6gtsRJw8hrr5C4gjHY": {
+   "date": "2022-03-15",
+   "popularity": 23
+  },
+  "0dU0CaqWl5roVujh3BnPrv": {
+   "date": "2016-12-04",
+   "popularity": 52
+  },
+  "0e1xRUk1mR2ePlCiO5laq0": {
+   "date": "2025-11-14",
+   "popularity": 40
+  },
+  "0iE9E6qNW8jOnQaz2MgWRd": {
+   "date": "2012-10-22",
+   "popularity": 50
+  },
+  "1HJJ7VbGM17QxqrcWUR5cx": {
+   "date": "2021-10-29",
+   "popularity": 39
+  },
+  "1Mp90z16Mneiqthtf7fOf9": {
+   "date": "2018-09-07",
+   "popularity": 53
+  },
+  "1ZoIscSn8Hdcs8tXodPak6": {
+   "date": "2018-09-07",
+   "popularity": 41
+  },
+  "1lK4SFE2TMeqEziR3TURFO": {
+   "date": "2009-01-01",
+   "popularity": 44
+  },
+  "1xjWrIOQmXNIseQBVST4Hf": {
+   "date": "2019-08-20",
+   "popularity": 36
+  },
+  "2G83Bi2pnml8ZEskoheM0Y": {
+   "date": "2020-07-10",
+   "popularity": 54
+  },
+  "2KQEibiwp4auUI0E6eQA5u": {
+   "date": "2021-02-05",
+   "popularity": 45
+  },
+  "3ELvknrrLz8QL36CeIb6Je": {
+   "date": "2014-06-17",
+   "popularity": 48
+  },
+  "45bFl67prA7LMOld5TZiAr": {
+   "date": "2016-10-21",
+   "popularity": 30
+  },
+  "4TvSdxwziuv2uzaXblesBr": {
+   "date": "2002",
+   "popularity": 39
+  },
+  "5W9Al2ewPfzbWHOV2BAtBR": {
+   "date": "2006-01-01",
+   "popularity": 62
+  },
+  "5yZcK6LIBxD6Ia5vYuEr6v": {
+   "date": "2018-09-07",
+   "popularity": 52
+  },
+  "62mIVLwQoI8tzNmHKUxikq": {
+   "date": "2017-10-06",
+   "popularity": 31
+  },
+  "73EIpn5AcedCWPOmxWMxH9": {
+   "date": "2006-01-01",
+   "popularity": 49
+  },
+  "77vx3APQ7bweEpcO3kj8CO": {
+   "date": "2025-11-14",
+   "popularity": 35
+  },
+  "7bHlCPMBiTdcJ04cuUQr2d": {
+   "date": "2024-10-10",
+   "popularity": 49
+  },
+  "7fKBNGANLcwp61txnZB8T5": {
+   "date": "2015-02-27",
+   "popularity": 25
+  },
+  "7gGhaXZvvmqDXtCEprQdb5": {
+   "date": "2024-10-10",
+   "popularity": 49
+  },
+  "5pwNDzyYJwf8r7VZD7bsH3": {
+   "date": "2009-12-07",
+   "popularity": 2
+  },
+  "2CuTb9Tks9eeAmjHGm5vAC": {
+   "date": "1993",
+   "popularity": 47
+  },
+  "5pME1MDi0g4wCmEvTet9mG": {
+   "date": "2022-09-09",
+   "popularity": 38
+  },
+  "79HmnYXJxE28L8IIgundmj": {
+   "date": "2011-08-30",
+   "popularity": 40
+  },
+  "0BaI66HnzOMf3Kk7femx8m": {
+   "date": "2006-01-01",
+   "popularity": 49
+  },
+  "23HvFDV5Z1VdvViQ8bbrGV": {
+   "date": "2007-01-01",
+   "popularity": 24
+  },
+  "23opT8yQsm3igLJnjMDR5p": {
+   "date": "2016-05-06",
+   "popularity": 32
+  },
+  "2TGCX8XQaAVwEwMnlpab4F": {
+   "date": "2025-01-31",
+   "popularity": 4
+  },
+  "654Otva4zhiHTf1BQkqnAy": {
+   "date": "2020-04-15",
+   "popularity": 41
   }
  },
  "Crown Him With Many Crowns|Traditional Hymn": {
@@ -4357,13 +4508,6 @@
   "confidence": "medium",
   "name": "God Speaks"
  },
- "Oh the Deep, Deep Love of Jesus|Sovereign Grace Music": {
-  "uri": "spotify:track:6BUG1N1rOCBJd9hGdpJZrq",
-  "artist": "Sovereign Grace Music",
-  "album": "Come Weary Saints",
-  "confidence": "high",
-  "name": "Oh the Deep Deep Love"
- },
  "Facing a Task Unfinished|Keith Getty & Stuart Townend": {
   "uri": "spotify:track:7Faq6STPP4waJP6TliPjh2",
   "artist": "Keith & Kristyn Getty",
@@ -4385,13 +4529,6 @@
   "confidence": "medium",
   "name": "Before the Throne of God Above"
  },
- "For You Alone Are Worthy|": {
-  "uri": "spotify:track:0dWit3DFUJm6FyiksVBPcG",
-  "artist": "Walls of Worship",
-  "album": "Wind, Vol. 1",
-  "confidence": "medium",
-  "name": "For You Alone"
- },
  "Take My Life And Let It Be|Frances Havergal": {
   "uri": "spotify:track:72tw7lxDJJsIwNPStQSC3h",
   "artist": "Still Waters Worship",
@@ -4405,13 +4542,6 @@
   "album": "Jesus, Strong and Kind",
   "confidence": "high",
   "name": "Jesus, Strong and Kind"
- },
- "I Have Decided to Follow Jesus|Traditional": {
-  "uri": "spotify:track:5q46hVfpHFtDJyLHUYkP5I",
-  "artist": "Still Waters Worship",
-  "album": "I Have Decided",
-  "confidence": "medium",
-  "name": "I Have Decided"
  },
  "All Sufficient Merit|": {
   "uri": "spotify:track:5Easb79lA4mApsetqnvS69",
@@ -4447,13 +4577,6 @@
   "album": "I Surrender All",
   "confidence": "medium",
   "name": "I Surrender All"
- },
- "Immortal, Invisible, God Only Wise|Keith & Kristyn Getty": {
-  "uri": "spotify:track:7el2aPfVbTmAntHpu1sO61",
-  "artist": "Emu Music",
-  "album": "Hymns of Grateful Praise",
-  "confidence": "medium",
-  "name": "Immortal, Invisible"
  },
  "God Omniscient, God All Knowing|": {
   "uri": "spotify:track:00jnLzQiwaQTtSikkshHec",
@@ -4560,33 +4683,12 @@
   "confidence": "medium",
   "name": "What Love, My God"
  },
- "Come Thou Fount / Nothing But The Blood|": {
-  "uri": "spotify:track:2DLPHrdpOcvlDiYc2yZmvs",
-  "artist": "Jesus Culture",
-  "album": "Awakening - Live From Chicago",
-  "confidence": "medium",
-  "name": "Nothing But The Blood - Live"
- },
- "Come Thou Fount of Every Blessing|Chris Tomlin": {
-  "uri": "spotify:track:2aVWXW3JC6MHK5TzwrezIZ",
-  "artist": "Chris Tomlin",
-  "album": "Never Lose Sight (Deluxe Edition)",
-  "confidence": "high",
-  "name": "Come Thou Fount (I Will Sing)"
- },
  "For the Cause|": {
   "uri": "spotify:track:0ZpDURNagOzElcq8ToZ9UL",
   "artist": "Keith & Kristyn Getty",
   "album": "Facing A Task Unfinished",
   "confidence": "medium",
   "name": "For The Cause"
- },
- "How Great is Our God / How Great Thou Art|Chris Tomlin": {
-  "uri": "spotify:track:0jOSpB2zK2O0SNxj8ZT5lp",
-  "artist": "Chris Tomlin",
-  "album": "How Great Is Our God: The Essential Collection",
-  "confidence": "high",
-  "name": "How Great Is Our God"
  },
  "It Came Upon A Midnight Clear|Shane & Shane": {
   "uri": "spotify:track:3NqTPbIrrE7FwhV5xVy1KV",
@@ -4665,13 +4767,6 @@
   "confidence": "medium",
   "name": "All The Way My Savior Leads Me"
  },
- "Remember Me|": {
-  "uri": "spotify:track:5zavjk5WOGxtk3SbuqINDX",
-  "artist": "Passion",
-  "album": "Passion: Salvation\u2019s Tide Is Rising",
-  "confidence": "medium",
-  "name": "Remember"
- },
  "Alabaster Jar|": {
   "uri": "spotify:track:0ITkdR7Xt7CiAhAF7kCYXn",
   "artist": "Klaus",
@@ -4686,26 +4781,12 @@
   "confidence": "medium",
   "name": "What A Beautiful Name"
  },
- "Jesus Loves Me This I Know|Chris Tomlin": {
-  "uri": "spotify:track:1uYzjO9kztEi2KVSS5rDgE",
-  "artist": "Chris Tomlin",
-  "album": "Love Ran Red",
-  "confidence": "high",
-  "name": "Jesus Loves Me"
- },
  "Agnus Dei|Michael W. Smith": {
   "uri": "spotify:track:1N9SysNAP8j4wbAIHzlM9m",
   "artist": "Michael W. Smith",
   "album": "Decades of Worship",
   "confidence": "high",
   "name": "Agnus Dei"
- },
- "Ressurecting|": {
-  "uri": "spotify:track:11l40ar5JKnhQDcSneTpjD",
-  "artist": "Rapheumet's Well",
-  "album": "The Elder's Anthology",
-  "confidence": "low",
-  "name": "Ressurecting the Blood Gate"
  },
  "I Surrender|Hillsong Worship": {
   "uri": "spotify:track:2Ilbv0FdK3FDydyjwLYbz9",
@@ -4742,13 +4823,6 @@
   "confidence": "medium",
   "name": "At The Cross (Love Ran Red)"
  },
- "In Whom I Can Trust|": {
-  "uri": "spotify:track:2nTYTt28kPJcd6kmBZtYzD",
-  "artist": "City Harvest Church",
-  "album": "Come Away",
-  "confidence": "medium",
-  "name": "trust"
- },
  "Waiting Here For You|Passion": {
   "uri": "spotify:track:3oSQOGiP2Zl0NukkKJOgwx",
   "artist": "Passion",
@@ -4769,13 +4843,6 @@
   "album": "Oh Lord, You're Beautiful - Songs Of Worship",
   "confidence": "high",
   "name": "Oh Lord, You're Beautiful"
- },
- "Rock Of Ages Cleft For Me|Norton Hall Band": {
-  "uri": "spotify:track:6CLSmJMaVVjJMpcuTeFUPZ",
-  "artist": "Norton Hall Band",
-  "album": "Crown Him: Hymns Project Vol. III",
-  "confidence": "high",
-  "name": "Rock of Ages"
  },
  "Yes I Will|Vertical Worship": {
   "uri": "spotify:track:1sF4VadVaVTvp9WTEy79JT",
@@ -4825,13 +4892,6 @@
   "album": "Choral Music Series: Hear Our Prayer",
   "confidence": "medium",
   "name": "My Hope Is in You"
- },
- "Our God Is An Awesome God|Rich Mullins": {
-  "uri": "spotify:track:5niLKxgCj4UriedJmPtJld",
-  "artist": "Rich Mullins",
-  "album": "Winds Of Heaven, Stuff Of Earth",
-  "confidence": "high",
-  "name": "Awesome God"
  },
  "For Us|": {
   "uri": "spotify:track:3Z5Ary9vU7eTf9GRwDWJDW",
@@ -4917,26 +4977,12 @@
   "confidence": "medium",
   "name": "Beautiful Saviour"
  },
- "Brenton Brown - Jesus Take All Of Me (Just As I Am)|": {
-  "uri": "spotify:track:0Rb0eBQrE9rmvTVlJjqAfH",
-  "artist": "Hillsong Worship",
-  "album": "For All You've Done (Live)",
-  "confidence": "medium",
-  "name": "Take All Of Me"
- },
  "I Have Decided|": {
   "uri": "spotify:track:5q46hVfpHFtDJyLHUYkP5I",
   "artist": "Still Waters Worship",
   "album": "I Have Decided",
   "confidence": "medium",
   "name": "I Have Decided"
- },
- "I Sing The Mighty Power Of God|Indelible Grace Music": {
-  "uri": "spotify:track:5PuIQwvRR6uj9Vf9zMw9pS",
-  "artist": "Sovereign Grace Music",
-  "album": "Knowing God (Live)",
-  "confidence": "medium",
-  "name": "Sing - Live"
  },
  "Lead Us Lord|": {
   "uri": "spotify:track:7aPJqNAgYsjnVIrK21Vkbf",
@@ -4951,13 +4997,6 @@
   "album": "Hallelujah Here Below",
   "confidence": "high",
   "name": "Worthy"
- },
- "You Are The Everlasting God|": {
-  "uri": "spotify:track:1cUyNauQChHpZm4RIe2Yuy",
-  "artist": "Chris Tomlin",
-  "album": "See The Morning (Special Edition)",
-  "confidence": "medium",
-  "name": "Everlasting God"
  },
  "You Hold Me Now-G|Mitch": {
   "uri": "spotify:track:2IUrXH0Ev3CTLMUowe3elu",
@@ -5078,13 +5117,6 @@
   "confidence": "medium",
   "name": "Oh But God"
  },
- "Sheperd|": {
-  "uri": "spotify:track:5ikUJQpl8K76godkDxGGZ7",
-  "artist": "Ludwig van Beethoven",
-  "album": "Beethoven: Symphony No. 6 in F Major, Op. 68 \"Pastoral\"",
-  "confidence": "medium",
-  "name": "Symphony No. 6 in F Major, Op. 68 \"Pastoral\": V. Sheperds' Hymn after the storm - Allegretto"
- },
  "Worthy Of It All|CeCe Winans": {
   "uri": "spotify:track:6aKCJLh5lrsIXjA5ndk6xJ",
   "artist": "CeCe Winans",
@@ -5190,13 +5222,6 @@
   "confidence": "high",
   "name": "When I Survey (The Wonderful Cross) - Live"
  },
- "All hail the power of Jesus's name|Chris Tomlin": {
-  "uri": "spotify:track:5hl0udnacaT2yOwK4JSPlW",
-  "artist": "Planetshakers",
-  "album": "Let's Go (Live)",
-  "confidence": "medium",
-  "name": "All Hail"
- },
  "All to Jesus I surrender|Norton Hall Band": {
   "uri": "spotify:track:5XLWDggQlDaWMgStIOFNDw",
   "artist": "The Scottish Festival Singers",
@@ -5210,13 +5235,6 @@
   "album": "Yet Not I",
   "confidence": "medium",
   "name": "Ancient Of Days"
- },
- "Be Exalted, O God (A1|": {
-  "uri": "spotify:track:3IXBxptgCrcfBSYveUFgj8",
-  "artist": "Annesbrook Worship",
-  "album": "Be Exalted (Live)",
-  "confidence": "medium",
-  "name": "Be Exalted - Live"
  },
  "Holy (Song Of The Ages)|": {
   "uri": "spotify:track:7yb3aJG4qnzXy6PWkg3Dyt",
@@ -5261,13 +5279,6 @@
   "confidence": "high",
   "name": "Open Heaven (River Wild)"
  },
- "Praise God In The Waiting|": {
-  "uri": "spotify:track:7Ee6XgP8EHKDhTMYLIndu9",
-  "artist": "Elevation Worship",
-  "album": "CAN YOU IMAGINE?",
-  "confidence": "medium",
-  "name": "Praise (feat. Brandon Lake, Chris Brown & Chandler Moore)"
- },
  "Praise To The Lord|Norton Hall Band": {
   "uri": "spotify:track:5srG8qzkeIa4H4QYd8aKv3",
   "artist": "Norton Hall Band",
@@ -5295,13 +5306,6 @@
   "album": "Celebrating Our Savior - Sharing His Salvation",
   "confidence": "medium",
   "name": "Sure Foundation"
- },
- "The resurrected King is resurrecting me|": {
-  "uri": "spotify:track:1GtmiINnAu5K2VEqyh1Xdc",
-  "artist": "Elevation Worship",
-  "album": "Here As In Heaven",
-  "confidence": "medium",
-  "name": "Resurrecting (Live)"
  },
  "The Time Has Come|": {
   "uri": "spotify:track:5x0VjYtom6hqZ2jhmhAzVP",
@@ -5367,20 +5371,6 @@
   "name": "All I Need Is You - Live"
  },
  "All My Boast In Jesus|Keith & Kristyn Getty, Matt Boswell, Matt Papa": null,
- "Ascribe Greatness to our God|": {
-  "uri": "spotify:track:2UDnfcbejIQRTYPhquSQkQ",
-  "artist": "Bethel Music",
-  "album": "For the Sake of the World",
-  "confidence": "medium",
-  "name": "To Our God"
- },
- "Cleanse me|": {
-  "uri": "spotify:track:7fBG3qnxmd2b2mEJ6CJVQH",
-  "artist": "Hillsong UNITED",
-  "album": "People (Live)",
-  "confidence": "medium",
-  "name": "Clean - Live"
- },
  "God leads us along|Gaither Vocal Band": {
   "uri": "spotify:track:1rbuuCnRH1cBIbpRgoAw2K",
   "artist": "Gaither Vocal Band",
@@ -5479,13 +5469,6 @@
   "confidence": "medium",
   "name": "Your Will Be Done"
  },
- "10,000 Reason|": {
-  "uri": "spotify:track:0fxpHpK3aw2nFWII6yveDD",
-  "artist": "Matt Redman",
-  "album": "10,000 Reasons (Live)",
-  "confidence": "medium",
-  "name": "10,000 Reasons (Bless The Lord) - Live"
- },
  "A Mighty Fortress Is Our God|Norton Hall Band": {
   "uri": "spotify:track:6tubZdHpGa2VwayPCnlGg1",
   "artist": "Norton Hall Band",
@@ -5521,31 +5504,10 @@
   "confidence": "medium",
   "name": "\ub0b4\uac00 \ub9cc\ubbfc \uc911\uc5d0 Be Exalted O God"
  },
- "Behold the glory of the King|": {
-  "uri": "spotify:track:1fcytmf4DjBc7ZkhSPnNIP",
-  "artist": "Hillsong Worship",
-  "album": "let there be light.",
-  "confidence": "medium",
-  "name": "Behold (Then Sings My Soul) - Live"
- },
- "Burn for You by Rivers|": {
-  "uri": "spotify:track:77QlT4RN0SUlGG1nasBR16",
-  "artist": "AFROJACK",
-  "album": "Rivers",
-  "confidence": "low",
-  "name": "Rivers"
- },
  "Change My Heart, O God|": {
   "uri": "spotify:track:5D3P3DhujyNrbtRc2oaWBU",
   "artist": "Don Moen Worship Again!",
   "album": "Lord I Lift Your Name On High: 80s & 90s Praise and Worship, Vol. 1",
-  "confidence": "medium",
-  "name": "Change My Heart Oh God"
- },
- "Change My Heart, O God One Voice|": {
-  "uri": "spotify:track:1vR8INK4f0MrjBHnitMLM5",
-  "artist": "Maranatha! Music",
-  "album": "Heart Of Worship - Prayer",
   "confidence": "medium",
   "name": "Change My Heart Oh God"
  },
@@ -5556,26 +5518,12 @@
   "confidence": "medium",
   "name": "Come and See"
  },
- "Facing A Task Finished|": {
-  "uri": "spotify:track:7gjdfUhIVmIq5WCroJSxRv",
-  "artist": "New Creation Worship",
-  "album": "Anthem of Grace",
-  "confidence": "medium",
-  "name": "Finished"
- },
  "God Hath Not Promised|": {
   "uri": "spotify:track:5ieaQ9um735BLhVpkKTKW5",
   "artist": "Loving the Lord",
   "album": "Drink a River",
   "confidence": "medium",
   "name": "God Hath Not Promised (Hymn 720)"
- },
- "God of Miracles Come|": {
-  "uri": "spotify:track:3sS3krMEoOsTSAPNtsTobt",
-  "artist": "Jesus Culture",
-  "album": "Let It Echo (Live)",
-  "confidence": "medium",
-  "name": "Miracles - Live"
  },
  "God Rest Ye Merry Gentlemen|": {
   "uri": "spotify:track:6TtdOch5BhEsIan3wfOFE6",
@@ -5654,40 +5602,12 @@
   "confidence": "high",
   "name": "I Sing Praises To Your Name"
  },
- "I Sing The Mighty Pow'R Of God|": {
-  "uri": "spotify:track:2DHdPtKkdQBwtLZLjJZLn1",
-  "artist": "Sovereign Grace Music",
-  "album": "Sing (Live)",
-  "confidence": "medium",
-  "name": "Sing - Live"
- },
  "I Stay Amazed|": {
   "uri": "spotify:track:1cSOX8LZm30Ltx6YZWT1lE",
   "artist": "Gateway Worship",
   "album": "God Be Praised (Live)",
   "confidence": "medium",
   "name": "Stay Amazed - Live"
- },
- "I will not fear to meet Him there|": {
-  "uri": "spotify:track:3RoNU8ygbsdMgiZHjmz25b",
-  "artist": "Bridge Worship",
-  "album": "I Will Not Fear",
-  "confidence": "medium",
-  "name": "I Will Not Fear"
- },
- "Jehovah Jireh|": {
-  "uri": "spotify:track:1goiRWxiG3GTlODrdDZ7NR",
-  "artist": "Elevation Worship",
-  "album": "Old Church Basement",
-  "confidence": "medium",
-  "name": "Jireh (feat. Chandler Moore & Naomi Raine)"
- },
- "Jerusalem B (A capo 2)|": {
-  "uri": "spotify:track:25IrAdhm9T2tlJMvcpnEUq",
-  "artist": "CityAlight",
-  "album": "Yours Alone",
-  "confidence": "medium",
-  "name": "Jerusalem"
  },
  "Jesus What A Saviour|": {
   "uri": "spotify:track:75xUMaRaJ9JJfmcOtzqHGT",
@@ -5752,13 +5672,6 @@
   "confidence": "high",
   "name": "Mary's Boy Child"
  },
- "Mercy Matt Redman|": {
-  "uri": "spotify:track:51JInjgtwBlZekJ0oywMOW",
-  "artist": "Matt Redman",
-  "album": "Your Grace Finds Me (Live)",
-  "confidence": "medium",
-  "name": "Mercy - Live"
- },
  "More Precious Than Silver|Integrity's Hosanna! Music": {
   "uri": "spotify:track:1zWvKluSjz1VJK33qwlc0P",
   "artist": "LaMar Boschman",
@@ -5773,26 +5686,12 @@
   "confidence": "high",
   "name": "My Heart Is Filled With Thankfulness"
  },
- "My Hope Is In You - Aaron Shust|": {
-  "uri": "spotify:track:3IuTraprrDiCiGJ7tiGpGu",
-  "artist": "Aaron Shust",
-  "album": "This Is What We Believe (Deluxe Edition)",
-  "confidence": "low",
-  "name": "My Hope Is in You"
- },
  "My Saviour My God|Aaron Shust": {
   "uri": "spotify:track:1syFMBjjRvL3uReOM8yWEb",
   "artist": "Aaron Shust",
   "album": "Anything Worth Saying",
   "confidence": "high",
   "name": "My Savior My God"
- },
- "Nothing in the world I see|": {
-  "uri": "spotify:track:21ObDKwG0WXSzakc82X9jx",
-  "artist": "Atomic Kitten",
-  "album": "Ladies Night",
-  "confidence": "low",
-  "name": "Nothing In The World"
  },
  "On Bended Knee|": {
   "uri": "spotify:track:7t5HWtc55dHVzRnZ78UDJ4",
@@ -5836,13 +5735,6 @@
   "confidence": "high",
   "name": "Praise Adonai"
  },
- "Praise the Lord!|": {
-  "uri": "spotify:track:7Ee6XgP8EHKDhTMYLIndu9",
-  "artist": "Elevation Worship",
-  "album": "CAN YOU IMAGINE?",
-  "confidence": "medium",
-  "name": "Praise (feat. Brandon Lake, Chris Brown & Chandler Moore)"
- },
  "Precious Lord, Take My Hand|": {
   "uri": "spotify:track:4cBGPHDZgixrZ8vcUSIHCb",
   "artist": "Randy Travis",
@@ -5884,13 +5776,6 @@
   "album": "From Age to Age",
   "confidence": "medium",
   "name": "See, He Comes"
- },
- "Sovereign Chris Tomlin|": {
-  "uri": "spotify:track:3HXfNHAwafX6GVzQBrhFTD",
-  "artist": "Chris Tomlin",
-  "album": "Burning Lights",
-  "confidence": "medium",
-  "name": "Sovereign"
  },
  "Strength Will Rise|": {
   "uri": "spotify:track:4X90FB0DyfPQedHygTJApi",
@@ -5935,20 +5820,6 @@
   "album": "The Worship Initiative, Vol. 5",
   "confidence": "medium",
   "name": "Though You Slay Me"
- },
- "Trust and Obey Don Moen|": {
-  "uri": "spotify:track:5xk4s19jvgf6izvbnMovuc",
-  "artist": "Don Moen",
-  "album": "Hymns of Hope",
-  "confidence": "medium",
-  "name": "Trust and Obey"
- },
- "We are His people D Capo 2|": {
-  "uri": "spotify:track:3KdfVlsTVpraFx70kMNU1u",
-  "artist": "Emu Music",
-  "album": "New Song In My Heart",
-  "confidence": "medium",
-  "name": "We Are His People"
  },
  "We Belong To The Day|": {
   "uri": "spotify:track:17WT9iIYAhcCHaXlPJYJOQ",
@@ -6014,13 +5885,6 @@
   "confidence": "medium",
   "name": "The Steadfast Love Of The Lord"
  },
- "A quiet time is all I need|": {
-  "uri": "spotify:track:7fY5bvnh1EDqF2SS4JnOKS",
-  "artist": "Hillside Recording",
-  "album": "QUIET",
-  "confidence": "low",
-  "name": "QUIET - Acoustic"
- },
  "All of me|": {
   "uri": "spotify:track:0Rb0eBQrE9rmvTVlJjqAfH",
   "artist": "Hillsong Worship",
@@ -6029,13 +5893,6 @@
   "name": "Take All Of Me"
  },
  "And can it be|Keith & Kristyn Getty": {
-  "uri": "spotify:track:7vXsRrJf5ukLm9siKOVAd8",
-  "artist": "Keith & Kristyn Getty",
-  "album": "Getty Kids Hymnal - Hymns From Home",
-  "confidence": "high",
-  "name": "And Can It Be?"
- },
- "And Can It Be That I should gain|Keith & Kristyn Getty": {
   "uri": "spotify:track:7vXsRrJf5ukLm9siKOVAd8",
   "artist": "Keith & Kristyn Getty",
   "album": "Getty Kids Hymnal - Hymns From Home",
@@ -6105,13 +5962,6 @@
   "confidence": "high",
   "name": "Came to My Rescue"
  },
- "Christ is Enough for me|Hillsong Worship": {
-  "uri": "spotify:track:6ylhMPeBV9kF5dYvBAO2tQ",
-  "artist": "Hillsong Worship",
-  "album": "Glorious Ruins",
-  "confidence": "high",
-  "name": "Christ Is Enough"
- },
  "Christ Our hope in Life or Death|Keith & Kristyn Getty": null,
  "Come behold the wonderous mystery|": {
   "uri": "spotify:track:24EcdV8B4BRtovkTmXSAyH",
@@ -6176,13 +6026,6 @@
   "confidence": "medium",
   "name": "Gethsemane"
  },
- "Glory to his name|Norton Hall Band": {
-  "uri": "spotify:track:5XFyrwXF6W5sBW0tHCZFmM",
-  "artist": "Hillsong Worship",
-  "album": "Ultimate Worship Vol 1",
-  "confidence": "medium",
-  "name": "Glory"
- },
  "Go-And-Make-Disciples-lead|": {
   "uri": "spotify:track:6Zx9UL8Gw97yk82wSAtIVb",
   "artist": "Awesome Cutlery",
@@ -6197,26 +6040,12 @@
   "confidence": "medium",
   "name": "God Is Good"
  },
- "God Made Roses|": {
-  "uri": "spotify:track:6fqbblMIytVYfUn8ra4bdV",
-  "artist": "Jenna Raine",
-  "album": "Roses",
-  "confidence": "low",
-  "name": "Roses"
- },
  "God you are so good|": {
   "uri": "spotify:track:1wTzAQuIMNF7dmB4jeMMeU",
   "artist": "elevation worship world",
   "album": "What A Beautiful Name We Praise (LIVE Worship)",
   "confidence": "medium",
   "name": "Marvelous God You are So Good"
- },
- "Great are you lord - Don Moen|All Sons & Daughters": {
-  "uri": "spotify:track:2QRUTCdLyVznC9Rr6E5C37",
-  "artist": "All Sons & Daughters",
-  "album": "Live",
-  "confidence": "high",
-  "name": "Great Are You Lord - Live"
  },
  "Guide me O thou Great Jehovah|Indelible Grace Music": {
   "uri": "spotify:track:4JDB7pxb4mhI17yVPlEImA",
@@ -6238,13 +6067,6 @@
   "album": "Constantly Abiding",
   "confidence": "medium",
   "name": "Have I Done My Best for Jesus?"
- },
- "Have it all & Heres my heart medley|": {
-  "uri": "spotify:track:1aCHhH6V1zNb1ir94cfk1Z",
-  "artist": "Bethel Music",
-  "album": "Have It All (Live)",
-  "confidence": "medium",
-  "name": "Have It All - Live"
  },
  "He Hideth my soul|Norton Hall Band": {
   "uri": "spotify:track:4TQP8XXFbbiZeJhIJciEvg",
@@ -6295,13 +6117,6 @@
   "confidence": "high",
   "name": "How Many Kings"
  },
- "Hymn of the Saviour: Emu Music|Emu Music": {
-  "uri": "spotify:track:6Zj4PF9JZOTZ6ENdr2xjbr",
-  "artist": "Emu Music",
-  "album": "Creation Awaits",
-  "confidence": "high",
-  "name": "Hymn Of The Saviour"
- },
  "I am strong|": {
   "uri": "spotify:track:0Fgk3pW619MVX90ztsv1cd",
   "artist": "HiddenWorshipper",
@@ -6329,13 +6144,6 @@
   "album": "And If Our God Is For Us...",
   "confidence": "high",
   "name": "I Lift My Hands"
- },
- "I stand amazed in the presence|Norton Hall Band": {
-  "uri": "spotify:track:7AMLyeuhCDu2hvGiSK8uQg",
-  "artist": "Norton Hall Band",
-  "album": "Crown Him: Hymns Project Vol. III",
-  "confidence": "high",
-  "name": "I Stand Amazed"
  },
  "I WANT TO KNOW YOU|": {
   "uri": "spotify:track:6kY8gVa41FMdfoL7MYvu2E",
@@ -6365,26 +6173,12 @@
   "confidence": "medium",
   "name": "Immortal, Invisible"
  },
- "In Christ alone - Kristian Stanfill (Default|": {
-  "uri": "spotify:track:6aRwLqDf1bN3lI2gMd6wXp",
-  "artist": "Passion",
-  "album": "Passion: Let The Future Begin",
-  "confidence": "medium",
-  "name": "In Christ Alone - Live"
- },
  "Jerusalem|Keith & Kristyn Getty": {
   "uri": "spotify:track:25IrAdhm9T2tlJMvcpnEUq",
   "artist": "CityAlight",
   "album": "Yours Alone",
   "confidence": "medium",
   "name": "Jerusalem"
- },
- "Jesus loves me - Christ Tomlin|Chris Tomlin": {
-  "uri": "spotify:track:1uYzjO9kztEi2KVSS5rDgE",
-  "artist": "Chris Tomlin",
-  "album": "Love Ran Red",
-  "confidence": "high",
-  "name": "Jesus Loves Me"
  },
  "Jesus Loves Me Traditional|Chris Tomlin": {
   "uri": "spotify:track:1uYzjO9kztEi2KVSS5rDgE",
@@ -6484,26 +6278,12 @@
   "confidence": "medium",
   "name": "Love Song"
  },
- "Medley - Open the eyes of my heart & All hail the power|": {
-  "uri": "spotify:track:4um6ZMnib1I7VuG3c6jGm5",
-  "artist": "Michael W. Smith",
-  "album": "Worship",
-  "confidence": "medium",
-  "name": "Open The Eyes Of My Heart - Live"
- },
  "Medley - Peace like a river|This little light of mine": {
   "uri": "spotify:track:0NKBSyzSwHS6aGGZbqoNbv",
   "artist": "Elizabeth Mitchell",
   "album": "You Are My Little Bird",
   "confidence": "low",
   "name": "Peace Like a River"
- },
- "My God is a Very Very Big God|": {
-  "uri": "spotify:track:7FaY3yB1xxFMl2EFQ6D9FP",
-  "artist": "Tim Godfrey",
-  "album": "Chapter Two",
-  "confidence": "low",
-  "name": "Big God"
  },
  "My God is Real|": {
   "uri": "spotify:track:4gc59V0b9TtubvUc00tKd4",
@@ -6519,13 +6299,6 @@
   "album": "The Hymns",
   "confidence": "medium",
   "name": "Nearer My God to Thee"
- },
- "No longer slaves x Came to my rescue|": {
-  "uri": "spotify:track:58triUtuAX5ZbfyOeogCJ6",
-  "artist": "Bethel Music",
-  "album": "We Will Not Be Shaken",
-  "confidence": "medium",
-  "name": "No Longer Slaves"
  },
  "No other name|Hillsong Worship": {
   "uri": "spotify:track:6KwkVtXm8OUp2XffN5k7lY",
@@ -6590,13 +6363,6 @@
   "confidence": "medium",
   "name": "Our God Will Go Before Us"
  },
- "Praise the Father Praise the Son by Chris Tomlin|Chris Tomlin": {
-  "uri": "spotify:track:2tYMb5xcXp12GHuZvhjYBJ",
-  "artist": "Chris Tomlin",
-  "album": "Hello Love",
-  "confidence": "high",
-  "name": "Praise The Father, Praise The Son"
- },
  "Psalm 92 It Is Good|Shane & Shane": {
   "uri": "spotify:track:75fkh5H1TvBq5S8FDHYFRI",
   "artist": "Paul Baloche",
@@ -6640,26 +6406,12 @@
   "name": "Softly and Tenderly"
  },
  "Sovereigh Over Us|": null,
- "Soverign|": {
-  "uri": "spotify:track:3FSkkMeG9C61zTPYsYhYgH",
-  "artist": "Victor Oyegun",
-  "album": "Vic Worship Space",
-  "confidence": "medium",
-  "name": "Soverign God"
- },
  "Spirit lead me|": {
   "uri": "spotify:track:0Y41CXC4surWWihRW2NtBy",
   "artist": "Depths of Worship",
   "album": "Atmosphere Music, Vol. 1",
   "confidence": "medium",
   "name": "Spirit Lead Me"
- },
- "Step Up Step Out|": {
-  "uri": "spotify:track:0OUWIBTauDimeMuSUsOcD3",
-  "artist": "Lifeway Kids Worship",
-  "album": "Step up (I Am Set Apart) [Hyfi Kids]",
-  "confidence": "medium",
-  "name": "Step up (I Am Set Apart) [Hyfi Kids]"
  },
  "Sweet Hour of Prayer|Norton Hall Band": {
   "uri": "spotify:track:2KngFLrjHR9hvKFdtf9BxO",
@@ -6703,13 +6455,6 @@
   "confidence": "medium",
   "name": "The Love of the Father"
  },
- "The old rugged cross x All my hope|": {
-  "uri": "spotify:track:1ErKF5Io5ErzDIp7UjEfEZ",
-  "artist": "Still Waters Worship",
-  "album": "Turn Your Eyes",
-  "confidence": "medium",
-  "name": "The Old Rugged Cross"
- },
  "There is a cloud|Elevation Worship": {
   "uri": "spotify:track:2sn2gK89nnjXgJ0iLO4Gps",
   "artist": "Elevation Worship",
@@ -6738,13 +6483,6 @@
   "confidence": "medium",
   "name": "There's More (Live)"
  },
- "This world is not my home|": {
-  "uri": "spotify:track:2aMb1asq5acm7cDYlFsYhY",
-  "artist": "Chris Tomlin",
-  "album": "Never Lose Sight (Deluxe Edition)",
-  "confidence": "medium",
-  "name": "Home"
- },
  "Through it all|Hillsong Worship": {
   "uri": "spotify:track:5GcKV6j1JgaSMKG5Jl3NRN",
   "artist": "Hillsong Worship",
@@ -6759,26 +6497,12 @@
   "confidence": "high",
   "name": "Touch Of Heaven - Live"
  },
- "Trust|": {
-  "uri": "spotify:track:4f7HKpJheSmV2WeoMjNH2z",
-  "artist": "Elevation Worship",
-  "album": "CAN YOU IMAGINE?",
-  "confidence": "medium",
-  "name": "Trust In God (feat. Chris Brown)"
- },
  "Unless the Lord|": {
   "uri": "spotify:track:6RziUXt9fQtiFVDbustxl1",
   "artist": "Paul Demer",
   "album": "Unless the Lord Builds This House (Psalm 127:1-2)",
   "confidence": "medium",
   "name": "Unless the Lord Builds This House (Psalm 127:1-2)"
- },
- "Walk|": {
-  "uri": "spotify:track:4zAIwci5B82d59OhGOkJRl",
-  "artist": "Bethel Music",
-  "album": "We Must Respond (Live)",
-  "confidence": "medium",
-  "name": "Even Though I Walk - Live"
  },
  "We are an offering|": {
   "uri": "spotify:track:5JXVyeoV8PScjbvNRgCV39",
@@ -6807,13 +6531,6 @@
   "album": "Facing A Task Unfinished",
   "confidence": "medium",
   "name": "We Believe (Apostle's Creed)"
- },
- "We Give Thanks To God|": {
-  "uri": "spotify:track:1DNQiq4vXQbqHKSa6kpTRt",
-  "artist": "Don Moen",
-  "album": "Give Thanks (Live)",
-  "confidence": "medium",
-  "name": "Give Thanks - Live"
  },
  "What a friend|Norton Hall Band": {
   "uri": "spotify:track:1MGy8lmvm1jFe9h8YWpVlr",
@@ -6899,20 +6616,6 @@
   "confidence": "medium",
   "name": "Find Your Kindness"
  },
- "Your Words|": {
-  "uri": "spotify:track:2P4uW66TDMiFFHQlFZfYFY",
-  "artist": "Hillsong Worship",
-  "album": "let there be light.",
-  "confidence": "medium",
-  "name": "Your Word - Live"
- },
- "Blessed Assurance|Fanny Crosby": {
-  "uri": "spotify:track:3AuqcvsMQ2U6jQ1hSLm8jc",
-  "artist": "Fanny Crosby",
-  "album": "Hymn Tunes, Vol. 2",
-  "confidence": "high",
-  "name": "Blessed Assurance, Jesus Is Mine"
- },
  "Joy to the World|Isaac Watts": {
   "uri": "spotify:track:5mOqIs6RFDFJ9a4xMlz4oj",
   "artist": "Isaac Watts",
@@ -6969,13 +6672,6 @@
   "confidence": "high",
   "name": "All My Boast Is In Jesus"
  },
- "Create in me a clean heart|": {
-  "uri": "spotify:track:6n3MLlLf8wrV7vyYs7zEvJ",
-  "artist": "The Worship Initiative",
-  "album": "Psalms from the Well",
-  "confidence": "medium",
-  "name": "Create in Me (Psalm 51)"
- },
  "His Robes for Mine / Mercy|": {
   "uri": "spotify:track:4sunGYfSalRJkc1zcUSMHb",
   "artist": "Hymns of Grace",
@@ -6996,5 +6692,785 @@
   "album": "Where O Grave Is Your Victory?",
   "confidence": "medium",
   "name": "Where O Grave Is Your Victory?"
+ },
+ "Blessed Assurance|Fanny Crosby": {
+  "uri": "spotify:track:5jEqVKl4XKhQcsBTYxCTJI",
+  "artist": "William Lloyd Huston Jr",
+  "album": "Blessed Assurance",
+  "confidence": "high",
+  "name": "Blessed Assurance"
+ },
+ "Oh the Deep, Deep Love of Jesus|Sovereign Grace Music": {
+  "uri": "spotify:track:0h5C31CdrgABjHATYcBq6e",
+  "artist": "Audrey Assad",
+  "album": "Inheritance",
+  "confidence": "medium",
+  "name": "Oh, the Deep, Deep Love of Jesus (feat. Fernando Ortega)"
+ },
+ "Here Is Love|William Rees": {
+  "uri": "spotify:track:4lMMMFqN2msrVHAybGK2G9",
+  "artist": "William Rees",
+  "album": "String Heaven",
+  "confidence": "high",
+  "name": "Here Is Love"
+ },
+ "For You Alone Are Worthy|": {
+  "uri": "spotify:track:1TJ6b91E9EzMFYOVNyRIgp",
+  "artist": "Worship Force",
+  "album": "Fresh Oil",
+  "confidence": "medium",
+  "name": "You Alone Are Worthy"
+ },
+ "I Have Decided to Follow Jesus|Traditional": {
+  "uri": "spotify:track:1LrvGPFZco85hTt0tlxhpa",
+  "artist": "Cedarmont Kids",
+  "album": "Bible Songs",
+  "confidence": "medium",
+  "name": "I Have Decided To Follow Jesus"
+ },
+ "All Hail the Power of Jesus' Name|Edward Perronet": {
+  "uri": "spotify:track:5hmNHzhUqV8LIVUW3EBTu8",
+  "artist": "William Shrubsole",
+  "album": "Immortal Hymns",
+  "confidence": "high",
+  "name": "All Hail the Power of Jesus' Name"
+ },
+ "Immortal, Invisible, God Only Wise|Keith & Kristyn Getty": {
+  "uri": "spotify:track:69GOvRR7GwYs982ydfIIS3",
+  "artist": "Huddersfield Choral Society",
+  "album": "The Hymns Album",
+  "confidence": "medium",
+  "name": "Immortal Invisible God Only Wise"
+ },
+ "Come Thou Fount / Nothing But The Blood|": {
+  "uri": "spotify:track:0FfCuNZuSrzYdlVoJcwC7n",
+  "artist": "Amaya Arevalo",
+  "album": "Love Wears Many Faces",
+  "confidence": "low",
+  "name": "Come Thou Fount / Nothing but the Blood"
+ },
+ "Come Thou Fount of Every Blessing|Chris Tomlin": {
+  "uri": "spotify:track:6XFFdDO6cZHtTAFVzJyrsS",
+  "artist": "Norton Hall Band",
+  "album": "Be Thou My Vision",
+  "confidence": "medium",
+  "name": "Come Thou Fount of Every Blessing"
+ },
+ "Create in me a clean heart|": {
+  "uri": "spotify:track:7tJ2RaT2VhrvIgu5NfPtqu",
+  "artist": "Maranatha! Acoustic",
+  "album": "Acoustic Worship: I Love Your Grace",
+  "confidence": "medium",
+  "name": "Create In Me A Clean Heart"
+ },
+ "How Great is Our God / How Great Thou Art|Chris Tomlin": {
+  "uri": "spotify:track:0ntCx6fs223QMs849XFgFQ",
+  "artist": "Yeram Worship",
+  "album": "How Great Is Our God + How Great Thou Art",
+  "confidence": "medium",
+  "name": "How Great Is Our God + How Great Thou Art"
+ },
+ "Man of Sorrow (Hillsong)|Hillsong Worship": {
+  "uri": "spotify:track:4IEsMBjh6M0kYH1Jx30ek6",
+  "artist": "Hillsong Worship",
+  "album": "Glorious Ruins",
+  "confidence": "high",
+  "name": "Man of Sorrows"
+ },
+ "Remember Me|": {
+  "uri": "spotify:track:6RbphbE0NEh1PPrQgNpRan",
+  "artist": "Spring Harvest",
+  "album": "Immeasurably More: Live Worship From Spring Harvest",
+  "confidence": "medium",
+  "name": "Remember Me - Live"
+ },
+ "Jesus Loves Me This I Know|Chris Tomlin": {
+  "uri": "spotify:track:7nkw9YXBfzuC6IPSbTe4sb",
+  "artist": "Joshua David Harris",
+  "album": "Hymns of Worship, Vol. 3",
+  "confidence": "medium",
+  "name": "Jesus Loves Me, This I Know"
+ },
+ "Ressurecting|": null,
+ "Tis So Sweet To Trust In Jesus|Louisa M. R. Stead": {
+  "uri": "spotify:track:0IIRQLWP8BAgVIr1EfQ7WW",
+  "artist": "Page CXVI",
+  "album": "Hymns - IV",
+  "confidence": "medium",
+  "name": "'tis So Sweet To Trust In Jesus"
+ },
+ "In Whom I Can Trust|": null,
+ "Rock Of Ages Cleft For Me|Norton Hall Band": {
+  "uri": "spotify:track:6Sx0lAcWToNxtlQUbVbesx",
+  "artist": "Sovereign Grace Music",
+  "album": "Upward: The Bob Kauflin Hymns Project",
+  "confidence": "medium",
+  "name": "Rock of Ages Cleft for Me"
+ },
+ "Our God Is An Awesome God|Rich Mullins": {
+  "uri": "spotify:track:3bGSapzv2av3J9xpxnAjrT",
+  "artist": "Opwekking",
+  "album": "Life@Opwekking 1: Let's Worship the Awesome God",
+  "confidence": "medium",
+  "name": "Our God Is an Awesome God (35)"
+ },
+ "Brenton Brown - Jesus Take All Of Me (Just As I Am)|": null,
+ "I Sing The Mighty Power Of God|Indelible Grace Music": {
+  "uri": "spotify:track:21ChQcInD9PgCUfrqqlQWw",
+  "artist": "The Coventry Singers",
+  "album": "The Hymn Writers: Isaac Watts",
+  "confidence": "medium",
+  "name": "I Sing the Mighty Power of God"
+ },
+ "You Are The Everlasting God|": {
+  "uri": "spotify:track:1HGAUevwim1ZUfHpItXshn",
+  "artist": "Kingdom Worship Collective Orchestra",
+  "album": "Rise Up and Praise Him",
+  "confidence": "medium",
+  "name": "You Are the Everlasting God"
+ },
+ "Sheperd|": null,
+ "All hail the power of Jesus's name|Chris Tomlin": {
+  "uri": "spotify:track:4J03i6lnmXbWsdvIFqheoE",
+  "artist": "Easter Hymns Band",
+  "album": "20 Favourite Easter Hymns",
+  "confidence": "medium",
+  "name": "All Hail the Power of Jesu's Name"
+ },
+ "Be Exalted, O God (A1|": {
+  "uri": "spotify:track:1PuHpl3o097lgJ38zzN0cz",
+  "artist": "Jeff Hamlin",
+  "album": "You Are My God",
+  "confidence": "low",
+  "name": "Be Exalted, O God"
+ },
+ "Oceans Will Part|HILLSONG": {
+  "uri": "spotify:track:5MoKzZzkbcd6GrVvZUGdhe",
+  "artist": "Hillsong Worship",
+  "album": "Mighty To Save (Live)",
+  "confidence": "high",
+  "name": "Oceans Will Part - Live"
+ },
+ "Praise God In The Waiting|": null,
+ "The resurrected King is resurrecting me|": {
+  "uri": "spotify:track:2v0L0NU3MzsQaMcYbCxFn4",
+  "artist": "Daniel Mura",
+  "album": "Praise & Worship Songs",
+  "confidence": "medium",
+  "name": "The Resurrected King Is Resurrecting Me"
+ },
+ "Ascribe Greatness to our God|": {
+  "uri": "spotify:track:48mkiUSUsr2yE0ldgGd7vk",
+  "artist": "Church Music UK",
+  "album": "Worship Band, Volume 1",
+  "confidence": "medium",
+  "name": "Ascribe Greatness To Our God"
+ },
+ "Cleanse me|": {
+  "uri": "spotify:track:2VlwTIk20cIZJ5IqW2S3We",
+  "artist": "Joshua David Harris",
+  "album": "Hymns of Worship, Vol. 4",
+  "confidence": "medium",
+  "name": "Cleanse Me (Search Me, O God)"
+ },
+ "10,000 Reason|": {
+  "uri": "spotify:track:2iDR00nRnza9a0yGg6bTvh",
+  "artist": "Don Moen",
+  "album": "Worship Today with Don Moen",
+  "confidence": "medium",
+  "name": "10,000 Reasons (Bless The Lord)"
+ },
+ "Behold the glory of the King|": null,
+ "Burn for You by Rivers|": null,
+ "Change My Heart, O God One Voice|": null,
+ "Facing A Task Finished|": null,
+ "God of Miracles Come|": {
+  "uri": "spotify:track:1Pa9yf2eTdWBYOu0Fkq6t6",
+  "artist": "Elevation",
+  "album": "#Worship: God of Miracles",
+  "confidence": "medium",
+  "name": "God of Miracles"
+ },
+ "I Sing The Mighty Pow'R Of God|": null,
+ "I will not fear to meet Him there|": null,
+ "Jehovah Jireh|": {
+  "uri": "spotify:track:6xir7EGY9TGR9mhByAjUcq",
+  "artist": "Don Moen",
+  "album": "Give Thanks (Live)",
+  "confidence": "medium",
+  "name": "Jehovah-Jireh - Live"
+ },
+ "Jerusalem B (A capo 2)|": null,
+ "Mercy Matt Redman|": null,
+ "My Hope Is In You - Aaron Shust|": null,
+ "Nothing in the world I see|": null,
+ "Praise the Lord!|": {
+  "uri": "spotify:track:7LyXSJdv23ZgnaVrHyk1Ia",
+  "artist": "Matt Boswell",
+  "album": "Almost Home - The Hymns Of Matt Boswell And Matt Papa (Vol. 2)",
+  "confidence": "medium",
+  "name": "Psalm 150 (Praise The Lord)"
+ },
+ "Sovereign Chris Tomlin|": null,
+ "Trust and Obey Don Moen|": null,
+ "We are His people D Capo 2|": null,
+ "A quiet time is all I need|": null,
+ "All My Hope Is In Jesus|Crowder": {
+  "uri": "spotify:track:6E5TAc6jMZtu5WSLSnJ4Mv",
+  "artist": "Praise Gathering",
+  "album": "Lift High the Name of Jesus (Live)",
+  "confidence": "medium",
+  "name": "All My Hope Is in Jesus (Live)"
+ },
+ "And Can It Be That I should gain|Keith & Kristyn Getty": {
+  "uri": "spotify:track:3fS3CEsHJBbeZRQNxXLEuy",
+  "artist": "Page CXVI",
+  "album": "Missional Music Vol. 2.1",
+  "confidence": "medium",
+  "name": "And Can It Be That I Should Gain"
+ },
+ "Christ is Enough for me|Hillsong Worship": {
+  "uri": "spotify:track:5U4ztuFTC3JZ4aMqsRklsn",
+  "artist": "Divine Hymns",
+  "album": "Divine Hymns Prime Vol-VI",
+  "confidence": "medium",
+  "name": "Christ Is Enough For Me"
+ },
+ "Glory to his name|Norton Hall Band": {
+  "uri": "spotify:track:7rmlV4pc0s1Z7lYtf0GXrv",
+  "artist": "Hayes Family",
+  "album": "Hymns Of The Faith",
+  "confidence": "medium",
+  "name": "Glory To His Name"
+ },
+ "God Made Roses|": null,
+ "Great are you lord - Don Moen|All Sons & Daughters": null,
+ "Have it all & Heres my heart medley|": null,
+ "Hymn of the Saviour: Emu Music|Emu Music": null,
+ "I Am Who You Say I Am|Hillsong Worship": null,
+ "I stand amazed in the presence|Norton Hall Band": {
+  "uri": "spotify:track:071KVMgFOPkNg3MKSoS8ti",
+  "artist": "Nathan Drake",
+  "album": "Hymns Of The Son (Reawaken Hymns)",
+  "confidence": "medium",
+  "name": "I Stand Amazed in the Presence"
+ },
+ "In Christ alone - Kristian Stanfill (Default|": null,
+ "It Is Well With My Soul x 10,000 Reasons|Horatio Spafford / Matt Redman": null,
+ "Jesus loves me - Christ Tomlin|Chris Tomlin": null,
+ "Jesus Loves Me / Jesus We Love You|Traditional / Bethel Music": null,
+ "Medley - Open the eyes of my heart & All hail the power|": null,
+ "My God is a Very Very Big God|": null,
+ "No longer slaves x Came to my rescue|": null,
+ "Open the Eyes of My Heart x Holy Holy Holy|Paul Baloche / Reginald Heber": null,
+ "Praise the Father Praise the Son by Chris Tomlin|Chris Tomlin": null,
+ "Soverign|": {
+  "uri": "spotify:track:44BzJ10kyKUaWrFtHBWPUJ",
+  "artist": "13ohms",
+  "album": "Sentient",
+  "confidence": "low",
+  "name": "Soverign"
+ },
+ "Step Up Step Out|": {
+  "uri": "spotify:track:4mjO44A3RlwmKkwSfvFZ4N",
+  "artist": "Marionette Noir",
+  "album": "The Circus Is Dead",
+  "confidence": "low",
+  "name": "Step Up, Step Out"
+ },
+ "The old rugged cross x All my hope|": null,
+ "This world is not my home|": {
+  "uri": "spotify:track:6Bls4f1nN6m2uTYMS1jfbr",
+  "artist": "Praise and Harmony",
+  "album": "Savior God",
+  "confidence": "medium",
+  "name": "This World Is Not My Home"
+ },
+ "Trust|": {
+  "uri": "spotify:track:5fzsWrPuHXPEED7PnLfdz9",
+  "artist": "Hillsong Young & Free",
+  "album": "Youth Revival (Live)",
+  "confidence": "medium",
+  "name": "Trust - Live"
+ },
+ "Walk|": null,
+ "We Give Thanks To God|": {
+  "uri": "spotify:track:4SsWnrPaN5MNwZT8YcH9Vr",
+  "artist": "Housefires",
+  "album": "We Say Yes",
+  "confidence": "medium",
+  "name": "Give Thanks to God"
+ },
+ "Your Words|": {
+  "uri": "spotify:track:08ymFHNicRg3tcdU5DisZa",
+  "artist": "Emu Music",
+  "album": "Creation Awaits",
+  "confidence": "medium",
+  "name": "Your Word"
+ },
+ "Crown Him With Many Crowns|": {
+  "uri": "spotify:track:2vi5d92TOdC4juHcf04v0C",
+  "artist": "Shane & Shane",
+  "album": "Hymns, Vol. 2",
+  "confidence": "medium",
+  "name": "Crown Him with Many Crowns"
+ },
+ "The Solid Rock|": {
+  "uri": "spotify:track:0ICv6gtsRJw8hrr5C4gjHY",
+  "artist": "Nathan Drake",
+  "album": "Hymns Of The Son (Reawaken Hymns)",
+  "confidence": "medium",
+  "name": "The Solid Rock (My Hope is Built)"
+ },
+ "Amazing Grace (My Chains Are Gone)|": {
+  "uri": "spotify:track:5W9Al2ewPfzbWHOV2BAtBR",
+  "artist": "Chris Tomlin",
+  "album": "Double Take - Chris Tomlin",
+  "confidence": "medium",
+  "name": "Amazing Grace (My Chains Are Gone)"
+ },
+ "Holy Holy Holy|": {
+  "uri": "spotify:track:30UUoCv64Uq9s83KSZCsLw",
+  "artist": "Hillsong UNITED",
+  "album": "(in the meantime)",
+  "confidence": "medium",
+  "name": "Holy Holy Holy"
+ },
+ "Blessed Assurance|": {
+  "uri": "spotify:track:0dU0CaqWl5roVujh3BnPrv",
+  "artist": "CityAlight",
+  "album": "Only a Holy God",
+  "confidence": "medium",
+  "name": "Blessed Assurance"
+ },
+ "Joy to the World|": {
+  "uri": "spotify:track:1lK4SFE2TMeqEziR3TURFO",
+  "artist": "Chris Tomlin",
+  "album": "Glory In The Highest: Christmas Songs Of Worship",
+  "confidence": "medium",
+  "name": "Joy To The World (Unspeakable Joy)"
+ },
+ "Here Is Love|": {
+  "uri": "spotify:track:77vx3APQ7bweEpcO3kj8CO",
+  "artist": "Kings Kaleidoscope Hymns",
+  "album": "Asaph's Arrows II",
+  "confidence": "medium",
+  "name": "Here Is Love"
+ },
+ "The Love of God|": {
+  "uri": "spotify:track:2fk1ecKbLniOcWMCWLW9e9",
+  "artist": "Brandon Lake",
+  "album": "Love of God",
+  "confidence": "medium",
+  "name": "Love Of God"
+ },
+ "Great Is Thy Faithfulness|": {
+  "uri": "spotify:track:73ZGW3v5caUFBsHSkQQfpX",
+  "artist": "The Worship Initiative",
+  "album": "The Worship Initiative, Vol. 6",
+  "confidence": "medium",
+  "name": "Great Is Thy Faithfulness"
+ },
+ "Before the Throne of God Above|": {
+  "uri": "spotify:track:3ELvknrrLz8QL36CeIb6Je",
+  "artist": "The Worship Initiative",
+  "album": "The Worship Initiative, Vol. 3",
+  "confidence": "medium",
+  "name": "Before the Throne of God Above"
+ },
+ "Jesus Paid It All|": {
+  "uri": "spotify:track:73EIpn5AcedCWPOmxWMxH9",
+  "artist": "Passion",
+  "album": "Passion: Everything Glorious",
+  "confidence": "medium",
+  "name": "Jesus Paid It All"
+ },
+ "Take My Life And Let It Be|": {
+  "uri": "spotify:track:72tw7lxDJJsIwNPStQSC3h",
+  "artist": "Still Waters Worship",
+  "album": "I Surrender All",
+  "confidence": "medium",
+  "name": "Take My Life and Let it Be"
+ },
+ "I Stand Amazed|": {
+  "uri": "spotify:track:7AMLyeuhCDu2hvGiSK8uQg",
+  "artist": "Norton Hall Band",
+  "album": "Crown Him: Hymns Project Vol. III",
+  "confidence": "medium",
+  "name": "I Stand Amazed"
+ },
+ "I Surrender All|": {
+  "uri": "spotify:track:46LpLNjwCcmcGJZACRDKsB",
+  "artist": "Still Waters Worship",
+  "album": "I Surrender All",
+  "confidence": "medium",
+  "name": "I Surrender All"
+ },
+ "I Have Decided to Follow Jesus|": {
+  "uri": "spotify:track:1LrvGPFZco85hTt0tlxhpa",
+  "artist": "Cedarmont Kids",
+  "album": "Bible Songs",
+  "confidence": "medium",
+  "name": "I Have Decided To Follow Jesus"
+ },
+ "Hark! The Herald Angels Sing|": {
+  "uri": "spotify:track:02mlAPyfZjqiazg5XDiYZC",
+  "artist": "Don Moen",
+  "album": "Praise & Worship Christmas",
+  "confidence": "medium",
+  "name": "Hark! The Herald Angels Sing"
+ },
+ "When I Survey The Wondrous Cross|": {
+  "uri": "spotify:track:1HJJ7VbGM17QxqrcWUR5cx",
+  "artist": "Keith & Kristyn Getty",
+  "album": "Confessio - Irish American Roots",
+  "confidence": "medium",
+  "name": "When I Survey The Wondrous Cross"
+ },
+ "Praise to the Lord, the Almighty|": {
+  "uri": "spotify:track:4TvSdxwziuv2uzaXblesBr",
+  "artist": "Fernando Ortega",
+  "album": "Night Of Your Return",
+  "confidence": "medium",
+  "name": "Praise to the Lord, the Almighty"
+ },
+ "Trust and Obey|": {
+  "uri": "spotify:track:5xk4s19jvgf6izvbnMovuc",
+  "artist": "Don Moen",
+  "album": "Hymns of Hope",
+  "confidence": "medium",
+  "name": "Trust and Obey"
+ },
+ "All Hail the Power of Jesus' Name|": {
+  "uri": "spotify:track:1xjWrIOQmXNIseQBVST4Hf",
+  "artist": "Shane & Shane",
+  "album": "Hymns, Vol. 2",
+  "confidence": "medium",
+  "name": "All Hail the Power of Jesus Name"
+ },
+ "Tis' So Sweet|": {
+  "uri": "spotify:track:7bHlCPMBiTdcJ04cuUQr2d",
+  "artist": "Still Waters Worship",
+  "album": "Tis So Sweet",
+  "confidence": "medium",
+  "name": "Tis So Sweet"
+ },
+ "Come Thou Fount|": {
+  "uri": "spotify:track:5yZcK6LIBxD6Ia5vYuEr6v",
+  "artist": "Shane & Shane",
+  "album": "Hymns, Vol. 1",
+  "confidence": "medium",
+  "name": "Come Thou Fount (Above All Else)"
+ },
+ "Because He Lives|": {
+  "uri": "spotify:track:7xJ8H6TeRwzbkz0usvtk6G",
+  "artist": "The Worship Initiative",
+  "album": "Behold: The Story",
+  "confidence": "medium",
+  "name": "Because He Lives"
+ },
+ "There is a Fountain|": {
+  "uri": "spotify:track:1ZoIscSn8Hdcs8tXodPak6",
+  "artist": "Shane & Shane",
+  "album": "Hymns, Vol. 1",
+  "confidence": "medium",
+  "name": "There Is a Fountain (Full of Love)"
+ },
+ "He Will Hold Me Fast|": {
+  "uri": "spotify:track:1Mp90z16Mneiqthtf7fOf9",
+  "artist": "Shane & Shane",
+  "album": "Hymns, Vol. 1",
+  "confidence": "medium",
+  "name": "He Will Hold Me Fast"
+ },
+ "O Holy Night|": {
+  "uri": "spotify:track:62mIVLwQoI8tzNmHKUxikq",
+  "artist": "Hillsong Worship",
+  "album": "Christmas: The Peace Project",
+  "confidence": "medium",
+  "name": "O Holy Night"
+ },
+ "He Lives|": {
+  "uri": "spotify:track:45bFl67prA7LMOld5TZiAr",
+  "artist": "Chris Tomlin",
+  "album": "Never Lose Sight (Deluxe Edition)",
+  "confidence": "medium",
+  "name": "He Lives"
+ },
+ "Day By Day|": {
+  "uri": "spotify:track:0e1xRUk1mR2ePlCiO5laq0",
+  "artist": "Kings Kaleidoscope Hymns",
+  "album": "Asaph's Arrows II",
+  "confidence": "medium",
+  "name": "Day By Day"
+ },
+ "To God Be the Glory|": {
+  "uri": "spotify:track:7gGhaXZvvmqDXtCEprQdb5",
+  "artist": "Still Waters Worship",
+  "album": "Tis So Sweet",
+  "confidence": "medium",
+  "name": "To God Be the Glory"
+ },
+ "Old Rugged Cross|": {
+  "uri": "spotify:track:1ErKF5Io5ErzDIp7UjEfEZ",
+  "artist": "Still Waters Worship",
+  "album": "Turn Your Eyes",
+  "confidence": "medium",
+  "name": "The Old Rugged Cross"
+ },
+ "Tis So Sweet To Trust In Jesus|": {
+  "uri": "spotify:track:0IIRQLWP8BAgVIr1EfQ7WW",
+  "artist": "Page CXVI",
+  "album": "Hymns - IV",
+  "confidence": "medium",
+  "name": "'tis So Sweet To Trust In Jesus"
+ },
+ "It Is Well With My Soul|": {
+  "uri": "spotify:track:0iE9E6qNW8jOnQaz2MgWRd",
+  "artist": "Hillsong Chapel",
+  "album": "Forever Reign",
+  "confidence": "medium",
+  "name": "It Is Well With My Soul"
+ },
+ "Doxology|": {
+  "uri": "spotify:track:5zNPvCrwBO4VChpMBdfJnH",
+  "artist": "Elevation Worship",
+  "album": "Promise & Presence",
+  "confidence": "medium",
+  "name": "Doxology"
+ },
+ "What a Friend we have in Jesus|": {
+  "uri": "spotify:track:3ZT9Ucw26bOJ3akp1jAJ9B",
+  "artist": "Still Waters Worship",
+  "album": "Amazing Grace",
+  "confidence": "medium",
+  "name": "What a Friend We Have in Jesus"
+ },
+ "Lead Us Back|": {
+  "uri": "spotify:track:7fKBNGANLcwp61txnZB8T5",
+  "artist": "Third Day",
+  "album": "Lead Us Back: Songs of Worship",
+  "confidence": "medium",
+  "name": "Lead Us Back"
+ },
+ "As the Deer|": {
+  "uri": "spotify:track:2G83Bi2pnml8ZEskoheM0Y",
+  "artist": "Shane & Shane",
+  "album": "Vintage",
+  "confidence": "medium",
+  "name": "As the Deer"
+ },
+ "Just a Closer Walk|": {
+  "uri": "spotify:track:2KQEibiwp4auUI0E6eQA5u",
+  "artist": "Paul Zach",
+  "album": "Hymns",
+  "confidence": "medium",
+  "name": "Just a Closer Walk With Thee"
+ },
+ "How Deep the Father's Love For Us|Stuart Townend": {
+  "uri": "spotify:track:5pwNDzyYJwf8r7VZD7bsH3",
+  "artist": "Stuart Townend",
+  "album": "Inner Sanctum",
+  "confidence": "high",
+  "name": "How Deep The Father's Love For Us"
+ },
+ "I'm Following The King|Emu Music": {
+  "uri": "spotify:track:3Ua7ka9SN5bQo1A5E7fdZn",
+  "artist": "Emu Kids",
+  "album": "Meet the King",
+  "confidence": "medium",
+  "name": "I'm Following the King"
+ },
+ "Refiner's Fire|Brian Doerksen": {
+  "uri": "spotify:track:1n1DQS7HxFHzRLRvI9Epkr",
+  "artist": "The Worship Project",
+  "album": "The Worship Project, Vol. 2",
+  "confidence": "high",
+  "name": "Refiner's Fire"
+ },
+ "There Is A Fountain|": {
+  "uri": "spotify:track:1ZoIscSn8Hdcs8tXodPak6",
+  "artist": "Shane & Shane",
+  "album": "Hymns, Vol. 1",
+  "confidence": "medium",
+  "name": "There Is a Fountain (Full of Love)"
+ },
+ "Open The Eyes Of My Heart|": {
+  "uri": "spotify:track:4LSacIqXrVARWFxPBA77Nd",
+  "artist": "Paul Baloche",
+  "album": "Open the Eyes of My Heart",
+  "confidence": "medium",
+  "name": "Open the Eyes of My Heart"
+ },
+ "All the way my saviour leads me - Chris Tomlin|": null,
+ "How Deep The Father's Love|": {
+  "uri": "spotify:track:79HmnYXJxE28L8IIgundmj",
+  "artist": "Kings Kaleidoscope Hymns",
+  "album": "Sin",
+  "confidence": "medium",
+  "name": "How Deep the Father's Love"
+ },
+ "O Lord, You're Beautiful|": {
+  "uri": "spotify:track:5pME1MDi0g4wCmEvTet9mG",
+  "artist": "Chris Tomlin",
+  "album": "Always",
+  "confidence": "medium",
+  "name": "O Lord, You\u2019re Beautiful (with Steffany Gretzinger)"
+ },
+ "All Heaven Declares/ Be Exalted, O God (A1/A4)|": null,
+ "Hosanna/10,000 Reasons|": {
+  "uri": "spotify:track:0fxpHpK3aw2nFWII6yveDD",
+  "artist": "Matt Redman",
+  "album": "10,000 Reasons (Live)",
+  "confidence": "medium",
+  "name": "10,000 Reasons (Bless The Lord) - Live"
+ },
+ "Burn for You by Rivers & Robots|": null,
+ "I Don't Know About Tomorrow|": {
+  "uri": "spotify:track:27Xf4upjnOfZpb2kNT7lB3",
+  "artist": "Matthew Shawn Farmer",
+  "album": "Sacred Hymns I",
+  "confidence": "medium",
+  "name": "I Don't Know About Tomorrow"
+ },
+ "I Sing The Mighty Pow'r Of God|": null,
+ "Lord, We've Come To Worship|": {
+  "uri": "spotify:track:20zyW1QG0c2e1PpEMc1iDX",
+  "artist": "Don Moen",
+  "album": "I Will Sing (Live)",
+  "confidence": "medium",
+  "name": "Lord We've Come to Worship - Live"
+ },
+ "Mary's Boy Child|": {
+  "uri": "spotify:track:0YyySg4fTXuIl9OtvI8bhN",
+  "artist": "Oasis Worship",
+  "album": "Christmas Heart of Worship",
+  "confidence": "medium",
+  "name": "Mary's Boy Child"
+ },
+ "Mood Roughly Same Till Bridge's \u201cMore Than I Need\u201d|": null,
+ "Peace Like A River|": {
+  "uri": "spotify:track:2CuTb9Tks9eeAmjHGm5vAC",
+  "artist": "Cedarmont Kids",
+  "album": "Sunday School Songs",
+  "confidence": "medium",
+  "name": "I've Got Peace Like A River"
+ },
+ "Psalm 23/10,000 Reason|": null,
+ "You're Beautiful|": {
+  "uri": "spotify:track:6PExqNUN5D4nqBTamndm6k",
+  "artist": "The Worship Initiative",
+  "album": "The Worship Initiative, Vol. 7",
+  "confidence": "medium",
+  "name": "You're Beautiful"
+ },
+ "O How Good It Is|Keith & Kristyn Getty": {
+  "uri": "spotify:track:4SKzvV9WVZaB4l2cYcpLY9",
+  "artist": "Keith & Kristyn Getty",
+  "album": "Hymns For The Christian Life (Deluxe)",
+  "confidence": "high",
+  "name": "Oh, How Good It Is"
+ },
+ "Goodness of God|Bethel Music": {
+  "uri": "spotify:track:0HE3SH6fvxdRIUq54HjVq0",
+  "artist": "Bethel Music",
+  "album": "Victory (Live)",
+  "confidence": "high",
+  "name": "Goodness of God (Live)"
+ },
+ "I have decided to follow Jesus|": {
+  "uri": "spotify:track:1LrvGPFZco85hTt0tlxhpa",
+  "artist": "Cedarmont Kids",
+  "album": "Bible Songs",
+  "confidence": "medium",
+  "name": "I Have Decided To Follow Jesus"
+ },
+ "All the way my saviour leads me|Chris Tomlin": {
+  "uri": "spotify:track:2xwTcH7jBbwWS5N5qUwbex",
+  "artist": "Chris Tomlin",
+  "album": "Hello Love",
+  "confidence": "high",
+  "name": "All The Way My Savior Leads Me"
+ },
+ "My Hope Is In You|Aaron Shust": {
+  "uri": "spotify:track:3IuTraprrDiCiGJ7tiGpGu",
+  "artist": "Aaron Shust",
+  "album": "This Is What We Believe (Deluxe Edition)",
+  "confidence": "high",
+  "name": "My Hope Is in You"
+ },
+ "So Will I|Hillsong": {
+  "uri": "spotify:track:7HAMOncV54OLHqXuKRBXIh",
+  "artist": "Hillsong UNITED",
+  "album": "Wonder",
+  "confidence": "high",
+  "name": "So Will I (100 Billion X)"
+ },
+ "Jesus Take All Of Me|Brenton Brown": {
+  "uri": "spotify:track:61VmI6fwXNBBO1cYBEiqQG",
+  "artist": "Brenton Brown",
+  "album": "Just As I Am (A Legacy Of Hymns And Worship)",
+  "confidence": "high",
+  "name": "Jesus Take All Of Me (Just As I Am) - Live"
+ },
+ "REJOICE - Keith and Kristyn|Getty": null,
+ "Holy is the Lord|Chris Tomlin": {
+  "uri": "spotify:track:23HvFDV5Z1VdvViQ8bbrGV",
+  "artist": "Chris Tomlin",
+  "album": "Sony Connect Set",
+  "confidence": "high",
+  "name": "Holy Is The Lord"
+ },
+ "Keith and Kristyn|Getty": null,
+ "Have it all|": {
+  "uri": "spotify:track:23opT8yQsm3igLJnjMDR5p",
+  "artist": "Bethel Music",
+  "album": "Have It All (Studio Version)",
+  "confidence": "medium",
+  "name": "Have It All (Studio Version)"
+ },
+ "Heres my heart medley|": null,
+ "Kristyn Getty)|": null,
+ "Power of the cross (Keith|": {
+  "uri": "spotify:track:0BaI66HnzOMf3Kk7femx8m",
+  "artist": "Keith & Kristyn Getty",
+  "album": "In Christ Alone",
+  "confidence": "medium",
+  "name": "The Power Of The Cross"
+ },
+ "Praise the Father Praise the Son|Chris Tomlin": {
+  "uri": "spotify:track:2tYMb5xcXp12GHuZvhjYBJ",
+  "artist": "Chris Tomlin",
+  "album": "Hello Love",
+  "confidence": "high",
+  "name": "Praise The Father, Praise The Son"
+ },
+ "Psalm 63 Better than life|": {
+  "uri": "spotify:track:43rVaC703YCbLSUBeGW9Jo",
+  "artist": "Shane & Shane",
+  "album": "Psalms, Vol. 2",
+  "confidence": "medium",
+  "name": "Psalm 63 (Better Than Life)"
+ },
+ "Shane|": {
+  "uri": "spotify:track:654Otva4zhiHTf1BQkqnAy",
+  "artist": "Fruit Bats",
+  "album": "Shane",
+  "confidence": "low",
+  "name": "Shane"
+ },
+ "Shane)|": {
+  "uri": "spotify:track:2TGCX8XQaAVwEwMnlpab4F",
+  "artist": "Dxxdmxn",
+  "album": "Shane",
+  "confidence": "low",
+  "name": "Shane"
+ },
+ "Tis so sweet to trust in Jesus (Shane|": {
+  "uri": "spotify:track:0IIRQLWP8BAgVIr1EfQ7WW",
+  "artist": "Page CXVI",
+  "album": "Hymns - IV",
+  "confidence": "medium",
+  "name": "'tis So Sweet To Trust In Jesus"
  }
 }

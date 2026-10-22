@@ -255,10 +255,10 @@ def f_region(s, today):
 
 
 def f_key(s, today):
-    k = str(s.get("chart_key") or "").strip()
+    k = str(s.get("latest_key") or s.get("chart_key") or "").strip()
     m = re.match(r"^([A-G])([#b]?)", k)
     if not m:
-        return "No chart key"
+        return "Key unknown"
     return m.group(1) if not m.group(2) else "Sharp / flat keys"
 
 
@@ -328,7 +328,7 @@ FACETS = [
                                                 "Kids", "FMH & local originals", "Other / unknown"], "Music"),
     _f("theme", "Theme (service role)", f_theme, THEMES + ["Untagged"], "Music"),
     _f("pace", "Pace", f_pace, ["Slow", "Medium", "Fast", "Unknown pace"], "Music"),
-    _f("key", "Key", f_key, list("CDEFGAB") + ["Sharp / flat keys", "No chart key"], "Music"),
+    _f("key", "Key (latest played)", f_key, list("CDEFGAB") + ["Sharp / flat keys", "Key unknown"], "Music"),
     _f("artist_family", "Artist / source", f_artist_family, sorted({a[1] for a in ARTISTS})
        + ["Other named artist", "Traditional / unknown"], "Who"),
     _f("region", "Region of origin", f_region, ["Australia", "USA", "UK & Ireland", "Canada", "Singapore & local",
@@ -397,13 +397,144 @@ def catalogue_songs(songs):
         if years:
             target["first_year"], target["last_year"] = min(years), max(years)
         target["sources"] = sorted(set(target["sources"]) | set(s["sources"]))
+        for field in ("owners", "year_counts", "roster_leaders"):
+            merged = dict(target.get(field) or {})
+            for k, v in (s.get(field) or {}).items():
+                merged[k] = merged.get(k, 0) + v
+            if merged:
+                target[field] = merged
         for k, v in s.items():
             if target.get(k) in (None, "") and v not in (None, ""):
                 target[k] = v
     return out
 
 
+TRAD_NAMED = ["Reformed modern", "Hymn & traditional", "Charismatic / CCM", "Kids", "FMH & local originals"]
+
+
+def _balance(counts):
+    """Evenness of the tradition mix, 0 (one tradition) to 100 (all equal)."""
+    import math
+    vals = [counts.get(t, 0) for t in TRAD_NAMED]
+    total = sum(vals)
+    if not total:
+        return 0
+    h = -sum(v / total * math.log(v / total) for v in vals if v)
+    return round(100 * h / math.log(len(TRAD_NAMED)))
+
+
+def chart_data(songs, today, mashups=None):
+    """Everything the charts draw, precomputed so the page stays dumb."""
+    people = {}
+    for s in songs:
+        totals = dict(s.get("owners") or {})
+        for who, n in (s.get("roster_leaders") or {}).items():
+            totals[who] = totals.get(who, 0) + n
+        for who, n in totals.items():
+            people.setdefault(who, []).append({"t": s["title"], "n": n})
+    people = {who: sorted(rows, key=lambda r: (-r["n"], r["t"]))[:10]
+              for who, rows in people.items()}
+    by_year, new_by_year = {}, {}
+    for s in songs:
+        trad = f_tradition(s, today)
+        for y, n in (s.get("year_counts") or {}).items():
+            if n:
+                by_year.setdefault(y, {})
+                by_year[y][trad] = by_year[y].get(trad, 0) + 1
+        if s.get("first_year"):
+            y = str(s["first_year"])
+            new_by_year[y] = new_by_year.get(y, 0) + 1
+    top = sorted((s for s in songs if s.get("count")), key=lambda s: (-s["count"], s["title"]))[:15]
+
+    year_top = {}
+    for y in by_year:
+        rows = [(s["title"], s["year_counts"][y], f_tradition(s, today)) for s in songs
+                if (s.get("year_counts") or {}).get(y)]
+        rows.sort(key=lambda r: (-r[1], r[0]))
+        year_top[y] = [{"t": t, "n": n, "trad": tr} for t, n, tr in rows[:10]]
+
+    # Evergreens: sung in the most different years.
+    ever = [(s["title"], sorted(y for y, n in (s.get("year_counts") or {}).items() if n)) for s in songs]
+    ever = sorted((e for e in ever if len(e[1]) >= 2), key=lambda e: (-len(e[1]), e[0]))[:10]
+
+    # Gone quiet: 3+ appearances up to 2021, none from 2023.
+    def total(s, cond):
+        return sum(n for y, n in (s.get("year_counts") or {}).items() if cond(y))
+    quiet = [(s["title"], total(s, lambda y: y <= "2021"), f_tradition(s, today)) for s in songs
+             if total(s, lambda y: y <= "2021") >= 3 and total(s, lambda y: y >= "2023") == 0]
+    quiet.sort(key=lambda r: (-r[1], r[0]))
+    people_by_year = {}
+    for s in songs:
+        for who, ys in (s.get("owner_years") or {}).items():
+            for y, n in ys.items():
+                people_by_year.setdefault(who, {}).setdefault(y, []).append({"t": s["title"], "n": n})
+    for who in people_by_year:
+        for y in people_by_year[who]:
+            people_by_year[who][y] = sorted(people_by_year[who][y], key=lambda r: (-r["n"], r["t"]))[:10]
+
+    mashups = mashups or []
+    vitality = {}
+    for y in sorted(by_year):
+        sung = [s for s in songs if (s.get("year_counts") or {}).get(y)]
+        vitality[y] = {
+            "songs": len(sung),
+            "new": sum(1 for s in songs if str(s.get("first_year") or "") == y),
+            "mashups": sum(m["years"].count(int(y)) for m in mashups),
+            "originals": sum(1 for s in sung if s.get("local")),
+            "balance": _balance(by_year[y]),
+        }
+
+    def slot_top(slot):
+        rows = [(s["title"], (s.get("slots") or {}).get(slot, 0)) for s in songs]
+        return [{"t": t, "n": n} for t, n in sorted((r for r in rows if r[1]), key=lambda r: (-r[1], r[0]))[:8]]
+
+    import collections
+    # 2014-15 look small only because fewer scripts were saved; judge from 2016.
+    years_full = [y for y in by_year if "2016" <= y < today[:4]]
+    ahead = {y: by_year[y].get("Reformed modern", 0) > by_year[y].get("Charismatic / CCM", 0)
+             for y in by_year}
+    ys = sorted(by_year)
+    cross = next((y for i, y in enumerate(ys) if all(ahead[z] for z in ys[i:])), None)
+    quiet_year = min(years_full, key=lambda y: (sum(by_year[y].values()), y)) if years_full else None
+    keys = collections.Counter(s.get("latest_key") or s.get("chart_key") for s in songs
+                               if s.get("latest_key") or s.get("chart_key"))
+    story = {
+        "crossover_year": cross,
+        "quietest_year": quiet_year,
+        "quietest_n": sum(by_year[quiet_year].values()) if quiet_year else 0,
+        "top_key": keys.most_common(1)[0] if keys else None,
+        "keys": keys.most_common(),
+        "most_balanced_year": max(years_full, key=lambda y: (_balance(by_year[y]), y)) if years_full else None,
+        "one_offs": sum(1 for s in songs if sum((s.get("year_counts") or {}).values()) == 1),
+        "total_songs": len(songs),
+    }
+
+    return {
+        "story": story,
+        "people_by_year": people_by_year,
+        "vitality": vitality,
+        "mashups": mashups,
+        "closers": slot_top("closing"),
+        "openers": slot_top("opening"),
+        "presermon": slot_top("pre-sermon"),
+        "year_top": year_top,
+        "evergreens": [{"t": t, "years": len(ys), "first": ys[0], "last": ys[-1]} for t, ys in ever],
+        "gone_quiet": [{"t": t, "n": n, "trad": tr} for t, n, tr in quiet[:12]],
+        "people": people,
+        "by_year": dict(sorted(by_year.items())),
+        "new_by_year": dict(sorted(new_by_year.items())),
+        "top_sung": [{"t": s["title"], "n": s["count"], "trad": f_tradition(s, today)} for s in top],
+    }
+
+
 def rows_for_page(songs, today):
+    # Hymnal-style numbers: each tradition is a "book", numbered A to Z.
+    numbers, by_book = {}, {}
+    for s in songs:
+        by_book.setdefault(f_tradition(s, today), []).append(s)
+    for book, items in by_book.items():
+        for i, s in enumerate(sorted(items, key=lambda x: re.sub(r"^(the|a|o|oh)\s+", "", x["title"].lower())), 1):
+            numbers[id(s)] = i
     out = []
     for s in songs:
         m = s.get("match") or {}
@@ -415,16 +546,27 @@ def rows_for_page(songs, today):
             "l": s.get("last_sung", ""),
             "u": f"https://open.spotify.com/track/{uri.split(':')[-1]}" if uri else "",
             "f": {f["id"]: f["fn"](s, today) for f in FACETS},
+            "book": f_tradition(s, today),
+            "no": numbers[id(s)],
+            "h": {"years": s.get("year_counts") or {}, "dates": sorted(s.get("dates") or []),
+                  "who": {**(s.get("owners") or {})}, "src": s.get("sources", []),
+                  "lead": s.get("roster_leaders") or {}, "key": s.get("chart_key", ""),
+                  "keys": s.get("keys_played") or {}, "latest_key": s.get("latest_key", ""),
+                  "theme": f_theme(s, today), "pace": f_pace(s, today), "era": f_era(s, today),
+                  "first": s.get("first_year"), "last": s.get("last_year"),
+                  "rec": (m.get("artist", "") + " · " + m.get("album", "")) if m else "",
+                  "held": s.get("reason", "") if s.get("status") != "on" else ""},
         })
     return out
 
 
-def render(songs, today, playlist_url=""):
+def render(songs, today, playlist_url="", mashups=None):
     data = {
         "today": today,
         "playlist": playlist_url,
         "facets": [{k: f[k] for k in ("id", "label", "buckets", "group")} for f in FACETS],
         "songs": rows_for_page(songs, today),
+        "charts": chart_data(songs, today, mashups=mashups),
     }
     with open(os.path.join(HERE, "catalogue_template.html")) as f:
         html = f.read()
@@ -440,9 +582,11 @@ def main():
     if os.path.exists(ids_path):
         pid = json.load(open(ids_path)).get("all_songs")
         url = f"https://open.spotify.com/playlist/{pid}" if pid else ""
+    mash_path = os.path.join(MASTER, "mashups.json")
+    mashups = json.load(open(mash_path)) if os.path.exists(mash_path) else []
     out = os.path.join(MASTER, "fmh-song-catalogue.html")
     with open(out, "w") as f:
-        f.write(render(songs, today, url))
+        f.write(render(songs, today, url, mashups))
     print("Wrote", out)
 
 

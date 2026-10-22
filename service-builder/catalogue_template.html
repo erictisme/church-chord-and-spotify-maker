@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>FMH Song Catalogue</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -8,16 +9,19 @@
 :root {
   --bg: #f4f6f4; --surface: #ffffff; --ink: #1b2629; --muted: #5d6b6e; --rule: #d6ddda;
   --accent: #0e6a66; --accent-soft: #d7ebe8; --heat: 14 106 102; --warn: #9a5b12;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #9aa5a3; --grid: #e6ebe9;
   --display: "Literata", Georgia, serif;
   --body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #121a1b; --surface: #1a2426; --ink: #e3ebe9; --muted: #98a8a6; --rule: #2d3a3c;
-  --accent: #5cc3ba; --accent-soft: #1f3a39; --heat: 92 195 186; --warn: #e0a85a; color-scheme: dark } }
+  --accent: #5cc3ba; --accent-soft: #1f3a39; --heat: 92 195 186; --warn: #e0a85a;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #64716f; --grid: #263234; color-scheme: dark } }
 :root[data-theme="dark"] {
   --bg: #121a1b; --surface: #1a2426; --ink: #e3ebe9; --muted: #98a8a6; --rule: #2d3a3c;
-  --accent: #5cc3ba; --accent-soft: #1f3a39; --heat: 92 195 186; --warn: #e0a85a; color-scheme: dark }
+  --accent: #5cc3ba; --accent-soft: #1f3a39; --heat: 92 195 186; --warn: #e0a85a;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #64716f; --grid: #263234; color-scheme: dark }
 * { box-sizing: border-box }
 body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--body); }
 .wrap { max-width: 1180px; margin: 0 auto; padding-block: 28px 64px;
@@ -61,6 +65,53 @@ input[type=search] { font: 14px var(--body); padding: 8px 10px; border: 1px soli
 .note { font-size: 13px; color: var(--muted); max-width: 75ch }
 .more { margin-top: 8px }
 @media (max-width: 560px) { .songs .hide-sm { display: none } }
+.charts { display: grid; gap: 22px }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px }
+.grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px }
+figure.chart { margin: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 16px 16px 12px; min-width: 0; display: grid; gap: 6px }
+figure.chart h3 { font: 500 17px/1.25 var(--display); margin: 0 }
+figure.chart .sub { font-size: 12.5px; color: var(--muted); margin: 0 }
+figure.chart svg { width: 100%; height: auto; display: block; overflow: visible }
+figure.chart svg text { fill: var(--muted); font: 11px var(--body) }
+figure.chart svg text.val { fill: var(--ink); font: 500 11px var(--mono) }
+figure.chart svg text.lab { fill: var(--ink); font: 12px var(--body) }
+figure.chart svg .gridline { stroke: var(--grid); stroke-width: 1 }
+svg .hit { fill: transparent; cursor: default }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--muted) }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px }
+.sowhat { font-size: 13px; color: var(--ink); background: var(--accent-soft); border-radius: 6px; padding: 8px 10px; margin: 4px 0 0 }
+.book tbody tr.song { cursor: pointer }
+.book tbody tr.song:hover td { background: var(--accent-soft) }
+.book tbody tr.song.open td { background: var(--accent-soft) }
+.book td.no { font-family: var(--mono); color: var(--muted); width: 3.5em; text-align: right }
+.book tr.detail td { background: var(--bg); padding: 14px 16px 18px }
+.hist { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 18px }
+@media (max-width: 700px) { .hist { grid-template-columns: 1fr } }
+.hist dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; margin: 0; font-size: 13px }
+.hist dt { color: var(--muted) }
+.hist dd { margin: 0; min-width: 0; overflow-wrap: anywhere }
+.hist .dates { font: 12px/1.6 var(--mono); color: var(--muted) }
+.hist svg text { fill: var(--muted); font: 11px var(--body) }
+.hist svg text.val { fill: var(--ink); font: 500 11px var(--mono) }
+.hist svg .gridline { stroke: var(--grid) }
+.chapters { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px }
+.chapter { border-top: 3px solid var(--accent); padding: 10px 2px 0; display: grid; gap: 4px; align-content: start }
+.chapter .when { font: 500 12px var(--mono); color: var(--muted); letter-spacing: .04em }
+.chapter .big { font: 700 30px/1 var(--display); font-variant-numeric: tabular-nums }
+.chapter p { margin: 0; font-size: 14px; color: var(--ink) }
+.grid5 { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px }
+.grid5 figure.chart { padding: 12px 12px 8px }
+.grid5 h3 { font-size: 15px }
+.mash { display: grid; gap: 6px; font-size: 13.5px }
+.mash .row { display: grid; grid-template-columns: 2.4em minmax(0, 1fr) auto; gap: 10px; align-items: baseline; border-bottom: 1px solid var(--rule); padding: 4px 0 }
+.mash .n { font: 600 14px var(--mono); text-align: right; color: var(--accent) }
+.mash .meta { color: var(--muted); font-size: 12px; white-space: nowrap }
+.toggle { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 4px }
+.toggle button.chip { padding: 3px 10px; font-size: 12.5px }
+.person-name { display: flex; align-items: baseline; gap: 8px }
+.tip { position: fixed; pointer-events: none; background: var(--ink); color: var(--bg); font: 12px/1.35 var(--body); padding: 6px 9px; border-radius: 6px; max-width: 260px; z-index: 20 }
+@media (prefers-reduced-motion: no-preference) { svg rect.mark { transition: opacity .15s } }
+svg rect.mark:hover { opacity: .8 }
 </style>
 
 <div class="wrap">
@@ -71,8 +122,51 @@ input[type=search] { font: 14px var(--body); padding: 8px 10px; border: 1px soli
     <div class="stats" id="stats"></div>
   </header>
 
+  <section class="charts" aria-labelledby="story-h">
+    <h2 id="story-h">The story so far</h2>
+    <div class="chapters" id="story"></div>
+  </section>
+
+  <section class="charts" aria-labelledby="vital-h">
+    <div><h2 id="vital-h">Vitality signals</h2>
+    <p class="note">Things in our singing that might move with church health. This page has no health measure (attendance, membership, giving), so treat these as signals to compare, not proof. Add one real measure per year and we can see what actually moves together. Mashups from 2024 are undercounted: the roster rarely writes them down, the scripts did.</p></div>
+    <div class="grid5" id="vital"></div>
+  </section>
+
+  <section class="charts" aria-labelledby="charts-h">
+    <h2 id="charts-h">What we sing</h2>
+    <div class="grid3" id="people"></div>
+    <figure class="chart" id="yearTop"></figure>
+    <div class="grid2">
+      <figure class="chart" id="topChart"></figure>
+      <figure class="chart" id="newChart"></figure>
+    </div>
+    <figure class="chart" id="yearChart"></figure>
+    <div class="grid2">
+      <figure class="chart" id="everChart"></figure>
+      <figure class="chart" id="quietChart"></figure>
+    </div>
+    <figure class="chart" id="mashChart"></figure>
+    <div class="grid3">
+      <figure class="chart" id="openChart"></figure>
+      <figure class="chart" id="presChart"></figure>
+      <figure class="chart" id="closeChart"></figure>
+    </div>
+    <figure class="chart" id="keyChart"></figure>
+  </section>
+
+  <section class="panel" aria-labelledby="book-h">
+    <div class="headrow">
+      <h2 id="book-h">The FMH Songbook</h2>
+      <input type="search" id="bq" placeholder="Find a song" aria-label="Find a song in the songbook">
+    </div>
+    <div class="toggle" id="books" role="tablist" aria-label="Books"></div>
+    <div class="scroll"><table class="songs book" id="book"></table></div>
+    <p class="note">Numbered A to Z within each book, like a hymnal. Click a song to see its history.</p>
+  </section>
+
   <section class="panel" aria-labelledby="split-h">
-    <h2 id="split-h">Split the repertoire</h2>
+    <h2 id="split-h">Explore the catalogue</h2>
     <div class="controls">
       <label for="rowDim"><span class="label">Split by</span><select id="rowDim"></select></label>
       <label for="colDim"><span class="label">Cross with</span><select id="colDim"></select></label>
@@ -205,5 +299,225 @@ function render() {
   save(); renderFilters(); renderPivot(filtered()); renderSongs();
   document.querySelectorAll("#lenses .chip").forEach(b => { const [, r, c] = LENSES[b.dataset.i]; b.classList.toggle("on", r === state.row && c === state.col); });
 }
+
+const C = DATA.charts;
+const TRAD = ["Reformed modern", "Hymn & traditional", "Charismatic / CCM", "Kids", "FMH & local originals", "Other / unknown"];
+const TCOL = ["var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)", "var(--s5)", "var(--s6)"];
+const tcol = t => TCOL[Math.max(0, TRAD.indexOf(t))];
+const tip = document.createElement("div"); tip.className = "tip"; tip.hidden = true; document.body.appendChild(tip);
+function bindTips(root) {
+  root.querySelectorAll("[data-tip]").forEach(n => {
+    n.addEventListener("mousemove", e => { tip.innerHTML = n.dataset.tip; tip.hidden = false;
+      tip.style.left = Math.min(e.clientX + 12, innerWidth - 270) + "px"; tip.style.top = (e.clientY + 12) + "px"; });
+    n.addEventListener("mouseleave", () => tip.hidden = true);
+  });
+}
+const legend = () => `<div class="legend">${TRAD.map((t, i) => `<span><i style="background:${TCOL[i]}"></i>${esc(t)}</span>`).join("")}</div>`;
+
+// Horizontal bars: rows [{t, n, color?}], labels left, value at bar end.
+function hbars(rows, opts = {}) {
+  const W = 520, rowH = 22, labW = opts.labW || 190, pad = 34;
+  const max = Math.max(1, ...rows.map(r => r.n));
+  const H = rows.length * rowH + 4;
+  const x = n => (W - labW - pad) * n / max;
+  const short = t => t.length > 28 ? t.slice(0, 27) + "…" : t;
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.label || "bar chart")}">` +
+    rows.map((r, i) => { const y = i * rowH + 3, w = Math.max(2, x(r.n));
+      return `<g data-tip="<b>${esc(r.t)}</b><br>${r.n} ${esc(opts.unit || "")}">` +
+        `<rect class="hit" x="0" y="${y - 2}" width="${W}" height="${rowH}"></rect>` +
+        `<text class="lab" x="${labW - 8}" y="${y + 12}" text-anchor="end">${esc(short(r.t))}</text>` +
+        `<rect class="mark" x="${labW}" y="${y + 2}" width="${w}" height="${rowH - 8}" rx="4" fill="${r.color || "var(--accent)"}"></rect>` +
+        `<text class="val" x="${labW + w + 6}" y="${y + 12}">${r.n}</text></g>`; }).join("") + "</svg>";
+}
+
+const peopleYear = {};
+function renderPeople() {
+  const NOTE = { Eric: "Scripts in Eric's archive, 2019–26", Rizvan: "Riz's OneDrive scripts, 2014–26", Edgar: "Charts in Edgar's library and his scripts" };
+  const order = ["Eric", "Rizvan", "Edgar"].concat(Object.keys(C.people).filter(p => !["Eric", "Rizvan", "Edgar"].includes(p)));
+  el("people").innerHTML = order.filter(p => C.people[p] && C.people[p].length >= 5).map(p => {
+    const yrs = Object.keys(C.people_by_year[p] || {}).filter(y => (C.people_by_year[p][y] || []).length >= 3).sort();
+    const y = peopleYear[p] || "all";
+    const rows = y === "all" ? C.people[p] : C.people_by_year[p][y];
+    const name = p === "Rizvan" ? "Riz" : p;
+    return `<figure class="chart" data-p="${esc(p)}"><h3>${esc(name)}'s top hits${y === "all" ? "" : " · " + y}</h3>` +
+      `<p class="sub">${esc(NOTE[p] || "From the roster")} · times it appears</p>` +
+      (yrs.length ? `<div class="toggle" role="group" aria-label="${esc(name)} year"><button class="chip ${y === "all" ? "on" : ""}" data-y="all">All</button>${yrs.map(v => `<button class="chip ${v === y ? "on" : ""}" data-y="${v}">’${v.slice(2)}</button>`).join("")}</div>` : "") +
+      hbars(rows.slice(0, 8), { unit: "appearances", label: name + " top songs", labW: 170 }) +
+      `<p class="sowhat">#1${y === "all" ? "" : " in " + y}: <b>${esc(rows[0].t)}</b> (${rows[0].n}×)</p></figure>`;
+  }).join("");
+  el("people").onclick = e => { const b = e.target.closest("button[data-y]"); if (!b) return;
+    peopleYear[b.closest("figure").dataset.p] = b.dataset.y; renderPeople(); };
+  bindTips(el("people"));
+}
+
+function renderStory() {
+  const st = C.story, V = C.vitality, years = Object.keys(C.by_year).sort();
+  const share = (y, t) => { const tot = Object.values(C.by_year[y] || {}).reduce((a, b) => a + b, 0); return tot ? Math.round(100 * ((C.by_year[y] || {})[t] || 0) / tot) : 0; };
+  const avg = (ys, f) => Math.round(ys.reduce((a, y) => a + f(y), 0) / Math.max(1, ys.length));
+  const early = years.filter(y => y >= "2014" && y <= "2019");
+  const topMash = C.mashups[0];
+  const mashTotal = C.mashups.reduce((a, m) => a + m.n, 0);
+  const peakMash = Object.keys(V).reduce((a, y) => (V[y].mashups > (V[a] || {}).mashups ? y : a), years[0]);
+  const ch = [
+    ["2014–2019", avg(early, y => share(y, "Charismatic / CCM")) + "%", `of each year's songs were charismatic or CCM. Hillsong, Tomlin and Redman were the sound of FMH.`],
+    [st.quietest_year, st.quietest_n, `different songs, our quietest year since records filled out in 2016${st.quietest_year === "2020" ? ", the year Covid moved church online" : ""}.`],
+    [st.crossover_year ? st.crossover_year + " on" : "—", share(years[years.length - 2], "Reformed modern") + "%", `Reformed modern pulled ahead of charismatic in ${st.crossover_year} and has stayed ahead every year since. By ${years[years.length - 2]} it was this share of the year's songs.`],
+    ["Mashups", mashTotal, `times we joined two songs into one, across ${C.mashups.length} different pairings. Peak: ${peakMash} (${(V[peakMash] || {}).mashups}). Favourite: ${topMash ? topMash.songs.join(" / ") : "—"}.`],
+    ["Balance", st.most_balanced_year, `was our most balanced year across traditions (score ${(V[st.most_balanced_year] || {}).balance}/100, up from ${(V["2015"] || {}).balance} in 2015). Reformed grew, and the mix got more even, not narrower.`],
+    ["Keys", st.top_key ? st.top_key[0] : "—", `is our home key (${st.top_key ? st.top_key[1] : 0} songs last played in it). Sharp and flat keys are rare, which keeps things guitar-friendly.`],
+    ["One-offs", st.one_offs, `of ${st.total_songs} songs only ever turn up once. A long tail of songs tried and not kept.`],
+  ];
+  el("story").innerHTML = ch.map(([when, big, text]) => `<div class="chapter"><div class="when">${esc(when)}</div><div class="big">${esc(big)}</div><p>${esc(text)}</p></div>`).join("");
+}
+
+function renderVital() {
+  const V = C.vitality, years = Object.keys(V).filter(y => y >= "2014" && y < DATA.today.slice(0, 4)).sort();
+  const SIG = [["songs", "Songs sung", "different songs that year"], ["new", "New songs", "first time in our records"],
+    ["mashups", "Mashups", "songs joined into one"], ["originals", "FMH originals", "our own songs sung"],
+    ["balance", "Tradition balance", "0 = one tradition, 100 = even mix"]];
+  el("vital").innerHTML = SIG.map(([k, title, sub]) => `<figure class="chart"><h3>${title}</h3><p class="sub">${sub}</p>` +
+    columns(years, y => [{ k: title, n: V[y][k], c: "var(--accent)" }], { label: title + " per year", short: true }) + `</figure>`).join("");
+  bindTips(el("vital"));
+}
+
+function renderMash() {
+  const M = C.mashups;
+  const byPerson = {}; M.forEach(m => Object.entries(m.who).forEach(([k, v]) => byPerson[k] = (byPerson[k] || 0) + v));
+  const who = Object.entries(byPerson).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k === "Rizvan" ? "Riz" : k} ${v}`).join(" · ");
+  el("mashChart").innerHTML = `<h3>Every mashup</h3><p class="sub">Two or more songs sung as one, from scripts and the roster. ${M.length} pairings, ${M.reduce((a, m) => a + m.n, 0)} times. By person: ${esc(who)}</p>` +
+    `<div class="mash">${M.map((m, i) => `<div class="row" ${i >= 15 ? 'data-more hidden' : ""}><span class="n">${m.n}×</span><span>${m.songs.map(esc).join(" <span class=\"meta\">/</span> ")}</span><span class="meta">${m.years.length ? (m.years[0] === m.years[m.years.length - 1] ? m.years[0] : m.years[0] + "–" + m.years[m.years.length - 1]) : ""}</span></div>`).join("")}</div>` +
+    (M.length > 15 ? `<button class="chip more" id="mashMore">Show all ${M.length}</button>` : "") +
+    `<p class="sowhat">Most mashups are FMH's own arrangements, not something you'll find on Spotify, so they're a fingerprint of our worship leaders' creativity.</p>`;
+  const b = el("mashMore"); if (b) b.onclick = () => { el("mashChart").querySelectorAll("[data-more]").forEach(r => r.hidden = false); b.hidden = true; };
+}
+
+function renderSlots() {
+  const card = (id, title, rows, sub) => { el(id).innerHTML = `<h3>${title}</h3><p class="sub">${sub}</p>` + hbars(rows, { unit: "times", label: title, labW: 170 }) + (rows[0] ? `<p class="sowhat"><b>${esc(rows[0].t)}</b> (${rows[0].n}×)</p>` : ""); bindTips(el(id)); };
+  card("openChart", "Openers", C.openers, "Opening songs, 2024–26 roster");
+  card("presChart", "Before the sermon", C.presermon, "Pre-sermon songs, 2024–26 roster");
+  card("closeChart", "Closers", C.closers, "Closing songs, 2024–26 roster");
+  const K = C.story.keys.map(([k, n]) => ({ t: k, n }));
+  el("keyChart").innerHTML = `<h3>Keys we sing in</h3><p class="sub">Each song's latest sounding key (chord shape plus capo) from the scripts, or its chart key</p>` +
+    hbars(K, { unit: "songs", label: "Songs per key", labW: 60 }) +
+    `<p class="sowhat">${K.slice(0, 5).map(k => k.t).join(", ")} cover ${Math.round(100 * K.slice(0, 5).reduce((a, k) => a + k.n, 0) / Math.max(1, K.reduce((a, k) => a + k.n, 0)))}% of songs.</p>`;
+  bindTips(el("keyChart"));
+}
+function renderTop() {
+  const rows = C.top_sung.map(r => ({ ...r, color: tcol(r.trad) }));
+  const reformed = C.top_sung.filter(r => r.trad === "Reformed modern").length;
+  el("topChart").innerHTML = `<h3>Most sung, Jul 2024 – Oct 2026</h3><p class="sub">Times sung in Sunday services, coloured by tradition</p>` +
+    legend() + hbars(rows, { unit: "times sung", label: "Most sung songs" }) +
+    `<p class="sowhat">${reformed} of the top ${rows.length} are Reformed modern. Pick from the other traditions to widen the mix.</p>`;
+  bindTips(el("topChart"));
+}
+
+// Vertical columns over years; stacked when series given.
+function columns(years, seriesFor, opts) {
+  const W = 620, H = 220, left = 30, bottom = 22, top = 14;
+  const totals = years.map(y => seriesFor(y).reduce((a, s) => a + s.n, 0));
+  const max = Math.max(1, ...totals); const step = Math.pow(10, Math.floor(Math.log10(max)));
+  const tick = opts.max ? 25 : (max / step > 5 ? step * 2 : step); const yMax = opts.max || Math.ceil(max / tick) * tick;
+  const bw = (W - left) / years.length, y = v => top + (H - top - bottom) * (1 - v / yMax);
+  let g = "";
+  for (let v = 0; v <= yMax; v += tick) g += `<line class="gridline" x1="${left}" x2="${W}" y1="${y(v)}" y2="${y(v)}"></line><text x="${left - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
+  years.forEach((yr, i) => {
+    const x = left + i * bw + 4, w = bw - 8; let acc = 0;
+    const parts = seriesFor(yr).filter(s => s.n > 0);
+    const tipTxt = `<b>${yr}</b><br>` + parts.map(s => `${esc(s.k)}: ${s.n}`).join("<br>") + (parts.length > 1 ? `<br>Total: ${totals[i]}` : "");
+    g += `<g data-tip="${tipTxt}"><rect class="hit" x="${x - 4}" y="${top}" width="${bw}" height="${H - top - bottom}"></rect>`;
+    parts.forEach((s, j) => { const h = y(0) - y(s.n), yy = y(acc + s.n) ;
+      g += `<rect class="mark" x="${x}" y="${yy + (j ? 1 : 0)}" width="${w}" height="${Math.max(1, h - (j ? 1 : 0))}" rx="${j === parts.length - 1 ? 3 : 0}" fill="${s.c}"></rect>`; acc += s.n; });
+    g += `<text x="${x + w / 2}" y="${H - 6}" text-anchor="middle">${opts.short ? "’" + String(yr).slice(2) : yr}</text>`;
+    if (opts.labelTop) g += `<text class="val" x="${x + w / 2}" y="${y(totals[i]) - 4}" text-anchor="middle">${totals[i]}</text>`;
+    g += "</g>";
+  });
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.label)}">${g}</svg>`;
+}
+
+let yearMode = "count", pickYear = null;
+function renderYears() {
+  const years = Object.keys(C.by_year).filter(y => y >= "2014" && y <= DATA.today.slice(0, 4)).sort();
+  const tot = y => Object.values(C.by_year[y] || {}).reduce((a, b) => a + b, 0);
+  const val = (y, t) => { const n = (C.by_year[y] || {})[t] || 0; return yearMode === "share" ? Math.round(1000 * n / Math.max(1, tot(y))) / 10 : n; };
+  const prev = years[years.length - 2], share = t => Math.round(100 * ((C.by_year[prev] || {})[t] || 0) / Math.max(1, tot(prev)));
+  const early = years.filter(y => y <= "2019"), late = years.filter(y => y >= "2023" && y < DATA.today.slice(0, 4));
+  const avgShare = (ys, t) => Math.round(ys.reduce((a, y) => a + 100 * ((C.by_year[y] || {})[t] || 0) / Math.max(1, tot(y)), 0) / Math.max(1, ys.length));
+  el("yearChart").innerHTML = `<h3>Repertoire by year</h3><p class="sub">Different songs sung each year, by tradition. 2014–23 from worship scripts (not every week was saved); 2024 on adds the roster.</p>` +
+    `<div class="toggle" role="group" aria-label="Show as"><button class="chip ${yearMode === "count" ? "on" : ""}" data-m="count">Number of songs</button><button class="chip ${yearMode === "share" ? "on" : ""}" data-m="share">Share of the year (%)</button></div>` +
+    legend() + columns(years, y => TRAD.map((t, i) => ({ k: t, n: val(y, t), c: TCOL[i] })), { label: "Songs per year by tradition", short: true, max: yearMode === "share" ? 100 : 0 }) +
+    `<p class="sowhat">Reformed modern went from ${avgShare(early, "Reformed modern")}% of songs a year (2014–19) to ${avgShare(late, "Reformed modern")}% (2023–25). In ${prev}: ${share("Reformed modern")}% Reformed, ${share("Hymn & traditional")}% hymns, ${share("Charismatic / CCM")}% charismatic/CCM.</p>`;
+  el("yearChart").querySelector(".toggle").onclick = e => { const b = e.target.closest("button"); if (b) { yearMode = b.dataset.m; renderYears(); } };
+  bindTips(el("yearChart"));
+  const ny = Object.keys(C.new_by_year).filter(y => y >= "2015" && y <= DATA.today.slice(0, 4)).sort();
+  const peak = ny.reduce((a, y) => (C.new_by_year[y] || 0) > (C.new_by_year[a] || 0) ? y : a, ny[0]);
+  el("newChart").innerHTML = `<h3>New songs each year</h3><p class="sub">Songs appearing for the first time in our records (2014 left out: it's where records start)</p>` +
+    columns(ny, y => [{ k: "New songs", n: C.new_by_year[y] || 0, c: "var(--accent)" }], { label: "New songs per year", short: true, labelTop: true }) +
+    `<p class="sowhat">About ${Math.round(ny.reduce((a, y) => a + (C.new_by_year[y] || 0), 0) / ny.length)} new songs a year. Peak: ${peak} with ${C.new_by_year[peak]}.</p>`;
+  bindTips(el("newChart"));
+}
+
+function renderYearTop() {
+  const years = Object.keys(C.year_top).filter(y => y >= "2014" && y <= DATA.today.slice(0, 4) && C.year_top[y].length >= 3).sort();
+  if (!pickYear || !years.includes(pickYear)) pickYear = years[years.length - 2] || years[years.length - 1];
+  const rows = C.year_top[pickYear].map(r => ({ ...r, color: tcol(r.trad) }));
+  el("yearTop").innerHTML = `<h3>Top hits of ${pickYear}</h3><p class="sub">Times each song appears that year (scripts up to 2023, roster from 2024; a Sunday is never counted twice)</p>` +
+    `<div class="toggle" role="group" aria-label="Pick a year">${years.map(y => `<button class="chip ${y === pickYear ? "on" : ""}" data-y="${y}">${y}</button>`).join("")}</div>` +
+    legend() + hbars(rows, { unit: "times that year", label: "Top songs of " + pickYear, labW: 220 }) +
+    `<p class="sowhat">${pickYear}'s anthem: <b>${esc(rows[0].t)}</b> (${rows[0].n}×).</p>`;
+  el("yearTop").querySelector(".toggle").onclick = e => { const b = e.target.closest("button"); if (b) { pickYear = b.dataset.y; renderYearTop(); } };
+  bindTips(el("yearTop"));
+}
+
+function renderEverQuiet() {
+  el("everChart").innerHTML = `<h3>Evergreens</h3><p class="sub">Songs sung in the most different years</p>` +
+    hbars(C.evergreens.map(r => ({ t: r.t, n: r.years })), { unit: "different years", label: "Evergreen songs", labW: 200 }) +
+    `<p class="sowhat"><b>${esc(C.evergreens[0].t)}</b> shows up in ${C.evergreens[0].years} different years (${C.evergreens[0].first}–${C.evergreens[0].last}).</p>`;
+  el("everChart").querySelectorAll("[data-tip]").forEach((n, i) => { const r = C.evergreens[i]; if (r) n.dataset.tip = `<b>${esc(r.t)}</b><br>${r.years} years, ${r.first}–${r.last}`; });
+  bindTips(el("everChart"));
+  el("quietChart").innerHTML = `<h3>Gone quiet</h3><p class="sub">Sung 3+ times up to 2021, not once since 2023</p>` +
+    legend() + hbars(C.gone_quiet.map(r => ({ ...r, color: tcol(r.trad) })), { unit: "times up to 2021", label: "Songs gone quiet", labW: 200 }) +
+    `<p class="sowhat">Bring-back list: ${C.gone_quiet.filter(r => r.trad !== "Reformed modern").length} of these ${C.gone_quiet.length} are outside the Reformed stream, an easy way to widen the mix.</p>`;
+  bindTips(el("quietChart"));
+}
+
+const BOOKS = [["Hymn & traditional", "Hymn book"], ["Reformed modern", "Reformed book"], ["Charismatic / CCM", "CCM & charismatic book"],
+  ["Kids", "Kids' book"], ["FMH & local originals", "FMH originals"], ["Other / unknown", "Other songs"]];
+const SRC = { history: "2024–26 roster", main: "Eric's main list", library: "chord library", scripts: "worship scripts", edgar: "Edgar's folder" };
+let book = "Hymn & traditional", openNo = null, bq = "";
+function renderBook() {
+  el("books").innerHTML = BOOKS.map(([k, name], i) => { const n = S.filter(x => x.book === k).length;
+    return n ? `<button class="chip ${k === book ? "on" : ""}" role="tab" aria-selected="${k === book}" data-k="${esc(k)}"><i style="display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;background:${TCOL[i]}"></i>${esc(name)} · ${n}</button>` : ""; }).join("");
+  const rows = S.filter(x => x.book === book && (!bq || (x.t + " " + x.a).toLowerCase().includes(bq))).sort((a, b) => a.no - b.no);
+  const total = r => Object.values(r.h.years).reduce((a, b) => a + b, 0);
+  el("book").innerHTML = `<thead><tr><th class="num">No.</th><th>Song</th><th class="hide-sm">Artist</th><th class="hide-sm">Theme</th><th class="num">Times</th><th class="hide-sm">Years</th></tr></thead><tbody>` +
+    rows.map(r => `<tr class="song${r.no === openNo ? " open" : ""}" data-no="${r.no}" tabindex="0" aria-expanded="${r.no === openNo}"><td class="no">${r.no}</td><td>${esc(r.t)}</td><td class="meta hide-sm">${esc(r.a || "—")}</td>` +
+      `<td class="meta hide-sm">${esc(r.h.theme === "Untagged" ? "—" : r.h.theme)}</td><td class="num">${total(r) || "·"}</td>` +
+      `<td class="meta hide-sm">${r.h.first ? (r.h.first === r.h.last ? r.h.first : r.h.first + "–" + r.h.last) : "—"}</td></tr>` +
+      (r.no === openNo ? `<tr class="detail"><td colspan="6">${history(r)}</td></tr>` : "")).join("") + "</tbody>";
+  bindTips(el("book"));
+}
+function history(r) {
+  const ys = []; for (let y = 2014; y <= +DATA.today.slice(0, 4); y++) ys.push(String(y));
+  const chart = columns(ys, y => [{ k: "Times", n: r.h.years[y] || 0, c: tcol(r.book) }], { label: "Times per year for " + r.t, short: true });
+  const who = Object.entries(r.h.who).concat(Object.entries(r.h.lead).map(([k, v]) => [k + " (roster)", v]))
+    .sort((a, b) => b[1] - a[1]).map(([k, v]) => `${esc(k === "Rizvan" ? "Riz" : k)} ${v}×`).join(", ");
+  const dates = r.h.dates.map(d => new Date(d + "T00:00").toLocaleDateString("en-SG", { day: "numeric", month: "short", year: "numeric" }));
+  return `<div class="hist"><div><div class="label" style="margin-bottom:4px">Times per year</div>${chart}` +
+    (dates.length ? `<div class="label" style="margin:8px 0 2px">Sung on (roster)</div><div class="dates">${dates.join(" · ")}</div>` : "") + `</div>` +
+    `<dl><dt>Book</dt><dd>${esc(r.book)} · No. ${r.no}</dd><dt>Artist</dt><dd>${esc(r.a || "—")}</dd>` +
+    `<dt>Era</dt><dd>${esc(r.h.era)}</dd><dt>Theme</dt><dd>${esc(r.h.theme)}</dd><dt>Pace</dt><dd>${esc(r.h.pace)}</dd>` +
+    (r.h.latest_key ? `<dt>Latest key</dt><dd>${esc(r.h.latest_key)}</dd>` : "") +
+    (Object.keys(r.h.keys).length ? `<dt>Keys played</dt><dd>${Object.entries(r.h.keys).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${esc(k)} (${n}×)`).join(", ")}</dd>` : "") +
+    (r.h.key ? `<dt>Chart key</dt><dd>${esc(r.h.key)}</dd>` : "") +
+    (() => { const ms = C.mashups.filter(m => m.songs.some(x => x.toLowerCase() === r.t.toLowerCase())); return ms.length ? `<dt>Mashed with</dt><dd>${ms.map(m => m.songs.filter(x => x.toLowerCase() !== r.t.toLowerCase()).map(esc).join(" / ") + ` (${m.n}×)`).join("; ")}</dd>` : ""; })() +
+    `<dt>Picked by</dt><dd>${who || "—"}</dd><dt>Found in</dt><dd>${r.h.src.map(x => esc(SRC[x] || x)).join(", ")}</dd>` +
+    `<dt>Recording</dt><dd>${r.u ? `<a href="${esc(r.u)}" target="_blank" rel="noopener">${esc(r.h.rec)}</a>` : esc(r.h.held || "Not on Spotify")}</dd></dl></div>`;
+}
+el("books").onclick = e => { const b = e.target.closest("button"); if (b) { book = b.dataset.k; openNo = null; renderBook(); } };
+el("book").onclick = e => { const tr = e.target.closest("tr.song"); if (tr) { openNo = +tr.dataset.no === openNo ? null : +tr.dataset.no; renderBook(); } };
+el("book").onkeydown = e => { if (e.key === "Enter" && e.target.matches("tr.song")) e.target.click(); };
+el("bq").oninput = e => { bq = e.target.value.toLowerCase(); renderBook(); };
+
+renderStory(); renderVital(); renderBook(); renderPeople(); renderYearTop(); renderTop(); renderYears(); renderEverQuiet(); renderMash(); renderSlots();
 fillSelects(); renderStats(); render();
 </script>

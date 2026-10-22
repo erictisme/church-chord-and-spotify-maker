@@ -484,10 +484,6 @@ def chart_data(songs, today, mashups=None):
             "balance": _balance(by_year[y]),
         }
 
-    def slot_top(slot):
-        rows = [(s["title"], (s.get("slots") or {}).get(slot, 0)) for s in songs]
-        return [{"t": t, "n": n} for t, n in sorted((r for r in rows if r[1]), key=lambda r: (-r[1], r[0]))[:8]]
-
     import collections
     # 2014-15 look small only because fewer scripts were saved; judge from 2016.
     years_full = [y for y in by_year if "2016" <= y < today[:4]]
@@ -514,9 +510,6 @@ def chart_data(songs, today, mashups=None):
         "people_by_year": people_by_year,
         "vitality": vitality,
         "mashups": mashups,
-        "closers": slot_top("closing"),
-        "openers": slot_top("opening"),
-        "presermon": slot_top("pre-sermon"),
         "year_top": year_top,
         "evergreens": [{"t": t, "years": len(ys), "first": ys[0], "last": ys[-1]} for t, ys in ever],
         "gone_quiet": [{"t": t, "n": n, "trad": tr} for t, n, tr in quiet[:12]],

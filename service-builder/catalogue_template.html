@@ -147,11 +147,6 @@ svg rect.mark:hover { opacity: .8 }
       <figure class="chart" id="quietChart"></figure>
     </div>
     <figure class="chart" id="mashChart"></figure>
-    <div class="grid3">
-      <figure class="chart" id="openChart"></figure>
-      <figure class="chart" id="presChart"></figure>
-      <figure class="chart" id="closeChart"></figure>
-    </div>
     <figure class="chart" id="keyChart"></figure>
   </section>
 
@@ -391,11 +386,7 @@ function renderMash() {
   const b = el("mashMore"); if (b) b.onclick = () => { el("mashChart").querySelectorAll("[data-more]").forEach(r => r.hidden = false); b.hidden = true; };
 }
 
-function renderSlots() {
-  const card = (id, title, rows, sub) => { el(id).innerHTML = `<h3>${title}</h3><p class="sub">${sub}</p>` + hbars(rows, { unit: "times", label: title, labW: 170 }) + (rows[0] ? `<p class="sowhat"><b>${esc(rows[0].t)}</b> (${rows[0].n}×)</p>` : ""); bindTips(el(id)); };
-  card("openChart", "Openers", C.openers, "Opening songs, 2024–26 roster");
-  card("presChart", "Before the sermon", C.presermon, "Pre-sermon songs, 2024–26 roster");
-  card("closeChart", "Closers", C.closers, "Closing songs, 2024–26 roster");
+function renderKeys() {
   const K = C.story.keys.map(([k, n]) => ({ t: k, n }));
   el("keyChart").innerHTML = `<h3>Keys we sing in</h3><p class="sub">Each song's latest sounding key (chord shape plus capo) from the scripts, or its chart key</p>` +
     hbars(K, { unit: "songs", label: "Songs per key", labW: 60 }) +
@@ -518,6 +509,6 @@ el("book").onclick = e => { const tr = e.target.closest("tr.song"); if (tr) { op
 el("book").onkeydown = e => { if (e.key === "Enter" && e.target.matches("tr.song")) e.target.click(); };
 el("bq").oninput = e => { bq = e.target.value.toLowerCase(); renderBook(); };
 
-renderStory(); renderVital(); renderBook(); renderPeople(); renderYearTop(); renderTop(); renderYears(); renderEverQuiet(); renderMash(); renderSlots();
+renderStory(); renderVital(); renderBook(); renderPeople(); renderYearTop(); renderTop(); renderYears(); renderEverQuiet(); renderMash(); renderKeys();
 fillSelects(); renderStats(); render();
 </script>

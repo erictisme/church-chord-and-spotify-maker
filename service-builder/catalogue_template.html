@@ -106,6 +106,12 @@ svg .hit { fill: transparent; cursor: default }
 .mash .row { display: grid; grid-template-columns: 2.4em minmax(0, 1fr) auto; gap: 10px; align-items: baseline; border-bottom: 1px solid var(--rule); padding: 4px 0 }
 .mash .n { font: 600 14px var(--mono); text-align: right; color: var(--accent) }
 .mash .meta { color: var(--muted); font-size: 12px; white-space: nowrap }
+details.explore { display: grid; gap: 14px }
+details.explore > summary { cursor: pointer; list-style: none; display: grid; gap: 4px; padding: 12px 14px; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface) }
+details.explore > summary::-webkit-details-marker { display: none }
+details.explore > summary h2::after { content: " ▾"; color: var(--muted); font-size: 16px }
+details.explore[open] > summary h2::after { content: " ▴" }
+details.explore[open] > summary { margin-bottom: 14px }
 .toggle { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 4px }
 .toggle button.chip { padding: 3px 10px; font-size: 12.5px }
 .person-name { display: flex; align-items: baseline; gap: 8px }
@@ -160,16 +166,17 @@ svg rect.mark:hover { opacity: .8 }
     <p class="note">Numbered A to Z within each book, like a hymnal. Click a song to see its history.</p>
   </section>
 
+  <details class="explore" id="explore">
+  <summary><h2 id="split-h">Build your own breakdown</h2><span class="note">Count songs any two ways, e.g. how many hymns we sing at a slow pace. Tap to open.</span></summary>
   <section class="panel" aria-labelledby="split-h">
-    <h2 id="split-h">Explore the catalogue</h2>
     <div class="controls">
-      <label for="rowDim"><span class="label">Split by</span><select id="rowDim"></select></label>
-      <label for="colDim"><span class="label">Cross with</span><select id="colDim"></select></label>
+      <label for="rowDim"><span class="label">Count songs by</span><select id="rowDim"></select></label>
+      <label for="colDim"><span class="label">…and break each row down by</span><select id="colDim"></select></label>
     </div>
-    <div><div class="label" style="margin-bottom:6px">Diversity lenses</div><div class="lenses" id="lenses"></div></div>
+    <div><div class="label" style="margin-bottom:6px">Or start from a ready-made question</div><div class="lenses" id="lenses"></div></div>
     <div class="filters" id="filters"></div>
     <div class="scroll"><table class="pivot" id="pivot"></table></div>
-    <p class="note">Click any number to filter to those songs. Click a row name to filter by that bucket alone. Filters stack, so you can keep narrowing.</p>
+    <p class="note">Tap a number to see those songs in the list below. Tap again on another number to narrow further.</p>
   </section>
 
   <section class="panel" aria-labelledby="list-h">
@@ -181,6 +188,7 @@ svg rect.mark:hover { opacity: .8 }
     <button class="chip more" id="more" hidden>Show all</button>
     <p class="note">Theme and pace come from Eric's list or the chord library where tagged; the rest were tagged by AI judgment and are worth a glance. "Check version" means Spotify found a worship recording, but not by the artist FMH has on file.</p>
   </section>
+  </details>
 </div>
 
 <script>
@@ -192,16 +200,14 @@ try { Object.assign(state, JSON.parse(localStorage.getItem("fmh-cat") || "{}"), 
 const save = () => { try { localStorage.setItem("fmh-cat", JSON.stringify({ row: state.row, col: state.col, filters: state.filters })); } catch (e) {} };
 
 const LENSES = [
-  ["Tradition × Era", "tradition", "era"],
-  ["Theme × Tradition", "theme", "tradition"],
-  ["Rested favourites", "eric_rating", "recency"],
-  ["Where songs come from", "region", "tradition"],
-  ["Old songs we dropped", "first_seen", "recency"],
-  ["Pace × Theme", "pace", "theme"],
-  ["Staples by artist", "artist_family", "frequency"],
-  ["New vs well known", "release_decade", "popularity"],
-  ["Keys we sing in", "key", "tradition"],
-  ["Not introduced yet", "introduced", "tradition"],
+  ["Old hymns or new songs?", "tradition", "era"],
+  ["Which traditions cover which themes?", "theme", "tradition"],
+  ["Eric's favourites we haven't sung lately", "eric_rating", "recency"],
+  ["Which countries do our songs come from?", "region", "tradition"],
+  ["Older songs we've dropped", "first_seen", "recency"],
+  ["Slow or fast, by theme", "pace", "theme"],
+  ["Who writes our most-sung songs?", "artist_family", "frequency"],
+  ["Which keys, by tradition?", "key", "tradition"],
 ];
 
 const el = id => document.getElementById(id);
@@ -209,7 +215,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;",
 
 function fillSelects() {
   const groups = [...new Set(F.map(f => f.group))];
-  const opts = (none) => (none ? '<option value="">Nothing (one-way split)</option>' : "") +
+  const opts = (none) => (none ? '<option value="">Nothing (just one list)</option>' : "") +
     groups.map(g => `<optgroup label="${esc(g)}">` + F.filter(f => f.group === g).map(f => `<option value="${f.id}">${esc(f.label)}</option>`).join("") + "</optgroup>").join("");
   el("rowDim").innerHTML = opts(false); el("colDim").innerHTML = opts(true);
   el("rowDim").value = state.row; el("colDim").value = state.col;
@@ -327,14 +333,17 @@ function hbars(rows, opts = {}) {
 
 const peopleYear = {};
 function renderPeople() {
-  const NOTE = { Eric: "Scripts in Eric's archive, 2019–26", Rizvan: "Riz's OneDrive scripts, 2014–26", Edgar: "Charts in Edgar's library and his scripts" };
+  const NOTE = { Eric: "Scripts in Eric's own archive, 2018–26: services he prepared, not only ones he led",
+    Rizvan: "Riz's OneDrive: FMH's Sunday scripts 2014–26, most weeks, whoever led. Closest thing to an all-FMH view",
+    Edgar: "Charts in Edgar's library and his scripts" };
+  const LABEL = { Eric: "Eric's archive", Rizvan: "Riz's folder (all FMH)", Edgar: "Edgar's library" };
   const order = ["Eric", "Rizvan", "Edgar"].concat(Object.keys(C.people).filter(p => !["Eric", "Rizvan", "Edgar"].includes(p)));
   el("people").innerHTML = order.filter(p => C.people[p] && C.people[p].length >= 5).map(p => {
     const yrs = Object.keys(C.people_by_year[p] || {}).filter(y => (C.people_by_year[p][y] || []).length >= 3).sort();
     const y = peopleYear[p] || "all";
     const rows = y === "all" ? C.people[p] : C.people_by_year[p][y];
     const name = p === "Rizvan" ? "Riz" : p;
-    return `<figure class="chart" data-p="${esc(p)}"><h3>${esc(name)}'s top hits${y === "all" ? "" : " · " + y}</h3>` +
+    return `<figure class="chart" data-p="${esc(p)}"><h3>Top hits: ${esc(LABEL[p] || name)}${y === "all" ? "" : " · " + y}</h3>` +
       `<p class="sub">${esc(NOTE[p] || "From the roster")} · times it appears</p>` +
       (yrs.length ? `<div class="toggle" role="group" aria-label="${esc(name)} year"><button class="chip ${y === "all" ? "on" : ""}" data-y="all">All</button>${yrs.map(v => `<button class="chip ${v === y ? "on" : ""}" data-y="${v}">’${v.slice(2)}</button>`).join("")}</div>` : "") +
       hbars(rows.slice(0, 8), { unit: "appearances", label: name + " top songs", labW: 170 }) +
@@ -465,7 +474,7 @@ function renderEverQuiet() {
     `<p class="sowhat"><b>${esc(C.evergreens[0].t)}</b> shows up in ${C.evergreens[0].years} different years (${C.evergreens[0].first}–${C.evergreens[0].last}).</p>`;
   el("everChart").querySelectorAll("[data-tip]").forEach((n, i) => { const r = C.evergreens[i]; if (r) n.dataset.tip = `<b>${esc(r.t)}</b><br>${r.years} years, ${r.first}–${r.last}`; });
   bindTips(el("everChart"));
-  el("quietChart").innerHTML = `<h3>Gone quiet</h3><p class="sub">Sung 3+ times up to 2021, not once since 2023</p>` +
+  el("quietChart").innerHTML = `<h3>Gone quiet (in our records)</h3><p class="sub">Sung 3+ times up to 2021, not in any 2023–26 script or roster. Swapped-in songs aren't always written down, so a song here may still be sung now and then.</p>` +
     legend() + hbars(C.gone_quiet.map(r => ({ ...r, color: tcol(r.trad) })), { unit: "times up to 2021", label: "Songs gone quiet", labW: 200 }) +
     `<p class="sowhat">Bring-back list: ${C.gone_quiet.filter(r => r.trad !== "Reformed modern").length} of these ${C.gone_quiet.length} are outside the Reformed stream, an easy way to widen the mix.</p>`;
   bindTips(el("quietChart"));

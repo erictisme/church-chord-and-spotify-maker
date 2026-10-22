@@ -425,8 +425,10 @@ def _balance(counts):
 
 def chart_data(songs, today, mashups=None):
     """Everything the charts draw, precomputed so the page stays dumb."""
+    # Kids' songs repeat for a month by design, so they'd swamp every top-hits list.
+    adult = [s for s in songs if f_tradition(s, today) != "Kids"]
     people = {}
-    for s in songs:
+    for s in adult:
         totals = dict(s.get("owners") or {})
         for who, n in (s.get("roster_leaders") or {}).items():
             totals[who] = totals.get(who, 0) + n
@@ -448,7 +450,7 @@ def chart_data(songs, today, mashups=None):
 
     year_top = {}
     for y in by_year:
-        rows = [(s["title"], s["year_counts"][y], f_tradition(s, today)) for s in songs
+        rows = [(s["title"], s["year_counts"][y], f_tradition(s, today)) for s in adult
                 if (s.get("year_counts") or {}).get(y)]
         rows.sort(key=lambda r: (-r[1], r[0]))
         year_top[y] = [{"t": t, "n": n, "trad": tr} for t, n, tr in rows[:10]]
@@ -464,7 +466,7 @@ def chart_data(songs, today, mashups=None):
              if total(s, lambda y: y <= "2021") >= 3 and total(s, lambda y: y >= "2023") == 0]
     quiet.sort(key=lambda r: (-r[1], r[0]))
     people_by_year = {}
-    for s in songs:
+    for s in adult:
         for who, ys in (s.get("owner_years") or {}).items():
             for y, n in ys.items():
                 people_by_year.setdefault(who, {}).setdefault(y, []).append({"t": s["title"], "n": n})

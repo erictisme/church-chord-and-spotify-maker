@@ -110,6 +110,23 @@ def split_mashup(heading):
     return [c[0] for c in cleaned]
 
 
+# Different songs that share a title, told apart by a lyric line under the heading.
+LYRIC_TWINS = {
+    "forever": [("Chris Tomlin", r"forever god is faithful|give thanks to the lord our god"),
+                ("Kari Jobe", r"the moon and stars they wept|morning sun was dead")],
+}
+
+
+def disambiguate(title, after):
+    """'Forever' + Kari Jobe's lyrics -> 'Forever (Kari Jobe)'. Unchanged if unsure."""
+    twins = LYRIC_TWINS.get(re.sub(r"\s*\(.*\)$", "", title).strip().lower())
+    text = " ".join(after).lower()
+    for artist, pattern in twins or []:
+        if re.search(pattern, text):
+            return f"{re.sub(r'\s*\(.*\)$', '', title).strip()} ({artist})"
+    return title
+
+
 # Two names for one song, not a mashup.
 ALT_TITLES = [("My Hope Is Built", "The Solid Rock"), ("Rock Of Ages Cleft For Me", "Rock Of Ages"),
               ("I Surrender All", "All To Jesus I Surrender")]
@@ -308,16 +325,28 @@ def _chordy(text):
     return bool(toks) and sum(bool(CHORD.match(x.strip("()|-"))) for x in toks) / len(toks) > 0.5
 
 
-def script_headings(path):
-    """Bold headings that are immediately followed by a chord chart."""
+def _open_docx(path):
     import docx
+    return docx.Document(path)
+
+
+# Newer service scripts list songs as "SONG 1: Title" with no chord chart.
+SONG_LINE = re.compile(r"^(?:song\s*\d*|closing\s+song|opening\s+song|response\s+song)\s*[:\-–]\s*(.+)$", re.I)
+
+
+def script_headings(path):
+    """Song headings: bold lines followed by a chord chart, or 'SONG n: Title' lines."""
     try:
-        doc = docx.Document(path)
+        doc = _open_docx(path)
     except Exception:
         return []
-    paras = [(p.text.strip(), p) for p in doc.paragraphs if p.text.strip()]
+    paras = [(re.sub(r"[\u2060\u200b\xa0]", " ", p.text).strip(), p) for p in doc.paragraphs if p.text.strip()]
     found = []
     for i, (text, p) in enumerate(paras):
+        m = SONG_LINE.match(text)
+        if m and m.group(1).strip():
+            found.append((re.sub(r"\s+", " ", m.group(1)).strip(), [t for t, _ in paras[i + 1:i + 7]]))
+            continue
         runs = [r for r in p.runs if r.text.strip()]
         if not (runs and all(r.bold for r in runs) and len(text) <= 80):
             continue
@@ -334,6 +363,9 @@ def year_from_filename(name):
     m = re.search(r"(20[12]\d)", name)
     if m:
         return int(m.group(1))
+    m = re.search(r"(?<!\d)(\d{1,2})\.(\d{1,2})\.(\d{2})(?!\d)", name)       # 01.07.18
+    if m and 1 <= int(m.group(1)) <= 31 and 1 <= int(m.group(2)) <= 12:
+        return 2000 + int(m.group(3))
     m = re.search(r"(?<!\d)(\d{2})(\d{2})(\d{2})(?!\d)", name)
     if m and 1 <= int(m.group(1)) <= 31 and 1 <= int(m.group(2)) <= 12:
         return 2000 + int(m.group(3))
@@ -360,11 +392,18 @@ def from_scripts(specs, mashups=None):
                     [clean_title(heading)] if clean_title(heading) else [])
                 key = "" if parts else detect_key(heading, after)
                 for title, artist in titles:
+                    if not parts:
+                        twin = disambiguate(title, after)
+                        if twin != title:
+                            title, artist = twin, twin[twin.rindex("(") + 1:-1]
                     if title.lower() in seen:
                         continue
                     seen.add(title.lower())
-                    yield {"title": title, "artist": artist, "source": "scripts",
+                    row = {"title": title, "artist": artist, "source": "scripts",
                            "year": year, "owner": who, "key": key}
+                    if title.endswith(")") and artist and title.endswith(f"({artist})"):
+                        row["canon"] = f"{title[:title.rindex('(')].strip().lower()} {artist.lower()}"
+                    yield row
 
 
 def from_edgar(zip_path):
@@ -389,7 +428,7 @@ def merge(rows):
     canon = cmp.load_parser().canon_key
     songs = {}
     for r in rows:
-        key = canon(r["title"])
+        key = r.get("canon") or canon(r["title"])
         if not key or len(key) < 3:
             continue
         s = songs.setdefault(key, {"key": key, "titles": {}, "artists": {}, "sources": set(),
@@ -444,6 +483,10 @@ def merge(rows):
         s["artist"] = max(s["artists"], key=s["artists"].get) if s["artists"] else ""
         s["sources"] = sorted(s["sources"])
         s["local"] = s["local"] or cmp.is_local(" ".join(s["titles"]) + " " + s["artist"])
+        # Mostly sung in the roster's Kids' slot -> a kids' song, whoever published it.
+        slot_total = sum(s["slots"].values())
+        if slot_total and s["slots"].get("kids", 0) * 2 > slot_total:
+            s["kids"] = True
         s["first_year"] = min(s["years"]) if s["years"] else None
         s["last_year"] = max(s["years"]) if s["years"] else None
         # Same Sunday can be in both a script and the roster: take the larger, never the sum.

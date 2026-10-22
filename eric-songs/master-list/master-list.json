@@ -10,18 +10,18 @@
   ],
   "count": 12,
   "last_sung": "2026-09-06",
-  "script_uses": 9,
+  "script_uses": 10,
   "local": false,
   "kids": false,
   "era": "Reformed",
   "owners": {
    "Edgar": 1,
-   "Rizvan": 6,
+   "Rizvan": 7,
    "Eric": 3
   },
   "owner_years": {
    "Rizvan": {
-    "2024": 4,
+    "2024": 5,
     "2025": 1,
     "2026": 1
    },
@@ -31,7 +31,8 @@
    }
   },
   "keys_played": {
-   "C": 9
+   "C": 9,
+   "F#": 1
   },
   "latest_key": "C",
   "latest_key_year": 2026,
@@ -67,7 +68,7 @@
   "first_year": 2024,
   "last_year": 2026,
   "year_counts": {
-   "2024": 5,
+   "2024": 6,
    "2025": 4,
    "2026": 3
   },
@@ -94,14 +95,14 @@
   ],
   "count": 11,
   "last_sung": "2026-05-31",
-  "script_uses": 14,
+  "script_uses": 15,
   "local": false,
   "kids": false,
   "era": "Contemporary",
   "owners": {
    "Edgar": 1,
    "Rizvan": 9,
-   "Eric": 5
+   "Eric": 6
   },
   "owner_years": {
    "Rizvan": {
@@ -116,13 +117,13 @@
    "Eric": {
     "2019": 1,
     "2025": 3,
-    "2022": 1
+    "2022": 1,
+    "2020": 1
    }
   },
   "keys_played": {
    "C": 9,
-   "G": 2,
-   "A": 1
+   "G": 1
   },
   "latest_key": "C",
   "latest_key_year": 2026,
@@ -160,7 +161,7 @@
   "last_year": 2026,
   "year_counts": {
    "2019": 3,
-   "2020": 1,
+   "2020": 2,
    "2021": 1,
    "2022": 2,
    "2024": 1,
@@ -213,7 +214,8 @@
   },
   "keys_played": {
    "G": 5,
-   "D": 6
+   "D": 5,
+   "C": 1
   },
   "latest_key": "G",
   "latest_key_year": 2026,
@@ -299,7 +301,8 @@
    }
   },
   "keys_played": {
-   "A": 5
+   "A": 4,
+   "G": 1
   },
   "latest_key": "A",
   "latest_key_year": 2025,
@@ -329,7 +332,7 @@
   "eric_count": 6.0,
   "pace": "Slow",
   "theme": "Surrender",
-  "title": "His Glory and my good",
+  "title": "His Glory and My Good",
   "artist": "CityAlight",
   "first_year": 2024,
   "last_year": 2025,
@@ -445,13 +448,13 @@
   ],
   "count": 9,
   "last_sung": "2026-04-26",
-  "script_uses": 11,
+  "script_uses": 12,
   "local": false,
   "kids": false,
   "era": "Hymn",
   "owners": {
    "Edgar": 4,
-   "Rizvan": 9,
+   "Rizvan": 10,
    "Eric": 2
   },
   "owner_years": {
@@ -460,7 +463,7 @@
     "2016": 2,
     "2017": 1,
     "2019": 1,
-    "2025": 4
+    "2025": 5
    },
    "Eric": {
     "2024": 1,
@@ -468,7 +471,7 @@
    }
   },
   "keys_played": {
-   "C": 5,
+   "C": 4,
    "A": 3
   },
   "latest_key": "C",
@@ -606,18 +609,22 @@
   ],
   "count": 9,
   "last_sung": "2026-03-08",
-  "script_uses": 4,
+  "script_uses": 5,
   "local": false,
   "kids": false,
   "era": "Reformed",
   "owners": {
    "Edgar": 1,
-   "Rizvan": 4
+   "Rizvan": 4,
+   "Eric": 1
   },
   "owner_years": {
    "Rizvan": {
     "2024": 3,
     "2026": 1
+   },
+   "Eric": {
+    "2025": 1
    }
   },
   "keys_played": {
@@ -643,7 +650,7 @@
   "eric_count": 5.0,
   "pace": "Fast",
   "theme": "Cross",
-  "title": "Come Praise And Glorify",
+  "title": "Come Praise and Glorify",
   "artist": "Sovereign Grace Music",
   "first_year": 2024,
   "last_year": 2026,
@@ -750,17 +757,21 @@
   ],
   "count": 8,
   "last_sung": "2026-02-08",
-  "script_uses": 3,
+  "script_uses": 4,
   "local": false,
   "kids": false,
   "era": "Contemporary Hymn",
   "owners": {
    "Edgar": 1,
-   "Rizvan": 3
+   "Rizvan": 3,
+   "Eric": 1
   },
   "owner_years": {
    "Rizvan": {
     "2024": 3
+   },
+   "Eric": {
+    "2025": 1
    }
   },
   "keys_played": {
@@ -835,7 +846,8 @@
    }
   },
   "keys_played": {
-   "C": 3
+   "C": 2,
+   "F": 1
   },
   "latest_key": "C",
   "latest_key_year": 2025,
@@ -858,7 +870,7 @@
   "lib_era": "contemporary",
   "lib_theme": "declaration",
   "has_chart": true,
-  "title": "Let The Nations Be Glad",
+  "title": "Let the Nations Be Glad",
   "artist": "Unknown",
   "first_year": 2024,
   "last_year": 2026,
@@ -954,18 +966,24 @@
    "edgar",
    "history",
    "library",
-   "main"
+   "main",
+   "scripts"
   ],
   "count": 8,
   "last_sung": "2026-05-31",
-  "script_uses": 0,
+  "script_uses": 1,
   "local": false,
   "kids": false,
   "era": "Reformed",
   "owners": {
-   "Edgar": 1
+   "Edgar": 1,
+   "Eric": 1
   },
-  "owner_years": {},
+  "owner_years": {
+   "Eric": {
+    "2025": 1
+   }
+  },
   "keys_played": {},
   "latest_key": "",
   "latest_key_year": 0,
@@ -994,7 +1012,7 @@
   "theme": "Edify",
   "title": "God is For Us",
   "artist": "CityAlight",
-  "first_year": 2026,
+  "first_year": 2025,
   "last_year": 2026,
   "year_counts": {
    "2024": 1,
@@ -1024,19 +1042,19 @@
   ],
   "count": 7,
   "last_sung": "2026-08-16",
-  "script_uses": 14,
+  "script_uses": 15,
   "local": false,
   "kids": false,
   "era": "Contemporary",
   "owners": {
    "Edgar": 1,
-   "Rizvan": 5,
+   "Rizvan": 6,
    "Eric": 9
   },
   "owner_years": {
    "Rizvan": {
     "2021": 1,
-    "2023": 1,
+    "2023": 2,
     "2024": 1,
     "2025": 1,
     "2026": 1
@@ -1051,7 +1069,7 @@
    }
   },
   "keys_played": {
-   "C": 13
+   "C": 14
   },
   "latest_key": "C",
   "latest_key_year": 2026,
@@ -1087,7 +1105,7 @@
    "2020": 2,
    "2021": 4,
    "2022": 1,
-   "2023": 2,
+   "2023": 3,
    "2024": 2,
    "2025": 2,
    "2026": 4
@@ -1115,18 +1133,19 @@
   ],
   "count": 7,
   "last_sung": "2026-03-08",
-  "script_uses": 13,
+  "script_uses": 14,
   "local": false,
   "kids": false,
   "era": "Modern Hymn",
   "owners": {
    "Edgar": 6,
-   "Rizvan": 6,
+   "Rizvan": 7,
    "Eric": 7
   },
   "owner_years": {
    "Rizvan": {
     "2014": 1,
+    "2017": 1,
     "2018": 2,
     "2019": 1,
     "2020": 1,
@@ -1145,9 +1164,10 @@
    "E": 2,
    "D": 3,
    "G": 1,
-   "C": 3
+   "C": 3,
+   "B": 1
   },
-  "latest_key": "E",
+  "latest_key": "B",
   "latest_key_year": 2025,
   "slots": {
    "closing": 2,
@@ -1178,6 +1198,7 @@
   "last_year": 2026,
   "year_counts": {
    "2014": 1,
+   "2017": 1,
    "2018": 3,
    "2019": 2,
    "2020": 1,
@@ -1295,13 +1316,14 @@
   ],
   "count": 7,
   "last_sung": "2026-10-11",
-  "script_uses": 6,
+  "script_uses": 9,
   "local": false,
   "kids": false,
   "era": "Contemporary",
   "owners": {
    "Edgar": 1,
-   "Rizvan": 6
+   "Rizvan": 7,
+   "Eric": 2
   },
   "owner_years": {
    "Rizvan": {
@@ -1309,7 +1331,12 @@
     "2017": 2,
     "2019": 1,
     "2021": 1,
-    "2023": 1
+    "2023": 1,
+    "2026": 1
+   },
+   "Eric": {
+    "2025": 1,
+    "2024": 1
    }
   },
   "keys_played": {
@@ -1377,19 +1404,19 @@
   ],
   "count": 7,
   "last_sung": "2026-01-18",
-  "script_uses": 6,
+  "script_uses": 8,
   "local": false,
   "kids": false,
   "era": "Hymn",
   "owners": {
-   "Rizvan": 5,
+   "Rizvan": 7,
    "Eric": 1
   },
   "owner_years": {
    "Rizvan": {
     "2020": 1,
     "2024": 1,
-    "2025": 3
+    "2025": 5
    },
    "Eric": {
     "2025": 1
@@ -1430,7 +1457,7 @@
   "year_counts": {
    "2020": 1,
    "2024": 1,
-   "2025": 5,
+   "2025": 6,
    "2026": 1
   },
   "match": {
@@ -1520,19 +1547,28 @@
   "sources": [
    "history",
    "library",
-   "main"
+   "main",
+   "scripts"
   ],
   "count": 7,
   "last_sung": "2026-06-21",
-  "script_uses": 0,
+  "script_uses": 1,
   "local": false,
   "kids": false,
   "era": "",
-  "owners": {},
-  "owner_years": {},
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
+  "owners": {
+   "Rizvan": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2025": 1
+   }
+  },
+  "keys_played": {
+   "C": 1
+  },
+  "latest_key": "C",
+  "latest_key_year": 2025,
   "slots": {
    "closing": 3,
    "opening": 3,
@@ -1557,7 +1593,7 @@
   "theme": "Thanks",
   "title": "I Will Trust My Saviour Jesus",
   "artist": "CityAlight",
-  "first_year": 2026,
+  "first_year": 2025,
   "last_year": 2026,
   "year_counts": {
    "2024": 1,
@@ -1609,7 +1645,7 @@
    }
   },
   "keys_played": {
-   "B": 9
+   "B": 6
   },
   "latest_key": "B",
   "latest_key_year": 2026,
@@ -1817,29 +1853,30 @@
   ],
   "count": 6,
   "last_sung": "2026-02-15",
-  "script_uses": 2,
+  "script_uses": 3,
   "local": false,
   "kids": false,
   "era": "",
   "owners": {
    "Edgar": 1,
    "Rizvan": 1,
-   "Eric": 1
+   "Eric": 2
   },
   "owner_years": {
    "Rizvan": {
     "2017": 1
    },
    "Eric": {
+    "2025": 1,
     "2024": 1
    }
   },
   "keys_played": {
    "D": 1,
-   "C": 1
+   "C": 2
   },
   "latest_key": "C",
-  "latest_key_year": 2024,
+  "latest_key_year": 2025,
   "slots": {
    "pre-sermon": 2,
    "closing": 3,
@@ -2255,22 +2292,24 @@
   ],
   "count": 5,
   "last_sung": "2025-06-15",
-  "script_uses": 3,
+  "script_uses": 5,
   "local": false,
   "kids": false,
   "era": "Contemporary Hymn",
   "owners": {
    "Edgar": 1,
-   "Rizvan": 3
+   "Rizvan": 5
   },
   "owner_years": {
    "Rizvan": {
+    "2023": 2,
     "2024": 2,
     "2026": 1
    }
   },
   "keys_played": {
-   "E": 3
+   "E": 4,
+   "G": 1
   },
   "latest_key": "E",
   "latest_key_year": 2026,
@@ -2295,9 +2334,10 @@
   "theme": "Pre-sermon",
   "title": "Rejoice",
   "artist": "Keith & Kristyn Getty",
-  "first_year": 2024,
+  "first_year": 2023,
   "last_year": 2026,
   "year_counts": {
+   "2023": 2,
    "2024": 4,
    "2025": 1,
    "2026": 1
@@ -2322,17 +2362,17 @@
   ],
   "count": 5,
   "last_sung": "2025-12-28",
-  "script_uses": 3,
+  "script_uses": 4,
   "local": true,
   "kids": false,
   "era": "",
   "owners": {
-   "Rizvan": 2,
+   "Rizvan": 3,
    "Eric": 1
   },
   "owner_years": {
    "Rizvan": {
-    "2025": 2
+    "2025": 3
    },
    "Eric": {
     "2025": 1
@@ -2728,7 +2768,7 @@
   "last_sung": "2026-05-31",
   "script_uses": 0,
   "local": false,
-  "kids": false,
+  "kids": true,
   "era": "",
   "owners": {},
   "owner_years": {},
@@ -2854,10 +2894,10 @@
   "keys_played": {
    "A": 2,
    "G": 1,
-   "F#": 4
+   "F#": 3
   },
   "latest_key": "F#",
-  "latest_key_year": 2025,
+  "latest_key_year": 2024,
   "slots": {
    "opening": 2,
    "closing": 2
@@ -3461,7 +3501,7 @@
   "last_sung": "2026-07-26",
   "script_uses": 0,
   "local": false,
-  "kids": false,
+  "kids": true,
   "era": "",
   "owners": {
    "Edgar": 2
@@ -3512,7 +3552,7 @@
   "last_sung": "2026-09-27",
   "script_uses": 0,
   "local": false,
-  "kids": false,
+  "kids": true,
   "era": "",
   "owners": {},
   "owner_years": {},
@@ -3606,14 +3646,14 @@
   ],
   "count": 3,
   "last_sung": "2026-06-14",
-  "script_uses": 16,
+  "script_uses": 18,
   "local": false,
   "kids": false,
   "era": "Contemporary",
   "owners": {
    "Edgar": 1,
    "Rizvan": 9,
-   "Eric": 7
+   "Eric": 9
   },
   "owner_years": {
    "Rizvan": {
@@ -3629,16 +3669,17 @@
    "Eric": {
     "2019": 1,
     "2023": 1,
-    "2025": 1,
+    "2025": 3,
     "2022": 1,
     "2021": 1,
-    "2018": 1
+    "2018": 2
    }
   },
   "keys_played": {
-   "C": 6
+   "C": 6,
+   "B": 1
   },
-  "latest_key": "C",
+  "latest_key": "B",
   "latest_key_year": 2025,
   "slots": {
    "closing": 1,
@@ -3666,12 +3707,12 @@
    "2014": 1,
    "2016": 1,
    "2017": 1,
-   "2018": 2,
+   "2018": 3,
    "2019": 1,
    "2021": 2,
    "2022": 2,
    "2023": 3,
-   "2025": 2,
+   "2025": 4,
    "2026": 1
   },
   "match": {
@@ -3697,14 +3738,14 @@
   ],
   "count": 3,
   "last_sung": "2025-04-06",
-  "script_uses": 11,
+  "script_uses": 12,
   "local": false,
   "kids": false,
   "era": "Hymn",
   "owners": {
    "Edgar": 1,
    "Rizvan": 8,
-   "Eric": 3
+   "Eric": 4
   },
   "owner_years": {
    "Rizvan": {
@@ -3717,7 +3758,7 @@
     "2026": 1
    },
    "Eric": {
-    "2023": 1,
+    "2023": 2,
     "2021": 1,
     "2018": 1
    }
@@ -3725,7 +3766,7 @@
   "keys_played": {
    "F": 2,
    "C": 5,
-   "A": 1
+   "A": 2
   },
   "latest_key": "C",
   "latest_key_year": 2026,
@@ -3759,7 +3800,7 @@
    "2018": 2,
    "2021": 1,
    "2022": 1,
-   "2023": 1,
+   "2023": 2,
    "2024": 2,
    "2025": 1,
    "2026": 1
@@ -3853,6 +3894,88 @@
   "reason": ""
  },
  {
+  "key": "be thou vision",
+  "sources": [
+   "edgar",
+   "history",
+   "library",
+   "main",
+   "scripts"
+  ],
+  "count": 3,
+  "last_sung": "2025-04-13",
+  "script_uses": 5,
+  "local": false,
+  "kids": false,
+  "era": "Hymn",
+  "owners": {
+   "Edgar": 5,
+   "Rizvan": 4,
+   "Eric": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2016": 1,
+    "2017": 1,
+    "2018": 1,
+    "2020": 1
+   },
+   "Eric": {
+    "2019": 1
+   }
+  },
+  "keys_played": {
+   "D": 3,
+   "Eb": 1
+  },
+  "latest_key": "D",
+  "latest_key_year": 2019,
+  "slots": {
+   "closing": 1,
+   "dedication": 1,
+   "opening": 1
+  },
+  "dates": [
+   "2024-07-14",
+   "2025-02-23",
+   "2025-04-13"
+  ],
+  "chart_key": "C",
+  "lib_pace": "slow",
+  "lib_era": "contemporary",
+  "lib_theme": "edify",
+  "has_chart": true,
+  "eric_count": 1.0,
+  "pace": "Slow",
+  "rough_category": "Seek",
+  "theme": "Edify",
+  "introduced": "Yes",
+  "title": "Be Thou My Vision",
+  "artist": "Norton Hall Band",
+  "first_year": 2016,
+  "last_year": 2025,
+  "year_counts": {
+   "2016": 1,
+   "2017": 1,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2024": 1,
+   "2025": 2
+  },
+  "match": {
+   "uri": "spotify:track:4TALuYddLLmJDM14GkhSmG",
+   "artist": "Norton Hall Band",
+   "album": "Be Thou My Vision",
+   "confidence": "high",
+   "name": "Be Thou My Vision"
+  },
+  "release_year": 2014,
+  "popularity": 48,
+  "status": "on",
+  "reason": ""
+ },
+ {
   "key": "joy to world",
   "sources": [
    "edgar",
@@ -3885,8 +4008,7 @@
   },
   "keys_played": {
    "E": 1,
-   "C": 1,
-   "A": 1
+   "C": 1
   },
   "latest_key": "C",
   "latest_key_year": 2025,
@@ -3932,86 +4054,6 @@
   "reason": "check version"
  },
  {
-  "key": "be thou vision",
-  "sources": [
-   "edgar",
-   "history",
-   "library",
-   "main",
-   "scripts"
-  ],
-  "count": 3,
-  "last_sung": "2025-04-13",
-  "script_uses": 4,
-  "local": false,
-  "kids": false,
-  "era": "Hymn",
-  "owners": {
-   "Edgar": 5,
-   "Rizvan": 3,
-   "Eric": 1
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2017": 1,
-    "2018": 1,
-    "2020": 1
-   },
-   "Eric": {
-    "2019": 1
-   }
-  },
-  "keys_played": {
-   "D": 2,
-   "Eb": 1
-  },
-  "latest_key": "D",
-  "latest_key_year": 2019,
-  "slots": {
-   "closing": 1,
-   "dedication": 1,
-   "opening": 1
-  },
-  "dates": [
-   "2024-07-14",
-   "2025-02-23",
-   "2025-04-13"
-  ],
-  "chart_key": "C",
-  "lib_pace": "slow",
-  "lib_era": "contemporary",
-  "lib_theme": "edify",
-  "has_chart": true,
-  "eric_count": 1.0,
-  "pace": "Slow",
-  "rough_category": "Seek",
-  "theme": "Edify",
-  "introduced": "Yes",
-  "title": "Be Thou My Vision",
-  "artist": "Norton Hall Band",
-  "first_year": 2017,
-  "last_year": 2025,
-  "year_counts": {
-   "2017": 1,
-   "2018": 1,
-   "2019": 1,
-   "2020": 1,
-   "2024": 1,
-   "2025": 2
-  },
-  "match": {
-   "uri": "spotify:track:4TALuYddLLmJDM14GkhSmG",
-   "artist": "Norton Hall Band",
-   "album": "Be Thou My Vision",
-   "confidence": "high",
-   "name": "Be Thou My Vision"
-  },
-  "release_year": 2014,
-  "popularity": 48,
-  "status": "on",
-  "reason": ""
- },
- {
   "key": "sovereign",
   "sources": [
    "history",
@@ -4021,16 +4063,17 @@
   ],
   "count": 3,
   "last_sung": "2026-06-07",
-  "script_uses": 4,
+  "script_uses": 5,
   "local": false,
   "kids": false,
   "era": "Contemporary",
   "owners": {
-   "Rizvan": 1,
+   "Rizvan": 2,
    "Eric": 3
   },
   "owner_years": {
    "Rizvan": {
+    "2022": 1,
     "2024": 1
    },
    "Eric": {
@@ -4040,6 +4083,7 @@
    }
   },
   "keys_played": {
+   "A": 1,
    "G": 2,
    "E": 1,
    "D": 1
@@ -4072,6 +4116,7 @@
   "year_counts": {
    "2018": 1,
    "2021": 1,
+   "2022": 1,
    "2024": 1,
    "2025": 1,
    "2026": 1
@@ -4117,7 +4162,7 @@
    }
   },
   "keys_played": {
-   "A": 2
+   "A": 1
   },
   "latest_key": "A",
   "latest_key_year": 2025,
@@ -4191,7 +4236,7 @@
   },
   "keys_played": {
    "F#": 1,
-   "E": 1
+   "C": 1
   },
   "latest_key": "F#",
   "latest_key_year": 2025,
@@ -4231,6 +4276,73 @@
   },
   "release_year": 2020,
   "popularity": 36,
+  "status": "on",
+  "reason": ""
+ },
+ {
+  "key": "name above all names",
+  "sources": [
+   "edgar",
+   "history",
+   "library",
+   "scripts"
+  ],
+  "count": 3,
+  "last_sung": "2026-03-01",
+  "script_uses": 2,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 1,
+   "Eric": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2023": 1
+   },
+   "Eric": {
+    "2025": 1
+   }
+  },
+  "keys_played": {
+   "C#": 2
+  },
+  "latest_key": "C#",
+  "latest_key_year": 2025,
+  "slots": {
+   "closing": 2,
+   "opening": 1
+  },
+  "dates": [
+   "2025-01-26",
+   "2025-02-02",
+   "2026-03-01"
+  ],
+  "chart_key": "E",
+  "lib_pace": "slow",
+  "lib_era": "contemporary",
+  "lib_theme": "praise",
+  "has_chart": true,
+  "title": "Name Above All Names",
+  "artist": "Sovereign Grace Music",
+  "first_year": 2023,
+  "last_year": 2026,
+  "year_counts": {
+   "2023": 1,
+   "2025": 2,
+   "2026": 1
+  },
+  "match": {
+   "uri": "spotify:track:7kcSq9uCve9TetG1TPtQx8",
+   "artist": "Sovereign Grace Music",
+   "album": "Risen",
+   "confidence": "high",
+   "name": "Name Above All Names"
+  },
+  "release_year": 2011,
+  "popularity": 26,
   "status": "on",
   "reason": ""
  },
@@ -4294,68 +4406,6 @@
   "reason": "check version"
  },
  {
-  "key": "name above all names",
-  "sources": [
-   "edgar",
-   "history",
-   "library",
-   "scripts"
-  ],
-  "count": 3,
-  "last_sung": "2026-03-01",
-  "script_uses": 1,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Edgar": 1,
-   "Eric": 1
-  },
-  "owner_years": {
-   "Eric": {
-    "2025": 1
-   }
-  },
-  "keys_played": {
-   "C#": 1
-  },
-  "latest_key": "C#",
-  "latest_key_year": 2025,
-  "slots": {
-   "closing": 2,
-   "opening": 1
-  },
-  "dates": [
-   "2025-01-26",
-   "2025-02-02",
-   "2026-03-01"
-  ],
-  "chart_key": "E",
-  "lib_pace": "slow",
-  "lib_era": "contemporary",
-  "lib_theme": "praise",
-  "has_chart": true,
-  "title": "Name Above All Names",
-  "artist": "Sovereign Grace Music",
-  "first_year": 2025,
-  "last_year": 2026,
-  "year_counts": {
-   "2025": 2,
-   "2026": 1
-  },
-  "match": {
-   "uri": "spotify:track:7kcSq9uCve9TetG1TPtQx8",
-   "artist": "Sovereign Grace Music",
-   "album": "Risen",
-   "confidence": "high",
-   "name": "Name Above All Names"
-  },
-  "release_year": 2011,
-  "popularity": 26,
-  "status": "on",
-  "reason": ""
- },
- {
   "key": "because you first loved me",
   "sources": [
    "history",
@@ -4366,7 +4416,7 @@
   "last_sung": "2026-10-18",
   "script_uses": 1,
   "local": false,
-  "kids": false,
+  "kids": true,
   "era": "",
   "owners": {
    "Rizvan": 1
@@ -4765,14 +4815,14 @@
    "Eric": {
     "2019": 2,
     "2025": 1,
-    "2018": 1,
+    "2018": 3,
     "2021": 1,
     "2020": 3
    }
   },
   "keys_played": {
    "G": 1,
-   "E": 23
+   "E": 22
   },
   "latest_key": "E",
   "latest_key_year": 2025,
@@ -4798,7 +4848,7 @@
   "year_counts": {
    "2016": 2,
    "2017": 4,
-   "2018": 3,
+   "2018": 5,
    "2019": 3,
    "2020": 4,
    "2021": 2,
@@ -4853,6 +4903,7 @@
    },
    "Eric": {
     "2023": 1,
+    "2018": 1,
     "2019": 1
    }
   },
@@ -4888,6 +4939,7 @@
    "2015": 2,
    "2016": 1,
    "2017": 2,
+   "2018": 1,
    "2019": 2,
    "2020": 1,
    "2021": 1,
@@ -4907,6 +4959,82 @@
   "popularity": 66,
   "status": "on",
   "reason": ""
+ },
+ {
+  "key": "great thy faithfulness",
+  "sources": [
+   "edgar",
+   "history",
+   "library",
+   "main",
+   "scripts"
+  ],
+  "count": 2,
+  "last_sung": "2026-06-28",
+  "script_uses": 12,
+  "local": false,
+  "kids": false,
+  "era": "Hymn",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 12
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2016": 1,
+    "2017": 2,
+    "2020": 3,
+    "2022": 2,
+    "2023": 1,
+    "2026": 3
+   }
+  },
+  "keys_played": {
+   "C": 8
+  },
+  "latest_key": "C",
+  "latest_key_year": 2026,
+  "slots": {
+   "pre-sermon": 1,
+   "opening": 1
+  },
+  "dates": [
+   "2025-05-04",
+   "2026-06-28"
+  ],
+  "chart_key": "A",
+  "lib_pace": "moderate",
+  "lib_era": "traditional",
+  "lib_theme": "faithfulness",
+  "has_chart": true,
+  "pace": "Slow",
+  "rough_category": "Hope",
+  "theme": "Praise",
+  "introduced": "Yes",
+  "title": "Great Is Thy Faithfulness",
+  "artist": "Traditional",
+  "first_year": 2016,
+  "last_year": 2026,
+  "year_counts": {
+   "2016": 1,
+   "2017": 2,
+   "2020": 3,
+   "2022": 2,
+   "2023": 1,
+   "2025": 1,
+   "2026": 3
+  },
+  "match": {
+   "uri": "spotify:track:73ZGW3v5caUFBsHSkQQfpX",
+   "artist": "The Worship Initiative",
+   "album": "The Worship Initiative, Vol. 6",
+   "confidence": "medium",
+   "name": "Great Is Thy Faithfulness"
+  },
+  "release_year": 2014,
+  "popularity": 49,
+  "status": "on",
+  "reason": "check version"
  },
  {
   "key": "love god",
@@ -4993,80 +5121,71 @@
   "reason": "check version"
  },
  {
-  "key": "great thy faithfulness",
+  "key": "for you alone are worthy",
   "sources": [
    "edgar",
    "history",
-   "library",
-   "main",
    "scripts"
   ],
   "count": 2,
-  "last_sung": "2026-06-28",
-  "script_uses": 10,
-  "local": false,
+  "last_sung": "2026-04-19",
+  "script_uses": 11,
+  "local": true,
   "kids": false,
-  "era": "Hymn",
+  "era": "",
   "owners": {
-   "Edgar": 1,
-   "Rizvan": 10
+   "Edgar": 3,
+   "Rizvan": 7,
+   "Eric": 3
   },
   "owner_years": {
    "Rizvan": {
-    "2016": 1,
-    "2017": 2,
-    "2020": 3,
-    "2022": 2,
+    "2018": 1,
+    "2019": 1,
+    "2021": 2,
     "2023": 1,
-    "2026": 1
+    "2026": 2
+   },
+   "Edgar": {
+    "2020": 1
+   },
+   "Eric": {
+    "2020": 1,
+    "2019": 1,
+    "2018": 1
    }
   },
   "keys_played": {
    "C": 8
   },
   "latest_key": "C",
-  "latest_key_year": 2026,
+  "latest_key_year": 2023,
   "slots": {
-   "pre-sermon": 1,
-   "opening": 1
+   "opening": 2
   },
   "dates": [
-   "2025-05-04",
-   "2026-06-28"
+   "2025-06-08",
+   "2026-04-19"
   ],
-  "chart_key": "A",
-  "lib_pace": "moderate",
-  "lib_era": "traditional",
-  "lib_theme": "faithfulness",
-  "has_chart": true,
-  "pace": "Slow",
-  "rough_category": "Hope",
-  "theme": "Praise",
-  "introduced": "Yes",
-  "title": "Great Is Thy Faithfulness",
-  "artist": "Traditional",
-  "first_year": 2016,
+  "title": "For You Alone Are Worthy",
+  "artist": "",
+  "first_year": 2018,
   "last_year": 2026,
   "year_counts": {
-   "2016": 1,
-   "2017": 2,
-   "2020": 3,
-   "2022": 2,
+   "2018": 2,
+   "2019": 2,
+   "2020": 2,
+   "2021": 2,
    "2023": 1,
    "2025": 1,
-   "2026": 1
+   "2026": 2
   },
-  "match": {
-   "uri": "spotify:track:73ZGW3v5caUFBsHSkQQfpX",
-   "artist": "The Worship Initiative",
-   "album": "The Worship Initiative, Vol. 6",
-   "confidence": "medium",
-   "name": "Great Is Thy Faithfulness"
-  },
-  "release_year": 2014,
-  "popularity": 49,
-  "status": "on",
-  "reason": "check version"
+  "ai_theme": "Awe",
+  "ai_pace": "Slow",
+  "not_a_song": false,
+  "ai_confident": false,
+  "status": "held",
+  "reason": "written in-house, no commercial recording"
  },
  {
   "key": "indescribable",
@@ -5256,7 +5375,8 @@
    "Eric": {
     "2023": 1,
     "2025": 1,
-    "2024": 1
+    "2024": 1,
+    "2018": 1
    }
   },
   "keys_played": {
@@ -5286,9 +5406,10 @@
   "introduced": "Yes",
   "title": "Jesus Paid It All",
   "artist": "Elvina M. Hall",
-  "first_year": 2019,
+  "first_year": 2018,
   "last_year": 2026,
   "year_counts": {
+   "2018": 1,
    "2019": 1,
    "2021": 1,
    "2022": 1,
@@ -5469,71 +5590,6 @@
   "reason": ""
  },
  {
-  "key": "for you alone are worthy",
-  "sources": [
-   "edgar",
-   "history",
-   "scripts"
-  ],
-  "count": 2,
-  "last_sung": "2026-04-19",
-  "script_uses": 9,
-  "local": true,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Edgar": 3,
-   "Rizvan": 5,
-   "Eric": 3
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2018": 1,
-    "2019": 1,
-    "2021": 2,
-    "2023": 1
-   },
-   "Edgar": {
-    "2020": 1
-   },
-   "Eric": {
-    "2020": 1,
-    "2019": 1
-   }
-  },
-  "keys_played": {
-   "C": 8
-  },
-  "latest_key": "C",
-  "latest_key_year": 2023,
-  "slots": {
-   "opening": 2
-  },
-  "dates": [
-   "2025-06-08",
-   "2026-04-19"
-  ],
-  "title": "For You Alone Are Worthy",
-  "artist": "",
-  "first_year": 2018,
-  "last_year": 2026,
-  "year_counts": {
-   "2018": 1,
-   "2019": 2,
-   "2020": 2,
-   "2021": 2,
-   "2023": 1,
-   "2025": 1,
-   "2026": 1
-  },
-  "ai_theme": "Awe",
-  "ai_pace": "Slow",
-  "not_a_song": false,
-  "ai_confident": false,
-  "status": "held",
-  "reason": "written in-house, no commercial recording"
- },
- {
   "key": "power cross",
   "sources": [
    "edgar",
@@ -5568,7 +5624,8 @@
   },
   "keys_played": {
    "A": 6,
-   "C": 2
+   "F": 1,
+   "C": 1
   },
   "latest_key": "C",
   "latest_key_year": 2025,
@@ -5754,6 +5811,74 @@
   "reason": ""
  },
  {
+  "key": "refiners fire",
+  "sources": [
+   "history",
+   "library",
+   "scripts"
+  ],
+  "count": 2,
+  "last_sung": "2025-10-12",
+  "script_uses": 6,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Rizvan": 5,
+   "Eric": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2014": 1,
+    "2016": 2,
+    "2017": 1,
+    "2025": 1
+   },
+   "Eric": {
+    "2017": 1
+   }
+  },
+  "keys_played": {
+   "D": 1
+  },
+  "latest_key": "D",
+  "latest_key_year": 2025,
+  "slots": {
+   "closing": 1,
+   "pre-sermon": 1
+  },
+  "dates": [
+   "2025-08-03",
+   "2025-10-12"
+  ],
+  "chart_key": "D",
+  "lib_pace": "slow",
+  "lib_era": "contemporary",
+  "lib_theme": "purification",
+  "has_chart": true,
+  "title": "Refiner's Fire",
+  "artist": "Brian Doerksen",
+  "first_year": 2014,
+  "last_year": 2025,
+  "year_counts": {
+   "2014": 1,
+   "2016": 2,
+   "2017": 2,
+   "2025": 2
+  },
+  "match": {
+   "uri": "spotify:track:1n1DQS7HxFHzRLRvI9Epkr",
+   "artist": "The Worship Project",
+   "album": "The Worship Project, Vol. 2",
+   "confidence": "high",
+   "name": "Refiner's Fire"
+  },
+  "release_year": 2019,
+  "popularity": 48,
+  "status": "on",
+  "reason": ""
+ },
+ {
   "key": "take life and let it be",
   "sources": [
    "edgar",
@@ -5854,7 +5979,7 @@
    },
    "Eric": {
     "2025": 1,
-    "2018": 2
+    "2018": 3
    }
   },
   "keys_played": {
@@ -5882,7 +6007,7 @@
   "first_year": 2018,
   "last_year": 2025,
   "year_counts": {
-   "2018": 3,
+   "2018": 4,
    "2025": 2
   },
   "match": {
@@ -6103,74 +6228,6 @@
   "reason": ""
  },
  {
-  "key": "refiners fire",
-  "sources": [
-   "history",
-   "library",
-   "scripts"
-  ],
-  "count": 2,
-  "last_sung": "2025-10-12",
-  "script_uses": 5,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Rizvan": 4,
-   "Eric": 1
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2014": 1,
-    "2016": 1,
-    "2017": 1,
-    "2025": 1
-   },
-   "Eric": {
-    "2017": 1
-   }
-  },
-  "keys_played": {
-   "D": 1
-  },
-  "latest_key": "D",
-  "latest_key_year": 2025,
-  "slots": {
-   "closing": 1,
-   "pre-sermon": 1
-  },
-  "dates": [
-   "2025-08-03",
-   "2025-10-12"
-  ],
-  "chart_key": "D",
-  "lib_pace": "slow",
-  "lib_era": "contemporary",
-  "lib_theme": "purification",
-  "has_chart": true,
-  "title": "Refiner's Fire",
-  "artist": "Brian Doerksen",
-  "first_year": 2014,
-  "last_year": 2025,
-  "year_counts": {
-   "2014": 1,
-   "2016": 1,
-   "2017": 2,
-   "2025": 2
-  },
-  "match": {
-   "uri": "spotify:track:1n1DQS7HxFHzRLRvI9Epkr",
-   "artist": "The Worship Project",
-   "album": "The Worship Project, Vol. 2",
-   "confidence": "high",
-   "name": "Refiner's Fire"
-  },
-  "release_year": 2019,
-  "popularity": 48,
-  "status": "on",
-  "reason": ""
- },
- {
   "key": "salvation belongs to god",
   "sources": [
    "history",
@@ -6309,6 +6366,77 @@
   "reason": "check version"
  },
  {
+  "key": "hark herald angels sing",
+  "sources": [
+   "edgar",
+   "history",
+   "library",
+   "main",
+   "scripts"
+  ],
+  "count": 2,
+  "last_sung": "2025-12-21",
+  "script_uses": 3,
+  "local": false,
+  "kids": false,
+  "era": "Christmas",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 1,
+   "Eric": 2
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2025": 1
+   },
+   "Eric": {
+    "2024": 2
+   }
+  },
+  "keys_played": {
+   "E": 1,
+   "A": 1,
+   "C": 1
+  },
+  "latest_key": "E",
+  "latest_key_year": 2025,
+  "slots": {
+   "opening": 2
+  },
+  "dates": [
+   "2024-12-22",
+   "2025-12-21"
+  ],
+  "chart_key": "C",
+  "lib_pace": "medium",
+  "lib_era": "hymn",
+  "lib_theme": "praise",
+  "has_chart": true,
+  "eric_count": 1.0,
+  "pace": "Fast",
+  "rough_category": "Praise",
+  "theme": "Praise",
+  "title": "Hark! The Herald Angels Sing",
+  "artist": "Charles Wesley",
+  "first_year": 2024,
+  "last_year": 2025,
+  "year_counts": {
+   "2024": 2,
+   "2025": 1
+  },
+  "match": {
+   "uri": "spotify:track:02mlAPyfZjqiazg5XDiYZC",
+   "artist": "Don Moen",
+   "album": "Praise & Worship Christmas",
+   "confidence": "medium",
+   "name": "Hark! The Herald Angels Sing"
+  },
+  "release_year": 1990,
+  "popularity": 34,
+  "status": "on",
+  "reason": "check version"
+ },
+ {
   "key": "i have decided to follow jesus",
   "sources": [
    "edgar",
@@ -6383,76 +6511,6 @@
   "reason": "check version"
  },
  {
-  "key": "hark herald angels sing",
-  "sources": [
-   "edgar",
-   "history",
-   "library",
-   "main",
-   "scripts"
-  ],
-  "count": 2,
-  "last_sung": "2025-12-21",
-  "script_uses": 2,
-  "local": false,
-  "kids": false,
-  "era": "Christmas",
-  "owners": {
-   "Edgar": 1,
-   "Rizvan": 1,
-   "Eric": 1
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2025": 1
-   },
-   "Eric": {
-    "2024": 1
-   }
-  },
-  "keys_played": {
-   "E": 1,
-   "C": 1
-  },
-  "latest_key": "E",
-  "latest_key_year": 2025,
-  "slots": {
-   "opening": 2
-  },
-  "dates": [
-   "2024-12-22",
-   "2025-12-21"
-  ],
-  "chart_key": "C",
-  "lib_pace": "medium",
-  "lib_era": "hymn",
-  "lib_theme": "praise",
-  "has_chart": true,
-  "eric_count": 1.0,
-  "pace": "Fast",
-  "rough_category": "Praise",
-  "theme": "Praise",
-  "title": "Hark! The Herald Angels Sing",
-  "artist": "Charles Wesley",
-  "first_year": 2024,
-  "last_year": 2025,
-  "year_counts": {
-   "2024": 1,
-   "2025": 1
-  },
-  "match": {
-   "uri": "spotify:track:02mlAPyfZjqiazg5XDiYZC",
-   "artist": "Don Moen",
-   "album": "Praise & Worship Christmas",
-   "confidence": "medium",
-   "name": "Hark! The Herald Angels Sing"
-  },
-  "release_year": 1990,
-  "popularity": 34,
-  "status": "on",
-  "reason": "check version"
- },
- {
   "key": "when i survey wondrous cross",
   "sources": [
    "edgar",
@@ -6519,6 +6577,64 @@
   "reason": "check version"
  },
  {
+  "key": "all boast jesus",
+  "sources": [
+   "history",
+   "library",
+   "scripts"
+  ],
+  "count": 2,
+  "last_sung": "2026-10-18",
+  "script_uses": 2,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Rizvan": 2
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2026": 2
+   }
+  },
+  "keys_played": {
+   "E": 1
+  },
+  "latest_key": "E",
+  "latest_key_year": 2026,
+  "slots": {
+   "opening": 1,
+   "closing": 1
+  },
+  "dates": [
+   "2026-10-11",
+   "2026-10-18"
+  ],
+  "chart_key": "G",
+  "lib_pace": "medium",
+  "lib_era": "contemporary",
+  "lib_theme": "praise",
+  "has_chart": true,
+  "title": "All My Boast Is In Jesus",
+  "artist": "Keith & Kristyn Getty, Matt Boswell, Matt Papa",
+  "first_year": 2026,
+  "last_year": 2026,
+  "year_counts": {
+   "2026": 2
+  },
+  "match": {
+   "uri": "spotify:track:6SzhlGn8UmU6PcqqyCbweK",
+   "artist": "Keith & Kristyn Getty",
+   "album": "I Set My Hope On Jesus",
+   "confidence": "high",
+   "name": "All My Boast Is In Jesus"
+  },
+  "release_year": 2023,
+  "popularity": 46,
+  "status": "on",
+  "reason": ""
+ },
+ {
   "key": "trust and obey",
   "sources": [
    "history",
@@ -6581,6 +6697,62 @@
   "reason": "check version"
  },
  {
+  "key": "churchs one foundation",
+  "sources": [
+   "history",
+   "scripts"
+  ],
+  "count": 2,
+  "last_sung": "2026-10-11",
+  "script_uses": 2,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Rizvan": 2
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2026": 2
+   }
+  },
+  "keys_played": {
+   "D": 1
+  },
+  "latest_key": "D",
+  "latest_key_year": 2026,
+  "slots": {
+   "closing": 2
+  },
+  "dates": [
+   "2026-05-03",
+   "2026-10-11"
+  ],
+  "title": "The Church's One Foundation",
+  "artist": "Indelible Grace Music",
+  "first_year": 2026,
+  "last_year": 2026,
+  "year_counts": {
+   "2026": 2
+  },
+  "ai_theme": "Praise",
+  "ai_pace": "Medium",
+  "not_a_song": false,
+  "ai_confident": true,
+  "artist_source": "ai",
+  "match": {
+   "uri": "spotify:track:1spvfbOU5hi5XvOXIPBVjN",
+   "artist": "Indelible Grace Music",
+   "album": "Indelible Grace Side B",
+   "confidence": "high",
+   "name": "The Church's One Foundation"
+  },
+  "release_year": 2008,
+  "popularity": 30,
+  "status": "on",
+  "reason": ""
+ },
+ {
   "key": "king all his beauty",
   "sources": [
    "history",
@@ -6636,6 +6808,68 @@
   "popularity": 31,
   "status": "on",
   "reason": ""
+ },
+ {
+  "key": "all hail power jesus name",
+  "sources": [
+   "edgar",
+   "history",
+   "library",
+   "main",
+   "scripts"
+  ],
+  "count": 2,
+  "last_sung": "2025-08-24",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "Hymn",
+  "owners": {
+   "Edgar": 1,
+   "Eric": 1
+  },
+  "owner_years": {
+   "Eric": {
+    "2024": 1
+   }
+  },
+  "keys_played": {},
+  "latest_key": "",
+  "latest_key_year": 0,
+  "slots": {
+   "opening": 2
+  },
+  "dates": [
+   "2024-09-08",
+   "2025-08-24"
+  ],
+  "chart_key": "E",
+  "lib_pace": "medium",
+  "lib_era": "hymn",
+  "lib_theme": "praise",
+  "has_chart": true,
+  "eric_count": 1.0,
+  "pace": "Fast",
+  "theme": "Praise",
+  "title": "All Hail the Power of Jesus' Name",
+  "artist": "Edward Perronet",
+  "first_year": 2024,
+  "last_year": 2025,
+  "year_counts": {
+   "2024": 1,
+   "2025": 1
+  },
+  "match": {
+   "uri": "spotify:track:1xjWrIOQmXNIseQBVST4Hf",
+   "artist": "Shane & Shane",
+   "album": "Hymns, Vol. 2",
+   "confidence": "medium",
+   "name": "All Hail the Power of Jesus Name"
+  },
+  "release_year": 2019,
+  "popularity": 36,
+  "status": "on",
+  "reason": "check version"
  },
  {
   "key": "praise to lord almighty",
@@ -6699,60 +6933,113 @@
   "reason": "check version"
  },
  {
-  "key": "all boast jesus",
+  "key": "this book",
   "sources": [
    "history",
-   "library",
+   "main",
    "scripts"
   ],
   "count": 2,
-  "last_sung": "2026-10-18",
+  "last_sung": "2025-05-25",
   "script_uses": 1,
   "local": false,
   "kids": false,
   "era": "",
   "owners": {
-   "Rizvan": 1
+   "Eric": 1
   },
   "owner_years": {
-   "Rizvan": {
-    "2026": 1
+   "Eric": {
+    "2024": 1
    }
   },
   "keys_played": {
-   "E": 1
+   "C": 1
   },
-  "latest_key": "E",
-  "latest_key_year": 2026,
+  "latest_key": "C",
+  "latest_key_year": 2024,
   "slots": {
-   "opening": 1,
-   "closing": 1
+   "pre-sermon": 2
   },
   "dates": [
-   "2026-10-11",
-   "2026-10-18"
+   "2024-12-08",
+   "2025-05-25"
   ],
-  "chart_key": "G",
-  "lib_pace": "medium",
-  "lib_era": "contemporary",
-  "lib_theme": "praise",
-  "has_chart": true,
-  "title": "All My Boast Is In Jesus",
-  "artist": "Keith & Kristyn Getty, Matt Boswell, Matt Papa",
-  "first_year": 2026,
-  "last_year": 2026,
+  "eric_count": 1.0,
+  "pace": "Slow",
+  "theme": "Surrender",
+  "title": "In This Book",
+  "artist": "Sebastian Kwan",
+  "first_year": 2024,
+  "last_year": 2025,
   "year_counts": {
-   "2026": 2
+   "2024": 1,
+   "2025": 1
   },
   "match": {
-   "uri": "spotify:track:6SzhlGn8UmU6PcqqyCbweK",
-   "artist": "Keith & Kristyn Getty",
-   "album": "I Set My Hope On Jesus",
-   "confidence": "high",
-   "name": "All My Boast Is In Jesus"
+   "uri": "spotify:track:0nxsQcnSE8YQoFmfiLI5Co",
+   "artist": "Eirini Louskou",
+   "album": "The Book Thief (Original 2023 UK Cast Recording)",
+   "confidence": "low",
+   "name": "In This Book"
   },
-  "release_year": 2023,
-  "popularity": 46,
+  "release_year": 2025,
+  "popularity": 7,
+  "status": "held",
+  "reason": "only a non-worship recording (Eirini Louskou)"
+ },
+ {
+  "key": "this life i live",
+  "sources": [
+   "history",
+   "main",
+   "scripts"
+  ],
+  "count": 2,
+  "last_sung": "2025-03-02",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "Reformed",
+  "owners": {
+   "Eric": 1
+  },
+  "owner_years": {
+   "Eric": {
+    "2024": 1
+   }
+  },
+  "keys_played": {},
+  "latest_key": "",
+  "latest_key_year": 0,
+  "slots": {
+   "opening": 2
+  },
+  "dates": [
+   "2024-09-01",
+   "2025-03-02"
+  ],
+  "eric_count": 1.0,
+  "pace": "Slow",
+  "rough_category": "Response",
+  "theme": "Declaration",
+  "title": "This Life I Live",
+  "artist": "Emu",
+  "first_year": 2024,
+  "last_year": 2025,
+  "year_counts": {
+   "2024": 1,
+   "2025": 1
+  },
+  "match": {
+   "uri": "spotify:track:0Z6vz6y3H2TKu5RlfIWfPz",
+   "artist": "Emu Music",
+   "album": "Undivided",
+   "confidence": "high",
+   "name": "This Life I Live"
+  },
+  "release_year": 2010,
+  "popularity": 35,
   "status": "on",
   "reason": ""
  },
@@ -6810,118 +7097,6 @@
   "popularity": 51,
   "status": "on",
   "reason": ""
- },
- {
-  "key": "churchs one foundation",
-  "sources": [
-   "history",
-   "scripts"
-  ],
-  "count": 2,
-  "last_sung": "2026-10-11",
-  "script_uses": 1,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Rizvan": 1
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2026": 1
-   }
-  },
-  "keys_played": {
-   "D": 1
-  },
-  "latest_key": "D",
-  "latest_key_year": 2026,
-  "slots": {
-   "closing": 2
-  },
-  "dates": [
-   "2026-05-03",
-   "2026-10-11"
-  ],
-  "title": "The Church's One Foundation",
-  "artist": "Indelible Grace Music",
-  "first_year": 2026,
-  "last_year": 2026,
-  "year_counts": {
-   "2026": 2
-  },
-  "ai_theme": "Praise",
-  "ai_pace": "Medium",
-  "not_a_song": false,
-  "ai_confident": true,
-  "artist_source": "ai",
-  "match": {
-   "uri": "spotify:track:1spvfbOU5hi5XvOXIPBVjN",
-   "artist": "Indelible Grace Music",
-   "album": "Indelible Grace Side B",
-   "confidence": "high",
-   "name": "The Church's One Foundation"
-  },
-  "release_year": 2008,
-  "popularity": 30,
-  "status": "on",
-  "reason": ""
- },
- {
-  "key": "all hail power jesus name",
-  "sources": [
-   "edgar",
-   "history",
-   "library",
-   "main"
-  ],
-  "count": 2,
-  "last_sung": "2025-08-24",
-  "script_uses": 0,
-  "local": false,
-  "kids": false,
-  "era": "Hymn",
-  "owners": {
-   "Edgar": 1
-  },
-  "owner_years": {},
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
-  "slots": {
-   "opening": 2
-  },
-  "dates": [
-   "2024-09-08",
-   "2025-08-24"
-  ],
-  "chart_key": "E",
-  "lib_pace": "medium",
-  "lib_era": "hymn",
-  "lib_theme": "praise",
-  "has_chart": true,
-  "eric_count": 1.0,
-  "pace": "Fast",
-  "theme": "Praise",
-  "title": "All Hail the Power of Jesus' Name",
-  "artist": "Edward Perronet",
-  "first_year": 2025,
-  "last_year": 2025,
-  "year_counts": {
-   "2024": 1,
-   "2025": 1
-  },
-  "match": {
-   "uri": "spotify:track:1xjWrIOQmXNIseQBVST4Hf",
-   "artist": "Shane & Shane",
-   "album": "Hymns, Vol. 2",
-   "confidence": "medium",
-   "name": "All Hail the Power of Jesus Name"
-  },
-  "release_year": 2019,
-  "popularity": 36,
-  "status": "on",
-  "reason": "check version"
  },
  {
   "key": "build life",
@@ -7029,101 +7204,6 @@
   },
   "release_year": 2017,
   "popularity": 3,
-  "status": "on",
-  "reason": ""
- },
- {
-  "key": "this book",
-  "sources": [
-   "history",
-   "main"
-  ],
-  "count": 2,
-  "last_sung": "2025-05-25",
-  "script_uses": 0,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {},
-  "owner_years": {},
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
-  "slots": {
-   "pre-sermon": 2
-  },
-  "dates": [
-   "2024-12-08",
-   "2025-05-25"
-  ],
-  "eric_count": 1.0,
-  "pace": "Slow",
-  "theme": "Surrender",
-  "title": "In This Book",
-  "artist": "Sebastian Kwan",
-  "first_year": 2025,
-  "last_year": 2025,
-  "year_counts": {
-   "2024": 1,
-   "2025": 1
-  },
-  "match": {
-   "uri": "spotify:track:0nxsQcnSE8YQoFmfiLI5Co",
-   "artist": "Eirini Louskou",
-   "album": "The Book Thief (Original 2023 UK Cast Recording)",
-   "confidence": "low",
-   "name": "In This Book"
-  },
-  "release_year": 2025,
-  "popularity": 7,
-  "status": "held",
-  "reason": "only a non-worship recording (Eirini Louskou)"
- },
- {
-  "key": "this life i live",
-  "sources": [
-   "history",
-   "main"
-  ],
-  "count": 2,
-  "last_sung": "2025-03-02",
-  "script_uses": 0,
-  "local": false,
-  "kids": false,
-  "era": "Reformed",
-  "owners": {},
-  "owner_years": {},
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
-  "slots": {
-   "opening": 2
-  },
-  "dates": [
-   "2024-09-01",
-   "2025-03-02"
-  ],
-  "eric_count": 1.0,
-  "pace": "Slow",
-  "rough_category": "Response",
-  "theme": "Declaration",
-  "title": "This Life I Live",
-  "artist": "Emu",
-  "first_year": 2025,
-  "last_year": 2025,
-  "year_counts": {
-   "2024": 1,
-   "2025": 1
-  },
-  "match": {
-   "uri": "spotify:track:0Z6vz6y3H2TKu5RlfIWfPz",
-   "artist": "Emu Music",
-   "album": "Undivided",
-   "confidence": "high",
-   "name": "This Life I Live"
-  },
-  "release_year": 2010,
-  "popularity": 35,
   "status": "on",
   "reason": ""
  },
@@ -7276,6 +7356,87 @@
   "reason": ""
  },
  {
+  "key": "come thou fount",
+  "sources": [
+   "edgar",
+   "history",
+   "library",
+   "main",
+   "scripts"
+  ],
+  "count": 1,
+  "last_sung": "2026-05-24",
+  "script_uses": 9,
+  "local": false,
+  "kids": false,
+  "era": "Hymn",
+  "owners": {
+   "Edgar": 3,
+   "Rizvan": 7,
+   "Eric": 2
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2016": 1,
+    "2017": 1,
+    "2018": 1,
+    "2019": 2,
+    "2025": 1,
+    "2026": 1
+   },
+   "Eric": {
+    "2024": 1,
+    "2023": 1
+   }
+  },
+  "keys_played": {
+   "D": 3,
+   "C": 2
+  },
+  "latest_key": "D",
+  "latest_key_year": 2025,
+  "slots": {
+   "pre-sermon": 1
+  },
+  "dates": [
+   "2026-05-24"
+  ],
+  "chart_key": "C",
+  "has_chart": true,
+  "lib_pace": "medium",
+  "lib_era": "hymn",
+  "lib_theme": "thanks",
+  "pace": "Slow",
+  "rough_category": "Surrender",
+  "theme": "Invitation",
+  "introduced": "Yes",
+  "title": "Come Thou Fount",
+  "artist": "Robert Robinson",
+  "first_year": 2016,
+  "last_year": 2026,
+  "year_counts": {
+   "2016": 1,
+   "2017": 1,
+   "2018": 1,
+   "2019": 2,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 1
+  },
+  "match": {
+   "uri": "spotify:track:5yZcK6LIBxD6Ia5vYuEr6v",
+   "artist": "Shane & Shane",
+   "album": "Hymns, Vol. 1",
+   "confidence": "medium",
+   "name": "Come Thou Fount (Above All Else)"
+  },
+  "release_year": 2018,
+  "popularity": 52,
+  "status": "on",
+  "reason": "check version"
+ },
+ {
   "key": "living hope",
   "sources": [
    "edgar",
@@ -7353,84 +7514,77 @@
   "reason": ""
  },
  {
-  "key": "come thou fount",
+  "key": "give thanks",
   "sources": [
-   "edgar",
    "history",
    "library",
    "main",
    "scripts"
   ],
   "count": 1,
-  "last_sung": "2026-05-24",
-  "script_uses": 8,
+  "last_sung": "2026-10-11",
+  "script_uses": 9,
   "local": false,
   "kids": false,
-  "era": "Hymn",
+  "era": "Classic",
   "owners": {
-   "Edgar": 3,
-   "Rizvan": 6,
+   "Rizvan": 7,
    "Eric": 2
   },
   "owner_years": {
    "Rizvan": {
-    "2016": 1,
-    "2017": 1,
-    "2018": 1,
-    "2019": 2,
-    "2025": 1
+    "2016": 2,
+    "2017": 3,
+    "2020": 1,
+    "2026": 1
    },
    "Eric": {
-    "2024": 1,
-    "2023": 1
+    "2018": 1,
+    "2019": 1
    }
   },
   "keys_played": {
-   "D": 3,
-   "C": 2
+   "A": 1
   },
-  "latest_key": "D",
-  "latest_key_year": 2025,
+  "latest_key": "A",
+  "latest_key_year": 2019,
   "slots": {
-   "pre-sermon": 1
+   "opening": 1
   },
   "dates": [
-   "2026-05-24"
+   "2026-10-11"
   ],
-  "chart_key": "C",
+  "chart_key": "E",
+  "lib_pace": "slow",
+  "lib_era": "contemporary",
+  "lib_theme": "thanksgiving",
   "has_chart": true,
-  "lib_pace": "medium",
-  "lib_era": "hymn",
-  "lib_theme": "thanks",
   "pace": "Slow",
-  "rough_category": "Surrender",
-  "theme": "Invitation",
+  "theme": "Praise",
   "introduced": "Yes",
-  "title": "Come Thou Fount",
-  "artist": "Robert Robinson",
+  "title": "Give Thanks",
+  "artist": "Henry Smith",
   "first_year": 2016,
   "last_year": 2026,
   "year_counts": {
-   "2016": 1,
-   "2017": 1,
+   "2016": 2,
+   "2017": 3,
    "2018": 1,
-   "2019": 2,
-   "2023": 1,
-   "2024": 1,
-   "2025": 1,
+   "2019": 1,
+   "2020": 1,
    "2026": 1
   },
   "match": {
-   "uri": "spotify:track:5yZcK6LIBxD6Ia5vYuEr6v",
-   "artist": "Shane & Shane",
-   "album": "Hymns, Vol. 1",
-   "confidence": "medium",
-   "name": "Come Thou Fount (Above All Else)"
+   "uri": "spotify:track:1DNQiq4vXQbqHKSa6kpTRt",
+   "artist": "Don Moen",
+   "name": "Give Thanks - Live",
+   "album": "Give Thanks (Live)",
+   "confidence": "high"
   },
-  "release_year": 2018,
-  "popularity": 52,
+  "release_year": 1986,
+  "popularity": 59,
   "status": "on",
-  "reason": "check version"
+  "reason": ""
  },
  {
   "key": "cornerstone",
@@ -7496,78 +7650,6 @@
   },
   "release_year": 2012,
   "popularity": 47,
-  "status": "on",
-  "reason": ""
- },
- {
-  "key": "give thanks",
-  "sources": [
-   "history",
-   "library",
-   "main",
-   "scripts"
-  ],
-  "count": 1,
-  "last_sung": "2026-10-11",
-  "script_uses": 8,
-  "local": false,
-  "kids": false,
-  "era": "Classic",
-  "owners": {
-   "Rizvan": 6,
-   "Eric": 2
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2016": 2,
-    "2017": 3,
-    "2020": 1
-   },
-   "Eric": {
-    "2018": 1,
-    "2019": 1
-   }
-  },
-  "keys_played": {
-   "A": 1
-  },
-  "latest_key": "A",
-  "latest_key_year": 2019,
-  "slots": {
-   "opening": 1
-  },
-  "dates": [
-   "2026-10-11"
-  ],
-  "chart_key": "E",
-  "lib_pace": "slow",
-  "lib_era": "contemporary",
-  "lib_theme": "thanksgiving",
-  "has_chart": true,
-  "pace": "Slow",
-  "theme": "Praise",
-  "introduced": "Yes",
-  "title": "Give Thanks",
-  "artist": "Henry Smith",
-  "first_year": 2016,
-  "last_year": 2026,
-  "year_counts": {
-   "2016": 2,
-   "2017": 3,
-   "2018": 1,
-   "2019": 1,
-   "2020": 1,
-   "2026": 1
-  },
-  "match": {
-   "uri": "spotify:track:1DNQiq4vXQbqHKSa6kpTRt",
-   "artist": "Don Moen",
-   "name": "Give Thanks - Live",
-   "album": "Give Thanks (Live)",
-   "confidence": "high"
-  },
-  "release_year": 1986,
-  "popularity": 59,
   "status": "on",
   "reason": ""
  },
@@ -7921,6 +8003,79 @@
   "reason": "check version"
  },
  {
+  "key": "o holy night",
+  "sources": [
+   "history",
+   "library",
+   "main",
+   "scripts"
+  ],
+  "count": 1,
+  "last_sung": "2024-12-22",
+  "script_uses": 6,
+  "local": false,
+  "kids": false,
+  "era": "Christmas",
+  "owners": {
+   "Rizvan": 3,
+   "Eric": 3
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2014": 1,
+    "2022": 1,
+    "2025": 1
+   },
+   "Eric": {
+    "2024": 2,
+    "2023": 1
+   }
+  },
+  "keys_played": {
+   "C": 3,
+   "A": 3
+  },
+  "latest_key": "C",
+  "latest_key_year": 2025,
+  "slots": {
+   "opening": 1
+  },
+  "dates": [
+   "2024-12-22"
+  ],
+  "chart_key": "A",
+  "has_chart": true,
+  "lib_pace": "slow",
+  "lib_era": "hymn",
+  "lib_theme": "awe",
+  "eric_count": 1.0,
+  "pace": "Slow",
+  "rough_category": "Surrender",
+  "theme": "Praise",
+  "title": "O Holy Night",
+  "artist": "Adolphe Adam",
+  "first_year": 2014,
+  "last_year": 2025,
+  "year_counts": {
+   "2014": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 2,
+   "2025": 1
+  },
+  "match": {
+   "uri": "spotify:track:62mIVLwQoI8tzNmHKUxikq",
+   "artist": "Hillsong Worship",
+   "album": "Christmas: The Peace Project",
+   "confidence": "medium",
+   "name": "O Holy Night"
+  },
+  "release_year": 2017,
+  "popularity": 31,
+  "status": "on",
+  "reason": "check version"
+ },
+ {
   "key": "all we like sheep",
   "sources": [
    "edgar",
@@ -8012,11 +8167,11 @@
   },
   "keys_played": {
    "C": 2,
-   "G": 3,
+   "G": 2,
    "D": 1
   },
   "latest_key": "G",
-  "latest_key_year": 2025,
+  "latest_key_year": 2024,
   "slots": {
    "opening": 1
   },
@@ -8116,79 +8271,6 @@
   "popularity": 46,
   "status": "on",
   "reason": ""
- },
- {
-  "key": "o holy night",
-  "sources": [
-   "history",
-   "library",
-   "main",
-   "scripts"
-  ],
-  "count": 1,
-  "last_sung": "2024-12-22",
-  "script_uses": 5,
-  "local": false,
-  "kids": false,
-  "era": "Christmas",
-  "owners": {
-   "Rizvan": 3,
-   "Eric": 2
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2014": 1,
-    "2022": 1,
-    "2025": 1
-   },
-   "Eric": {
-    "2024": 1,
-    "2023": 1
-   }
-  },
-  "keys_played": {
-   "C": 3,
-   "A": 2
-  },
-  "latest_key": "C",
-  "latest_key_year": 2025,
-  "slots": {
-   "opening": 1
-  },
-  "dates": [
-   "2024-12-22"
-  ],
-  "chart_key": "A",
-  "has_chart": true,
-  "lib_pace": "slow",
-  "lib_era": "hymn",
-  "lib_theme": "awe",
-  "eric_count": 1.0,
-  "pace": "Slow",
-  "rough_category": "Surrender",
-  "theme": "Praise",
-  "title": "O Holy Night",
-  "artist": "Adolphe Adam",
-  "first_year": 2014,
-  "last_year": 2025,
-  "year_counts": {
-   "2014": 1,
-   "2022": 1,
-   "2023": 1,
-   "2024": 1,
-   "2025": 1
-  },
-  "match": {
-   "uri": "spotify:track:62mIVLwQoI8tzNmHKUxikq",
-   "artist": "Hillsong Worship",
-   "album": "Christmas: The Peace Project",
-   "confidence": "medium",
-   "name": "O Holy Night"
-  },
-  "release_year": 2017,
-  "popularity": 31,
-  "status": "on",
-  "reason": "check version"
  },
  {
   "key": "we give thanks",
@@ -8327,6 +8409,81 @@
   },
   "release_year": 2018,
   "popularity": 55,
+  "status": "on",
+  "reason": ""
+ },
+ {
+  "key": "this i believe",
+  "sources": [
+   "edgar",
+   "history",
+   "library",
+   "main",
+   "scripts"
+  ],
+  "count": 1,
+  "last_sung": "2026-03-29",
+  "script_uses": 4,
+  "local": false,
+  "kids": false,
+  "era": "Contemporary",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 1,
+   "Eric": 3
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2015": 1
+   },
+   "Eric": {
+    "2021": 1,
+    "2024": 1,
+    "2019": 1
+   }
+  },
+  "keys_played": {
+   "C": 2,
+   "F": 1,
+   "G": 1
+  },
+  "latest_key": "G",
+  "latest_key_year": 2024,
+  "slots": {
+   "opening": 1
+  },
+  "dates": [
+   "2026-03-29"
+  ],
+  "chart_key": "G",
+  "has_chart": true,
+  "lib_pace": "medium",
+  "lib_era": "contemporary",
+  "lib_theme": "declaration",
+  "pace": "Slow",
+  "rough_category": "Declaration",
+  "theme": "Pre-sermon",
+  "introduced": "Yes",
+  "title": "This I Believe",
+  "artist": "Hillsong Worship",
+  "first_year": 2015,
+  "last_year": 2026,
+  "year_counts": {
+   "2015": 1,
+   "2019": 1,
+   "2021": 1,
+   "2024": 1,
+   "2026": 1
+  },
+  "match": {
+   "uri": "spotify:track:6BxW8Umq3QIbipmo2c7WYz",
+   "artist": "Hillsong Worship",
+   "album": "No Other Name",
+   "confidence": "high",
+   "name": "This I Believe (The Creed)"
+  },
+  "release_year": 2014,
+  "popularity": 69,
   "status": "on",
   "reason": ""
  },
@@ -8518,72 +8675,131 @@
   "reason": ""
  },
  {
-  "key": "this i believe",
+  "key": "christ be magnified",
   "sources": [
-   "edgar",
    "history",
    "library",
    "main",
    "scripts"
   ],
   "count": 1,
-  "last_sung": "2026-03-29",
+  "last_sung": "2024-09-08",
   "script_uses": 3,
   "local": false,
   "kids": false,
   "era": "Contemporary",
   "owners": {
-   "Edgar": 1,
    "Eric": 3
   },
   "owner_years": {
    "Eric": {
-    "2021": 1,
-    "2024": 1,
-    "2019": 1
+    "2023": 2,
+    "2024": 1
    }
   },
   "keys_played": {
-   "F": 1,
-   "G": 1,
-   "C": 1
+   "G": 2
   },
   "latest_key": "G",
-  "latest_key_year": 2024,
+  "latest_key_year": 2023,
   "slots": {
    "opening": 1
   },
   "dates": [
-   "2026-03-29"
+   "2024-09-08"
   ],
-  "chart_key": "G",
+  "chart_key": "D",
   "has_chart": true,
-  "lib_pace": "medium",
+  "lib_pace": "slow",
   "lib_era": "contemporary",
-  "lib_theme": "declaration",
+  "lib_theme": "praise",
+  "eric_count": 1.0,
   "pace": "Slow",
-  "rough_category": "Declaration",
-  "theme": "Pre-sermon",
+  "rough_category": "Surrender",
+  "theme": "Awe",
+  "acoustic": "Yes",
   "introduced": "Yes",
-  "title": "This I Believe (The Creed)",
-  "artist": "Hillsong Worship",
-  "first_year": 2019,
-  "last_year": 2026,
+  "title": "Christ be Magnified",
+  "artist": "Cory Asbury",
+  "first_year": 2023,
+  "last_year": 2024,
   "year_counts": {
-   "2019": 1,
-   "2021": 1,
-   "2024": 1,
-   "2026": 1
+   "2023": 2,
+   "2024": 1
   },
   "match": {
-   "uri": "spotify:track:6BxW8Umq3QIbipmo2c7WYz",
-   "artist": "Hillsong Worship",
-   "album": "No Other Name",
+   "uri": "spotify:track:5fmJIJWqt257i1C70BipY0",
+   "artist": "Cory Asbury",
+   "album": "Christ Be Magnified (Live)",
    "confidence": "high",
-   "name": "This I Believe (The Creed)"
+   "name": "Christ Be Magnified (Live)"
   },
-  "release_year": 2014,
-  "popularity": 69,
+  "release_year": 2020,
+  "popularity": 48,
+  "status": "on",
+  "reason": ""
+ },
+ {
+  "key": "grace and peace",
+  "sources": [
+   "edgar",
+   "history",
+   "library",
+   "scripts"
+  ],
+  "count": 1,
+  "last_sung": "2025-03-16",
+  "script_uses": 3,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 1,
+   "Eric": 2
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2021": 1
+   },
+   "Eric": {
+    "2025": 2
+   }
+  },
+  "keys_played": {
+   "C": 2,
+   "D": 1
+  },
+  "latest_key": "C",
+  "latest_key_year": 2025,
+  "slots": {
+   "closing": 1
+  },
+  "dates": [
+   "2025-03-16"
+  ],
+  "chart_key": "C",
+  "lib_pace": "slow",
+  "lib_era": "contemporary",
+  "lib_theme": "thanks",
+  "has_chart": true,
+  "title": "Grace and Peace",
+  "artist": "Sovereign Grace Music",
+  "first_year": 2021,
+  "last_year": 2025,
+  "year_counts": {
+   "2021": 1,
+   "2025": 2
+  },
+  "match": {
+   "uri": "spotify:track:1YNDLE66PyOAxWNG9cBcRr",
+   "artist": "Sovereign Grace Music",
+   "album": "Grace Has Come: Songs from the Book of Romans",
+   "confidence": "high",
+   "name": "Grace and Peace"
+  },
+  "release_year": 2013,
+  "popularity": 30,
   "status": "on",
   "reason": ""
  },
@@ -8656,66 +8872,66 @@
   "reason": "check version"
  },
  {
-  "key": "christ be magnified",
+  "key": "joy christmas",
   "sources": [
+   "edgar",
    "history",
    "library",
    "main",
    "scripts"
   ],
   "count": 1,
-  "last_sung": "2024-09-08",
+  "last_sung": "2024-12-22",
   "script_uses": 2,
   "local": false,
   "kids": false,
-  "era": "Contemporary",
+  "era": "Christmas",
   "owners": {
+   "Edgar": 1,
    "Eric": 2
   },
   "owner_years": {
    "Eric": {
-    "2023": 2
+    "2024": 2
    }
   },
   "keys_played": {
-   "G": 2
+   "A": 1,
+   "C": 1
   },
-  "latest_key": "G",
-  "latest_key_year": 2023,
+  "latest_key": "C",
+  "latest_key_year": 2024,
   "slots": {
-   "opening": 1
+   "closing": 1
   },
   "dates": [
-   "2024-09-08"
+   "2024-12-22"
   ],
-  "chart_key": "D",
-  "has_chart": true,
-  "lib_pace": "slow",
+  "chart_key": "C",
+  "lib_pace": "medium",
   "lib_era": "contemporary",
   "lib_theme": "praise",
+  "has_chart": true,
   "eric_count": 1.0,
-  "pace": "Slow",
-  "rough_category": "Surrender",
-  "theme": "Awe",
-  "acoustic": "Yes",
-  "introduced": "Yes",
-  "title": "Christ be Magnified",
-  "artist": "Cory Asbury",
-  "first_year": 2023,
+  "pace": "Fast",
+  "rough_category": "Praise",
+  "theme": "Thanks",
+  "title": "The Joy of Christmas",
+  "artist": "All Things New",
+  "first_year": 2024,
   "last_year": 2024,
   "year_counts": {
-   "2023": 2,
-   "2024": 1
+   "2024": 2
   },
   "match": {
-   "uri": "spotify:track:5fmJIJWqt257i1C70BipY0",
-   "artist": "Cory Asbury",
-   "album": "Christ Be Magnified (Live)",
+   "uri": "spotify:track:71jWxgHQQEdKGCGDywyXYh",
+   "artist": "All Things New",
+   "album": "The Joy of Christmas",
    "confidence": "high",
-   "name": "Christ Be Magnified (Live)"
+   "name": "The Joy of Christmas"
   },
-  "release_year": 2020,
-  "popularity": 48,
+  "release_year": 2019,
+  "popularity": 1,
   "status": "on",
   "reason": ""
  },
@@ -8907,6 +9123,60 @@
   "reason": ""
  },
  {
+  "key": "more precious than gold",
+  "sources": [
+   "history",
+   "scripts"
+  ],
+  "count": 1,
+  "last_sung": "2025-11-02",
+  "script_uses": 2,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Rizvan": 2
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2025": 2
+   }
+  },
+  "keys_played": {
+   "G": 1
+  },
+  "latest_key": "G",
+  "latest_key_year": 2025,
+  "slots": {
+   "opening": 1
+  },
+  "dates": [
+   "2025-11-02"
+  ],
+  "title": "More Precious Than Gold (Psalm 19)",
+  "artist": "",
+  "first_year": 2025,
+  "last_year": 2025,
+  "year_counts": {
+   "2025": 2
+  },
+  "ai_theme": "Praise",
+  "ai_pace": "Medium",
+  "not_a_song": false,
+  "ai_confident": false,
+  "match": {
+   "uri": "spotify:track:7D0TOJ68hn2JzDpGT8cxrI",
+   "artist": "The Worship Initiative",
+   "album": "Psalms from the Well",
+   "confidence": "medium",
+   "name": "More Precious Than Gold (Psalm 19)"
+  },
+  "release_year": 2023,
+  "popularity": 30,
+  "status": "on",
+  "reason": "check version"
+ },
+ {
   "key": "where o grave your victory",
   "sources": [
    "history",
@@ -8963,7 +9233,7 @@
   "reason": "check version"
  },
  {
-  "key": "joy christmas",
+  "key": "turn your eyes",
   "sources": [
    "edgar",
    "history",
@@ -8972,11 +9242,11 @@
    "scripts"
   ],
   "count": 1,
-  "last_sung": "2024-12-22",
+  "last_sung": "2024-09-08",
   "script_uses": 1,
   "local": false,
   "kids": false,
-  "era": "Christmas",
+  "era": "",
   "owners": {
    "Edgar": 1,
    "Eric": 1
@@ -8986,42 +9256,38 @@
     "2024": 1
    }
   },
-  "keys_played": {
-   "C": 1
-  },
-  "latest_key": "C",
-  "latest_key_year": 2024,
+  "keys_played": {},
+  "latest_key": "",
+  "latest_key_year": 0,
   "slots": {
    "closing": 1
   },
   "dates": [
-   "2024-12-22"
+   "2024-09-08"
   ],
   "chart_key": "C",
-  "lib_pace": "medium",
+  "lib_pace": "slow",
   "lib_era": "contemporary",
-  "lib_theme": "praise",
+  "lib_theme": "edify",
   "has_chart": true,
-  "eric_count": 1.0,
-  "pace": "Fast",
-  "rough_category": "Praise",
-  "theme": "Thanks",
-  "title": "The Joy of Christmas",
-  "artist": "All Things New",
+  "pace": "Slow",
+  "theme": "Assurance",
+  "title": "Turn Your Eyes",
+  "artist": "Sovereign Grace Music",
   "first_year": 2024,
   "last_year": 2024,
   "year_counts": {
    "2024": 1
   },
   "match": {
-   "uri": "spotify:track:71jWxgHQQEdKGCGDywyXYh",
-   "artist": "All Things New",
-   "album": "The Joy of Christmas",
+   "uri": "spotify:track:7eU6n6IhomJuFWS975gmcn",
+   "artist": "Sovereign Grace Music",
+   "album": "The Glorious Christ (Live)",
    "confidence": "high",
-   "name": "The Joy of Christmas"
+   "name": "Turn Your Eyes - Live"
   },
   "release_year": 2019,
-  "popularity": 1,
+  "popularity": 53,
   "status": "on",
   "reason": ""
  },
@@ -9084,64 +9350,6 @@
   "popularity": 40,
   "status": "on",
   "reason": "check version"
- },
- {
-  "key": "grace and peace",
-  "sources": [
-   "edgar",
-   "history",
-   "library",
-   "scripts"
-  ],
-  "count": 1,
-  "last_sung": "2025-03-16",
-  "script_uses": 1,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Edgar": 1,
-   "Eric": 1
-  },
-  "owner_years": {
-   "Eric": {
-    "2025": 1
-   }
-  },
-  "keys_played": {
-   "C": 1
-  },
-  "latest_key": "C",
-  "latest_key_year": 2025,
-  "slots": {
-   "closing": 1
-  },
-  "dates": [
-   "2025-03-16"
-  ],
-  "chart_key": "C",
-  "lib_pace": "slow",
-  "lib_era": "contemporary",
-  "lib_theme": "thanks",
-  "has_chart": true,
-  "title": "Grace and Peace",
-  "artist": "Sovereign Grace Music",
-  "first_year": 2025,
-  "last_year": 2025,
-  "year_counts": {
-   "2025": 1
-  },
-  "match": {
-   "uri": "spotify:track:1YNDLE66PyOAxWNG9cBcRr",
-   "artist": "Sovereign Grace Music",
-   "album": "Grace Has Come: Songs from the Book of Romans",
-   "confidence": "high",
-   "name": "Grace and Peace"
-  },
-  "release_year": 2013,
-  "popularity": 30,
-  "status": "on",
-  "reason": ""
  },
  {
   "key": "immortal invisible god only wise",
@@ -9253,6 +9461,165 @@
   "reason": ""
  },
  {
+  "key": "goodness jesus",
+  "sources": [
+   "history",
+   "main",
+   "scripts"
+  ],
+  "count": 1,
+  "last_sung": "2025-04-18",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "Contemporary",
+  "owners": {
+   "Eric": 1
+  },
+  "owner_years": {
+   "Eric": {
+    "2025": 1
+   }
+  },
+  "keys_played": {},
+  "latest_key": "",
+  "latest_key_year": 0,
+  "slots": {
+   "opening": 1
+  },
+  "dates": [
+   "2025-04-18"
+  ],
+  "eric_count": 0.0,
+  "pace": "Slow",
+  "rough_category": "Thanksgiving",
+  "theme": "Awe",
+  "acoustic": "Yes",
+  "introduced": "No",
+  "title": "The Goodness of Jesus",
+  "artist": "Bethel",
+  "first_year": 2025,
+  "last_year": 2025,
+  "year_counts": {
+   "2025": 1
+  },
+  "match": {
+   "uri": "spotify:track:5O5iXXJXoEH0e5DJxM5szH",
+   "artist": "CityAlight",
+   "album": "Yet Not I",
+   "confidence": "medium",
+   "name": "The Goodness Of Jesus"
+  },
+  "release_year": 2018,
+  "popularity": 60,
+  "status": "on",
+  "reason": "check version"
+ },
+ {
+  "key": "what love god",
+  "sources": [
+   "history",
+   "library",
+   "scripts"
+  ],
+  "count": 1,
+  "last_sung": "2025-07-13",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Eric": 1
+  },
+  "owner_years": {
+   "Eric": {
+    "2025": 1
+   }
+  },
+  "keys_played": {
+   "B": 1
+  },
+  "latest_key": "B",
+  "latest_key_year": 2025,
+  "slots": {
+   "closing": 1
+  },
+  "dates": [
+   "2025-07-13"
+  ],
+  "chart_key": "C",
+  "lib_pace": "slow",
+  "lib_era": "contemporary",
+  "lib_theme": "cross",
+  "has_chart": true,
+  "title": "What Love My God",
+  "artist": "Jonny Robinson, Rich Thompson, Michael Farren",
+  "first_year": 2025,
+  "last_year": 2025,
+  "year_counts": {
+   "2025": 1
+  },
+  "match": {
+   "uri": "spotify:track:4vMugidMxJnVQ9SCkpNDFz",
+   "artist": "CityAlight",
+   "album": "Only a Holy God",
+   "confidence": "medium",
+   "name": "What Love, My God"
+  },
+  "release_year": 2016,
+  "popularity": 46,
+  "status": "on",
+  "reason": "check version"
+ },
+ {
+  "key": "create me clean heart",
+  "sources": [
+   "history",
+   "scripts"
+  ],
+  "count": 1,
+  "last_sung": "2026-09-13",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Rizvan": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2026": 1
+   }
+  },
+  "keys_played": {},
+  "latest_key": "",
+  "latest_key_year": 0,
+  "slots": {
+   "closing": 1
+  },
+  "dates": [
+   "2026-09-13"
+  ],
+  "title": "Create in me a clean heart",
+  "artist": "",
+  "first_year": 2026,
+  "last_year": 2026,
+  "year_counts": {
+   "2026": 1
+  },
+  "match": {
+   "uri": "spotify:track:7tJ2RaT2VhrvIgu5NfPtqu",
+   "artist": "Maranatha! Acoustic",
+   "album": "Acoustic Worship: I Love Your Grace",
+   "confidence": "medium",
+   "name": "Create In Me A Clean Heart"
+  },
+  "release_year": 1999,
+  "popularity": 38,
+  "status": "on",
+  "reason": "check version"
+ },
+ {
   "key": "god omniscient god all knowing",
   "sources": [
    "history",
@@ -9358,60 +9725,6 @@
   },
   "release_year": 2024,
   "popularity": 32,
-  "status": "on",
-  "reason": "check version"
- },
- {
-  "key": "more precious than gold",
-  "sources": [
-   "history",
-   "scripts"
-  ],
-  "count": 1,
-  "last_sung": "2025-11-02",
-  "script_uses": 1,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Rizvan": 1
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2025": 1
-   }
-  },
-  "keys_played": {
-   "G": 1
-  },
-  "latest_key": "G",
-  "latest_key_year": 2025,
-  "slots": {
-   "opening": 1
-  },
-  "dates": [
-   "2025-11-02"
-  ],
-  "title": "More Precious Than Gold (Psalm 19)",
-  "artist": "",
-  "first_year": 2025,
-  "last_year": 2025,
-  "year_counts": {
-   "2025": 1
-  },
-  "ai_theme": "Praise",
-  "ai_pace": "Medium",
-  "not_a_song": false,
-  "ai_confident": false,
-  "match": {
-   "uri": "spotify:track:7D0TOJ68hn2JzDpGT8cxrI",
-   "artist": "The Worship Initiative",
-   "album": "Psalms from the Well",
-   "confidence": "medium",
-   "name": "More Precious Than Gold (Psalm 19)"
-  },
-  "release_year": 2023,
-  "popularity": 30,
   "status": "on",
   "reason": "check version"
  },
@@ -9577,59 +9890,6 @@
   },
   "release_year": 2021,
   "popularity": 13,
-  "status": "on",
-  "reason": ""
- },
- {
-  "key": "turn your eyes",
-  "sources": [
-   "edgar",
-   "history",
-   "library",
-   "main"
-  ],
-  "count": 1,
-  "last_sung": "2024-09-08",
-  "script_uses": 0,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Edgar": 1
-  },
-  "owner_years": {},
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
-  "slots": {
-   "closing": 1
-  },
-  "dates": [
-   "2024-09-08"
-  ],
-  "chart_key": "C",
-  "lib_pace": "slow",
-  "lib_era": "contemporary",
-  "lib_theme": "edify",
-  "has_chart": true,
-  "pace": "Slow",
-  "theme": "Assurance",
-  "title": "Turn Your Eyes",
-  "artist": "Sovereign Grace Music",
-  "first_year": 2024,
-  "last_year": 2024,
-  "year_counts": {
-   "2024": 1
-  },
-  "match": {
-   "uri": "spotify:track:7eU6n6IhomJuFWS975gmcn",
-   "artist": "Sovereign Grace Music",
-   "album": "The Glorious Christ (Live)",
-   "confidence": "high",
-   "name": "Turn Your Eyes - Live"
-  },
-  "release_year": 2019,
-  "popularity": 53,
   "status": "on",
   "reason": ""
  },
@@ -10024,101 +10284,6 @@
   "reason": "check version"
  },
  {
-  "key": "goodness jesus",
-  "sources": [
-   "history",
-   "main"
-  ],
-  "count": 1,
-  "last_sung": "2025-04-18",
-  "script_uses": 0,
-  "local": false,
-  "kids": false,
-  "era": "Contemporary",
-  "owners": {},
-  "owner_years": {},
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
-  "slots": {
-   "opening": 1
-  },
-  "dates": [
-   "2025-04-18"
-  ],
-  "eric_count": 0.0,
-  "pace": "Slow",
-  "rough_category": "Thanksgiving",
-  "theme": "Awe",
-  "acoustic": "Yes",
-  "introduced": "No",
-  "title": "The Goodness of Jesus",
-  "artist": "Bethel",
-  "first_year": 2025,
-  "last_year": 2025,
-  "year_counts": {
-   "2025": 1
-  },
-  "match": {
-   "uri": "spotify:track:5O5iXXJXoEH0e5DJxM5szH",
-   "artist": "CityAlight",
-   "album": "Yet Not I",
-   "confidence": "medium",
-   "name": "The Goodness Of Jesus"
-  },
-  "release_year": 2018,
-  "popularity": 60,
-  "status": "on",
-  "reason": "check version"
- },
- {
-  "key": "what love god",
-  "sources": [
-   "history",
-   "library"
-  ],
-  "count": 1,
-  "last_sung": "2025-07-13",
-  "script_uses": 0,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {},
-  "owner_years": {},
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
-  "slots": {
-   "closing": 1
-  },
-  "dates": [
-   "2025-07-13"
-  ],
-  "chart_key": "C",
-  "lib_pace": "slow",
-  "lib_era": "contemporary",
-  "lib_theme": "cross",
-  "has_chart": true,
-  "title": "What Love My God",
-  "artist": "Jonny Robinson, Rich Thompson, Michael Farren",
-  "first_year": 2025,
-  "last_year": 2025,
-  "year_counts": {
-   "2025": 1
-  },
-  "match": {
-   "uri": "spotify:track:4vMugidMxJnVQ9SCkpNDFz",
-   "artist": "CityAlight",
-   "album": "Only a Holy God",
-   "confidence": "medium",
-   "name": "What Love, My God"
-  },
-  "release_year": 2016,
-  "popularity": 46,
-  "status": "on",
-  "reason": "check version"
- },
- {
   "key": "come thou fount nothing but blood",
   "sources": [
    "history"
@@ -10206,47 +10371,6 @@
   },
   "release_year": 2014,
   "popularity": 32,
-  "status": "on",
-  "reason": "check version"
- },
- {
-  "key": "create me clean heart",
-  "sources": [
-   "history"
-  ],
-  "count": 1,
-  "last_sung": "2026-09-13",
-  "script_uses": 0,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {},
-  "owner_years": {},
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
-  "slots": {
-   "closing": 1
-  },
-  "dates": [
-   "2026-09-13"
-  ],
-  "title": "Create in me a clean heart",
-  "artist": "",
-  "first_year": 2026,
-  "last_year": 2026,
-  "year_counts": {
-   "2026": 1
-  },
-  "match": {
-   "uri": "spotify:track:7tJ2RaT2VhrvIgu5NfPtqu",
-   "artist": "Maranatha! Acoustic",
-   "album": "Acoustic Worship: I Love Your Grace",
-   "confidence": "medium",
-   "name": "Create In Me A Clean Heart"
-  },
-  "release_year": 1999,
-  "popularity": 38,
   "status": "on",
   "reason": "check version"
  },
@@ -10679,6 +10803,9 @@
     "2020": 2,
     "2021": 3,
     "2022": 2
+   },
+   "Eric": {
+    "2018": 1
    }
   },
   "keys_played": {
@@ -10702,7 +10829,7 @@
    "2014": 2,
    "2016": 4,
    "2017": 2,
-   "2018": 1,
+   "2018": 2,
    "2019": 1,
    "2020": 2,
    "2021": 3,
@@ -10719,82 +10846,6 @@
   "popularity": 67,
   "status": "on",
   "reason": ""
- },
- {
-  "key": "forever",
-  "sources": [
-   "edgar",
-   "scripts"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 17,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Edgar": 3,
-   "Rizvan": 14,
-   "Eric": 3
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2014": 1,
-    "2016": 2,
-    "2017": 2,
-    "2018": 2,
-    "2019": 1,
-    "2020": 2,
-    "2022": 2,
-    "2023": 1,
-    "2024": 1
-   },
-   "Eric": {
-    "2021": 1,
-    "2018": 1,
-    "2019": 1
-   }
-  },
-  "keys_played": {
-   "A": 9,
-   "Ab": 2,
-   "G": 3
-  },
-  "latest_key": "A",
-  "latest_key_year": 2024,
-  "slots": {},
-  "dates": [],
-  "title": "Forever",
-  "artist": "",
-  "first_year": 2014,
-  "last_year": 2024,
-  "year_counts": {
-   "2014": 1,
-   "2016": 2,
-   "2017": 2,
-   "2018": 3,
-   "2019": 2,
-   "2020": 2,
-   "2021": 1,
-   "2022": 2,
-   "2023": 1,
-   "2024": 1
-  },
-  "ai_theme": "Thanks",
-  "ai_pace": "Medium",
-  "not_a_song": false,
-  "ai_confident": true,
-  "match": {
-   "uri": "spotify:track:6ChFsa3xElTTIJAo460out",
-   "artist": "Chris Tomlin",
-   "album": "How Great Is Our God: The Essential Collection",
-   "confidence": "medium",
-   "name": "Forever"
-  },
-  "release_year": 2011,
-  "popularity": 53,
-  "status": "on",
-  "reason": "check version"
  },
  {
   "key": "hosanna",
@@ -10865,6 +10916,72 @@
   },
   "release_year": 2007,
   "popularity": 71,
+  "status": "on",
+  "reason": ""
+ },
+ {
+  "key": "jesus we love you",
+  "sources": [
+   "edgar",
+   "main",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 13,
+  "local": false,
+  "kids": false,
+  "era": "Contemporary",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 8,
+   "Eric": 5
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2017": 5,
+    "2018": 2,
+    "2023": 1
+   },
+   "Eric": {
+    "2021": 1,
+    "2018": 1,
+    "2022": 2,
+    "2017": 1
+   }
+  },
+  "keys_played": {
+   "C": 5
+  },
+  "latest_key": "C",
+  "latest_key_year": 2018,
+  "slots": {},
+  "dates": [],
+  "pace": "Slow",
+  "rough_category": "Adoration",
+  "theme": "Confess",
+  "introduced": "Yes",
+  "title": "Jesus We Love You",
+  "artist": "Bethel Music",
+  "first_year": 2017,
+  "last_year": 2023,
+  "year_counts": {
+   "2017": 6,
+   "2018": 3,
+   "2021": 1,
+   "2022": 2,
+   "2023": 1
+  },
+  "artist_source": "ai",
+  "match": {
+   "uri": "spotify:track:1OMwaR5rsyfT2wB48Dm5aK",
+   "artist": "Bethel Music",
+   "album": "We Will Not Be Shaken",
+   "confidence": "high",
+   "name": "Jesus We Love You"
+  },
+  "release_year": 2015,
+  "popularity": 62,
   "status": "on",
   "reason": ""
  },
@@ -10946,7 +11063,7 @@
   "reason": ""
  },
  {
-  "key": "jesus we love you",
+  "key": "nothing but blood",
   "sources": [
    "edgar",
    "main",
@@ -10957,57 +11074,57 @@
   "script_uses": 12,
   "local": false,
   "kids": false,
-  "era": "Contemporary",
+  "era": "Hymn",
   "owners": {
    "Edgar": 1,
-   "Rizvan": 7,
-   "Eric": 5
+   "Rizvan": 12
   },
   "owner_years": {
    "Rizvan": {
-    "2017": 5,
+    "2016": 4,
+    "2017": 1,
     "2018": 1,
-    "2023": 1
-   },
-   "Eric": {
-    "2021": 1,
-    "2018": 1,
-    "2022": 2,
-    "2017": 1
+    "2019": 1,
+    "2020": 1,
+    "2024": 3,
+    "2026": 1
    }
   },
   "keys_played": {
-   "C": 4
+   "G": 2,
+   "C#": 1
   },
-  "latest_key": "C",
-  "latest_key_year": 2017,
+  "latest_key": "C#",
+  "latest_key_year": 2024,
   "slots": {},
   "dates": [],
   "pace": "Slow",
-  "rough_category": "Adoration",
-  "theme": "Confess",
+  "rough_category": "Cross",
+  "theme": "Praise",
   "introduced": "Yes",
-  "title": "Jesus We Love You",
-  "artist": "Bethel Music",
-  "first_year": 2017,
-  "last_year": 2023,
+  "title": "Nothing But The Blood",
+  "artist": "Matt Redman",
+  "first_year": 2016,
+  "last_year": 2026,
   "year_counts": {
-   "2017": 6,
-   "2018": 2,
-   "2021": 1,
-   "2022": 2,
-   "2023": 1
+   "2016": 4,
+   "2017": 1,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2024": 3,
+   "2026": 1
   },
   "artist_source": "ai",
   "match": {
-   "uri": "spotify:track:1OMwaR5rsyfT2wB48Dm5aK",
-   "artist": "Bethel Music",
-   "album": "We Will Not Be Shaken",
+   "uri": "spotify:track:5gLyaT5XM7vUoHkQBebWeI",
+   "artist": "Matt Redman",
+   "album": "The Father's Song & Where Angels Fear To Tread",
    "confidence": "high",
-   "name": "Jesus We Love You"
+   "name": "Nothing But the Blood"
   },
-  "release_year": 2015,
-  "popularity": 62,
+  "release_year": 2006,
+  "popularity": 9,
   "status": "on",
   "reason": ""
  },
@@ -11019,20 +11136,20 @@
   ],
   "count": 0,
   "last_sung": "",
-  "script_uses": 11,
+  "script_uses": 12,
   "local": false,
   "kids": false,
   "era": "",
   "owners": {
    "Edgar": 1,
-   "Rizvan": 10,
+   "Rizvan": 11,
    "Eric": 1
   },
   "owner_years": {
    "Rizvan": {
     "2016": 4,
     "2017": 3,
-    "2018": 1,
+    "2018": 2,
     "2022": 1,
     "2024": 1
    },
@@ -11055,7 +11172,7 @@
   "year_counts": {
    "2016": 4,
    "2017": 3,
-   "2018": 2,
+   "2018": 3,
    "2022": 1,
    "2024": 1
   },
@@ -11074,6 +11191,131 @@
   "popularity": 33,
   "status": "on",
   "reason": "check version"
+ },
+ {
+  "key": "broken spirit",
+  "sources": [
+   "edgar",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 11,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 11
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2014": 1,
+    "2015": 1,
+    "2016": 2,
+    "2017": 3,
+    "2019": 1,
+    "2020": 2,
+    "2026": 1
+   }
+  },
+  "keys_played": {},
+  "latest_key": "",
+  "latest_key_year": 0,
+  "slots": {},
+  "dates": [],
+  "title": "A Broken Spirit",
+  "artist": "",
+  "first_year": 2014,
+  "last_year": 2026,
+  "year_counts": {
+   "2014": 1,
+   "2015": 1,
+   "2016": 2,
+   "2017": 3,
+   "2019": 1,
+   "2020": 2,
+   "2026": 1
+  },
+  "ai_theme": "Confess",
+  "ai_pace": "Slow",
+  "not_a_song": false,
+  "ai_confident": false,
+  "match": {
+   "uri": "spotify:track:1iLgUucNa3oWt3RfA9hT8d",
+   "artist": "OAKFOLK",
+   "album": "Christian Indie Psalms, Vol. 1",
+   "confidence": "medium",
+   "name": "A Broken Spirit"
+  },
+  "release_year": 2026,
+  "popularity": 16,
+  "status": "on",
+  "reason": "check version"
+ },
+ {
+  "key": "forever chris tomlin",
+  "sources": [
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 11,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Rizvan": 9,
+   "Eric": 2
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2016": 1,
+    "2017": 2,
+    "2018": 2,
+    "2020": 1,
+    "2022": 1,
+    "2023": 1,
+    "2024": 1
+   },
+   "Eric": {
+    "2021": 1,
+    "2018": 1
+   }
+  },
+  "keys_played": {
+   "A": 9,
+   "G": 2
+  },
+  "latest_key": "A",
+  "latest_key_year": 2024,
+  "slots": {},
+  "dates": [],
+  "title": "Forever (Chris Tomlin)",
+  "artist": "Chris Tomlin",
+  "first_year": 2016,
+  "last_year": 2024,
+  "year_counts": {
+   "2016": 1,
+   "2017": 2,
+   "2018": 3,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1
+  },
+  "match": {
+   "uri": "spotify:track:6ChFsa3xElTTIJAo460out",
+   "artist": "Chris Tomlin",
+   "album": "How Great Is Our God: The Essential Collection",
+   "confidence": "high",
+   "name": "Forever"
+  },
+  "release_year": 2011,
+  "popularity": 53,
+  "status": "on",
+  "reason": ""
  },
  {
   "key": "scandal grace",
@@ -11218,68 +11460,6 @@
   "reason": ""
  },
  {
-  "key": "nothing but blood",
-  "sources": [
-   "edgar",
-   "main",
-   "scripts"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 10,
-  "local": false,
-  "kids": false,
-  "era": "Hymn",
-  "owners": {
-   "Edgar": 1,
-   "Rizvan": 10
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2016": 4,
-    "2017": 1,
-    "2019": 1,
-    "2020": 1,
-    "2024": 3
-   }
-  },
-  "keys_played": {
-   "G": 2,
-   "C#": 1
-  },
-  "latest_key": "C#",
-  "latest_key_year": 2024,
-  "slots": {},
-  "dates": [],
-  "pace": "Slow",
-  "rough_category": "Cross",
-  "theme": "Praise",
-  "introduced": "Yes",
-  "title": "Nothing But The Blood",
-  "artist": "Matt Redman",
-  "first_year": 2016,
-  "last_year": 2024,
-  "year_counts": {
-   "2016": 4,
-   "2017": 1,
-   "2019": 1,
-   "2020": 1,
-   "2024": 3
-  },
-  "artist_source": "ai",
-  "match": {
-   "uri": "spotify:track:5gLyaT5XM7vUoHkQBebWeI",
-   "artist": "Matt Redman",
-   "album": "The Father's Song & Where Angels Fear To Tread",
-   "confidence": "high",
-   "name": "Nothing But the Blood"
-  },
-  "release_year": 2006,
-  "popularity": 9,
-  "status": "on",
-  "reason": ""
- },
- {
   "key": "open eyes heart",
   "sources": [
    "edgar",
@@ -11349,63 +11529,74 @@
   "reason": "check version"
  },
  {
-  "key": "broken spirit",
+  "key": "great are you lord",
   "sources": [
    "edgar",
+   "library",
+   "main",
    "scripts"
   ],
   "count": 0,
   "last_sung": "",
-  "script_uses": 10,
+  "script_uses": 9,
   "local": false,
   "kids": false,
-  "era": "",
+  "era": "Contemporary",
   "owners": {
-   "Edgar": 1,
-   "Rizvan": 10
+   "Edgar": 2,
+   "Rizvan": 7,
+   "Eric": 2
   },
   "owner_years": {
    "Rizvan": {
-    "2014": 1,
-    "2015": 1,
-    "2016": 2,
-    "2017": 3,
+    "2017": 4,
+    "2018": 2,
+    "2019": 1
+   },
+   "Eric": {
     "2019": 1,
-    "2020": 2
+    "2021": 1
    }
   },
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
+  "keys_played": {
+   "C": 4,
+   "A": 1,
+   "G": 1,
+   "D": 1
+  },
+  "latest_key": "D",
+  "latest_key_year": 2021,
   "slots": {},
   "dates": [],
-  "title": "A Broken Spirit",
-  "artist": "",
-  "first_year": 2014,
-  "last_year": 2020,
+  "chart_key": "D",
+  "lib_pace": "slow",
+  "lib_era": "contemporary",
+  "lib_theme": "worship",
+  "has_chart": true,
+  "pace": "Slow",
+  "theme": "Declaration",
+  "introduced": "Yes",
+  "title": "Great Are You Lord",
+  "artist": "All Sons & Daughters",
+  "first_year": 2017,
+  "last_year": 2021,
   "year_counts": {
-   "2014": 1,
-   "2015": 1,
-   "2016": 2,
-   "2017": 3,
-   "2019": 1,
-   "2020": 2
+   "2017": 4,
+   "2018": 2,
+   "2019": 2,
+   "2021": 1
   },
-  "ai_theme": "Confess",
-  "ai_pace": "Slow",
-  "not_a_song": false,
-  "ai_confident": false,
   "match": {
-   "uri": "spotify:track:1iLgUucNa3oWt3RfA9hT8d",
-   "artist": "OAKFOLK",
-   "album": "Christian Indie Psalms, Vol. 1",
-   "confidence": "medium",
-   "name": "A Broken Spirit"
+   "uri": "spotify:track:2Qcp7r8jFyWOxPZOY561FA",
+   "artist": "All Sons & Daughters",
+   "album": "All Sons & Daughters",
+   "confidence": "high",
+   "name": "Great Are You Lord"
   },
-  "release_year": 2026,
-  "popularity": 16,
+  "release_year": 2014,
+  "popularity": 49,
   "status": "on",
-  "reason": "check version"
+  "reason": ""
  },
  {
   "key": "lion and lamb",
@@ -11615,6 +11806,143 @@
   "popularity": 48,
   "status": "on",
   "reason": "check version"
+ },
+ {
+  "key": "this god",
+  "sources": [
+   "edgar",
+   "library",
+   "main",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 8,
+  "local": false,
+  "kids": false,
+  "era": "Contemporary",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 6,
+   "Eric": 2
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2015": 1,
+    "2016": 2,
+    "2017": 3
+   },
+   "Eric": {
+    "2020": 1,
+    "2017": 1
+   }
+  },
+  "keys_played": {
+   "E": 5
+  },
+  "latest_key": "E",
+  "latest_key_year": 2020,
+  "slots": {},
+  "dates": [],
+  "chart_key": "E",
+  "lib_pace": "moderate",
+  "lib_era": "contemporary",
+  "lib_theme": "praise",
+  "has_chart": true,
+  "pace": "Slow",
+  "theme": "Declaration",
+  "introduced": "Yes",
+  "title": "This Is Our God",
+  "artist": "Phil Wickham",
+  "first_year": 2015,
+  "last_year": 2020,
+  "year_counts": {
+   "2015": 1,
+   "2016": 2,
+   "2017": 4,
+   "2020": 1
+  },
+  "match": {
+   "uri": "spotify:track:546XGtVu1EXXr4ofJIbUnE",
+   "artist": "Phil Wickham",
+   "album": "I Believe",
+   "confidence": "high",
+   "name": "This Is Our God"
+  },
+  "release_year": 2023,
+  "popularity": 57,
+  "status": "on",
+  "reason": ""
+ },
+ {
+  "key": "even so come",
+  "sources": [
+   "library",
+   "main",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 8,
+  "local": false,
+  "kids": false,
+  "era": "Contemporary",
+  "owners": {
+   "Rizvan": 7,
+   "Eric": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2017": 1,
+    "2022": 1,
+    "2023": 3,
+    "2025": 2
+   },
+   "Eric": {
+    "2023": 1
+   }
+  },
+  "keys_played": {
+   "A": 2,
+   "F": 1,
+   "D": 4
+  },
+  "latest_key": "D",
+  "latest_key_year": 2025,
+  "slots": {},
+  "dates": [],
+  "chart_key": "G",
+  "lib_pace": "moderate",
+  "lib_era": "contemporary",
+  "lib_theme": "return",
+  "has_chart": true,
+  "eric_count": 3.0,
+  "pace": "Slow",
+  "rough_category": "Surrender",
+  "theme": "Lament",
+  "acoustic": "No",
+  "introduced": "Yes",
+  "title": "Even So Come",
+  "artist": "Chris Tomlin",
+  "first_year": 2017,
+  "last_year": 2025,
+  "year_counts": {
+   "2017": 1,
+   "2022": 1,
+   "2023": 4,
+   "2025": 2
+  },
+  "match": {
+   "uri": "spotify:track:3cDXT6zmB9p2BHoERfE8DP",
+   "artist": "The Maker & The Instrument",
+   "album": "Chris Tomlin Collection",
+   "confidence": "high",
+   "name": "Even So Come"
+  },
+  "release_year": 2020,
+  "popularity": 15,
+  "status": "on",
+  "reason": ""
  },
  {
   "key": "mercy",
@@ -12047,76 +12375,6 @@
   "reason": "AI check: not a song title"
  },
  {
-  "key": "great are you lord",
-  "sources": [
-   "edgar",
-   "library",
-   "main",
-   "scripts"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 7,
-  "local": false,
-  "kids": false,
-  "era": "Contemporary",
-  "owners": {
-   "Edgar": 2,
-   "Rizvan": 5,
-   "Eric": 2
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2017": 3,
-    "2018": 1,
-    "2019": 1
-   },
-   "Eric": {
-    "2019": 1,
-    "2021": 1
-   }
-  },
-  "keys_played": {
-   "C": 2,
-   "A": 1,
-   "G": 1,
-   "D": 1
-  },
-  "latest_key": "D",
-  "latest_key_year": 2021,
-  "slots": {},
-  "dates": [],
-  "chart_key": "D",
-  "lib_pace": "slow",
-  "lib_era": "contemporary",
-  "lib_theme": "worship",
-  "has_chart": true,
-  "pace": "Slow",
-  "theme": "Declaration",
-  "introduced": "Yes",
-  "title": "Great Are You Lord",
-  "artist": "All Sons & Daughters",
-  "first_year": 2017,
-  "last_year": 2021,
-  "year_counts": {
-   "2017": 3,
-   "2018": 1,
-   "2019": 2,
-   "2021": 1
-  },
-  "match": {
-   "uri": "spotify:track:2Qcp7r8jFyWOxPZOY561FA",
-   "artist": "All Sons & Daughters",
-   "album": "All Sons & Daughters",
-   "confidence": "high",
-   "name": "Great Are You Lord"
-  },
-  "release_year": 2014,
-  "popularity": 49,
-  "status": "on",
-  "reason": ""
- },
- {
   "key": "alabaster jar",
   "sources": [
    "edgar",
@@ -12179,6 +12437,69 @@
   "popularity": 24,
   "status": "on",
   "reason": "check version"
+ },
+ {
+  "key": "sinking deep",
+  "sources": [
+   "edgar",
+   "library",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 7,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 6,
+   "Eric": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2016": 1,
+    "2017": 2,
+    "2018": 2,
+    "2019": 1
+   },
+   "Eric": {
+    "2018": 1
+   }
+  },
+  "keys_played": {
+   "G": 1
+  },
+  "latest_key": "G",
+  "latest_key_year": 2017,
+  "slots": {},
+  "dates": [],
+  "chart_key": "G",
+  "lib_pace": "medium",
+  "lib_era": "contemporary",
+  "lib_theme": "worship",
+  "has_chart": true,
+  "title": "Sinking Deep",
+  "artist": "Hillsong Young & Free",
+  "first_year": 2016,
+  "last_year": 2019,
+  "year_counts": {
+   "2016": 1,
+   "2017": 2,
+   "2018": 3,
+   "2019": 1
+  },
+  "match": {
+   "uri": "spotify:track:1fDCDJg4bAxYgMaT5DN6xy",
+   "artist": "Hillsong Young & Free",
+   "album": "This Is Living",
+   "confidence": "high",
+   "name": "Sinking Deep"
+  },
+  "release_year": 2015,
+  "popularity": 62,
+  "status": "on",
+  "reason": ""
  },
  {
   "key": "what beautiful name",
@@ -12732,74 +13053,6 @@
   "reason": ""
  },
  {
-  "key": "even so come",
-  "sources": [
-   "library",
-   "main",
-   "scripts"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 6,
-  "local": false,
-  "kids": false,
-  "era": "Contemporary",
-  "owners": {
-   "Rizvan": 5,
-   "Eric": 1
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2022": 1,
-    "2023": 3,
-    "2025": 1
-   },
-   "Eric": {
-    "2023": 1
-   }
-  },
-  "keys_played": {
-   "F": 1,
-   "D": 4,
-   "A": 1
-  },
-  "latest_key": "D",
-  "latest_key_year": 2025,
-  "slots": {},
-  "dates": [],
-  "chart_key": "G",
-  "lib_pace": "moderate",
-  "lib_era": "contemporary",
-  "lib_theme": "return",
-  "has_chart": true,
-  "eric_count": 3.0,
-  "pace": "Slow",
-  "rough_category": "Surrender",
-  "theme": "Lament",
-  "acoustic": "No",
-  "introduced": "Yes",
-  "title": "Even So Come",
-  "artist": "Chris Tomlin",
-  "first_year": 2022,
-  "last_year": 2025,
-  "year_counts": {
-   "2022": 1,
-   "2023": 4,
-   "2025": 1
-  },
-  "match": {
-   "uri": "spotify:track:3cDXT6zmB9p2BHoERfE8DP",
-   "artist": "The Maker & The Instrument",
-   "album": "Chris Tomlin Collection",
-   "confidence": "high",
-   "name": "Even So Come"
-  },
-  "release_year": 2020,
-  "popularity": 15,
-  "status": "on",
-  "reason": ""
- },
- {
   "key": "how he loves",
   "sources": [
    "edgar",
@@ -13014,13 +13267,16 @@
     "2020": 1,
     "2021": 1,
     "2022": 2
+   },
+   "Eric": {
+    "2018": 1
    }
   },
   "keys_played": {
    "G": 1
   },
   "latest_key": "G",
-  "latest_key_year": 0,
+  "latest_key_year": 2018,
   "slots": {},
   "dates": [],
   "pace": "Slow",
@@ -13032,6 +13288,7 @@
   "last_year": 2022,
   "year_counts": {
    "2017": 1,
+   "2018": 1,
    "2020": 1,
    "2021": 1,
    "2022": 2
@@ -13046,67 +13303,6 @@
   },
   "release_year": 2018,
   "popularity": 44,
-  "status": "on",
-  "reason": ""
- },
- {
-  "key": "sinking deep",
-  "sources": [
-   "edgar",
-   "library",
-   "scripts"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 6,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Edgar": 1,
-   "Rizvan": 5,
-   "Eric": 1
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2016": 1,
-    "2017": 1,
-    "2018": 2,
-    "2019": 1
-   },
-   "Eric": {
-    "2018": 1
-   }
-  },
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
-  "slots": {},
-  "dates": [],
-  "chart_key": "G",
-  "lib_pace": "medium",
-  "lib_era": "contemporary",
-  "lib_theme": "worship",
-  "has_chart": true,
-  "title": "Sinking Deep",
-  "artist": "Hillsong Young & Free",
-  "first_year": 2016,
-  "last_year": 2019,
-  "year_counts": {
-   "2016": 1,
-   "2017": 1,
-   "2018": 3,
-   "2019": 1
-  },
-  "match": {
-   "uri": "spotify:track:1fDCDJg4bAxYgMaT5DN6xy",
-   "artist": "Hillsong Young & Free",
-   "album": "This Is Living",
-   "confidence": "high",
-   "name": "Sinking Deep"
-  },
-  "release_year": 2015,
-  "popularity": 62,
   "status": "on",
   "reason": ""
  },
@@ -13261,7 +13457,7 @@
     "2015": 1
    },
    "Eric": {
-    "2018": 1,
+    "2018": 3,
     "2023": 1
    }
   },
@@ -13284,7 +13480,7 @@
   "year_counts": {
    "2014": 1,
    "2015": 1,
-   "2018": 1,
+   "2018": 3,
    "2023": 1
   },
   "match": {
@@ -13516,6 +13712,64 @@
   },
   "release_year": 2011,
   "popularity": 49,
+  "status": "on",
+  "reason": ""
+ },
+ {
+  "key": "god an awesome god",
+  "sources": [
+   "edgar",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 6,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 6
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2014": 2,
+    "2016": 2,
+    "2017": 1,
+    "2018": 1
+   }
+  },
+  "keys_played": {
+   "E": 1
+  },
+  "latest_key": "E",
+  "latest_key_year": 2014,
+  "slots": {},
+  "dates": [],
+  "title": "Our God Is An Awesome God",
+  "artist": "Rich Mullins",
+  "first_year": 2014,
+  "last_year": 2018,
+  "year_counts": {
+   "2014": 2,
+   "2016": 2,
+   "2017": 1,
+   "2018": 1
+  },
+  "ai_theme": "Praise",
+  "ai_pace": "Medium",
+  "not_a_song": false,
+  "ai_confident": true,
+  "artist_source": "ai",
+  "match": {
+   "uri": "spotify:track:5niLKxgCj4UriedJmPtJld",
+   "artist": "Rich Mullins",
+   "name": "Awesome God",
+   "album": "Winds Of Heaven, Stuff Of Earth",
+   "confidence": "high"
+  },
+  "release_year": 1988,
+  "popularity": 52,
   "status": "on",
   "reason": ""
  },
@@ -13856,72 +14110,6 @@
   "reason": ""
  },
  {
-  "key": "this god",
-  "sources": [
-   "edgar",
-   "library",
-   "main",
-   "scripts"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 5,
-  "local": false,
-  "kids": false,
-  "era": "Contemporary",
-  "owners": {
-   "Edgar": 1,
-   "Rizvan": 4,
-   "Eric": 1
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2015": 1,
-    "2016": 2,
-    "2017": 1
-   },
-   "Eric": {
-    "2020": 1
-   }
-  },
-  "keys_played": {
-   "E": 2
-  },
-  "latest_key": "E",
-  "latest_key_year": 2020,
-  "slots": {},
-  "dates": [],
-  "chart_key": "E",
-  "lib_pace": "moderate",
-  "lib_era": "contemporary",
-  "lib_theme": "praise",
-  "has_chart": true,
-  "pace": "Slow",
-  "theme": "Declaration",
-  "introduced": "Yes",
-  "title": "This Is Our God",
-  "artist": "Phil Wickham",
-  "first_year": 2015,
-  "last_year": 2020,
-  "year_counts": {
-   "2015": 1,
-   "2016": 2,
-   "2017": 1,
-   "2020": 1
-  },
-  "match": {
-   "uri": "spotify:track:546XGtVu1EXXr4ofJIbUnE",
-   "artist": "Phil Wickham",
-   "album": "I Believe",
-   "confidence": "high",
-   "name": "This Is Our God"
-  },
-  "release_year": 2023,
-  "popularity": 57,
-  "status": "on",
-  "reason": ""
- },
- {
   "key": "transfiguration",
   "sources": [
    "edgar",
@@ -14176,6 +14364,64 @@
   },
   "release_year": 2008,
   "popularity": 13,
+  "status": "on",
+  "reason": ""
+ },
+ {
+  "key": "jesus i need you",
+  "sources": [
+   "edgar",
+   "main",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 5,
+  "local": false,
+  "kids": false,
+  "era": "Contemporary",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 4,
+   "Eric": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2016": 3,
+    "2017": 1
+   },
+   "Eric": {
+    "2020": 1
+   }
+  },
+  "keys_played": {
+   "A": 3
+  },
+  "latest_key": "A",
+  "latest_key_year": 2016,
+  "slots": {},
+  "dates": [],
+  "pace": "Slow",
+  "theme": "Lament",
+  "introduced": "Yes",
+  "title": "Jesus I Need You",
+  "artist": "Hillsong",
+  "first_year": 2016,
+  "last_year": 2020,
+  "year_counts": {
+   "2016": 3,
+   "2017": 1,
+   "2020": 1
+  },
+  "match": {
+   "uri": "spotify:track:2o2o8Te356JJtPjeEojLhZ",
+   "artist": "Hillsong Worship",
+   "album": "OPEN HEAVEN / River Wild",
+   "confidence": "high",
+   "name": "Jesus I Need You"
+  },
+  "release_year": 2015,
+  "popularity": 60,
   "status": "on",
   "reason": ""
  },
@@ -14544,7 +14790,7 @@
   "reason": ""
  },
  {
-  "key": "god an awesome god",
+  "key": "only you",
   "sources": [
    "edgar",
    "scripts"
@@ -14557,49 +14803,48 @@
   "era": "",
   "owners": {
    "Edgar": 1,
-   "Rizvan": 5
+   "Rizvan": 3,
+   "Eric": 2
   },
   "owner_years": {
    "Rizvan": {
-    "2014": 2,
-    "2016": 1,
-    "2017": 1,
-    "2018": 1
+    "2018": 2,
+    "2020": 1
+   },
+   "Eric": {
+    "2018": 2
    }
   },
   "keys_played": {
-   "E": 1
+   "E": 5
   },
   "latest_key": "E",
-  "latest_key_year": 2014,
+  "latest_key_year": 2020,
   "slots": {},
   "dates": [],
-  "title": "Our God Is An Awesome God",
-  "artist": "Rich Mullins",
-  "first_year": 2014,
-  "last_year": 2018,
+  "title": "Only You",
+  "artist": "",
+  "first_year": 2018,
+  "last_year": 2020,
   "year_counts": {
-   "2014": 2,
-   "2016": 1,
-   "2017": 1,
-   "2018": 1
+   "2018": 4,
+   "2020": 1
   },
-  "ai_theme": "Praise",
-  "ai_pace": "Medium",
+  "ai_theme": "Surrender",
+  "ai_pace": "Slow",
   "not_a_song": false,
-  "ai_confident": true,
-  "artist_source": "ai",
+  "ai_confident": false,
   "match": {
-   "uri": "spotify:track:5niLKxgCj4UriedJmPtJld",
-   "artist": "Rich Mullins",
-   "name": "Awesome God",
-   "album": "Winds Of Heaven, Stuff Of Earth",
-   "confidence": "high"
+   "uri": "spotify:track:0zYTds5CbldCnUvWVfFwx5",
+   "artist": "David Crowder Band",
+   "album": "Illuminate",
+   "confidence": "medium",
+   "name": "Only You"
   },
-  "release_year": 1988,
-  "popularity": 52,
+  "release_year": 2003,
+  "popularity": 39,
   "status": "on",
-  "reason": ""
+  "reason": "check version"
  },
  {
   "key": "for us",
@@ -14681,7 +14926,8 @@
     "2020": 1
    },
    "Eric": {
-    "2021": 1
+    "2021": 1,
+    "2018": 3
    }
   },
   "keys_played": {
@@ -14695,9 +14941,10 @@
   "dates": [],
   "title": "Worship Script",
   "artist": "",
-  "first_year": 2020,
+  "first_year": 2018,
   "last_year": 2021,
   "year_counts": {
+   "2018": 3,
    "2020": 1,
    "2021": 1
   },
@@ -15026,59 +15273,6 @@
   "reason": ""
  },
  {
-  "key": "jesus i need you",
-  "sources": [
-   "edgar",
-   "main",
-   "scripts"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 4,
-  "local": false,
-  "kids": false,
-  "era": "Contemporary",
-  "owners": {
-   "Edgar": 1,
-   "Rizvan": 4
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2016": 3,
-    "2017": 1
-   }
-  },
-  "keys_played": {
-   "A": 3
-  },
-  "latest_key": "A",
-  "latest_key_year": 2016,
-  "slots": {},
-  "dates": [],
-  "pace": "Slow",
-  "theme": "Lament",
-  "introduced": "Yes",
-  "title": "Jesus I Need You",
-  "artist": "Hillsong",
-  "first_year": 2016,
-  "last_year": 2017,
-  "year_counts": {
-   "2016": 3,
-   "2017": 1
-  },
-  "match": {
-   "uri": "spotify:track:2o2o8Te356JJtPjeEojLhZ",
-   "artist": "Hillsong Worship",
-   "album": "OPEN HEAVEN / River Wild",
-   "confidence": "high",
-   "name": "Jesus I Need You"
-  },
-  "release_year": 2015,
-  "popularity": 60,
-  "status": "on",
-  "reason": ""
- },
- {
   "key": "love reigns",
   "sources": [
    "edgar",
@@ -15102,7 +15296,7 @@
     "2018": 1
    },
    "Eric": {
-    "2018": 1
+    "2018": 2
    }
   },
   "keys_played": {
@@ -15123,7 +15317,7 @@
   "last_year": 2018,
   "year_counts": {
    "2017": 1,
-   "2018": 2
+   "2018": 3
   },
   "match": {
    "uri": "spotify:track:0LEwqD7aGxDsfLAcxgVen4",
@@ -15191,6 +15385,66 @@
   "popularity": 59,
   "status": "on",
   "reason": ""
+ },
+ {
+  "key": "forever",
+  "sources": [
+   "edgar",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 4,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Edgar": 3,
+   "Rizvan": 3,
+   "Eric": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2014": 1,
+    "2016": 1,
+    "2022": 1
+   },
+   "Eric": {
+    "2019": 1
+   }
+  },
+  "keys_played": {
+   "G": 1
+  },
+  "latest_key": "G",
+  "latest_key_year": 2019,
+  "slots": {},
+  "dates": [],
+  "title": "Forever",
+  "artist": "",
+  "first_year": 2014,
+  "last_year": 2022,
+  "year_counts": {
+   "2014": 1,
+   "2016": 1,
+   "2019": 1,
+   "2022": 1
+  },
+  "ai_theme": "Thanks",
+  "ai_pace": "Medium",
+  "not_a_song": false,
+  "ai_confident": true,
+  "match": {
+   "uri": "spotify:track:6ChFsa3xElTTIJAo460out",
+   "artist": "Chris Tomlin",
+   "album": "How Great Is Our God: The Essential Collection",
+   "confidence": "medium",
+   "name": "Forever"
+  },
+  "release_year": 2011,
+  "popularity": 53,
+  "status": "dupe",
+  "reason": "same recording as \u201cForever (Chris Tomlin)\u201d"
  },
  {
   "key": "i could sing your love",
@@ -15303,6 +15557,60 @@
   "popularity": 24,
   "status": "on",
   "reason": "check version"
+ },
+ {
+  "key": "one thing remains",
+  "sources": [
+   "edgar",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 4,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Edgar": 2,
+   "Rizvan": 4
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2017": 3,
+    "2018": 1
+   }
+  },
+  "keys_played": {
+   "B": 4
+  },
+  "latest_key": "B",
+  "latest_key_year": 2018,
+  "slots": {},
+  "dates": [],
+  "title": "One Thing Remains",
+  "artist": "Passion",
+  "first_year": 2017,
+  "last_year": 2018,
+  "year_counts": {
+   "2017": 3,
+   "2018": 1
+  },
+  "ai_theme": "Assurance",
+  "ai_pace": "Medium",
+  "not_a_song": false,
+  "ai_confident": true,
+  "artist_source": "ai",
+  "match": {
+   "uri": "spotify:track:1bVVKpdOuQ77Ti3kcTdfTy",
+   "artist": "Passion",
+   "album": "One Thing Remains",
+   "confidence": "high",
+   "name": "One Thing Remains"
+  },
+  "release_year": 2012,
+  "popularity": 62,
+  "status": "on",
+  "reason": ""
  },
  {
   "key": "overcome",
@@ -15875,6 +16183,73 @@
   "reason": "script heading, Spotify title differs (You Hold Me Now)"
  },
  {
+  "key": "his glory appears",
+  "sources": [
+   "edgar",
+   "library",
+   "main",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 3,
+  "local": false,
+  "kids": false,
+  "era": "Contemporary",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 1,
+   "Eric": 2
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2017": 1
+   },
+   "Eric": {
+    "2021": 1,
+    "2023": 1
+   }
+  },
+  "keys_played": {
+   "D": 1,
+   "B": 2
+  },
+  "latest_key": "B",
+  "latest_key_year": 2023,
+  "slots": {},
+  "dates": [],
+  "chart_key": "D",
+  "lib_pace": "moderate",
+  "lib_era": "contemporary",
+  "lib_theme": "cross",
+  "has_chart": true,
+  "pace": "Slow",
+  "rough_category": "Awe",
+  "theme": "Awe",
+  "introduced": "Yes",
+  "title": "His Glory Appears",
+  "artist": "Hillsong Worship",
+  "first_year": 2017,
+  "last_year": 2023,
+  "year_counts": {
+   "2017": 1,
+   "2021": 1,
+   "2023": 1
+  },
+  "artist_source": "ai",
+  "match": {
+   "uri": "spotify:track:4sjcf9UmI0w5skiD1yq8y0",
+   "artist": "Hillsong Worship",
+   "album": "Faith+Hope+Love (Live)",
+   "confidence": "high",
+   "name": "His Glory Appears"
+  },
+  "release_year": 2009,
+  "popularity": 42,
+  "status": "on",
+  "reason": ""
+ },
+ {
   "key": "it well",
   "sources": [
    "edgar",
@@ -15989,6 +16364,59 @@
   },
   "release_year": 2021,
   "popularity": 68,
+  "status": "on",
+  "reason": ""
+ },
+ {
+  "key": "lord i need you",
+  "sources": [
+   "edgar",
+   "main",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 3,
+  "local": false,
+  "kids": false,
+  "era": "Contemporary",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 3
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2016": 2,
+    "2026": 1
+   }
+  },
+  "keys_played": {
+   "G": 2
+  },
+  "latest_key": "G",
+  "latest_key_year": 2016,
+  "slots": {},
+  "dates": [],
+  "pace": "Slow",
+  "theme": "Edify",
+  "introduced": "Yes",
+  "title": "Lord I Need You",
+  "artist": "Matt Maher",
+  "first_year": 2016,
+  "last_year": 2026,
+  "year_counts": {
+   "2016": 2,
+   "2026": 1
+  },
+  "match": {
+   "uri": "spotify:track:3kRCMN2z0aAJ9wpjrFZlBP",
+   "artist": "Matt Maher",
+   "album": "WOW Worship (Lime)",
+   "confidence": "high",
+   "name": "Lord, I Need You"
+  },
+  "release_year": 2014,
+  "popularity": 35,
   "status": "on",
   "reason": ""
  },
@@ -16282,6 +16710,9 @@
   "owner_years": {
    "Rizvan": {
     "2021": 1
+   },
+   "Eric": {
+    "2018": 1
    }
   },
   "keys_played": {
@@ -16293,9 +16724,10 @@
   "dates": [],
   "title": "God You Are My God",
   "artist": "",
-  "first_year": 2021,
+  "first_year": 2018,
   "last_year": 2021,
   "year_counts": {
+   "2018": 1,
    "2021": 1
   },
   "ai_theme": "Awe",
@@ -16396,6 +16828,9 @@
    "Rizvan": {
     "2022": 1,
     "2023": 1
+   },
+   "Eric": {
+    "2018": 1
    }
   },
   "keys_played": {
@@ -16408,9 +16843,10 @@
   "dates": [],
   "title": "He Leadeth Me",
   "artist": "Norton Hall Band",
-  "first_year": 2022,
+  "first_year": 2018,
   "last_year": 2023,
   "year_counts": {
+   "2018": 1,
    "2022": 1,
    "2023": 1
   },
@@ -16488,6 +16924,61 @@
   "reason": ""
  },
  {
+  "key": "love here",
+  "sources": [
+   "library",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 3,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Rizvan": 2,
+   "Eric": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2016": 2
+   },
+   "Eric": {
+    "2016": 1
+   }
+  },
+  "keys_played": {
+   "E": 2
+  },
+  "latest_key": "E",
+  "latest_key_year": 2016,
+  "slots": {},
+  "dates": [],
+  "chart_key": "Em",
+  "lib_pace": "moderate",
+  "lib_era": "contemporary",
+  "lib_theme": "love",
+  "has_chart": true,
+  "title": "Love Is Here",
+  "artist": "Tenth Avenue North",
+  "first_year": 2016,
+  "last_year": 2016,
+  "year_counts": {
+   "2016": 3
+  },
+  "match": {
+   "uri": "spotify:track:26XGTmA0kbHdSRyD7l7Y5Q",
+   "artist": "Tenth Avenue North",
+   "album": "Over And Underneath",
+   "confidence": "high",
+   "name": "Love Is Here"
+  },
+  "release_year": 2008,
+  "popularity": 42,
+  "status": "on",
+  "reason": ""
+ },
+ {
   "key": "no greater love",
   "sources": [
    "edgar",
@@ -16533,114 +17024,6 @@
   },
   "release_year": 2025,
   "popularity": 32,
-  "status": "on",
-  "reason": "check version"
- },
- {
-  "key": "one thing remains",
-  "sources": [
-   "edgar",
-   "scripts"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 3,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Edgar": 2,
-   "Rizvan": 3
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2017": 2,
-    "2018": 1
-   }
-  },
-  "keys_played": {
-   "B": 3
-  },
-  "latest_key": "B",
-  "latest_key_year": 2018,
-  "slots": {},
-  "dates": [],
-  "title": "One Thing Remains",
-  "artist": "Passion",
-  "first_year": 2017,
-  "last_year": 2018,
-  "year_counts": {
-   "2017": 2,
-   "2018": 1
-  },
-  "ai_theme": "Assurance",
-  "ai_pace": "Medium",
-  "not_a_song": false,
-  "ai_confident": true,
-  "artist_source": "ai",
-  "match": {
-   "uri": "spotify:track:1bVVKpdOuQ77Ti3kcTdfTy",
-   "artist": "Passion",
-   "album": "One Thing Remains",
-   "confidence": "high",
-   "name": "One Thing Remains"
-  },
-  "release_year": 2012,
-  "popularity": 62,
-  "status": "on",
-  "reason": ""
- },
- {
-  "key": "only you",
-  "sources": [
-   "edgar",
-   "scripts"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 3,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Edgar": 1,
-   "Rizvan": 2,
-   "Eric": 1
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2018": 1,
-    "2020": 1
-   }
-  },
-  "keys_played": {
-   "E": 3
-  },
-  "latest_key": "E",
-  "latest_key_year": 2020,
-  "slots": {},
-  "dates": [],
-  "title": "Only You",
-  "artist": "",
-  "first_year": 2018,
-  "last_year": 2020,
-  "year_counts": {
-   "2018": 1,
-   "2020": 1
-  },
-  "ai_theme": "Surrender",
-  "ai_pace": "Slow",
-  "not_a_song": false,
-  "ai_confident": false,
-  "match": {
-   "uri": "spotify:track:0zYTds5CbldCnUvWVfFwx5",
-   "artist": "David Crowder Band",
-   "album": "Illuminate",
-   "confidence": "medium",
-   "name": "Only You"
-  },
-  "release_year": 2003,
-  "popularity": 39,
   "status": "on",
   "reason": "check version"
  },
@@ -17121,7 +17504,8 @@
   },
   "owner_years": {
    "Eric": {
-    "2019": 2
+    "2019": 2,
+    "2018": 1
    }
   },
   "keys_played": {
@@ -17134,9 +17518,10 @@
   "dates": [],
   "title": "Father",
   "artist": "",
-  "first_year": 2019,
+  "first_year": 2018,
   "last_year": 2019,
   "year_counts": {
+   "2018": 1,
    "2019": 2
   },
   "ai_theme": "Surrender",
@@ -17460,67 +17845,6 @@
   },
   "release_year": 2012,
   "popularity": 54,
-  "status": "on",
-  "reason": ""
- },
- {
-  "key": "his glory appears",
-  "sources": [
-   "edgar",
-   "library",
-   "main",
-   "scripts"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 2,
-  "local": false,
-  "kids": false,
-  "era": "Contemporary",
-  "owners": {
-   "Edgar": 1,
-   "Eric": 2
-  },
-  "owner_years": {
-   "Eric": {
-    "2021": 1,
-    "2023": 1
-   }
-  },
-  "keys_played": {
-   "B": 2
-  },
-  "latest_key": "B",
-  "latest_key_year": 2023,
-  "slots": {},
-  "dates": [],
-  "chart_key": "D",
-  "lib_pace": "moderate",
-  "lib_era": "contemporary",
-  "lib_theme": "cross",
-  "has_chart": true,
-  "pace": "Slow",
-  "rough_category": "Awe",
-  "theme": "Awe",
-  "introduced": "Yes",
-  "title": "His Glory Appears",
-  "artist": "Hillsong Worship",
-  "first_year": 2021,
-  "last_year": 2023,
-  "year_counts": {
-   "2021": 1,
-   "2023": 1
-  },
-  "artist_source": "ai",
-  "match": {
-   "uri": "spotify:track:4sjcf9UmI0w5skiD1yq8y0",
-   "artist": "Hillsong Worship",
-   "album": "Faith+Hope+Love (Live)",
-   "confidence": "high",
-   "name": "His Glory Appears"
-  },
-  "release_year": 2009,
-  "popularity": 42,
   "status": "on",
   "reason": ""
  },
@@ -18283,6 +18607,56 @@
   "reason": "check version"
  },
  {
+  "key": "leaning on everlasting arms",
+  "sources": [
+   "edgar",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 2,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Edgar": 1,
+   "Rizvan": 2
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2026": 2
+   }
+  },
+  "keys_played": {},
+  "latest_key": "",
+  "latest_key_year": 0,
+  "slots": {},
+  "dates": [],
+  "title": "Leaning on the everlasting arms",
+  "artist": "Norton Hall Band",
+  "first_year": 2026,
+  "last_year": 2026,
+  "year_counts": {
+   "2026": 2
+  },
+  "ai_theme": "Assurance",
+  "ai_pace": "Medium",
+  "not_a_song": false,
+  "ai_confident": true,
+  "artist_source": "ai",
+  "match": {
+   "uri": "spotify:track:6SaNNvd94ZpVlzidYNFUqS",
+   "artist": "Norton Hall Band",
+   "album": "Still Our Refuge",
+   "confidence": "high",
+   "name": "Leaning on the Everlasting Arms"
+  },
+  "release_year": 2021,
+  "popularity": 22,
+  "status": "on",
+  "reason": ""
+ },
+ {
   "key": "nothing else",
   "sources": [
    "main",
@@ -18919,6 +19293,53 @@
   "ai_confident": true,
   "status": "held",
   "reason": "AI check: not a song title"
+ },
+ {
+  "key": "forever kari jobe",
+  "sources": [
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 2,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Rizvan": 2
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2019": 1,
+    "2020": 1
+   }
+  },
+  "keys_played": {
+   "Ab": 2
+  },
+  "latest_key": "Ab",
+  "latest_key_year": 2020,
+  "slots": {},
+  "dates": [],
+  "title": "Forever (Kari Jobe)",
+  "artist": "Kari Jobe",
+  "first_year": 2019,
+  "last_year": 2020,
+  "year_counts": {
+   "2019": 1,
+   "2020": 1
+  },
+  "match": {
+   "uri": "spotify:track:5y0AjH2iVJ8sZXZvUEWzLD",
+   "artist": "Bethel Music",
+   "album": "You Make Me Brave (Live)",
+   "confidence": "high",
+   "name": "Forever (Live)"
+  },
+  "release_year": 2014,
+  "popularity": 39,
+  "status": "on",
+  "reason": ""
  },
  {
   "key": "holy",
@@ -19576,21 +19997,25 @@
   "owner_years": {
    "Rizvan": {
     "2017": 1
+   },
+   "Eric": {
+    "2018": 1
    }
   },
   "keys_played": {
    "C": 2
   },
   "latest_key": "C",
-  "latest_key_year": 2017,
+  "latest_key_year": 2018,
   "slots": {},
   "dates": [],
   "title": "Strongly the first two lines then quiet on the third)",
   "artist": "",
   "first_year": 2017,
-  "last_year": 2017,
+  "last_year": 2018,
   "year_counts": {
-   "2017": 1
+   "2017": 1,
+   "2018": 1
   },
   "ai_theme": "Praise",
   "ai_pace": "Medium",
@@ -19643,6 +20068,55 @@
   },
   "release_year": 2001,
   "popularity": 1,
+  "status": "on",
+  "reason": "check version"
+ },
+ {
+  "key": "lord almighty reigns",
+  "sources": [
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 2,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Rizvan": 2
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2025": 2
+   }
+  },
+  "keys_played": {
+   "G": 1
+  },
+  "latest_key": "G",
+  "latest_key_year": 2025,
+  "slots": {},
+  "dates": [],
+  "title": "The Lord Almighty Reigns",
+  "artist": "",
+  "first_year": 2025,
+  "last_year": 2025,
+  "year_counts": {
+   "2025": 2
+  },
+  "ai_theme": "Declaration",
+  "ai_pace": "Medium",
+  "not_a_song": false,
+  "ai_confident": false,
+  "match": {
+   "uri": "spotify:track:4u2JS0X0Y4pkUpvyCH4fSh",
+   "artist": "The Worship Initiative",
+   "album": "Modern Hymns",
+   "confidence": "medium",
+   "name": "The Lord Almighty Reigns"
+  },
+  "release_year": 2024,
+  "popularity": 40,
   "status": "on",
   "reason": "check version"
  },
@@ -19798,6 +20272,55 @@
   "reason": "script heading, Spotify title differs (Till I See You - Live)"
  },
  {
+  "key": "we are his people",
+  "sources": [
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 2,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Rizvan": 1,
+   "Eric": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2023": 1
+   },
+   "Eric": {
+    "2023": 1
+   }
+  },
+  "keys_played": {
+   "C": 2
+  },
+  "latest_key": "C",
+  "latest_key_year": 2023,
+  "slots": {},
+  "dates": [],
+  "title": "We Are His People",
+  "artist": "",
+  "first_year": 2023,
+  "last_year": 2023,
+  "year_counts": {
+   "2023": 2
+  },
+  "match": {
+   "uri": "spotify:track:3KdfVlsTVpraFx70kMNU1u",
+   "artist": "Emu Music",
+   "album": "New Song In My Heart",
+   "confidence": "medium",
+   "name": "We Are His People"
+  },
+  "release_year": 2007,
+  "popularity": 12,
+  "status": "on",
+  "reason": "check version"
+ },
+ {
   "key": "|d |bm |",
   "sources": [
    "scripts"
@@ -19857,12 +20380,16 @@
    "Edgar": 2,
    "Eric": 1
   },
-  "owner_years": {},
+  "owner_years": {
+   "Eric": {
+    "2018": 1
+   }
+  },
   "keys_played": {
    "E": 1
   },
   "latest_key": "E",
-  "latest_key_year": 0,
+  "latest_key_year": 2018,
   "slots": {},
   "dates": [],
   "chart_key": "C",
@@ -19875,9 +20402,11 @@
   "introduced": "Yes",
   "title": "All the poor and powerless",
   "artist": "All Sons & Daughters",
-  "first_year": null,
-  "last_year": null,
-  "year_counts": {},
+  "first_year": 2018,
+  "last_year": 2018,
+  "year_counts": {
+   "2018": 1
+  },
   "match": {
    "uri": "spotify:track:3aL5l08GtGXwFtcLRGRy4I",
    "artist": "All Sons & Daughters",
@@ -20265,57 +20794,6 @@
   "popularity": 2,
   "status": "held",
   "reason": "only a non-worship recording (LMS)"
- },
- {
-  "key": "lord i need you",
-  "sources": [
-   "edgar",
-   "main",
-   "scripts"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 1,
-  "local": false,
-  "kids": false,
-  "era": "Contemporary",
-  "owners": {
-   "Edgar": 1,
-   "Rizvan": 1
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2016": 1
-   }
-  },
-  "keys_played": {
-   "G": 1
-  },
-  "latest_key": "G",
-  "latest_key_year": 2016,
-  "slots": {},
-  "dates": [],
-  "pace": "Slow",
-  "theme": "Edify",
-  "introduced": "Yes",
-  "title": "Lord I need You",
-  "artist": "Matt Maher",
-  "first_year": 2016,
-  "last_year": 2016,
-  "year_counts": {
-   "2016": 1
-  },
-  "match": {
-   "uri": "spotify:track:3kRCMN2z0aAJ9wpjrFZlBP",
-   "artist": "Matt Maher",
-   "album": "WOW Worship (Lime)",
-   "confidence": "high",
-   "name": "Lord, I Need You"
-  },
-  "release_year": 2014,
-  "popularity": 35,
-  "status": "on",
-  "reason": ""
  },
  {
   "key": "made to worship",
@@ -20993,6 +21471,102 @@
   "reason": "check version"
  },
  {
+  "key": "hymn savior",
+  "sources": [
+   "main",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "Modern Hymn",
+  "owners": {
+   "Eric": 1
+  },
+  "owner_years": {
+   "Eric": {
+    "2025": 1
+   }
+  },
+  "keys_played": {},
+  "latest_key": "",
+  "latest_key_year": 0,
+  "slots": {},
+  "dates": [],
+  "eric_count": 8.0,
+  "pace": "Slow",
+  "rough_category": "Gospel",
+  "theme": "Praise",
+  "introduced": "Yes",
+  "title": "Hymn of the Savior",
+  "artist": "Emu Music",
+  "first_year": 2025,
+  "last_year": 2025,
+  "year_counts": {
+   "2025": 1
+  },
+  "match": {
+   "uri": "spotify:track:6Zj4PF9JZOTZ6ENdr2xjbr",
+   "artist": "Emu Music",
+   "album": "Creation Awaits",
+   "confidence": "high",
+   "name": "Hymn Of The Saviour"
+  },
+  "release_year": 2020,
+  "popularity": 40,
+  "status": "dupe",
+  "reason": "same recording as \u201cHymn of the Saviour\u201d"
+ },
+ {
+  "key": "i could sing your love forever",
+  "sources": [
+   "main",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "Classic",
+  "owners": {
+   "Eric": 1
+  },
+  "owner_years": {
+   "Eric": {
+    "2020": 1
+   }
+  },
+  "keys_played": {},
+  "latest_key": "",
+  "latest_key_year": 0,
+  "slots": {},
+  "dates": [],
+  "pace": "Slow",
+  "theme": "Praise",
+  "introduced": "Yes",
+  "title": "I Could Sing of Your Love Forever",
+  "artist": "Hillsong",
+  "first_year": 2020,
+  "last_year": 2020,
+  "year_counts": {
+   "2020": 1
+  },
+  "match": {
+   "uri": "spotify:track:0ypipC0JkFZVZZXpzCzw05",
+   "artist": "Hillsong Worship",
+   "album": "iWorship: No Boundaries",
+   "confidence": "high",
+   "name": "I Could Sing of Your Love Forever"
+  },
+  "release_year": 2005,
+  "popularity": 50,
+  "status": "on",
+  "reason": ""
+ },
+ {
   "key": "lead me to cross",
   "sources": [
    "edgar",
@@ -21190,55 +21764,6 @@
    "name": "Love Came Down"
   },
   "release_year": 2012,
-  "popularity": 42,
-  "status": "on",
-  "reason": ""
- },
- {
-  "key": "love here",
-  "sources": [
-   "library",
-   "scripts"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 1,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Rizvan": 1
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2016": 1
-   }
-  },
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
-  "slots": {},
-  "dates": [],
-  "chart_key": "Em",
-  "lib_pace": "moderate",
-  "lib_era": "contemporary",
-  "lib_theme": "love",
-  "has_chart": true,
-  "title": "Love Is Here",
-  "artist": "Tenth Avenue North",
-  "first_year": 2016,
-  "last_year": 2016,
-  "year_counts": {
-   "2016": 1
-  },
-  "match": {
-   "uri": "spotify:track:26XGTmA0kbHdSRyD7l7Y5Q",
-   "artist": "Tenth Avenue North",
-   "album": "Over And Underneath",
-   "confidence": "high",
-   "name": "Love Is Here"
-  },
-  "release_year": 2008,
   "popularity": 42,
   "status": "on",
   "reason": ""
@@ -21469,9 +21994,9 @@
    }
   },
   "keys_played": {
-   "A": 1
+   "G": 1
   },
-  "latest_key": "A",
+  "latest_key": "G",
   "latest_key_year": 2023,
   "slots": {},
   "dates": [],
@@ -21736,6 +22261,57 @@
   "popularity": 25,
   "status": "on",
   "reason": ""
+ },
+ {
+  "key": "we believe",
+  "sources": [
+   "edgar",
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Edgar": 3,
+   "Rizvan": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2016": 1
+   }
+  },
+  "keys_played": {
+   "C": 1
+  },
+  "latest_key": "C",
+  "latest_key_year": 2016,
+  "slots": {},
+  "dates": [],
+  "title": "we believe",
+  "artist": "",
+  "first_year": 2016,
+  "last_year": 2016,
+  "year_counts": {
+   "2016": 1
+  },
+  "ai_theme": "Declaration",
+  "ai_pace": "Medium",
+  "not_a_song": false,
+  "ai_confident": true,
+  "match": {
+   "uri": "spotify:track:1wO4UyzKkaKWelcygpR7bh",
+   "artist": "Keith & Kristyn Getty",
+   "album": "Facing A Task Unfinished",
+   "confidence": "medium",
+   "name": "We Believe (Apostle's Creed)"
+  },
+  "release_year": 2016,
+  "popularity": 28,
+  "status": "on",
+  "reason": "check version"
  },
  {
   "key": "you are king",
@@ -22450,19 +23026,25 @@
   "owners": {
    "Eric": 1
   },
-  "owner_years": {},
+  "owner_years": {
+   "Eric": {
+    "2018": 1
+   }
+  },
   "keys_played": {
    "G": 1
   },
   "latest_key": "G",
-  "latest_key_year": 0,
+  "latest_key_year": 2018,
   "slots": {},
   "dates": [],
   "title": "Cajon joins in",
   "artist": "",
-  "first_year": null,
-  "last_year": null,
-  "year_counts": {},
+  "first_year": 2018,
+  "last_year": 2018,
+  "year_counts": {
+   "2018": 1
+  },
   "ai_theme": "Praise",
   "ai_pace": "Medium",
   "not_a_song": true,
@@ -22718,6 +23300,41 @@
   "reason": "AI check: not a song title"
  },
  {
+  "key": "emu music",
+  "sources": [
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Eric": 1
+  },
+  "owner_years": {
+   "Eric": {
+    "2024": 1
+   }
+  },
+  "keys_played": {},
+  "latest_key": "",
+  "latest_key_year": 0,
+  "slots": {},
+  "dates": [],
+  "title": "Emu Music",
+  "artist": "",
+  "first_year": 2024,
+  "last_year": 2024,
+  "year_counts": {
+   "2024": 1
+  },
+  "match": null,
+  "status": "held",
+  "reason": "no Spotify match found"
+ },
+ {
   "key": "even when i doubt)",
   "sources": [
    "scripts"
@@ -22892,19 +23509,25 @@
   "owners": {
    "Eric": 1
   },
-  "owner_years": {},
+  "owner_years": {
+   "Eric": {
+    "2018": 1
+   }
+  },
   "keys_played": {
    "G": 1
   },
   "latest_key": "G",
-  "latest_key_year": 0,
+  "latest_key_year": 2018,
   "slots": {},
   "dates": [],
   "title": "G || C | G || C | G || C |",
   "artist": "",
-  "first_year": null,
-  "last_year": null,
-  "year_counts": {},
+  "first_year": 2018,
+  "last_year": 2018,
+  "year_counts": {
+   "2018": 1
+  },
   "ai_theme": "Praise",
   "ai_pace": "Medium",
   "not_a_song": true,
@@ -23436,6 +24059,76 @@
   "reason": "script heading, Spotify title differs (How Long, O Lord, How Long (Psalm 13) - Live)"
  },
  {
+  "key": "hymn saviour hymn saviour",
+  "sources": [
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Eric": 1
+  },
+  "owner_years": {
+   "Eric": {
+    "2024": 1
+   }
+  },
+  "keys_played": {},
+  "latest_key": "",
+  "latest_key_year": 0,
+  "slots": {},
+  "dates": [],
+  "title": "Hymn of the Saviour Hymn Of The Saviour (Live) /",
+  "artist": "",
+  "first_year": 2024,
+  "last_year": 2024,
+  "year_counts": {
+   "2024": 1
+  },
+  "match": null,
+  "status": "held",
+  "reason": "no Spotify match found"
+ },
+ {
+  "key": "i am who you say i",
+  "sources": [
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Eric": 1
+  },
+  "owner_years": {
+   "Eric": {
+    "2020": 1
+   }
+  },
+  "keys_played": {},
+  "latest_key": "",
+  "latest_key_year": 0,
+  "slots": {},
+  "dates": [],
+  "title": "I am Who You Say I",
+  "artist": "",
+  "first_year": 2020,
+  "last_year": 2020,
+  "year_counts": {
+   "2020": 1
+  },
+  "match": null,
+  "status": "held",
+  "reason": "no Spotify match found"
+ },
+ {
   "key": "i can only imagine",
   "sources": [
    "scripts"
@@ -23702,6 +24395,87 @@
   "reason": "no Spotify match found"
  },
  {
+  "key": "i will trust savior jesus",
+  "sources": [
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Eric": 1
+  },
+  "owner_years": {
+   "Eric": {
+    "2024": 1
+   }
+  },
+  "keys_played": {
+   "C": 1
+  },
+  "latest_key": "C",
+  "latest_key_year": 2024,
+  "slots": {},
+  "dates": [],
+  "title": "I will trust my Savior Jesus",
+  "artist": "",
+  "first_year": 2024,
+  "last_year": 2024,
+  "year_counts": {
+   "2024": 1
+  },
+  "match": {
+   "uri": "spotify:track:1Y5iQHLQsFAy19nBuyn994",
+   "artist": "CityAlight",
+   "album": "Yet Not I",
+   "confidence": "medium",
+   "name": "I Will Trust My Savior Jesus"
+  },
+  "release_year": 2018,
+  "popularity": 54,
+  "status": "dupe",
+  "reason": "same recording as \u201cI Will Trust My Saviour Jesus\u201d"
+ },
+ {
+  "key": "indescriblable",
+  "sources": [
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Rizvan": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2016": 1
+   }
+  },
+  "keys_played": {
+   "Ab": 1
+  },
+  "latest_key": "Ab",
+  "latest_key_year": 2016,
+  "slots": {},
+  "dates": [],
+  "title": "Indescriblable",
+  "artist": "",
+  "first_year": 2016,
+  "last_year": 2016,
+  "year_counts": {
+   "2016": 1
+  },
+  "status": "held",
+  "reason": "seen once in one script only, may not be a song"
+ },
+ {
   "key": "jehovah jireh",
   "sources": [
    "scripts"
@@ -23925,6 +24699,51 @@
   "reason": "no Spotify match found"
  },
  {
+  "key": "knowing you",
+  "sources": [
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Rizvan": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2022": 1
+   }
+  },
+  "keys_played": {
+   "G": 1
+  },
+  "latest_key": "G",
+  "latest_key_year": 2022,
+  "slots": {},
+  "dates": [],
+  "title": "Knowing You",
+  "artist": "",
+  "first_year": 2022,
+  "last_year": 2022,
+  "year_counts": {
+   "2022": 1
+  },
+  "match": {
+   "uri": "spotify:track:1stwDDayOd4cB3xOIKkUap",
+   "artist": "Shane & Shane",
+   "album": "Vintage",
+   "confidence": "medium",
+   "name": "Knowing You"
+  },
+  "release_year": 2020,
+  "popularity": 38,
+  "status": "on",
+  "reason": "check version"
+ },
+ {
   "key": "krystin",
   "sources": [
    "scripts"
@@ -24053,6 +24872,53 @@
   },
   "release_year": 2005,
   "popularity": 2,
+  "status": "on",
+  "reason": "check version"
+ },
+ {
+  "key": "living water",
+  "sources": [
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Rizvan": 1
+  },
+  "owner_years": {
+   "Rizvan": {
+    "2016": 1
+   }
+  },
+  "keys_played": {},
+  "latest_key": "",
+  "latest_key_year": 0,
+  "slots": {},
+  "dates": [],
+  "title": "Living Water",
+  "artist": "",
+  "first_year": 2016,
+  "last_year": 2016,
+  "year_counts": {
+   "2016": 1
+  },
+  "ai_theme": "Invitation",
+  "ai_pace": "Slow",
+  "not_a_song": false,
+  "ai_confident": false,
+  "match": {
+   "uri": "spotify:track:6TyyGSk69X8S922AF5L4qE",
+   "artist": "Shane & Shane",
+   "album": "Psalms, Hymns, and Spiritual Songs, Vol. 1",
+   "confidence": "medium",
+   "name": "Living Water"
+  },
+  "release_year": 2021,
+  "popularity": 46,
   "status": "on",
   "reason": "check version"
  },
@@ -24746,19 +25612,25 @@
   "owners": {
    "Eric": 1
   },
-  "owner_years": {},
+  "owner_years": {
+   "Eric": {
+    "2018": 1
+   }
+  },
   "keys_played": {
    "E": 1
   },
   "latest_key": "E",
-  "latest_key_year": 0,
+  "latest_key_year": 2018,
   "slots": {},
   "dates": [],
   "title": "Outtro",
   "artist": "",
-  "first_year": null,
-  "last_year": null,
-  "year_counts": {},
+  "first_year": 2018,
+  "last_year": 2018,
+  "year_counts": {
+   "2018": 1
+  },
   "status": "held",
   "reason": "seen once in one script only, may not be a song"
  },
@@ -25626,55 +26498,6 @@
   "reason": "check version"
  },
  {
-  "key": "lord almighty reigns",
-  "sources": [
-   "scripts"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 1,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Rizvan": 1
-  },
-  "owner_years": {
-   "Rizvan": {
-    "2025": 1
-   }
-  },
-  "keys_played": {
-   "G": 1
-  },
-  "latest_key": "G",
-  "latest_key_year": 2025,
-  "slots": {},
-  "dates": [],
-  "title": "The Lord Almighty Reigns",
-  "artist": "",
-  "first_year": 2025,
-  "last_year": 2025,
-  "year_counts": {
-   "2025": 1
-  },
-  "ai_theme": "Declaration",
-  "ai_pace": "Medium",
-  "not_a_song": false,
-  "ai_confident": false,
-  "match": {
-   "uri": "spotify:track:4u2JS0X0Y4pkUpvyCH4fSh",
-   "artist": "The Worship Initiative",
-   "album": "Modern Hymns",
-   "confidence": "medium",
-   "name": "The Lord Almighty Reigns"
-  },
-  "release_year": 2024,
-  "popularity": 40,
-  "status": "on",
-  "reason": "check version"
- },
- {
   "key": "lord salvation (in",
   "sources": [
    "scripts"
@@ -25847,6 +26670,43 @@
   "popularity": 33,
   "status": "held",
   "reason": "script heading, Spotify title differs (Though You Slay Me)"
+ },
+ {
+  "key": "undivided undivided",
+  "sources": [
+   "scripts"
+  ],
+  "count": 0,
+  "last_sung": "",
+  "script_uses": 1,
+  "local": false,
+  "kids": false,
+  "era": "",
+  "owners": {
+   "Eric": 1
+  },
+  "owner_years": {
+   "Eric": {
+    "2024": 1
+   }
+  },
+  "keys_played": {
+   "C": 1
+  },
+  "latest_key": "C",
+  "latest_key_year": 2024,
+  "slots": {},
+  "dates": [],
+  "title": "Undivided Undivided",
+  "artist": "",
+  "first_year": 2024,
+  "last_year": 2024,
+  "year_counts": {
+   "2024": 1
+  },
+  "match": null,
+  "status": "held",
+  "reason": "no Spotify match found"
  },
  {
   "key": "upbeat)",
@@ -29014,44 +29874,6 @@
   "reason": "no Spotify match found"
  },
  {
-  "key": "i could sing your love forever",
-  "sources": [
-   "main"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 0,
-  "local": false,
-  "kids": false,
-  "era": "Classic",
-  "owners": {},
-  "owner_years": {},
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
-  "slots": {},
-  "dates": [],
-  "pace": "Slow",
-  "theme": "Praise",
-  "introduced": "Yes",
-  "title": "I Could Sing of Your Love Forever",
-  "artist": "Hillsong",
-  "first_year": null,
-  "last_year": null,
-  "year_counts": {},
-  "match": {
-   "uri": "spotify:track:0ypipC0JkFZVZZXpzCzw05",
-   "artist": "Hillsong Worship",
-   "album": "iWorship: No Boundaries",
-   "confidence": "high",
-   "name": "I Could Sing of Your Love Forever"
-  },
-  "release_year": 2005,
-  "popularity": 50,
-  "status": "on",
-  "reason": ""
- },
- {
   "key": "i just want to be where you are",
   "sources": [
    "edgar"
@@ -30091,48 +30913,6 @@
   },
   "release_year": 2014,
   "popularity": 28,
-  "status": "on",
-  "reason": ""
- },
- {
-  "key": "leaning on everlasting arms",
-  "sources": [
-   "edgar"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 0,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Edgar": 1
-  },
-  "owner_years": {},
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
-  "slots": {},
-  "dates": [],
-  "title": "Leaning on the everlasting arms",
-  "artist": "Norton Hall Band",
-  "first_year": null,
-  "last_year": null,
-  "year_counts": {},
-  "ai_theme": "Assurance",
-  "ai_pace": "Medium",
-  "not_a_song": false,
-  "ai_confident": true,
-  "artist_source": "ai",
-  "match": {
-   "uri": "spotify:track:6SaNNvd94ZpVlzidYNFUqS",
-   "artist": "Norton Hall Band",
-   "album": "Still Our Refuge",
-   "confidence": "high",
-   "name": "Leaning on the Everlasting Arms"
-  },
-  "release_year": 2021,
-  "popularity": 22,
   "status": "on",
   "reason": ""
  },
@@ -32141,46 +32921,6 @@
   "reason": "check version"
  },
  {
-  "key": "hymn savior",
-  "sources": [
-   "main"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 0,
-  "local": false,
-  "kids": false,
-  "era": "Modern Hymn",
-  "owners": {},
-  "owner_years": {},
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
-  "slots": {},
-  "dates": [],
-  "eric_count": 8.0,
-  "pace": "Slow",
-  "rough_category": "Gospel",
-  "theme": "Praise",
-  "introduced": "Yes",
-  "title": "The hymn of the Savior",
-  "artist": "Emu Music",
-  "first_year": null,
-  "last_year": null,
-  "year_counts": {},
-  "match": {
-   "uri": "spotify:track:6Zj4PF9JZOTZ6ENdr2xjbr",
-   "artist": "Emu Music",
-   "album": "Creation Awaits",
-   "confidence": "high",
-   "name": "Hymn Of The Saviour"
-  },
-  "release_year": 2020,
-  "popularity": 40,
-  "status": "dupe",
-  "reason": "same recording as \u201cHymn of the Saviour\u201d"
- },
- {
   "key": "love father",
   "sources": [
    "library"
@@ -32814,47 +33554,6 @@
   "popularity": 37,
   "status": "on",
   "reason": ""
- },
- {
-  "key": "we believe",
-  "sources": [
-   "edgar"
-  ],
-  "count": 0,
-  "last_sung": "",
-  "script_uses": 0,
-  "local": false,
-  "kids": false,
-  "era": "",
-  "owners": {
-   "Edgar": 3
-  },
-  "owner_years": {},
-  "keys_played": {},
-  "latest_key": "",
-  "latest_key_year": 0,
-  "slots": {},
-  "dates": [],
-  "title": "we believe",
-  "artist": "",
-  "first_year": null,
-  "last_year": null,
-  "year_counts": {},
-  "ai_theme": "Declaration",
-  "ai_pace": "Medium",
-  "not_a_song": false,
-  "ai_confident": true,
-  "match": {
-   "uri": "spotify:track:1wO4UyzKkaKWelcygpR7bh",
-   "artist": "Keith & Kristyn Getty",
-   "album": "Facing A Task Unfinished",
-   "confidence": "medium",
-   "name": "We Believe (Apostle's Creed)"
-  },
-  "release_year": 2016,
-  "popularity": 28,
-  "status": "on",
-  "reason": "check version"
  },
  {
   "key": "we give thanks to god",

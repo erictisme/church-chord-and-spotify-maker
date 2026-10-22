@@ -282,7 +282,7 @@ def test_chart_data_top_hits_per_person_and_tradition_by_year():
     ]
     data = c.chart_data(songs, TODAY)
     assert data["people"]["Eric"][0] == {"t": "His Glory and My Good", "n": 7}
-    assert data["people"]["Rizvan"][0]["t"] == "W-I-S-D-O-M"
+    assert data["people"]["Rizvan"][0]["t"] == "His Glory and My Good"   # kids' songs excluded
     assert data["by_year"]["2016"] == {"Reformed modern": 1, "Kids": 1}
     assert data["top_sung"][0]["t"] == "His Glory and My Good"
 
@@ -481,3 +481,63 @@ def test_story_facts():
     assert st["quietest_year"] == "2017"
     assert st["top_key"] == ("G", 3)
     assert st["most_balanced_year"] in ("2016", "2017", "2021", "2022", "2023")
+
+
+# ---------- new-format service scripts, same-title songs, more date formats ----------
+
+def _para(text, bold=True):
+    class R:  # minimal stand-ins for python-docx runs/paragraphs
+        def __init__(s, t, b): s.text, s.bold = t, b
+    class P:
+        def __init__(s, t, b): s.text, s.runs = t, [R(t, b)]
+    return P(text, bold)
+
+
+def test_song_n_lines_count_without_chord_charts(monkeypatch):
+    paras = [_para("Worship 13 Sep 2026"), _para("DECLARATION"),
+             _para("SONG 1: ⁠A Broken Spirit"), _para("SONG 2: Lord I Need You"),
+             _para("Closing Song: Undivided"), _para("Psalm 51"), _para("Have mercy on me", False)]
+    class Doc:
+        paragraphs = paras
+    monkeypatch.setattr(b, "_open_docx", lambda path: Doc())
+    titles = [h[0] for h in b.script_headings("x.docx")]
+    assert titles == ["A Broken Spirit", "Lord I Need You", "Undivided"]
+
+
+@pytest.mark.parametrize("after, title", [
+    (["Verse 1", "Give thanks to the Lord our God and King", "Forever God is faithful"], "Forever (Chris Tomlin)"),
+    (["The moon and stars they wept", "The morning sun was dead"], "Forever (Kari Jobe)"),
+    (["G  D  Em"], "Forever"),
+    (["Summer and winter and springtime and harvest", "Sun, moon and stars in their courses above"], "Forever"),
+])
+def test_same_title_songs_told_apart_by_lyrics(after, title):
+    assert b.disambiguate("Forever", after) == title
+
+
+@pytest.mark.parametrize("name, year", [
+    ("Worship Script -  01.07.18.docx", 2018),
+    ("Worship Script - 13.05.18 (1).docx", 2018),
+])
+def test_year_from_dotted_short_dates(name, year):
+    assert b.year_from_filename(name) == year
+
+
+def test_kids_songs_stay_out_of_top_hits():
+    songs = [
+        {**_song("Lift Up Your Voices", {"2026": 5}, trad_stream="kids-awesome-cutlery"), "kids": True,
+         "owner_years": {"Rizvan": {"2026": 5}}, "owners": {"Rizvan": 5}},
+        {**_song("Jesus Strong and Kind", {"2026": 3}), "owner_years": {"Rizvan": {"2026": 3}}, "owners": {"Rizvan": 3}},
+    ]
+    d = c.chart_data(songs, TODAY)
+    assert [r["t"] for r in d["year_top"]["2026"]] == ["Jesus Strong and Kind"]
+    assert [r["t"] for r in d["people_by_year"]["Rizvan"]["2026"]] == ["Jesus Strong and Kind"]
+    assert [r["t"] for r in d["people"]["Rizvan"]] == ["Jesus Strong and Kind"]
+
+
+def test_song_mostly_in_kids_slot_is_a_kids_song():
+    songs = b.merge([_row("Tell It To Jesus", "history", count=4, last_sung="2026-07-26", local=False,
+                          kids=False, dates=["2026-07-05"], slots={"kids": 4})])
+    assert songs[0]["kids"] is True
+    adult = b.merge([_row("Undivided", "history", count=9, last_sung="2026-09-06", local=False,
+                          kids=False, dates=["2026-09-06"], slots={"closing": 8, "kids": 1})])
+    assert adult[0]["kids"] is False

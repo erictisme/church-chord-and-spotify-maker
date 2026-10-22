@@ -4400,6 +4400,14 @@
   "654Otva4zhiHTf1BQkqnAy": {
    "date": "2020-04-15",
    "popularity": 41
+  },
+  "1stwDDayOd4cB3xOIKkUap": {
+   "date": "2020-07-10",
+   "popularity": 38
+  },
+  "5y0AjH2iVJ8sZXZvUEWzLD": {
+   "date": "2014-04-21",
+   "popularity": 39
   }
  },
  "Crown Him With Many Crowns|Traditional Hymn": {
@@ -7472,5 +7480,86 @@
   "album": "Hymns - IV",
   "confidence": "medium",
   "name": "'tis So Sweet To Trust In Jesus"
- }
+ },
+ "His Glory and My Good|CityAlight": {
+  "uri": "spotify:track:0AALBUFhI4zXzzUheoHswE",
+  "artist": "CityAlight",
+  "album": "His Glory and My Good (Live)",
+  "confidence": "high",
+  "name": "His Glory and My Good - Live"
+ },
+ "Come Praise and Glorify|Sovereign Grace Music": {
+  "uri": "spotify:track:4aQmxssBOf2xs6FPBwTIgl",
+  "artist": "Sovereign Grace Music",
+  "album": "The Gathering: Live from WorshipGod11",
+  "confidence": "high",
+  "name": "Come Praise and Glorify"
+ },
+ "Let the Nations Be Glad|Unknown": {
+  "uri": "spotify:track:0yWOo8peL5wWXeGVUpP180",
+  "artist": "Matt Boswell",
+  "album": "His Mercy Is More: The Hymns Of Matt Boswell And Matt Papa",
+  "confidence": "medium",
+  "name": "Let The Nations Be Glad"
+ },
+ "This I Believe|Hillsong Worship": {
+  "uri": "spotify:track:6BxW8Umq3QIbipmo2c7WYz",
+  "artist": "Hillsong Worship",
+  "album": "No Other Name",
+  "confidence": "high",
+  "name": "This I Believe (The Creed)"
+ },
+ "Forever (Chris Tomlin)|Chris Tomlin": {
+  "uri": "spotify:track:6ChFsa3xElTTIJAo460out",
+  "artist": "Chris Tomlin",
+  "album": "How Great Is Our God: The Essential Collection",
+  "confidence": "high",
+  "name": "Forever"
+ },
+ "Lord I Need You|Matt Maher": {
+  "uri": "spotify:track:3kRCMN2z0aAJ9wpjrFZlBP",
+  "artist": "Matt Maher",
+  "album": "WOW Worship (Lime)",
+  "confidence": "high",
+  "name": "Lord, I Need You"
+ },
+ "Forever (Kari Jobe)|Kari Jobe": {
+  "uri": "spotify:track:5y0AjH2iVJ8sZXZvUEWzLD",
+  "artist": "Bethel Music",
+  "album": "You Make Me Brave (Live)",
+  "confidence": "high",
+  "name": "Forever (Live)"
+ },
+ "We Are His People|": {
+  "uri": "spotify:track:3KdfVlsTVpraFx70kMNU1u",
+  "artist": "Emu Music",
+  "album": "New Song In My Heart",
+  "confidence": "medium",
+  "name": "We Are His People"
+ },
+ "Hymn of the Savior|Emu Music": {
+  "uri": "spotify:track:6Zj4PF9JZOTZ6ENdr2xjbr",
+  "artist": "Emu Music",
+  "album": "Creation Awaits",
+  "confidence": "high",
+  "name": "Hymn Of The Saviour"
+ },
+ "Emu Music|": null,
+ "Hymn of the Saviour Hymn Of The Saviour (Live) /|": null,
+ "I am Who You Say I|": null,
+ "I will trust my Savior Jesus|": {
+  "uri": "spotify:track:1Y5iQHLQsFAy19nBuyn994",
+  "artist": "CityAlight",
+  "album": "Yet Not I",
+  "confidence": "medium",
+  "name": "I Will Trust My Savior Jesus"
+ },
+ "Knowing You|": {
+  "uri": "spotify:track:1stwDDayOd4cB3xOIKkUap",
+  "artist": "Shane & Shane",
+  "album": "Vintage",
+  "confidence": "medium",
+  "name": "Knowing You"
+ },
+ "Undivided Undivided|": null
 }

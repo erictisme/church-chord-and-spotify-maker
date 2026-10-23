@@ -135,7 +135,7 @@ svg rect.mark:hover { opacity: .8 }
 
   <section class="charts" aria-labelledby="vital-h">
     <div><h2 id="vital-h">Vitality signals</h2>
-    <p class="note">Things in our singing that might move with church health. This page has no health measure (attendance, membership, giving), so treat these as signals to compare, not proof. Add one real measure per year and we can see what actually moves together. Mashups from 2024 are undercounted: the roster rarely writes them down, the scripts did.</p></div>
+    <p class="note">Things in our singing that might move with church health. This page has no health measure (attendance, membership, giving), so treat these as signals to compare, not proof. Add one real measure per year and we can see what actually moves together. Medleys from 2024 are undercounted: the roster rarely writes them down, the scripts did.</p></div>
     <div class="grid5" id="vital"></div>
   </section>
 
@@ -366,7 +366,7 @@ function renderStory() {
     ["2014–2019", avg(early, y => share(y, "Charismatic / CCM")) + "%", `of each year's songs were charismatic or CCM. Hillsong, Tomlin and Redman were the sound of FMH.`],
     [st.quietest_year, st.quietest_n, `different songs, our quietest year since records filled out in 2016${st.quietest_year === "2020" ? ", the year Covid moved church online" : ""}.`],
     [st.crossover_year ? st.crossover_year + " on" : "—", share(years[years.length - 2], "Reformed modern") + "%", `Reformed modern pulled ahead of charismatic in ${st.crossover_year} and has stayed ahead every year since. By ${years[years.length - 2]} it was this share of the year's songs.`],
-    ["Mashups", mashTotal, `times we joined two songs into one, across ${C.mashups.length} different pairings. Peak: ${peakMash} (${(V[peakMash] || {}).mashups}). Favourite: ${topMash ? topMash.songs.join(" / ") : "—"}.`],
+    ["Medleys", mashTotal, `times we joined two songs into one, across ${C.mashups.length} different pairings. Peak: ${peakMash} (${(V[peakMash] || {}).mashups}). Favourite: ${topMash ? topMash.songs.join(" / ") : "—"}.`],
     ["Balance", st.most_balanced_year, `was our most balanced year across traditions (score ${(V[st.most_balanced_year] || {}).balance}/100, up from ${(V["2015"] || {}).balance} in 2015). Reformed grew, and the mix got more even, not narrower.`],
     ["Keys", st.top_key ? st.top_key[0] : "—", `is our home key (${st.top_key ? st.top_key[1] : 0} songs last played in it). Sharp and flat keys are rare, which keeps things guitar-friendly.`],
     ["One-offs", st.one_offs, `of ${st.total_songs} songs only ever turn up once. A long tail of songs tried and not kept.`],
@@ -377,7 +377,7 @@ function renderStory() {
 function renderVital() {
   const V = C.vitality, years = Object.keys(V).filter(y => y >= "2014" && y < DATA.today.slice(0, 4)).sort();
   const SIG = [["songs", "Songs sung", "different songs that year"], ["new", "New songs", "first time in our records"],
-    ["mashups", "Mashups", "songs joined into one"], ["originals", "FMH originals", "our own songs sung"],
+    ["mashups", "Medleys", "songs joined into one"], ["originals", "FMH originals", "our own songs sung"],
     ["balance", "Tradition balance", "0 = one tradition, 100 = even mix"]];
   el("vital").innerHTML = SIG.map(([k, title, sub]) => `<figure class="chart"><h3>${title}</h3><p class="sub">${sub}</p>` +
     columns(years, y => [{ k: title, n: V[y][k], c: "var(--accent)" }], { label: title + " per year", short: true }) + `</figure>`).join("");
@@ -388,10 +388,10 @@ function renderMash() {
   const M = C.mashups;
   const byPerson = {}; M.forEach(m => Object.entries(m.who).forEach(([k, v]) => byPerson[k] = (byPerson[k] || 0) + v));
   const who = Object.entries(byPerson).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k === "Rizvan" ? "Riz" : k} ${v}`).join(" · ");
-  el("mashChart").innerHTML = `<h3>Every mashup</h3><p class="sub">Two or more songs sung as one, from scripts and the roster. ${M.length} pairings, ${M.reduce((a, m) => a + m.n, 0)} times. By person: ${esc(who)}</p>` +
+  el("mashChart").innerHTML = `<h3>Every medley</h3><p class="sub">Two or more songs sung as one, from scripts and the roster. ${M.length} pairings, ${M.reduce((a, m) => a + m.n, 0)} times. By person: ${esc(who)}</p>` +
     `<div class="mash">${M.map((m, i) => `<div class="row" ${i >= 15 ? 'data-more hidden' : ""}><span class="n">${m.n}×</span><span>${m.songs.map(esc).join(" <span class=\"meta\">/</span> ")}</span><span class="meta">${m.years.length ? (m.years[0] === m.years[m.years.length - 1] ? m.years[0] : m.years[0] + "–" + m.years[m.years.length - 1]) : ""}</span></div>`).join("")}</div>` +
     (M.length > 15 ? `<button class="chip more" id="mashMore">Show all ${M.length}</button>` : "") +
-    `<p class="sowhat">Most mashups are FMH's own arrangements, not something you'll find on Spotify, so they're a fingerprint of our worship leaders' creativity.</p>`;
+    `<p class="sowhat">Most medleys are FMH's own arrangements, not something you'll find on Spotify, so they're a fingerprint of our worship leaders' creativity.</p>`;
   const b = el("mashMore"); if (b) b.onclick = () => { el("mashChart").querySelectorAll("[data-more]").forEach(r => r.hidden = false); b.hidden = true; };
 }
 
@@ -509,7 +509,7 @@ function history(r) {
     (r.h.latest_key ? `<dt>Latest key</dt><dd>${esc(r.h.latest_key)}</dd>` : "") +
     (Object.keys(r.h.keys).length ? `<dt>Keys played</dt><dd>${Object.entries(r.h.keys).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${esc(k)} (${n}×)`).join(", ")}</dd>` : "") +
     (r.h.key ? `<dt>Chart key</dt><dd>${esc(r.h.key)}</dd>` : "") +
-    (() => { const ms = C.mashups.filter(m => m.songs.some(x => x.toLowerCase() === r.t.toLowerCase())); return ms.length ? `<dt>Mashed with</dt><dd>${ms.map(m => m.songs.filter(x => x.toLowerCase() !== r.t.toLowerCase()).map(esc).join(" / ") + ` (${m.n}×)`).join("; ")}</dd>` : ""; })() +
+    (() => { const ms = C.mashups.filter(m => m.songs.some(x => x.toLowerCase() === r.t.toLowerCase())); return ms.length ? `<dt>Sung in a medley with</dt><dd>${ms.map(m => m.songs.filter(x => x.toLowerCase() !== r.t.toLowerCase()).map(esc).join(" / ") + ` (${m.n}×)`).join("; ")}</dd>` : ""; })() +
     `<dt>Picked by</dt><dd>${who || "—"}</dd><dt>Found in</dt><dd>${r.h.src.map(x => esc(SRC[x] || x)).join(", ")}</dd>` +
     `<dt>Recording</dt><dd>${r.u ? `<a href="${esc(r.u)}" target="_blank" rel="noopener">${esc(r.h.rec)}</a>` : esc(r.h.held || "Not on Spotify")}</dd></dl></div>`;
 }
